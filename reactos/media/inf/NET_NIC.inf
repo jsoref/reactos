@@ -1,7 +1,3 @@
-; Network.INF
-;
-; Installation file for the Net class
-;
 [Version]
 Signature  = "$Windows NT$"
 ;Signature  = "$ReactOS$"
@@ -28,54 +24,3 @@ HKLM,"SYSTEM\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002BE103
 ReactOS = "ReactOS Team"
 DisplayClassName = "Network Adapters"
 
-[Strings.0405]
-DisplayClassName = "Síťové adaptéry"
-
-[Strings.0407]
-DisplayClassName = "Netzwerkadapter"
-
-[Strings.0408]
-DisplayClassName = "Προσαρμογείς δικτύου"
-
-[Strings.0415]
-ReactOS = "Ekipa ReactOS"
-DisplayClassName = "Adaptery sieciowe"
-
-[Strings.0a]
-ReactOS = "Equipo de ReactOS"
-DisplayClassName = "Adaptadores de red"
-
-[Strings.040C]
-DisplayClassName = "Cartes réseau"
-
-[Strings.0411]
-DisplayClassName = "ネットワーク アダプタ"
-
-[Strings.0415]
-ReactOS = "Ekipa ReactOS"
-DisplayClassName = "Karty sieciowe"
-
-[Strings.0416]
-DisplayClassName = "Adaptadores de rede"
-
-[Strings.0418]
-ReactOS = "Echipa ReactOS"
-DisplayClassName = "Adaptoare de rețea"
-
-[Strings.0419]
-ReactOS = "Команда ReactOS"
-DisplayClassName = "Сетевые адаптеры"
-
-[Strings.041B]
-DisplayClassName = "Sieťové adaptéry"
-
-[Strings.041f]
-ReactOS = "ReactOS Takımı"
-DisplayClassName = "Ağ Bağdaştırıcıları"
-
-[Strings.0422]
-ReactOS = "Команда ReactOS"
-DisplayClassName = "Мережеві адаптери"
-
-[Strings.0427]
-DisplayClassName = "Tinklo adapteriai"

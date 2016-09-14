@@ -1,7 +1,3 @@
-; WDMAUDIO.INF
-;
-; Installation of Core WDM Audio
-;
 [Version]
 Signature= "$Windows NT$"
 ;Signature ="$ReactOS$"
@@ -208,32 +204,3 @@ WDM_WDMAUD.FriendlyName   = "Driver for ReactOS WINMM-WDM-Audio"
 wdmaud.SvcDesc            = "Driver for ReactOS WINMM-WDM-Audio"
 
 
-[Strings.0418]
-WDM_KMIXER.DeviceDesc     = "Dispozitiv de mixaj audio Wave al ReactOS"
-WDM_KMIXER.FriendlyName   = "Dispozitiv de mixaj audio Wave al ReactOS"
-kmixer.SvcDesc            = "Dispozitiv de mixaj audio Wave al ReactOS"
-WDM_SYSAUDIO.DeviceDesc   = "Dispozitiv audio de sistem al ReactOS"
-WDM_SYSAUDIO.FriendlyName = "Dispozitiv audio de sistem al ReactOS"
-sysaudio.SvcDesc          = "Dispozitiv audio de sistem al ReactOS"
-WDM_DRMKAUD.DeviceDesc    = "Modúle-pilot audio certificate ale ReactOS"
-WDM_DRMKAUD.FriendlyName  = "Modúle-pilot audio certificate ale ReactOS"
-drmkaud.SvcDesc           = "Modúle-pilot audio certificate ale ReactOS"
-WDMAUDIO_CopyFilesOnlyId.DeviceDesc = "Modúle-pilot audio WDM ale ReactOS"
-WDM_WDMAUD.DeviceDesc     = "Modúl-pilot pentru WINMM-WDM-Audio ReactOS"
-WDM_WDMAUD.FriendlyName   = "Modúl-pilot pentru WINMM-WDM-Audio ReactOS"
-wdmaud.SvcDesc            = "Modúl-pilot pentru WINMM-WDM-Audio ReactOS"
-
-[Strings.041f]
-WDM_KMIXER.DeviceDesc     = "ReactOS Dalga Ses Karıştırıcısı"
-WDM_KMIXER.FriendlyName   = "ReactOS Dalga Ses Karıştırıcısı"
-kmixer.SvcDesc            = "ReactOS Dalga Ses Karıştırıcısı"
-WDM_SYSAUDIO.DeviceDesc   = "ReactOS Dizge Ses Aygıtı"
-WDM_SYSAUDIO.FriendlyName = "ReactOS Dizge Ses Aygıtı"
-sysaudio.SvcDesc          = "ReactOS Dizge Ses Aygıtı"
-WDM_DRMKAUD.DeviceDesc    = "ReactOS Güvenilen Ses Sürücüleri"
-WDM_DRMKAUD.FriendlyName  = "ReactOS Güvenilen Ses Sürücüleri"
-drmkaud.SvcDesc           = "ReactOS Güvenilen Ses Sürücüleri"
-WDMAUDIO_CopyFilesOnlyId.DeviceDesc = "ReactOS WDM Ses Sürücüleri"
-WDM_WDMAUD.DeviceDesc     = "ReactOS WINMM-WDM-Ses İçin Sürücü"
-WDM_WDMAUD.FriendlyName   = "ReactOS WINMM-WDM-Ses İçin Sürücü"
-wdmaud.SvcDesc            = "ReactOS WINMM-WDM-Ses İçin Sürücü"

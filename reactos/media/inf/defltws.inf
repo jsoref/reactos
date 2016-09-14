@@ -1,6 +1,3 @@
-; defltws.inf
-; Default security settings for ReactOS Workstation
-
 [Version]
 Signature = "$Windows NT$"
 

@@ -1,7 +1,3 @@
-; Monitor.INF
-;
-; Installation file for monitors
-;
 [Version]
 Signature  = "$Windows NT$"
 ;Signature  = "$ReactOS$"
@@ -56,52 +52,3 @@ StdMfg = "(Standard monitor types)"
 DefaultMonitor.DeviceDesc = "Default Monitor"
 PnPMonitor.DeviceDesc = "Plug and Play Monitor"
 
-[Strings.0405]
-MonitorClassName = "Monitory"
-StdMfg = "(Obecné monitory)"
-DefaultMonitor.DeviceDesc = "Výchozí monitor"
-PnPMonitor.DeviceDesc = "Plug and Play monitor"
-
-[Strings.0407]
-MonitorClassName = "Monitore"
-StdMfg = "(Generische Monitore)"
-PnPMonitor.DeviceDesc = "Plug and Play Monitor"
-
-[Strings.0a]
-ReactOS = "Equipo de ReactOS"
-MonitorClassName = "Monitores"
-
-StdMfg = "(Monitores genéricos)"
-DefaultMonitor.DeviceDesc = "Monitor predeterminado"
-PnPMonitor.DeviceDesc = "Monitor Plug and Play"
-
-[Strings.0415]
-ReactOS = "Ekipa ReactOS"
-
-MonitorClassName = "Monitory"
-
-StdMfg = "(Standardowe typy monitorów)"
-DefaultMonitor.DeviceDesc = "Domyślny monitor"
-PnPMonitor.DeviceDesc = "Monitor Plug and Play"
-
-[Strings.0418]
-ReactOS = "Echipa ReactOS"
-MonitorClassName = "Ecrane"
-StdMfg = "(ecrane de tip standard)"
-DefaultMonitor.DeviceDesc = "Ecran implicit"
-PnPMonitor.DeviceDesc = "Ecran cuplare dinamică (PnP)"
-
-[Strings.0419]
-ReactOS = "Команда ReactOS"
-MonitorClassName = "Мониторы"
-StdMfg = "(Стандартные мониторы)"
-DefaultMonitor.DeviceDesc = "Модуль подключения монитора"
-PnPMonitor.DeviceDesc = "Монитор Plug and Play"
-
-[Strings.041f]
-ReactOS = "ReactOS Takımı"
-MonitorClassName = "Göstergeçler"
-
-StdMfg = "(Ölçünlü Göstergeç Türleri)"
-DefaultMonitor.DeviceDesc = "Ön Tanımlı Göstergeç"
-PnPMonitor.DeviceDesc = "Tak ve Çalıştır Göstergeç"
