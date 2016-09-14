@@ -1,7 +1,3 @@
-; NETTCPIP.INF
-
-; Installation file for TCP/IP Version 4 Protocol
-
 [Version]
 Signature  = "$Windows NT$"
 ;Signature  = "$ReactOS$"
@@ -259,20 +255,3 @@ HKR,"Parameters","EnableSecurityFilters",0x00010001,0x00000000
 [Strings]
 ReactOS = "ReactOS Team"
 
-[Strings.0a]
-ReactOS = "Equipo de ReactOS"
-
-[Strings.0415]
-ReactOS = "Ekipa ReactOS"
-
-[Strings.0418]
-ReactOS = "Echipa ReactOS"
-
-[Strings.0419]
-ReactOS = "Команда ReactOS"
-
-[Strings.041f]
-ReactOS = "ReactOS Takımı"
-
-[Strings.0422]
-ReactOS = "Команда ReactOS"
