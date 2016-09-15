@@ -315,7 +315,7 @@ CdAddToWorkque (
 
 Routine Description:
 
-    This routine is called to acually store the posted Irp to the Fsp
+    This routine is called to actually store the posted Irp to the Fsp
     workque.
 
 Arguments:

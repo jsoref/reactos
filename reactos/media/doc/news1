@@ -122,7 +122,7 @@ usualy interrupt gates , so the CPU will clear IF upon entering an
 exception handler. Note that in the case handling the interrupt or
 exception trough a trap gate , IF will not be automaticly cleared.
 
-        If you are interesting in the code wich can actualy build such
+        If you are interesting in the code wich can actually build such
 a structure on  the stack , use a kernel debugger and Break on Int
 0x2E , and single step the code .
 

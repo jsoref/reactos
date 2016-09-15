@@ -568,7 +568,7 @@ Return Value:
     //  into the name in order to reduce the chance of name conflicts.  We will use
     //  a tilde character followed by a character representation of the dirent offset.
     //  This will be the hexadecimal representation of the dirent offset in the directory.
-    //  It is actuall this offset divided by 32 since we don't need the full
+    //  It is actually this offset divided by 32 since we don't need the full
     //  granularity.
     //
 
