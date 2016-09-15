@@ -10,29 +10,3 @@ URLDownload = http://ftp.gwdg.de/pub/ctan/systems/win32/miktex/setup/basic-mikte
 SHA1 = b1150dbc36dec2b45f81b3e0b2ef06cb7d0723ce
 CDPath = none
 
-[Section.0407]
-Description = Aktuelle Implementierung von TeX/LaTeX und zugehöriger Programme für Windows.
-Size = 181,7 MiB
-
-[Section.0a]
-License = Gratuita
-Description = MikTEX es una implementación actualizada de TeX/LaTeX y otros programas.
-
-[Section.0418]
-License = Gratuită
-Description = MikTEX este o implementare actualizată de TeX/LaTeX și aprogramelor aferente.
-Size = 181,7 Mio
-
-[Section.0419]
-License = Бесплатно
-Description = Открытый дистрибутив TeX/LaTeX для платформы Windows.
-Size = 181,7 MiB
-
-[Section.041f]
-License = Ücretsiz
-Description = Windows için, TeX'in, LaTeX'in ve ilişkili izlencelerin bir şimdiki uygulaması.
-Size = 181,7 MiB
-
-[Section.0804]
-Description = TeX/LaTeX 和相关的程序的 Windows 的一个最新执行情况。
-

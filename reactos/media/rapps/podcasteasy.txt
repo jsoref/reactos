@@ -10,12 +10,3 @@ URLDownload = https://github.com/r57zone/Podcast-Easy-for-Windows/releases/downl
 CDPath = none
 SHA1 = d419a6c26b9879e0d3faba75888ad04aded43399
 
-[Section.0407]
-Description = Anwendung zum Herunterladen von Podcasts.
-Size = 682,5 KiB
-
-[Section.0419]
-License = GNU GPL v3
-Description = Приложение для загрузки подкастов.
-Size = 682,5 KiB
-
