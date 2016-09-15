@@ -50,7 +50,7 @@ public:
     if (m_pszText)
       delete[] m_pszText;
 
-    m_pszText = new (std::nothrow) TCHAR [s+(b?3:1)]; // if we have spaces in unique part, we need 2 addtional chars for "
+    m_pszText = new (std::nothrow) TCHAR [s+(b?3:1)]; // if we have spaces in unique part, we need 2 additional chars for "
 
     if (!m_pszText)
       return FALSE;

@@ -1604,7 +1604,7 @@ GetProcessMemoryInfo(HANDLE Process,
         ppsmemCounters->QuotaNonPagedPoolUsage = Counters.QuotaNonPagedPoolUsage;
         ppsmemCounters->PagefileUsage = Counters.PagefileUsage;
         ppsmemCounters->PeakPagefileUsage = Counters.PeakPagefileUsage;
-        /* And if needed, additionnal field for _EX version */
+        /* And if needed, additional field for _EX version */
         if (cb >= sizeof(PROCESS_MEMORY_COUNTERS_EX))
         {
             ((PPROCESS_MEMORY_COUNTERS_EX)ppsmemCounters)->PrivateUsage = Counters.PrivateUsage;

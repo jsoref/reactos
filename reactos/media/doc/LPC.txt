@@ -20,7 +20,7 @@ There are four imporant LPC Sizes to keep in mind. Try to understand them:
 /*
  * This determines the maximum length of an LPC request. It is the largest
  * amount of bytes that an LPC request can take. To calculate this, assume
- * that this is a CONNECTION_REQUEST message, which includes the additionnal
+ * that this is a CONNECTION_REQUEST message, which includes the additional
  * LPCP_CONNECTION_MESSAGE structure as well. Therefore, we add the kernel LPC,
  * header, the maximum port size and the size of the connection request 
  * structure. This gives a value of 0x15C. However, one must note that NT

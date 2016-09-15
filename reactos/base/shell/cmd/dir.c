@@ -958,7 +958,7 @@ DirPrintWideList(PDIRFINDINFO ptrFiles[],       /* [IN] Files' Info */
     {
         if (ptrFiles[i]->stFindInfo.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)
         {
-            /* Directories need 2 additinal characters for brackets */
+            /* Directories need 2 additional characters for brackets */
             if ((_tcslen(ptrFiles[i]->stFindInfo.cFileName) + 2) > iLongestName)
                 iLongestName = _tcslen(ptrFiles[i]->stFindInfo.cFileName) + 2;
         }
