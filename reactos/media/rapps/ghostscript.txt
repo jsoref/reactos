@@ -10,25 +10,3 @@ URLDownload = https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/dow
 SHA1 = 0de9de433d2e3b00e5843593134ebede0e1ed818
 CDPath = none
 
-[Section.0407]
-Description = Offener Interpreter für die PostScript Sprache und PDF.
-Size = 13,9 MiB
-
-[Section.0a]
-Description = Un intérprete libre para el lenguaje PostScript y PDF.
-
-[Section.0418]
-Description = Interpretor pentru limbajul PostScript și pentru PDF.
-Size = 13,9 Mio
-
-[Section.0419]
-Description = Интерпретатор языка PostScript и документов PDF.
-Size = 13,9 МиБ
-
-[Section.041f]
-Description = PostScript dili ve PDF için bir açık kaynak yorumlayıcı.
-Size = 13,9 MiB
-
-[Section.0804]
-Description = 开放的翻译为 PostScript 语言和 PDF。
-

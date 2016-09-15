@@ -10,27 +10,3 @@ URLDownload = http://download.sourceforge.net/project/agatemulator/agatemulator/
 SHA1 = 4584110ca12dcb1536cc675624716b4c0e0ace6d
 CDPath = none
 
-[Section.0407]
-Description = Apple ][ und Agat 7/9 Emulator für Win32.
-Size = 6,0 MiB
-
-[Section.0a]
-Name = Emulador Agat
-Description = Emulador de Apple ][ y Agat 7/9 para Win32.
-
-[Section.0418]
-Description = Eimulator de Apple ][ și Agat 7/9 pentru Win32.
-Size = 6,0 Mio
-
-[Section.0419]
-Description = Эмулятор ПЭВМ АГАТ для Win32
-Size = 6,0 МиБ
-
-[Section.041f]
-Name = Agat Öykünücü
-Description = Win32 için Apple ][ ve Agat 7/9 yazılım benzetim izlencesi.
-Size = 6,0 MiB
-
-[Section.0804]
-Description = 苹果][和 Win32 的 Agat 7/9 软件仿真程序。
-
