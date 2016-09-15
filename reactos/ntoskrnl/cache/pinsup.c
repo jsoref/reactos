@@ -499,7 +499,7 @@ CcpMapData(IN PFILE_OBJECT FileObject,
     CcpLock();
 
     /* Find out if any range is a superset of what we want */
-    /* Find an accomodating section */
+    /* Find an accommodating section */
     BcbHead = CcpFindMatchingMap(&Map->AssociatedBcb, FileOffset, Length);
 
     if (BcbHead != INVALID_CACHE)
