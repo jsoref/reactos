@@ -200,7 +200,7 @@ START_TEST(NtGdiDdQueryDirectDrawObject)
          // RTEST(pHalInfo->vmiData.dwNumHeaps  != 0 );
          // RTEST(pHalInfo->vmiData.pvmList  != 0 );
 
-        /* Test see if we got any hardware acclartions for 2d or 3d, this always fill in
+        /* Test see if we got any hardware acceleration for 2d or 3d, this always fill in
          * that mean we found a bugi drv and dx does not work on this drv
          */
 

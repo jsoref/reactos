@@ -58,7 +58,7 @@ typedef struct _PDEV
    HPALETTE DefaultPalette;
    PALETTEENTRY *PaletteEntries;
 
-    /* hw mouse acclartions support */
+    /* hw mouse acceleration support */
     VIDEO_POINTER_CAPABILITIES PointerCapabilities;
     PVIDEO_POINTER_ATTRIBUTES pPointerAttributes;
     ULONG  PointerAttributesSize;

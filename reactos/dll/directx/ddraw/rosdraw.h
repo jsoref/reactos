@@ -48,7 +48,7 @@ extern IDirect3D7Vtbl IDirect3D7_Vtbl;
 
 /* Start up direct hal or hel
  * iface = a pointer to the com object
- * pGUID = guid hardware acclations or software acclation this can  be NULL
+ * pGUID = guid hardware accelerations or software acceleration this can  be NULL
  * reenable = FALSE if we whant create a new directdraw com
  *          = TRUE if we really whant rebuild the whole com interface (not in use)
  */

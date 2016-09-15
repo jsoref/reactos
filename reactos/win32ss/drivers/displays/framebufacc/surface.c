@@ -1,5 +1,5 @@
 /*
- * ReactOS Generic Framebuffer acclations display driver
+ * ReactOS Generic Framebuffer accelerations display driver
  *
  * Copyright (C) 2004 Filip Navara
  * Copyright (C) 2007 Magnus Olsen
