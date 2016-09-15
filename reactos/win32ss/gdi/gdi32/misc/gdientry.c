@@ -1618,7 +1618,7 @@ DdQueryDirectDrawObject(LPDDRAWI_DIRECTDRAW_GBL pDirectDrawGlobal,
     /* Set the HAL flags what ReactX got from the driver
      * Windows XP force setting DDHALINFO_GETDRIVERINFOSET if the driver does not set it
      * and ReactX doing same to keep compatible with drivers, but the driver are
-     * force support DdGetDriverInfo acoriding MSDN but it seam some driver do not set
+     * force support DdGetDriverInfo according to MSDN but it seam some driver do not set
      * this flag even it is being supported. that is mean. It is small hack to keep
      * bad driver working, that trust this is always being setting by it self at end
      */
@@ -1635,7 +1635,7 @@ DdQueryDirectDrawObject(LPDDRAWI_DIRECTDRAW_GBL pDirectDrawGlobal,
         /* Set the flags for this structure
          * Windows XP force setting DDHAL_CB32_CREATESURFACE if the driver does not set it
          * and ReactX doing same to keep compatible with drivers, but the driver are
-         * force support pDDCallbacks acoriding MSDN but it seam some driver do not set
+         * force support pDDCallbacks according to MSDN but it seam some driver do not set
          * this flag even it is being supported. that is mean. It is small hack to keep
          * bad driver working, that trust this is always being setting by it self at end
         */
@@ -1671,7 +1671,7 @@ DdQueryDirectDrawObject(LPDDRAWI_DIRECTDRAW_GBL pDirectDrawGlobal,
          * Windows XP force setting DDHAL_SURFCB32_LOCK, DDHAL_SURFCB32_UNLOCK,
          * DDHAL_SURFCB32_SETCOLORKEY, DDHAL_SURFCB32_DESTROYSURFACE if the driver
          * does not set it and ReactX doing same to keep compatible with drivers,
-         * but the driver are force support pDDSurfaceCallbacks acoriding MSDN but it seam
+         * but the driver are force support pDDSurfaceCallbacks according to MSDN but it seam
          * some driver do not set this flag even it is being supported. that is mean.
          * It is small hack to keep bad driver working, that trust this is always being
          * setting by it self at end

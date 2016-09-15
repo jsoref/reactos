@@ -650,7 +650,7 @@ StartDirectDrawHal(LPDIRECTDRAW iface, BOOL reenable)
         {
             DWORD                dwSize;
             DWORD                dwFlags;
-            PDD_ALPHABLT         AlphaBlt;  // unsuse acoding msdn and always set to NULL
+            PDD_ALPHABLT         AlphaBlt;  // unsuse according to msdn and always set to NULL
             PDD_CREATESURFACEEX  CreateSurfaceEx;
             PDD_GETDRIVERSTATE   GetDriverState;
             PDD_DESTROYDDLOCAL   DestroyDDLocal;

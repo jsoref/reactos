@@ -193,7 +193,7 @@ START_TEST(NtGdiDdQueryDirectDrawObject)
         RTEST( ( (DWORD)pHalInfo->vmiData.pvPrimary & (~0x80000000)) != 0 );
 
         /* test see if we got back the pvmList here
-         * acording msdn vmiData.dwNumHeaps and vmiData.pvmList
+         * according to msdn vmiData.dwNumHeaps and vmiData.pvmList
          * exists for _VIDEOMEMORYINFO but they do not, it reviews
          * in ddk and wdk and own testcase
          */
@@ -218,7 +218,7 @@ START_TEST(NtGdiDdQueryDirectDrawObject)
 
 
         /* basic dx 2 is found if this flags not set
-         * if this fail we do not have a dx driver install acodring ms, some version of windows it
+         * if this fail we do not have a dx driver install according to ms, some version of windows it
          * is okay this fail and drv does then only support basic dx
          *
          */

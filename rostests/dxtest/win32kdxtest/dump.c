@@ -1384,7 +1384,7 @@ dump_D3dTextureFormats(DDSURFACEDESC *puD3dTextureFormats, int dwNum, char *text
             printf(" puD3dTextureFormats->ddsCaps.dwCaps                            : ");
             count = 0;
             flag = myTextureFormats->ddsCaps.dwCaps;
-            // not in use longer acoing msdn checkflag(flag,DDSCAPS_3D,"DDSCAPS_3D");
+            // not in use longer according to msdn checkflag(flag,DDSCAPS_3D,"DDSCAPS_3D");
             checkflag(flag,DDSCAPS_3DDEVICE  ,"DDSCAPS_3DDEVICE");
             checkflag(flag,DDSCAPS_ALLOCONLOAD,"DDSCAPS_ALLOCONLOAD ");
             checkflag(flag,DDSCAPS_ALPHA,"DDSCAPS_ALPHA");
