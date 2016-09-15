@@ -3053,7 +3053,7 @@ SamrCreateAliasInDomain(IN SAMPR_HANDLE DomainHandle,
         goto done;
     }
 
-    /* Check the alias acoount name */
+    /* Check the alias account name */
     Status = SampCheckAccountName(AccountName, 256);
     if (!NT_SUCCESS(Status))
     {

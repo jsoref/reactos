@@ -888,8 +888,8 @@ public class Verbatim {
       NamedNodeMap domAttr = elem.getAttributes();
 
       AttributesImpl attr = new AttributesImpl();
-      for (int acount = 0; acount < domAttr.getLength(); acount++) {
-	Node a = domAttr.item(acount);
+      for (int account = 0; account < domAttr.getLength(); account++) {
+	Node a = domAttr.item(account);
 
 	if (((ns == null || ns == "http://www.w3.org/1999/xhtml")
 	     && localName.equalsIgnoreCase("a"))

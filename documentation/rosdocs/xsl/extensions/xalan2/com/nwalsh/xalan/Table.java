@@ -430,8 +430,8 @@ public class Table {
 	NamedNodeMap domAttr = col.getAttributes();
 
 	AttributesImpl attr = new AttributesImpl();
-	for (int acount = 0; acount < domAttr.getLength(); acount++) {
-	  Node a = domAttr.item(acount);
+	for (int account = 0; account < domAttr.getLength(); account++) {
+	  Node a = domAttr.item(account);
 	  String a_ns = a.getNamespaceURI();
 	  String a_localName = a.getLocalName();
 

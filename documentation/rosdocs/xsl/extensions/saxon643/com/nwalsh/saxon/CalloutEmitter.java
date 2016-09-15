@@ -149,8 +149,8 @@ public class CalloutEmitter extends CopyEmitter {
 	if (node.getNodeName().equalsIgnoreCase("areaset")) {
 	  coNum++;
 	  NodeList areas = node.getChildNodes();
-	  for (int acount = 0; acount < areas.getLength(); acount++) {
-	    Node area = areas.item(acount);
+	  for (int account = 0; account < areas.getLength(); account++) {
+	    Node area = areas.item(account);
 	    if (area.getNodeType() == Node.ELEMENT_NODE) {
 	      if (area.getNodeName().equalsIgnoreCase("area")) {
 		addCallout(coNum, area, defaultColumn);
@@ -457,12 +457,12 @@ public class CalloutEmitter extends CopyEmitter {
       AttributeCollection attr = (AttributeCollection) elem.getAttributes();
       AttributeCollection newAttr = new AttributeCollection(namePool);
 
-      for (int acount = 0; acount < attr.getLength(); acount++) {
-	String localName = attr.getLocalName(acount);
-	int nameCode = attr.getNameCode(acount);
-	String type = attr.getType(acount);
-	String value = attr.getValue(acount);
-	String uri = attr.getURI(acount);
+      for (int account = 0; account < attr.getLength(); account++) {
+	String localName = attr.getLocalName(account);
+	int nameCode = attr.getNameCode(account);
+	String type = attr.getType(account);
+	String value = attr.getValue(account);
+	String uri = attr.getURI(account);
 	String prefix = "";
 
 	if (localName.indexOf(':') > 0) {
