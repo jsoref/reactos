@@ -3654,7 +3654,7 @@ VOID SockProcessQueuedAsyncSelect(PVOID Context, PIO_STATUS_BLOCK IoStatusBlock)
         /* Check if the Sequence Number changed by now, in which case quit */
         if (AsyncData->SequenceNumber == Socket->SharedData->SequenceNumber)
         {
-            /* Do the actuall select, if needed */
+            /* Do the actual select, if needed */
             if ((Socket->SharedData->AsyncEvents & (~Socket->SharedData->AsyncDisabledEvents)))
             {
                 SockProcessAsyncSelect(Socket, AsyncData);
