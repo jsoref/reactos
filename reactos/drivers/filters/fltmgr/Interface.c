@@ -1752,7 +1752,7 @@ FltpEnumerateFileSystemVolumes(_In_ PDEVICE_OBJECT DeviceObject)
         }
 
         /*
-         * Try to get the storage stack (disk) device object accociated with
+         * Try to get the storage stack (disk) device object associated with
          * this file system device object. Ignore the device if we don't have one
          */
         Status = IoGetDiskDeviceObject(DeviceList[i],
