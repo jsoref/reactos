@@ -1154,7 +1154,7 @@ MiResolveProtoPteFault(IN BOOLEAN StoreInstruction,
         {
             Protection = MM_READONLY;
         }
-        /* Check for page acess in software */
+        /* Check for page access in software */
         Status = MiAccessCheck(PointerProtoPte,
                                StoreInstruction,
                                KernelMode,

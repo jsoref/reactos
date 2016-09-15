@@ -485,7 +485,7 @@ EthernetAddressType(
 }
 
 typedef struct _TOKENRING_HEADER {
-  UINT8 AcccessControl;
+  UINT8 AccessControl;
   UINT8 FrameControl;
   DL_EUI48 Destination;
   DL_EUI48 Source;

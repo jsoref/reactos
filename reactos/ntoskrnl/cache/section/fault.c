@@ -675,7 +675,7 @@ MmpSectionAccessFaultInner(KPROCESSOR_MODE Mode,
 /*
 
 This is the outer fault handler mentioned in the description of
-MmpSectionAccsesFaultInner.  It increments a fault depth count in the current
+MmpSectionAccessFaultInner.  It increments a fault depth count in the current
 thread.
 
 In the ultimate form of this code, the lower fault handler will optionally

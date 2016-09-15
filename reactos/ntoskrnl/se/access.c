@@ -382,7 +382,7 @@ SeCreateAccessStateEx(IN PETHREAD Thread,
     PTOKEN Token;
     PAGED_CODE();
 
-    /* Map the Generic Acess to Specific Access if we have a Mapping */
+    /* Map the Generic Access to Specific Access if we have a Mapping */
     if ((Access & GENERIC_ACCESS) && (GenericMapping))
     {
         RtlMapGenericMask(&AccessMask, GenericMapping);

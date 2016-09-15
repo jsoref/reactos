@@ -435,7 +435,7 @@ SeAppendPrivileges(IN OUT PACCESS_STATE AccessState,
         if (PrivilegeSet == NULL)
             return STATUS_INSUFFICIENT_RESOURCES;
 
-        /* Copy original privileges from the acess state */
+        /* Copy original privileges from the access state */
         RtlCopyMemory(PrivilegeSet,
                       AuxData->PrivilegeSet,
                       OldPrivilegeSetSize);
