@@ -719,7 +719,7 @@ KiSetAffinityThread(IN PKTHREAD Thread,
 // the KPRCB's ready summary, and the usual way of going through KeGetCurrentPrcb
 // would require getting fs:1C first (or gs), and then doing another dereference.
 // In an attempt to minimize the amount of instructions and potential race/tear
-// that could happen, Windows seems to define this as a macro that directly acceses
+// that could happen, Windows seems to define this as a macro that directly accesses
 // the ready summary through a single fs: read by going through the KPCR's PrcbData.
 //
 // See http://research.microsoft.com/en-us/collaboration/global/asia-pacific/
