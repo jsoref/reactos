@@ -46,7 +46,7 @@ CONTENT
     There's two ways to add content to RosDocs:
 
  - Doxygen comments. If you're going to write reference pages (think Unix man
-   pages), this is the format you should get accostumed to. It consists of
+   pages), this is the format you should get accustomed to. It consists of
    special comments, containing markup that a tool called Doxygen can extract
    into a variety of formats. If you already know JavaDoc, or the QT comment-
    based documentation system, Doxygen supports those as well
