@@ -65,7 +65,7 @@ CsrSetToNormalPriority(VOID)
  *
  * The CsrSetToShutdownPriority routine sets the current NT Process'
  * priority to the boosted priority for CSR Processes doing shutdown.
- * Additonally, it acquires the Shutdown Privilege required for shutdown.
+ * Additionally, it acquires the Shutdown Privilege required for shutdown.
  *
  * @param None.
  *
