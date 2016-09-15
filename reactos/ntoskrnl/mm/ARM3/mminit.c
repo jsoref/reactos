@@ -1753,7 +1753,7 @@ MiBuildPagedPool(VOID)
     //
     // Make this system PTE point to the system page directory.
     // It is now essentially double-mapped. This will be used later for lazy
-    // evaluation of PDEs accross process switches, similarly to how the Global
+    // evaluation of PDEs across process switches, similarly to how the Global
     // page directory array in the old ReactOS Mm is used (but in a less hacky
     // way).
     //
