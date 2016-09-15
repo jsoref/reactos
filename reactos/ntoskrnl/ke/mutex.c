@@ -113,7 +113,7 @@ KeReleaseMutant(IN PKMUTANT Mutant,
     /* Save the Previous State */
     PreviousState = Mutant->Header.SignalState;
 
-    /* Check if it is to be abandonned */
+    /* Check if it is to be abandoned */
     if (Abandon == FALSE)
     {
         /* Make sure that the Owner Thread is the current Thread */
@@ -132,7 +132,7 @@ KeReleaseMutant(IN PKMUTANT Mutant,
     }
     else
     {
-        /* It's going to be abandonned */
+        /* It's going to be abandoned */
         Mutant->Header.SignalState = 1;
         Mutant->Abandoned = TRUE;
     }
