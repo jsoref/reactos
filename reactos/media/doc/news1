@@ -12,7 +12,7 @@
 
   Recently , I had a chanche to borrow "Undocumented NT" by Mr Prasad
 Dabak from one of my friends and read it. While reading the chapters
-regarding builidng your own interrupt handlers or callgates under NT ,
+regarding building your own interrupt handlers or callgates under NT ,
 I found that the book glosses over very important topics such as IDT
 in SMP enviroments , and a complete wrong presentation of what structure
 a interrupt handler is supposed to build on the stack to ensure shamless
