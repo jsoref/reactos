@@ -343,7 +343,7 @@ MmMdpCoalesceDescriptor (
           ((MemoryDescriptor->VirtualPage) && (PreviousDescriptor->VirtualPage) &&
            (PreviousMappedEndPage == MemoryDescriptor->VirtualPage))))
     {
-        EfiPrintf(L"Previous descriptor coalescible!\r\n");
+        EfiPrintf(L"Previous descriptor coalescable!\r\n");
     }
 
     /* CHeck if the current entry touches the next entry, and is compatible */
@@ -355,7 +355,7 @@ MmMdpCoalesceDescriptor (
             ((MemoryDescriptor->VirtualPage) && (PreviousDescriptor->VirtualPage) &&
                 (MappedEndPage == NextDescriptor->VirtualPage))))
     {
-        EfiPrintf(L"Next descriptor coalescible!\r\n");
+        EfiPrintf(L"Next descriptor coalescable!\r\n");
     }
 
     /* Nothing to do */
