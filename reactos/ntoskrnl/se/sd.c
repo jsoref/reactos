@@ -1334,7 +1334,7 @@ SeAssignSecurityEx(
     Descriptor = ExAllocatePoolWithTag(PagedPool, Length, TAG_SD);
     if (Descriptor == NULL)
     {
-        DPRINT1("ExAlloctePool() failed\n");
+        DPRINT1("ExAllocatePool() failed\n");
         SeUnlockSubjectContext(SubjectContext);
         return STATUS_INSUFFICIENT_RESOURCES;
     }
