@@ -176,7 +176,7 @@
 2002-02-11  Norman Walsh <nwalsh@users.sourceforge.net>
 
 	* component.xsl, index.xsl, pagesetup.xsl, param.ent, param.xweb, titlepage.templates.xml: 
-	Patch #510996: add support for two-colum indexes
+	Patch #510996: add support for two-column indexes
 
 	* inline.xsl: Patch #514007: prevent hyphenation of email addresses
 
