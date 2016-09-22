@@ -733,7 +733,7 @@ Return Value:
     } finally {
 
         //
-        //  Cleanup our search context - *before* aquiring the FCB mutex exclusive,
+        //  Cleanup our search context - *before* acquiring the FCB mutex exclusive,
         //  else can block on threads in cdcreateinternalstream/purge which 
         //  hold the FCB but are waiting for all maps in this stream to be released.
         //
