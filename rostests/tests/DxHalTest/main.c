@@ -99,7 +99,7 @@ int WINAPI WinMain (HINSTANCE hInst, HINSTANCE hPrevInst,
     DdResetVisrgn            = (BOOL (APIENTRY*)(LPDDRAWI_DDRAWSURFACE_LCL, HWND))GetProcAddress(lib, "GdiEntry6");
 
 	printf("This apps showing how to start up directx draw/d3d interface and some other as well\n");
-	printf("This code have been releae to some close applactons with my premtions, if any company\n");
+	printf("This code have been releae to some close applications with my premtions, if any company\n");
     printf("want use part or whole code, you need contact the orginal author to ask for premtions\n");
     printf("This code are release under alot of diffent licen\n");
     printf("All GPL and LGPL project have right use and studing this code.\n");

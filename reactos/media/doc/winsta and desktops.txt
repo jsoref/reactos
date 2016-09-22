@@ -1,6 +1,6 @@
 SAWinSta
 --------
-I write a GUI appication, and the user may run it in task schedule. Since
+I write a GUI application, and the user may run it in task schedule. Since
 windows 2000/XP treat schedule task as a service, the schedule service can
 not be associated with interactive desktop object in the in 2 states
 1) No user log on
