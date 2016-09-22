@@ -329,7 +329,7 @@ pice_set_crt_registers:
 ;****************************************************************************
 ;* pice_set_attribute_registers ********************************************
 ;****************************************************************************
-;* ebx=>  pointer to stored attibute registers
+;* ebx=>  pointer to stored attribute registers
 ;****************************************************************************
 section .text
 pice_set_attribute_registers:
