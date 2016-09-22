@@ -65,7 +65,7 @@ NTSYSAPI
 NTSTATUS
 NTAPI
 DbgUiWaitStateChange(
-    _In_ PDBGUI_WAIT_STATE_CHANGE DbgUiWaitStateCange,
+    _In_ PDBGUI_WAIT_STATE_CHANGE WaitStateChange,
     _In_ PLARGE_INTEGER TimeOut
 );
 

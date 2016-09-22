@@ -18,7 +18,7 @@ In here we fist check for aliases and convert if need be.
 Then we look for redirections using GetRedirection() which will remove any redirection symbols.  
 and pass back info about where to redirect.  
 from this info it will do some switching around with the handles for where things go and send them as need be.  
-personally i dont like this code and i tried to chnage it before but failed.  
+personally i dont like this code and i tried to change it before but failed.  
 it is confusing to me and i dont understand why a lot of it is there but apparently it is needed.
 
 It sends the new string without any redirection info into DoCommand(). In this function we just look to see what should be done.  
