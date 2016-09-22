@@ -190,7 +190,7 @@ KiEspToTrapFrame(IN PKTRAP_FRAME TrapFrame,
                                          (ULONG_PTR)TrapFrame,
                                          0);
 
-        /* Create an edit frame, check if it was alrady */
+        /* Create an edit frame, check if it was already */
         if (!(TrapFrame->SegCs & FRAME_EDITED))
         {
             /* Update the value */

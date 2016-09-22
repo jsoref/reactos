@@ -76,7 +76,7 @@ DEQUEUE_BOILERPLATE
    {
       /*
       Cancel routine WILL be called after we release the spinlock. It will try to remove 
-      the irp from the list and cancel/complete this irp. Since we allready removed it, 
+      the irp from the list and cancel/complete this irp. Since we already removed it, 
       make its ListEntry point to itself.
       */
  
