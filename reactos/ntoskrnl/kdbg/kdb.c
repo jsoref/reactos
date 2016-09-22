@@ -549,7 +549,7 @@ KdbpGetBreakPointInfo(
  * \param Address              Address at which to set the breakpoint.
  * \param Type                 Type of breakpoint (hardware or software)
  * \param Size                 Size of breakpoint (for hardware/memory breakpoints)
- * \param AccessType           Access type (for hardware breakpoins)
+ * \param AccessType           Access type (for hardware breakpoints)
  * \param ConditionExpression  Expression which must evaluate to true for conditional breakpoints.
  * \param Global               Wether the breakpoint is global or local to a process.
  * \param BreakPointNumber     Receives the breakpoint number on success
