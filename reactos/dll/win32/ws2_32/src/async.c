@@ -537,7 +537,7 @@ WsAsyncGetServ(IN HANDLE TaskHandle,
         }
     }
 
-    /* Not processing anyomre */
+    /* Not processing anymore */
     WsAsyncCurrentTaskHandle = NULL;
 
     /* Release the lock */
@@ -610,7 +610,7 @@ WsAsyncGetProto(IN HANDLE TaskHandle,
         }
     }
 
-    /* Not processing anyomre */
+    /* Not processing anymore */
     WsAsyncCurrentTaskHandle = NULL;
 
     /* Release the lock */
@@ -685,7 +685,7 @@ WsAsyncGetHost(IN HANDLE TaskHandle,
         }
     }
 
-    /* Not processing anyomre */
+    /* Not processing anymore */
     WsAsyncCurrentTaskHandle = NULL;
 
     /* Release the lock */
