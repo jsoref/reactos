@@ -271,7 +271,7 @@ RtlAcquirePrivilege(IN PULONG Privilege,
         State->NewPrivileges->Privileges[i].Attributes = SE_PRIVILEGE_ENABLED;
     }
 
-    /* Start privileges adjustements */
+    /* Start privileges adjustments */
     OldSize = sizeof(State->OldPrivBuffer);
     do
     {
