@@ -56,7 +56,7 @@ BytesInHostent(PHOSTENT Hostent)
     /* Add 2 pointers for the list-terminators */
     Bytes += 2 * sizeof(ULONG_PTR);
 
-    /* Now loop for the alises */
+    /* Now loop for the aliases */
     for (i = 0; Hostent->h_aliases[i]; i++)
     {
         /* Add the alias size, plus the space its pointer takes */
@@ -89,7 +89,7 @@ BytesInServent(PSERVENT Servent)
     /* Add 1 pointers for the list terminator */
     Bytes += sizeof(ULONG_PTR);
 
-    /* Now loop for the alises */
+    /* Now loop for the aliases */
     for (i = 0; Servent->s_aliases[i]; i++)
     {
         /* Add the alias size, plus the space its pointer takes */
@@ -113,7 +113,7 @@ BytesInProtoent(PPROTOENT Protoent)
     /* Add 1 pointers for the list terminator */
     Bytes += sizeof(ULONG_PTR);
 
-    /* Now loop for the alises */
+    /* Now loop for the aliases */
     for (i = 0; Protoent->p_aliases[i]; i++)
     {
         /* Add the alias size, plus the space its pointer takes */
