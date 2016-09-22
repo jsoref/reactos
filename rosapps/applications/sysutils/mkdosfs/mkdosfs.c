@@ -1294,7 +1294,7 @@ setup_tables (void)
     } while (bs.cluster_size && bs.cluster_size <= maxclustsize);
 
     /* Use the optimal FAT size if not specified;
-     * FAT32 is (not yet) choosen automatically */
+     * FAT32 is (not yet) chosen automatically */
     if (!size_fat) {
 	size_fat = (clust16 > clust12) ? 16 : 12;
 	if (verbose >= 2)

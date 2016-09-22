@@ -102,7 +102,7 @@ INT cmd_rename (LPTSTR param)
     /* Read options */
     for (i = 0; i < args; i++)
     {
-        /* Lets check if we have a special option choosen and set the flag(s)*/
+        /* Lets check if we have a special option chosen and set the flag(s)*/
         if (*arg[i] == _T('/'))
         {
             if (_tcslen(arg[i]) >= 2)
