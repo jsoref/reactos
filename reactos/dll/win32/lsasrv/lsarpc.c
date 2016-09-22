@@ -3650,7 +3650,7 @@ NTSTATUS WINAPI LsarEnumerateTrustedDomainsEx(
 NTSTATUS WINAPI LsarCreateTrustedDomainEx(
     LSAPR_HANDLE PolicyHandle,
     PLSAPR_TRUSTED_DOMAIN_INFORMATION_EX TrustedDomainInformation,
-    PLSAPR_TRUSTED_DOMAIN_AUTH_INFORMATION AuthentificationInformation,
+    PLSAPR_TRUSTED_DOMAIN_AUTH_INFORMATION AuthenticationInformation,
     ACCESS_MASK DesiredAccess,
     LSAPR_HANDLE *TrustedDomainHandle)
 {
@@ -3815,7 +3815,7 @@ NTSTATUS WINAPI LsarLookupNames2(
 NTSTATUS WINAPI LsarCreateTrustedDomainEx2(
     LSAPR_HANDLE PolicyHandle,
     PLSAPR_TRUSTED_DOMAIN_INFORMATION_EX TrustedDomainInformation,
-    PLSAPR_TRUSTED_DOMAIN_AUTH_INFORMATION_INTERNAL AuthentificationInformation,
+    PLSAPR_TRUSTED_DOMAIN_AUTH_INFORMATION_INTERNAL AuthenticationInformation,
     ACCESS_MASK DesiredAccess,
     LSAPR_HANDLE *TrustedDomainHandle)
 {
