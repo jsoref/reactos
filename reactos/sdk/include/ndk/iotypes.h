@@ -126,7 +126,7 @@ extern POBJECT_TYPE NTSYSAPI IoDriverObjectType;
 #define FILE_OPEN_FOR_FREE_SPACE_QUERY          0x00800000
 
 //
-// Device Charactertics
+// Device Characteristics
 //
 #define FILE_REMOVABLE_MEDIA                    0x00000001
 #define FILE_READ_ONLY_DEVICE                   0x00000002

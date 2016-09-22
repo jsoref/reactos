@@ -221,7 +221,7 @@ LdrVerifyImageMatchesChecksum(
     _In_ HANDLE FileHandle,
     _In_ PLDR_CALLBACK Callback,
     _In_ PVOID CallbackContext,
-    _Out_ PUSHORT ImageCharacterstics
+    _Out_ PUSHORT ImageCharacteristics
 );
 
 NTSTATUS
