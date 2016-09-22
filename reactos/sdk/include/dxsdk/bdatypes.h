@@ -30,8 +30,8 @@
 #define BDA_FREQUENCY_NOT_DEFINED            0
 #define BDA_RANGE_NOT_SET                    -1
 #define BDA_RANGE_NOT_DEFINED                0
-#define BDA_CHAN_BANDWITH_NOT_SET            -1
-#define BDA_CHAN_BANDWITH_NOT_DEFINED        0
+#define BDA_CHAN_BANDWIDTH_NOT_SET            -1
+#define BDA_CHAN_BANDWIDTH_NOT_DEFINED        0
 #define BDA_FREQUENCY_MULTIPLIER_NOT_SET     -1
 #define BDA_FREQUENCY_MULTIPLIER_NOT_DEFINED 0
 
