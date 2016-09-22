@@ -1661,7 +1661,7 @@ write_tables (void)
   for (x = 1; x <= nr_fats; x++)
 #ifdef _WIN32
 	  /*
-	   * WIN32 appearently has problems writing very large chunks directly
+	   * WIN32 apparently has problems writing very large chunks directly
 	   * to disk devices. To not produce errors because of resource shortages
 	   * split up the write in sector size chunks.
 	   */
