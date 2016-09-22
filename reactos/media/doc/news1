@@ -24,7 +24,7 @@ more complex.
         The correct layout for a Trap Frame is the folowing: (note that
 it consitis from two parts , a stack frame wich is built by the CPU
 according to mode in wich was the CPU when the exception or software
-interrupt was generated , and a Context Capure frame who has to be built
+interrupt was generated , and a Context Capture frame who has to be built
 by the exception handler itself )
 
 struc   KeTrapFrame

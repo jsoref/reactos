@@ -59,7 +59,7 @@ DxApiGetVersion(VOID)
 * DxOpenVideoPort, DxGetKernelCaps, DxGetFieldNumber, DxSetFieldNumber,
 * DxSetSkipPattern, DxGetSurfaceState, DxSetSurfaceState, DxLock,
 * DxFlipOverlay, DxFlipVideoPort, DxGetCurrentAutoflip, DxGetPreviousAutoflip,
-* DxRegisterEvent, DxUnregisterEvent, DxGetPolarity, DxOpenVpCatureDevice,
+* DxRegisterEvent, DxUnregisterEvent, DxGetPolarity, DxOpenVpCaptureDevice,
 * DxAddVpCaptureBuffer, DxFlushVpCaptureBuffs
 *
 * See ddkmapi.h as well
@@ -304,7 +304,7 @@ DxGetPolarity(PVOID lpvInBuffer, PVOID lpvOutBuffer)
 }
 
 VOID
-DxOpenVpCatureDevice(PVOID lpvInBuffer, PVOID lpvOutBuffer)
+DxOpenVpCaptureDevice(PVOID lpvInBuffer, PVOID lpvOutBuffer)
 {
     /* FIXME Unimplement */
 }

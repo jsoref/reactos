@@ -28,7 +28,7 @@ VOID DxGetPreviousAutoflip(PVOID lpvInBuffer, PVOID lpvOutBuffer);
 VOID DxRegisterEvent(PVOID lpvInBuffer, PVOID lpvOutBuffer);
 VOID DxUnregisterEvent(PVOID lpvInBuffer, PVOID lpvOutBuffer);
 VOID DxGetPolarity(PVOID lpvInBuffer, PVOID lpvOutBuffer);
-VOID DxOpenVpCatureDevice(PVOID lpvInBuffer, PVOID lpvOutBuffer);
+VOID DxOpenVpCaptureDevice(PVOID lpvInBuffer, PVOID lpvOutBuffer);
 VOID DxAddVpCaptureBuffer(PVOID lpvInBuffer, PVOID lpvOutBuffer);
 VOID DxFlushVpCaptureBuffs(PVOID lpvInBuffer, PVOID lpvOutBuffer);
 
@@ -135,7 +135,7 @@ DRVFN gDxApiEntryPoint [] =
     {DD_DXAPI_REGISTER_CALLBACK - DD_FIRST_DXAPI, (PFN) DxRegisterEvent},
     {DD_DXAPI_UNREGISTER_CALLBACK - DD_FIRST_DXAPI, (PFN) DxUnregisterEvent},
     {DD_DXAPI_GET_POLARITY - DD_FIRST_DXAPI, (PFN) DxGetPolarity},
-    {DD_DXAPI_OPENVPCAPTUREDEVICE - DD_FIRST_DXAPI, (PFN) DxOpenVpCatureDevice},
+    {DD_DXAPI_OPENVPCAPTUREDEVICE - DD_FIRST_DXAPI, (PFN) DxOpenVpCaptureDevice},
     {DD_DXAPI_ADDVPCAPTUREBUFFER - DD_FIRST_DXAPI, (PFN) DxAddVpCaptureBuffer},
     {DD_DXAPI_FLUSHVPCAPTUREBUFFERS - DD_FIRST_DXAPI, (PFN) DxFlushVpCaptureBuffs}
 };

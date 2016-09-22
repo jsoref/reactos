@@ -120,7 +120,7 @@ static
 NTSTATUS
 WmipCaptureGuidObjectAttributes(
     _In_ POBJECT_ATTRIBUTES GuidObjectAttributes,
-    _Out_ POBJECT_ATTRIBUTES CapuredObjectAttributes,
+    _Out_ POBJECT_ATTRIBUTES CapturedObjectAttributes,
     _Out_ PUNICODE_STRING CapturedObjectName,
     _Out_ PWSTR ObjectNameBuffer,
     _In_ KPROCESSOR_MODE AccessMode)
@@ -133,13 +133,13 @@ WmipCaptureGuidObjectAttributes(
         ProbeForRead(GuidObjectAttributes,
                      sizeof(OBJECT_ATTRIBUTES),
                      sizeof(PVOID));
-        *CapuredObjectAttributes = *GuidObjectAttributes;
+        *CapturedObjectAttributes = *GuidObjectAttributes;
 
         /* Probe and copy the object name UNICODE_STRING */
-        ProbeForRead(CapuredObjectAttributes->ObjectName,
+        ProbeForRead(CapturedObjectAttributes->ObjectName,
                      sizeof(UNICODE_STRING),
                      sizeof(PVOID));
-        *CapturedObjectName = *CapuredObjectAttributes->ObjectName;
+        *CapturedObjectName = *CapturedObjectAttributes->ObjectName;
 
         /* Check if the object name has the expected length */
         if (CapturedObjectName->Length != 45 * sizeof(WCHAR))
