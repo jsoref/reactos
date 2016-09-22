@@ -3523,7 +3523,7 @@ USB_BUSIFFN
 USBDI_GetUSBDIVersion(
     PVOID BusContext,
     PUSBD_VERSION_INFORMATION VersionInformation,
-    PULONG HcdCapabilites)
+    PULONG HcdCapabilities)
 {
     CHubController * Controller;
     PUSBHARDWAREDEVICE Device;
@@ -3564,7 +3564,7 @@ USBDI_GetUSBDIVersion(
     //
     // no flags supported
     //
-    *HcdCapabilites = 0;
+    *HcdCapabilities = 0;
 }
 
 NTSTATUS

@@ -268,7 +268,7 @@ Arguments:
     PortDeviceObject - to connect to SCSI port driver.
     DeviceCount - Number of previously installed CDROMs.
     PortCapabilities - Pointer to structure returned by SCSI port
-        driver describing adapter capabilites (and limitations).
+        driver describing adapter capabilities (and limitations).
     LunInfo - Pointer to configuration information for this device.
 
 Return Value:

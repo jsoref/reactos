@@ -191,9 +191,9 @@ typedef struct
              FILE_CREATE_TREE_CONNECTION | FILE_ANY_ACCESS)
 
 
-/// IOCTL_GETCAPABILTIES
+/// IOCTL_GETCAPABILITIES
 ///
-/// Description: This IOCTL retrieves the capabilties of an specific device
+/// Description: This IOCTL retrieves the capabilities of an specific device
 ///
 /// Arguments:  InputBuffer is a pointer to a WDMAUD_DEVICE_INFO structure,
 ///             InputBufferSize is size of WDMAUD_DEVICE_INFO structure
