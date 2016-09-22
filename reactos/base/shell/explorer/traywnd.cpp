@@ -2036,7 +2036,7 @@ ChangePos:
     {
         HDC hdc;
         RECT rect;
-        int backoundPart;
+        int backgroundPart;
 
         GetWindowRect(&rect);
         OffsetRect(&rect, -rect.left, -rect.top);
@@ -2046,28 +2046,28 @@ ChangePos:
         switch (m_Position)
         {
         case ABE_LEFT:
-            backoundPart = TBP_SIZINGBARLEFT;
+            backgroundPart = TBP_SIZINGBARLEFT;
             rect.left = rect.right - GetSystemMetrics(SM_CXSIZEFRAME);
             break;
         case ABE_TOP:
-            backoundPart = TBP_SIZINGBARTOP;
+            backgroundPart = TBP_SIZINGBARTOP;
             rect.top = rect.bottom - GetSystemMetrics(SM_CYSIZEFRAME);
             break;
         case ABE_RIGHT:
-            backoundPart = TBP_SIZINGBARRIGHT;
+            backgroundPart = TBP_SIZINGBARRIGHT;
             rect.right = rect.left + GetSystemMetrics(SM_CXSIZEFRAME);
             break;
         case ABE_BOTTOM:
         default:
-            backoundPart = TBP_SIZINGBARBOTTOM;
+            backgroundPart = TBP_SIZINGBARBOTTOM;
             rect.bottom = rect.top + GetSystemMetrics(SM_CYSIZEFRAME);
             break;
         }
-        if (IsThemeBackgroundPartiallyTransparent(m_Theme, backoundPart, 0))
+        if (IsThemeBackgroundPartiallyTransparent(m_Theme, backgroundPart, 0))
         {
             DrawThemeParentBackground(m_hWnd, hdc, &rect);
         }
-        DrawThemeBackground(m_Theme, hdc, backoundPart, 0, &rect, 0);
+        DrawThemeBackground(m_Theme, hdc, backgroundPart, 0, &rect, 0);
 
         ReleaseDC(hdc);
         return 0;
