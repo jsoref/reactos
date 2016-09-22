@@ -314,12 +314,12 @@ START_TEST(NtGdiDdQueryDirectDrawObject)
     RTEST(puD3dCallbacks->dwSize == sizeof(D3DNTHAL_CALLBACKS));
 
     /* Nivda like GF7900GS will not follow ms design rule here,
-     * ContextDestroyAll must alwyas be NULL for it is not longer inuse in windows 2000 and higher
+     * ContextDestroyAll must always be NULL for it is not longer inuse in windows 2000 and higher
      */
     RTEST(puD3dCallbacks->ContextDestroyAll == NULL);
 
     /* Nivda like GF7900GS will not follow ms design rule here,
-     * SceneCapture must alwyas be NULL for it is not longer inuse in windows 2000 and higher
+     * SceneCapture must always be NULL for it is not longer inuse in windows 2000 and higher
      */
     RTEST(puD3dCallbacks->SceneCapture  == NULL);
     RTEST(puD3dCallbacks->dwReserved10 == 0);
