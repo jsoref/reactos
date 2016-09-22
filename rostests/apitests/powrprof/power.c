@@ -403,7 +403,7 @@ void test_EnumPwrSchemes(void)
    ok(!retval, "function was expected to false\n");
 
    /*
-    *  enumerate half of all avalailble profiles
+    *  enumerate half of all available profiles
     */
 
    g_NumPwrSchemesEnumerated = 0;

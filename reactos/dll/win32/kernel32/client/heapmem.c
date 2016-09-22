@@ -1333,7 +1333,7 @@ GlobalMemoryStatusEx(LPMEMORYSTATUSEX lpBuffer)
     lpBuffer->ullTotalVirtual = (BaseStaticServerData->SysInfo.MaximumUserModeAddress -
                                  BaseStaticServerData->SysInfo.MinimumUserModeAddress) + 1;
 
-    /* And finally the avilable virtual space */
+    /* And finally the available virtual space */
     lpBuffer->ullAvailVirtual = lpBuffer->ullTotalVirtual - VmCounters.VirtualSize;
     lpBuffer->ullAvailExtendedVirtual = 0;
 

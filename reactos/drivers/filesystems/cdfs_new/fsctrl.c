@@ -1869,7 +1869,7 @@ Return Value:
     CdReleaseVcb( IrpContext, Vcb );
 
     //
-    //  Send notification that the volume is avaliable.
+    //  Send notification that the volume is available.
     //
 
     if (NT_SUCCESS( Status )) {
