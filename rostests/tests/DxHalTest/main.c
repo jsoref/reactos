@@ -350,7 +350,7 @@ int WINAPI WinMain (HINSTANCE hInst, HINSTANCE hPrevInst,
 
   /* Hal insate is down now */
 
-  /* cleare surface code now*/
+  /* clear surface code now*/
 
   //  memset(&mGlobal, 0, sizeof(DDRAWI_DDRAWSURFACE_GBL));
   //  memset(&mMore,   0, sizeof(DDRAWI_DDRAWSURFACE_MORE));
@@ -361,7 +361,7 @@ int WINAPI WinMain (HINSTANCE hInst, HINSTANCE hPrevInst,
 
    mPrimaryLocal.lpSurfMore = &mPrimaryMore;
 
-  /* cleare surface ends now */
+  /* clear surface ends now */
 
   /* create primare surface now */
 
