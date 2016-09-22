@@ -178,7 +178,7 @@ BOOLEAN InitThreads()
         ok(hKbdHookLL!=NULL,"failed to set hook\n");
     }
 
-    /* create test clases */
+    /* create test classes */
     RegisterSimpleClass(TestProc, L"TestClass");
 
     memset(&data[0], 0, sizeof(data[0]));

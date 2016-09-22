@@ -178,7 +178,7 @@ typedef enum _MEMORY_INFORMATION_CLASS
 } MEMORY_INFORMATION_CLASS;
 
 //
-// Section Information Clasess for NtQuerySection
+// Section Information Classes for NtQuerySection
 //
 typedef enum _SECTION_INFORMATION_CLASS
 {
