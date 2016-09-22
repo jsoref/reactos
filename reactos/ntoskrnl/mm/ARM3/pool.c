@@ -580,7 +580,7 @@ MiAllocatePoolPages(IN POOL_TYPE PoolType,
             KeReleaseQueuedSpinLock(LockQueuePfnLock, OldIrql);
 
             //
-            // These pages are now available, clear their availablity bits
+            // These pages are now available, clear their availability bits
             //
             EndAllocation = (ULONG)(MmPagedPoolInfo.NextPdeForPagedPoolExpansion -
                              (PMMPDE)MiAddressToPte(MmPagedPoolInfo.FirstPteForPagedPool)) *
