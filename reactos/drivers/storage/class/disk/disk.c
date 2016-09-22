@@ -2106,7 +2106,7 @@ Return Value:
 
         } else if (NT_SUCCESS(status)) {
 
-            // ReadDriveCapacity was allright, create Partition Objects
+            // ReadDriveCapacity was alright, create Partition Objects
 
             if (physicalDiskData->PartitionListState == NotInitialized) {
                     status = CreatePartitionDeviceObjects(deviceExtension->PhysicalDevice, NULL);

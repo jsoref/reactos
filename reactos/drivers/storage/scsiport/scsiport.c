@@ -1894,7 +1894,7 @@ ScsiPortNotification(IN SCSI_NOTIFICATION_TYPE NotificationType,
 
             DPRINT("Notify: RequestComplete (Srb %p)\n", Srb);
 
-            /* Make sure Srb is allright */
+            /* Make sure Srb is alright */
             ASSERT(Srb->SrbStatus != SRB_STATUS_PENDING);
             ASSERT(Srb->Function != SRB_FUNCTION_EXECUTE_SCSI || Srb->SrbStatus != SRB_STATUS_SUCCESS || Srb->ScsiStatus == SCSISTAT_GOOD);
 
