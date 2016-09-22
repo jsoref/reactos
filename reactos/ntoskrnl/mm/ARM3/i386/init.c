@@ -342,7 +342,7 @@ MiInitMachineDependent(IN PLOADER_PARAMETER_BLOCK LoaderBlock)
     // Normally, the PFN database should start after the loader images.
     // This is already the case in ReactOS, but for now we want to co-exist
     // with the old memory manager, so we'll create a "Shadow PFN Database"
-    // instead, and arbitrarly start it at 0xB0000000.
+    // instead, and arbitrarily start it at 0xB0000000.
     //
     MmPfnDatabase = (PVOID)0xB0000000;
     ASSERT(((ULONG_PTR)MmPfnDatabase & (PDE_MAPPED_VA - 1)) == 0);
