@@ -148,7 +148,7 @@ I/O Manager perspective
 examines nInBufferSize and nOutBufferSize.  Allocates memory from non-paged
 pool and puts the address of this pool in Irp->AssociatedIrp.SystemBuffer.
 The size of this buffer is equal to the size of the larger of the two
-bufferes.  This buffer is accessible at any IRQL.
+buffers.  This buffer is accessible at any IRQL.
 
 copies nInBufferSize to irpSp->Parameters.DeviceIoControl.InputBufferLength
 copies nOutBufferSize to
