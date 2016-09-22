@@ -309,7 +309,7 @@ ReadDirectoryChangesW(IN HANDLE hDirectory,
         return FALSE;
     }
 
-    /* Does the caller want an APC callbac? */
+    /* Does the caller want an APC callback? */
     if (lpCompletionRoutine)
     {
         /* Don't use an event in this case */
