@@ -792,7 +792,7 @@ xclip_handle_PropertyNotify(RDPCLIENT * This, XPropertyEvent * event)
 
 		while (bytes_left > 0)
 		{
-			/* Unlike the specification, we don't set the 'delete' arugment to True
+			/* Unlike the specification, we don't set the 'delete' argument to True
 			   since we slurp the INCR's chunks in even-smaller chunks of 4096 bytes. */
 			if ((XGetWindowProperty
 			     (This->display, This->wnd, This->xclip.rdesktop_clipboard_target_atom, offset, 4096L,

@@ -33,7 +33,7 @@ public:
 	CArgumentParser();
 	virtual ~CArgumentParser();
 private:
-	TCHAR *m_pchArgumentList;		// points to begin of argumet list
+	TCHAR *m_pchArgumentList;		// points to begin of argument list
 	const TCHAR *m_pchArgumentListEnd;	// points to last 0 in argument list
 	TCHAR *m_pchArgument;
 };
