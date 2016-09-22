@@ -97,7 +97,7 @@ DoWriteFile(PSCREENSHOT pScrSht,
             goto fail;
     }
 */
-    /* save the current file position at the bginning of the bitmap bits */
+    /* save the current file position at the beginning of the bitmap bits */
     bmfh.bfOffBits = SetFilePointer(hFile, 0, 0, FILE_CURRENT);
 
     /* write the bitmap bits to file */
