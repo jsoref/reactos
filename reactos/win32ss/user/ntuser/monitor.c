@@ -211,7 +211,7 @@ UserDetachMonitor(IN HDEV hDev)
 
 /* UserUpdateMonitorSize
  *
- * Reset size of the monitor using atached device
+ * Reset size of the monitor using attached device
  *
  * Arguments
  *

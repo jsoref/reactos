@@ -89,7 +89,7 @@ IopAttachDeviceToDeviceStackSafe(IN PDEVICE_OBJECT SourceDevice,
     }
     else
     {
-        /* Update atached device fields */
+        /* Update attached device fields */
         AttachedDevice->AttachedDevice = SourceDevice;
         AttachedDevice->Spare1++;
 
