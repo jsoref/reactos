@@ -2422,7 +2422,7 @@ all of the entries referenced appeared there literally.</para>
 </refmeta>
 <refnamediv>
 <refname>glossterm.auto.link</refname>
-<refpurpose>Generate links from glossterm to glossentry automaticaly?</refpurpose>
+<refpurpose>Generate links from glossterm to glossentry automatically?</refpurpose>
 </refnamediv>
 
 <refsynopsisdiv>
