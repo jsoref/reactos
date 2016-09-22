@@ -741,7 +741,7 @@ Return Value:
         CdCleanupFileContext( IrpContext, &FileContext );
 
         //
-        //  Now we can safely aqure the FCB mutex if we need to.
+        //  Now we can safely acquire the FCB mutex if we need to.
         //
 
         if (DoCcbUpdate && !NT_ERROR( Status )) {

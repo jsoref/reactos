@@ -858,11 +858,11 @@ ui_clip_format_announce(RDPCLIENT * This, uint8 * data, uint32 length)
 
 	XSetSelectionOwner(This->display, This->xclip.primary_atom, This->wnd, This->xclip.acquire_time);
 	if (XGetSelectionOwner(This->display, This->xclip.primary_atom) != This->wnd)
-		warning("Failed to aquire ownership of PRIMARY clipboard\n");
+		warning("Failed to acquire ownership of PRIMARY clipboard\n");
 
 	XSetSelectionOwner(This->display, This->xclip.clipboard_atom, This->wnd, This->xclip.acquire_time);
 	if (XGetSelectionOwner(This->display, This->xclip.clipboard_atom) != This->wnd)
-		warning("Failed to aquire ownership of CLIPBOARD clipboard\n");
+		warning("Failed to acquire ownership of CLIPBOARD clipboard\n");
 
 	if (This->xclip.formats_data)
 		xfree(This->xclip.formats_data);
