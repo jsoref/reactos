@@ -699,7 +699,7 @@ DvpUpdateVideoPort(LPDDHAL_UPDATEVPORTDATA pDvdUpdateVideoPort)
      * Windows XP limit to max 10 handles of videoport surface and Vbi
      * ReactOS doing same to keep compatible, if it is more that 10
      * videoport surface or vbi the stack will be curpted in windows xp
-     * ReactOS safe guard againts that
+     * ReactOS safe guard against that
      *
      */
 
