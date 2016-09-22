@@ -1,7 +1,7 @@
 /*
  * gdb2 - gdb output splitter
  *
- * Copyright (C) 2000,2001 Nedko Arnaoudov <nedkohome@atia.com>
+ * Copyright (C) 2000,2001 Nedko Arnaudov <nedkohome@atia.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
