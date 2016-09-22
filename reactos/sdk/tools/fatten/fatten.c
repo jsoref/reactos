@@ -173,7 +173,7 @@ int main(int oargc, char* oargv[])
         argv++;
         argc--;
 
-        // find next command, to calculare number of args
+        // find next command, to calculate number of args
         while ((argv[i] != NULL) && !is_command(argv[i++]))
             nargs++;
 

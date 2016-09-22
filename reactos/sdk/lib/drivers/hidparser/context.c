@@ -108,7 +108,7 @@ HidParser_StoreCollection(
     Parser->Copy(TargetCollection, Collection, sizeof(HID_COLLECTION));
 
     //
-    // calulcate collection size
+    // calculate collection size
     //
     CollectionSize = sizeof(HID_COLLECTION) + sizeof(ULONG) * (Collection->ReportCount + Collection->NodeCount);
 

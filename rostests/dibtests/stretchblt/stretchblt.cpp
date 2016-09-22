@@ -251,7 +251,7 @@ LRESULT CALLBACK MainWndProc(HWND HWnd, UINT Msg, WPARAM WParam,
             // is zooming in?
             bool zoom_in = (new_width > RDest.right - RDest.left);
 
-            // caculate the area that needs to be updated
+            // calculate the area that needs to be updated
             RECT RUpdate = {
                RDest.left, RDest.top,
                RDest.left + max(new_width, RDest.right - RDest.left),

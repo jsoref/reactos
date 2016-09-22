@@ -248,7 +248,7 @@ DefSize:
         if (hbmp == NULL)
             goto Cleanup;
 
-        /* Caluclate the button rect */
+        /* Calculate the button rect */
         rcButton.left = 0;
         rcButton.top = 0;
         rcButton.right = Size.cx;
