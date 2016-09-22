@@ -24,7 +24,7 @@
  *
  * session.c  - Handles all internal functions dealing with the CSR Session Object,
  *              including de/allocation, de/referencing, and un/locking. Holds the SB API
- *              Dispatch/Name Tables and the public CsrSv API Interface for commmunication
+ *              Dispatch/Name Tables and the public CsrSv API Interface for communication
  *              with the Session Manager.
  *
  * thredsup.c - Handles all internal functions dealing with the CSR Thread Object,
