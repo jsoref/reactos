@@ -749,7 +749,7 @@ Return Value:
 
             //
             // the drive is target defect managed, and supports random writes
-            // on sector-aligment.  allow writes to occur by setting the error
+            // on sector-alignment.  allow writes to occur by setting the error
             // handler to point to a private media change detection handler.
             //
 

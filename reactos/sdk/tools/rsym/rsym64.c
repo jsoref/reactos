@@ -684,7 +684,7 @@ WriteOutFile(FILE *handle, PFILE_INFO File)
     ret = fwrite(File->NewSectionHeaders, 1, Size, handle);
     Pos += Size;
 
-    /* Fill up to next alignement */
+    /* Fill up to next alignment */
     Size = ROUND_UP(Pos, Alignment) - Pos;
     ret = fwrite(File->AlignBuf, 1, Size, handle);
     Pos += Size;
