@@ -161,7 +161,7 @@ IntDesktopObjectDelete(
     if (pdesk->spwndMessage)
         co_UserDestroyWindow(pdesk->spwndMessage);
 
-    /* Remove the desktop from the window station's list of associcated desktops */
+    /* Remove the desktop from the window station's list of associated desktops */
     RemoveEntryList(&pdesk->ListEntry);
 
     /* Free the heap */

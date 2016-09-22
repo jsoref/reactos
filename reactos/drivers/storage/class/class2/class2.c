@@ -3177,7 +3177,7 @@ Arguments:
 
     Srb - Supplies a Pointer to the SCSI request block to be retied.
 
-    Assocaiated - Indicates this is an assocatied Irp created by split request.
+    Associated - Indicates this is an associated Irp created by split request.
 
 Return Value:
 
