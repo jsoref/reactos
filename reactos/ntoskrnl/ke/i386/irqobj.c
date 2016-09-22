@@ -464,7 +464,7 @@ KeConnectInterrupt(IN PKINTERRUPT Interrupt)
                 /* This is not supported */
                 ASSERT(Dispatch.Interrupt->Mode != Latched);
 
-                /* Setup the chainned handler */
+                /* Setup the chained handler */
                 KiConnectVectorToInterrupt(Dispatch.Interrupt, ChainConnect);
             }
 
