@@ -225,7 +225,7 @@ BT958HwFindAdapter(IN PVOID HwDeviceExtension,
     if ((*ConfigInfo->AccessRanges)[0].RangeLength != 0)
     {
         // check if the system supplied bus-relative address is valid and has not been
-        // claimed by anyother device
+        // claimed by another device
         if ( ScsiPortValidateRange(deviceExtension,
                                    ConfigInfo->AdapterInterfaceType,
                                    ConfigInfo->SystemIoBusNumber,
