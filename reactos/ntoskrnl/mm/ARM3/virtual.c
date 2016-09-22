@@ -5479,7 +5479,7 @@ FinalPath:
     {
         if (((ULONG_PTR)PBaseAddress >> PAGE_SHIFT) != Vad->StartingVpn)
         {
-            DPRINT1("Decomitting non-committed memory\n");
+            DPRINT1("Decommitting non-committed memory\n");
             Status = STATUS_FREE_VM_NOT_AT_BASE;
             goto FailPath;
         }

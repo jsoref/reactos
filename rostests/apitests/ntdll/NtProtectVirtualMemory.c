@@ -34,7 +34,7 @@ START_TEST(NtProtectVirtualMemory)
         &allocationSize,
         MEM_COMMIT,
         PAGE_READWRITE);
-    ok(NT_SUCCESS(status), "Commiting memory failed\n");
+    ok(NT_SUCCESS(status), "Committing memory failed\n");
     
     /* Try writing it */
     StartSeh()
