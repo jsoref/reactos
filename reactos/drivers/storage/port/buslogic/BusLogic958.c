@@ -1319,7 +1319,7 @@ BusLogic_TargetDeviceInquiry(BusLogic_HostAdapter_T *HostAdapter)
 //                  BusLogic_TargetDeviceInquiry inquires about the Target Devices accessible
 //                  through Host Adapter.
 // Arguments:
-//              1. Host Adpater structure
+//              1. Host Adapter structure
 //              2.
 // Return Value:
 //              TRUE : Inquiry successful

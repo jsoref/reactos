@@ -750,7 +750,7 @@ CmBattAddAcAdapter(IN PDRIVER_OBJECT DriverObject,
     {
         /* Don't do anything */
         if (CmBattDebug & 0xC)
-            DbgPrint("CmBatt: Second AC adapter found.  Current version of driver only supports 1 aadapter.\n");
+            DbgPrint("CmBatt: Second AC adapter found.  Current version of driver only supports 1 adapter.\n");
     }
     else
     {
