@@ -3425,7 +3425,7 @@ FRESULT f_getfree (
 			/* Get number of free clusters */
 			fat = fs->fs_type;
 			nfree = 0;
-			if (fat == FS_FAT12) {	/* Sector unalighed entries: Search FAT via regular routine. */
+			if (fat == FS_FAT12) {	/* Sector unaligned entries: Search FAT via regular routine. */
 				clst = 2;
 				do {
 					stat = get_fat(fs, clst);
@@ -3433,7 +3433,7 @@ FRESULT f_getfree (
 					if (stat == 1) { res = FR_INT_ERR; break; }
 					if (stat == 0) nfree++;
 				} while (++clst < fs->n_fatent);
-			} else {				/* Sector alighed entries: Accelerate the FAT search. */
+			} else {				/* Sector aligned entries: Accelerate the FAT search. */
 				clst = fs->n_fatent; sect = fs->fatbase;
 				i = 0; p = 0;
 				do {
