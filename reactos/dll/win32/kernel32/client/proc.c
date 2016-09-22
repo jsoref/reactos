@@ -3828,7 +3828,7 @@ StartScan:
                                                   NULL);
     if ((hUserToken) && (lpProcessAttributes))
     {
-        /* Auggment them with information from the user */
+        /* Augment them with information from the user */
 
         LocalProcessAttributes = *lpProcessAttributes;
         LocalProcessAttributes.lpSecurityDescriptor = NULL;
