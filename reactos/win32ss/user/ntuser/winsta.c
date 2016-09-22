@@ -574,7 +574,7 @@ NtUserOpenWindowStation(
  *
  * Remarks
  *    The window station handle can be created with NtUserCreateWindowStation
- *    or NtUserOpenWindowStation. Attemps to close a handle to the window
+ *    or NtUserOpenWindowStation. Attempts to close a handle to the window
  *    station assigned to the calling process will fail.
  *
  * Status

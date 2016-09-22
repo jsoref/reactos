@@ -743,7 +743,7 @@ RtlLeaveCriticalSection(PRTL_CRITICAL_SECTION CriticalSection)
  * RtlTryEnterCriticalSection
  * @implemented NT4
  *
- *     Attemps to gain ownership of the critical section without waiting.
+ *     Attempts to gain ownership of the critical section without waiting.
  *
  * Params:
  *     CriticalSection - Critical section to attempt acquiring.

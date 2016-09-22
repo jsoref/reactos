@@ -252,7 +252,7 @@ ObpCreateSymbolicLinkName(IN POBJECT_SYMBOLIC_LINK SymbolicLink)
         /* Cleanup lookup context */
         ObpReleaseLookupContext(&Context);
 
-        /* Error, or max resparse attemtps exceeded */
+        /* Error, or max resparse attempts exceeded */
         if (! NT_SUCCESS(Status) || ReparseCnt >= MaxReparseAttempts)
         {
             /* Cleanup */
