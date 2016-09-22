@@ -821,7 +821,7 @@ public class Verbatim {
    *
    * <p>This method adds <tt>numBlanks</tt> to the result tree fragment.
    * It's used to pad lines when callouts occur after the last existing
-   * characater in a line.</p>
+   * character in a line.</p>
    *
    * @param rtf The resulting verbatim environment with numbered lines.
    * @param numBlanks The number of blanks to add.

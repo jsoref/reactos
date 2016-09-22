@@ -41,7 +41,7 @@ CheckAccountName(HWND hwndDlg,
         _tcspbrk((lpAccountName) ? lpAccountName : szAccountName, TEXT("\"*+,/\\:;<=>?[]|")) != NULL)
     {
         MessageBox(hwndDlg,
-                   TEXT("The account name you entered is invalid! An account name must not contain the following charecters: *+,/:;<=>?[\\]|"),
+                   TEXT("The account name you entered is invalid! An account name must not contain the following characters: *+,/:;<=>?[\\]|"),
                    TEXT("ERROR"),
                    MB_OK | MB_ICONERROR);
         return FALSE;
