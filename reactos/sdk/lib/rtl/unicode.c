@@ -203,7 +203,7 @@ RtlAppendStringToString(IN PSTRING Destination,
  *
  * NOTES
  *  If src->length is zero dest is unchanged.
- *  Dest is nullterminated when the MaximumLength allowes it.
+ *  Dest is nullterminated when the MaximumLength allows it.
  *  When dest fits exactly in MaximumLength characters the nullterm is ommitted.
  */
 NTSTATUS
@@ -687,7 +687,7 @@ RtlInitUnicodeStringEx(
  *
  * NOTES
  *  Writes at most length characters to the string str.
- *  Str is nullterminated when length allowes it.
+ *  Str is nullterminated when length allows it.
  *  When str fits exactly in length characters the nullterm is ommitted.
  */
 NTSTATUS NTAPI RtlIntegerToChar(
@@ -2388,7 +2388,7 @@ RtlDowncaseUnicodeString(
  *
  * NOTES
  *  if src is NULL dest is unchanged.
- *  dest is '\0' terminated when the MaximumLength allowes it.
+ *  dest is '\0' terminated when the MaximumLength allows it.
  *  When dest fits exactly in MaximumLength characters the '\0' is ommitted.
  */
 NTSTATUS
