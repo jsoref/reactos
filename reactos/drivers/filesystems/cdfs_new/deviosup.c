@@ -1552,7 +1552,7 @@ Return Value:
                 ScratchUserBufferOffset += ThisIoRun->DiskByteCount;
 
             //
-            //  Otherwise we need to allocate an auxilary buffer for the next sector.
+            //  Otherwise we need to allocate an auxiliary buffer for the next sector.
             //
 
             } else {

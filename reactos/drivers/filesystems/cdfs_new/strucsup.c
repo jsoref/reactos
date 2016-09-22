@@ -862,7 +862,7 @@ Routine Description:
 
     This routine is called to delete a Vcb which failed mount or has been
     dismounted.  The dismount code should have already removed all of the
-    open Fcb's.  We do nothing here but clean up other auxilary structures.
+    open Fcb's.  We do nothing here but clean up other auxiliary structures.
 
 Arguments:
 
@@ -1694,7 +1694,7 @@ Routine Description:
 
     This routine is called to cleanup and possibly deallocate the Irp Context.
     If the request is being posted or this Irp Context is possibly on the
-    stack then we only cleanup any auxilary structures.
+    stack then we only cleanup any auxiliary structures.
 
 Arguments:
 
@@ -2361,7 +2361,7 @@ CdDeleteFcb (
 Routine Description:
 
     This routine is called to cleanup and deallocate an Fcb.  We know there
-    are no references remaining.  We cleanup any auxilary structures and
+    are no references remaining.  We cleanup any auxiliary structures and
     deallocate this Fcb.
 
 Arguments:
