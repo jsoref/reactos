@@ -406,7 +406,7 @@ IoCsqRemoveNextIrp(
          * If the cancel routine is gone, we're already canceled,
          * and are spinning on the queue lock in our own cancel
          * routine.  Move on to the next candidate.  It'll get
-         * removed by the cance routine.
+         * removed by the cancel routine.
          */
         if(!IoSetCancelRoutine(Irp, NULL))
             continue;
