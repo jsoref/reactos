@@ -1401,7 +1401,7 @@ StartUnit(
 Routine Description:
 
     Send command to SCSI unit to start or power up.
-    Because this command is issued asynchronounsly, that is, without
+    Because this command is issued asynchronously, that is, without
     waiting on it to complete, the IMMEDIATE flag is not set. This
     means that the CDB will not return until the drive has powered up.
     This should keep subsequent requests from being submitted to the
