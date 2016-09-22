@@ -16,7 +16,7 @@ START_TEST(NtGdiSetBitmapBits)
 	RTEST(NtGdiSetBitmapBits(0, 0, 0) == 0);
 	RTEST(GetLastError() == ERROR_SUCCESS);
 
-	/* Test NULL bitnap handle */
+	/* Test NULL bitmap handle */
 	SetLastError(ERROR_SUCCESS);
 	RTEST(NtGdiSetBitmapBits(0, 5, Bits) == 0);
 	RTEST(GetLastError() == ERROR_INVALID_HANDLE);
