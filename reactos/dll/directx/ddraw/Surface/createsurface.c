@@ -73,7 +73,7 @@ Internal_CreateSurface( LPDDRAWI_DIRECTDRAW_INT pDDraw, LPDDSURFACEDESC2 pDDSD,
 
     /*
      * program does not need set the DDSD_LPSURFACE,
-     * if they forget set it, the ddraw will autoamtic
+     * if they forget set it, the ddraw will automatic
      * set it for system memory.
      */
     if ( ((pDDSD->ddsCaps.dwCaps & DDSCAPS_SYSTEMMEMORY) == DDSCAPS_SYSTEMMEMORY) &&
