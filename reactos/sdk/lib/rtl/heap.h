@@ -123,7 +123,7 @@ struct _HEAP_COMMON_ENTRY
             UCHAR Code3;
             UCHAR Code4;
         };
-        ULONGLONG AgregateCode;
+        ULONGLONG AggregateCode;
     };
 };
 
