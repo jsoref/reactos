@@ -985,7 +985,7 @@ Return Value:
     status = ScsiClassReadDriveCapacity(deviceObject);
 
     //
-    // If the read capcity failed then just return, unless this is a
+    // If the read capacity failed then just return, unless this is a
     // removable disk where a device object partition needs to be created.
     //
 
@@ -4417,7 +4417,7 @@ Return Value:
     diskData = (PDISK_DATA) (deviceExtension + 1);
 
     //
-    // Read the drive capcity.  If that fails, give up.
+    // Read the drive capacity.  If that fails, give up.
     //
 
     status = ScsiClassReadDriveCapacity(deviceExtension->PhysicalDevice);

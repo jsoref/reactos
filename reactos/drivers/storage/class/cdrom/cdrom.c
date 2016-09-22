@@ -1408,7 +1408,7 @@ ScsiCdRomStartIo(
 
             Irp->IoStatus.Status = STATUS_VERIFY_REQUIRED;
 
-            DebugPrint((2, "ScsiCdRomStartIo: [%lx] Calling UpdateCapcity - "
+            DebugPrint((2, "ScsiCdRomStartIo: [%lx] Calling UpdateCapacity - "
                            "ioctl event = %lx\n",
                         Irp,
                         nextIrpStack->Parameters.Others.Argument1

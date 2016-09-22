@@ -1478,7 +1478,7 @@ CdRomStartIo(
             Irp->IoStatus.Status = STATUS_VERIFY_REQUIRED;
 
             TraceLog((CdromDebugTrace,
-                        "CdRomStartIo: [%p] Calling UpdateCapcity - "
+                        "CdRomStartIo: [%p] Calling UpdateCapacity - "
                         "ioctl event = %p\n",
                         Irp,
                         nextIrpStack->Parameters.Others.Argument1

@@ -190,7 +190,7 @@ C_ASSERT(sizeof(UFI_CAPACITY_CMD) == 12);
 #define UFI_CAPACITY_CMD_LEN 0xA //FIXME support length 16 too if requested
 
 //
-// UFI Read Capcacity command response
+// UFI Read Capacity command response
 //
 typedef struct
 {

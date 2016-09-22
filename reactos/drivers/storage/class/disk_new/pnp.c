@@ -363,7 +363,7 @@ Return Value:
     status = ClassReadDriveCapacity(Fdo);
 
     //
-    // If the read capcity failed then just return, unless this is a
+    // If the read capacity failed then just return, unless this is a
     // removable disk where a device object partition needs to be created.
     //
 
