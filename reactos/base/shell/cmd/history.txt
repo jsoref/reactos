@@ -300,7 +300,7 @@ o call.c: added lines to initialize for pointers.  This fixed the
 
 07-Aug-1998 (John P Price <linux-guru@gcfl.net>)
 ~~~~~~~~~~~~~~~~~~~~~~
-o Fixed carrage return output to better match MSDOS with echo on or off.
+o Fixed carriage return output to better match MSDOS with echo on or off.
 
 
 07-Dec-1998 ReactOS CMD version 0.0.1 (Eric Kohl)

@@ -76,7 +76,7 @@
  *        to type something else in insert mode, it crashed.
  *
  *    07-Aug-1998 (John P Price <linux-guru@gcfl.net>)
- *        Fixed carrage return output to better match MSDOS with echo
+ *        Fixed carriage return output to better match MSDOS with echo
  *        on or off.(marked with "JPP 19980708")
  *
  *    13-Dec-1998 (Eric Kohl)
