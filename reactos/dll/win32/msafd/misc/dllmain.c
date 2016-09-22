@@ -700,7 +700,7 @@ WSPCloseSocket(IN SOCKET Handle,
             /*
              * We have to execute a sleep, so it's kind of like
              * a block. If the socket is Nonblock, we cannot
-             * go on since asyncronous operation is expected
+             * go on since asynchronous operation is expected
              * and we cannot offer it
              */
             if (Socket->SharedData->NonBlocking)
