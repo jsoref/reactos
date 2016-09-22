@@ -863,7 +863,7 @@ beEraseText(
 
     /* We're going to erase by filling a continuous range of
      * character cells with spaces. Note that this has displeasing
-     * asthetics under NT, as highlighting appears to be immune.
+     * aesthetics under NT, as highlighting appears to be immune.
      */
     nLength = (rowTo - rowFrom)*csbi.dwSize.X;
     nLength += colTo - colFrom;
