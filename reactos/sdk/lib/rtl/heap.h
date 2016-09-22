@@ -170,12 +170,12 @@ typedef struct _HEAP_COUNTERS
     SIZE_T TotalSizeInVirtualBlocks;
     ULONG TotalSegments;
     ULONG TotalUCRs;
-    ULONG CommittOps;
+    ULONG CommitOps;
     ULONG DeCommitOps;
     ULONG LockAcquires;
     ULONG LockCollisions;
     ULONG CommitRate;
-    ULONG DecommittRate;
+    ULONG DecommitRate;
     ULONG CommitFailures;
     ULONG InBlockCommitFailures;
     ULONG CompactHeapCalls;
@@ -186,8 +186,8 @@ typedef struct _HEAP_COUNTERS
 
 typedef struct _HEAP_TUNING_PARAMETERS
 {
-    ULONG CommittThresholdShift;
-    SIZE_T MaxPreCommittThreshold;
+    ULONG CommitThresholdShift;
+    SIZE_T MaxPreCommitThreshold;
 } HEAP_TUNING_PARAMETERS, *PHEAP_TUNING_PARAMETERS;
 
 typedef struct _HEAP_LIST_LOOKUP
