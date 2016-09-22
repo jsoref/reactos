@@ -294,7 +294,7 @@ static void test_DefineDosDeviceA(void)
     dwMaskCur = GetLogicalDrives();
     ok(dwMaskCur == dwMaskPrev, "Drive masks don't match\n");
 
-    /* Test using arbitary string, not necessarily a DOS drive letter */
+    /* Test using arbitrary string, not necessarily a DOS drive letter */
     dwMaskPrev = GetLogicalDrives();
     Result = DefineDosDeviceA(0, "!QHello:", Target);
     ok(Result, "Failed to subst drive using non-DOS drive name\n");
