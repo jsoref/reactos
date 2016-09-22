@@ -4427,7 +4427,7 @@ Return Value:
     }
 
     //
-    // Read the partition table agian.
+    // Read the partition table again.
     //
 
     status = IoReadPartitionTable(deviceExtension->PhysicalDevice,
