@@ -20,7 +20,7 @@ If running on really slow hardware(486), use one of these cards,
 it improves performance alot.
 
 run ./svgardesktop with no parameters to see a list of
-commnad line options
+command line options
 
 You will need to modify the libvga.config file most likely.
 Its in /etc/vga.
