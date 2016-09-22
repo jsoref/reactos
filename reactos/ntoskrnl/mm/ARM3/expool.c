@@ -1693,7 +1693,7 @@ ExAllocatePoolWithTag(IN POOL_TYPE PoolType,
 
         //
         // Add a tag for the big page allocation and switch to the generic "BIG"
-        // tag if we failed to do so, then insert a tracker for this alloation.
+        // tag if we failed to do so, then insert a tracker for this allocation.
         //
         if (!ExpAddTagForBigPages(Entry,
                                   Tag,

@@ -250,7 +250,7 @@ MyFreePool(IN PVOID *Block)
     InterlockedIncrement(&TotalFrees);
     InterlockedExchangeAdd(&TotalBytesFreed, LocalDescriptor->Size);
 
-    /* Acquire the memory alliocation lock */
+    /* Acquire the memory allocation lock */
     GlobalDescriptor = GlobalMemoryList;
     KeAcquireSpinLock(&MemoryLock, &OldIrql);
 
