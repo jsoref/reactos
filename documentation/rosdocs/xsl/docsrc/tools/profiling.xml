@@ -276,7 +276,7 @@ by semicolon:</para>
 <programlisting><![CDATA[<para os="unix;mac;win">...</para>]]></programlisting>
 
 <para>It is possible to use different separator than semicolon by
-setting <parameter>sep</parameter> parameter. There cann't be spaces
+setting <parameter>sep</parameter> parameter. There can't be spaces
 between separator and target names.</para>
 
 <para>You can also perform profiling based on several profiling
