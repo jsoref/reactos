@@ -1637,7 +1637,7 @@ part of the reset process.
 @param  CapsuleHeaderArray    Virtual pointer to an array of virtual pointers to the capsules
 being passed into update capsule.
 @param  CapsuleCount          Number of pointers to EFI_CAPSULE_HEADER in
-CaspuleHeaderArray.
+CapsuleHeaderArray.
 @param  ScatterGatherList     Physical pointer to a set of
 EFI_CAPSULE_BLOCK_DESCRIPTOR that describes the
 location in physical memory of a set of capsules.
@@ -1667,7 +1667,7 @@ Returns if the capsule can be supported via UpdateCapsule().
 @param  CapsuleHeaderArray    Virtual pointer to an array of virtual pointers to the capsules
 being passed into update capsule.
 @param  CapsuleCount          Number of pointers to EFI_CAPSULE_HEADER in
-CaspuleHeaderArray.
+CapsuleHeaderArray.
 @param  MaxiumCapsuleSize     On output the maximum size that UpdateCapsule() can
 support as an argument to UpdateCapsule() via
 CapsuleHeaderArray and ScatterGatherList.
