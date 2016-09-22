@@ -2271,7 +2271,7 @@ ConsoleInputBaseReinitialize (
     );
 
 NTSTATUS
-ConsoleCreateLocalInputCnsole (
+ConsoleCreateLocalInputConsole (
     VOID
     );
 
@@ -2481,11 +2481,6 @@ ConsoleEfiUgaSetResolution  (
     _In_ PBL_GRAPHICS_CONSOLE GraphicsConsole,
     _In_ PBL_DISPLAY_MODE DisplayMode,
     _In_ ULONG DisplayModeCount
-    );
-
-NTSTATUS
-ConsoleCreateLocalInputConsole (
-    VOID
     );
 
 NTSTATUS
