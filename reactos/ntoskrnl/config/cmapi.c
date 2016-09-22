@@ -414,7 +414,7 @@ CmpQueryKeyData(IN PHHIVE Hive,
             *ResultLength = Size;
             Status = STATUS_SUCCESS;
 
-            /* Check if the bufer we got is too small */
+            /* Check if the buffer we got is too small */
             if (Length < MinimumSize)
             {
                 /* Let the caller know and fail */

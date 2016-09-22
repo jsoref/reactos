@@ -1727,7 +1727,7 @@ CmpRemoveSubKey(IN PHHIVE Hive,
                                                   Node->NameLength);
         SearchName.MaximumLength = SearchName.Length;
 
-        /* Do we need an extra bufer? */
+        /* Do we need an extra buffer? */
         if (SearchName.MaximumLength > sizeof(Buffer))
         {
             /* Allocate one */

@@ -249,7 +249,7 @@ exactly 13 characters long (excluding the terminating zero).
 
 CAUTION: A statement containing more than one call on this function, such as
 printf("%s, %s", edit_with_commas(a), edit_with_commas(b)), will produce
-incorrect results because all calls use the same static bufffer.
+incorrect results because all calls use the same static buffer.
 -----------------------------------------------------------------------------*/
 
 static char *edit_with_commas(DWORD x, BOOL pad)
