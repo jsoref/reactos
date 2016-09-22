@@ -865,7 +865,7 @@ typedef struct _DEVICE_NODE
 } DEVICE_NODE, *PDEVICE_NODE;
 
 //
-// Resource Aribtrer Entry
+// Resource Arbiter Entry
 //
 typedef struct _PI_RESOURCE_ARBITER_ENTRY
 {
