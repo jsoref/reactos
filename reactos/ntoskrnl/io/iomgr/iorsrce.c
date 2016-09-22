@@ -862,7 +862,7 @@ IoReportResourceUsage(PUNICODE_STRING DriverClassName,
       *       DeviceList - List of resources which should be claimed for the
       *       device.
       *       DeviceListSize - Size of the per-device resource list in bytes.
-      *       OverrideConflict - True if the resources should be cliamed
+      *       OverrideConflict - True if the resources should be claimed
       *       even if a conflict is found.
       *       ConflictDetected - Points to a variable that receives TRUE if
       *       a conflict is detected with another driver.
