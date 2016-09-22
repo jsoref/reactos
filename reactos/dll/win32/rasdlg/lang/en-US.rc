@@ -1314,7 +1314,7 @@ BEGIN
     AUTOCHECKBOX "&Use pre-shared key for authentication", 1604, 21, 15, 217, 10
     LTEXT "&Key:", 1602, 20, 31, 44, 12
     EDITTEXT 1605, 66, 30, 172, 12, ES_AUTOHSCROLL
-    AUTOCHECKBOX "Allow certificiates from my user store in addition to machine certificates", 1606, 20, 50, 242, 13, WS_DISABLED
+    AUTOCHECKBOX "Allow certificates from my user store in addition to machine certificates", 1606, 20, 50, 242, 13, WS_DISABLED
     AUTOCHECKBOX "Use a specific certificate", 1607, 20, 67, 239, 10, WS_DISABLED
     PUSHBUTTON "Select", 1608, 31, 84, 50, 14, WS_DISABLED
     COMBOBOX 1610, 91, 84, 135, 30, CBS_DROPDOWN | CBS_SORT | WS_DISABLED | WS_VSCROLL | NOT WS_TABSTOP
