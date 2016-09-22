@@ -148,7 +148,7 @@ MmWithdrawSectionPage(PMM_SECTION_SEGMENT Segment,
 
 This function determines whether the segment holds the very last reference to
 the page being considered and if so, writes it back or discards it as
-approriate.  One small niggle here is that we might be holding the last
+appropriate.  One small niggle here is that we might be holding the last
 reference to the section segment associated with this page.  That happens
 when the segment is destroyed at the same time that an active swap operation
 is occurring, and all maps were already withdrawn.  In that case, it's our

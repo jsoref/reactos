@@ -165,7 +165,7 @@ from this buffer and you write output data to the same buffer, overwriting
 the input data.
 
 Before calling IoCompleteRequest, you must
-- set IoStatus.Status to an approriate NtStatus
+- set IoStatus.Status to an appropriate NtStatus
 - if IoStatus.Status == STATUS_SUCCESS
  set IoStatus.Information to the
  number of bytes you want copied
@@ -252,7 +252,7 @@ return status pending
 Device Driver Completion Routine perspective
 
 standard completion routine operations
-set IoStatus.Status to an approriate NtStatus
+set IoStatus.Status to an appropriate NtStatus
 IoStatus.Information is not needed
 completete the request
 
@@ -333,7 +333,7 @@ return status pending
 Device Driver Completion Routine perspective
 
 standard completion routine operations
-set IoStatus.Status to an approriate NtStatus
+set IoStatus.Status to an appropriate NtStatus
 IoStatus.Information is not needed
 completete the request
 

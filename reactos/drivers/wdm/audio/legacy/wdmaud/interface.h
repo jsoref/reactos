@@ -76,7 +76,7 @@ typedef struct
 ///              InputBufferSize is size of WDMAUD_DEVICE_INFO structure
 /// Note:        DeviceType identifies the device type, DeviceIndex the index, WaveFormatEx the device details
 /// Result:      is returned in hDevice
-/// Return Code: STATUS_SUCCESS indicates success, otherwise appropiate error code
+/// Return Code: STATUS_SUCCESS indicates success, otherwise appropriate error code
 /// Prequsites:  none
 
 #define IOCTL_OPEN_WDMAUD \

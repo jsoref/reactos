@@ -523,7 +523,7 @@ IopCreateArcNamesDisk(IN PLOADER_PARAMETER_BLOCK LoaderBlock,
                     Status = IoStatusBlock.Status;
                 }
 
-                /* If we didn't get the appriopriate data, just skip that disk */
+                /* If we didn't get the appropriate data, just skip that disk */
                 if (!NT_SUCCESS(Status))
                 {
                    ObDereferenceObject(FileObject);
