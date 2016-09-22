@@ -5200,7 +5200,7 @@ NtFreeVirtualMemory(IN HANDLE ProcessHandle,
         }
     }
 
-    DPRINT("NtFreeVirtualMemory: Process 0x%p, Adress 0x%p, size 0x%x, FreeType %x.\n",
+    DPRINT("NtFreeVirtualMemory: Process 0x%p, Address 0x%p, size 0x%x, FreeType %x.\n",
         Process, PBaseAddress, PRegionSize, FreeType);
 
     //

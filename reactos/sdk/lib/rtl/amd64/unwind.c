@@ -274,7 +274,7 @@ RtlpTryToUnwindEpilog(
 
         LocalContext.Rsp = GetReg(&LocalContext, Reg);
 
-        /* Get adressing mode */
+        /* Get addressing mode */
         Mod = (Instr >> 22) & 0x3;
         if (Mod == 0)
         {

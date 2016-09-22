@@ -2881,7 +2881,7 @@ WSPStringToAddress(IN LPWSTR AddressString,
             for we need to be sure it is zero when we come to while */
             memset(lpAddress, 0, sizeof(SOCKADDR_IN));
 
-            /* Set right adress family */
+            /* Set right address family */
             sockaddr->sin_family = AF_INET;
 
             /* Get port number */

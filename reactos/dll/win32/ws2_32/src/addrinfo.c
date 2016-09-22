@@ -917,7 +917,7 @@ GetNameInfoW(IN CONST SOCKADDR *pSockaddr,
         return EAI_FAMILY;
     } 
 
-    /* Check for valid socket adress length */
+    /* Check for valid socket address length */
     if ((DWORD)SockaddrLength < AddressLength)
         return WSAEFAULT;
 

@@ -643,8 +643,8 @@ BOOLEAN IsAddressValid(ULONG address)
 // IsAddressWriteable()
 //
 // returns:
-//  TRUE    if adress/page is writeable
-//  FALSE   if adress/page is not writeable
+//  TRUE    if address/page is writeable
+//  FALSE   if address/page is not writeable
 //
 //*************************************************************************
 BOOLEAN IsAddressWriteable(ULONG address)

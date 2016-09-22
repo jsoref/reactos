@@ -1410,7 +1410,7 @@ LsapLogonUser(PLSA_API_MSG RequestMsg,
             return STATUS_INSUFFICIENT_RESOURCES;
         }
 
-        /* Read the authentication info from the callers adress space */
+        /* Read the authentication info from the callers address space */
         Status = NtReadVirtualMemory(LogonContext->ClientProcessHandle,
                                      RequestMsg->LogonUser.Request.AuthenticationInformation,
                                      LocalAuthInfo,

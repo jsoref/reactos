@@ -220,7 +220,7 @@ INT DisplayArpEntries(PTCHAR pszInetAddr, PTCHAR pszIfAddr)
     for (i=0; i < pIpNetTable->dwNumEntries; i++)
     {
 
-        /* if the user has supplied their own internet addesss *
+        /* if the user has supplied their own internet address *
          * only print the arp entry which matches that */
         if (pszInetAddr)
         {

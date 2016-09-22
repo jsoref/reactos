@@ -208,7 +208,7 @@ BlMmMapPhysicalAddressEx (
         goto Quickie;
     }
 
-    /* Compute the final adress where the mapping was made */
+    /* Compute the final address where the mapping was made */
     MappedBase = (PVOID)((ULONG_PTR)MappingAddress +
                          PhysicalAddress.LowPart -
                          MappedAddress.LowPart);

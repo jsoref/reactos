@@ -49,7 +49,7 @@
   the LPC API of the OS2SS.EXE - the actual subsystem. <br>
   Every OS/2 program that is loaded, is linked with DOSCALLS.DLL and NTDLL.DLL 
   - the interface to the NT-kernel. Since DOSCALLS is implemented using NTDLL.DLL, 
-  every OS/2 app has it in its adress space. Many functions in DOSCALLS.DLL are 
+  every OS/2 app has it in its address space. Many functions in DOSCALLS.DLL are 
   implemented by just wrapping NTDLL.DLL functions. Some functions however need 
   assistance by the subsystem. For this reason the app makes an LPC to OS2SS.EXE. 
   LPC means local procedure call and it is a very fast version of RPC. Together 

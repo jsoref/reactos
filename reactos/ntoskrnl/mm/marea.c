@@ -357,7 +357,7 @@ MmFreeMemoryArea(
             ASSERT(MemoryArea->EndingVpn + 1 < (ULONG_PTR)MmSystemRangeStart >> PAGE_SHIFT);
             ASSERT(MemoryArea->Type == MEMORY_AREA_SECTION_VIEW || MemoryArea->Type == MEMORY_AREA_CACHE);
 
-            /* MmCleanProcessAddressSpace might have removed it (and this would be MmDeleteProcessAdressSpace) */
+            /* MmCleanProcessAddressSpace might have removed it (and this would be MmDeleteProcessAddressSpace) */
             ASSERT(MemoryArea->VadNode.u.VadFlags.Spare != 0);
             if (((PMMVAD)MemoryArea->Vad)->u.VadFlags.Spare == 1)
             {

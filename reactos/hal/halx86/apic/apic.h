@@ -127,7 +127,7 @@ enum
 };
 
 
-typedef union _APIC_BASE_ADRESS_REGISTER
+typedef union _APIC_BASE_ADDRESS_REGISTER
 {
     ULONG64 Long;
     struct
@@ -139,7 +139,7 @@ typedef union _APIC_BASE_ADRESS_REGISTER
         ULONG64 BaseAddress:40;
         ULONG64 ReservedMBZ:12;
     };
-} APIC_BASE_ADRESS_REGISTER;
+} APIC_BASE_ADDRESS_REGISTER;
 
 typedef union _APIC_SPURIOUS_INERRUPT_REGISTER
 {
