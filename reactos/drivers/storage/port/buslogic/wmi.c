@@ -131,7 +131,7 @@ Return Value:
                                                 Srb->DataTransferLength,
                                                 Srb->DataBuffer);
 
-       // We assune that the wmi request will never pend so that we can
+       // We assume that the wmi request will never pend so that we can
        // allocate the requestContext from stack. If the WMI request could
        // ever pend then we'd need to allocate the request context from
        // the SRB extension.
