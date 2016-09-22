@@ -1905,7 +1905,7 @@ FltpAttachToFileSystemDevice(_In_ PDEVICE_OBJECT DeviceObject,
                             &NewDeviceObject);
     if (!NT_SUCCESS(Status))
     {
-        DPRINT1("Failed to create a DO for attatching to a FS : 0x%X\n", Status);
+        DPRINT1("Failed to create a DO for attaching to a FS : 0x%X\n", Status);
         return Status;
     }
 
