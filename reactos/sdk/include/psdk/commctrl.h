@@ -2890,7 +2890,7 @@ extern "C" {
   typedef int (CALLBACK *PFNLVGROUPCOMPARE)(int,int,void *);
 
 #define LVM_SORTGROUPS (LVM_FIRST+158)
-#define ListView_SortGroups(hwnd,_pfnGroupCompate,_plv) SNDMSG((hwnd),LVM_SORTGROUPS,(WPARAM)_pfnGroupCompate,(LPARAM)_plv)
+#define ListView_SortGroups(hwnd,_pfnGroupCompare,_plv) SNDMSG((hwnd),LVM_SORTGROUPS,(WPARAM)_pfnGroupCompare,(LPARAM)_plv)
 
   typedef struct tagLVINSERTGROUPSORTED {
     PFNLVGROUPCOMPARE pfnGroupCompare;
