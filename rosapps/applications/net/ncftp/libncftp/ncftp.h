@@ -59,7 +59,7 @@
 #include "ncftp_errno.h"
 
 /* This is used to verify validty of the data passed in.
- * It also specifies the minimum version that is binary-compatibile with
+ * It also specifies the minimum version that is binary-compatible with
  * this version.  (So this may not necessarily be kLibraryVersion.)
  */
 #define kLibraryMagic "LibNcFTP 3.0.6"
