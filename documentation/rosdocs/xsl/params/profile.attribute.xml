@@ -16,7 +16,7 @@
 
 <refsect1><title>Description</title>
 
-<para>This parameter is used in conjuction with <link
+<para>This parameter is used in conjunction with <link
 linkend="profile.value"><parameter>profile.value</parameter></link>.</para>
 
 <para>This parameter has effect only when you are using profiling

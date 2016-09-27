@@ -3979,7 +3979,7 @@ ones (<filename moreinfo="none">docbook.xsl</filename>,
 
 <refsect1><title>Description</title>
 
-<para>This parameter is used in conjuction with <link linkend="profile.value"><parameter moreinfo="none">profile.value</parameter></link>.</para>
+<para>This parameter is used in conjunction with <link linkend="profile.value"><parameter moreinfo="none">profile.value</parameter></link>.</para>
 
 <para>This parameter has effect only when you are using profiling
 stylesheets (<filename moreinfo="none">profile-docbook.xsl</filename>,
