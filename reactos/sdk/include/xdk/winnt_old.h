@@ -1800,7 +1800,7 @@ typedef struct _CONTEXT {
 /*  N.B. This frame must be exactly a multiple of 16 bytes in length. */
 
 /*  This frame has a several purposes: 1) it is used as an argument to */
-/*  NtContinue, 2) it is used to constuct a call frame for APC delivery, */
+/*  NtContinue, 2) it is used to construct a call frame for APC delivery, */
 /*  3) it is used to construct a call frame for exception dispatching */
 /*  in user mode, and 4) it is used in the user level thread creation */
 /*  routines. */
