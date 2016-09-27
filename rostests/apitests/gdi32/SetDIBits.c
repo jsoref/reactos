@@ -62,7 +62,7 @@ void Test_SetDIBits_1bpp()
     hdc = CreateCompatibleDC(0);
     if(!hdc)
     {
-        trace("No device contexr !?\n");
+        trace("No device context !?\n");
         return;
     }
 

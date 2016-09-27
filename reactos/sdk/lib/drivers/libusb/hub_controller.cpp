@@ -3388,7 +3388,7 @@ InitRootHub(IN PVOID Context)
     WorkItem->CallbackRoutine(WorkItem->CallbackContext);
 
     //
-    // free contextg
+    // free context
     //
     ExFreePoolWithTag(Context, TAG_USBLIB);
 }
