@@ -893,7 +893,7 @@ InitializeMachineInformation(VOID)
         SuiteTypeMessage = SAC_NO_SUITE_MSG;
     }
 
-    /* Get the string that correponds to the SKU type */
+    /* Get the string that corresponds to the SKU type */
     MessageBuffer = GetMessage(SuiteTypeMessage);
     if (!MessageBuffer)
     {
