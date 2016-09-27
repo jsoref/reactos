@@ -249,15 +249,15 @@ WSPRecv(SOCKET Handle,
         }
         if (lpCompletionRoutine == NULL)
         {
-            /* Using Overlapped Structure, but no Completition Routine, so no need for APC */
+            /* Using Overlapped Structure, but no Completion Routine, so no need for APC */
             APCContext = lpOverlapped;
             APCFunction = NULL;
             Event = lpOverlapped->hEvent;
         }
         else
         {
-            /* Using Overlapped Structure and a Completition Routine, so use an APC */
-            APCFunction = &AfdAPC; // should be a private io completition function inside us
+            /* Using Overlapped Structure and a Completion Routine, so use an APC */
+            APCFunction = &AfdAPC; // should be a private io completion function inside us
             APCContext = HeapAlloc(GlobalHeap, 0, sizeof(AFDAPCCONTEXT));
             if (!APCContext)
             {
@@ -288,7 +288,7 @@ WSPRecv(SOCKET Handle,
                                    NULL,
                                    0);
 
-    /* Wait for completition of not overlapped */
+    /* Wait for completion of not overlapped */
     if (Status == STATUS_PENDING && lpOverlapped == NULL)
     {
         /* It's up to the protocol to time out recv.  We must wait
@@ -464,15 +464,15 @@ WSPRecvFrom(SOCKET Handle,
         }
         if (lpCompletionRoutine == NULL)
         {
-            /* Using Overlapped Structure, but no Completition Routine, so no need for APC */
+            /* Using Overlapped Structure, but no Completion Routine, so no need for APC */
             APCContext = lpOverlapped;
             APCFunction = NULL;
             Event = lpOverlapped->hEvent;
         }
         else
         {
-            /* Using Overlapped Structure and a Completition Routine, so use an APC */
-            APCFunction = &AfdAPC; // should be a private io completition function inside us
+            /* Using Overlapped Structure and a Completion Routine, so use an APC */
+            APCFunction = &AfdAPC; // should be a private io completion function inside us
             APCContext = HeapAlloc(GlobalHeap, 0, sizeof(AFDAPCCONTEXT));
             if (!APCContext)
             {
@@ -503,7 +503,7 @@ WSPRecvFrom(SOCKET Handle,
                                     NULL,
                                     0);
 
-    /* Wait for completition of not overlapped */
+    /* Wait for completion of not overlapped */
     if (Status == STATUS_PENDING && lpOverlapped == NULL)
     {
         WaitForSingleObject(SockEvent, INFINITE); // BUGBUG, shouldn wait infintely for receive...
@@ -637,15 +637,15 @@ WSPSend(SOCKET Handle,
         }
         if (lpCompletionRoutine == NULL)
         {
-            /* Using Overlapped Structure, but no Completition Routine, so no need for APC */
+            /* Using Overlapped Structure, but no Completion Routine, so no need for APC */
             APCContext = lpOverlapped;
             APCFunction = NULL;
             Event = lpOverlapped->hEvent;
         }
         else
         {
-            /* Using Overlapped Structure and a Completition Routine, so use an APC */
-            APCFunction = &AfdAPC; // should be a private io completition function inside us
+            /* Using Overlapped Structure and a Completion Routine, so use an APC */
+            APCFunction = &AfdAPC; // should be a private io completion function inside us
             APCContext = HeapAlloc(GlobalHeap, 0, sizeof(AFDAPCCONTEXT));
             if (!APCContext)
             {
@@ -676,7 +676,7 @@ WSPSend(SOCKET Handle,
                                     NULL,
                                     0);
 
-    /* Wait for completition of not overlapped */
+    /* Wait for completion of not overlapped */
     if (Status == STATUS_PENDING && lpOverlapped == NULL)
     {
         WaitForSingleObject(SockEvent, INFINITE); // BUGBUG, shouldn wait infintely for send...
@@ -836,15 +836,15 @@ WSPSendTo(SOCKET Handle,
         }
         if (lpCompletionRoutine == NULL)
         {
-            /* Using Overlapped Structure, but no Completition Routine, so no need for APC */
+            /* Using Overlapped Structure, but no Completion Routine, so no need for APC */
             APCContext = lpOverlapped;
             APCFunction = NULL;
             Event = lpOverlapped->hEvent;
         }
         else
         {
-            /* Using Overlapped Structure and a Completition Routine, so use an APC */
-            APCFunction = &AfdAPC; // should be a private io completition function inside us
+            /* Using Overlapped Structure and a Completion Routine, so use an APC */
+            APCFunction = &AfdAPC; // should be a private io completion function inside us
             APCContext = HeapAlloc(GlobalHeap, 0, sizeof(AFDAPCCONTEXT));
             if (!APCContext)
             {
@@ -873,7 +873,7 @@ WSPSendTo(SOCKET Handle,
                                    NULL,
                                    0);
 
-    /* Wait for completition of not overlapped */
+    /* Wait for completion of not overlapped */
     if (Status == STATUS_PENDING && lpOverlapped == NULL)
     {
         /* BUGBUG, shouldn't wait infintely for send... */

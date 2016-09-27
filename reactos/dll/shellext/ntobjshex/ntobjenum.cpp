@@ -86,7 +86,7 @@ static DWORD NtOpenObject(OBJECT_TYPE type, PHANDLE phandle, DWORD access, LPCWS
     case TIMER_OBJECT:          return NtOpenTimer(phandle, access, &open_struct);
     case KEY_OBJECT:            return NtOpenKey(phandle, access, &open_struct);
     case EVENTPAIR_OBJECT:      return NtOpenEventPair(phandle, access, &open_struct);
-    case IOCOMPLETITION_OBJECT: return NtOpenIoCompletion(phandle, access, &open_struct);
+    case IOCOMPLETION_OBJECT:   return NtOpenIoCompletion(phandle, access, &open_struct);
     case FILE_OBJECT:           return NtOpenFile(phandle, access, &open_struct, &ioStatusBlock, FILE_SHARE_READ | FILE_SHARE_WRITE | FILE_SHARE_DELETE, 0);
     default:
         return ERROR_INVALID_FUNCTION;

@@ -3563,7 +3563,7 @@ NtQueryFullAttributesFile(IN POBJECT_ATTRIBUTES ObjectAttributes,
  *        Handle to file object to cancel requests for. No specific
  *        access rights are needed.
  * @param IoStatusBlock
- *        Pointer to status block which is filled with final completition
+ *        Pointer to status block which is filled with final completion
  *        status on successful return.
  *
  * @return Status.

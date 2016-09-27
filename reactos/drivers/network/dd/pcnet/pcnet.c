@@ -22,7 +22,7 @@
  *     09-Sep-2003 vizzini - Created
  *     10-Oct-2004 navaraf - Fix receive to work on VMware adapters (
  *                           need to set busmaster bit on PCI).
- *                         - Indicate receive completition.
+ *                         - Indicate receive completion.
  *                         - Implement packet transmitting.
  *                         - Don't read slot number from registry and
  *                           report itself as NDIS 5.0 miniport.

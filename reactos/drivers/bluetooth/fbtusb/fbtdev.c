@@ -1118,7 +1118,7 @@ VOID NTAPI CancelSelectSuspend(IN PDEVICE_EXTENSION DeviceExtension)
     {
         // This routine has the irp pointer.
         // It is safe to call IoCancelIrp because we know that
-        // the compleiton routine will not free this irp unless...
+        // the completion routine will not free this irp unless...
         //
         //
         if(IoCancelIrp(irp))

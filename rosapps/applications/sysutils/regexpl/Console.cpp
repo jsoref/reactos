@@ -744,7 +744,7 @@ Paste:
 
 			if (pchCompletion) // If completion found
 			{
-				// Set cursor position to compeltion position
+				// Set cursor position to completion position
 				m_CursorPosition = CompletionPosition;
 				if (!SetConsoleCursorPosition(m_hStdOut,m_CursorPosition))
           return FALSE;

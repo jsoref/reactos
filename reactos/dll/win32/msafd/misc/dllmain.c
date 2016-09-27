@@ -1202,7 +1202,7 @@ WSPSelect(IN int nfds,
 
     TRACE("DeviceIoControlFile => %x\n", Status);
 
-    /* Wait for Completition */
+    /* Wait for Completion */
     if (Status == STATUS_PENDING)
     {
         WaitForSingleObject(SockEvent, INFINITE);
@@ -3001,15 +3001,15 @@ GetSocketInformation(PSOCKET_INFORMATION Socket,
         }
         if (CompletionRoutine == NULL)
         {
-            /* Using Overlapped Structure, but no Completition Routine, so no need for APC */
+            /* Using Overlapped Structure, but no Completion Routine, so no need for APC */
             APCContext = Overlapped;
             APCFunction = NULL;
             Event = Overlapped->hEvent;
         }
         else
         {
-            /* Using Overlapped Structure and a Completition Routine, so use an APC */
-            APCFunction = &AfdInfoAPC; // should be a private io completition function inside us
+            /* Using Overlapped Structure and a Completion Routine, so use an APC */
+            APCFunction = &AfdInfoAPC; // should be a private io completion function inside us
             APCContext = HeapAlloc(GlobalHeap, 0, sizeof(AFDAPCCONTEXT));
             if (!APCContext)
             {
@@ -3140,15 +3140,15 @@ SetSocketInformation(PSOCKET_INFORMATION Socket,
         }
         if (CompletionRoutine == NULL)
         {
-            /* Using Overlapped Structure, but no Completition Routine, so no need for APC */
+            /* Using Overlapped Structure, but no Completion Routine, so no need for APC */
             APCContext = Overlapped;
             APCFunction = NULL;
             Event = Overlapped->hEvent;
         }
         else
         {
-            /* Using Overlapped Structure and a Completition Routine, so use an APC */
-            APCFunction = &AfdInfoAPC; // should be a private io completition function inside us
+            /* Using Overlapped Structure and a Completion Routine, so use an APC */
+            APCFunction = &AfdInfoAPC; // should be a private io completion function inside us
             APCContext = HeapAlloc(GlobalHeap, 0, sizeof(AFDAPCCONTEXT));
             if (!APCContext)
             {
@@ -3260,7 +3260,7 @@ int CreateContext(PSOCKET_INFORMATION Socket)
                                    NULL,
                                    0);
 
-    /* Wait for Completition */
+    /* Wait for Completion */
     if (Status == STATUS_PENDING)
     {
         WaitForSingleObject(SockEvent, INFINITE);
