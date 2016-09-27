@@ -30,7 +30,7 @@ Info: w3seek rewrote some (he doesn't know how much) of the code so it
 would work with the new structure definitions that were added to the ndk
 around June, 2004. w3seek changed it to use rtl handle tables (as per
 definitions of the new atom structures) and added support for pinned atoms.
-The implementation containted a few bugs that were later fixed by others. Atom
+The implementation contained a few bugs that were later fixed by others. Atom
 tables are more or less just referenced hash tables, nothing complicated.
 Result: Clean
 
