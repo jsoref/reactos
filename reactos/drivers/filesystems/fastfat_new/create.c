@@ -889,7 +889,7 @@ FatiCreate(IN PFAT_IRP_CONTEXT IrpContext,
             }
             else
             {
-                /* Find the coresponding FCB */
+                /* Find the corresponding FCB */
                 NextFcb = FatFindFcb(IrpContext,
                                      &Fcb->Dcb.SplayLinksAnsi,
                                      (PSTRING)&AnsiFirstName,
