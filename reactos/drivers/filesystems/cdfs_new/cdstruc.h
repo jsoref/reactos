@@ -244,7 +244,7 @@ typedef struct _CD_NAME {
     UNICODE_STRING FileName;
 
     //
-    //  String containging the version number.
+    //  String containing the version number.
     //
 
     UNICODE_STRING VersionString;

@@ -80,7 +80,7 @@ int __fdtable_entry_nextavail(__fdtable_t * fdtable, int fileno)
  /* index of the bitmap cell containing nUnusedIndex */
  nCurMapIndex = nUnusedIndex / 32;
 
- /* get a copy of the bitmap cell containg nUnusedIndex, and shift it to the right
+ /* get a copy of the bitmap cell containing nUnusedIndex, and shift it to the right
     so that the rightmost (least significative) bit is the one referencing nUnusedIndex */
  nCurMapCell = fdtable->DescriptorsBitmap[nCurMapIndex] >> (nUnusedIndex % 32);
 

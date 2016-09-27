@@ -27,7 +27,7 @@ public:
   // Parameters:
   //   hKey - handle to opened key.
   //   pszPath - optional path string. NULL if pszKeyName is the needed name.
-  //   pszKeyName - pointer to buffer conatining name of key.
+  //   pszKeyName - pointer to buffer containing name of key.
   //   CurrentAccess - Access of hKey.
   //
   // Remarks:
