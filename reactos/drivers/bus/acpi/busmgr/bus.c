@@ -303,7 +303,7 @@ acpi_bus_set_power (
 	 * Transition Power
 	 * ----------------
 	 * On transitions to a high-powered state we first apply power (via
-	 * power resources) then evalute _PSx.  Conversly for transitions to
+	 * power resources) then evalute _PSx.  Conversely for transitions to
 	 * a lower-powered state.
 	 */
 	if (state < device->power.state) {
