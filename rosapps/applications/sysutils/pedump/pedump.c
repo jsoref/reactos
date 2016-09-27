@@ -1948,7 +1948,7 @@ StringExpands (
 // This function is written by sang cho
 //                                                         October 5, 1997
 //
-/* translate condesed import function name */
+/* translate condensed import function name */
 char * WINAPI
 TranslateFunctionName (
 			char *psz)
