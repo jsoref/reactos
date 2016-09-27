@@ -352,7 +352,7 @@ IMAGE_IMPORT_BY_NAME, *PIMAGE_IMPORT_BY_NAME;
 //
 // This structure allows fast lookup by either name or number, but for any
 // given resource entry only one form of lookup is supported, not both.
-// This is consistant with the syntax of the .RC file and the .RES file.
+// This is consistent with the syntax of the .RC file and the .RES file.
 //
 
 // Predefined resource types ... there may be some more, but I don't have
