@@ -765,7 +765,7 @@ Paste:
 
 				if (dwCompletionStringSize)
 				{
-          // Copy competion into main buffer
+          // Copy competition into main buffer
 					_tcsncpy(m_pchBuffer+dwCompletionOffset,pchCompletion,dwCompletionStringSize);
 
 					// Write completion string to console

@@ -304,7 +304,7 @@ NTSYSCALLAPI
 NTSTATUS
 NTAPI
 NtOpenIoCompletion(
-    _Out_ PHANDLE CompetionPort,
+    _Out_ PHANDLE CompetitionPort,
     _In_ ACCESS_MASK DesiredAccess,
     _In_ POBJECT_ATTRIBUTES ObjectAttributes
 );
@@ -810,7 +810,7 @@ NTSYSAPI
 NTSTATUS
 NTAPI
 ZwOpenIoCompletion(
-    _Out_ PHANDLE CompetionPort,
+    _Out_ PHANDLE CompetitionPort,
     _In_ ACCESS_MASK DesiredAccess,
     _In_ POBJECT_ATTRIBUTES ObjectAttributes
 );
