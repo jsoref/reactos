@@ -298,7 +298,7 @@ _SEH3$_except_handler(
                 /* Get the filter result */
                 FilterResult = _SEH3$_GetFilterResult(CurrentFrame);
 
-                /* Check, if continuuing is requested */
+                /* Check, if continuing is requested */
                 if (FilterResult == EXCEPTION_CONTINUE_EXECUTION)
                 {
                     return ExceptionContinueExecution;
