@@ -60,7 +60,7 @@ __attribute__ ((section(".asmdef")))
 
 ASMGENDATA Table[] =
 {
-/* ARCHITECTURE SPECIFIC CONTSTANTS ******************************************/
+/* ARCHITECTURE SPECIFIC CONSTANTS ******************************************/
 #ifdef _M_IX86
 #include "ks386.template.h"
 #elif defined(_M_AMD64)
