@@ -467,11 +467,11 @@ struct Point : public POINT
 };
 
 
- /// transform coordinates in a RECT from client to screen coordiantes
+ /// transform coordinates in a RECT from client to screen coordinates
 inline void ClientToScreen(HWND hwnd, RECT* prect)
  {::ClientToScreen(hwnd,(LPPOINT)&prect->left); ::ClientToScreen(hwnd,(LPPOINT)&prect->right);}
 
- /// transform coordinates in a RECT from screen to client coordiantes
+ /// transform coordinates in a RECT from screen to client coordinates
 inline void ScreenToClient(HWND hwnd, RECT* prect)
  {::ScreenToClient(hwnd,(LPPOINT)&prect->left); ::ScreenToClient(hwnd,(LPPOINT)&prect->right);}
 
