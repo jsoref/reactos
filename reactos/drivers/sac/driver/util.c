@@ -1236,7 +1236,7 @@ GetMessageLineCount(IN ULONG MessageIndex)
     Buffer = GetMessage(MessageIndex);
     if (Buffer)
     {
-        /* Scan it looking for new lines, and increment the conut each time */
+        /* Scan it looking for new lines, and increment the count each time */
         while (*Buffer) if (*Buffer++ == L'\n') ++LineCount;
     }
 
