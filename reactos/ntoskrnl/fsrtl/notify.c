@@ -1483,7 +1483,7 @@ FsRtlNotifyFullChangeDirectory(IN PNOTIFY_SYNC NotifySync,
  * @name FsRtlNotifyFullReportChange
  * @implemented
  *
- * Complets the pending notify IRPs.
+ * Completes the pending notify IRPs.
  *
  * @param NotifySync
  *        Synchronization object pointer
@@ -1577,7 +1577,7 @@ FsRtlNotifyInitializeSync(IN PNOTIFY_SYNC *NotifySync)
  * @name FsRtlNotifyReportChange
  * @implemented
  *
- * Complets the pending notify IRPs.
+ * Completes the pending notify IRPs.
  *
  * @param NotifySync
  *        Synchronization object pointer
