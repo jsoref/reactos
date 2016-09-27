@@ -460,7 +460,7 @@ LookupAddressForName(IN LPCSTR NodeName,
         /* Exit if we have a result */
         if (*pptResult) break;
 
-        /* Don't loop continously if this is a DNS misconfiguration */
+        /* Don't loop continuously if this is a DNS misconfiguration */
         if ((!strlen(Alias)) || (!strcmp(Name, Alias)) || (++AliasCount == 16))
         {
             /* Exit the loop with a failure */
