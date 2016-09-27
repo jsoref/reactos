@@ -166,7 +166,7 @@ DrvSetPointerShape(
         }
     }
 
-    /* we goto hw mouse pointer then we contnue filling in more info */
+    /* we goto hw mouse pointer then we continue filling in more info */
 
     /* calc the mouse point positions */
     if ((x != -1) || (y != -1))

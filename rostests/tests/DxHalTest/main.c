@@ -212,7 +212,7 @@ int WINAPI WinMain (HINSTANCE hInst, HINSTANCE hPrevInst,
     // DeleteDC(hdc);
 
     /* we need reanable it if screen res have changes, and some bad drv need be reanble very few
-	   to contiune */
+	   to continue */
 	/*
     if (!DdReenableDirectDrawObject(&mDDrawGlobal, &newmode))
     {
