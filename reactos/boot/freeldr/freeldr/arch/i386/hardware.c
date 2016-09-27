@@ -1792,7 +1792,7 @@ PcHwIdle(VOID)
 }
 
 VOID
-FrLdrCheckCpuCompatiblity(VOID)
+FrLdrCheckCpuCompatibility(VOID)
 {
     INT CpuInformation[4] = {-1};
     ULONG NumberOfIds;
