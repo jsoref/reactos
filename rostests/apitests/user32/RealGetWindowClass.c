@@ -80,7 +80,7 @@ static TestData RealClassTestData[] =
 };
 
 //
-// The Control Class Atoms are consecitively issued.
+// The Control Class Atoms are consecutively issued.
 //
 
 void Test_ClassAtoms()
