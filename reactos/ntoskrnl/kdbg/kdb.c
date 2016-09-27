@@ -594,7 +594,7 @@ KdbpInsertBreakPoint(
         return STATUS_UNSUCCESSFUL;
     }
 
-    /* Parse conditon expression string and duplicate it */
+    /* Parse condition expression string and duplicate it */
     if (ConditionExpression)
     {
         Condition = KdbpRpnParseExpression(ConditionExpression, &ErrOffset, ErrMsg);
