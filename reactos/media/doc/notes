@@ -254,7 +254,7 @@ Device Driver Completion Routine perspective
 standard completion routine operations
 set IoStatus.Status to an appropriate NtStatus
 IoStatus.Information is not needed
-completete the request
+complete the request
 
 
 
@@ -335,7 +335,7 @@ Device Driver Completion Routine perspective
 standard completion routine operations
 set IoStatus.Status to an appropriate NtStatus
 IoStatus.Information is not needed
-completete the request
+complete the request
 
 
 
