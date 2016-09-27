@@ -62,7 +62,7 @@
 #define GDI_OBJECT_TYPE_ENUMFONT      0x00160000
 #define GDI_OBJECT_TYPE_DRIVEROBJ     0x001C0000
 
-/* Confrim on XP value is taken from NtGdiCreateDirectDrawObject */
+/* Confirm on XP value is taken from NtGdiCreateDirectDrawObject */
 #define GDI_OBJECT_TYPE_DIRECTDRAW  0x00200000
 
 /* Following object types are derived types from the above base types
