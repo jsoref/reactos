@@ -675,7 +675,7 @@ PciIsCriticalDeviceClass(IN UCHAR BaseClass,
     /* Check for system or bridge devices */
     if (BaseClass == PCI_CLASS_BASE_SYSTEM_DEV)
     {
-        /* Interrupt controlers are critical */
+        /* Interrupt controllers are critical */
         return SubClass == PCI_SUBCLASS_SYS_INTERRUPT_CTLR;
     }
     else if (BaseClass == PCI_CLASS_BRIDGE_DEV)
