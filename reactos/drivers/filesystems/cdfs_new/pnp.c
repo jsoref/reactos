@@ -371,7 +371,7 @@ Return Value:
         //
         //  The reason this is the case is that handles/fileobjects place a reference
         //  on the device objects they overly.  In the filesystem case, these references
-        //  are on our target devices.  PnP correcly thinks that if references remain
+        //  are on our target devices.  PnP correctly thinks that if references remain
         //  on the device objects in the stack that someone has a handle, and that this
         //  counts as a reason to not succeed the query - even though every interrogated
         //  driver thinks that it is OK.
