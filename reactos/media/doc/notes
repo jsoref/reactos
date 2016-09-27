@@ -419,7 +419,7 @@ Something(
 >runs in the context of the calling thread so DeviceIoControl hasn't
 >returned yet (?? or so I think) so aDataI
 n will still be valid at the
->time IOManager copyes it to its buffer. So, this apears to work ok (at
+>time IOManager copies it to its buffer. So, this apears to work ok (at
 >least in my opinion).
 >
 >Does I/O Manager use the Input buffer from the call to the Win32
