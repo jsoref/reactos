@@ -1544,7 +1544,7 @@ MiFindInitializationCode(OUT PVOID *StartVa,
                         }
                         else
                         {
-                            /* Non-contigous discard flag, or no flag, break out */
+                            /* Non-contiguous discard flag, or no flag, break out */
                             break;
                         }
                     }

@@ -432,7 +432,7 @@ MiInitMachineDependent(IN PLOADER_PARAMETER_BLOCK LoaderBlock)
     while (PointerPte <= LastPte)
     {
         //
-        // Use one of our contigous pages
+        // Use one of our contiguous pages
         //
         TempPte.u.Hard.PageFrameNumber = PageFrameIndex++;
         MI_WRITE_VALID_PTE(PointerPte++, TempPte);
