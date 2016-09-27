@@ -29,14 +29,14 @@ void Test_GetRandomRgn_Params()
     hdc = CreateCompatibleDC(0);
     if (!hdc)
     {
-        printf("Coun't create a dc\n");
+        printf("Couldn't create a dc\n");
         return;
     }
 
     hrgn = CreateRectRgn(11, 17, 23, 42);
     if (!hrgn)
     {
-        printf("Coun't create a region\n");
+        printf("Couldn't create a region\n");
         return;
     }
 
@@ -119,14 +119,14 @@ void Test_GetRandomRgn_CLIPRGN()
     hrgn1 = CreateRectRgn(11, 17, 23, 42);
     if (!hrgn1)
     {
-        printf("Coun't create a region\n");
+        printf("Couldn't create a region\n");
         return;
     }
 
     hdc = CreateCompatibleDC(0);
     if (!hdc)
     {
-        printf("Coun't create a dc\n");
+        printf("Couldn't create a dc\n");
         return;
     }
 
@@ -194,14 +194,14 @@ void Test_GetRandomRgn_SYSRGN()
     hrgn1 = CreateRectRgn(11, 17, 23, 42);
     if (!hrgn1)
     {
-        printf("Coun't create a region\n");
+        printf("Couldn't create a region\n");
         return;
     }
 
     hdc = CreateCompatibleDC(0);
     if (!hdc)
     {
-        printf("Coun't create a dc\n");
+        printf("Couldn't create a dc\n");
         return;
     }
 
@@ -278,14 +278,14 @@ void Test_GetRandomRgn_RGN5()
     hrgn1 = CreateRectRgn(11, 17, 23, 42);
     if (!hrgn1)
     {
-        printf("Coun't create a region\n");
+        printf("Couldn't create a region\n");
         return;
     }
 
     hdc = CreateCompatibleDC(0);
     if (!hdc)
     {
-        printf("Coun't create a dc\n");
+        printf("Couldn't create a dc\n");
         return;
     }
 #if 0 // this is vista+

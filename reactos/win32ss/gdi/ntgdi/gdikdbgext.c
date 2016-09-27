@@ -220,7 +220,7 @@ KdbCommand_Gdi_handle(char *argv)
     }
     else
     {
-        DbgPrint("Coudn't access ENTRY. Probably paged out.\n");
+        DbgPrint("Couldn't access ENTRY. Probably paged out.\n");
     }
 
     KeUnstackDetachProcess(&ApcState);
