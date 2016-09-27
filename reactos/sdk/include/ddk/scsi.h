@@ -2336,7 +2336,7 @@ typedef struct _MODE_FLEXIBLE_DISK_PAGE {
   UCHAR TrueReadySignal:1;
   UCHAR StepPlusePerCyclynder:4;
   UCHAR Reserved3:4;
-  UCHAR WriteCompenstation;
+  UCHAR WriteCompensation;
   UCHAR HeadLoadDelay;
   UCHAR HeadUnloadDelay;
   UCHAR Pin2Usage:4;
