@@ -1185,7 +1185,7 @@ CompareFiles(PDIRFINDINFO lpFile1,      /* [IN] A pointer to WIN32_FIND_DATA of 
   int i;
   long iComp = 0;   /* The comparison result */
 
-    /* Calculate critiries by order given from user */
+    /* Calculate criteria by order given from user */
     for (i = 0;i < lpFlags->stOrderBy.sCriteriaCount;i++)
     {
 
