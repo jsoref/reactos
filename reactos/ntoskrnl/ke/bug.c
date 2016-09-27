@@ -820,7 +820,7 @@ KeBugCheckWithTf(IN ULONG BugCheckCode,
             MessageId = FAT_FILE_SYSTEM;
             break;
 
-        /* Check if this is a coruption of the Mm's Pool */
+        /* Check if this is a corruption of the Mm's Pool */
         case DRIVER_CORRUPTED_MMPOOL:
 
             /* Use generic corruption message */
