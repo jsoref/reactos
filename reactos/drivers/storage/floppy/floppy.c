@@ -104,7 +104,7 @@ StartMotor(PDRIVE_INFO DriveInfo)
  *       You wouldn't want to turn on the motor and then cancel the timer, because the
  *       cancel dpc might fire in the meantime, and that'd un-do what you just did.  If you
  *       cancel the timer first, but KeCancelTimer returns false, the dpc is already running,
- *       so you have to wait until the dpc is completly done running, or else you'll race
+ *       so you have to wait until the dpc is completely done running, or else you'll race
  *       with the turner-offer
  *     - PAGED_CODE because we wait
  */
