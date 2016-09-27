@@ -376,7 +376,7 @@ INT recFindSubDirs(DWORD dwFlags,
             if (!*doMore)
                 break;
             _tcscpy(tmpSrcPath,szSrcPath);
-            /* Controle the next level of subdirs */
+            /* Control the next level of subdirs */
             filesReplaced += recFindSubDirs(dwFlags,tmpSrcPath,tmpDestPath, doMore);
             if (!*doMore)
                 break;

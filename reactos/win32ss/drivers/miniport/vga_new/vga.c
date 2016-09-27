@@ -584,7 +584,7 @@ Return Value:
     ULONG Result;
 
     //
-    // Switch on the IoContolCode in the RequestPacket. It indicates which
+    // Switch on the IoControlCode in the RequestPacket. It indicates which
     // function must be performed by the driver.
     //
 // eVb: 1.9 [IOCTL] - Remove IOCTLs not needed yet
