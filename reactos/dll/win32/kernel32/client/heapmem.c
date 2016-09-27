@@ -985,7 +985,7 @@ GlobalReAlloc(HGLOBAL hMem,
             {
                 /*
                  * Check if the handle matches the pointer or the moveable flag
-                 * isn't there, which is what we expect since it currenly isn't.
+                 * isn't there, which is what we expect since it currently isn't.
                  */
                 if ((Handle == hMem) || !(Flags & BASE_HEAP_FLAG_MOVABLE))
                 {

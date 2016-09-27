@@ -104,7 +104,7 @@ typedef struct _DISK_DATA {
     BOOLEAN BootIndicator;
 
     //
-    // DriveNotReady - inidicates that the this device is currenly not ready
+    // DriveNotReady - inidicates that the this device is currently not ready
     // because there is no media in the device.
     //
 
