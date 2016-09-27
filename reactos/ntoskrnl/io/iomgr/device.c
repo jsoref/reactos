@@ -1713,7 +1713,7 @@ IoStartPacket(IN PDEVICE_OBJECT DeviceObject,
             if (Irp->Cancel)
             {
                 /*
-                 * Set the cancel IRQL, clear the currnet cancel routine and
+                 * Set the cancel IRQL, clear the current cancel routine and
                  * call ours
                  */
                 Irp->CancelIrql = CancelIrql;

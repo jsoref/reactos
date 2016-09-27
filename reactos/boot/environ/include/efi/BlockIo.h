@@ -133,7 +133,7 @@ EFI_STATUS
 **/
 typedef struct {
   ///
-  /// The curent media Id. If the media changes, this value is changed.
+  /// The current media Id. If the media changes, this value is changed.
   ///
   UINT32  MediaId;         
    

@@ -28,7 +28,7 @@ There is one of 2 things that could happen.
 
 Execute will try to launch the file using createprocess and falls back on shellexecute.  
 It calls a function called SearchForExecuteable() to find the full path name and looks in all the correct locations like PATH,
- curreent folder, windows folder.  If it cant find it, just fails and prints out a message.
+ current folder, windows folder.  If it cant find it, just fails and prints out a message.
 
 Some useful functions that are used a lot:
 
