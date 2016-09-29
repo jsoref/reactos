@@ -184,9 +184,9 @@ VOID Hal_DirectDraw_Release (LPDIRECTDRAW7);
 
 /*
    use this macro to close
-   down the debuger text complete
+   down the debugger text complete
    no debuging at all, it will
-   crash ms debuger in VS
+   crash ms debugger in VS
 */
 
 //#define DX_WINDBG_trace()

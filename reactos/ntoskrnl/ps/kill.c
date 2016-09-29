@@ -42,7 +42,7 @@ PspCatchCriticalBreak(IN PCHAR Message,
             /* If a debugger isn't present, don't prompt */
             if (KdDebuggerNotPresent) break;
 
-            /* A debuger is active, prompt for action */
+            /* A debugger is active, prompt for action */
             DbgPrompt("Break, or Ignore (bi)?", Action, sizeof(Action));
             switch (Action[0])
             {
