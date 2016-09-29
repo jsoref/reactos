@@ -604,7 +604,7 @@ InitThreadCallback(PETHREAD Thread)
 
         if (!NT_SUCCESS(Status))
         {
-            ERR_CH(UserThread, "Failed to assign default dekstop and winsta to process\n");
+            ERR_CH(UserThread, "Failed to assign default desktop and winsta to process\n");
             goto error;
         }
 
