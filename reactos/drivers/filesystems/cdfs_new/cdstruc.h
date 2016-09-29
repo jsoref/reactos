@@ -364,7 +364,7 @@ typedef struct _CD_DATA {
     //      operation.
     //  MaxDelayedCloseCount - Trigger delay close work at this threshold.
     //  MinDelayedCloseCount - Turn off delay close work at this threshold.
-    //  DelayedCloseCount - Number of entries on the delayted close queue.
+    //  DelayedCloseCount - Number of entries on the delayed close queue.
     //
     //  CloseItem - Workqueue item used to start FspClose thread.
     //
