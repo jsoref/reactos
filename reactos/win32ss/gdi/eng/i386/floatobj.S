@@ -289,7 +289,7 @@ PUBLIC _FLOATOBJ_Equal@8
 	mov edx, [ecx + lExp]		/* Get float1 in ecx, edx */
 	mov ecx, [ecx + lMant]
 
-	sub edx, [eax + lExp]		/* Calculate diference to float2 */
+	sub edx, [eax + lExp]		/* Calculate difference to float2 */
 	sub ecx, [eax + lMant]
 
 	or edx, ecx					/* Combine */

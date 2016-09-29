@@ -1199,7 +1199,7 @@ CompareFiles(PDIRFINDINFO lpFile1,      /* [IN] A pointer to WIN32_FIND_DATA of 
             u64File2.LowPart = lpFile2->stFindInfo.nFileSizeLow;
             u64File2.HighPart = lpFile2->stFindInfo.nFileSizeHigh;
 
-            /* In case that differnce is too big for a long */
+            /* In case that difference is too big for a long */
             if (u64File1.QuadPart < u64File2.QuadPart)
                 iComp = -1;
             else if (u64File1.QuadPart > u64File2.QuadPart)
@@ -1248,7 +1248,7 @@ CompareFiles(PDIRFINDINFO lpFile1,      /* [IN] A pointer to WIN32_FIND_DATA of 
                 break;
             }
 
-            /* In case that differnce is too big for a long */
+            /* In case that difference is too big for a long */
             if (u64File1.QuadPart < u64File2.QuadPart)
                 iComp = -1;
             else if (u64File1.QuadPart > u64File2.QuadPart)
