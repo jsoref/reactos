@@ -145,7 +145,7 @@ int WINAPI WinMain (HINSTANCE hInst, HINSTANCE hPrevInst,
     }
 
     /*
-      Dectect RGB bit mask
+      Detect RGB bit mask
     */
     hbmp = CreateCompatibleBitmap(hdc, 1, 1);
     if (hbmp==NULL)
