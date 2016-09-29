@@ -118,7 +118,7 @@ EfiGetLeafNode (
         }
     }
 
-    /* This now contains the deepeest (leaf) node */
+    /* This now contains the deepest (leaf) node */
     return DevicePath;
 }
 
