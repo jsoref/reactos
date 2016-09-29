@@ -440,7 +440,7 @@ MiAddMappedPtes(IN PMMPTE FirstPte,
     PointerPte = FirstPte;
     LastPte = FirstPte + PteCount;
 
-    /* Get the prototype PTEs that desribe the section mapping in the subsection */
+    /* Get the prototype PTEs that describe the section mapping in the subsection */
     Subsection = (PSUBSECTION)(ControlArea + 1);
     ProtoPte = Subsection->SubsectionBase;
     LastProtoPte = &Subsection->SubsectionBase[Subsection->PtesInSubsection];
