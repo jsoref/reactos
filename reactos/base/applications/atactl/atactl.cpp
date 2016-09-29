@@ -98,7 +98,7 @@ void print_help() {
            "\n"
            "s<controller id> number of controller in system. Is assigned during hardware\n"
            "                   detection. Usually s0/s1 are ATA Pri/Sec.\n"
-           "                   Note, due do NT internal desing ATA controllers are represented\n"
+           "                   Note, due do NT internal design ATA controllers are represented\n"
            "                   as SCSI controllers.\n"
            "b<bus id>        For ATA controllers it is channel number.\n"
            "                   Note, usually onboard controller is represented as 2 legacy\n"
