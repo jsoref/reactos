@@ -363,7 +363,7 @@ LPTSTR *split (LPTSTR s, LPINT args, BOOL expand_wildcards, BOOL handle_plus)
 }
 
 /*
- * splitspace() is a function which uses JUST spaces as delimeters. split() uses "/" AND spaces.
+ * splitspace() is a function which uses JUST spaces as delimiters. split() uses "/" AND spaces.
  * The way it works is real similar to split(), search the difference ;)
  * splitspace is needed for commands such as "move" where paths as C:\this/is\allowed/ are allowed
  */
