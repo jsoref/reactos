@@ -278,7 +278,7 @@ NtWaitForMultipleObjects(IN ULONG ObjectCount,
     _SEH2_END;
 
 Quickie:
-    /* First derefence */
+    /* First dereference */
     while (ReferencedObjects)
     {
         /* Decrease the number of objects */

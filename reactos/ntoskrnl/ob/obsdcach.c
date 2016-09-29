@@ -301,7 +301,7 @@ ObDereferenceSecurityDescriptor(IN PSECURITY_DESCRIPTOR SecurityDescriptor,
     /* Check if the caller is destroying this SD -- we need the lock for that */
     while (OldValue != Count)
     {
-        /* He isn't, we can just try to derefeference atomically */
+        /* He isn't, we can just try to dereference atomically */
         NewValue = InterlockedCompareExchange((PLONG)&SdHeader->RefCount,
                                               OldValue - Count,
                                               OldValue);

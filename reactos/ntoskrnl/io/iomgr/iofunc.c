@@ -58,7 +58,7 @@ IopCleanupAfterException(IN PFILE_OBJECT FileObject,
     /* Check if we had a local event */
     if (LocalEvent) ExFreePool(LocalEvent);
 
-    /* Derefenrce the FO */
+    /* Dereference the FO */
     ObDereferenceObject(FileObject);
 }
 
