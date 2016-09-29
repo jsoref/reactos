@@ -180,7 +180,7 @@ typedef struct _HEAP_COUNTERS
     ULONG InBlockCommitFailures;
     ULONG CompactHeapCalls;
     ULONG CompactedUCRs;
-    ULONG InBlockDeccommits;
+    ULONG InBlockDecommits;
     SIZE_T InBlockDecommitSize;
 } HEAP_COUNTERS, *PHEAP_COUNTERS;
 
