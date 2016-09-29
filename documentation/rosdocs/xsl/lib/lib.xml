@@ -234,7 +234,7 @@ unqualified length ("20" for "20pt") from a dimension.
 
 <para>The <function moreinfo="none">length-units</function> template returns the
 units ("pt" for "20pt") from a length. If no units are supplied on the
-length, the <parameter moreinfo="none">defauilt.units</parameter> are returned.</para>
+length, the <parameter moreinfo="none">default.units</parameter> are returned.</para>
 
 <programlisting format="linespecific"><src:fragment id="length-units.frag">&lt;xsl:template name="length-units"&gt;
   &lt;xsl:param name="length"

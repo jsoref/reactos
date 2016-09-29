@@ -114,7 +114,7 @@ willing to post it here on request.
         4. In the case that the hardware stack built by CPU does not
 contain an error code , fake one ( generaly , aborts always push an
 error code on stack , some exceptions do , and traps never push an
-error code by deafult. Suplimentary information can be found in intel
+error code by default. Suplimentary information can be found in intel
 arch. reference manual .
 
         5. Optionaly enable the interrupts trough a STI . NT uses
