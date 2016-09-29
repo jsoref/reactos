@@ -186,7 +186,7 @@ __dyn_tls_dtor (HANDLE hDllHandle, DWORD dwReason, LPVOID lpreserved)
 
   if (dwReason != DLL_THREAD_DETACH && dwReason != DLL_PROCESS_DETACH)
     return TRUE;
-  /* As TLS variables are detroyed already by DLL_THREAD_DETACH
+  /* As TLS variables are destroyed already by DLL_THREAD_DETACH
      call, we have to avoid access on the possible DLL_PROCESS_DETACH
      call the already destroyed TLS vars.
      TODO: The used local thread based variables have to be handled
