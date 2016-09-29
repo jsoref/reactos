@@ -125,7 +125,7 @@ void RPC_ENTRY
 void RPC_VAR_ENTRY
  NdrMesProcEncodeDecode(handle_t,const MIDL_STUB_DESC *,PFORMAT_STRING,...);
 CLIENT_CALL_RETURN RPC_VAR_ENTRY
- NdrMesProcEncodeDeocde2(handle_t,const MIDL_STUB_DESC *,PFORMAT_STRING,...);
+ NdrMesProcEncodeDecode2(handle_t,const MIDL_STUB_DESC *,PFORMAT_STRING,...);
 
 #ifdef __cplusplus
 }
