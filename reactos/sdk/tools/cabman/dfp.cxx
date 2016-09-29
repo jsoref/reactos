@@ -1260,7 +1260,7 @@ bool CDFParser::IsNextToken(DFP_TOKEN Token, bool NoSpaces)
  *     Token  = Token to compare with
  *     SkipSp = true if spaces should be skipped
  * RETURNS:
- *     false if next token is diffrent from Token
+ *     false if next token is different from Token
  */
 {
     if (NoSpaces)

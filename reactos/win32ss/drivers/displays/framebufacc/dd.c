@@ -39,7 +39,7 @@ DdCanCreateSurface(LPDDHAL_CANCREATESURFACEDATA pccsd)
 	 /* Check if another pixel format or not, we fail for now */
 	 if (pccsd->bIsDifferentPixelFormat)
      {
-		/* check the fourcc diffent FOURCC, but we only support BMP for now */
+		/* check the fourcc different FOURCC, but we only support BMP for now */
 		//if(pccsd->lpDDSurfaceDesc->ddpfPixelFormat.dwFlags & DDPF_FOURCC)
         //{
 		//	/* We do not support other pixel format */

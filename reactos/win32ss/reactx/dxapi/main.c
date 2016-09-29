@@ -53,7 +53,7 @@ DxApiGetVersion(VOID)
 * @name DxApi
 * @implemented
 *
-* The function DxApi calls to diffent functions, follow functions
+* The function DxApi calls to different functions, follow functions
 * are supported
 * DxGetVersionNumber, DxCloseHandle, DxOpenDirectDraw, DxOpenSurface,
 * DxOpenVideoPort, DxGetKernelCaps, DxGetFieldNumber, DxSetFieldNumber,

@@ -1452,7 +1452,7 @@ SpiGetSet(UINT uiAction, UINT uiParam, PVOID pvParam, FLONG fl)
 
         case SPI_SETMOUSEHOVERTIME:
            /* See http://msdn2.microsoft.com/en-us/library/ms724947.aspx
-            * copy text from it, if some argument why xp and 2003 behovir diffent
+            * copy text from it, if some argument why xp and 2003 behovir different
             * only if they do not have SP install
             * " Windows Server 2003 and Windows XP: The operating system does not
             *   enforce the use of USER_TIMER_MAXIMUM and USER_TIMER_MINIMUM until
