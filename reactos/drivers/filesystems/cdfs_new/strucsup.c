@@ -2366,7 +2366,7 @@ Routine Description:
 
 Arguments:
 
-    Fcb - This is the Fcb to deallcoate.
+    Fcb - This is the Fcb to deallocate.
 
 Return Value:
 
