@@ -197,7 +197,7 @@ VOID Hal_DirectDraw_Release (LPDIRECTDRAW7);
 
 
 /*
-   Use this macro if you want deboug in visual studio or
+   Use this macro if you want debug in visual studio or
    if you have a program to look at the _INT struct from
    ReactOS ddraw.dll or ms ddraw.dll, so you can see what
    value ms are being setup.
