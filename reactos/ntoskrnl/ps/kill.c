@@ -513,7 +513,7 @@ PspExitThread(IN NTSTATUS ExitStatus)
     /* Call the WMI Callback for Threads */
     //WmiTraceThread(Thread, NULL, FALSE);
 
-    /* Run Thread Notify Routines before we desintegrate the thread */
+    /* Run Thread Notify Routines before we disintegrate the thread */
     PspRunCreateThreadNotifyRoutines(Thread, FALSE);
 
     /* Lock the Process before we modify its thread entries */
