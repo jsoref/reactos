@@ -290,7 +290,7 @@ BOOL CRegistryTree::DeleteSubkeys(CRegistryKey& rKey, const TCHAR *pszKeyPattern
     if (PatternMatch(pszKeyPattern,pszSubkeyName))
     {
       if (blnRecursive)
-      { // deltion is recursive, delete subkey subkeys
+      { // deletion is recursive, delete subkey subkeys
         CRegistryKey Subkey;
         // open subkey
         nError = rKey.OpenSubkey(DELETE,pszSubkeyName,Subkey);
