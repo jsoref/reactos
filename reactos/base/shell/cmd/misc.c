@@ -269,7 +269,7 @@ static BOOL expand (LPINT ac, LPTSTR **arg, LPCTSTR pattern)
 }
 
 /*
- * split - splits a line up into separate arguments, deliminators
+ * split - splits a line up into separate arguments, delimiters
  *         are spaces and slashes ('/').
  */
 LPTSTR *split (LPTSTR s, LPINT args, BOOL expand_wildcards, BOOL handle_plus)
