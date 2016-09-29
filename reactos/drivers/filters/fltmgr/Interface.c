@@ -2172,7 +2172,7 @@ SetupDispatchAndCallbacksTables(_In_ PDRIVER_OBJECT DriverObject)
     DriverObject->MajorFunction[IRP_MJ_FILE_SYSTEM_CONTROL] = FltpFsControl;
     DriverObject->MajorFunction[IRP_MJ_DEVICE_CONTROL] = FltpDeviceControl;
 
-    /* The FastIo diapatch table is stored in the pool along with a tag */
+    /* The FastIo dispatch table is stored in the pool along with a tag */
     FastIoDispatch = ExAllocatePoolWithTag(NonPagedPool, sizeof(FAST_IO_DISPATCH), FM_TAG_DISPATCH_TABLE);
     if (FastIoDispatch == NULL) return STATUS_INSUFFICIENT_RESOURCES;
 
