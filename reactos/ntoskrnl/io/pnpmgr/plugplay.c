@@ -917,7 +917,7 @@ NtGetPlugPlayEvent(IN ULONG Reserved1,
  *    PlugPlayControlClass
  *       0x00   Reenumerate device tree
  *
- *              Buffer points to UNICODE_STRING decribing the instance
+ *              Buffer points to UNICODE_STRING describing the instance
  *              path (like "HTREE\ROOT\0" or "Root\ACPI_HAL\0000"). For
  *              more information about instance paths see !devnode command
  *              in kernel debugger or look at "Inside Windows 2000" book,
