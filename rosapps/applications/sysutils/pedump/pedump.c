@@ -4,7 +4,7 @@
 //                                                                               computer science and engineering
 //                                                                               chongju university
 // this program is based on the program pefile.c
-// which is written by Randy Kath(Microsoft Developmer Network Technology Group)
+// which is written by Randy Kath(Microsoft Developer Network Technology Group)
 // in june 12, 1993.
 // I have investigated P.E. file format as thoroughly as possible,
 // but I cannot claim that I am an expert yet, so some of its information
