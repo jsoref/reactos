@@ -320,7 +320,7 @@ private:
 	     << "<H1>Registry Browser</H1>"
 	     << "You can use this interface to browse the registry."
 	     << "You will be presented with one registry key at a time and "
-	     << "the decendents.\r\n"
+	     << "the descendants.\r\n"
 	     << "<h2>Root Level</h2>\r\n"
 	     << "Subkeys:<ul>\r\n";
 
