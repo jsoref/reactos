@@ -1052,7 +1052,7 @@ PciClassifyDeviceType(IN PPCI_PDO_EXTENSION PdoExtension)
 {
     ASSERT(PdoExtension->ExtensionType == PciPdoExtensionType);
 
-    /* Differenriate between devices and bridges */
+    /* Differentiate between devices and bridges */
     if (PdoExtension->BaseClass != PCI_CLASS_BRIDGE_DEV) return PciTypeDevice;
 
     /* The PCI Bus driver handles only CardBus and PCI bridges (plus host) */
