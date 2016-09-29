@@ -679,7 +679,7 @@ void doQueryValue(LPTSTR stdInput) {
 }
 
 /******************************************************************************
- * This funtion is the main entry point to the deletetValue type of action.  It
+ * This funtion is the main entry point to the DeleteValue type of action.  It
  * receives the currently read line and dispatch the work depending on the
  * context.
  */
