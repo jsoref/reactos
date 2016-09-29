@@ -414,7 +414,7 @@ DirReadParam(LPTSTR Line,               /* [IN] The line with the parameters & s
             /* Check if there are no more switch parameters */
             if ((cCurChar == _T('/')) || _istspace(cCurChar))
             {
-                /* Wrong desicion path, reprocess current character */
+                /* Wrong decision path, reprocess current character */
                 cCurSwitch = _T(' ');
                 continue;
             }
