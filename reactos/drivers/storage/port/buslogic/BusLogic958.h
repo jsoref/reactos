@@ -812,7 +812,7 @@ typedef struct BusLogic_WmiExtendedSetupInformation
 #pragma pack ()
 
 //_________________________________________________________________________________________
-// function declaractions
+// function declarations
 //_________________________________________________________________________________________
 ULONG
 NTAPI

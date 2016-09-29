@@ -46,7 +46,7 @@ const char SEPERATOR = '-';
 int _CRT_glob = 0; // stop * from listing dir files in arp -d *
 
 /*
- * function declerations
+ * function declarations
  */
 DWORD DoFormatMessage(VOID);
 INT PrintEntries(PMIB_IPNETROW pIpAddRow);
