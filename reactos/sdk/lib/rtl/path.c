@@ -17,7 +17,7 @@
 #define NDEBUG
 #include <debug.h>
 
-/* DEFINITONS and MACROS ******************************************************/
+/* DEFINITIONS and MACROS ******************************************************/
 
 #define MAX_PFX_SIZE       16
 

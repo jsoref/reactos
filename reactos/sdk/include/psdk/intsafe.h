@@ -238,7 +238,7 @@ C_ASSERT(sizeof(UINT_PTR) == sizeof(ULONG_PTR));
 #define _SIZE_T_ERROR 0xffffffffUL
 #endif /* _WIN64 */
 
-/* special definitons (the CHAR ones should not be defined here!) */
+/* special definitions (the CHAR ones should not be defined here!) */
 #define _INTSAFE_CHAR CHAR
 #define _INTSAFE_CHAR_ERROR ((signed char)(-1))
 #ifdef _CHAR_UNSIGNED

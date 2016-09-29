@@ -77,7 +77,7 @@
 
 /******************************************************************************
 *
-*   Addressing modes argument definiton for the opcodes in a table
+*   Addressing modes argument definition for the opcodes in a table
 *
 ******************************************************************************/
 #define _O             0x01
