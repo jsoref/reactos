@@ -302,7 +302,7 @@ MiniportQueryInformation(
                        Adapter->Statistics.XmtLossesOfCarrier +
                        Adapter->Statistics.XmtCollisions +
                        Adapter->Statistics.XmtLateCollisions +
-                       Adapter->Statistics.XmtExcessiveDefferals +
+                       Adapter->Statistics.XmtExcessiveDeferrals +
                        Adapter->Statistics.XmtBufferUnderflows +
                        Adapter->Statistics.XmtBufferErrors;
         break;

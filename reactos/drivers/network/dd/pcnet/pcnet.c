@@ -192,7 +192,7 @@ MiniportHandleInterrupt(
                   if (Descriptor->FLAGS2 & TD2_LCOL)
                     Adapter->Statistics.XmtLateCollisions++;
                   if (Descriptor->FLAGS2 & TD2_EXDEF)
-                    Adapter->Statistics.XmtExcessiveDefferals++;
+                    Adapter->Statistics.XmtExcessiveDeferrals++;
                   if (Descriptor->FLAGS2 & TD2_UFLO)
                     Adapter->Statistics.XmtBufferUnderflows++;
                   if (Descriptor->FLAGS2 & TD2_BUFF)
