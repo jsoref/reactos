@@ -71,7 +71,7 @@ KiSetupDecrementerTrap(VOID)
     DPRINT("CurrentThread %08x IdleThread %08x\n",
            KeGetCurrentThread(), KeGetCurrentPrcb()->IdleThread);
 
-    /* Kick decmrenter! */
+    /* Kick decrementer! */
     __asm__("mtdec %0" : : "r" (0));
 
     /* Enable interrupts! */
