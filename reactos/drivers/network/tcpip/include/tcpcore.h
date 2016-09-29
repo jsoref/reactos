@@ -2808,7 +2808,7 @@ extern u32	__tcp_select_window(struct sock *sk);
 
 /* TCP timestamps are only 32-bits, this causes a slight
  * complication on 64-bit systems since we store a snapshot
- * of jiffies in the buffer control blocks below.  We decidely
+ * of jiffies in the buffer control blocks below.  We decidedly
  * only use of the low 32-bits of jiffies and hide the ugly
  * casts with the following macro.
  */
