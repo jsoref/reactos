@@ -748,7 +748,7 @@ void ui_destroy_colourmap(HCOLOURMAP map)
 /*****************************************************************************/
 void ui_set_colourmap(void * map)
 {
-  // destoy old colormap
+  // destroy old colormap
   ui_destroy_colourmap(g_CM);
   g_CM = (QColorMap*)map;
 }

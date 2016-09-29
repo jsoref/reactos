@@ -200,7 +200,7 @@ MmMpwThreadMain(PVOID Parameter)
 #ifndef NEWCC
         PagesWritten = 0;
 
-        // XXX arty -- we flush when evicting pages or destorying cache
+        // XXX arty -- we flush when evicting pages or destroying cache
         // sections.
         CcRosFlushDirtyPages(128, &PagesWritten, FALSE);
 #endif

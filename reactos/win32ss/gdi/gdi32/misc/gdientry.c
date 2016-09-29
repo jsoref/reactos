@@ -594,9 +594,9 @@ DvpCreateVideoPort(LPDDHAL_CREATEVPORTDATA pDvdCreatePort)
  */
 DWORD
 WINAPI
-DvpDestroyVideoPort(LPDDHAL_DESTROYVPORTDATA pDvdDestoryPort)
+DvpDestroyVideoPort(LPDDHAL_DESTROYVPORTDATA pDvdDestroyPort)
 {
-    return NtGdiDvpDestroyVideoPort(pDvdDestoryPort->lpVideoPort->hDDVideoPort, (PDD_DESTROYVPORTDATA)pDvdDestoryPort);
+    return NtGdiDvpDestroyVideoPort(pDvdDestroyPort->lpVideoPort->hDDVideoPort, (PDD_DESTROYVPORTDATA)pDvdDestroyPort);
 }
 
 /*
