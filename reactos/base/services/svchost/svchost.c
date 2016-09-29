@@ -138,7 +138,7 @@ BuildCommandOptions (
                 while ((*pch) && ((*pch != ' ') && (*pch != '\t'))) pch++;
             }
 
-            /* Now we have a space or quote deliminated name, terminate it */
+            /* Now we have a space or quote delimited name, terminate it */
             if (*pch) *pch++ = UNICODE_NULL;
 
             /* Ok, so we have a string -- was it preceeded by a -K or /K? */
