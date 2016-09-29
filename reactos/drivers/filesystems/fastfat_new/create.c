@@ -1222,7 +1222,7 @@ FatiCreate(IN PFAT_IRP_CONTEXT IrpContext,
                 return Status;
             }
 
-            /* If end backslash here, then it's definately not permitted,
+            /* If end backslash here, then it's definitely not permitted,
             since we're opening files here */
             if (EndBackslash)
             {

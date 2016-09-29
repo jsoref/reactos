@@ -1453,7 +1453,7 @@ CmpSelectLeaf(IN PHHIVE Hive,
         /* Make sure the new key became index root */
         ASSERT(IndexKey->Signature == CM_KEY_INDEX_ROOT);
 
-        /* Now loop over with the new IndexKey value, which definately
+        /* Now loop over with the new IndexKey value, which definitely
          * has the space now
          */
     }

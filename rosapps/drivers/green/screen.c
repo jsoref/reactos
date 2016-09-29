@@ -205,7 +205,7 @@ ScreenAddDevice(
 		return Status;
 	}
 
-	/* We definately have a device object. PreviousBlue may or may
+	/* We definitely have a device object. PreviousBlue may or may
 	 * not be null */
 	DeviceExtension = (PSCREEN_DEVICE_EXTENSION)Fdo->DeviceExtension;
 	RtlZeroMemory(DeviceExtension, sizeof(SCREEN_DEVICE_EXTENSION));

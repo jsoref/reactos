@@ -2019,7 +2019,7 @@ RtlAllocateHeap(IN PVOID HeapPtr,
             /* This bit magic disables all sizes which are less than the requested allocation size */
             FreeListsInUseUlong = *FreeListsInUse++ & ~((1 << ((ULONG)Index & 0x1f)) - 1);
 
-            /* If size is definitily more than our lists - go directly to the non-dedicated one */
+            /* If size is definitely more than our lists - go directly to the non-dedicated one */
             if (InUseIndex > 3)
                 return RtlpAllocateNonDedicated(Heap, Flags, Size, AllocationSize, Index, HeapLocked);
 

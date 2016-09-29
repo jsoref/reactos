@@ -87,7 +87,7 @@ IopAbortInterruptedIrp(IN PKEVENT EventObject,
             Wait.QuadPart = -100000;
             while (!KeReadStateEvent(EventObject))
             {
-                /* Delay indefintely */
+                /* Delay indefinitely */
                 KeDelayExecutionThread(KernelMode, FALSE, &Wait);
             }
         }
