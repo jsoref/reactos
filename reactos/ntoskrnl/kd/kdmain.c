@@ -235,7 +235,7 @@ KdpCallGdb(IN PKTRAP_FRAME TrapFrame,
     if (KdDebuggerNotPresent) return FALSE;
 
     /* FIXME:
-     * Right now, the GDB wrapper seems to handle exceptions differntly
+     * Right now, the GDB wrapper seems to handle exceptions differently
      * from KDGB and both are called at different times, while the GDB
      * one is only called once and that's it. I don't really have the knowledge
      * to fix the GDB stub, so until then, we'll be using this hack
