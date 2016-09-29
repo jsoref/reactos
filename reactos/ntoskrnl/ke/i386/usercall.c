@@ -410,7 +410,7 @@ NtCallbackReturn(
     /* Disable interrupts for NPX save and stack switch */
     _disable();
 
-    /* Set desination and origin NPX Frames */
+    /* Set destination and origin NPX Frames */
     CbFxSaveArea = (PVOID)((ULONG)CurrentThread->InitialStack - sizeof(FX_SAVE_AREA));
     FxSaveArea = (PVOID)(CalloutFrame->InitialStack - sizeof(FX_SAVE_AREA));
 

@@ -191,7 +191,7 @@ XFORMOBJ_iCombine(
     pmx1 = XFORMOBJ_pmx(pxo1);
     pmx2 = XFORMOBJ_pmx(pxo2);
 
-    /* Do a 3 x 3 matrix multiplication with mx as destinantion */
+    /* Do a 3 x 3 matrix multiplication with mx as destination */
     MulAdd(&mx.efM11, &pmx1->efM11, &pmx2->efM11, &pmx1->efM12, &pmx2->efM21);
     MulAdd(&mx.efM12, &pmx1->efM11, &pmx2->efM12, &pmx1->efM12, &pmx2->efM22);
     MulAdd(&mx.efM21, &pmx1->efM21, &pmx2->efM11, &pmx1->efM22, &pmx2->efM21);
