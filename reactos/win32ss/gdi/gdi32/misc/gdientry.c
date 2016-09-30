@@ -1101,7 +1101,7 @@ DdGetDriverInfo(LPDDHAL_GETDRIVERINFODATA pData)
 
         pUserMisc->dwFlags = pMisc.dwFlags;
 
-        /* This functions are not documneted in MSDN for this struct, here is directx/reactx alpha blend */
+        /* This functions are not documented in MSDN for this struct, here is directx/reactx alpha blend */
         if ( pMisc.Reserved )
         {
             pUserMisc->Reserved = (LPVOID) DdAlphaBlt;

@@ -163,7 +163,7 @@ DWORD CALLBACK HelDdSurfLock(LPDDHAL_LOCKDATA lpLockData)
 
 DWORD CALLBACK HelDdSurfreserved4(DWORD *lpPtr)
 {
-    /* This api is not doucmented by MS, keep it stubbed */
+    /* This api is not documented by MS, keep it stubbed */
     DX_STUB;
 }
 
