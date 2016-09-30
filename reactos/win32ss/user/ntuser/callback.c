@@ -502,7 +502,7 @@ co_IntLoadDefaultCursors(VOID)
       return FALSE;
    }
 
-   /* HACK: The desktop class doen't have a proper cursor yet, so set it here */
+   /* HACK: The desktop class doesn't have a proper cursor yet, so set it here */
     gDesktopCursor = *((HCURSOR*)ResultPointer);
 
    return TRUE;

@@ -226,7 +226,7 @@ Return Value:
     //
 
     //
-    // We will try the PCI bus first so that our ISA detection does'nt claim
+    // We will try the PCI bus first so that our ISA detection doesn't claim
     // PCI cards (since it is impossible to differentiate between the two
     // by looking at the registers).
     //

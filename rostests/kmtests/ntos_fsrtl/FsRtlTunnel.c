@@ -259,14 +259,14 @@ START_TEST(FsRtlTunnel)
 
     // Find
     is = TestFsRtlFindInTunnelCache(12345, name, s_name, l_name);
-    ok(is == TRUE, "FsRtlFindInTunnelCache dosn't find elem id = 12345\n");
+    ok(is == TRUE, "FsRtlFindInTunnelCache doesn't find elem id = 12345\n");
 
     TestFsRtlDeleteKeyFromTunnelCache(12345);	//Delete
     is = TestFsRtlFindInTunnelCache(12345, name, s_name, l_name);
-    ok(is == FALSE, "TestFsRtlDeleteKeyFromTunnelCache dosn't delete elem id = 12345\n");
+    ok(is == FALSE, "TestFsRtlDeleteKeyFromTunnelCache doesn't delete elem id = 12345\n");
 
     is = TestFsRtlFindInTunnelCache(12347, name, s_name, l_name);
-    ok(is == FALSE, "FsRtlDeleteTunnelCache dosn't clear cash\n");
+    ok(is == FALSE, "FsRtlDeleteTunnelCache doesn't clear cash\n");
 
     TestFsRtlAddToTunnelCache(12345, s_name, l_name, TRUE);
     TestFsRtlAddToTunnelCache(12347, s_name, l_name, TRUE);
@@ -278,13 +278,13 @@ START_TEST(FsRtlTunnel)
     FsRtlDeleteTunnelCache(T);
 
     is = TestFsRtlFindInTunnelCache(12345, name, s_name, l_name);
-    ok(is == FALSE, "FsRtlDeleteTunnelCache dosn't clear cash\n");
+    ok(is == FALSE, "FsRtlDeleteTunnelCache doesn't clear cash\n");
 
     is = TestFsRtlFindInTunnelCache(12346, name, a, l_name);
-    ok(is == FALSE, "FsRtlDeleteTunnelCache dosn't clear cash\n");
+    ok(is == FALSE, "FsRtlDeleteTunnelCache doesn't clear cash\n");
 
     is = TestFsRtlFindInTunnelCache(12347, name, s_name, l_name);
-    ok(is == FALSE, "FsRtlDeleteTunnelCache dosn't clear cash\n");
+    ok(is == FALSE, "FsRtlDeleteTunnelCache doesn't clear cash\n");
 
     ExFreePool(a);
     ExFreePool(name);
