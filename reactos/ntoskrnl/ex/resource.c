@@ -1714,7 +1714,7 @@ ExIsResourceAcquiredSharedLite(IN PERESOURCE Resource)
             }
             else
             {
-                /* We found the match directlry */
+                /* We found the match directly */
                 Count = Owner[i].OwnerCount;
             }
         }

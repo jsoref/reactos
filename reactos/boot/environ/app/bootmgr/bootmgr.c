@@ -1088,7 +1088,7 @@ BmFwVerifySelfIntegrity (
     VOID
     )
 {
-    /* Check if we're booted by UEFI off the DVD directlry */
+    /* Check if we're booted by UEFI off the DVD directly */
     if ((BlpBootDevice->DeviceType == LocalDevice) &&
         (BlpBootDevice->Local.Type == CdRomDevice) &&
         (BlpApplicationFlags & BL_APPLICATION_FLAG_CONVERTED_FROM_EFI))
