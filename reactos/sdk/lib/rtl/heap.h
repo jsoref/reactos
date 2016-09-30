@@ -55,7 +55,7 @@
 /* Segment flags */
 #define HEAP_USER_ALLOCATED    0x1
 
-/* A handy inline to distinguis normal heap, special "debug heap" and special "page heap" */
+/* A handy inline to distinguish normal heap, special "debug heap" and special "page heap" */
 FORCEINLINE BOOLEAN
 RtlpHeapIsSpecial(ULONG Flags)
 {
