@@ -978,7 +978,7 @@ protected:
 String get_windows_version_str();
 
 
- /// link dynamicly to functions by using GetModuleHandle() and GetProcAddress()
+ /// link dynamically to functions by using GetModuleHandle() and GetProcAddress()
 template<typename FCT> struct DynamicFct
 {
 	DynamicFct(LPCTSTR moduleName, UINT ordinal)
@@ -1003,7 +1003,7 @@ protected:
 };
 
 
- /// link dynamicly to functions by using LoadLibrary() and GetProcAddress()
+ /// link dynamically to functions by using LoadLibrary() and GetProcAddress()
 template<typename FCT> struct DynamicLoadLibFct
 {
 	DynamicLoadLibFct(LPCTSTR moduleName, UINT ordinal)
