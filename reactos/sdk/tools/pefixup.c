@@ -9,8 +9,8 @@
  *
  * - Setting flags on PE sections for use by drivers. The sections
  *   .text, .data, .idata, .bss are marked as non-pageable and
- *   non-discarable, section PAGE is marked as pageable and section
- *   INIT is marked as discaradable.
+ *   non-discardable, section PAGE is marked as pageable and section
+ *   INIT is marked as discardable.
  *
  * - Sorting of export name table in executables. DLLTOOL has bug
  *   in sorting algorithm when the --kill-at flag is used. The exports
