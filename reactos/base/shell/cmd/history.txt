@@ -148,7 +148,7 @@ o Fixed bug that caused dir *.ext/X not to work (no spaces
 o Added wildcard support for DEL command
 o Added prompt and help switch for DEL command, /P and /?
   respectively.
-o Added support for /C when envoking the shell
+o Added support for /C when invoking the shell
 o Added /P support when Kernel loads shell.  This means
   the shell now is permanent and runs the autoexec.bat
   (/E is not implemented)
