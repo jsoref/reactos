@@ -7,7 +7,7 @@
  *
  * Full permission is granted to use, modify and distribute
  * this code, provided:
- * 1) This comment field is included in its entirity
+ * 1) This comment field is included in its entirety
  * 2) No money is charged for any work including or based on
  *    portions of this code.
  *
