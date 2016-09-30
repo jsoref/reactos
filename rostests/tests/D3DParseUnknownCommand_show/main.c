@@ -18,7 +18,7 @@
  *  D3DDP2OP_WINFO        (aka 0x1d) 29
  *  Unknown               (aka 0x0d) 13
  *
- *  no doc in msdn about command 13 (dec) I will exaime it later
+ *  no doc in msdn about command 13 (dec) I will examine it later
  *
  */
 
