@@ -199,7 +199,7 @@ print_disconnect_reason(uint16 reason)
 			break;
 
 		case exDiscReasonLicenseErrClientEncryption:
-			text = "Incorrect client license enryption";
+			text = "Incorrect client license encryption";
 			break;
 
 		case exDiscReasonLicenseCantUpgradeLicense:
