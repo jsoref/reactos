@@ -258,7 +258,7 @@ LRESULT CALLBACK MainWndProc(HWND HWnd, UINT Msg, WPARAM WParam,
                RDest.top + max(new_height, RDest.bottom - RDest.top)
                };
 
-            // adjust the dimenstions of the
+            // adjust the dimensions of the
             // destination rectangle
             RDest.right = RDest.left + new_width;
             RDest.bottom = RDest.top + new_height;
