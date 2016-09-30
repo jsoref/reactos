@@ -434,7 +434,7 @@ static HRESULT WINAPI IDirect3D9Impl_CheckDeviceType(LPDIRECT3D9 iface, UINT Ada
 
     if (TRUE == Windowed && TRUE == IsExtendedFormat(DisplayFormat))
     {
-        DPRINT1("Extended diplay modes can only be used in fullscreen mode");
+        DPRINT1("Extended display modes can only be used in fullscreen mode");
         UNLOCK_D3D9();
         return D3DERR_NOTAVAILABLE;
     }

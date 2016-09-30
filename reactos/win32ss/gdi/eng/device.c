@@ -35,7 +35,7 @@ PGRAPHICS_DEVICE
 NTAPI
 EngpRegisterGraphicsDevice(
     _In_ PUNICODE_STRING pustrDeviceName,
-    _In_ PUNICODE_STRING pustrDiplayDrivers,
+    _In_ PUNICODE_STRING pustrDisplayDrivers,
     _In_ PUNICODE_STRING pustrDescription,
     _In_ PDEVMODEW pdmDefault)
 {
@@ -93,7 +93,7 @@ EngpRegisterGraphicsDevice(
     swprintf(pGraphicsDevice->szWinDeviceName, L"\\\\.\\DISPLAY%d", (int)giDevNum);
 
     /* Allocate a buffer for the strings */
-    cj = pustrDiplayDrivers->Length + pustrDescription->Length + sizeof(WCHAR);
+    cj = pustrDisplayDrivers->Length + pustrDescription->Length + sizeof(WCHAR);
     pwsz = ExAllocatePoolWithTag(PagedPool, cj, GDITAG_DRVSUP);
     if (!pwsz)
     {
@@ -104,13 +104,13 @@ EngpRegisterGraphicsDevice(
     }
 
     /* Copy display driver names */
-    pGraphicsDevice->pDiplayDrivers = pwsz;
-    RtlCopyMemory(pGraphicsDevice->pDiplayDrivers,
-                  pustrDiplayDrivers->Buffer,
-                  pustrDiplayDrivers->Length);
+    pGraphicsDevice->pDisplayDrivers = pwsz;
+    RtlCopyMemory(pGraphicsDevice->pDisplayDrivers,
+                  pustrDisplayDrivers->Buffer,
+                  pustrDisplayDrivers->Length);
 
     /* Copy description */
-    pGraphicsDevice->pwszDescription = pwsz + pustrDiplayDrivers->Length / sizeof(WCHAR);
+    pGraphicsDevice->pwszDescription = pwsz + pustrDisplayDrivers->Length / sizeof(WCHAR);
     RtlCopyMemory(pGraphicsDevice->pwszDescription,
                   pustrDescription->Buffer,
                   pustrDescription->Length);

@@ -68,7 +68,7 @@ typedef struct _GRAPHICS_DEVICE
     PDEVMODEINFO     pdevmodeInfo;
     ULONG            cDevModes;
     PDEVMODEENTRY    pDevModeList;
-    LPWSTR           pDiplayDrivers;
+    LPWSTR           pDisplayDrivers;
     LPWSTR           pwszDescription;
     DWORD            dwUnknown;
     PVOID            pUnknown;

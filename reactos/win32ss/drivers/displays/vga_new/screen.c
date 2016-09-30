@@ -636,7 +636,7 @@ DEVINFO *pDevInfo)
 * getAvailableModes
 *
 * Calls the miniport to get the list of modes supported by the kernel driver,
-* and returns the list of modes supported by the diplay driver among those
+* and returns the list of modes supported by the display driver among those
 *
 * returns the number of entries in the videomode buffer.
 * 0 means no modes are supported by the miniport or that an error occured.

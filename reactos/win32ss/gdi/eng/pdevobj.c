@@ -332,12 +332,12 @@ EngpCreatePDEV(
         DPRINT("Using iDefaultMode = %lu\n", pGraphicsDevice->iDefaultMode);
     }
 
-    /* Try to get a diplay driver */
+    /* Try to get a display driver */
     ppdev->pldev = EngLoadImageEx(pdm->dmDeviceName, LDEV_DEVICE_DISPLAY);
     if (!ppdev->pldev)
     {
         DPRINT1("Could not load display driver '%ls', '%ls'\n",
-                pGraphicsDevice->pDiplayDrivers,
+                pGraphicsDevice->pDisplayDrivers,
                 pdm->dmDeviceName);
         PDEVOBJ_vRelease(ppdev);
         return NULL;

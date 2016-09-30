@@ -87,7 +87,7 @@ InitDisplayDriver(
         return NULL;
     }
 
-    /* Query the diplay drivers */
+    /* Query the display drivers */
     cbSize = sizeof(awcBuffer) - 10;
     Status = RegQueryValue(hkey,
                            L"InstalledDisplayDrivers",
