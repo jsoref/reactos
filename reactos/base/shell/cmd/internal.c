@@ -466,7 +466,7 @@ INT cmd_rmdir (LPTSTR param)
 
         if (RD_SUB)
         {
-            /* ask if they want to delete evrything in the folder */
+            /* ask if they want to delete everything in the folder */
             if (!RD_QUIET)
             {
                 res = FilePromptYNA (STRING_DEL_HELP2);
