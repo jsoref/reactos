@@ -1365,7 +1365,7 @@ KxQueueReadyThread(IN PKTHREAD Thread,
         Priority = Thread->Priority;
         Preempted = Thread->Preempted;
 
-        /* We're not pre-empting now, and set the wait time */
+        /* We're not preempting now, and set the wait time */
         Thread->Preempted = FALSE;
         Thread->WaitTime = KeTickCount.LowPart;
 
