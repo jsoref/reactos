@@ -39,14 +39,14 @@ Opening speech by Jason on the history of ReactOS.
 <sect2>
 <title>ReactOS Mission and Goals</title>
 <para>
-Disscussion on the original goal of compatibility with NT 4 applications and drivers. Further discussion looking at 2K/XP compatibility, short discussion on .NET plan by Casper Hornstrup.
+Discussion on the original goal of compatibility with NT 4 applications and drivers. Further discussion looking at 2K/XP compatibility, short discussion on .NET plan by Casper Hornstrup.
 </para>
 </sect2>
 
 <sect2>
 <title>Console Application Support Overview</title>
 <para>
-Short Disscussion on Console Application support followed by demos.
+Short Discussion on Console Application support followed by demos.
 </para>
 <itemizedlist>
 <listitem>ReactOS cmd.exe (ported from FreeDOS)</listitem>
