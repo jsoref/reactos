@@ -117,7 +117,7 @@ Debugging kernel-mode code is tricky, these are some snippets
     The NT4 ddk license agreement allows its usage for developing nt drivers
     only. Legally therefore it can not be used to develop ReactOS, neither the
     documentation or the sample code. I'm not a lawyer, but I doubt the
-    effiacy of 'shrinkwrap licenses' particularly on freely downloadable 
+    efficacy of 'shrinkwrap licenses' particularly on freely downloadable 
     software. The only precendent I know of, in a Scottish court, didn't
     upload this type of license.
     
