@@ -91,7 +91,7 @@ ExpWorkerThreadEntryPoint(IN PVOID Context)
     KPROCESSOR_MODE WaitMode;
     EX_QUEUE_WORKER_INFO OldValue, NewValue;
 
-    /* Check if this is a dyamic thread */
+    /* Check if this is a dynamic thread */
     if ((ULONG_PTR)Context & EX_DYNAMIC_WORK_THREAD)
     {
         /* It is, which means we will eventually time out after 10 minutes */
