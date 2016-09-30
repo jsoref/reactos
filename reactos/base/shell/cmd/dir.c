@@ -777,7 +777,7 @@ PrintSummary(LPTSTR szPath,
 
     /* Print recursive specific results */
 
-    /* Take this code offline to fix /S does not print duoble info */
+    /* Take this code offline to fix /S does not print double info */
     if (TotalSummary && lpFlags->bRecursive)
     {
         ConvertULargeInteger(u64Bytes, szBuffer, sizeof(szBuffer), lpFlags->bTSeperator);
