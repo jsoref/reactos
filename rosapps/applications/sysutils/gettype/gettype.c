@@ -167,7 +167,7 @@ GetBasicInfo(LPOSVERSIONINFOEX osvi, TCHAR * HostName, TCHAR * OSName, TCHAR * V
 	GetComputerName(HostName, &bufCharCount);
 
 
-	/* OSName - Windows XP Home Editition */
+	/* OSName - Windows XP Home Edition */
 	if(osvi->dwMajorVersion == 4)
 	{
 		_tcscpy(OSName, _T("Microsoft Windows NT 4.0 "));
