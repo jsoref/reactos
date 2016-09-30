@@ -1,7 +1,7 @@
 /*
  * PROJECT:         ReactOS api tests
  * LICENSE:         GPLv2+ - See COPYING in the top level directory
- * PURPOSE:         Test for DupicateTokenEx
+ * PURPOSE:         Test for DuplicateTokenEx
  * PROGRAMMER:      Jérôme Gardou <jerome.gardou@reactos.org>
  */
 

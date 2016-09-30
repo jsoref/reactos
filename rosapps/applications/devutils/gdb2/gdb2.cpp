@@ -80,14 +80,14 @@ int main(int argc, char* argv[])
 		&hOutputRead, // Address of new handle.
 		0,FALSE, // Make it uninheritable.
 		DUPLICATE_SAME_ACCESS))
-		DisplayError("DupliateHandle");
+		DisplayError("DuplicateHandle");
 
 	if (!DuplicateHandle(GetCurrentProcess(),hInputWriteTmp,
 		GetCurrentProcess(),
 		&hInputWrite, // Address of new handle.
 		0,FALSE, // Make it uninheritable.
 		DUPLICATE_SAME_ACCESS))
-		DisplayError("DupliateHandle");
+		DisplayError("DuplicateHandle");
 
 
 	// Close inheritable copies of the handles you do not want to be
