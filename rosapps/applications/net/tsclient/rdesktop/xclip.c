@@ -76,7 +76,7 @@ utf16_lf2crlf(uint8 * data, uint32 * size)
 {
 	uint8 *result;
 	uint16 *inptr, *outptr;
-	Bool swap_endianess;
+	Bool swap_endianness;
 
 	/* Worst case: Every char is LF */
 	result = xmalloc((*size * 2) + 2);
@@ -87,15 +87,15 @@ utf16_lf2crlf(uint8 * data, uint32 * size)
 	outptr = (uint16 *) result;
 
 	/* Check for a reversed BOM */
-	swap_endianess = (*inptr == 0xfffe);
+	swap_endianness = (*inptr == 0xfffe);
 
 	while ((uint8 *) inptr < data + *size)
 	{
 		uint16 uvalue = *inptr;
-		if (swap_endianess)
+		if (swap_endianness)
 			uvalue = ((uvalue << 8) & 0xff00) + (uvalue >> 8);
 		if (uvalue == 0x0a)
-			*outptr++ = swap_endianess ? 0x0d00 : 0x0d;
+			*outptr++ = swap_endianness ? 0x0d00 : 0x0d;
 		*outptr++ = *inptr++;
 	}
 	*outptr++ = 0;		/* null termination */

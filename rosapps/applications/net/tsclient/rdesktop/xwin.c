@@ -1408,8 +1408,8 @@ ui_init(RDPCLIENT * This)
 	}
 
 	{
-		uint16 endianess_test = 1;
-		This->xwin.host_be = !(BOOL) (*(uint8 *) (&endianess_test));
+		uint16 endianness_test = 1;
+		This->xwin.host_be = !(BOOL) (*(uint8 *) (&endianness_test));
 	}
 
 	/*This->xwin.old_error_handler = XSetErrorHandler(error_handler);*/
