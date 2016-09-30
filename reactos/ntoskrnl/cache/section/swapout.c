@@ -334,7 +334,7 @@ the page mapped.
 
 This code is like the other fault handlers, in that MmPageOutCacheSection has
 the option of returning either STATUS_SUCCESS + 1 to wait for a wait entry
-to disppear or to use the blocking callout facility by returning
+to disappear or to use the blocking callout facility by returning
 STATUS_MORE_PROCESSING_REQUIRED and placing a pointer to a function from
 reqtools.c in the MM_REQUIRED_RESOURCES struct.
 
