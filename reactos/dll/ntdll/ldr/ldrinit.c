@@ -839,7 +839,7 @@ LdrpRunInitializeRoutines(IN PCONTEXT Context OPTIONAL)
     NextEntry = NextEntry->Flink;
     while (NextEntry != ListHead)
     {
-        /* Get the Data Entrry */
+        /* Get the Data Entry */
         LdrEntry = CONTAINING_RECORD(NextEntry, LDR_DATA_TABLE_ENTRY, InInitializationOrderLinks);
 
         /* FIXME: Verify NX Compat */
