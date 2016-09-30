@@ -22,7 +22,7 @@ Abstract:
     of the tree.  The children of a given directory will be grouped together.
 
     The directories are assigned ordinal numbers based on their position in
-    the path table.  The root dirctory is assigned ordinal value 1.
+    the path table.  The root directory is assigned ordinal value 1.
 
     Path table sectors:
 

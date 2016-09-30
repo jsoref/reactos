@@ -87,7 +87,7 @@ If you search for more information, look into the Subversion repository.
 03.08.2004	m. fuchs	get version number to display from RES_STR_PRODUCT_VERSION
 16.08.2004	m. fuchs	display version information in about dialog and on the desktop
 15.09.2004	m. fuchs	remove direct version output from desktop; instead store the activation flag into the registry
-17.09.2004	m. fuchs	handle "." and ".." as special direcory names and move them at the very first beginning of directory listings
+17.09.2004	m. fuchs	handle "." and ".." as special directory names and move them at the very first beginning of directory listings
 23.09.2004	m. fuchs	configuration dialog to choose between MDI and SDI mode with persistent storage
 20.11.2004	m. fuchs	display notification icon change times
 						notification area button to toggle hidden icons

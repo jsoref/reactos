@@ -350,7 +350,7 @@ BasepComputeProcessPath(IN PBASE_SEARCH_PATH_TYPE PathOrder,
             }
             break;
 
-        /* Add the current dierctory */
+        /* Add the current directory */
         case BaseSearchPathCurrent:
 
             /* Copy it in the buffer, ASSERT there's enough space */

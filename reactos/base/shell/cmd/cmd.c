@@ -1785,7 +1785,7 @@ static VOID Cleanup()
         ParseCommandLine (_T("\\cmdexit.bat"));
     }
 
-#ifdef FEATURE_DIECTORY_STACK
+#ifdef FEATURE_DIRECTORY_STACK
     /* destroy directory stack */
     DestroyDirectoryStack ();
 #endif

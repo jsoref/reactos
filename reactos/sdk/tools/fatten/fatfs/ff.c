@@ -2084,7 +2084,7 @@ FRESULT follow_path (	/* FR_OK(0): successful, !=0: error code */
 					if (_FS_RPATH && (ns & NS_DOT)) {	/* If dot entry is not exist, */
 						dp->sclust = 0; dp->dir = 0;	/* it is the root directory and stay there */
 						if (!(ns & NS_LAST)) continue;	/* Continue to follow if not last segment */
-						res = FR_OK;					/* Ended at the root directroy. Function completed. */
+						res = FR_OK;					/* Ended at the root directory. Function completed. */
 					} else {							/* Could not find the object */
 						if (!(ns & NS_LAST)) res = FR_NO_PATH;	/* Adjust error code if not last segment */
 					}
@@ -3004,7 +3004,7 @@ FRESULT f_getcwd (
 #endif
 			if (i == len) {					/* Root-directory */
 				*tp++ = '/';
-			} else {						/* Sub-directroy */
+			} else {						/* Sub-directory */
 				do		/* Add stacked path str */
 					*tp++ = buff[i++];
 				while (i < len);
@@ -3642,7 +3642,7 @@ FRESULT f_mkdir (
 					mem_set(dir, 0, SS(dj.fs));
 				}
 			}
-			if (res == FR_OK) res = dir_register(&dj);	/* Register the object to the directoy */
+			if (res == FR_OK) res = dir_register(&dj);	/* Register the object to the directory */
 			if (res != FR_OK) {
 				remove_chain(dj.fs, dcl);			/* Could not register, remove cluster chain */
 			} else {
