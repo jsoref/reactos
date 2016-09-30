@@ -531,7 +531,7 @@ VOID CancelRoutine(PDEVICE_OBJECT DeviceObject, PIRP Irp)
 You need to remember that the C language specification requires that
 evaluation of boolean operators short circuit when the result is known.
 So, if StartIo discovers that the Irp it got as an argument is not the
-same as CurrentIrp, it will not attempt to evaulate Irp->Cancel.
+same as CurrentIrp, it will not attempt to evaluate Irp->Cancel.
 
 Now, as to why this works: StartIo gets called either by IoStartPacket
 or IoStartNextPacket. Each of them will grab the cancel spin lock and
