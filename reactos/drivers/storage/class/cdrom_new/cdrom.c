@@ -6641,7 +6641,7 @@ CdRomErrorHandler(
         //      SCSI_SENSE_NOT_READY/SCSI_ADSENSE_NO_MEDIA_IN_DEVICE
         //
         //  These drives should not pass WHQL certification due
-        //  to this discrepency.
+        //  to this discrepancy.
         //
         //  However, we have to retry on 2/4/0 (Not ready, LUN not ready,
         //  no info) and also 3/2/0 (no seek complete).

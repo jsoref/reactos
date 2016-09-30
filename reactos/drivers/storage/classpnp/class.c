@@ -3188,7 +3188,7 @@ ClassInterpretSenseInfo(
                         SCSI_SENSE_NOT_READY/SCSI_ADSENSE_NO_MEDIA_IN_DEVICE
 
                         These drives should not pass WHQL certification due
-                        to this discrepency.
+                        to this discrepancy.
 
                         */
                         retry = FALSE;
