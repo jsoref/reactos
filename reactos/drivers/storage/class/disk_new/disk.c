@@ -706,7 +706,7 @@ Return Value:
         if (!NT_SUCCESS(status)) {
 
             //
-            // Flag this as a user errror so that a popup is generated.
+            // Flag this as a user error so that a popup is generated.
             //
 
             DebugPrint((1, "DiskReadWriteVerification: ReadyStatus is %lx\n",

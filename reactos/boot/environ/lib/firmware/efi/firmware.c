@@ -314,7 +314,7 @@ EfiGetVariable (
         *Attributes = LocalAttributes;
     }
 
-    /* Convert the errot to an NTSTATUS and return it */
+    /* Convert the error to an NTSTATUS and return it */
     Status = EfiGetNtStatusCode(EfiStatus);
     return Status;
 }

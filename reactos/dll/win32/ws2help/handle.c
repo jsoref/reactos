@@ -425,7 +425,7 @@ WahOpenHandleHelper(OUT PHANDLE HelperHandle)
     }
     else
     {
-        /* Get the errror code */
+        /* Get the error code */
         ErrorCode = GetLastError();
     }
 

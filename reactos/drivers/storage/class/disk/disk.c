@@ -1541,7 +1541,7 @@ Return Value:
         if (((PDISK_DATA)(deviceExtension + 1))->DriveNotReady) {
 
             //
-            // Flag this as a user errror so that a popup is generated.
+            // Flag this as a user error so that a popup is generated.
             //
 
             Irp->IoStatus.Status = STATUS_DEVICE_NOT_READY;
