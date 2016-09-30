@@ -309,7 +309,7 @@ int main(int argc, const char *argv[])
 
     if (Header.Flags & LINK_DESCRIPTION)
     {
-        // Dscription
+        // Description
         uhTmp = strlen(pszDescription);
         fwrite(&uhTmp, sizeof(uhTmp), 1, pFile);
         fputs(pszDescription, pFile);
