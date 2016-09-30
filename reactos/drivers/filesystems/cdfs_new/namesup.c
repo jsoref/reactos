@@ -1016,7 +1016,7 @@ Return Value:
 
     //
     //  Loop through looking at all of the characters in both strings
-    //  testing for equalilty, less than, and greater than
+    //  testing for equality, less than, and greater than
     //
 
     i = RtlCompareMemory( NameA->Buffer, NameB->Buffer, MinLength );
