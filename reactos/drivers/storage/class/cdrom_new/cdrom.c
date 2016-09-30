@@ -6653,7 +6653,7 @@ CdRomErrorHandler(
         //  (0x01) in order to comply with WHQL standards.
         //
         //  The default retry timeout of one second is acceptable to balance
-        //  these discrepencies.  don't modify the status, though....
+        //  these discrepancies.  don't modify the status, though....
         //
 
         if (((sense->SenseKey & 0xf) == SCSI_SENSE_NOT_READY) &&
