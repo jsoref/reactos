@@ -409,7 +409,7 @@ RtlInterlockedFlushSList16:
     /* Load ListHead into r8, as we need rcx for the exchange */
     mov r8, rcx
 
-    /* Initialize an ampty NewListHead in rcx:rbx */
+    /* Initialize an empty NewListHead in rcx:rbx */
     xor rbx, rbx
     mov rcx, (SLIST16B_HEADERTYPE_MASK or SLIST16B_INIT_MASK)
 

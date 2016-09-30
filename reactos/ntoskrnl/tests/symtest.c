@@ -90,7 +90,7 @@ SymlinkCreateTests(OUT PHANDLE OddLink)
     }
 
     //
-    // Test6: Target with an emtpy name len
+    // Test6: Target with an empty name len
     //
     {
     OBJECT_ATTRIBUTES Test5 = RTL_INIT_OBJECT_ATTRIBUTES(&OkName, 0);

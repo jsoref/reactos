@@ -572,7 +572,7 @@ IsShortName_U(IN PWCHAR Name,
     /* What do you think 8.3 means? */
     if (Length > 12) return FALSE;
 
-    /* Sure, any emtpy name is a short name */
+    /* Sure, any empty name is a short name */
     if (!Length) return TRUE;
 
     /* This could be . or .. or something else */
