@@ -332,7 +332,7 @@ INT recFindSubDirs(DWORD dwFlags,
     /* Get the first file in the directory */
     hFile = FindFirstFile (szDestPath, &findBuffer);
 
-    /* Remove the star added earlyer to dest path */
+    /* Remove the star added earlier to dest path */
     for(i = (_tcslen(szDestPath) -  1); i > -1; i--)
     {
         if (szDestPath[i] != _T('\\'))
