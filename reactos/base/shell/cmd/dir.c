@@ -1608,7 +1608,7 @@ DirList(LPTSTR szPath,              /* [IN] The path that dir starts */
 
     /* Do the recursive job if requested
        the recursive is be done on ALL(indepent of their attribs)
-       directoried of the current one.*/
+       directories of the current one.*/
     if (lpFlags->bRecursive)
     {
         /* The new search is involving any *.* file */
