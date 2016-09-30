@@ -380,6 +380,6 @@ VOID FreeNdisPacket
         ExFreePoolWithTag(Data, PACKET_BUFFER_TAG);
     }
 
-    /* Finally free the NDIS packet discriptor */
+    /* Finally free the NDIS packet descriptor */
     NdisFreePacket(Packet);
 }

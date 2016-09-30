@@ -484,7 +484,7 @@ VOID FreeNdisPacketX
         exFreePool(Data);
     }
 
-    /* Finally free the NDIS packet discriptor */
+    /* Finally free the NDIS packet descriptor */
     UntrackFL(File,Line,Packet);
     NdisFreePacket(Packet);
 }

@@ -147,7 +147,7 @@ SepInitializationPhase1(VOID)
                             NULL);
     ASSERT(NT_SUCCESS(Status));
 
-    /* TODO: Create a security desscriptor for the directory */
+    /* TODO: Create a security descriptor for the directory */
 
     /* Create '\Security' directory */
     RtlInitUnicodeString(&Name, L"\\Security");

@@ -710,7 +710,7 @@ SeQuerySecurityDescriptorInfo(
         return STATUS_BUFFER_TOO_SMALL;
     }
 
-    /* Build the new security descrtiptor */
+    /* Build the new security descriptor */
     RtlCreateSecurityDescriptorRelative(RelSD,
                                         SECURITY_DESCRIPTOR_REVISION);
     RelSD->Control = Control;
