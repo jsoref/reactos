@@ -24,7 +24,7 @@
 //
 // File description :The driver for BusLogic-BT958 SCSI Host adapter card.
 // This driver assumes that the host adapter(HA from now on) is a PCI device.
-// This is an effort to build a driver for this card for the windows XP ennvironment
+// This is an effort to build a driver for this card for the windows XP environment
 // since the native XP installation doesnt provide this driver.
 //
 // The technical refernece for this device is at :

@@ -200,7 +200,7 @@ void FreeEnvironment(char **environment)
  * original envirnments created during initilization if needed to prevent
  * having spurious pointers floating around. Then it updates the internal
  * environment tables (_environ and _wenviron) and at last updates the
- * OS environemnt.
+ * OS environment.
  *
  * Note that there can happen situation when the internal [_w]environ
  * arrays will be updated, but the OS environment update will fail. In
