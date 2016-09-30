@@ -178,7 +178,7 @@ KeSetEvent(IN PKEVENT Event,
         return TRUE;
     }
 
-    /* Lock the Dispathcer Database */
+    /* Lock the Dispatcher Database */
     OldIrql = KiAcquireDispatcherLock();
 
     /* Save the Previous State */

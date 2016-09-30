@@ -77,7 +77,7 @@ KiCheckForKernelApcDelivery(VOID)
  * @remarks The APC will execute at APC_LEVEL for the KernelRoutine registered,
  *          and at PASSIVE_LEVEL for the NormalRoutine registered.
  *
- *          Callers of this routine must have locked the dipatcher database.
+ *          Callers of this routine must have locked the dispatcher database.
  *
  *--*/
 VOID
