@@ -71,7 +71,7 @@ public:
   // Call this method to open existing subkey of this key.
   //
   // Parameters:
-  //   samDesired - deisred access.
+  //   samDesired - desired access.
   //   pszSubkeyName - pointer to buffer containing name of key to open.
   //   rhKey - reference to variable that receives handle of opened key. If method fails, variable value is unchanged.
   //
@@ -83,7 +83,7 @@ public:
   // Call this method to open existing subkey of this key.
   //
   // Parameters:
-  //   samDesired - deisred access.
+  //   samDesired - desired access.
   //   pszSubkeyName - pointer to buffer containing name of key to open.
   //   rKey - reference to CRegistryKey object. If method succeeds, rKey is initialized with newly opened key.
   //
@@ -214,7 +214,7 @@ public:
   // Call this method to create subkey of this key.
   //
   // Parameters:
-  //   samDesired - deisred access.
+  //   samDesired - desired access.
   //   pszKeyName - pointer to buffer containing name of key to create.
   //   rhKey - reference to variable that receives handle of opened key. If method fails, variable value is unchanged.
   //   pblnOpened - optional pointer to variable that receives create/open status. If subkey is opened value is TRUE. If key is created value is FALSE.

@@ -169,7 +169,7 @@ KsCreateClock(HANDLE ConnectionHandle,
 * requested for the connection. 
 
 * @param ACCESS_MASK  DesiredAccess
-* Desrided access
+* Desired access
 *
 * @param PHANDLE ConnectionHandle
 * connection handle passed
@@ -222,7 +222,7 @@ KsCreatePin(HANDLE FilterHandle,
 * topology node parameters to use when it is create
 *
 * @param ACCESS_MASK  DesiredAccess
-* Desrided access
+* Desired access
 *
 * @param PHANDLE  NodeHandle
 * Location for the topology node handle

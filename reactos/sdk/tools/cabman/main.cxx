@@ -32,7 +32,7 @@ char* Pad(char* Str, char PadChar, ULONG Length)
  * ARGUMENTS:
  *     Str     = Pointer to string to pad
  *     PadChar = Character to pad with
- *     Length  = Disired length of string
+ *     Length  = Desired length of string
  * RETURNS:
  *     Pointer to string
  * NOTES:
