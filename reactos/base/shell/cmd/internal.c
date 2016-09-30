@@ -146,7 +146,7 @@
    INT GetRootPath("C:",outbuffer,chater size of outbuffer);
    the first param can have any size, if the the two frist
    letter are not a drive with : it will get Currentpath on
-   current drive exacly as GetCurrentDirectory does.
+   current drive exactly as GetCurrentDirectory does.
    */
 
 INT GetRootPath(TCHAR *InPath,TCHAR *OutPath,INT size)
