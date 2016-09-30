@@ -52,7 +52,7 @@ StartDebugHotKeys(VOID)
     }
     UserRegisterHotKey(PWND_BOTTOM, IDHK_SHIFTF12, MOD_SHIFT, vk);
     UserRegisterHotKey(PWND_BOTTOM, IDHK_F12, 0, vk);
-    TRACE("Start up the debugger hotkeys!! If you see this you eneabled debugprints. Congrats!\n");
+    TRACE("Start up the debugger hotkeys!! If you see this you enabled debugprints. Congrats!\n");
 }
 
 /*
