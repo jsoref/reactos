@@ -652,7 +652,7 @@ void doSetValue(LPTSTR stdInput)
  */
 void doQueryValue(LPTSTR stdInput) {
   /*
-   * We encoutered the end of the file, make sure we
+   * We encountered the end of the file, make sure we
    * close the opened key and exit
    */
   if (stdInput == NULL) {

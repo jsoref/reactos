@@ -360,6 +360,6 @@ Severity=Warning
 Facility=IO
 SymbolicName=IO_FILE_QUOTA_FAILED
 Language=English
-The system has encounted an error rebuilding the user disk quota
+The system has encountered an error rebuilding the user disk quota
 information on device %1 with label "%2".
 .
