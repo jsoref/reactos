@@ -140,7 +140,7 @@ MuppIsDfsEnabled(VOID)
     KeyName.MaximumLength = sizeof(L"\\Registry\\Machine\\System\\CurrentControlSet\\Services\\Mup");
 
     /* Simply query registry to know whether we have to disable DFS.
-     * Unless explicitely stated in registry, we will try to enable DFS.
+     * Unless explicitly stated in registry, we will try to enable DFS.
      */
     InitializeObjectAttributes(&ObjectAttributes,
                                &KeyName,
