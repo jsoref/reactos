@@ -154,7 +154,7 @@ _invalid_parameter_handler CDECL _get_invalid_parameter_handler(void)
     return invalid_parameter_handler;
 }
 
-/* _set_invalid_parameter_handler - not exproted in native msvcrt, added in msvcr80 */
+/* _set_invalid_parameter_handler - not exported in native msvcrt, added in msvcr80 */
 _invalid_parameter_handler CDECL _set_invalid_parameter_handler(
         _invalid_parameter_handler handler)
 {
