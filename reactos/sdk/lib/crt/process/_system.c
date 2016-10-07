@@ -2,7 +2,7 @@
  * COPYRIGHT:   See COPYING in the top level directory
  * PROJECT:     ReactOS system libraries
  * FILE:        lib/sdk/crt/process/_system.c
- * PURPOSE:     Excutes a shell command
+ * PURPOSE:     Executes a shell command
  * PROGRAMER:   Ariadne
  * UPDATE HISTORY:
  *              04/03/99: Created
