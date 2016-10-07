@@ -14,7 +14,7 @@
  *                  with absolutely no other changes needed.
  * - Rename and new parameters. This deals with a case similar to the one
  *                              above, except that new parameters have now
- *                              been added. This is also usually extremly
+ *                              been added. This is also usually extremely
  *                              simple to fix. Either pass the right params
  *                              or pass null/0 values that you ignore.
  * - Rename and new structure. This is similar to the above, except that the

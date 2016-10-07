@@ -379,7 +379,7 @@ VOID
 FASTCALL
 PopIdle0(IN PPROCESSOR_POWER_STATE PowerState)
 {
-    /* FIXME: Extremly naive implementation */
+    /* FIXME: Extremely naive implementation */
     HalProcessorIdle();
 }
 
