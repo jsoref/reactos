@@ -209,7 +209,7 @@ typedef struct _DISK_DATA {
 
     //
     // ReadyStatus - STATUS_SUCCESS indicates that the drive is ready for
-    // use.  Any error status is to be returned as an explaination for why
+    // use.  Any error status is to be returned as an explanation for why
     // a request is failed.
     //
     // This was done solely for the zero-length partition case of having no
