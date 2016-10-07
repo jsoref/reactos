@@ -564,7 +564,7 @@ ConfigCallback(PVOID Context,
         DriveInfo->FloppyDeviceData.MaximumTrackValue = FloppyDeviceData->MaximumTrackValue;
         DriveInfo->FloppyDeviceData.DataTransferLength = FloppyDeviceData->DataTransferLength;
 
-        /* Once it's all set up, acknowledge its existance in the controller info object */
+        /* Once it's all set up, acknowledge its existence in the controller info object */
         gControllerInfo[gNumberOfControllers].NumberOfDrives++;
     }
 

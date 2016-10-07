@@ -64,7 +64,7 @@ Process closing window station with CloseWindowStation can't be assigned to the 
 
 The reason is that each session has its own CSRSS, as well as instanced
 win32k.sys data.  So in each session, you basically have a complete copy of
-Windows that doesn't know about the existance of any other copy.  You're not
+Windows that doesn't know about the existence of any other copy.  You're not
 just on a different desktop/windowstation when you're in a different
 session.
 
