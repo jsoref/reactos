@@ -13,7 +13,7 @@
 #include <os2.h>
 
 
-// TODO: Expain that this is for memory alloc/free funcs of Os2 api
+// TODO: Explain that this is for memory alloc/free funcs of Os2 api
 
 
 
