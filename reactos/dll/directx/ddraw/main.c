@@ -305,7 +305,7 @@ DirectDrawEnumerateExW(LPDDENUMCALLBACKEXW lpCallback,
     | D3DHAL_DP2VIEWPORTINFO | 0x04 - xxxx |
     ---------------------------------------
 
-    to calculate the end of the lpCmd buffer in this exmaple
+    to calculate the end of the lpCmd buffer in this example
     D3DHAL_DP2COMMAND->wStateCount * sizeof(D3DHAL_DP2VIEWPORTINFO);
     now you got number of bytes but we need to add the size of D3DHAL_DP2COMMAND
     to get this right. the end should be

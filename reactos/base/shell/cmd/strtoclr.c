@@ -245,7 +245,7 @@ WORD str_to_color(LPTSTR* arg_str)
  * **** NOTE: The following functionality is deactivated ****
  * it returns the color in the l.o. byte, plus two flags in the
  * h.o. byte, they are:
- * SC_HEX win nt's cmd syntax (for exampl a0)
+ * SC_HEX win nt's cmd syntax (for example a0)
  * SC_TXT 4nt's syntax ( "bri gre on bla" or "10 on 0")
  * **********************************************************
  *
