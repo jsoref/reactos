@@ -67,7 +67,7 @@ VfatHasFileSystem(
                                       FALSE);
     if (!NT_SUCCESS(Status))
     {
-        DPRINT("VfatBlockDeviceIoControl faild (%x)\n", Status);
+        DPRINT("VfatBlockDeviceIoControl failed (%x)\n", Status);
         return Status;
     }
 
@@ -85,7 +85,7 @@ VfatHasFileSystem(
                                           FALSE);
         if (!NT_SUCCESS(Status))
         {
-            DPRINT("VfatBlockDeviceIoControl faild (%x)\n", Status);
+            DPRINT("VfatBlockDeviceIoControl failed (%x)\n", Status);
             return Status;
         }
 

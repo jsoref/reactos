@@ -3228,7 +3228,7 @@ FRESULT f_opendir (
 		}
 		if (res == FR_NO_FILE) res = FR_NO_PATH;
 	}
-	if (res != FR_OK) dp->fs = 0;		/* Invalidate the directory object if function faild */
+	if (res != FR_OK) dp->fs = 0;		/* Invalidate the directory object if function failed */
 
 	LEAVE_FF(fs, res);
 }
