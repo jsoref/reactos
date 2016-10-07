@@ -1953,7 +1953,7 @@ CmpLockRegistry(VOID)
     /* Check if we have to starve writers */
     if (CmpFlushStarveWriters)
     {
-        /* Starve exlusive waiters */
+        /* Starve exclusive waiters */
         ExAcquireSharedStarveExclusive(&CmpRegistryLock, TRUE);
     }
     else

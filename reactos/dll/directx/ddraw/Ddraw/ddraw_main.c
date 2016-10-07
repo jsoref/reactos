@@ -254,7 +254,7 @@ Main_DirectDraw_Initialize (LPDDRAWI_DIRECTDRAW_INT This, LPGUID lpGUID)
 * @name DDraw->Compact
 * @implemented
 *
-* In exlusive mode the function DDraw->Compact returns DERR_NOEXCLUSIVEMODE, otherwise it returns DD_OK
+* In exclusive mode the function DDraw->Compact returns DERR_NOEXCLUSIVEMODE, otherwise it returns DD_OK
 *
 * @return
 * Returns only error code DD_OK or DERR_NOEXCLUSIVEMODE

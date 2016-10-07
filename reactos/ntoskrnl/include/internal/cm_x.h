@@ -151,7 +151,7 @@ CmpTryToConvertKcbSharedToExclusive(IN PCM_KEY_CONTROL_BLOCK k)
 }
 
 //
-// Releases an exlusively or shared acquired KCB
+// Releases an exclusively or shared acquired KCB
 //
 #define CmpReleaseKcbLock(k)                                        \
 {                                                                   \
@@ -161,7 +161,7 @@ CmpTryToConvertKcbSharedToExclusive(IN PCM_KEY_CONTROL_BLOCK k)
 }
 
 //
-// Releases an exlusively or shared acquired KCB by index
+// Releases an exclusively or shared acquired KCB by index
 //
 #define CmpReleaseKcbLockByIndex(i)                                 \
 {                                                                   \
@@ -170,7 +170,7 @@ CmpTryToConvertKcbSharedToExclusive(IN PCM_KEY_CONTROL_BLOCK k)
 }
 
 //
-// Releases an exlusively or shared acquired KCB by key
+// Releases an exclusively or shared acquired KCB by key
 //
 #define CmpReleaseKcbLockByKey(k)                                   \
 {                                                                   \
@@ -210,7 +210,7 @@ CmpConvertKcbSharedToExclusive(IN PCM_KEY_CONTROL_BLOCK k)
 }
 
 //
-// Releases an exlusively or shared acquired NCB
+// Releases an exclusively or shared acquired NCB
 //
 #define CmpReleaseNcbLock(k)                                        \
 {                                                                   \
@@ -219,7 +219,7 @@ CmpConvertKcbSharedToExclusive(IN PCM_KEY_CONTROL_BLOCK k)
 }
 
 //
-// Releases an exlusively or shared acquired NCB by key
+// Releases an exclusively or shared acquired NCB by key
 //
 #define CmpReleaseNcbLockByKey(k)                                   \
 {                                                                   \

@@ -1318,7 +1318,7 @@ NTSTATUS
 NTAPI
 CmFlushKey(
     IN PCM_KEY_CONTROL_BLOCK Kcb,
-    IN BOOLEAN EclusiveLock
+    IN BOOLEAN ExclusiveLock
 );
 
 NTSTATUS

@@ -465,7 +465,7 @@ TestDeviceCreateDelete(
                             &DeviceObject);
     ok(Status == STATUS_OBJECT_PATH_NOT_FOUND, "Expected STATUS_OBJECT_PATH_NOT_FOUND, got 0x%lX\n", Status);
 
-    /* Create using correct params with exclusice access */
+    /* Create using correct params with exclusive access */
     RtlInitUnicodeString(&DeviceString, L"\\Device\\Kmtest-IoDeviceObject");
     Status = IoCreateDevice(DriverObject,
                             0,
@@ -486,7 +486,7 @@ TestDeviceCreateDelete(
             DriverObject->DeviceObject);
     }
 
-    /* Create using correct params without exclusice access */
+    /* Create using correct params without exclusive access */
     Status = IoCreateDevice(DriverObject,
                             0,
                             &DeviceString,

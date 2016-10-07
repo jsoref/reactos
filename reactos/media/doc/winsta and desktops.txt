@@ -83,7 +83,7 @@ PROCESS:
  one process?? )
 
 THREADS:
--can only enumerate windows on its desktop (but u can easely switch to a different desk)
+-can only enumerate windows on its desktop (but u can easily switch to a different desk)
 -every w32 thread is associated with a Desktop
 -Threads can switch between desktops, and windows are created on the thread's current desktop
  (a thread can have windows on multiple desktops? IS THIS REALLY TRUE?)

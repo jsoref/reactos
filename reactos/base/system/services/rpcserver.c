@@ -968,7 +968,7 @@ DWORD RCloseServiceHandle(
     {
         DPRINT("Found service handle\n");
 
-        /* Lock the service database exlusively */
+        /* Lock the service database exclusively */
         ScmLockDatabaseExclusive();
 
         /* Get the pointer to the service record */
