@@ -546,7 +546,7 @@ void test_GetPwrCapabilities(void)
    ok(!ret, "function was expected to fail\n");
    if (!ret)
    {
-      ok(GetLastError() == ERROR_INVALID_PARAMETER,"function was expectet to return ERROR_INVALID_PARAMETER, but returns: %x\n",(UINT)GetLastError());
+      ok(GetLastError() == ERROR_INVALID_PARAMETER,"function was expected to return ERROR_INVALID_PARAMETER, but returns: %x\n",(UINT)GetLastError());
    }
    ret = GetPwrCapabilities(&spc);
    ok(ret, "function was expected to succeed, error %x\n",(UINT)GetLastError());
