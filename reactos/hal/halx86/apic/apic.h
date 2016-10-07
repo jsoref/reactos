@@ -105,7 +105,7 @@ enum
     APIC_DSH_Destination,
     APIC_DSH_Self,
     APIC_DSH_AllIncludingSelf,
-    APIC_DSH_AllExclusingSelf
+    APIC_DSH_AllExcludingSelf
 };
 
 enum
