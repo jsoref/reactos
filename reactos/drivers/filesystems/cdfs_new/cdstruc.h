@@ -133,7 +133,7 @@ Abstract:
         5. A fast mutex in the Vcb will protect access to the Fcb table and
             the open counts in the Vcb.  It is also used to modify the reference
             counts in all Fcbs.  This mutex cannot be acquired
-            exclusely and is an end resource.
+            exclusively and is an end resource.
 
         6. A fast mutex in the Fcb will synchronize access to all Fcb fields
             which aren't synchronized in some other way.  A thread may acquire
