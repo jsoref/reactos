@@ -247,7 +247,7 @@ void x87_fucom( struct x86_function *p, struct x86_reg arg );
 
 
 /* Retreive a reference to one of the function arguments, taking into
- * account any push/pop activity.  Note - doesn't track explict
+ * account any push/pop activity.  Note - doesn't track explicit
  * manipulation of ESP by other instructions.
  */
 struct x86_reg x86_fn_arg( struct x86_function *p, unsigned arg );
