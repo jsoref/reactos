@@ -1501,7 +1501,7 @@ SmpInitializeKnownDllsInternal(IN PUNICODE_STRING Directory,
 
         DPRINT("Processing known DLL: %wZ-%wZ\n", &RegEntry->Name, &RegEntry->Value);
 
-        /* Skip the entry if it's in the exluded list */
+        /* Skip the entry if it's in the excluded list */
         if ((SmpFindRegistryValue(&SmpExcludeKnownDllsList,
                                   RegEntry->Name.Buffer)) ||
             (SmpFindRegistryValue(&SmpExcludeKnownDllsList,
