@@ -616,7 +616,7 @@ VOID
 NTAPI
 KeContextToTrapFrame(
     PCONTEXT Context,
-    PKEXCEPTION_FRAME ExeptionFrame,
+    PKEXCEPTION_FRAME ExceptionFrame,
     PKTRAP_FRAME TrapFrame,
     ULONG ContextFlags,
     KPROCESSOR_MODE PreviousMode

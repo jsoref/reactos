@@ -438,7 +438,7 @@ Test_ExtCreatePen_Helper(
     //   "dwPenStyle=0x%lx, dwWidth=%lu, dwStyleCount=%lu, pdwStyles=%p, lbStyle=%lu, lbHatch=%p\n",
     //   bExpectException, dwPenStyle, dwWidth, dwStyleCount, pdwStyles, lbStyle, (PVOID)lbHatch);
 
-    ok2(bGotException == bExpectException, "ExtCreatePen expception, expected %u, got %u", bExpectException, bGotException);
+    ok2(bGotException == bExpectException, "ExtCreatePen exception, expected %u, got %u", bExpectException, bGotException);
 
     if (!bExpectSuccess)
     {
