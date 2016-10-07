@@ -1751,7 +1751,7 @@ BusLogic_QueueCommand(IN PVOID HwDeviceExtension ,
 // Routine Description:
 //                      BusLogic_QueueCommand creates a CCB for Command
 // Arguments:
-//              1. HwDeviceExtemsion: device extension
+//              1. HwDeviceExtension: device extension
 //              2. Srb: Pointe to the SRB
 //              3. CCB: POinter to the buffer containing the space for CCB
 // Return Value:

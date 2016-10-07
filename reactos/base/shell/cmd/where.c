@@ -51,7 +51,7 @@
  *
  *    30-Jul-1998 (John P Price <linux-guru@gcfl.net>)
  *        fixed so that it find_which returns NULL if filename is not
- *        executable (does not have .bat, .com, or .exe extention).
+ *        executable (does not have .bat, .com, or .exe extension).
  *        Before command would to execute any file with any extension (opps!)
  *
  *    03-Dec-1998 (Eric Kohl)

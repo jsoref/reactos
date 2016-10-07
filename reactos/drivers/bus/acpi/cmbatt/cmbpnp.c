@@ -669,7 +669,7 @@ CmBattAddBattery(IN PDRIVER_OBJECT DriverObject,
         return Status;
     }
 
-    /* Build the FDO extensio, check if we support trip points */
+    /* Build the FDO extension, check if we support trip points */
     FdoExtension = FdoDeviceObject->DeviceExtension;
     FdoExtension->FdoType = CmBattBattery;
     FdoExtension->Started = 0;
