@@ -48,7 +48,7 @@ dstFILE: here  is  stored FILE re-name(hi.txt)
 
 2)If srcPattern contains "\" then:
         -we activate bPath, since srcPattern has a path inside of it.
-        -we explit the srcPattern to srcFile and srcPath.
+        -we split the srcPattern to srcFile and srcPath.
     -Now we check the dstPattern ¿does it contain a Path?:
         -If does: we divide it in dstPath and dstFile.AND ALSO CHECK THAT dstPath and srcPath it´s the same(see syntax error).If they aren the same we launch an error.
         -If doesnt then we copy srcPath to dstPath(see #way2) and also saving dstPattern as dstFile.
