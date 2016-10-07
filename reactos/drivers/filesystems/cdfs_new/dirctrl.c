@@ -1371,7 +1371,7 @@ Return Value:
     PAGED_CODE();
 
     //
-    //  Loop until we find a match or exaust the directory.
+    //  Loop until we find a match or exhaust the directory.
     //
 
     while (TRUE) {

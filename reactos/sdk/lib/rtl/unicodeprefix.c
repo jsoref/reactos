@@ -80,7 +80,7 @@ CompareUnicodeStrings(IN PUNICODE_STRING Prefix,
     FoundPrefix = Prefix->Buffer[i];
     FoundString = String->Buffer[i];
 
-    /* Check if we exausted the search above */
+    /* Check if we exhausted the search above */
     if (i == CaseCheckChar)
     {
         /* Do a case-insensitive search */
