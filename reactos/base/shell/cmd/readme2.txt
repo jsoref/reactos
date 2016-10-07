@@ -27,7 +27,7 @@ There is one of 2 things that could happen.
 2) we dont find it so we send it to Execute() and see if it is a file that we can do something.
 
 Execute will try to launch the file using createprocess and falls back on shellexecute.  
-It calls a function called SearchForExecuteable() to find the full path name and looks in all the correct locations like PATH,
+It calls a function called SearchForExecutable() to find the full path name and looks in all the correct locations like PATH,
  current folder, windows folder.  If it cant find it, just fails and prints out a message.
 
 Some useful functions that are used a lot:
