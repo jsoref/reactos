@@ -477,7 +477,7 @@ EnumParametersCallback(
     }
     else
     {
-        printf("Could not get type info. Fallig back to ptr\n");
+        printf("Could not get type info. Falling back to ptr\n");
         pExport->aeParameters[pExport->cParameters - 1] = TYPE_PTR;
     }
 
