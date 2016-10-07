@@ -244,8 +244,8 @@ DirReadParam(LPTSTR Line,               /* [IN] The line with the parameters & s
              LPDIRSWITCHFLAGS lpFlags)  /* [IN/OUT] The flags after calculating switches */
 {
     TCHAR cCurSwitch;   /* The current switch */
-    TCHAR cCurChar;     /* Current examing character */
-    TCHAR cCurUChar;    /* Current upper examing character */
+    TCHAR cCurChar;     /* Current examined character */
+    TCHAR cCurUChar;    /* Current upper examined character */
     BOOL bNegative;     /* Negative switch */
     BOOL bPNegative;    /* Negative switch parameter */
     BOOL bIntoQuotes;   /* A flag showing if we are in quotes (") */
