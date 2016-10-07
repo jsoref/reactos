@@ -119,7 +119,7 @@ heap.c:
  - Implements the heap manager. Imported from wine...
 
 image.c:
- - Implements some PE header functions, nothing complicated. Should be self-explainatory considering how well the PE structures are documented.
+ - Implements some PE header functions, nothing complicated. Should be self-explanatory considering how well the PE structures are documented.
 
 largeint.c:
  - 64 bit maths is very difficult, especially when the compiler does most of the magic for us...
