@@ -27,7 +27,7 @@ I found these issues while running your explorer from Windows XP SP2's explorer.
 - use multi threading for launching of programs and filling start menu subdirectories
 - close start start menu when resizing explorer bar
 - adjust already open windows of all running applications when resizing explorer bar
-- implement blink effect in task bar for SetForegoundWindow() requests
+- implement blink effect in task bar for SetForegroundWindow() requests
 - Execute selected programs with additional command line options ("Run" dialog with pre-filled edit field)
 - switch background images with desktop switcher
 - Desktop Manager: Desktop Names; Speicherung der Verteilung von Applikations-Fenstern auf die verschiedenen Desktops -> config file
