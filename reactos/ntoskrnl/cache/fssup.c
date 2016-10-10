@@ -47,7 +47,7 @@ CcUninitializeCacheMap means:
 Take away the private cache map from this FILE_OBJECT.  If it's the last
 private cache map corresponding to a specific shared cache map (the one that
 was present in the FILE_OBJECT when it was created), then delete that too,
-flusing all cached information.
+flushing all cached information.
 
 Using these simple semantics, filesystems can do all the things they actually
 do:
