@@ -2026,7 +2026,7 @@ main (int argc, char **argv)
   else
     /*
      * Ignore any 'full' fixed disk devices, if -I is not given.
-     * On a MO-disk one doesn't need partitions.  The filesytem can go
+     * On a MO-disk one doesn't need partitions.  The filesystem can go
      * directly to the whole disk.  Under other OSes this is known as
      * the 'superfloppy' format.  As I don't know how to find out if
      * this is a MO disk I introduce a -I (ignore) switch.  -Joey
