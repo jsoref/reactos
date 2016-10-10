@@ -193,7 +193,7 @@ extern "C" {
 #define MODE_PAGE_FORMAT_DEVICE         0x03
 #define MODE_PAGE_MRW                   0x03
 #define MODE_PAGE_RIGID_GEOMETRY        0x04
-#define MODE_PAGE_FLEXIBILE             0x05
+#define MODE_PAGE_FLEXIBLE             0x05
 #define MODE_PAGE_WRITE_PARAMETERS      0x05
 #define MODE_PAGE_VERIFY_ERROR          0x07
 #define MODE_PAGE_CACHING               0x08

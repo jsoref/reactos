@@ -3180,7 +3180,7 @@ Return Value:
     // Look for the flexible disk mode page.
     //
 
-    pageData = ScsiClassFindModePage( modeData, length, MODE_PAGE_FLEXIBILE, TRUE);
+    pageData = ScsiClassFindModePage( modeData, length, MODE_PAGE_FLEXIBLE, TRUE);
 
     if (pageData != NULL) {
 
