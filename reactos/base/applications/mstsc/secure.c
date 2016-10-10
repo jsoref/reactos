@@ -1074,7 +1074,7 @@ sec_connect(char *server, char *username, char *domain, char *password, RD_BOOL 
 	mcs_data.p = mcs_data.data = (uint8 *) xmalloc(mcs_data.size);
 	sec_out_mcs_data(&mcs_data, selected_proto);
 
-	/* finialize the MCS connect sequence */
+	/* finalize the MCS connect sequence */
 	if (!mcs_connect_finalize(&mcs_data))
 		return False;
 
