@@ -515,7 +515,7 @@ RleBitBlt(IN ULONG Left,
             /* Check if we've gone past the edge */
             if ((x + RleValue) > (Width + Left))
             {
-                /* Fixeup the pixel value */
+                /* Fixup the pixel value */
                 RleValue = Left - x + Width;
             }
 
