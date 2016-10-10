@@ -17,11 +17,11 @@ I found that the book glosses over very important topics such as IDT
 in SMP enviroments , and a complete wrong presentation of what structure
 a interrupt handler is supposed to build on the stack to ensure shamless
 OS functionality. Mr's Prasad  choice is a straigtforward pushad ,
-folowed by setting the FS segment to the ring0 PCR selector. This way
+followed by setting the FS segment to the ring0 PCR selector. This way
 to build a trap frame for a interrupt is still used in Windows 95 ,
 but in Windows NT , the layout of a correct Trap Frame is a little bit
 more complex.
-        The correct layout for a Trap Frame is the folowing: (note that
+        The correct layout for a Trap Frame is the following: (note that
 it consists from two parts , a stack frame wich is built by the CPU
 according to mode in wich was the CPU when the exception or software
 interrupt was generated , and a Context Capture frame who has to be built

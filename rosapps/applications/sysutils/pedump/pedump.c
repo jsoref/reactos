@@ -2906,7 +2906,7 @@ MenuFill (
 //              flag                        popup menu flag (internal node)
 //              popupname                   popup menu name
 //
-//                 flag                             it may folows
+//                 flag                             it may follows
 //                         id                                   normal menu id
 //                 name                                 normal menu name
 //             or                                 or

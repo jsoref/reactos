@@ -199,7 +199,7 @@ void test_CShellMenu()
     DestroyWindow(hWndParent);
 }
 
-/* The folowing struct holds info about the order callbacks are called */
+/* The following struct holds info about the order callbacks are called */
 /* By passing different arrays of results to CMenuCallback, we can test different sequenses of callbacks */
    struct _test_info{
        int iTest;
