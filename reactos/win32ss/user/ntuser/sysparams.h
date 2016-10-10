@@ -169,7 +169,7 @@ typedef union _SPIBUFFER
 {
     char ach[1];
     WCHAR awcWallpaper[MAX_PATH+1];
-    FILTERKEYS fiterkeys;
+    FILTERKEYS filterkeys;
     TOGGLEKEYS togglekeys;
     MOUSEKEYS mousekeys;
     STICKYKEYS stickykeys;
