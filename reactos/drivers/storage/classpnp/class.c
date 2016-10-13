@@ -2034,7 +2034,7 @@ ClassSendStartUnit(
 
         //
         // ISSUE-2000/02/03-peterwie
-        // This code path was inheritted from the NT 4.0 class2.sys driver.
+        // This code path was inherited from the NT 4.0 class2.sys driver.
         // It needs to be changed to survive low-memory conditions.
         //
 
@@ -2101,7 +2101,7 @@ ClassSendStartUnit(
 
         //
         // ISSUE-2000/02/03-peterwie
-        // This code path was inheritted from the NT 4.0 class2.sys driver.
+        // This code path was inherited from the NT 4.0 class2.sys driver.
         // It needs to be changed to survive low-memory conditions.
         //
 
