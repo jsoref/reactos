@@ -1002,7 +1002,7 @@ BlockIoEfiGetDeviceInformation (
         return Status;
     }
 
-    /* Iteratate twice -- once for the top level, once for the bottom */
+    /* Iterate twice -- once for the top level, once for the bottom */
     for (i = 0, Found = FALSE; Found == FALSE && Protocol[i].Handle; i++)
     {
         /* Check what kind of leaf node device this is */

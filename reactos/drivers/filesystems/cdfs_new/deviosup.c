@@ -2451,7 +2451,7 @@ Return Value:
     MasterIrp = IrpContext->Irp;
 
     //
-    //  Itterate through the runs, doing everything that can fail.
+    //  Iterate through the runs, doing everything that can fail.
     //  We let the cleanup in CdFinishBuffers clean up on error.
     //
 
@@ -2656,7 +2656,7 @@ Return Value:
     MasterIrp = IrpContext->Irp;
 
     //
-    //  Itterate through the runs, doing everything that can fail.
+    //  Iterate through the runs, doing everything that can fail.
     //  We let the cleanup in CdFinishBuffers clean up on error.
     //
 

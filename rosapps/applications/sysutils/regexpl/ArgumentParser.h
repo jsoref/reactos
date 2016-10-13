@@ -13,7 +13,7 @@ public:
 	// Call this function to specify buffer containing the command line to be parsed
 	// Parameters:
 	//	pchArguments - pointer to buffer containing the command line. This buffer is modified by object,
-	//					and must not be accessed externally when object is used, unless you interate it
+	//					and must not be accessed externally when object is used, unless you iterate it
 	//					only once and modify only substrings returned by GetNextArgument.
 	//
 	// Remarks:
