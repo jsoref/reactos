@@ -1146,7 +1146,7 @@ errorout:
 
 /*
  * Ext2GetMediaInfo
- *     Get volume gemmetry information ...
+ *     Get volume geometry information ...
  *
  * ARGUMENTS:
  *     VolumeHandle:    Volume handle.
