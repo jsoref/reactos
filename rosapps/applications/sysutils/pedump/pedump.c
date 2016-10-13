@@ -3903,7 +3903,7 @@ GetSeparateDebugHeader (
 }
 
 //
-// I tried to immitate the output of w32dasm disassembler.
+// I tried to imitate the output of w32dasm disassembler.
 // which is a pretty good program.
 // but I am disappointed with this program and I myself
 // am writting a disassembler.
