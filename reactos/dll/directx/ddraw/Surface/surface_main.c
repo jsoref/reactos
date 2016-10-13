@@ -354,7 +354,7 @@ HRESULT WINAPI Main_DDrawSurface_Blt(LPDDRAWI_DDRAWSURFACE_INT ThisDest, LPRECT 
     /* FIXME
     *  compare so we do not write too far
     *  ThisDest->lpLcl->lpGbl->wWidth; <- surface max width
-    *  ThisDest->lpLcl->lpGbl->wHeight <- surface max heght
+    *  ThisDest->lpLcl->lpGbl->wHeight <- surface max height
     *  ThisDest->lpLcl->lpGbl->lPitch  <- surface bpp
     */
 
@@ -377,7 +377,7 @@ HRESULT WINAPI Main_DDrawSurface_Blt(LPDDRAWI_DDRAWSURFACE_INT ThisDest, LPRECT 
     /* FIXME
     *  compare so we do not write too far
     *  ThisDest->lpLcl->lpGbl->wWidth; <- surface max width
-    *  ThisDest->lpLcl->lpGbl->wHeight <- surface max heght
+    *  ThisDest->lpLcl->lpGbl->wHeight <- surface max height
     *  ThisDest->lpLcl->lpGbl->lPitch  <- surface bpp
     */
 
