@@ -504,7 +504,7 @@ BusLogic_HardwareResetHostAdapter(BusLogic_HostAdapter_T  *HostAdapter,
           break;
   }
 
-  // if inspite of waiting for time out period , if it didn't et set, then something is wrong-- so just return.
+  // if in spite of waiting for time out period , if it didn't et set, then something is wrong-- so just return.
   if (TimeoutCounter < 0)
       return FALSE;
 
