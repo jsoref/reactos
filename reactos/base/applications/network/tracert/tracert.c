@@ -310,7 +310,7 @@ ReceivePacket(PAPPINFO pInfo)
 
     DebugPrint(_T("Receiving packet. Available buffer, %d bytes... "), MAX_PING_PACKET_SIZE);
 
-    /* monitor icmpSock for incomming connections */
+    /* monitor icmpSock for incoming connections */
     FD_ZERO(&readFDS);
     FD_SET(pInfo->icmpSock, &readFDS);
 
