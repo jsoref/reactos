@@ -1245,7 +1245,7 @@ extern ULONG Utf8ConversionBufferSize;
 extern BOOLEAN CommandConsoleLaunchingEnabled;
 
 //
-// Function to initailize a SAC Semaphore Lock
+// Function to initialize a SAC Semaphore Lock
 //
 FORCEINLINE
 VOID

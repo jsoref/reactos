@@ -381,7 +381,7 @@ NTSTATUS (*PCONTROLLER_PROPERTIES) (
 
                      
 //
-// To initailize PCI IDE mini driver
+// To initialize PCI IDE mini driver
 //                     
 NTSTATUS
 PciIdeXInitialize(

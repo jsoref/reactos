@@ -60,7 +60,7 @@ NTSTATUS STDCALL
 PsxInitializeSessions (VOID)
 {
     debug_print (L"PSXSS: ->%s", __FUNCTION__);
-    /* Initalize the attributes */
+    /* Initialize the attributes */
     Sessions.NextFreeId = 0;
     Sessions.Count = 0;
     Sessions.List = NULL;
@@ -191,7 +191,7 @@ PsxCreateSession (
         return STATUS_MEMORY_NOT_ALLOCATED;
     }
     RtlZeroMemory (Session, sizeof (PSX_SESSION));
-    /* Initialiaze the new PSX_SESSION object */
+    /* Initialize the new PSX_SESSION object */
     Session->SessionChannel.hPort = hConnectedPort;
     Session->SessionChannel.ulPortIdentifier =  ulPortIdentifier;
     LOCK_ALL_SESSIONS;

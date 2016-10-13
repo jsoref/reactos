@@ -1058,7 +1058,7 @@ VOID
 NTAPI
 InitializeCmdEventInfo(VOID)
 {
-    /* Check if we were already initailized */
+    /* Check if we were already initialized */
     if (HaveUserModeServiceCmdEventInfo)
     {
         /* Full state expected */
