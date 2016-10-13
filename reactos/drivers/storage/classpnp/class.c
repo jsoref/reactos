@@ -2145,7 +2145,7 @@ ClassAsynchronousCompletion() ISSUE-2000/02/18-henrygab - why public?!
 Routine Description:
 
     This routine is called when an asynchronous I/O request
-    which was issused by the class driver completes.  Examples of such requests
+    which was issued by the class driver completes.  Examples of such requests
     are release queue or START UNIT. This routine releases the queue if
     necessary.  It then frees the context and the IRP.
 
@@ -8389,7 +8389,7 @@ ClassReleaseQueueCompletion()
 Routine Description:
 
     This routine is called when an asynchronous I/O request
-    which was issused by the class driver completes.  Examples of such requests
+    which was issued by the class driver completes.  Examples of such requests
     are release queue or START UNIT. This routine releases the queue if
     necessary.  It then frees the context and the IRP.
 

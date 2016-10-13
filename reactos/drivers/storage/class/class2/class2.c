@@ -1537,7 +1537,7 @@ ScsiClassAsynchronousCompletion(
 Routine Description:
 
     This routine is called when an asynchronous I/O request
-    which was issused by the class driver completes.  Examples of such requests
+    which was issued by the class driver completes.  Examples of such requests
     are release queue or START UNIT. This routine releases the queue if
     necessary.  It then frees the context and the IRP.
 
