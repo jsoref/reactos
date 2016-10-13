@@ -77,7 +77,7 @@ BOOLEAN FsRtlTest_StartTest() {
     FSRTL_TEST("FsRtlCopyWrite() - No cache map test.",!FsRtlCopyWrite(Pfo,AllocationSize,Length,TRUE,0,Buffer,&IoStatus,NULL));
 
     /* We are going to build a 100k file */
-    /* This will inititate caching and build some size */
+    /* This will initiate caching and build some size */
     Offset.QuadPart = 0;
     Length = 100*_1KB;
     Return = FsRltTest_WritefileZw(Fh,&Offset,Length, Buffer, &IoStatus);
@@ -166,7 +166,7 @@ BOOLEAN FsRtlTest_StartTest() {
     FSRTL_TEST("FsRtlCopyWrite() - No cache map test. Wait = FALSE",!FsRtlCopyWrite(Pfo,AllocationSize,Length,FALSE,0,Buffer,&IoStatus,NULL));
 
     /* We are going to build a 100k file */
-    /* This will inititate caching and build some size */
+    /* This will initiate caching and build some size */
     Offset.QuadPart = 0;
     Length = 100*_1KB;
     Return = FsRltTest_WritefileZw(Fh,&Offset,Length, Buffer, &IoStatus);
@@ -306,7 +306,7 @@ BOOLEAN FsRtlTest_StartTest() {
         !FsRtlPrepareMdlWriteDev(Pfo,AllocationSize,Length,0,MdlChain,&IoStatus,NULL));
 
     /* We are going to build a 100k file */
-    /* This will inititate caching and build some size */
+    /* This will initiate caching and build some size */
     Offset.QuadPart = 0;
     Length = 100*_1KB;
     Return = FsRltTest_WritefileZw(Fh,&Offset,Length, Buffer, &IoStatus);
@@ -399,7 +399,7 @@ BOOLEAN FsRtlTest_StartTest() {
         !FsRtlPrepareMdlWrite(Pfo,AllocationSize,Length,0,MdlChain,&IoStatus));
 
     /* We are going to build a 100k file */
-    /* This will inititate caching and build some size */
+    /* This will initiate caching and build some size */
     Offset.QuadPart = 0;
     Length = 100*_1KB;
     Return = FsRltTest_WritefileZw(Fh,&Offset,Length, Buffer, &IoStatus);
@@ -488,7 +488,7 @@ BOOLEAN FsRtlTest_StartTest() {
 
 
     /* We are going to build a 100k file */
-    /* This will inititate caching and build some size */
+    /* This will initiate caching and build some size */
     Offset.QuadPart = 0;
     Length = 100*_1KB;
     Return = FsRltTest_WritefileZw(Fh,&Offset,Length, Buffer, &IoStatus);
@@ -569,7 +569,7 @@ BOOLEAN FsRtlTest_StartTest() {
 
 
     /* We are going to build a 100k file */
-    /* This will inititate caching and build some size */
+    /* This will initiate caching and build some size */
     Offset.QuadPart = 0;
     Length = 100*_1KB;
     Return = FsRltTest_WritefileZw(Fh,&Offset,Length, Buffer, &IoStatus);

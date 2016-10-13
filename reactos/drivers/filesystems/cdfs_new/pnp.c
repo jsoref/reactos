@@ -446,7 +446,7 @@ Return Value:
     //  (the only case in which this will be the first warning).
     //
     //  Note that it is entirely unlikely that we will be around
-    //  for a REMOVE in the first two cases, as we try to intiate
+    //  for a REMOVE in the first two cases, as we try to initiate
     //  dismount.
     //
     

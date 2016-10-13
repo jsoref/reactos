@@ -359,7 +359,7 @@ FsRtlCopyWrite(IN PFILE_OBJECT FileObject,
         }
 
         /* Nagar p.544/545.
-         * Make sure that caching is initated.
+         * Make sure that caching is initiated.
          * That fast are allowed for this file stream.
          * That we are not extending past the allocated size.
          * That we are not creating a hole bigger than 8k.
@@ -580,7 +580,7 @@ FsRtlCopyWrite(IN PFILE_OBJECT FileObject,
         }
 
         /* Nagar p.544/545.
-         * Make sure that caching is initated.
+         * Make sure that caching is initiated.
          * That fast are allowed for this file stream.
          * That we are not extending past the allocated size.
          * That we are not creating a hole bigger than 8k.
