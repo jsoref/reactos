@@ -241,7 +241,7 @@ Arguments:
         find.  This may already point to a dirent so we need to check if
         we are in the same sector and unmap any buffer as necessary.
 
-        This dirent is left in an indeterminant state if we don't find a dirent.
+        This dirent is left in an indeterminate state if we don't find a dirent.
 
 Return Value:
 
