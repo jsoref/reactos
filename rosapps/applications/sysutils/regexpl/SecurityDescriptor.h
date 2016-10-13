@@ -37,8 +37,8 @@ public:
 	BOOL HasNULLSACL();
 	BOOL DescriptorContainsDACL();
 	BOOL DescriptorContainsSACL();
-	DWORD BeginDACLInteration();
-	DWORD BeginSACLInteration();
+	DWORD BeginDACLIteration();
+	DWORD BeginSACLIteration();
 	void AssociateDescriptor(PSECURITY_DESCRIPTOR pSecurityDescriptor);
 	CSecurityDescriptor();
 	virtual ~CSecurityDescriptor();

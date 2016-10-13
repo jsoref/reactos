@@ -147,7 +147,7 @@ void CSecurityDescriptor::AssociateDescriptor(PSECURITY_DESCRIPTOR pSecurityDesc
 	m_pSecurityDescriptor = pSecurityDescriptor;
 }
 
-DWORD CSecurityDescriptor::BeginDACLInteration()
+DWORD CSecurityDescriptor::BeginDACLIteration()
 {
 	if (!GetSecurityDescriptorDacl(m_pSecurityDescriptor,&m_blnDACLPresent,&m_pDACL,&m_blnDACLDefaulted))
 	{
@@ -161,7 +161,7 @@ BOOL CSecurityDescriptor::DescriptorContainsDACL()
 	return m_blnDACLPresent;
 }
 
-DWORD CSecurityDescriptor::BeginSACLInteration()
+DWORD CSecurityDescriptor::BeginSACLIteration()
 {
 	if (!GetSecurityDescriptorSacl(m_pSecurityDescriptor,&m_blnSACLPresent,&m_pSACL,&m_blnSACLDefaulted))
 		throw GetLastError();

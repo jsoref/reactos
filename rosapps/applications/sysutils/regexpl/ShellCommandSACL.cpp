@@ -236,7 +236,7 @@ CheckSACLArgument:
   }
 
   sd.AssociateDescriptor(pSecurityDescriptor);
-  sd.BeginSACLInteration();
+  sd.BeginSACLIteration();
 
   if ((!sd.DescriptorContainsSACL())||(sd.HasNULLSACL()))
   {

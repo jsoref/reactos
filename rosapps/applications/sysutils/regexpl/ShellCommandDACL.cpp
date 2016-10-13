@@ -154,7 +154,7 @@ CheckDACLArgument:
     CSecurityDescriptor sd;
     sd.AssociateDescriptor(pSecurityDescriptor);
 
-    sd.BeginDACLInteration();
+    sd.BeginDACLIteration();
     ASSERT(sd.DescriptorContainsDACL());
     if (sd.HasNULLDACL())
     {
