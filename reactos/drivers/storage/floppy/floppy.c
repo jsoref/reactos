@@ -901,7 +901,7 @@ AddControllers(PDRIVER_OBJECT DriverObject)
             continue;
         }
 
-        /* 2c: Set the controller's initlized flag so we know to release stuff in Unload */
+        /* 2c: Set the controller's initialized flag so we know to release stuff in Unload */
         gControllerInfo[i].Initialized = TRUE;
 
         /* 3: per-drive setup */

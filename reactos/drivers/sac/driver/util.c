@@ -702,7 +702,7 @@ InitializeMachineInformation(VOID)
     /* Don't do anything if we already quried this */
     if (MachineInformation)
     {
-        SAC_DBG(SAC_DBG_MACHINE, "SAC Initialize Machine Information:: MachineInformationBuffer already initialzied.\n");
+        SAC_DBG(SAC_DBG_MACHINE, "SAC Initialize Machine Information:: MachineInformationBuffer already initialized.\n");
         return;
     }
 

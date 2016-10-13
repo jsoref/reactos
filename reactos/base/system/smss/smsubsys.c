@@ -166,7 +166,7 @@ SmpLoadSubSystem(IN PUNICODE_STRING FileName,
     RtlEnterCriticalSection(&SmpKnownSubSysLock);
     while (TRUE)
     {
-        /* Check if we found a subsystem not yet fully iniitalized */
+        /* Check if we found a subsystem not yet fully initialized */
         Subsystem = SmpLocateKnownSubSysByType(MuSessionId, -1);
         if (!Subsystem) break;
         RtlLeaveCriticalSection(&SmpKnownSubSysLock);

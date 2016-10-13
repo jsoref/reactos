@@ -232,7 +232,7 @@ static void draw_solid_square(int, int, int, HDC, HBRUSH);
 static void enter_square(int, HDC, HBRUSH);
 
 static void
-create_maze()             /* create a maze layout given the intiialized maze */
+create_maze()             /* create a maze layout given the initialized maze */
 {
   register int i, newdoor = 0;
   HDC hDC;
