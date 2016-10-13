@@ -183,7 +183,7 @@ customization layer or directly through your processor's interface) to
 point to your global glossary.</para>
 
 <para>The stylesheets will format the glossary in your document as if
-all of the entries implicilty referenced appeared there literally.</para>
+all of the entries implicitly referenced appeared there literally.</para>
 </refsect2>
 </refsect1>
 </refentry>
