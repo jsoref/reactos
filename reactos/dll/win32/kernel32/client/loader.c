@@ -432,7 +432,7 @@ GetProcAddress(HMODULE hModule, LPCSTR lpProcName)
     }
 
     /* Check for a special case when returned pointer is
-       the same as iamge's base address */
+       the same as image's base address */
     if (fnExp == hMapped)
     {
         /* Set correct error code */
