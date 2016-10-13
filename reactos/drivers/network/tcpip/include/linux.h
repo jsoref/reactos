@@ -1465,7 +1465,7 @@ typedef struct __wait_queue_head wait_queue_head_t;
 #endif
 
 /*
- * Macros for declaration and initialisaton of the datatypes
+ * Macros for declaration and initialisation of the datatypes
  */
 
 #if WAITQUEUE_DEBUG
