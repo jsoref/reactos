@@ -112,7 +112,7 @@ TrapFrame , there are multiple places where one can get it , but Im
 willing to post it here on request.
 
         4. In the case that the hardware stack built by CPU does not
-contain an error code , fake one ( generaly , aborts always push an
+contain an error code , fake one ( generally , aborts always push an
 error code on stack , some exceptions do , and traps never push an
 error code by default. Suplimentary information can be found in intel
 arch. reference manual .
