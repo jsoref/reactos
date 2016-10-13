@@ -3,7 +3,7 @@
 
 //---------------------------------------------------------------------------
 //
-//          Object Hierachy
+//          Object Hierarchy
 //       --------------------------------------------------------------------
 //       |  IRootHCDController                                              |
 //       |    IHCDController Intel USB Universal Host Controller - 3A37     |
