@@ -259,7 +259,7 @@ typedef struct _DISK_DATA {
 
 #if defined(_X86_)
     //
-    // This flag indiciates that a non-default geometry for this drive has
+    // This flag indicates that a non-default geometry for this drive has
     // already been determined by the disk driver.  This field is ignored
     // for removable media drives.
     //
