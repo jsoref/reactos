@@ -2510,7 +2510,7 @@ retryIdentifier:
         }// preConfig check
 
         //
-        // Save the Interrupe Mode for later use
+        // Save the Interrupt Mode for later use
         //
         deviceExtension->InterruptMode = ConfigInfo->InterruptMode;
 
@@ -2966,7 +2966,7 @@ Return Value:
             atapiOnly = FALSE;
 
             //
-            // Save the Interrupe Mode for later use
+            // Save the Interrupt Mode for later use
             //
             deviceExtension->InterruptMode = ConfigInfo->InterruptMode;
 
@@ -3296,7 +3296,7 @@ Return Value:
                         atapiOnly = FALSE;
 
                         //
-                        // Save the Interrupe Mode for later use
+                        // Save the Interrupt Mode for later use
                         //
                         deviceExtension->InterruptMode = ConfigInfo->InterruptMode;
 

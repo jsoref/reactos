@@ -141,7 +141,7 @@ typedef union _APIC_BASE_ADDRESS_REGISTER
     };
 } APIC_BASE_ADDRESS_REGISTER;
 
-typedef union _APIC_SPURIOUS_INERRUPT_REGISTER
+typedef union _APIC_SPURIOUS_INTERRUPT_REGISTER
 {
     ULONG Long;
     struct
@@ -151,7 +151,7 @@ typedef union _APIC_SPURIOUS_INERRUPT_REGISTER
         ULONG FocusCPUCoreChecking:1;
         ULONG ReservedMBZ:22;
     };
-} APIC_SPURIOUS_INERRUPT_REGISTER;
+} APIC_SPURIOUS_INTERRUPT_REGISTER;
 
 typedef union
 {

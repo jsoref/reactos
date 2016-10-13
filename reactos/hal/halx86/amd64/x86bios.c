@@ -228,7 +228,7 @@ x86BiosCall(
     {
         USHORT Ip;
         USHORT SegCs;
-    } *InterrupTable;
+    } *InterruptTable;
 
     /* Zero the VmState */
     RtlZeroMemory(&VmState, sizeof(VmState));
@@ -247,9 +247,9 @@ x86BiosCall(
     VmState.Registers.Sp = 0x2000 - 2; // FIXME
 
     /* Initialize IP from the interrupt vector table */
-    InterrupTable = (PVOID)x86BiosMemoryMapping;
-    VmState.Registers.SegCs = InterrupTable[InterruptNumber].SegCs;
-    VmState.Registers.Eip = InterrupTable[InterruptNumber].Ip;
+    InterruptTable = (PVOID)x86BiosMemoryMapping;
+    VmState.Registers.SegCs = InterruptTable[InterruptNumber].SegCs;
+    VmState.Registers.Eip = InterruptTable[InterruptNumber].Ip;
     
     /* Make the function return on IRET */
     VmState.Flags.ReturnOnIret = 1;

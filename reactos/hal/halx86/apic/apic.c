@@ -327,7 +327,7 @@ NTAPI
 ApicInitializeLocalApic(ULONG Cpu)
 {
     APIC_BASE_ADDRESS_REGISTER BaseRegister;
-    APIC_SPURIOUS_INERRUPT_REGISTER SpIntRegister;
+    APIC_SPURIOUS_INTERRUPT_REGISTER SpIntRegister;
     LVT_REGISTER LvtEntry;
 
     /* Enable the APIC if it wasn't yet */
