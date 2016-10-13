@@ -485,7 +485,7 @@ WdmAudReadWrite(
     /* store mdl address */
     Mdl = Irp->MdlAddress;
 
-    /* remove mdladdress as KsProbeStreamIrp will interprete it as an already probed audio buffer */
+    /* remove mdladdress as KsProbeStreamIrp will interpret it as an already probed audio buffer */
     Irp->MdlAddress = NULL;
 
     if (IoStack->MajorFunction == IRP_MJ_WRITE)
