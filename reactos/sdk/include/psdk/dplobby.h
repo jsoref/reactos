@@ -127,7 +127,7 @@ typedef struct tagDPLDATA_PLAYERSCORE
 
 
 
-/* Used to indentify the message type */
+/* Used to identify the message type */
 typedef struct tagDPLMSG_GENERIC
 {
     DWORD       dwType;         /* Message type */
