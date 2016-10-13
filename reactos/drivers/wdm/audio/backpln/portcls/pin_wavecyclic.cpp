@@ -890,7 +890,7 @@ CPortPinWaveCyclic::DeviceIoControl(
             Property = (PKSPROPERTY)IoStack->Parameters.DeviceIoControl.Type3InputBuffer;
 
             RtlStringFromGUID(Property->Set, &GuidString);
-            DPRINT("Unhandeled property Set |%S| Id %u Flags %x\n", GuidString.Buffer, Property->Id, Property->Flags);
+            DPRINT("Unhandled property Set |%S| Id %u Flags %x\n", GuidString.Buffer, Property->Id, Property->Flags);
             RtlFreeUnicodeString(&GuidString);
         }
     }

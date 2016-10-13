@@ -123,7 +123,7 @@ USBLIB_Dispatch(
         }
         default:
         {
-            DPRINT1("USBLIB_Dispatch> Major %lu Minor %lu unhandeled\n", IoStack->MajorFunction, IoStack->MinorFunction);
+            DPRINT1("USBLIB_Dispatch> Major %lu Minor %lu unhandled\n", IoStack->MajorFunction, IoStack->MinorFunction);
             Status = STATUS_SUCCESS;
         }
     }

@@ -373,7 +373,7 @@ WdmAudDeviceControl(
         case IOCTL_GETVOLUME:
         case IOCTL_SETVOLUME:
 
-           DPRINT1("Unhandeled %x\n", IoStack->Parameters.DeviceIoControl.IoControlCode);
+           DPRINT1("Unhandled %x\n", IoStack->Parameters.DeviceIoControl.IoControlCode);
            break;
     }
 
