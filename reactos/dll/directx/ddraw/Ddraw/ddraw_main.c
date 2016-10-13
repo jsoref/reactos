@@ -161,7 +161,7 @@ Main_DirectDraw_AddRef (LPDDRAWI_DIRECTDRAW_INT This)
 
         if (This->lpLcl->lpGbl != NULL)
         {
-            /* Increment the gobal internal ref counter */
+            /* Increment the global internal ref counter */
             This->lpLcl->lpGbl->dwRefCnt++;
         }
     }
