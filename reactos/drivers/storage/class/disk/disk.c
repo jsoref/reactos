@@ -2465,7 +2465,7 @@ Return Value:
             //
             // The disk layout has been returned in the partitionList
             // buffer.  Determine its size and, if the data will fit
-            // into the intermediatery buffer, return it.
+            // into the intermediary buffer, return it.
             //
 
             tempSize = FIELD_OFFSET(DRIVE_LAYOUT_INFORMATION,PartitionEntry[0]);
