@@ -119,7 +119,7 @@ void TestsSeQueryInformationToken(PACCESS_TOKEN Token)
     {
         ok(Buffer != NULL, "Wrong. SQIT call was successful with TokenImpersonationLevel arg. But Buffer = NULL\n");
     } else {
-        ok(Buffer == NULL, "Wrong. SQIT call is't success. But Buffer != NULL\n");
+        ok(Buffer == NULL, "Wrong. SQIT call isn't success. But Buffer != NULL\n");
     }
 
     //----------------------------------------------------------------//
@@ -143,7 +143,7 @@ void TestsSeQueryInformationToken(PACCESS_TOKEN Token)
             ExFreePool(TStats);
         }
     } else {
-        ok(Buffer == NULL, "Wrong. SQIT call is't success. But Buffer != NULL\n");
+        ok(Buffer == NULL, "Wrong. SQIT call isn't success. But Buffer != NULL\n");
     }
 
     //----------------------------------------------------------------//
