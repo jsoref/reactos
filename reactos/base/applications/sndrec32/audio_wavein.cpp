@@ -400,7 +400,7 @@ audio_wavein::recording_procedure(LPVOID arg)
                         phdr->dwFlags = 0;
                         SetEvent(_this->data_flushed_event);
 
-                        /* The recording is gooing to stop, so the recording thread can go to sleep! */
+                        /* The recording is going to stop, so the recording thread can go to sleep! */
                         WaitForSingleObject(_this->wakeup_recthread, INFINITE);
                     }
                 } /* if WAVEIN_RECORDING || WAVEIN_FLUSHING */
