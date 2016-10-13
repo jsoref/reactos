@@ -129,7 +129,7 @@ cleanup:
 /**
  * @name DriverUnload
  *
- * Driver cleanup funtion.
+ * Driver cleanup function.
  *
  * @param DriverObject
  *        Driver Object

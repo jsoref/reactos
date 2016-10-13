@@ -589,7 +589,7 @@ IntParseDesktopPath(PEPROCESS Process,
  *
  * Remarks
  *    If the function succeeds, the handle remains referenced. If the
- *    fucntion fails, last error is set.
+ *    function fails, last error is set.
  */
 
 NTSTATUS FASTCALL

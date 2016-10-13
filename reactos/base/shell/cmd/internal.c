@@ -281,7 +281,7 @@ INT cmd_chdir (LPTSTR param)
 
 #ifdef INCLUDE_CMD_MKDIR
 
-/* Helper funtion for mkdir to make directories in a path.
+/* Helper function for mkdir to make directories in a path.
 Dont use the api to decrease depence on libs */
 BOOL
 MakeFullPath(TCHAR * DirPath)

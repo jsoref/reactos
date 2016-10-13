@@ -10,7 +10,7 @@ extern "C" {
 #endif
 
 #define _USE_WRITE	1	/* 1: Enable disk_write function */
-#define _USE_IOCTL	1	/* 1: Enable disk_ioctl fucntion */
+#define _USE_IOCTL	1	/* 1: Enable disk_ioctl function */
 
 #include <typedefs.h>
 
@@ -48,7 +48,7 @@ DRESULT disk_ioctl (BYTE pdrv, BYTE cmd, void* buff);
 #define STA_PROTECT		0x04	/* Write protected */
 
 
-/* Command code for disk_ioctrl fucntion */
+/* Command code for disk_ioctrl function */
 
 /* Generic command (Used by FatFs) */
 #define CTRL_SYNC			0	/* Complete pending write process (needed at _FS_READONLY == 0) */

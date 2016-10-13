@@ -552,7 +552,7 @@ RtlWalkFrameChain(OUT PVOID *Callers,
         {
             Context.Rip = *(DWORD64*)Context.Rsp;
             Context.Rsp += sizeof(DWORD64);
-            DPRINT("leaf funtion, new Rip = %p, new Rsp = %p\n", (PVOID)Context.Rip, (PVOID)Context.Rsp);
+            DPRINT("leaf function, new Rip = %p, new Rsp = %p\n", (PVOID)Context.Rip, (PVOID)Context.Rsp);
         }
         else
         {
@@ -564,7 +564,7 @@ RtlWalkFrameChain(OUT PVOID *Callers,
                              &HandlerData,
                              &EstablisherFrame,
                              NULL);
-            DPRINT("normal funtion, new Rip = %p, new Rsp = %p\n", (PVOID)Context.Rip, (PVOID)Context.Rsp);
+            DPRINT("normal function, new Rip = %p, new Rsp = %p\n", (PVOID)Context.Rip, (PVOID)Context.Rsp);
         }
 
         /* Check if new Rip is valid */

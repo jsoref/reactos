@@ -253,7 +253,7 @@ typedef struct PropertyItem
 #define PropertyTagT6Option               0x0125
 #define PropertyTagResolutionUnit         0x0128
 #define PropertyTagPageNumber             0x0129
-#define PropertyTagTransferFuncition      0x012D
+#define PropertyTagTransferFunction      0x012D
 #define PropertyTagSoftwareUsed           0x0131
 #define PropertyTagDateTime               0x0132
 #define PropertyTagArtist                 0x013B

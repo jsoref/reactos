@@ -103,7 +103,7 @@ static DMA_OPERATIONS HalpDmaOperations = {
    NULL, /* Initialized in HalpInitDma() */
    (PGET_DMA_ALIGNMENT)HalpDmaGetDmaAlignment,
    (PREAD_DMA_COUNTER)HalReadDmaCounter,
-   /* FIXME: Implement the S/G funtions. */
+   /* FIXME: Implement the S/G functions. */
    NULL /*(PGET_SCATTER_GATHER_LIST)HalGetScatterGatherList*/,
    NULL /*(PPUT_SCATTER_GATHER_LIST)HalPutScatterGatherList*/,
    NULL /*(PCALCULATE_SCATTER_GATHER_LIST_SIZE)HalCalculateScatterGatherListSize*/,

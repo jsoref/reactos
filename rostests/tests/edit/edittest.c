@@ -182,7 +182,7 @@ struct
         DWORD MsgCode;             	/* Message Code */
         WPARAM wParam;             	/* Well hope you can understand this */
         LPARAM lParam;             	/* ditto */
-        LPFUNCTIONHANDLER Handler; 	/* Funtion called to handle the result of each message */
+        LPFUNCTIONHANDLER Handler; 	/* Function called to handle the result of each message */
 }
 Msg[] =
 {

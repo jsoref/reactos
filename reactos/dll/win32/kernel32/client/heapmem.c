@@ -851,7 +851,7 @@ GlobalReAlloc(HGLOBAL hMem,
     /* If this wasn't a movable heap, then we MUST re-alloc in place */
     if (!(uFlags & GMEM_MOVEABLE)) Flags |= HEAP_REALLOC_IN_PLACE_ONLY;
 
-    /* Lock the heap and disable built-in locking in the RTL Heap funcitons */
+    /* Lock the heap and disable built-in locking in the RTL Heap functions */
     RtlLockHeap(BaseHeap);
     Flags |= HEAP_NO_SERIALIZE;
 
@@ -1619,7 +1619,7 @@ LocalReAlloc(HLOCAL hMem,
     /* If this wasn't a movable heap, then we MUST re-alloc in place */
     if (!(uFlags & LMEM_MOVEABLE)) Flags |= HEAP_REALLOC_IN_PLACE_ONLY;
 
-    /* Lock the heap and disable built-in locking in the RTL Heap funcitons */
+    /* Lock the heap and disable built-in locking in the RTL Heap functions */
     RtlLockHeap(BaseHeap);
     Flags |= HEAP_NO_SERIALIZE;
 
