@@ -184,7 +184,7 @@ ProcessLoop:
                          (ULONG_PTR)WorkItem);
         }
 
-        /* Make sure it returned with Impersionation Disabled */
+        /* Make sure it returned with Impersonation Disabled */
         if (Thread->ActiveImpersonationInfo)
         {
             /* It didn't, bugcheck! */

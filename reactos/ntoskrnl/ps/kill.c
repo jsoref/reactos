@@ -415,7 +415,7 @@ PspDeleteThread(IN PVOID ObjectBody)
         }
     }
 
-    /* Cleanup impersionation information */
+    /* Cleanup impersonation information */
     PspDeleteThreadSecurity(Thread);
 
     /* Make sure the thread was inserted, before continuing */
