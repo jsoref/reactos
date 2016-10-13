@@ -788,7 +788,7 @@ ClasspPowerDownCompletion(
 
                 BOOLEAN retry;
 
-                DebugPrint((1, "(%p)\tError occured when issueing STOP_UNIT "
+                DebugPrint((1, "(%p)\tError occured when issuing STOP_UNIT "
                             "command to device. Srb %p, Status %lx\n",
                             Irp,
                             &context->Srb,

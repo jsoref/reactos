@@ -1289,7 +1289,7 @@ Return Value:
             if (NT_SUCCESS(status) || (status == STATUS_NO_MEDIA_IN_DEVICE)) {
 
                 //
-                // Using Read CD precludes issueing a mode select to
+                // Using Read CD precludes issuing a mode select to
                 // set the user data size. So, no buffer copy is
                 // necessary.
                 //
