@@ -5,7 +5,7 @@ history.txt     History of revsions.  Not to date.  see svn.reactos.com for more
 license.txt     GNU license - applies to all files named here
 readme.txt      General shell info
 readme2.txt     Techincal shell info
-todo.txt        Things that need to be implmented or fixed(including bugs)
+todo.txt        Things that need to be implemented or fixed(including bugs)
 
 alias.c         Alias code
 alias.h         Alias header file

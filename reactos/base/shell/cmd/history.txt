@@ -261,7 +261,7 @@ o Added display of available internal commands and options at startup.
 29 Jul 1998 (Rob Lake rlake@cs.mun.ca)
 ~~~~~~~~~~~~~~~~~~~~~~
 o changed date.c and time.c, and wrote datefunc.c and timefunc.c to
-  impliment _dos_getdate, _dos_setdate, _dos_gettime and _dos_settime.
+  implement _dos_getdate, _dos_setdate, _dos_gettime and _dos_settime.
   This is the first of many steps to make the shell compatible under
   Pacific C.
 
