@@ -1020,7 +1020,7 @@ HalpInitializePciBus(VOID)
         /* Go to the next bridge */
     } while (HalpGetPciBridgeConfig(PciType, &PciRegistryInfo->NoBuses));
 
-    /* Now build correct address range informaiton */
+    /* Now build correct address range information */
     HalpFixupPciSupportedRanges(PciRegistryInfo->NoBuses);
 
     /* Loop every bus */

@@ -2466,7 +2466,7 @@ ScsiCdRomStartIo(
             cdb->SUBCHANNEL.SubQ = CDB_SUBCHANNEL_BLOCK;
 
             //
-            // Specify format of informatin to return
+            // Specify format of information to return
             //
 
             cdb->SUBCHANNEL.Format = inputBuffer->Format;

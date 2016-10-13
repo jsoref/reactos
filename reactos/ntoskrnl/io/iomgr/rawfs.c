@@ -982,7 +982,7 @@ RawQueryVolumeInformation(IN PVCB Vcb,
             Status = RawQueryFsVolumeInfo(Vcb, Buffer, &Length);
             break;
 
-        /* File system size invormation */
+        /* File system size information */
         case FileFsSizeInformation:
 
             Status = RawQueryFsSizeInfo(Vcb, Buffer, &Length);

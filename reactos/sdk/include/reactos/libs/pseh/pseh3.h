@@ -271,7 +271,7 @@ _SEH3$_AutoCleanup(
    convention. The eax register contains a base address the function uses
    to address the callers stack frame. __fastcall is chosen, because it gives
    us an effective was of passing one argument to the function, that we need
-   to tell the function in a first pass to return informtion about the frame
+   to tell the function in a first pass to return information about the frame
    base address. Since this is something GCC chooses arbitrarily, we call
    the function with an arbitrary base address in eax first and then use the
    result to calculate the correct address for a second call to the function. */

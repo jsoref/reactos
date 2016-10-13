@@ -698,7 +698,7 @@ FindDeviceInfo(IN PDEVICE_EXTENSION DeviceExtension,
         FreePool(DeviceName.Buffer);
     }
 
-    /* Return found intormation */
+    /* Return found information */
     if (NextEntry == &(DeviceExtension->DeviceListHead))
     {
         return STATUS_OBJECT_NAME_NOT_FOUND;

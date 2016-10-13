@@ -438,7 +438,7 @@ Return Value:
         fdoExtension->DMByteSkew = fdoExtension->DMSkew * bytesPerSector;
 
         //
-        // Save away the infomation that we need, since this deviceExtension will soon be
+        // Save away the information that we need, since this deviceExtension will soon be
         // blown away.
         //
 
