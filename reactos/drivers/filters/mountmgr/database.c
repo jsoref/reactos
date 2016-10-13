@@ -1699,7 +1699,7 @@ CreateRemoteDatabaseWorker(IN PDEVICE_OBJECT DeviceObject,
         goto Cleanup;
     }
 
-    /* Finish initating strings */
+    /* Finish initiating strings */
     RtlCopyMemory(DatabaseName.Buffer, DeviceInformation->DeviceName.Buffer, DeviceInformation->DeviceName.Length);
     RtlCopyMemory(DatabaseName.Buffer + (DeviceInformation->DeviceName.Length / sizeof(WCHAR)),
                   RemoteDatabase.Buffer, RemoteDatabase.Length);
