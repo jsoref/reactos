@@ -637,7 +637,7 @@ DpcForIsr(PKDPC UnusedDpc, PVOID Context, PVOID SystemArgument1, PVOID SystemArg
  *     - This function just kicks off whatever the SynchEvent is and returns.  We depend on
  *       the thing that caused the drive to interrupt to handle the work of clearing the interrupt.
  *       This enables us to get back to PASSIVE_LEVEL and not hog system time on a really stupid,
- *       slow, screwed-up piece of hardare.
+ *       slow, screwed-up piece of hardware.
  *     - If nothing is waiting for us to set the event, the interrupt is effectively lost and will
  *       never be dismissed.  I wonder if this will become a problem.
  *     - Called at DISPATCH_LEVEL

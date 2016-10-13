@@ -1905,7 +1905,7 @@ IoMapTransfer(IN PADAPTER_OBJECT AdapterObject,
 
     /*
      * The code below applies to slave DMA adapters and bus master adapters
-     * without hardward S/G support.
+     * without hardware S/G support.
      */
     RealMapRegisterBase = (PROS_MAP_REGISTER_ENTRY)((ULONG_PTR)MapRegisterBase & ~MAP_BASE_SW_SG);
 

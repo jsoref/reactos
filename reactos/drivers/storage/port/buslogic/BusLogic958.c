@@ -291,7 +291,7 @@ BT958HwFindAdapter(IN PVOID HwDeviceExtension,
     // Should we change this to double-word aligned to increase performance
     ConfigInfo->AlignmentMask = 0x0;
 
-    if (!Buslogic_InitBT958(deviceExtension,ConfigInfo)) // harware specific initializations. Find what's for our card
+    if (!Buslogic_InitBT958(deviceExtension,ConfigInfo)) // hardware specific initializations. Find what's for our card
     {
        ScsiPortLogError(deviceExtension,
                          NULL,

@@ -42,7 +42,7 @@ typedef struct
 //            
 //
 //  Each IHCDController creates an IUSBHardwareDevice class upon initialization. The 
-//  IUSBHardwardeDevice class is used to abstract usb controller specifics. The IHubController
+//  IUSBHardwareDevice class is used to abstract usb controller specifics. The IHubController
 //  manages all attached devices and handles hub control ioctl requests.
 //
 //  Each IUSBHardwareDevice has one IDMAMemoryManager and one IUSBQueue. The IDMAMemoryManager

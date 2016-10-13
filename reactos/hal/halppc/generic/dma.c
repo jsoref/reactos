@@ -1736,7 +1736,7 @@ IoMapTransfer(
 
    /*
     * The code below applies to slave DMA adapters and bus master adapters
-    * without hardward S/G support.
+    * without hardware S/G support.
     */
 
    RealMapRegisterBase =
