@@ -68,7 +68,7 @@ int conColorMapping[NUM_CON_COLORS][2] =
 };
 
 
-/* Device-independant foreground and background flags stored here.
+/* Device-independent foreground and background flags stored here.
  * probably a bad division of labor, but hey, since we don't use
  * all of their flags in our console stuff (and hence can't retrieve
  * them), the information has to live SOMEWHERE.
@@ -80,7 +80,7 @@ int scForeFlags, scBackFlags;
 #define SC_FLAG      0
 #define CONSOLE_FLAG 1
 
-/* Color mapping between SC (the vt-100 emulator device independant
+/* Color mapping between SC (the vt-100 emulator device independent
  * flags) and NT console character specific flags. Flags which have no analog
  * are set to 0. Note that all global character attributes (character set
  * underline, bold, reverse) are all stored in foreground only 
@@ -213,7 +213,7 @@ beInitVT100Terminal()
     }
 
 
-    /* Do initial settings for device-independant flags */
+    /* Do initial settings for device-independent flags */
     scForeFlags = SC_ASCII;
     scBackFlags = 0;
 
@@ -413,7 +413,7 @@ beSaveCursor(void)
 /* beGetTextAttributes -
  *
  * given a pointer to 'fore'ground and 'back'ground ints,
- * fill them with a device-independant description of the
+ * fill them with a device-independent description of the
  * current foreground and background colors, as well as any
  * font information in the foreground variable.
  */
@@ -470,7 +470,7 @@ beGetTextAttributes(
     }
 
     /* Now, do the actual translation between our detectable
-     * console text attributes and the corresponding device-independant 
+     * console text attributes and the corresponding device-independent 
      * attributes.
      */
 
@@ -499,7 +499,7 @@ beGetTextAttributes(
 
 /* beSetTextAttributes -
  *
- * Given a foreground and a background device independant (SC) color and font
+ * Given a foreground and a background device independent (SC) color and font
  * specification, apply these to the display, and save the state in the 
  * static screen variables.
  *
@@ -518,7 +518,7 @@ beSetTextAttributes(
     WORD wAttributes;
 
     /* First off, let's assign these settings into our
-     * device-independant holder.
+     * device-independent holder.
      */
 
     scForeFlags = fore;
@@ -529,7 +529,7 @@ beSetTextAttributes(
     GetConsoleScreenBufferInfo(hConOut, &csbi);
 
     /* Mask out any of the attributes which can be set via
-     * our device-independant options. Since the console settings
+     * our device-independent options. Since the console settings
      * have additional options, we need to retain those so we don't
      * do something unpleasant to our I/O abilities, for instance.
      */
@@ -538,7 +538,7 @@ beSetTextAttributes(
 
     wAttributes &= ~(bothFore[CONSOLE_FLAG] | bothBack[CONSOLE_FLAG]);
 
-    /* Now, loop through the device-independant possibilities for
+    /* Now, loop through the device-independent possibilities for
      * flags, and modify our console flags as appropriate.
      */
 

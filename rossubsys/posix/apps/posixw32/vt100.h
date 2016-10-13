@@ -183,7 +183,7 @@ int beSaveCursor(void);
 /* beGetTextAttributes -
  *
  * given a pointer to 'fore'ground and 'back'ground ints,
- * fill them with a device-independant description of the
+ * fill them with a device-independent description of the
  * current foreground and background colors, as well as any
  * font information in the foreground variable.
  */
@@ -192,7 +192,7 @@ int beGetTextAttributes(int *fore, int *back);
 
 /* beSetTextAttributes -
  *
- * Given a foreground and a background device independant (SC) color and font
+ * Given a foreground and a background device independent (SC) color and font
  * specification, apply these to the display, and save the state in the 
  * static screen variables.
  *

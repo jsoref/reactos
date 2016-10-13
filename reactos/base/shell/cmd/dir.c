@@ -1607,7 +1607,7 @@ DirList(LPTSTR szPath,              /* [IN] The path that dir starts */
     recurse_bytes += u64CountBytes;
 
     /* Do the recursive job if requested
-       the recursive is be done on ALL(indepent of their attribs)
+       the recursive is be done on ALL(independent of their attribs)
        directories of the current one.*/
     if (lpFlags->bRecursive)
     {

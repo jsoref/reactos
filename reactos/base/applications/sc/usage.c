@@ -48,7 +48,7 @@ VOID MainUsage(VOID)
     _T("\t  GetKeyName     : Gets the ServiceKeyName for a service.\n")
     _T("\t  EnumDepend     : Enumerates Service Dependencies.\n"));
 //    "\n")
-//    "\tService Name Independant Commands:\n")
+//    "\tService Name Independent Commands:\n")
 //    "\t  boot           : (ok | bad) Indicates whether the last boot should\n")
 //    "\t                   be saved as the last-known-good boot configuration\n")
 //    "\t  Lock           : Locks the SCM Database\n")

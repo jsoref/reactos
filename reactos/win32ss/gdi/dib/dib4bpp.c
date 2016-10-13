@@ -2,7 +2,7 @@
  * PROJECT:         Win32 subsystem
  * LICENSE:         See COPYING in the top level directory
  * FILE:            win32ss/gdi/dib/dib4bpp.c
- * PURPOSE:         Device Independant Bitmap functions, 4bpp
+ * PURPOSE:         Device Independent Bitmap functions, 4bpp
  * PROGRAMMERS:     Jason Filby
  */
 
