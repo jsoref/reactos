@@ -38,7 +38,7 @@
 
 typedef void (*vtable_ptr)();
 
-/* type_info object, see cpp.c for inplementation */
+/* type_info object, see cpp.c for implementation */
 typedef struct __type_info
 {
   const vtable_ptr *vtable;

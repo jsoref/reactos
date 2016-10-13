@@ -857,7 +857,7 @@ FTPPutOneF(
 			(void) FTPCmd(cip, "SITE SBUFSIZ %lu", (unsigned long) cip->dataSocketSBufSize);
 		else if (cip->hasSBUFSZ == kCommandAvailable)
 			(void) FTPCmd(cip, "SITE SBUFSZ %lu", (unsigned long) cip->dataSocketSBufSize);
-		/* At least one server implemenation has RBUFSZ but not
+		/* At least one server implementation has RBUFSZ but not
 		 * SBUFSZ and instead uses RBUFSZ for both.
 		 */
 		else if ((cip->hasSBUFSZ != kCommandAvailable) && (cip->hasRBUFSZ == kCommandAvailable))

@@ -36,7 +36,7 @@ typedef set<HWND> WindowSet;
 	of the definition.
 	First are public constructors and destructor, then public member functions.
 	After that we list protected member varibables and functions. If needed,
-	private implemenation varibales and functions are positioned at the end.
+	private implementation varibales and functions are positioned at the end.
  */
 
 

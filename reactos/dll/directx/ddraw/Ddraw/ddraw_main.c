@@ -325,7 +325,7 @@ Main_DirectDraw_GetAvailableVidMem4(LPDDRAWI_DIRECTDRAW_INT This, LPDDSCAPS2 dds
 
     _SEH2_TRY
     {
-        // There is no HEL implentation of this api
+        // There is no HEL implementation of this api
         if (!(This->lpLcl->lpDDCB->HALDDMiscellaneous.dwFlags & DDHAL_MISCCB32_GETAVAILDRIVERMEMORY) ||
             (This->lpLcl->lpGbl->dwFlags & DDRAWI_NOHARDWARE) )
         {
