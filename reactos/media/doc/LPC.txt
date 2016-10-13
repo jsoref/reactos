@@ -9,7 +9,7 @@ Below are some of Alex's notes on the mysterious LPC Subsystem
 1. Sizes, sizes, sizes...
 =========================
 
-There are four imporant LPC Sizes to keep in mind. Try to understand them:
+There are four important LPC Sizes to keep in mind. Try to understand them:
 
 /* 
  * This determines the absolute maximum message size (0x100 bytes). For
