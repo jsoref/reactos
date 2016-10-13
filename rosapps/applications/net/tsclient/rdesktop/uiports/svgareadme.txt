@@ -1,5 +1,5 @@
 This is the svga ui port
-send any fixes or improvments to me Jay Sorg(j@american-data.com)
+send any fixes or improvements to me Jay Sorg(j@american-data.com)
 svgalib should be installed
 tested with versions 1.4.3, 1.9.x
 
