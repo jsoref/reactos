@@ -710,7 +710,7 @@ Arguments:
 
 Return Value:
 
-    Inidicates whether the "RealGeometry" in the data block is now valid.
+    Indicates whether the "RealGeometry" in the data block is now valid.
 
 --*/
 

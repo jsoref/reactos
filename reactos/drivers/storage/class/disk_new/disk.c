@@ -534,7 +534,7 @@ Return Value:
     if(DasdAccessOnly) {
 
         //
-        // Inidicate that only RAW should be allowed to mount on the root
+        // Indicate that only RAW should be allowed to mount on the root
         // partition object.  This ensures that a file system can't doubly
         // mount on a super-floppy by mounting once on P0 and once on P1.
         //

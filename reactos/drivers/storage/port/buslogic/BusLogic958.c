@@ -121,7 +121,7 @@ DriverEntry(IN PVOID DriverObject,
     hwInitializationData.HwAdapterControl = BT958HwAdapterControl;
     hwInitializationData.HwFindAdapter =    BT958HwFindAdapter;
 
-    // Inidicate no buffer mapping but will need physical addresses
+    // Indicate no buffer mapping but will need physical addresses
     hwInitializationData.NeedPhysicalAddresses = TRUE;
 
     // Indicate Auto request sense is supported
