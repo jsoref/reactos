@@ -301,7 +301,7 @@ typedef struct _DISK_DATA {
 
 } DISK_DATA, *PDISK_DATA;
 
-// Define a general structure of identfing disk controllers with bad
+// Define a general structure of identifying disk controllers with bad
 // hardware.
 //
 
