@@ -4,7 +4,7 @@
  * To be run in a real WNT 4.0 system with
  * "\SmApiPort" as argument. Do not try to
  * connect to "\Windows\ApiPort" since that
- * reboots immeditely.
+ * reboots immediately.
  *
  * Use Russinovich' HandleEx to verify
  * conport.exe owns two unnamed LPC ports:

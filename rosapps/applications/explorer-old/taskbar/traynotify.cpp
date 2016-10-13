@@ -120,7 +120,7 @@ bool NotifyInfo::modify(NOTIFYICONDATA* pnid)
 	}
 
 	if (pnid->uFlags & NIF_ICON) {
-		 // Some applications destroy the icon immediatelly after completing the
+		 // Some applications destroy the icon immediately after completing the
 		 // NIM_ADD/MODIFY message, so we have to make a copy of it.
 		if (_hIcon)
 			DestroyIcon(_hIcon);

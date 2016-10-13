@@ -1127,7 +1127,7 @@ int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdL
     }
 #ifdef ROSSHELL
     else
-        return 0;    // no shell to launch, so exit immediatelly
+        return 0;    // no shell to launch, so exit immediately
 #endif
 
 

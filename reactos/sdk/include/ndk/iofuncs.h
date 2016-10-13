@@ -255,7 +255,7 @@ NtLockFile(
     _In_ PLARGE_INTEGER ByteOffset,
     _In_ PLARGE_INTEGER Length,
     _In_ ULONG Key,
-    _In_ BOOLEAN FailImmediatedly,
+    _In_ BOOLEAN FailImmediately,
     _In_ BOOLEAN ExclusiveLock
 );
 
@@ -775,7 +775,7 @@ ZwLockFile(
     _In_ PLARGE_INTEGER ByteOffset,
     _In_ PLARGE_INTEGER Length,
     _In_ ULONG Key,
-    _In_ BOOLEAN FailImmediatedly,
+    _In_ BOOLEAN FailImmediately,
     _In_ BOOLEAN ExclusiveLock
 );
 

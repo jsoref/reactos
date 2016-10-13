@@ -199,7 +199,7 @@ CcpUnmapCache(PVOID Context)
 Somewhat deceptively named function which removes the last reference to a
 cache stripe and completely removes it using CcUnmapCache.  This may be
 done either inline (if the Immediate BOOLEAN is set), or using a work item
-at a later time.  Whether this is called to unmap immeidately is mainly
+at a later time.  Whether this is called to unmap immediately is mainly
 determined by whether the caller is calling from a place in filesystem code
 where a deadlock may occur if immediate flushing is required.
 
