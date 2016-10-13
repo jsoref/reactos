@@ -505,7 +505,7 @@ sec_parse_x509_key(RDPCLIENT * This, X509 * cert)
 	/* By some reason, Microsoft sets the OID of the Public RSA key to
 	   the oid for "MD5 with RSA Encryption" instead of "RSA Encryption"
 
-	   Kudos to Richard Levitte for the following (. intiutive .)
+	   Kudos to Richard Levitte for the following (. intuitive .)
 	   lines of code that resets the OID and let's us extract the key. */
 	if (OBJ_obj2nid(cert->cert_info->key->algor->algorithm) == NID_md5WithRSAEncryption)
 	{
