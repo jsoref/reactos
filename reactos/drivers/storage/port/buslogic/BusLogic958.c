@@ -2624,7 +2624,7 @@ BT958HwInitialize(IN PVOID HwDeviceExtension)
 // Arguments:
 //              1. device extension
 // Return Value:
-//              TRUE : initialzation successful
+//              TRUE : initialization successful
 //              FALSE : initialization failed
 //_______________________________________________________________________________
 {

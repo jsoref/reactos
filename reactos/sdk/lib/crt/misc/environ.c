@@ -197,7 +197,7 @@ void FreeEnvironment(char **environment)
 
 /**
  * Internal version of _wputenv and _putenv. It works duplicates the
- * original environments created during initilization if needed to prevent
+ * original environments created during initialization if needed to prevent
  * having spurious pointers floating around. Then it updates the internal
  * environment tables (_environ and _wenviron) and at last updates the
  * OS environment.
