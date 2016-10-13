@@ -1487,7 +1487,7 @@ typedef DIRENT_ENUM_CONTEXT *PDIRENT_ENUM_CONTEXT;
 
 //
 //  Following structure is used to smooth out the differences in the HSG, ISO
-//  and Joliett directory entries.
+//  and Joliet directory entries.
 //
 
 typedef struct _DIRENT {
