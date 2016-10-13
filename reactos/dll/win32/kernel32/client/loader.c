@@ -73,7 +73,7 @@ BasepMapModuleHandle(HMODULE hModule, BOOLEAN AsDataFile)
     if (LDR_IS_DATAFILE(hModule) && !AsDataFile)
         return NULL;
 
-    /* It'a a normal DLL, just return its handle */
+    /* It's a normal DLL, just return its handle */
     return hModule;
 }
 
