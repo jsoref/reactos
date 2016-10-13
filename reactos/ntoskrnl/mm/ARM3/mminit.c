@@ -1905,7 +1905,7 @@ MiBuildPagedPool(VOID)
 
     //
     // Initialize it such that at first, only the first page's worth of PTEs is
-    // marked as allocated (incidentially, the first PDE we allocated earlier).
+    // marked as allocated (incidentally, the first PDE we allocated earlier).
     //
     RtlInitializeBitMap(MmPagedPoolInfo.PagedPoolAllocationMap,
                         (PULONG)(MmPagedPoolInfo.PagedPoolAllocationMap + 1),
