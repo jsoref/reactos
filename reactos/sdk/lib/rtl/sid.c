@@ -314,7 +314,7 @@ RtlAllocateAndInitializeSid(IN PSID_IDENTIFIER_AUTHORITY IdentifierAuthority,
     pSid->SubAuthorityCount = SubAuthorityCount;
     pSid->IdentifierAuthority = *IdentifierAuthority;
 
-    /* Iteraratively drop into each successive lower count */
+    /* Iteratively drop into each successive lower count */
     switch (SubAuthorityCount)
     {
         /* And copy the needed subahority */
