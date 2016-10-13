@@ -31,7 +31,7 @@ Test_General(void)
     ok(GetObjectA(0, 0, NULL) == 0, "\n");
     ok(GetObjectA((HANDLE)-1, 0, NULL) == 0, "\n");
 
-    /* Test invalid habdles of different types */
+    /* Test invalid handles of different types */
     ok(GetObjectA((HANDLE)0x00380000, 0, NULL) == 0, "\n");
     ok(GetLastError() == ERROR_SUCCESS, "\n");
     ok(GetObjectA((HANDLE)0x00380000, 10, &TestStruct) == 0, "\n");
