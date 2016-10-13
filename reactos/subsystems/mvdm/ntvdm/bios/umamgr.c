@@ -593,7 +593,7 @@ Restart:
                     }
 #endif
 
-                    // Fixed incroment; we may encounter again overlapping ROMs, etc.
+                    // Fixed increment; we may encounter again overlapping ROMs, etc.
                     // Address += Increment;
                 }
 
