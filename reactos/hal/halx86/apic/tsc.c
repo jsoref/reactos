@@ -21,7 +21,7 @@ ULONG64 TscCalibrationArray[NUM_SAMPLES];
 UCHAR HalpRtcClockVector = 0xD1;
 
 #define RTC_MODE 6 /* Mode 6 is 1024 Hz */
-#define SAMPLE_FREQENCY ((32768 << 1) >> RTC_MODE)
+#define SAMPLE_FREQUENCY ((32768 << 1) >> RTC_MODE)
 
 /* PRIVATE FUNCTIONS *********************************************************/
 
@@ -45,7 +45,7 @@ DoLinearRegression(
     }
 
     /* Account for sample frequency */
-    SumXY *= SAMPLE_FREQENCY;
+    SumXY *= SAMPLE_FREQUENCY;
 
     /* Return the quotient of the sums */
     return (SumXY + (SumXX/2)) / SumXX;
@@ -74,7 +74,7 @@ HalpInitializeTsc(VOID)
     RegisterB = HalpReadCmos(RTC_REGISTER_B);
     HalpWriteCmos(RTC_REGISTER_B, RegisterB | RTC_REG_B_PI);
 
-    /* Modify register A to RTC_MODE to get SAMPLE_FREQENCY */
+    /* Modify register A to RTC_MODE to get SAMPLE_FREQUENCY */
     RegisterA = HalpReadCmos(RTC_REGISTER_A);
     RegisterA = (RegisterA & 0xF0) | RTC_MODE;
     HalpWriteCmos(RTC_REGISTER_A, RegisterA);

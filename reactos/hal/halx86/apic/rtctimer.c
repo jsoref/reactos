@@ -32,8 +32,8 @@ FORCEINLINE
 ULONG
 RtcClockRateToIncrement(UCHAR Rate)
 {
-    ULONG Freqency = ((32768 << 1) >> Rate);
-    return (1000000 + (Freqency/2)) / Freqency;
+    ULONG Frequency = ((32768 << 1) >> Rate);
+    return (1000000 + (Frequency/2)) / Frequency;
 }
 
 VOID
