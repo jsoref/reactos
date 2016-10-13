@@ -103,7 +103,7 @@ typedef struct tagDPLDATA_PLAYERSCORE
  * System messages can be identified by dwMessageFlags having a value of DPLMSG_SYSTEM
  * after a call to ReceiveLobbyMessage.
  *
- * Standard messages can be indentified by dwMessageFlags having a value of DPLMSG_STANDARD
+ * Standard messages can be identified by dwMessageFlags having a value of DPLMSG_STANDARD
  * after a call to ReceiveLobbyMessage.
  */
 

@@ -391,7 +391,7 @@ ASSERT(PropertyItem->Set);
         SubDeviceDescriptor->FilterPropertySet[PropertySetIndex].PropertiesCount = 0;
     }
 
-    // as the property set has been indentified, now search for duplicate property set item entries
+    // as the property set has been identified, now search for duplicate property set item entries
     FilterPropertyItem = (PKSPROPERTY_ITEM)SubDeviceDescriptor->FilterPropertySet[PropertySetIndex].PropertyItem;
     bFound = FALSE;
 
