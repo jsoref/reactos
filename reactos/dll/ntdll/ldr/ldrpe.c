@@ -148,7 +148,7 @@ LdrpSnapIAT(IN PLDR_DATA_TABLE_ENTRY ExportLdrEntry,
         /* We'll only do forwarders. Get the import name */
         ImportName = (LPSTR)((ULONG_PTR)ImportLdrEntry->DllBase + IatEntry->Name);
 
-        /* Get the list of forwaders */
+        /* Get the list of forwarders */
         ForwarderChain = IatEntry->ForwarderChain;
 
         /* Loop them */
