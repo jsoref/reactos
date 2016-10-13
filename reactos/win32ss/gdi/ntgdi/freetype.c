@@ -673,7 +673,7 @@ FillTM(TEXTMETRICW *TM, PFONTGDI FontGDI, TT_OS2 *pOS2, TT_HoriHeader *pHori, FT
         TM->tmAveCharWidth = 1;
     }
 
-    /* Correct forumla to get the maxcharwidth from unicode and ansi font */
+    /* Correct formula to get the maxcharwidth from unicode and ansi font */
     TM->tmMaxCharWidth = (FT_MulFix(Face->max_advance_width, XScale) + 32) >> 6;
 
     TM->tmWeight = pOS2->usWeightClass;
