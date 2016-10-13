@@ -32,7 +32,7 @@ MiCheckForUserStackOverflow(IN PVOID Address,
     PETHREAD CurrentThread = PsGetCurrentThread();
     PTEB Teb = CurrentThread->Tcb.Teb;
     PVOID StackBase, DeallocationStack, NextStackAddress;
-    SIZE_T GuranteedSize;
+    SIZE_T GuaranteedSize;
     NTSTATUS Status;
 
     /* Do we own the address space lock? */
@@ -55,15 +55,15 @@ MiCheckForUserStackOverflow(IN PVOID Address,
     /* Read the current settings */
     StackBase = Teb->NtTib.StackBase;
     DeallocationStack = Teb->DeallocationStack;
-    GuranteedSize = Teb->GuaranteedStackBytes;
+    GuaranteedSize = Teb->GuaranteedStackBytes;
     DPRINT("Handling guard page fault with Stacks Addresses 0x%p and 0x%p, guarantee: %lx\n",
-            StackBase, DeallocationStack, GuranteedSize);
+            StackBase, DeallocationStack, GuaranteedSize);
 
     /* Guarantees make this code harder, for now, assume there aren't any */
-    ASSERT(GuranteedSize == 0);
+    ASSERT(GuaranteedSize == 0);
 
     /* So allocate only the minimum guard page size */
-    GuranteedSize = PAGE_SIZE;
+    GuaranteedSize = PAGE_SIZE;
 
     /* Does this faulting stack address actually exist in the stack? */
     if ((Address >= StackBase) || (Address < DeallocationStack))
@@ -75,7 +75,7 @@ MiCheckForUserStackOverflow(IN PVOID Address,
     }
 
     /* This is where the stack will start now */
-    NextStackAddress = (PVOID)((ULONG_PTR)PAGE_ALIGN(Address) - GuranteedSize);
+    NextStackAddress = (PVOID)((ULONG_PTR)PAGE_ALIGN(Address) - GuaranteedSize);
 
     /* Do we have at least one page between here and the end of the stack? */
     if (((ULONG_PTR)NextStackAddress - PAGE_SIZE) <= (ULONG_PTR)DeallocationStack)
@@ -89,13 +89,13 @@ MiCheckForUserStackOverflow(IN PVOID Address,
     ASSERT((PsGetCurrentProcess()->Peb->NtGlobalFlag & FLG_DISABLE_STACK_EXTENSION) == 0);
 
     /* Update the stack limit */
-    Teb->NtTib.StackLimit = (PVOID)((ULONG_PTR)NextStackAddress + GuranteedSize);
+    Teb->NtTib.StackLimit = (PVOID)((ULONG_PTR)NextStackAddress + GuaranteedSize);
 
     /* Now move the guard page to the next page */
     Status = ZwAllocateVirtualMemory(NtCurrentProcess(),
                                      &NextStackAddress,
                                      0,
-                                     &GuranteedSize,
+                                     &GuaranteedSize,
                                      MEM_COMMIT,
                                      PAGE_READWRITE | PAGE_GUARD);
     if ((NT_SUCCESS(Status) || (Status == STATUS_ALREADY_COMMITTED)))

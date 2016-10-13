@@ -387,7 +387,7 @@ Return Value:
             //
             //  Here are the rules concerning filling up the buffer:
             //
-            //  1.  The Io system garentees that there will always be
+            //  1.  The Io system guarantees that there will always be
             //      enough room for at least one base record.
             //
             //  2.  If the full first record (including file name) cannot

@@ -118,7 +118,7 @@ int vtProcessedTextOut(char *cbuf, int count);
 /* Prototype for functions which MUST BE SUPPLIED BY THE BACK END!!! */
 
 /* Back-end specific initialization is performed in this function.
- * this is gauranteed to be called before any other requests are made
+ * this is guaranteed to be called before any other requests are made
  * of the back end.
  */
 
