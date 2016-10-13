@@ -51,7 +51,7 @@ BOOL CTextHistory::Init(DWORD dwMaxHistoryLineSize, DWORD dwMaxHistoryLines)
 	if (m_pHistoryBuffer) delete[] m_pHistoryBuffer;
 	m_dwFirstHistoryIndex = 0;
 	m_dwLastHistoryIndex = 0;
-	m_dwHisoryFull = 0;
+	m_dwHistoryFull = 0;
 	m_dwMaxHistoryLines = dwMaxHistoryLines;
 	m_dwMaxHistoryLineSize = dwMaxHistoryLineSize;
 	m_pHistoryBuffer = new (std::nothrow) TCHAR [m_dwMaxHistoryLines*dwMaxHistoryLineSize];
@@ -68,7 +68,7 @@ void CTextHistory::AddHistoryLine(const TCHAR *pchLine)
 		ASSERT(FALSE);
 		return;
 	}
-	if (m_dwHisoryFull == m_dwMaxHistoryLines)	// if buffer is full, replace last
+	if (m_dwHistoryFull == m_dwMaxHistoryLines)	// if buffer is full, replace last
 	{
 		ASSERT(m_dwFirstHistoryIndex == m_dwLastHistoryIndex);
 		m_dwLastHistoryIndex = (m_dwLastHistoryIndex+1)%m_dwMaxHistoryLines;
@@ -76,16 +76,16 @@ void CTextHistory::AddHistoryLine(const TCHAR *pchLine)
 	ASSERT(m_dwFirstHistoryIndex < m_dwMaxHistoryLines);
 	_tcscpy(m_pHistoryBuffer+m_dwFirstHistoryIndex*m_dwMaxHistoryLineSize,pchLine);
 	m_dwFirstHistoryIndex = (m_dwFirstHistoryIndex+1)%m_dwMaxHistoryLines;
-	ASSERT(m_dwHisoryFull <= m_dwMaxHistoryLines);
-	if (m_dwHisoryFull < m_dwMaxHistoryLines) m_dwHisoryFull++;
+	ASSERT(m_dwHistoryFull <= m_dwMaxHistoryLines);
+	if (m_dwHistoryFull < m_dwMaxHistoryLines) m_dwHistoryFull++;
 }
 
 const TCHAR * CTextHistory::GetHistoryLine(DWORD dwIndex)
 {
 	if (!m_pHistoryBuffer) return NULL;
-	ASSERT(m_dwHisoryFull <= m_dwMaxHistoryLines);
-	if (dwIndex >= m_dwHisoryFull) return NULL;
-	dwIndex = m_dwHisoryFull - dwIndex - 1;
+	ASSERT(m_dwHistoryFull <= m_dwMaxHistoryLines);
+	if (dwIndex >= m_dwHistoryFull) return NULL;
+	dwIndex = m_dwHistoryFull - dwIndex - 1;
 	dwIndex = (dwIndex+m_dwLastHistoryIndex) % m_dwMaxHistoryLines;
 	ASSERT(dwIndex < m_dwMaxHistoryLines);
 	return m_pHistoryBuffer+dwIndex*m_dwMaxHistoryLineSize;
