@@ -1,14 +1,14 @@
 We can not test follow format yet.
 
 
-Follow format need be genreted to complete all test
+Follow format need be generated to complete all test
 *.fon : Font resource file.  
 *.fnt : Raw bitmap font file.  
 *.ttc : East Asian Windows: TrueType font collection.  
 *.fot : TrueType resource file.  
 *.mmm  : multiple master Type1 font resource file. It must be used with .pfm and .pfb files. 
 
-Follow format have been genrate from test.std with fontforge in cygwin
+Follow format have been generated from test.std with fontforge in cygwin
 test.otf
 test.pfb
 test.pfm
