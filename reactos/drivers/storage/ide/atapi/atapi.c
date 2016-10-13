@@ -2286,7 +2286,7 @@ retryIdentifier:
         ScsiPortWritePortUchar(&((PIDE_REGISTERS_1)ioSpace)->CylinderLow, 0xAA);
 
         //
-        // Check if indentifier can be read back.
+        // Check if identifier can be read back.
         //
 
         if ((statusByte = ScsiPortReadPortUchar(&((PIDE_REGISTERS_1)ioSpace)->CylinderLow)) != 0xAA) {
@@ -2864,7 +2864,7 @@ Return Value:
             ScsiPortWritePortUchar(&((PIDE_REGISTERS_1)ioSpace)->CylinderLow, 0xAA);
 
             //
-            // Check if indentifier can be read back.
+            // Check if identifier can be read back.
             //
 
             if ((statusByte = ScsiPortReadPortUchar(&((PIDE_REGISTERS_1)ioSpace)->CylinderLow)) != 0xAA) {
@@ -3170,7 +3170,7 @@ Return Value:
                     ScsiPortWritePortUchar(&((PIDE_REGISTERS_1)ioSpace)->CylinderLow, 0xAA);
 
                     //
-                    // Check if indentifier can be read back.
+                    // Check if identifier can be read back.
                     //
 
                     if ((statusByte = ScsiPortReadPortUchar(&((PIDE_REGISTERS_1)ioSpace)->CylinderLow)) != 0xAA) {

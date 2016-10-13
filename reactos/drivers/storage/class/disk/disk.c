@@ -3998,7 +3998,7 @@ Return Value:
                 ExFreePool(keyData);
 
                 //
-                // Readjust indentifier string if necessary.
+                // Readjust identifier string if necessary.
                 //
 
                 if (!diskData->MbrCheckSum) {
