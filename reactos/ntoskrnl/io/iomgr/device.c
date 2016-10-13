@@ -797,7 +797,7 @@ IoAttachDeviceToDeviceStackSafe(IN PDEVICE_OBJECT SourceDevice,
 /*
  * IoCreateDevice
  *
- * Allocates memory for and intializes a device object for use for
+ * Allocates memory for and initializes a device object for use for
  * a driver.
  *
  * Parameters

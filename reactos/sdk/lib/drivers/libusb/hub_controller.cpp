@@ -254,7 +254,7 @@ CHubController::Initialize(
     DeviceExtension->Dispatcher = PDISPATCHIRP(this);
 
     //
-    // intialize device descriptor
+    // initialize device descriptor
     //
     C_ASSERT(sizeof(USB_DEVICE_DESCRIPTOR) == sizeof(ROOTHUB2_DEVICE_DESCRIPTOR));
     RtlMoveMemory(&m_DeviceDescriptor, ROOTHUB2_DEVICE_DESCRIPTOR, sizeof(USB_DEVICE_DESCRIPTOR));

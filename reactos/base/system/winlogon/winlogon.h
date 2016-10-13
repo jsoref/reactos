@@ -126,7 +126,7 @@ typedef struct _GINAINSTANCE
  * The real picture should look more like this:
  * 
  * STATE_INIT
- *    Initial state. Required for session initialization. After intialization,
+ *    Initial state. Required for session initialization. After initialization,
  *    the state will automatically change to STATE_LOGGED_OFF.
  *
  * STATE_LOGGED_OFF

@@ -329,7 +329,7 @@ PspCreateThread(OUT PHANDLE ThreadHandle,
         }
         _SEH2_END;
 
-        /* Let the kernel intialize the Thread */
+        /* Let the kernel initialize the Thread */
         if (NT_SUCCESS(Status))
         {
             Status = KeInitThread(&Thread->Tcb,
@@ -348,7 +348,7 @@ PspCreateThread(OUT PHANDLE ThreadHandle,
         Thread->StartAddress = StartRoutine;
         PspSetCrossThreadFlag(Thread, CT_SYSTEM_THREAD_BIT);
 
-        /* Let the kernel intialize the Thread */
+        /* Let the kernel initialize the Thread */
         Status = KeInitThread(&Thread->Tcb,
                               NULL,
                               PspSystemThreadStartup,

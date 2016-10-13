@@ -2514,19 +2514,19 @@ KspCreatePin(
     This->Pin.ResetState = KSRESET_END;
     This->Pin.ClientState = KSSTATE_STOP;
 
-    /* intialize allocator create item */
+    /* initialize allocator create item */
     CreateItem[0].Context = (PVOID)&This->Pin;
     CreateItem[0].Create = IKsPin_DispatchCreateAllocator;
     CreateItem[0].Flags = KSCREATE_ITEM_FREEONSTOP;
     RtlInitUnicodeString(&CreateItem[0].ObjectClass, KSSTRING_Allocator);
 
-    /* intialize clock create item */
+    /* initialize clock create item */
     CreateItem[1].Context = (PVOID)&This->Pin;
     CreateItem[1].Create = IKsPin_DispatchCreateClock;
     CreateItem[1].Flags = KSCREATE_ITEM_FREEONSTOP;
     RtlInitUnicodeString(&CreateItem[1].ObjectClass, KSSTRING_Clock);
 
-    /* intialize topology node create item */
+    /* initialize topology node create item */
     CreateItem[2].Context = (PVOID)&This->Pin;
     CreateItem[2].Create = IKsPin_DispatchCreateNode;
     CreateItem[2].Flags = KSCREATE_ITEM_FREEONSTOP;

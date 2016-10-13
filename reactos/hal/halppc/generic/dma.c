@@ -139,7 +139,7 @@ HalpInitDma(VOID)
       HalpEisaDma = TRUE;
 
    /*
-    * Intialize all the global variables and allocate master adapter with
+    * Initialize all the global variables and allocate master adapter with
     * first map buffers.
     */
 

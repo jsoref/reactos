@@ -969,7 +969,7 @@ CUSBRequest::AllocateEndpointDescriptor(
     }
 
     //
-    // intialize descriptor
+    // initialize descriptor
     //
     Descriptor->Flags = OHCI_ENDPOINT_SKIP;
 

@@ -190,7 +190,7 @@ CUSBHardwareDevice::Initialize(
     KeInitializeSpinLock(&m_Lock);
 
     //
-    // intialize status change work item
+    // initialize status change work item
     //
     ExInitializeWorkItem(&m_StatusChangeWorkItem, StatusChangeWorkItemRoutine, PVOID(this));
 
@@ -800,7 +800,7 @@ CUSBHardwareDevice::AllocateEndpointDescriptor(
     }
 
     //
-    // intialize descriptor
+    // initialize descriptor
     //
     Descriptor->Flags = OHCI_ENDPOINT_SKIP;
     Descriptor->HeadPhysicalDescriptor = 0;

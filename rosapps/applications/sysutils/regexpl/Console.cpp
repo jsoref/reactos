@@ -722,7 +722,7 @@ Paste:
         // Size of changing part
 				dwCompletionStringSize = dwCurrentCharOffset-dwCompletionOffset;
 
-        // Save intial changing part of completion in m_pchBuffer2
+        // Save initial changing part of completion in m_pchBuffer2
 				if (dwCompletionStringSize)
 					_tcsncpy(m_pchBuffer2,m_pchBuffer+dwCompletionOffset,dwCompletionStringSize);
 				m_pchBuffer2[dwCompletionStringSize] = 0;

@@ -491,7 +491,7 @@ HvLoadHive(IN PHHIVE Hive,
 /**
  * @name HvInitialize
  *
- * Allocate a new hive descriptor structure and intialize it.
+ * Allocate a new hive descriptor structure and initialize it.
  *
  * @param RegistryHive
  *        Output variable to store pointer to the hive descriptor.

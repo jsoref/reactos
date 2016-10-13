@@ -334,7 +334,7 @@ AppCpuInit:
     /* Raise to HIGH_LEVEL */
     KfRaiseIrql(HIGH_LEVEL);
 
-    /* Call main kernel intialization */
+    /* Call main kernel initialization */
     KiInitializeKernel(&KiInitialProcess.Pcb,
                        &KiInitialThread.Tcb,
                        P0BootStack,

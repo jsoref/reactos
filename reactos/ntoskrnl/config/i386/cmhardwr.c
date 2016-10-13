@@ -137,7 +137,7 @@ CmpGetBiosVersion(IN PCHAR BiosStart,
     PCHAR p, pp;
     USHORT i;
 
-    /* Check if we were given intitial data for the search */
+    /* Check if we were given initial data for the search */
     if (BiosStart)
     {
         /* Save it for later use */

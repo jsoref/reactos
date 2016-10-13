@@ -3373,7 +3373,7 @@ BOOLEAN SockGetAsyncSelectHelperAfdHandle(VOID)
     FILE_COMPLETION_INFORMATION CompletionInfo;
     OBJECT_HANDLE_ATTRIBUTE_INFORMATION HandleFlags;
 
-    /* First, make sure we're not already intialized */
+    /* First, make sure we're not already initialized */
     if (SockAsyncHelperAfdHandle)
     {
         return TRUE;

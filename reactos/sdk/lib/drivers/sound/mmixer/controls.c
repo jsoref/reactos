@@ -1546,7 +1546,7 @@ MMixerInitializeFilter(
         /* new mixer info */
         NewMixerInfo = TRUE;
 
-        /* intialize mixer caps */
+        /* initialize mixer caps */
         MixerInfo->MixCaps.wMid = MM_MICROSOFT; /* FIXME */
         MixerInfo->MixCaps.wPid = MM_PID_UNMAPPED; /* FIXME */
         MixerInfo->MixCaps.vDriverVersion = 1; /* FIXME */

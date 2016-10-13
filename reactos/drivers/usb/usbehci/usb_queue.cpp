@@ -79,7 +79,7 @@ protected:
     // called when the completion queue is cleaned up
     VOID QueueHeadCleanup(PQUEUE_HEAD QueueHead);
 
-    // intializes the sync schedule
+    // initializes the sync schedule
     NTSTATUS InitializeSyncSchedule(IN PEHCIHARDWAREDEVICE Hardware, IN PDMAMEMORYMANAGER MemManager);
 
     // links interrupt queue head
