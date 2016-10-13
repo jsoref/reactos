@@ -11,7 +11,7 @@
 #define TAG_CALLBACK_ROUTINE_BLOCK 'brbC'
 #define TAG_CALLBACK_REGISTRATION  'eRBC'
 
-/* formely located in dbg/dbgkobj.c */
+/* formerly located in dbg/dbgkobj.c */
 #define TAG_DEBUG_EVENT     'EgbD'
 
 /* formerly located in ex/resource.c */
