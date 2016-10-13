@@ -2177,7 +2177,7 @@ BYTE check_fs (	/* 0:Valid FAT-BS, 1:Valid BS but not FAT, 2:Not a BS, 3:Disk er
 	DWORD sect	/* Sector# (lba) to check if it is an FAT boot record or not */
 )
 {
-	fs->wflag = 0; fs->winsect = 0xFFFFFFFF;	/* Invaidate window */
+	fs->wflag = 0; fs->winsect = 0xFFFFFFFF;	/* Invalidate window */
 	if (move_window(fs, sect) != FR_OK)			/* Load boot record */
 		return 3;
 

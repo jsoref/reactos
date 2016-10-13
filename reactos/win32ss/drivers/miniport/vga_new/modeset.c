@@ -431,7 +431,7 @@ Return Value:
     if ( (RequestedModeNum >= NumVideoModes) )
 // eVb: 2.4 [END]
     {
-        VideoDebugPrint((0, "Invalide Mode Number = %d!\n", RequestedModeNum));
+        VideoDebugPrint((0, "Invalid Mode Number = %d!\n", RequestedModeNum));
 
         return ERROR_INVALID_PARAMETER;
     }

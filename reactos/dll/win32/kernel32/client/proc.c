@@ -2834,7 +2834,7 @@ StartScan:
                                                              &SxsWin32RelativePath);
     if (!TranslationStatus)
     {
-        /* Path must be invaild somehow, bail out */
+        /* Path must be invalid somehow, bail out */
         DPRINT1("Path translation for SxS failed\n");
         SetLastError(ERROR_PATH_NOT_FOUND);
         Result = FALSE;
