@@ -339,7 +339,7 @@ HidParser_GetReport(
     if (Status == HIDPARSER_STATUS_SUCCESS || CreateIfNotExists == FALSE)
     {
         //
-        // founed report
+        // found report
         //
         return Status;
     }

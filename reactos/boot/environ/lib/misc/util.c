@@ -307,7 +307,7 @@ BlTblFindEntry (
                               Argument4);
             if (Result)
             {
-                /* Entry fouund return it */
+                /* Entry found return it */
                 *EntryIndex = Index;
                 Entry = Table[Index];
                 break;
