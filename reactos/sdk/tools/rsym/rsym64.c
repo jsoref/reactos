@@ -112,7 +112,7 @@ DwDecodeFde(PDW2FDE Fde, char *pc)
 }
 
 unsigned long
-DwExecIntruction(PDW2CFSTATE State, char *pc)
+DwExecInstruction(PDW2CFSTATE State, char *pc)
 {
     unsigned char Code;
     unsigned long Length;
@@ -416,14 +416,14 @@ StoreUnwindInfo(PUNWIND_INFO Info, PDW2FDE pFde, ULONG FunctionStart)
     pInst = Cie.Instructions;
     while (pInst < Cie.Next)
     {
-        pInst += DwExecIntruction(&State, pInst);
+        pInst += DwExecInstruction(&State, pInst);
     }
 
     /* Parse the FDE instructions */
     pInst = pFde->Instructions;
     while (pInst < pFde->Next)
     {
-        pInst += DwExecIntruction(&State, pInst);
+        pInst += DwExecInstruction(&State, pInst);
 
         if (State.IsUwop)
         {
@@ -495,7 +495,7 @@ CountUnwindData(PFILE_INFO File)
             pInst = Fde.Instructions;
             while (pInst < Fde.Next)
             {
-                pInst += DwExecIntruction(&State, pInst);
+                pInst += DwExecInstruction(&State, pInst);
                 File->cUWOP += StoreUnwindCodes(NULL, &State, 0);
                 File->cScopes += State.Scope ? 1 : 0;
             }
