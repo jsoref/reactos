@@ -339,7 +339,7 @@ void test_DeletePwrScheme(void)
 
 
    /*
-    *  try inexistant profile number, should fail
+    *  try nonexistent profile number, should fail
     */
 
    retval = DeletePwrScheme(0xFFFFFFFF);
@@ -430,7 +430,7 @@ void test_GetSetActivePwrScheme(void)
    ok(retval <= g_NumPwrSchemes, "expected index lower as power scheme count %d but got %d\n", g_NumPwrSchemes, g_ActivePwrScheme);
 
    /*
-    *  sets active power scheme to inexistant profile
+    *  sets active power scheme to nonexistent profile
     * -> corrupts power scheme enumeration on Windows XP SP2
     */
    //corrupts registry
