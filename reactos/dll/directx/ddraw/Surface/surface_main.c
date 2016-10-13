@@ -494,7 +494,7 @@ Main_DDrawSurface_Lock (LPDDRAWI_DDRAWSURFACE_INT ThisDest, LPRECT prect,
         //if (pDDSD->dwSize == sizeof(DDSURFACEDESC2))
         //{
         //    ZeroMemory(pDDSD,sizeof(DDSURFACEDESC2));
-        //    // FIXME the interanl mddsdPrimary shall be DDSURFACEDESC2
+        //    // FIXME the internal mddsdPrimary shall be DDSURFACEDESC2
         //    memcpy(pDDSD,&This->Surf->mddsdPrimary,sizeof(DDSURFACEDESC));
         //    pDDSD->dwSize = sizeof(DDSURFACEDESC2);
         //}
