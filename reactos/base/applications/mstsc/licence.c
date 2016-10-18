@@ -343,7 +343,7 @@ licence_process_error_alert(STREAM s)
 		return;
 	}
 
-	/* handle error codes, for now, jsut report them */
+	/* handle error codes, for now, just report them */
 	switch (error_code)
 	{
 		case 0x6:	// ERR_NO_LICENSE_SERVER
@@ -363,7 +363,7 @@ licence_process_error_alert(STREAM s)
 			break;
 	}
 
-	/* handle error codes, for now, jsut report them */
+	/* handle error codes, for now, just report them */
 	switch (error_info)
 	{
 		default:
