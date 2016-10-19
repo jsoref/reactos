@@ -233,7 +233,7 @@ TRACE;
  *	CreateSessionObiects/1					PRIVATE
  *
  * DESCRIPTION
- *	Create the session objects which are mananged by our side:
+ *	Create the session objects which are managed by our side:
  *
  *	\POSIX+\Sessions\P<pid>
  *	\POSIX+\Sessions\D<pid>
