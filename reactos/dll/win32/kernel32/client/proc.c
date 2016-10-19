@@ -2351,7 +2351,7 @@ CreateProcessInternalW(IN HANDLE hUserToken,
     BASE_MSG_SXS_HANDLES MappedHandles, Handles, FileHandles;
     PVOID CapturedStrings[3];
     SXS_WIN32_NT_PATH_PAIR ExePathPair, ManifestPathPair, PolicyPathPair;
-    SXS_OVERRIDE_MANIFEST OverrideMannifest;
+    SXS_OVERRIDE_MANIFEST OverrideManifest;
     UNICODE_STRING FreeString, SxsNtExePath;
     PWCHAR SxsConglomeratedBuffer, StaticBuffer;
     ULONG ConglomeratedBufferSizeBytes, StaticBufferSize, i;
