@@ -626,7 +626,7 @@ co_UserCallNextHookEx(PHOOK Hook,
 
                 if (BadChk)
                 {
-                    ERR("HOOK WH_KEYBORD_LL read from lParam ERROR!\n");
+                    ERR("HOOK WH_KEYBOARD_LL read from lParam ERROR!\n");
                 }
             }
 
