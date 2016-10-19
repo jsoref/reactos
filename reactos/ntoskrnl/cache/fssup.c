@@ -34,7 +34,7 @@ A note about private cache maps.
 CcInitializeCacheMap and CcUninitializeCacheMap are not meant to be paired,
 although they can work that way.
 
-The actual operation I've gleaned from reading both jan kratchovil's writing
+The actual operation I've gleaned from reading both jan kratochvil's writing
 and real filesystems is this:
 
 CcInitializeCacheMap means:
