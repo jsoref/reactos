@@ -92,7 +92,7 @@ struct vbo_save_vertex_list {
  *
  * Consider stategy of uploading regions from the VBO on demand in the
  * case of dynamic vbos.  Then make the dlist code signal that
- * likelyhood as it occurs.  No reason we couldn't change usage
+ * likelihood as it occurs.  No reason we couldn't change usage
  * internally even though this probably isn't allowed for client VBOs?
  */
 #define VBO_SAVE_BUFFER_SIZE (8*1024) /* dwords */
