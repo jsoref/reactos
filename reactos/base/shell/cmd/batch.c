@@ -104,7 +104,7 @@ LPTSTR FindArg(TCHAR Char, BOOL *IsParam0)
 
 
 /*
- * Batch_params builds a parameter list in newlay allocated memory.
+ * Batch_params builds a parameter list in newly allocated memory.
  * The parameters consist of null terminated strings with a final
  * NULL character signalling the end of the parameters.
  *
