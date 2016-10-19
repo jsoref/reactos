@@ -1737,7 +1737,7 @@ gl_do_tab_completion(char *buf, int *loc, size_t bufsize, int tabtab)
 	char *qstart;
 	char *lastspacestart;
 	char *cp;
-	int ntoalloc, nused, nprocused, nalloced, i;
+	int ntoalloc, nused, nprocessed, nalloced, i;
 	char **newgl_matchlist;
 	char *strtoadd, *strtoadd1;
 	int addquotes;
@@ -1825,7 +1825,7 @@ gl_do_tab_completion(char *buf, int *loc, size_t bufsize, int tabtab)
 		gl_matchlist[i] = NULL;
 
 	gl_completion_exact_match_extra_char = ' ';
-	for (nprocused = 0;; nprocused++) {
+	for (nprocessed = 0;; nprocessed++) {
 		if (nused == nalloced) {
 			ntoalloc += GL_COMPLETE_VECTOR_BLOCK_SIZE;
 			newgl_matchlist = (char **) realloc((char *) gl_matchlist, (size_t) (sizeof(char *) * (ntoalloc + 1)));
@@ -1844,7 +1844,7 @@ gl_do_tab_completion(char *buf, int *loc, size_t bufsize, int tabtab)
 			for (i=nused; i<=nalloced; i++)
 				gl_matchlist[i] = NULL;
 		}
-	        cp = gl_completion_proc(matchpfx, nprocused);
+	        cp = gl_completion_proc(matchpfx, nprocessed);
 		if (cp == NULL)
 			break;
 		if ((cp[0] == '.') && ((cp[1] == '\0') || ((cp[1] == '.') && (cp[2] == '\0'))))
