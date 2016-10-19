@@ -385,7 +385,7 @@ void Test_TrackMouseEvent()
     EXPECT_TME_FLAGS(hWnd3, TME_HOVER|TME_LEAVE);
     FLUSH_MESSAGES(QS_TIMER, QS_MOUSEMOVE);         /* WH_MOUSE_LL drops WM_MOUSEMOVE */
     EXPECT_TME_FLAGS(hWnd3, TME_LEAVE);           
-    COMPARE_CACHE(mousehover3_dropmousell_chain);   /* we get WM_MOUSEHOVER normaly */
+    COMPARE_CACHE(mousehover3_dropmousell_chain);   /* we get WM_MOUSEHOVER normally */
     ignore_mousell = FALSE;
 
     FlushMessages();
@@ -399,7 +399,7 @@ void Test_TrackMouseEvent()
     EXPECT_TME_FLAGS(hWnd3, TME_HOVER|TME_LEAVE);
     FLUSH_MESSAGES(QS_TIMER|QS_MOUSEMOVE, 0);     /* WH_MOUSE drops WM_MOUSEMOVE */
     EXPECT_TME_FLAGS(hWnd3, TME_LEAVE);           
-    COMPARE_CACHE(mousehover3_dropmouse_chain);   /* we get WM_MOUSEHOVER normaly */
+    COMPARE_CACHE(mousehover3_dropmouse_chain);   /* we get WM_MOUSEHOVER normally */
     ignore_mouse = FALSE;
 
     FlushMessages();
