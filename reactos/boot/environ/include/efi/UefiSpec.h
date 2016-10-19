@@ -1668,7 +1668,7 @@ Returns if the capsule can be supported via UpdateCapsule().
 being passed into update capsule.
 @param  CapsuleCount          Number of pointers to EFI_CAPSULE_HEADER in
 CapsuleHeaderArray.
-@param  MaxiumCapsuleSize     On output the maximum size that UpdateCapsule() can
+@param  MaximumCapsuleSize     On output the maximum size that UpdateCapsule() can
 support as an argument to UpdateCapsule() via
 CapsuleHeaderArray and ScatterGatherList.
 @param  ResetType             Returns the type of reset required for the capsule update.

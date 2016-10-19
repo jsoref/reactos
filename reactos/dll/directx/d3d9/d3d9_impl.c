@@ -242,7 +242,7 @@ static UINT WINAPI IDirect3D9Impl_GetAdapterModeCount(LPDIRECT3D9 iface, UINT Ad
 *
 * @param UINT Mode
 * Index within the pixel format to be returned.
-* The maximym value for this is the value returned by IDirect3D9::GetAdapterModeCount() - 1.
+* The maximum value for this is the value returned by IDirect3D9::GetAdapterModeCount() - 1.
 *
 * @param D3DDISPLAYMODE* pMode
 * Pointer to a D3DDISPLAYMODE structure to be filled with the display mode information

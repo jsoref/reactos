@@ -29,7 +29,7 @@
 #include <mmsystem.h>
 #include <winbase.h>
 
-/* Maxium drivers  */
+/* Maximum drivers  */
 #define MAXWAVEDRIVERS 10
 
 #define MAX_MIDIINDRV 	(16)

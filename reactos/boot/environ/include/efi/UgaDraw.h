@@ -112,7 +112,7 @@ typedef enum {
                             ///< (DestinationX, DestinationY) (DestinationX + Width, DestinationY + Height).
                             ///< The BltBuffer and Delta  are not used in this mode.
                             
-  EfiUgaBltMax              ///< Maxmimum value for enumeration value of Blt operation. If a Blt operation
+  EfiUgaBltMax              ///< Maximum value for enumeration value of Blt operation. If a Blt operation
                             ///< larger or equal to this enumeration value, it is invalid.
 } EFI_UGA_BLT_OPERATION;
 
