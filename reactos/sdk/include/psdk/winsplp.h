@@ -1084,7 +1084,7 @@ typedef BOOL
   _In_ DWORD dwCommand,
   _In_ PVOID pContext,
   _In_ DWORD dwColor,
-  _In_ PPRINTER_NOTIFY_INFO pNofityInfo,
+  _In_ PPRINTER_NOTIFY_INFO pNotifyInfo,
   _In_ DWORD fdwFlags,
   _Out_ PDWORD pdwResult);
 

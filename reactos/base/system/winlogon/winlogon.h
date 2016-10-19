@@ -275,7 +275,7 @@ extern PWLSESSION WLSession;
 BOOL
 CreateUserEnvironment(IN PWLSESSION Session);
 
-/* notifiy.c */
+/* notify.c */
 BOOL
 InitNotifications(VOID);
 
