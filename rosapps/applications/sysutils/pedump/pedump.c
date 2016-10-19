@@ -1338,7 +1338,7 @@ GetImportFunctionNamesByModule (
   // these informations are used where they are needed.
   //                      ...........sang cho..................
   //
-  /* copy function names to mempry pointer */
+  /* copy function names to memory pointer */
   dwFunctionName = pid->dwRVAFunctionNameList;
   dwFunctionAddress = pid->dwRVAFunctionAddressList;
   while (dwFunctionName &&

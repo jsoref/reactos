@@ -103,7 +103,7 @@ void CopyDDSurfDescToDDSurfDesc2(LPDDSURFACEDESC2 dst_pDesc, LPDDSURFACEDESC src
 /* DirectDraw Cleanup code only internal use */
 VOID Cleanup(LPDDRAWI_DIRECTDRAW_INT iface);
 
-/* own macro to alloc memmory */
+/* own macro to alloc memory */
 
 /*
 #define DxHeapMemAlloc(m)  HeapAlloc(GetProcessHeap(), HEAP_ZERO_MEMORY, m)

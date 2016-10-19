@@ -137,8 +137,8 @@
  *
  *    06-jul-2005 (Magnus Olsen <magnus@greatlord.com>)
  *        translate '%errorlevel%' to the internal value.
- *        Add proper memmory alloc ProcessInput, the error
- *        handling for memmory handling need to be improve
+ *        Add proper memory alloc ProcessInput, the error
+ *        handling for memory handling need to be improve
  */
 
 #include "precomp.h"

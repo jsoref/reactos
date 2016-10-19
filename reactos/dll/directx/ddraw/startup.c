@@ -213,7 +213,7 @@ StartDirectDraw(LPDIRECTDRAW iface, LPGUID lpGuid, BOOL reenable)
                 DxHeapMemAlloc( ddgbl.lpDDCBtmp , sizeof(DDHAL_CALLBACKS));
                 if (ddgbl.lpDDCBtmp == NULL)
                 {
-                    DX_STUB_str("Out of memmory\n");
+                    DX_STUB_str("Out of memory\n");
                     return DD_FALSE;
                 }
             }

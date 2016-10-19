@@ -595,7 +595,7 @@ NdisMStartBufferPhysicalMapping(
  * NOTES:
  *     - Must be called at IRQL <= DISPATCH_LEVEL
  *     - The basic idea:  call IoMapTransfer() in a loop as many times as it takes
- *       in order to map all of the virtual memory to physical memoroy readable
+ *       in order to map all of the virtual memory to physical memory readable
  *       by the device
  *     - The caller supplies storage for the physical address array.
  */
