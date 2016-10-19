@@ -102,9 +102,9 @@ typedef struct _EDD_SURFACE
  * if any of these flags are set in dwCallbackFlags (struct EDD_DIRECTDRAW_GLOBAL),
  * it means that the respective callback member for it has been filled in by a graphic driver
  */
-#define EDDDGBL_MISCCALLBACKS           0x01 // ddMiscellanousCallbacks
+#define EDDDGBL_MISCCALLBACKS           0x01 // ddMiscellaneousCallbacks
 #define EDDDGBL_VIDEOPORTCALLBACKS      0x02 // ddVideoPortCallback
-#define EDDDGBL_MISC2CALLBACKS          0x80 // ddMiscellanous2Callbacks
+#define EDDDGBL_MISC2CALLBACKS          0x80 // ddMiscellaneous2Callbacks
 
 typedef struct _EDD_DIRECTDRAW_GLOBAL
 {
@@ -149,8 +149,8 @@ typedef struct _EDD_DIRECTDRAW_GLOBAL
 /* 0x460 */    ULONG unk_460[9];
 /* 0x47C */    D3DNTHAL_CALLBACKS2 d3dNtHalCallbacks2;
 /* 0x498 */    DD_VIDEOPORTCALLBACKS ddVideoPortCallback;              // 0x498 <-- verified to match Windows XP, ddVideoPortCallback
-/* 0x4E0 */    DD_MISCELLANEOUSCALLBACKS ddMiscellanousCallbacks;      // 0x4E0 <-- verified to match Windows XP, ddMiscellanousCallbacks
-/* 0x4EC */    DD_MISCELLANEOUS2CALLBACKS ddMiscellanous2Callbacks;    // 0x4EC <-- verified to match Windows XP, ddMiscellanous2Callbacks
+/* 0x4E0 */    DD_MISCELLANEOUSCALLBACKS ddMiscellaneousCallbacks;      // 0x4E0 <-- verified to match Windows XP, ddMiscellaneousCallbacks
+/* 0x4EC */    DD_MISCELLANEOUS2CALLBACKS ddMiscellaneous2Callbacks;    // 0x4EC <-- verified to match Windows XP, ddMiscellaneous2Callbacks
 /* 0x504 */    ULONG unk_504[10];
 /* 0x534 */    D3DNTHAL_CALLBACKS3 d3dNtHalCallbacks3;
 /* 0x5A4 */    ULONG unk_544;

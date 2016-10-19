@@ -2,7 +2,7 @@
  * COPYRIGHT:       See COPYING in the top level directory
  * PROJECT:         ReactOS User Manager Control Panel
  * FILE:            dll/cpl/usrmgr/misc.c
- * PURPOSE:         Miscellaneus functions
+ * PURPOSE:         Miscellaneous functions
  *
  * PROGRAMMERS:     Eric Kohl
  */
