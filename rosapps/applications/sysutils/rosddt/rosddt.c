@@ -5,7 +5,7 @@
 
 #define ST_NEUTRAL      0
 #define ST_ROS_CRASH    1
-#define ST_DEV_NOTWORK  2
+#define ST_DEV_NOT_WORK  2
 #define ST_DEV_OK       3
 #define ST_ERROR        4
 #define ST_LAST_STATUS  ST_ERROR
@@ -23,7 +23,7 @@ static int hw_check_ini(wchar_t *name)
 		return ST_NEUTRAL;
 	}
 	if (_wcsicmp(buff, L"ok") == 0) return ST_DEV_OK;
-	if (_wcsicmp(buff, L"notwork") == 0) return ST_DEV_NOTWORK;
+	if (_wcsicmp(buff, L"notwork") == 0) return ST_DEV_NOT_WORK;
 	if (_wcsicmp(buff, L"crash") == 0) return ST_ROS_CRASH;
 	return ST_NEUTRAL;
 }
@@ -122,7 +122,7 @@ static int hw_check_device(HDEVINFO h_info, SP_DEVINFO_DATA *d_inf)
 		{
 			status = hw_check_base(hw_id, hw_name);
 
-			if (status == ST_DEV_NOTWORK) {
+			if (status == ST_DEV_NOT_WORK) {
 				CharToOem(hw_name, name);
 				wprintf(L"Device \"%S\" does not work in ReactOS\n", name);
 			}
@@ -248,7 +248,7 @@ int wmain(int argc, wchar_t *argv[])
 	{
 		wprintf(
 			L"Checking completed.\nFound %d supported devices, %d unsupported devices and %d incompatible devices\n", 
-			codes[ST_DEV_OK], codes[ST_DEV_NOTWORK], codes[ST_ROS_CRASH]);
+			codes[ST_DEV_OK], codes[ST_DEV_NOT_WORK], codes[ST_ROS_CRASH]);
 
 		if (codes[ST_ROS_CRASH] == 0) {
 			wprintf(L"ReactOS can be installed on your computer\n");
