@@ -179,7 +179,7 @@ KsCreateClock(HANDLE ConnectionHandle,
 *
 * @remarks.
 * The flag in PKSDATAFORMAT is not really document, 
-* to find it u need api mointor allot api and figout
+* to find it u need api monitor allot api and figout
 * how it works, only flag I have found is the 
 * KSDATAFORMAT_ATTRIBUTES flag, it doing a Align
 * of LONLONG size, it also round up it.
