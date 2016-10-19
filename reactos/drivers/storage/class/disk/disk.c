@@ -3114,7 +3114,7 @@ Routine Description:
 
     The routine performs the necessary functions to determine if a device is
     really a floppy rather than a harddisk.  This is done by a mode sense
-    command.  First, a check is made to see if the medimum type is set.  Second
+    command.  First, a check is made to see if the media type is set.  Second
     a check is made for the flexible parameters mode page.  Also a check is
     made to see if the write cache is enabled.
 
