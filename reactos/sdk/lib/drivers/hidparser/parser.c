@@ -482,7 +482,7 @@ HidParser_InitReportItem(
     // get logical bounds
     //
     LogicalMinimum = GlobalItemState->LogicalMinimum;
-    LogicalMaximum = GlobalItemState->LogicialMaximum;
+    LogicalMaximum = GlobalItemState->LogicalMaximum;
     if (LogicalMinimum > LogicalMaximum)
     {
         //
@@ -1010,7 +1010,7 @@ HidParser_ParseReportDescriptor(
 
                     case ITEM_TAG_GLOBAL_LOGICAL_MAXIMUM:
                         Parser->Debug("[HIDPARSE] ITEM_TAG_GLOBAL_LOCAL_MAXIMUM %x\n", Data);
-                        ParserContext->GlobalItemState.LogicialMaximum = Data;
+                        ParserContext->GlobalItemState.LogicalMaximum = Data;
                         break;
 
                     case ITEM_TAG_GLOBAL_PHYSICAL_MINIMUM:
