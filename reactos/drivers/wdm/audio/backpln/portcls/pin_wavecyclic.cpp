@@ -1290,7 +1290,7 @@ CPortPinWaveCyclic::Init(
     m_CommonBufferSize = m_DmaChannel->AllocatedBufferSize();
     m_CommonBuffer = m_DmaChannel->SystemAddress();
     m_Capture = Capture;
-    // delay of 10 milisec
+    // delay of 10 millisec
     m_Delay = Int32x32To64(10, -10000);
 
     // sanity checks
