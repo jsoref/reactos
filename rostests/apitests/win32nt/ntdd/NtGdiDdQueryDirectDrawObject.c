@@ -275,7 +275,7 @@ START_TEST(NtGdiDdQueryDirectDrawObject)
     /* We do not retesting DD_HALINFO, instead we compare it */
     RTEST(memcmp(&oldHalInfo, pHalInfo, sizeof(DD_HALINFO)) == 0);
 
-    /* Rember on some nivida drv the pCallBackFlags will not be set even they api exists in the drv
+    /* Rember on some nvidia drv the pCallBackFlags will not be set even they api exists in the drv
      * known workaround is to check if the drv really return a kmode pointer for the drv functions
      * we want to use.
      */
@@ -313,12 +313,12 @@ START_TEST(NtGdiDdQueryDirectDrawObject)
      */
     RTEST(puD3dCallbacks->dwSize == sizeof(D3DNTHAL_CALLBACKS));
 
-    /* Nivda like GF7900GS will not follow ms design rule here,
+    /* Nvidia like GF7900GS will not follow ms design rule here,
      * ContextDestroyAll must always be NULL for it is not longer inuse in windows 2000 and higher
      */
     RTEST(puD3dCallbacks->ContextDestroyAll == NULL);
 
-    /* Nivda like GF7900GS will not follow ms design rule here,
+    /* Nvidia like GF7900GS will not follow ms design rule here,
      * SceneCapture must always be NULL for it is not longer inuse in windows 2000 and higher
      */
     RTEST(puD3dCallbacks->SceneCapture  == NULL);
@@ -353,7 +353,7 @@ START_TEST(NtGdiDdQueryDirectDrawObject)
     RTEST(puD3dCallbacks->dwReserved8 == 0);
     RTEST(puD3dCallbacks->dwReserved9 == 0);
 
-    /* how detect puD3dCallbacks->ContextCreate and puD3dCallbacks->ContextDestroy shall be set for bugi drv like nivda ? */
+    /* how detect puD3dCallbacks->ContextCreate and puD3dCallbacks->ContextDestroy shall be set for bugi drv like nvidia ? */
     /* pointer direcly to the graphic drv, it is kmode pointer */
     // RTEST( ( (DWORD)puD3dCallbacks->ContextCreate & (~0x80000000)) != 0 );
     // RTEST( ( (DWORD)puD3dCallbacks->ContextDestroy & (~0x80000000)) != 0 );

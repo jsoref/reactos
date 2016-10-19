@@ -28,7 +28,7 @@ VOID Blt_Test (LPDIRECTDRAWSURFACE7 Surface, INT* passed, INT* failed)
     if(!CreateSurface(&Source))
         return;
 
-    // The following has been tested with Nvidea hardware
+    // The following has been tested with Nvidia hardware
     // the results might differently with other graphic
     // card drivers. - mbosma
 
@@ -117,7 +117,7 @@ VOID GetBltStatus_Test (LPDIRECTDRAWSURFACE7 Surface, INT* passed, INT* failed)
     desc.dwSize = sizeof(DDSURFACEDESC2);
     Surface->Lock(NULL, &desc, DDLOCK_WAIT, NULL);
     TEST (Surface->GetBltStatus(DDGBS_ISBLTDONE) == DD_OK);
-    TEST (Surface->GetBltStatus(DDGBS_CANBLT) == DD_OK); // does not return DDERR_SURFACEBUSY for me as msdn says (xp,nvidea)
+    TEST (Surface->GetBltStatus(DDGBS_CANBLT) == DD_OK); // does not return DDERR_SURFACEBUSY for me as msdn says (xp,nvidia)
     Surface->Unlock (NULL);
 
     // Try to produce busy surface by filling it 500 times
