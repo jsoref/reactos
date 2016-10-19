@@ -1,6 +1,6 @@
 /* Edit Control Test for ReactOS, quick n' dirty. Very rigid too.
  * There you go, is only a test program. Not made to be fast, small
- * easy to mantain, or portable. Lots of duplicated code too.
+ * easy to maintain, or portable. Lots of duplicated code too.
 
  * I'm not erasing text because I don't want to use other functions from th API
  * or make this more complex.

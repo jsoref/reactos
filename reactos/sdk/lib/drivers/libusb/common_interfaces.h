@@ -55,7 +55,7 @@ typedef struct
 //
 // class IRootHCDController
 //
-// Description: This class serves as the root host controller. The host controller mantains
+// Description: This class serves as the root host controller. The host controller maintains
 // a list of registered controllers and provides support functions for the host controllers
 
 struct IHCDController;

@@ -1,7 +1,7 @@
 /* ComboBox Control Test for ReactOS.
 
 * This is a test program. Not made to be fast, small
-* easy to mantain, or portable.
+* easy to maintain, or portable.
 
 * I'm not erasing text because I don't want to use other functions from the API
 * or make this more complex. Also Fonts are not heavily used.
