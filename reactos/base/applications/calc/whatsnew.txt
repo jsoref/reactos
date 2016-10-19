@@ -3,7 +3,7 @@
 * Updated translations (thanks to the friends at ReactOS' community).
 * Added DS_SHELLFONT to some dialogs into various translations (sometimes it was specified, sometimes it was not).
 * Added support for newer conversion units.
-* Fixed mistake into english translation (lenghts -> lengths).
+* Fixed mistake into english translation (lengthts -> lengths).
 * Now decimal and thousand separators can be also read directly from registry (NT only, not 9x/ME).
 * Fixed bug when pressing an operator twice (like '1++2=' caused error).
 * Now unary operators and constant generators won't break RPN queue.
