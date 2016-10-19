@@ -806,7 +806,7 @@ rdpdr_init(RDPCLIENT * This)
 void
 rdpdr_add_fds(RDPCLIENT * This, int *n, fd_set * rfds, fd_set * wfds, struct timeval *tv, BOOL * timeout)
 {
-	uint32 select_timeout = 0;	/* Timeout value to be used for select() (in millisecons). */
+	uint32 select_timeout = 0;	/* Timeout value to be used for select() (in milliseconds). */
 	struct async_iorequest *iorq;
 	char c;
 
