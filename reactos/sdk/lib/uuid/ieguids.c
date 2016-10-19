@@ -107,10 +107,10 @@ DEFINE_GUID(CATID_SafeForInitializing, 0x7dd95802,0x9882,0x11cf,0x9f,0xa9,0x00,0
 //CLSID_CdlProtocol
 //CLSID_DeCompMimeFilter
 //CLSID_StdEncodingFilterFac
-//CLSID_NotificaitonTest4
-//CLSID_NotificaitonTest3
-//CLSID_NotificaitonTest2
-//CLSID_NotificaitonTest1
+//CLSID_NotificationTest4
+//CLSID_NotificationTest3
+//CLSID_NotificationTest2
+//CLSID_NotificationTest1
 //NOTIFICATIONTYPE_START_F
 //NOTIFICATIONTYPE_START_E
 //NOTIFICATIONTYPE_START_D

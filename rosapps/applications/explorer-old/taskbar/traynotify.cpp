@@ -484,7 +484,7 @@ LRESULT NotifyArea::WndProc(UINT nmsg, WPARAM wparam, LPARAM lparam)
 								(*AllowSetForegroundWindow)(pid);
 						}
 
-						 // use PostMessage() for notifcation icons of Shell Service Objects in the own process
+						 // use PostMessage() for notification icons of Shell Service Objects in the own process
 						if (pid == GetCurrentProcessId())
 							PostMessage(entry._hWnd, entry._uCallbackMessage, entry._uID, nmsg);
 						else
