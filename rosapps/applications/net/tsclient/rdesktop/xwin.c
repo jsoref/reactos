@@ -1787,7 +1787,7 @@ handle_button_event(RDPCLIENT * This, XEvent xevent, BOOL down)
 			if (xevent.type == ButtonRelease)
 			{
 				/* Release the mouse button outside the minimize button, to prevent the
-				   actual minimazation to happen */
+				   actual minimization to happen */
 				rdp_send_input(This, time(NULL), RDP_INPUT_MOUSE, button, 1, 1);
 				XIconifyWindow(This->display, This->wnd, DefaultScreen(This->display));
 				return;
