@@ -4068,7 +4068,7 @@ CompleteRequest:
                 PSENSE_DATA senseData = (PSENSE_DATA) srb->DataBuffer;
 
                 if (status == SRB_STATUS_DATA_OVERRUN) {
-                    // Check to see if we at least get mininum number of bytes
+                    // Check to see if we at least get minimum number of bytes
                     if ((srb->DataTransferLength - deviceExtension->WordsLeft) >
                         (FIELD_OFFSET (SENSE_DATA, AdditionalSenseLength) + sizeof(senseData->AdditionalSenseLength))) {
                         status = SRB_STATUS_SUCCESS;
