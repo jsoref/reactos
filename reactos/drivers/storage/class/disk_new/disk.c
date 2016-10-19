@@ -3074,7 +3074,7 @@ Retry:
 
             //
             // Plan ahead and get the container's container before
-            // modifing the current size.
+            // modifying the current size.
             //
 
             nextContainerPartition =

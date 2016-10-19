@@ -18,7 +18,7 @@
 */
 
 /* three seperate function for speed when decompressing the bitmaps
-   when modifing one function make the change in the others
+   when modifying one function make the change in the others
    jay.sorg@gmail.com */
 
 /* indent is confused by this file */

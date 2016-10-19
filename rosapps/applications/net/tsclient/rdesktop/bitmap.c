@@ -19,7 +19,7 @@
 */
 
 /* three seperate function for speed when decompressing the bitmaps */
-/* when modifing one function make the change in the others */
+/* when modifying one function make the change in the others */
 /* comment out #define BITMAP_SPEED_OVER_SIZE below for one slower function */
 /* j@american-data.com */
 
