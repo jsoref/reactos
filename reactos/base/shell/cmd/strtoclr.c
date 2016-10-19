@@ -240,7 +240,7 @@ WORD str_to_color(LPTSTR* arg_str)
  * The only parameter is arg_str, a pointer to a string.
  * The string is modified so it will begin to first word after
  * color specification
- * (only the char* is moved, no chars in the string are modfied).
+ * (only the char* is moved, no chars in the string are modified).
  *
  * **** NOTE: The following functionality is deactivated ****
  * it returns the color in the l.o. byte, plus two flags in the

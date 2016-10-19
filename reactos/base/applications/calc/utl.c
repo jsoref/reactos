@@ -11,7 +11,7 @@ void prepare_rpn_result_2(calc_number_t *rpn, TCHAR *buffer, int size, int base)
         break;
     case IDC_RADIO_DEC:
 /*
- * Modifed from 17 to 16 for fixing this bug:
+ * Modified from 17 to 16 for fixing this bug:
  * 14+14+6.3+6.3= 40.5999999 instead of 40.6
  * So, it's probably better to leave the least
  * significant digit out of the display.
