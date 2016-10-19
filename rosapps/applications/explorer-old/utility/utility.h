@@ -547,7 +547,7 @@ struct MemCanvas : public Canvas
 	~MemCanvas() {DeleteDC(_hdc);}
 };
 
- /// SelectedBitmap is used to localy select bitmaps into device contexts.
+ /// SelectedBitmap is used to locally select bitmaps into device contexts.
 struct SelectedBitmap
 {
 	SelectedBitmap(HDC hdc, HBITMAP hbmp)
