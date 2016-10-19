@@ -1894,7 +1894,7 @@ DECLARE_INTERFACE_(IDirect3DDevice9Ex,IDirect3DDevice9)
     STDMETHOD(WaitForVBlank)(THIS_ UINT iSwapChain) PURE;
     STDMETHOD(CheckResourceResidency)(THIS_ IDirect3DResource9 **resources, UINT32 resource_count) PURE;
     STDMETHOD(SetMaximumFrameLatency)(THIS_ UINT MaxLatency) PURE;
-    STDMETHOD(GetMaximumFrameLatency)(THIS_ UINT *pMaxLatenxy) PURE;
+    STDMETHOD(GetMaximumFrameLatency)(THIS_ UINT *pMaxLatency) PURE;
     STDMETHOD(CheckDeviceState)(THIS_ HWND dst_window) PURE;
     STDMETHOD(CreateRenderTargetEx)(THIS_ UINT Width, UINT Height, D3DFORMAT Format, D3DMULTISAMPLE_TYPE MultiSample, DWORD MultiSampleQuality, BOOL Lockable, IDirect3DSurface9 ** ppSurface, HANDLE *pSharedHandle, DWORD Usage) PURE;
     STDMETHOD(CreateOffscreenPlainSurfaceEx)(THIS_ UINT Width, UINT Height, D3DFORMAT Format, D3DPOOL Pool, IDirect3DSurface9 **ppSurface, HANDLE *pSharedHandle, DWORD Usage) PURE;
