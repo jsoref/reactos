@@ -22,7 +22,7 @@ I found these issues while running your explorer from Windows XP SP2's explorer.
 - program manager "progman" DDE server
 - Windows-key combos
 - Application Desktop Toolbars
-- hide CVS subdirectories, may be even implement a CVS managment plugin
+- hide CVS subdirectories, may be even implement a CVS management plugin
 - printer and RAS connection icons in desktop notification area
 - use multi threading for launching of programs and filling start menu subdirectories
 - close start start menu when resizing explorer bar

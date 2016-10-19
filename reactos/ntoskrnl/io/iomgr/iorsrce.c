@@ -2,7 +2,7 @@
  * COPYRIGHT:       See COPYING in the top level directory
  * PROJECT:         ReactOS kernel
  * FILE:            ntoskrnl/io/iomgr/iorsrce.c
- * PURPOSE:         Hardware resource managment
+ * PURPOSE:         Hardware resource management
  *
  * PROGRAMMERS:     David Welch (welch@mcmail.com)
  *                  Alex Ionescu (alex@relsoft.net)
