@@ -64,7 +64,7 @@ KdpReceiveBuffer(
 
 /******************************************************************************
  * \name KdpReceivePacketLeader
- * \brief Receives a packet leadr from the KD port.
+ * \brief Receives a packet leader from the KD port.
  * \param PacketLeader Pointer to an ULONG that receives the packet leader.
  * \return KDP_PACKET_RECEIVED if successful.
  *         KDP_PACKET_TIMEOUT if the receive timed out.
