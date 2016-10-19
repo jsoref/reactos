@@ -44,8 +44,8 @@ void Test_EngAcquireSemaphore()
     // Note NULL pointer test crash in Vista */
     // EngAcquireSemaphore(NULL);
 
-    /* negtive pointer test */
-    // Note negtive pointer test crash in Vista */
+    /* negative pointer test */
+    // Note negative pointer test crash in Vista */
     // EngAcquireSemaphore((HSEMAPHORE)-1);
 
     /* try with deleted Semaphore */
