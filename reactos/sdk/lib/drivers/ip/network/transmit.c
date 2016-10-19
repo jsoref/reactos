@@ -83,7 +83,7 @@ BOOLEAN PrepareNextFragment(
         TI_DbgPrint(MAX_TRACE, ("Preparing 1 fragment.\n"));
 
         MaxData  = IFC->PathMTU - IFC->HeaderSize;
-        /* Make fragment a multiplum of 64bit */
+        /* Make fragment a multiple of 64bit */
         MaxData -= MaxData % 8;
         if (IFC->BytesLeft > MaxData) {
             DataSize      = MaxData;
