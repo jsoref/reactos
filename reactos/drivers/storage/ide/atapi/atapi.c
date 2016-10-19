@@ -6464,7 +6464,7 @@ BuildMechanismStatusSrb (
     srb->Length     = sizeof(SCSI_REQUEST_BLOCK);
 
     //
-    // Set flags to disable synchronous negociation.
+    // Set flags to disable synchronous negotiation.
     //
     srb->SrbFlags = SRB_FLAGS_DATA_IN | SRB_FLAGS_DISABLE_SYNCH_TRANSFER;
 
@@ -6510,7 +6510,7 @@ BuildRequestSenseSrb (
     srb->Length     = sizeof(SCSI_REQUEST_BLOCK);
 
     //
-    // Set flags to disable synchronous negociation.
+    // Set flags to disable synchronous negotiation.
     //
     srb->SrbFlags = SRB_FLAGS_DATA_IN | SRB_FLAGS_DISABLE_SYNCH_TRANSFER;
 
