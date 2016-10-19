@@ -113,7 +113,7 @@ generictable.c:
  - Doesn't contain much code...
 
 handle.c:
- - Implements the very basic RTL handle tables. The code is very incomplete and barely does it's job. I fixed some severe flaws of the previous implementation when making the atom code depend on it. Also because of updated structures in the ndk. It's a minimalistic implementation, mostly just manages an array of handle table entries. Studied wine's implementation before.
+ - Implements the very basic RTL handle tables. The code is very incomplete and barely does it's job. I fixed some severe flaws of the previous implementation when making the atom code depend on it. Also because of updated structures in the ndk. It's a minimalist implementation, mostly just manages an array of handle table entries. Studied wine's implementation before.
 
 heap.c:
  - Implements the heap manager. Imported from wine...

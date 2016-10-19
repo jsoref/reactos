@@ -692,7 +692,7 @@ LoadAndBootWindows(IN OperatingSystemItem* OperatingSystem,
 
     TRACE("BootPath: '%s'\n", BootPath);
 
-    /* Allocate and minimalistic-initialize LPB */
+    /* Allocate and minimalist-initialize LPB */
     AllocateAndInitLPB(&LoaderBlock);
 
     /* Load Hive */
