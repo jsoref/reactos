@@ -423,7 +423,7 @@ PspInitPhase0(IN PLOADER_PARAMETER_BLOCK LoaderBlock)
     PspDefaultPagefileLimit = -1;
     switch (SystemSize)
     {
-        /* Medimum systems */
+        /* Medium systems */
         case MmMediumSystem:
 
             /* Increase the WS sizes a bit */
