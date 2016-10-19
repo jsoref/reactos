@@ -348,7 +348,7 @@ void test_CShellMenu_with_DeskBar(IShellFolder *shellFolder, HMENU hmenu)
     IMenuPopup* menuPopup;
     IBandSite* bandSite;
 
-    /* Create the tree objects and query the nescesary interfaces */
+    /* Create the tree objects and query the necessary interfaces */
     BOOL bCreated = CreateCShellMenu(&shellMenu, &dockingMenu, &menuWithSite);
     hResult = CoCreateInstance(CLSID_MenuDeskBar, NULL, CLSCTX_INPROC_SERVER, IID_IMenuPopup, reinterpret_cast<void **>(&menuPopup));
     test_S_OK(hResult, "Failed to instantiate CLSID_MenuDeskBar");

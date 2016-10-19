@@ -27,7 +27,7 @@ DesktopPtrToUser(PVOID Ptr)
     else
     {
         /* NOTE: This is slow as it requires a call to win32k. This should only be
-                 neccessary if a thread wants to access an object on a different
+                 necessary if a thread wants to access an object on a different
                  desktop */
         return (PVOID)NtUserxGetDesktopMapping(Ptr);
     }

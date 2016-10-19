@@ -549,7 +549,7 @@ SeCaptureSecurityDescriptor(
         /*
          * Setup the offsets and copy the SIDs and ACLs to the new
          * self-relative security descriptor. Probing the pointers is not
-         * neccessary anymore as we did that when collecting the sizes!
+         * necessary anymore as we did that when collecting the sizes!
          * Make sure to validate the SIDs and ACLs *again* as they could have
          * been modified in the meanwhile!
          */

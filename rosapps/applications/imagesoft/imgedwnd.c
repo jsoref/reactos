@@ -410,7 +410,7 @@ ImageEditWndProc(HWND hwnd,
             break;
 
         case WM_MDIACTIVATE:
-            /* Switch the main window context if neccessary */
+            /* Switch the main window context if necessary */
             MainWndSwitchEditorContext(Info->MainWnd,
                                        (HWND)wParam,
                                        (HWND)lParam);

@@ -1676,7 +1676,7 @@ ChangePos:
             return;
         }
 
-        /* Limit the Start button width to the client width, if neccessary */
+        /* Limit the Start button width to the client width, if necessary */
         StartSize = m_StartButton.GetSize();
         if (StartSize.cx > rcClient.right)
             StartSize.cx = rcClient.right;
@@ -2241,7 +2241,7 @@ ChangePos:
             SetWindowsFont();
         }
 
-        /* Move the tray window to the right position and resize it if neccessary */
+        /* Move the tray window to the right position and resize it if necessary */
         CheckTrayWndPosition();
 
         /* Align all controls on the tray window */
@@ -2312,7 +2312,7 @@ ChangePos:
         /* Load the saved tray window settings */
         RegLoadSettings();
 
-        /* Move the tray window to the right position and resize it if neccessary */
+        /* Move the tray window to the right position and resize it if necessary */
         CheckTrayWndPosition();
 
         /* Align all controls on the tray window */

@@ -6951,7 +6951,7 @@ ClassRemoveDevice() ISSUE-2000/02/18-henrygab - why public?!
 Routine Description:
 
     This routine is called to handle the "removal" of a device.  It will
-    forward the request downwards if necesssary, call into the driver
+    forward the request downwards if necessary, call into the driver
     to release any necessary resources (memory, events, etc) and then
     will delete the device object.
 

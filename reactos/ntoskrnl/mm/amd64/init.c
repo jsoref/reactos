@@ -176,7 +176,7 @@ MiMapPTEs(
             TmplPte.u.Hard.PageFrameNumber = MxGetNextPage(1);
             MI_WRITE_VALID_PTE(PointerPte, TmplPte);
 
-            /* Zero out the page (FIXME: not always neccessary) */
+            /* Zero out the page (FIXME: not always necessary) */
             RtlZeroMemory(MiPteToAddress(PointerPte), PAGE_SIZE);
         }
     }

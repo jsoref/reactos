@@ -865,7 +865,7 @@ struct ToolTip : public WindowHandle
 			{0,0,0,0}, 0, (LPTSTR)txt, lparam
 		};
 
-#ifdef UNICODE	///@todo Why is it neccesary to try both TTM_ADDTOOLW and TTM_ADDTOOLW ?!
+#ifdef UNICODE	///@todo Why is it necessary to try both TTM_ADDTOOLW and TTM_ADDTOOLW ?!
 		if (!SendMessage(_hwnd, TTM_ADDTOOLW, 0, (LPARAM)&ti))
 			SendMessage(_hwnd, TTM_ADDTOOLA, 0, (LPARAM)&ti);
 #else

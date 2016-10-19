@@ -2554,7 +2554,7 @@ Return Value:
     //  and still have the disk work.  As this form of error worked in NT 4.0, and
     //  since these disks really do exist, I don't want to change them.
     //
-    //  If we wished to support all such media (we don't), it would be neccesary
+    //  If we wished to support all such media (we don't), it would be necessary
     //  to clear this flag on finding ISO or HSG descriptors below.
     //
 

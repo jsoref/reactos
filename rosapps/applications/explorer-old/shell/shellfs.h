@@ -74,7 +74,7 @@ struct ShellDirectory : public ShellEntry, public Directory
 		_folder(parent->_folder, shell_path),
 		_hwnd(hwnd)
 	{
-		/* not neccessary - the caller will fill the info
+		/* not necessary - the caller will fill the info
 		lstrcpy(_data.cFileName, _folder.get_name(shell_path));
 		_data.dwFileAttributes = FILE_ATTRIBUTE_DIRECTORY;
 		_shell_attribs = SFGAO_FOLDER; */

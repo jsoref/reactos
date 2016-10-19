@@ -311,7 +311,7 @@ VOID NTAPI ClassScanForSpecial(
 //
 // whenever there is an error, immediately grab the spin lock.  the
 // MP perf hit here is acceptable, since we're in an error path.  this
-// is also neccessary because we are guaranteed to be modifying the
+// is also necessary because we are guaranteed to be modifying the
 // SRB flags here, setting SuccessfulIO to zero, and incrementing the
 // actual error count (which is always done within this spinlock).
 //

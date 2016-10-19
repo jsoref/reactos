@@ -346,7 +346,7 @@ EngpFileIoRequest(
     /* Call the driver */
     Status = IoCallDriver(pDeviceObject, pIrp);
 
-    /* Wait if neccessary */
+    /* Wait if necessary */
     if (STATUS_PENDING == Status)
     {
         KeWaitForSingleObject(&Event, Executive, KernelMode, TRUE, 0);
@@ -428,7 +428,7 @@ EngFileIoControl(
     /* Call the driver */
     Status = IoCallDriver(pDeviceObject, pIrp);
 
-    /* Wait if neccessary */
+    /* Wait if necessary */
     if (Status == STATUS_PENDING)
     {
         KeWaitForSingleObject(&Event, Executive, KernelMode, TRUE, 0);

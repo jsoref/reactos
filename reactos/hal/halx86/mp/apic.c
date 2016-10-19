@@ -545,7 +545,7 @@ VOID APICSetup(VOID)
    * Set up LVT0, LVT1:
    *
    * set up through-local-APIC on the BP's LINT0. This is not
-   * strictly necessery in pure symmetric-IO mode, but sometimes
+   * strictly necessary in pure symmetric-IO mode, but sometimes
    * we delegate interrupts to the 8259A.
    */
   tmp = APICRead(APIC_LINT0) & APIC_LVT_MASKED;

@@ -395,7 +395,7 @@ Return Value:
     CdReleaseCdData( IrpContext );
     
     //
-    //  Cleanup our IrpContext and complete the IRP if neccesary.
+    //  Cleanup our IrpContext and complete the IRP if necessary.
     //
 
     CdCompleteRequest( IrpContext, Irp, Status );

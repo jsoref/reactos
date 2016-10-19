@@ -657,7 +657,7 @@ RtlCreateSystemVolumeInformationFolder(IN PUNICODE_STRING VolumeRootPath)
 
         if (NT_SUCCESS(Status))
         {
-            /* check security now and adjust it if neccessary */
+            /* check security now and adjust it if necessary */
             Status = RtlpSysVolCheckOwnerAndSecurity(hDirectory,
                                                      SecurityDescriptor);
             ZwClose(hDirectory);

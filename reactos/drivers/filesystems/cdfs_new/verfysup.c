@@ -550,7 +550,7 @@ Return Value:
         }
 
         //
-        //  Raise the verify / error if neccessary.
+        //  Raise the verify / error if necessary.
         //
         
         if (ForceVerify || !NT_SUCCESS( Status)) {

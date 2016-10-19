@@ -370,7 +370,7 @@ FrLdrHeapAllocateEx(
         /* Check if the remaining space is large enough for a new block */
         if (Remaining > 1)
         {
-            /* Make the allocated block as large as neccessary */
+            /* Make the allocated block as large as necessary */
             Block->Size = BlockSize;
 
             /* Get pointer to the new block */
