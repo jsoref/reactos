@@ -416,7 +416,7 @@ KeGetBugMessageText(IN ULONG BugCheckCode,
     /* Make sure we're not bugchecking too early */
     if (!KiBugCodeMessages) return Result;
 
-    /* Find the message. This code is based on RtlFindMesssage */
+    /* Find the message. This code is based on RtlFindMessage */
     for (i = 0; i < KiBugCodeMessages->NumberOfBlocks; i++)
     {
         /* Check if the ID Matches */

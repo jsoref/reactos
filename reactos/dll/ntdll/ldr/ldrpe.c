@@ -288,7 +288,7 @@ LdrpHandleOneNewFormatImportDescriptor(IN LPWSTR DllPath OPTIONAL,
     /* Get the name's VA */
     BoundImportName = (LPSTR)FirstEntry + BoundEntry->OffsetModuleName;
 
-    /* Show debug mesage */
+    /* Show debug message */
     if (ShowSnaps)
     {
         DPRINT1("LDR: %wZ bound to %s\n", &LdrEntry->BaseDllName, BoundImportName);
