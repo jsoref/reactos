@@ -781,7 +781,7 @@ typedef struct _FCB_NONPAGED {
 
     //
     //  The following field contains a record of special pointers used by
-    //  MM and Cache to manipluate section objects.  Note that the values
+    //  MM and Cache to manipulate section objects.  Note that the values
     //  are set outside of the file system.  However the file system on an
     //  open/create will set the file object's SectionObject field to
     //  point to this field
