@@ -987,8 +987,8 @@ Return Value:
 
     COMPARISON - returns
 
-        LessThan    if NameA < NameB lexicalgraphically,
-        GreaterThan if NameA > NameB lexicalgraphically,
+        LessThan    if NameA < NameB lexicographically,
+        GreaterThan if NameA > NameB lexicographically,
         EqualTo     if NameA is equal to NameB
 
 --*/
