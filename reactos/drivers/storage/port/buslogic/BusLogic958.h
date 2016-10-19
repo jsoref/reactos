@@ -333,7 +333,7 @@ typedef struct BusLogic_SetupInformation
   UCHAR WideTransfersActiveID8to15;                      /* Byte 33 */
 }BusLogic_SetupInformation_T;
 
-// Something has to be done about the packing machanism of these structures - Namita
+// Something has to be done about the packing mechanism of these structures - Namita
 // Define the Inquire Extended Setup Information reply structure.
 typedef struct BusLogic_ExtendedSetupInformation
 {
