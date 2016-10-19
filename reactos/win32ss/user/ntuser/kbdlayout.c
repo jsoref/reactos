@@ -631,7 +631,7 @@ NtUserLoadKeyboardLayoutEx(
 
     UserEnterExclusive();
 
-    /* If hklUnload is specified, unload it and load new layput as default */
+    /* If hklUnload is specified, unload it and load new layout as default */
     if (hklUnload && hklUnload != (HKL)hkl)
     {
         pKl = UserHklToKbl(hklUnload);
