@@ -19,7 +19,7 @@ openrce.org however documents the call flow... The parameters are kind of
 obvious, and it doesn't really make a lot of sense to choose different ones.
 w3seek posted a patch in bug 1344 that modifies (extends) the parameters
 of this internal function to reduce code duplication even more. The functions
-themselves are nothing complex, only basic structure maniuplations.
+themselves are nothing complex, only basic structure manipulations.
 The structure layout is thoroughly documented in the platform sdk and on
 various websites.
 Result: No signs of reverse engineering found, the only hardcoded value is
