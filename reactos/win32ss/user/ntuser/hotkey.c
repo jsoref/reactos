@@ -145,7 +145,7 @@ UnregisterThreadHotKeys(PTHREADINFO pti)
 /*
  * IsHotKey
  *
- * Checks if given key and modificators have corresponding hotkey
+ * Checks if given key and modifiers have corresponding hotkey
  */
 static PHOT_KEY FASTCALL
 IsHotKey(UINT fsModifiers, WORD wVk)
