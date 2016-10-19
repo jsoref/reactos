@@ -5625,7 +5625,7 @@ CdRomCreateWellKnownName(
 Routine Description:
 
     This routine creates a symbolic link to the cdrom device object
-    under \dosdevices.  The number of the cdrom device does not neccessarily
+    under \dosdevices.  The number of the cdrom device does not necessarily
     match between \dosdevices and \device, but usually will be the same.
 
     Saves the buffer
