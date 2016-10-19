@@ -1308,7 +1308,7 @@ typedef union _CDB {
   struct _INIT_ELEMENT_STATUS {
     UCHAR OperationCode;
     UCHAR Reserved1:5;
-    UCHAR LogicalUnitNubmer:3;
+    UCHAR LogicalUnitNumber:3;
     UCHAR Reserved2[3];
     UCHAR Reserved3:7;
     UCHAR NoBarCode:1;
@@ -1317,7 +1317,7 @@ typedef union _CDB {
     UCHAR OperationCode;
     UCHAR Range:1;
     UCHAR Reserved1:4;
-    UCHAR LogicalUnitNubmer:3;
+    UCHAR LogicalUnitNumber:3;
     UCHAR FirstElementAddress[2];
     UCHAR Reserved2[2];
     UCHAR NumberOfElements[2];

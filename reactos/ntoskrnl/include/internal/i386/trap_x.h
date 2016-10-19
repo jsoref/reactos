@@ -88,13 +88,13 @@ KiFillTrapFrameDebug(IN PKTRAP_FRAME TrapFrame)
 
 #define DR7_RESERVED_READ_AS_1 0x400
 
-#define CheckDr(DrNumner, ExpectedValue) \
+#define CheckDr(DrNumber, ExpectedValue) \
     { \
-        ULONG DrValue = __readdr(DrNumner); \
+        ULONG DrValue = __readdr(DrNumber); \
         if (DrValue != (ExpectedValue)) \
         { \
             DbgPrint("Dr%ld: expected %.8lx, got %.8lx\n", \
-                    DrNumner, ExpectedValue, DrValue); \
+                    DrNumber, ExpectedValue, DrValue); \
             __debugbreak(); \
         } \
     }

@@ -55,7 +55,7 @@ INT cmd_rename (LPTSTR param)
     LPTSTR *arg = NULL;
     INT args = 0;
     INT nSlash = 0;
-    INT nEvalArgs = 0; /* nunber of evaluated arguments */
+    INT nEvalArgs = 0; /* number of evaluated arguments */
     DWORD dwFlags = 0;
     DWORD dwFiles = 0; /* number of renamedd files */
     INT i;

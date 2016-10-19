@@ -201,7 +201,7 @@ InitVideo(VOID)
         ERR("VGA adapter = %lu\n", iVGACompatible);
     }
 
-    /* Get the maximum mumber of adapters */
+    /* Get the maximum number of adapters */
     if (!RegReadDWORD(hkey, L"MaxObjectNumber", &ulMaxObjectNumber))
     {
         ERR("Could not read MaxObjectNumber, defaulting to 0.\n");

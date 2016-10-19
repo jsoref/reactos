@@ -354,7 +354,7 @@ INT CommandDelete (LPTSTR param)
     LPTSTR *arg = NULL;
     INT args;
     INT i;
-    INT   nEvalArgs = 0; /* nunber of evaluated arguments */
+    INT   nEvalArgs = 0; /* number of evaluated arguments */
     DWORD dwFlags = 0;
     DWORD dwAttrFlags = 0;
     DWORD dwFiles = 0;
