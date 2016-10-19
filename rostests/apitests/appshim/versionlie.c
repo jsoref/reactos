@@ -63,7 +63,7 @@ static void expect_shim_imp(PHOOKAPI hook, PCSTR library, PCSTR function, PCSTR 
 {
     int lib = lstrcmpA(library, hook->LibraryName);
     int fn = lstrcmpA(function, hook->FunctionName);
-    winetest_ok(lib == 0, "Expected LibrarayName to be %s, was: %s for %s\n", library, hook->LibraryName, shim);
+    winetest_ok(lib == 0, "Expected LibraryName to be %s, was: %s for %s\n", library, hook->LibraryName, shim);
     winetest_ok(fn == 0, "Expected FunctionName to be %s, was: %s for %s\n", function, hook->FunctionName, shim);
     *same = (lib == 0 && fn == 0);
 }

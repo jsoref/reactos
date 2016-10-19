@@ -1,5 +1,5 @@
 
-This libbrary implements the following algorithms:
+This library implements the following algorithms:
 
 MD4
 ---
