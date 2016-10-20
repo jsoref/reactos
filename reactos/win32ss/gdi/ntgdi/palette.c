@@ -12,7 +12,7 @@
 #define NDEBUG
 #include <debug.h>
 
-static UINT SystemPaletteUse = SYSPAL_NOSTATIC;  /* The program need save the pallete and restore it */
+static UINT SystemPaletteUse = SYSPAL_NOSTATIC;  /* The program need save the palette and restore it */
 
 PALETTE gpalRGB, gpalBGR, gpalRGB555, gpalRGB565, *gppalMono, *gppalDefault;
 PPALETTE appalSurfaceDefault[11];
@@ -146,7 +146,7 @@ PALETTE_AllocPalette(
         /* Check color count */
         if ((cColors == 0) || (cColors > 1024)) return NULL;
 
-        /* Allocate enough space for the palete entries */
+        /* Allocate enough space for the palette entries */
         cjSize += cColors * sizeof(PALETTEENTRY);
     }
     else

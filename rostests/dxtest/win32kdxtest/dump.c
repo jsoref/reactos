@@ -79,7 +79,7 @@ dump_CallBackFlags(DWORD *pCallBackFlags, char *text)
     endcheckflag(flag,"pCallBackFlags[1]");
 
 
-    /* palleted */
+    /* paletted */
     printf("pCallBackFlags[2] : ");
     flag = pCallBackFlags[2];
     count = 0;
