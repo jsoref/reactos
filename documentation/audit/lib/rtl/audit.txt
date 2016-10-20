@@ -58,7 +58,7 @@ Taking ownership:
 2) the well-known SID of the Administrators group
 3) creating a new security descriptor with the new owner
 4) changing the owner by setting the new descriptor
-5) restoring the enabled privillege.
+5) restoring the enabled privilege.
 
 Checking security is also not very difficult:
 1) reading the owner+dacl

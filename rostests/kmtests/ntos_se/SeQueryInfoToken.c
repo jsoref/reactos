@@ -260,7 +260,7 @@ START_TEST(SeQueryInfoToken)
 
     Status = SeAppendPrivileges(AccessState, NewPrivilegeSet);
     ok(Status == STATUS_SUCCESS, "SeAppendPrivileges failed\n");
-    ok((AuxData->PrivilegeSet->PrivilegeCount == 2),"PrivelegeCount must be 2, but it is %d\n", AuxData->PrivilegeSet->PrivilegeCount);
+    ok((AuxData->PrivilegeSet->PrivilegeCount == 2),"PrivilegeCount must be 2, but it is %d\n", AuxData->PrivilegeSet->PrivilegeCount);
     ExFreePool(NewPrivilegeSet);
 
     //----------------------------------------------------------------//
@@ -272,7 +272,7 @@ START_TEST(SeQueryInfoToken)
 
     Status = SeAppendPrivileges(AccessState, NewPrivilegeSet);
     ok(Status == STATUS_SUCCESS, "SeAppendPrivileges failed\n");
-    ok((AuxData->PrivilegeSet->PrivilegeCount == 6),"PrivelegeCount must be 6, but it is %d\n", AuxData->PrivilegeSet->PrivilegeCount);
+    ok((AuxData->PrivilegeSet->PrivilegeCount == 6),"PrivilegeCount must be 6, but it is %d\n", AuxData->PrivilegeSet->PrivilegeCount);
     ExFreePool(NewPrivilegeSet);
 
     //----------------------------------------------------------------//
@@ -336,7 +336,7 @@ START_TEST(SeQueryInfoToken)
             NewPrivilegeSet->PrivilegeCount = 14;
 
             ok((SeAppendPrivileges(AccessState, NewPrivilegeSet)) == STATUS_SUCCESS, "SeAppendPrivileges failed\n");
-            ok((AuxData->PrivilegeSet->PrivilegeCount == 20),"PrivelegeCount must be 20, but it is %d\n", AuxData->PrivilegeSet->PrivilegeCount);
+            ok((AuxData->PrivilegeSet->PrivilegeCount == 20),"PrivilegeCount must be 20, but it is %d\n", AuxData->PrivilegeSet->PrivilegeCount);
             ExFreePool(NewPrivilegeSet);
             for (i = 0; i < AuxData->PrivilegeSet->PrivilegeCount; i++)
             {

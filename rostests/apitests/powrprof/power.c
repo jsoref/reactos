@@ -53,7 +53,7 @@ void test_CallNtPowerInformation(void)
    retval = CallNtPowerInformation(AdministratorPowerPolicy, 0, 0, &apolicy, sizeof(ADMINISTRATOR_POWER_POLICY));
    ok(retval == STATUS_SUCCESS, "function expected STATUS_SUCCESS but got %d\n", (UINT)retval);
    retval = CallNtPowerInformation(AdministratorPowerPolicy, &apolicy, sizeof(ADMINISTRATOR_POWER_POLICY), 0, 0);
-   ok(retval != STATUS_PRIVILEGE_NOT_HELD, "Privileg not held!!!! more errors to expect\n");
+   ok(retval != STATUS_PRIVILEGE_NOT_HELD, "Privilege not held!!!! more errors to expect\n");
    ok(retval == STATUS_SUCCESS, "function expected STATUS_SUCCESS but got %d\n", (UINT)retval);
 
    /* LastSleepTime tests */

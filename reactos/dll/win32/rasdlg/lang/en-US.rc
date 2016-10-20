@@ -2291,7 +2291,7 @@ BEGIN
     7324 "An internal error has occured.  \0"
     7325 "Listview\0"
     7326 "An error has occurred while attempting to commit the changes you have made to the local user database.  \0"
-    7327 "You have insufficient priveleges to add a user to the local system database.  \0"
+    7327 "You have insufficient privileges to add a user to the local system database.  \0"
     7328 "The user you are trying create already exists in the local user database.\0"
     7329 "The user was not added to the local user database because the password you entered was rejected.\0"
     7330 "Unable to reload the system user database because of an internal error.\0"

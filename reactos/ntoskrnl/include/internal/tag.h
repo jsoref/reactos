@@ -177,7 +177,7 @@
 #define TAG_LUID              'uLeS'
 #define TAG_PRIVILEGE_SET     'rPeS'
 #define TAG_TOKEN_USERS       'uKOT'
-#define TAG_TOKEN_PRIVILAGES  'pKOT'
+#define TAG_TOKEN_PRIVILEGES  'pKOT'
 #define TAG_TOKEN_ACL         'kDOT'
 
 /* LPC Tags */
