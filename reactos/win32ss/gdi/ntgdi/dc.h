@@ -22,7 +22,7 @@ enum _DCFLAGS
     DC_DISPLAY           = 0x0001,
     DC_DIRECT            = 0x0002,
     DC_CANCELED          = 0x0004,
-    DC_PERMANANT         = 0x0008,
+    DC_PERMANENT         = 0x0008,
     DC_DIRTY_RAO         = 0x0010,
     DC_ACCUM_WMGR        = 0x0020,
     DC_ACCUM_APP         = 0x0040,
