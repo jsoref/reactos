@@ -707,7 +707,7 @@ Paste:
 						blnQuotedParameter = !blnQuotedParameter;
 					}
 					else if (!blnQuotedParameter && _istspace(m_pchBuffer[dwCompletionOffset]))
-					{ // Found ! We are not inside quored parameter and we are on whitespace.
+					{ // Found ! We are not inside quoted parameter and we are on whitespace.
 						dwCompletionOffset++; // dwCompletionOffset must point at char AFTER first non-quoted whitespace.
 						break;
 					}
