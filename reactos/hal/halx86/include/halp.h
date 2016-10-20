@@ -103,7 +103,7 @@ VOID
 // infinite series) and divides it by three, one obtains 1.19318167.
 //
 // It may be that the original NT HAL source code introduced a typo and turned
-// 119318167 into 1193167 by ommitting the "18". This is very plausible as the
+// 119318167 into 1193167 by omitting the "18". This is very plausible as the
 // number is quite long.
 //
 #define PIT_FREQUENCY 1193182
