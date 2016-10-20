@@ -363,7 +363,7 @@ int WINAPI WinMain (HINSTANCE hInst, HINSTANCE hPrevInst,
 
   /* clear surface ends now */
 
-  /* create primare surface now */
+  /* create primary surface now */
 
    memset(&mddsdPrimary,   0, sizeof(DDSURFACEDESC));
    mddsdPrimary.dwSize      = sizeof(DDSURFACEDESC);
@@ -453,7 +453,7 @@ int WINAPI WinMain (HINSTANCE hInst, HINSTANCE hPrevInst,
   mDdBlt.lpDDDestSurface = mpPrimaryLocals[0];
 
 
-  /* create primare surface is down now */
+  /* create primary surface is down now */
 
   /* create overlay surface now */
 
