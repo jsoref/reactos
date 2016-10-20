@@ -253,7 +253,7 @@ HDA_InitCodec(
             ChildDeviceExtension->FDO = DeviceObject;
 
             /* setup flags */
-            AudioGroup->ChildPDO->Flags |= DO_POWER_PAGABLE;
+            AudioGroup->ChildPDO->Flags |= DO_POWER_PAGEABLE;
             AudioGroup->ChildPDO->Flags &= ~DO_DEVICE_INITIALIZING;
 
             /* add audio group*/

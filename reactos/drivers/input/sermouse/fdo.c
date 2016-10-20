@@ -53,8 +53,8 @@ SermouseAddDevice(
 		WARN_(SERMOUSE, "IoAttachDeviceToDeviceStackSafe() failed with status 0x%08lx\n", Status);
 		goto cleanup;
 	}
-	if (DeviceExtension->LowerDevice->Flags & DO_POWER_PAGABLE)
-		Fdo->Flags |= DO_POWER_PAGABLE;
+	if (DeviceExtension->LowerDevice->Flags & DO_POWER_PAGEABLE)
+		Fdo->Flags |= DO_POWER_PAGEABLE;
 	if (DeviceExtension->LowerDevice->Flags & DO_BUFFERED_IO)
 		Fdo->Flags |= DO_BUFFERED_IO;
 	if (DeviceExtension->LowerDevice->Flags & DO_DIRECT_IO)

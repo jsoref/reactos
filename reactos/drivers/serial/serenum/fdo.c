@@ -62,8 +62,8 @@ SerenumAddDevice(
 		IoDeleteDevice(Fdo);
 		return Status;
 	}
-	if (DeviceExtension->LowerDevice->Flags & DO_POWER_PAGABLE)
-		Fdo->Flags |= DO_POWER_PAGABLE;
+	if (DeviceExtension->LowerDevice->Flags & DO_POWER_PAGEABLE)
+		Fdo->Flags |= DO_POWER_PAGEABLE;
 	if (DeviceExtension->LowerDevice->Flags & DO_BUFFERED_IO)
 		Fdo->Flags |= DO_BUFFERED_IO;
 	if (DeviceExtension->LowerDevice->Flags & DO_DIRECT_IO)

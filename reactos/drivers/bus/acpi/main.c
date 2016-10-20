@@ -87,7 +87,7 @@ Bus_AddDevice(
     deviceData->Common.DevicePowerState = PowerDeviceUnspecified;
     deviceData->Common.SystemPowerState = PowerSystemWorking;
 
-    deviceObject->Flags |= DO_POWER_PAGABLE;
+    deviceObject->Flags |= DO_POWER_PAGEABLE;
 
     //
     // Attach our FDO to the device stack.

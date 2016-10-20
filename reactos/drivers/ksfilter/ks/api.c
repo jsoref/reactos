@@ -1487,7 +1487,7 @@ KopAddDevice(
         /* store pnp base object */
          KsSetDevicePnpAndBaseObject((KSDEVICE_HEADER)DeviceExtension->DeviceHeader, NextDeviceObject, FunctionalDeviceObject);
         /* set device flags */
-        FunctionalDeviceObject->Flags |= DO_DIRECT_IO | DO_POWER_PAGABLE;
+        FunctionalDeviceObject->Flags |= DO_DIRECT_IO | DO_POWER_PAGEABLE;
         FunctionalDeviceObject->Flags &= ~ DO_DEVICE_INITIALIZING;
     }
     else

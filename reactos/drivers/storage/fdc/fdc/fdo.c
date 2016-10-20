@@ -410,7 +410,7 @@ FdcFdoQueryBusRelations(
             PdoDeviceExtension->DriveInfo = DriveInfo;
 
             Pdo->Flags |= DO_DIRECT_IO;
-            Pdo->Flags |= DO_POWER_PAGABLE;
+            Pdo->Flags |= DO_POWER_PAGEABLE;
             Pdo->Flags &= ~DO_DEVICE_INITIALIZING;
 
             /* Add Device ID string */

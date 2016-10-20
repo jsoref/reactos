@@ -4467,12 +4467,12 @@ NdisGetCurrentProcessorCpuUsage(
 
 /*
  * VOID
- * NDIS_PAGABLE_FUNCTION(FunctionName)
+ * NDIS_PAGEABLE_FUNCTION(FunctionName)
  */
 #define NDIS_PAGEABLE_FUNCTION(FunctionName) \
   alloc_text(page, FunctionName)
 
-#define NDIS_PAGABLE_FUNCTION NDIS_PAGEABLE_FUNCTION
+#define NDIS_PAGEABLE_FUNCTION NDIS_PAGEABLE_FUNCTION
 
 
 /* NDIS 4.0 extensions */

@@ -211,7 +211,7 @@ SysAudio_AddDevice(
     }
 
      /* set io flags */
-     DeviceObject->Flags |= DO_DIRECT_IO | DO_POWER_PAGABLE;
+     DeviceObject->Flags |= DO_DIRECT_IO | DO_POWER_PAGEABLE;
      /* clear initializing flag */
      DeviceObject->Flags &= ~ DO_DEVICE_INITIALIZING;
 

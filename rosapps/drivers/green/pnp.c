@@ -43,7 +43,7 @@ CreateGreenFdo(
 	DeviceExtension = (PGREEN_DEVICE_EXTENSION)DriverExtension->GreenMainDO->DeviceExtension;
 	RtlZeroMemory(DeviceExtension, sizeof(GREEN_DEVICE_EXTENSION));
 	DeviceExtension->Common.Type = GreenFDO;
-	DriverExtension->GreenMainDO->Flags |= DO_POWER_PAGABLE;
+	DriverExtension->GreenMainDO->Flags |= DO_POWER_PAGEABLE;
 	DriverExtension->LowerDevice = IoAttachDeviceToDeviceStack(DriverExtension->GreenMainDO, GreenPdo);
 
 	/* Initialize serial port */
@@ -244,7 +244,7 @@ GreenQueryBusRelations(
 			goto cleanup;
 		}
 		((PCOMMON_DEVICE_EXTENSION)DeviceExtension->KeyboardPdo->DeviceExtension)->Type = KeyboardPDO;
-		DeviceExtension->KeyboardPdo->Flags |= DO_POWER_PAGABLE | DO_BUS_ENUMERATED_DEVICE;
+		DeviceExtension->KeyboardPdo->Flags |= DO_POWER_PAGEABLE | DO_BUS_ENUMERATED_DEVICE;
 		DeviceExtension->KeyboardPdo->Flags &= ~DO_DEVICE_INITIALIZING;
 	}
 
@@ -264,7 +264,7 @@ GreenQueryBusRelations(
 			goto cleanup;
 		}
 		((PCOMMON_DEVICE_EXTENSION)DeviceExtension->ScreenPdo->DeviceExtension)->Type = ScreenPDO;
-		DeviceExtension->ScreenPdo->Flags |= DO_POWER_PAGABLE | DO_BUS_ENUMERATED_DEVICE;
+		DeviceExtension->ScreenPdo->Flags |= DO_POWER_PAGEABLE | DO_BUS_ENUMERATED_DEVICE;
 		DeviceExtension->ScreenPdo->Flags &= ~DO_DEVICE_INITIALIZING;
 	}
 

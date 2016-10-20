@@ -45,8 +45,8 @@ PMMPTE MiSpecialPoolLastPte;
 
 PFN_COUNT MmSpecialPagesInUse;
 PFN_COUNT MmSpecialPagesInUsePeak;
-PFN_COUNT MiSpecialPagesPagable;
-PFN_COUNT MiSpecialPagesPagablePeak;
+PFN_COUNT MiSpecialPagesPageable;
+PFN_COUNT MiSpecialPagesPageablePeak;
 PFN_COUNT MiSpecialPagesNonPaged;
 PFN_COUNT MiSpecialPagesNonPagedPeak;
 PFN_COUNT MiSpecialPagesNonPagedMaximum;
@@ -60,7 +60,7 @@ typedef struct _MI_FREED_SPECIAL_POOL
     ULONG Signature;
     ULONG TickCount;
     ULONG NumberOfBytesRequested;
-    BOOLEAN Pagable;
+    BOOLEAN Pageable;
     PVOID VirtualAddress;
     PVOID StackPointer;
     ULONG StackBytes;
@@ -365,10 +365,10 @@ MmAllocateSpecialPool(SIZE_T NumberOfBytes, ULONG Tag, POOL_TYPE PoolType, ULONG
         /* Also mark the next PTE as special-pool-paged */
         PointerPte[1].u.Soft.PageFileHigh |= SPECIAL_POOL_PAGED_PTE;
 
-        /* Increase pagable counter */
-        PagesInUse = InterlockedIncrementUL(&MiSpecialPagesPagable);
-        if (PagesInUse > MiSpecialPagesPagablePeak)
-            MiSpecialPagesPagablePeak = PagesInUse;
+        /* Increase pageable counter */
+        PagesInUse = InterlockedIncrementUL(&MiSpecialPagesPageable);
+        if (PagesInUse > MiSpecialPagesPageablePeak)
+            MiSpecialPagesPageablePeak = PagesInUse;
     }
     else
     {
@@ -562,7 +562,7 @@ MmFreeSpecialPool(PVOID P)
     FreedHeader->Signature = 0x98764321;
     FreedHeader->TickCount = TickCount.LowPart;
     FreedHeader->NumberOfBytesRequested = BytesRequested;
-    FreedHeader->Pagable = PoolType;
+    FreedHeader->Pageable = PoolType;
     FreedHeader->VirtualAddress = P;
     FreedHeader->Thread = PsGetCurrentThread();
     /* TODO: Fill StackPointer and StackBytes */
@@ -571,7 +571,7 @@ MmFreeSpecialPool(PVOID P)
 
     if (PoolType == NonPagedPool)
     {
-        /* Non pagable. Get PFN element corresponding to the PTE */
+        /* Non pageable. Get PFN element corresponding to the PTE */
         Pfn = MI_PFN_ELEMENT(PointerPte->u.Hard.PageFrameNumber);
 
         /* Count the page as free */
@@ -594,11 +594,11 @@ MmFreeSpecialPool(PVOID P)
     }
     else
     {
-        /* Pagable. Delete that virtual address */
+        /* Pageable. Delete that virtual address */
         MiDeleteSystemPageableVm(PointerPte, 1, 0, NULL);
 
         /* Count the page as free */
-        InterlockedDecrementUL(&MiSpecialPagesPagable);
+        InterlockedDecrementUL(&MiSpecialPagesPageable);
 
         /* Lock PFN database */
         Irql = KeAcquireQueuedSpinLock(LockQueuePfnLock);

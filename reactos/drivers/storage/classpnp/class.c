@@ -946,7 +946,7 @@ ClassDispatchPnp(
 
                     case DeviceUsageTypePaging: {
 
-                        BOOLEAN setPagable;
+                        BOOLEAN setPageable;
 
                         if((irpStack->Parameters.UsageNotification.InPath) &&
                            (commonExtension->CurrentState != IRP_MN_START_DEVICE)) {
@@ -993,11 +993,11 @@ ClassDispatchPnp(
                         }
 
                         //
-                        // if removing last paging device, need to set DO_POWER_PAGABLE
+                        // if removing last paging device, need to set DO_POWER_PAGEABLE
                         // bit here, and possible re-set it below on failure.
                         //
 
-                        setPagable = FALSE;
+                        setPageable = FALSE;
 
                         if (!irpStack->Parameters.UsageNotification.InPath &&
                             commonExtension->PagingPathCount == 1
@@ -1005,7 +1005,7 @@ ClassDispatchPnp(
 
                             //
                             // removing last paging file
-                            // must have DO_POWER_PAGABLE bits set, but only
+                            // must have DO_POWER_PAGEABLE bits set, but only
                             // if noone set the DO_POWER_INRUSH bit
                             //
 
@@ -1014,15 +1014,15 @@ ClassDispatchPnp(
                                 DebugPrint((2, "ClassDispatchPnp (%p,%p): Last "
                                             "paging file removed, but "
                                             "DO_POWER_INRUSH was set, so NOT "
-                                            "setting DO_POWER_PAGABLE\n",
+                                            "setting DO_POWER_PAGEABLE\n",
                                             DeviceObject, Irp));
                             } else {
                                 DebugPrint((2, "ClassDispatchPnp (%p,%p): Last "
                                             "paging file removed, "
-                                            "setting DO_POWER_PAGABLE\n",
+                                            "setting DO_POWER_PAGEABLE\n",
                                             DeviceObject, Irp));
-                                SET_FLAG(DeviceObject->Flags, DO_POWER_PAGABLE);
-                                setPagable = TRUE;
+                                SET_FLAG(DeviceObject->Flags, DO_POWER_PAGEABLE);
+                                setPageable = TRUE;
                             }
 
                         }
@@ -1049,9 +1049,9 @@ ClassDispatchPnp(
                             if (irpStack->Parameters.UsageNotification.InPath) {
                                 if (commonExtension->PagingPathCount == 1) {
                                     DebugPrint((2, "ClassDispatchPnp (%p,%p): "
-                                                "Clearing PAGABLE bit\n",
+                                                "Clearing PAGEABLE bit\n",
                                                 DeviceObject, Irp));
-                                    CLEAR_FLAG(DeviceObject->Flags, DO_POWER_PAGABLE);
+                                    CLEAR_FLAG(DeviceObject->Flags, DO_POWER_PAGEABLE);
                                 }
                             }
 
@@ -1061,12 +1061,12 @@ ClassDispatchPnp(
                             // cleanup the changes done above
                             //
 
-                            if (setPagable == TRUE) {
+                            if (setPageable == TRUE) {
                                 DebugPrint((2, "ClassDispatchPnp (%p,%p): Unsetting "
-                                            "PAGABLE bit due to irp failure\n",
+                                            "PAGEABLE bit due to irp failure\n",
                                             DeviceObject, Irp));
-                                CLEAR_FLAG(DeviceObject->Flags, DO_POWER_PAGABLE);
-                                setPagable = FALSE;
+                                CLEAR_FLAG(DeviceObject->Flags, DO_POWER_PAGEABLE);
+                                setPageable = FALSE;
                             }
 
                             //
@@ -2667,8 +2667,8 @@ ClassSendSrbSynchronous(
     BOOLEAN retry;
 
     //
-    // NOTE: This code is only pagable because we are not freezing
-    //       the queue.  Allowing the queue to be frozen from a pagable
+    // NOTE: This code is only pageable because we are not freezing
+    //       the queue.  Allowing the queue to be frozen from a pageable
     //       routine could leave the queue frozen as we try to page in
     //       the code to unfreeze the queue.  The result would be a nice
     //       case of deadlock.  Therefore, since we are unfreezing the
@@ -5860,7 +5860,7 @@ ClassCreateDeviceObject(
             // Set the initial device object flags.
             //
 
-            SET_FLAG(deviceObject->Flags, DO_POWER_PAGABLE);
+            SET_FLAG(deviceObject->Flags, DO_POWER_PAGEABLE);
 
             //
             // Clear the PDO list
@@ -5911,7 +5911,7 @@ ClassCreateDeviceObject(
             PFUNCTIONAL_DEVICE_EXTENSION p0Extension =
                 LowerDevice->DeviceExtension;
 
-            SET_FLAG(deviceObject->Flags, DO_POWER_PAGABLE);
+            SET_FLAG(deviceObject->Flags, DO_POWER_PAGEABLE);
 
             commonExtension->PartitionZeroExtension = p0Extension;
 

@@ -62,7 +62,7 @@ BeepCreate(IN PDEVICE_OBJECT DeviceObject,
     if (++DeviceExtension->ReferenceCount == 1)
     {
         /* First reference, lock the data section */
-        DeviceExtension->SectionHandle = MmLockPagableDataSection(BeepCreate);
+        DeviceExtension->SectionHandle = MmLockPageableDataSection(BeepCreate);
     }
 
     /* Release it */
@@ -99,7 +99,7 @@ BeepClose(IN PDEVICE_OBJECT DeviceObject,
         }
 
         /* Page the driver */
-        MmUnlockPagableImageSection(DeviceExtension->SectionHandle);
+        MmUnlockPageableImageSection(DeviceExtension->SectionHandle);
     }
 
     /* Release the lock */

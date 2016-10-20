@@ -65,7 +65,7 @@ USBCCGP_AddDevice(
     }
 
     /* Set device flags */
-    DeviceObject->Flags |= DO_BUFFERED_IO | DO_POWER_PAGABLE;
+    DeviceObject->Flags |= DO_BUFFERED_IO | DO_POWER_PAGEABLE;
 
     /* Device is initialized */
     DeviceObject->Flags &= ~DO_DEVICE_INITIALIZING;

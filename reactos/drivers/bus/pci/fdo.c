@@ -272,7 +272,7 @@ FdoQueryBusRelations(
 
             Device->Pdo->Flags &= ~DO_DEVICE_INITIALIZING;
 
-            //Device->Pdo->Flags |= DO_POWER_PAGABLE;
+            //Device->Pdo->Flags |= DO_POWER_PAGEABLE;
 
             PdoDeviceExtension = (PPDO_DEVICE_EXTENSION)Device->Pdo->DeviceExtension;
 

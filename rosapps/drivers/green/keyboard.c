@@ -132,7 +132,7 @@ KeyboardAddDevice(
 	DeviceExtension->Common.LowerDevice = IoAttachDeviceToDeviceStack(Fdo, Pdo);
 	DeviceExtension->Green = ((PGREEN_DRIVER_EXTENSION)IoGetDriverObjectExtension(DriverObject, DriverObject))->GreenMainDO;
 	((PGREEN_DEVICE_EXTENSION)DeviceExtension->Green->DeviceExtension)->KeyboardFdo = Fdo;
-	Fdo->Flags |= DO_POWER_PAGABLE | DO_BUFFERED_IO;
+	Fdo->Flags |= DO_POWER_PAGEABLE | DO_BUFFERED_IO;
 	Fdo->Flags &= ~DO_DEVICE_INITIALIZING;
 
 	return STATUS_SUCCESS;

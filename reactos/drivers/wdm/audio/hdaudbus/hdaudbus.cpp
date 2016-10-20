@@ -241,7 +241,7 @@ IN PDEVICE_OBJECT PhysicalDeviceObject)
     RtlZeroMemory(DeviceExtension->Codecs, sizeof(PHDA_CODEC_ENTRY) * (HDA_MAX_CODECS + 1));
 
     /* set device flags */
-    DeviceObject->Flags |= DO_POWER_PAGABLE;
+    DeviceObject->Flags |= DO_POWER_PAGEABLE;
 
     return Status;
 }

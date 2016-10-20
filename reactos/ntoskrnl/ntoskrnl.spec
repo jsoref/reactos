@@ -787,9 +787,9 @@
 @ stdcall MmIsRecursiveIoFault()
 @ stdcall MmIsThisAnNtAsSystem()
 @ stdcall MmIsVerifierEnabled(ptr)
-@ stdcall MmLockPagableDataSection(ptr) MmLockPageableDataSection
-@ stdcall MmLockPagableImageSection(ptr) MmLockPageableDataSection
-@ stdcall MmLockPagableSectionByHandle(ptr) MmLockPageableSectionByHandle
+@ stdcall MmLockPageableDataSection(ptr) MmLockPageableDataSection
+@ stdcall MmLockPageableImageSection(ptr) MmLockPageableDataSection
+@ stdcall MmLockPageableSectionByHandle(ptr) MmLockPageableSectionByHandle
 @ stdcall MmMapIoSpace(long long long long)
 @ stdcall MmMapLockedPages(ptr long)
 @ stdcall MmMapLockedPagesSpecifyCache(ptr long long ptr long long)
@@ -817,8 +817,8 @@
 @ stdcall MmSetBankedSection(long long long long long long)
 @ stdcall MmSizeOfMdl(ptr long)
 @ extern MmSystemRangeStart
-@ stdcall MmTrimAllSystemPagableMemory(long) MmTrimAllSystemPageableMemory
-@ stdcall MmUnlockPagableImageSection(ptr) MmUnlockPageableImageSection
+@ stdcall MmTrimAllSystemPageableMemory(long) MmTrimAllSystemPageableMemory
+@ stdcall MmUnlockPageableImageSection(ptr) MmUnlockPageableImageSection
 @ stdcall MmUnlockPages(ptr)
 @ stdcall MmUnmapIoSpace(ptr long)
 @ stdcall MmUnmapLockedPages(ptr ptr)

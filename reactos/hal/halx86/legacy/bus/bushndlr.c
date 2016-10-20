@@ -270,7 +270,7 @@ HaliRegisterBusHandler(IN INTERFACE_TYPE InterfaceType,
     *ReturnedBusHandler = &Bus->Handler;
     
     /* FIXME: Fix the kernel first. Don't page us out */
-    //CodeHandle = MmLockPagableDataSection(&HaliRegisterBusHandler);
+    //CodeHandle = MmLockPageableDataSection(&HaliRegisterBusHandler);
 
     /* Synchronize with anyone else */
     KeWaitForSingleObject(&HalpBusDatabaseEvent,
@@ -401,7 +401,7 @@ HaliRegisterBusHandler(IN INTERFACE_TYPE InterfaceType,
     KeSetEvent(&HalpBusDatabaseEvent, 0, FALSE);
     
     /* FIXME: Fix the kernel first. Re-page the function */
-    //MmUnlockPagableImageSection(CodeHandle);
+    //MmUnlockPageableImageSection(CodeHandle);
 
     /* Free all allocations */
     if (Bus) ExFreePoolWithTag(Bus, TAG_BUS_HANDLER);

@@ -3929,7 +3929,7 @@ Return Value:
         // Lock down the hitachi error processing code.
         //
 
-        MmLockPagableCodeSection(HitachiProcessError);
+        MmLockPageableCodeSection(HitachiProcessError);
         SET_FLAG(cdData->HackFlags, CDROM_HACK_LOCKED_PAGES);
 
 
@@ -3965,7 +3965,7 @@ Return Value:
         // Lock down the hitachi error processing code.
         //
 
-        MmLockPagableCodeSection(HitachiProcessErrorGD2000);
+        MmLockPageableCodeSection(HitachiProcessErrorGD2000);
         SET_FLAG(cdData->HackFlags, CDROM_HACK_LOCKED_PAGES);
 
     } else if (TEST_FLAG(cdData->HackFlags, CDROM_HACK_FUJITSU_FMCD_10x)) {
@@ -4147,7 +4147,7 @@ Return Value:
         // Lock down the toshiba error section.
         //
 
-        MmLockPagableCodeSection(ToshibaProcessError);
+        MmLockPageableCodeSection(ToshibaProcessError);
         SET_FLAG(cdData->HackFlags, CDROM_HACK_LOCKED_PAGES);
 
         ExFreePool(buffer);
@@ -5443,15 +5443,15 @@ Return Value:
 
             if (TEST_FLAG(cdData->HackFlags, CDROM_HACK_HITACHI_1750)) {
                 
-                locked = MmLockPagableCodeSection(HitachiProcessError);
+                locked = MmLockPageableCodeSection(HitachiProcessError);
 
             } else if (TEST_FLAG(cdData->HackFlags, CDROM_HACK_HITACHI_GD_2000)) {
 
-                locked = MmLockPagableCodeSection(HitachiProcessErrorGD2000);
+                locked = MmLockPageableCodeSection(HitachiProcessErrorGD2000);
 
             } else if (TEST_FLAG(cdData->HackFlags, CDROM_HACK_TOSHIBA_XM_3xx )) {
             
-                locked = MmLockPagableCodeSection(ToshibaProcessError);
+                locked = MmLockPageableCodeSection(ToshibaProcessError);
             
             } else {
 
@@ -5459,14 +5459,14 @@ Return Value:
                 // workaround by locking this twice, once for us and
                 // once for the non-existant locker from ScanForSpecial
                 ASSERT(!"hack flags show locked section, but none exists?");
-                locked = MmLockPagableCodeSection(CdRomRemoveDevice);
-                locked = MmLockPagableCodeSection(CdRomRemoveDevice);
+                locked = MmLockPageableCodeSection(CdRomRemoveDevice);
+                locked = MmLockPageableCodeSection(CdRomRemoveDevice);
 
 
             }
 
-            MmUnlockPagableImageSection(locked);
-            MmUnlockPagableImageSection(locked);
+            MmUnlockPageableImageSection(locked);
+            MmUnlockPageableImageSection(locked);
 
         }
 

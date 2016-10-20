@@ -215,9 +215,9 @@ NTSTATUS NTAPI FreeBT_AddDevice(IN PDRIVER_OBJECT DriverObject, IN PDEVICE_OBJEC
 #endif
 
     // Set the flags as underlying PDO
-    if (PhysicalDeviceObject->Flags & DO_POWER_PAGABLE)
+    if (PhysicalDeviceObject->Flags & DO_POWER_PAGEABLE)
     {
-        deviceObject->Flags |= DO_POWER_PAGABLE;
+        deviceObject->Flags |= DO_POWER_PAGEABLE;
 
     }
 

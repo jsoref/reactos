@@ -505,7 +505,7 @@ RamdiskCreateDiskDevice(IN PRAMDISK_BUS_EXTENSION DeviceExtension,
         }
 
         /* Setup the device object flags */
-        DeviceObject->Flags |= (DO_XIP | DO_POWER_PAGABLE | DO_DIRECT_IO);
+        DeviceObject->Flags |= (DO_XIP | DO_POWER_PAGEABLE | DO_DIRECT_IO);
         DeviceObject->AlignmentRequirement = 1;
 
         /* Build the drive FDO */
@@ -2304,7 +2304,7 @@ RamdiskAddDevice(IN PDRIVER_OBJECT DriverObject,
         RtlZeroMemory(DeviceExtension, sizeof(*DeviceExtension));
 
         /* Set bus FDO flags */
-        DeviceObject->Flags |= DO_POWER_PAGABLE | DO_DIRECT_IO;
+        DeviceObject->Flags |= DO_POWER_PAGEABLE | DO_DIRECT_IO;
 
         /* Setup the bus FDO extension */
         DeviceExtension->Type = RamdiskBus;

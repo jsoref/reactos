@@ -81,7 +81,7 @@ USBSTOR_AddDevice(
     //
     // set device flags
     //
-    DeviceObject->Flags |= DO_BUFFERED_IO | DO_POWER_PAGABLE;
+    DeviceObject->Flags |= DO_BUFFERED_IO | DO_POWER_PAGEABLE;
 
     //
     // device is initialized

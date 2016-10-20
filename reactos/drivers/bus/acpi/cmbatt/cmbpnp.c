@@ -567,7 +567,7 @@ CmBattCreateFdo(IN PDRIVER_OBJECT DriverObject,
     }
 
     /* Set FDO flags */
-    FdoDeviceObject->Flags |= (DO_POWER_PAGABLE | DO_BUFFERED_IO);
+    FdoDeviceObject->Flags |= (DO_POWER_PAGEABLE | DO_BUFFERED_IO);
     FdoDeviceObject->Flags &= ~DO_DEVICE_INITIALIZING;
 
     /* Initialize the extension */

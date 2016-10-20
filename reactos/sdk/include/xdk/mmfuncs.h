@@ -120,7 +120,7 @@ $if (_WDMDDK_)
   ((PVOID) ((PCHAR) ((_Mdl)->StartVa) + (_Mdl)->ByteOffset))
 
 #define MmGetProcedureAddress(Address) (Address)
-#define MmLockPagableCodeSection(Address) MmLockPagableDataSection(Address)
+#define MmLockPageableCodeSection(Address) MmLockPageableDataSection(Address)
 
 /* PVOID MmGetSystemAddressForMdl(
  *     _In_ PMDL Mdl);
@@ -285,7 +285,7 @@ _IRQL_requires_max_(APC_LEVEL)
 NTKERNELAPI
 PVOID
 NTAPI
-MmLockPagableDataSection(
+MmLockPageableDataSection(
   _In_ PVOID AddressWithinSection);
 
 _Must_inspect_result_
@@ -369,7 +369,7 @@ _IRQL_requires_max_(DISPATCH_LEVEL)
 NTKERNELAPI
 VOID
 NTAPI
-MmUnlockPagableImageSection(
+MmUnlockPageableImageSection(
   _In_ PVOID ImageSectionHandle);
 
 _IRQL_requires_max_(DISPATCH_LEVEL)
@@ -519,7 +519,7 @@ _IRQL_requires_max_(APC_LEVEL)
 NTKERNELAPI
 VOID
 NTAPI
-MmLockPagableSectionByHandle(
+MmLockPageableSectionByHandle(
   _In_ PVOID ImageSectionHandle);
 
 _IRQL_requires_max_(APC_LEVEL)
