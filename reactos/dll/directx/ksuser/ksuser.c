@@ -127,7 +127,7 @@ KsCreateAllocator(HANDLE ConnectionHandle,
 * Handle to use to create the clock 
 *
 * @param PKSCLOCK_CREATE ClockCreate
-* paramenter to use to create the clock
+* parameter to use to create the clock
 *
 * @param PHANDLE  ClockHandle
 * The new handle
