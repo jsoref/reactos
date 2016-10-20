@@ -144,7 +144,7 @@ typedef struct {
   
   ///
   /// TRUE if there is a media currently present in the device;
-  /// othersise, FALSE. THis field shows the media present status
+  /// otherwise, FALSE. THis field shows the media present status
   /// as of the most recent ReadBlocks() or WriteBlocks() call.  
   ///
   BOOLEAN MediaPresent;

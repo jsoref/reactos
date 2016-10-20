@@ -927,7 +927,7 @@ MiDoMappedCopy(IN PEPROCESS SourceProcess,
             else
             {
                 //
-                // Othewise we failed during the move.
+                // Otherwise we failed during the move.
                 // Check if we know exactly where we stopped copying
                 //
                 if (HaveBadAddress)

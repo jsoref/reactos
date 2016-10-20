@@ -2539,7 +2539,7 @@ RtlDosSearchPath_Ustr(IN ULONG Flags,
                     /* If there's a path separator, there's no extension */
                     if (IS_PATH_SEPARATOR(*--End)) break;
 
-                    /* Othwerwise, did we find an extension dot? */
+                    /* Otherwise, did we find an extension dot? */
                     if (*End == L'.')
                     {
                         /* File already had an extension, so fail */

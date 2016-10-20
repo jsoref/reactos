@@ -759,7 +759,7 @@ RtlSelfRelativeToAbsoluteSD(IN PSECURITY_DESCRIPTOR SelfRelativeSD,
     PACL pDacl, pSacl;
     PAGED_CODE_RTL();
 
-    /* Must be relative, otherwiise fail */
+    /* Must be relative, otherwise fail */
     if (!(RelSd->Control & SE_SELF_RELATIVE)) return STATUS_BAD_DESCRIPTOR_FORMAT;
 
     /* Get all the components */
