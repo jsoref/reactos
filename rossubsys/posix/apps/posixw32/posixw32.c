@@ -167,7 +167,7 @@ TRACE;
  *
  * NOTE
  *	This function is the thread 's entry point created in
- *	CreateSessionObiects().
+ *	CreateSessionObjects().
  */
 PRIVATE DWORD STDCALL PsxSessionPortListener (LPVOID Arg)
 {
@@ -230,7 +230,7 @@ TRACE;
     TerminateThread (GetCurrentThread(), Status);
 }
 /**********************************************************************
- *	CreateSessionObiects/1					PRIVATE
+ *	CreateSessionObjects/1					PRIVATE
  *
  * DESCRIPTION
  *	Create the session objects which are managed by our side:

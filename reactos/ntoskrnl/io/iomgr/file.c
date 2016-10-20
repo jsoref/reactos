@@ -2074,7 +2074,7 @@ IopQueryAttributesFile(IN POBJECT_ATTRIBUTES ObjectAttributes,
 
     /*
      * Attempt opening the file. This will call the I/O Parse Routine for
-     * the File Object (IopParseDevice) which will use the dummy file obejct
+     * the File Object (IopParseDevice) which will use the dummy file object
      * send the IRP to its device object. Note that we have two statuses
      * to worry about: the Object Manager's status (in Status) and the I/O
      * status, which is in the Open Packet's Final Status, and determined
@@ -2918,7 +2918,7 @@ IoFastQueryNetworkAttributes(IN POBJECT_ATTRIBUTES ObjectAttributes,
 
     /*
      * Attempt opening the file. This will call the I/O Parse Routine for
-     * the File Object (IopParseDevice) which will use the dummy file obejct
+     * the File Object (IopParseDevice) which will use the dummy file object
      * send the IRP to its device object. Note that we have two statuses
      * to worry about: the Object Manager's status (in Status) and the I/O
      * status, which is in the Open Packet's Final Status, and determined
@@ -3731,7 +3731,7 @@ NtDeleteFile(IN POBJECT_ATTRIBUTES ObjectAttributes)
 
     /*
      * Attempt opening the file. This will call the I/O Parse Routine for
-     * the File Object (IopParseDevice) which will use the dummy file obejct
+     * the File Object (IopParseDevice) which will use the dummy file object
      * send the IRP to its device object. Note that we have two statuses
      * to worry about: the Object Manager's status (in Status) and the I/O
      * status, which is in the Open Packet's Final Status, and determined

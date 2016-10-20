@@ -1886,7 +1886,7 @@ NdisIPnPStartDevice(
 /*
  * FUNCTION: Handle the PnP start device event
  * ARGUMENTS:
- *     DeviceObejct = Functional Device Object
+ *     DeviceObject = Functional Device Object
  *     Irp          = IRP_MN_START_DEVICE I/O request packet
  * RETURNS:
  *     Status of operation
@@ -2212,7 +2212,7 @@ NdisIPnPStopDevice(
 /*
  * FUNCTION: Handle the PnP stop device event
  * ARGUMENTS:
- *     DeviceObejct = Functional Device Object
+ *     DeviceObject = Functional Device Object
  *     Irp          = IRP_MN_STOP_DEVICE I/O request packet
  * RETURNS:
  *     Status of operation

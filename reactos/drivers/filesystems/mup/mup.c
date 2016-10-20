@@ -1371,7 +1371,7 @@ MupRerouteOpen(PFILE_OBJECT FileObject,
     RtlMoveMemory(FullPath, UncProvider->DeviceName.Buffer, UncProvider->DeviceName.Length);
     RtlMoveMemory((PWSTR)((ULONG_PTR)FullPath + UncProvider->DeviceName.Length), FileObject->FileName.Buffer, FileObject->FileName.Length);
 
-    /* And redo the path in the file oject */
+    /* And redo the path in the file object */
     ExFreePoolWithTag(FileObject->FileName.Buffer, 0);
     FileObject->FileName.Buffer = FullPath;
     FileObject->FileName.MaximumLength = TotalLength;

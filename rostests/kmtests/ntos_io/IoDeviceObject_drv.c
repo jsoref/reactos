@@ -377,7 +377,7 @@ TestDeviceCreated(
     ok(extdev->ExtensionFlags == 0, "Expected Extended ExtensionFlags to be 0, got %lu\n", extdev->ExtensionFlags);
     ok (extdev->Type == 13, "Expected Type of 13, got %d\n", extdev->Type);
     ok (extdev->Size == 0, "Expected Size of 0, got %d\n", extdev->Size);
-    ok (extdev->DeviceObject == DeviceObject, "Expected DeviceOject to match newly created device %p, got %p\n",
+    ok (extdev->DeviceObject == DeviceObject, "Expected DeviceObject to match newly created device %p, got %p\n",
         DeviceObject, extdev->DeviceObject);
     ok(extdev->AttachedTo == NULL, "Expected AttachTo to be NULL, got %p\n", extdev->AttachedTo);
     ok(extdev->StartIoCount == 0, "Expected StartIoCount = 0, got %lu\n", extdev->StartIoCount);
@@ -430,7 +430,7 @@ TestDeviceDeletion(
         "Expected Extended ExtensionFlags to be DOE_UNLOAD_PENDING, got %lu\n", extdev->ExtensionFlags);
     ok (extdev->Type == 13, "Expected Type of 13, got %d\n", extdev->Type);
     ok (extdev->Size == 0, "Expected Size of 0, got %d\n", extdev->Size);
-    ok (extdev->DeviceObject == DeviceObject, "Expected DeviceOject to match newly created device %p, got %p\n",
+    ok (extdev->DeviceObject == DeviceObject, "Expected DeviceObject to match newly created device %p, got %p\n",
         DeviceObject, extdev->DeviceObject);
     if (Lower || !Attached)
     {
