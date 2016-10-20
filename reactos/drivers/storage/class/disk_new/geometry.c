@@ -910,7 +910,7 @@ Arguments:
 
 Return Value:
 
-    Returns the status of the opertion.
+    Returns the status of the operation.
 
 --*/
 {

@@ -492,7 +492,7 @@ WsAsyncGetServ(IN HANDLE TaskHandle,
     LPARAM lParam;
     INT ErrorCode = 0;
 
-    /* Check the operaiton */
+    /* Check the operation */
     if (Operation == WsAsyncGetServByName)
     {
         /* Call the API */
@@ -565,7 +565,7 @@ WsAsyncGetProto(IN HANDLE TaskHandle,
     LPARAM lParam;
     INT ErrorCode = 0;
 
-    /* Check the operaiton */
+    /* Check the operation */
     if (Operation == WsAsyncGetProtoByName)
     {
         /* Call the API */
@@ -640,7 +640,7 @@ WsAsyncGetHost(IN HANDLE TaskHandle,
     LPARAM lParam;
     INT ErrorCode = 0;
 
-    /* Check the operaiton */
+    /* Check the operation */
     if (Operation == WsAsyncGetHostByAddr)
     {
         /* Call the API */
