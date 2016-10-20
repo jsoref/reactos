@@ -1285,7 +1285,7 @@ FsRtlNotifyFilterReportChange(IN PNOTIFY_SYNC NotifySync,
 
                     /* Get the position where we can put our data (aligned!) */
                     AlignedDataLength = ROUND_UP(NotifyChange->DataLength, sizeof(ULONG));
-                    /* If it's higher than buffer length, then, bail out without outputing */
+                    /* If it's higher than buffer length, then, bail out without outputting */
                     if (DataLength > NumberOfBytes || AlignedDataLength + DataLength > NumberOfBytes)
                     {
                         NotifyChange->Flags |= NOTIFY_IMMEDIATELY;
@@ -1332,7 +1332,7 @@ FsRtlNotifyFilterReportChange(IN PNOTIFY_SYNC NotifySync,
                                 NotifyChange->Buffer = OutputBuffer;
                                 NotifyChange->AllocatedBuffer = OutputBuffer;
                             }
-                            /* If something went wrong during allocation, notify immediately instead of outputing */
+                            /* If something went wrong during allocation, notify immediately instead of outputting */
                             _SEH2_EXCEPT(EXCEPTION_EXECUTE_HANDLER)
                             {
                                 if (PoolQuotaCharged)
