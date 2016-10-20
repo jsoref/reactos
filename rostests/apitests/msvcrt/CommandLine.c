@@ -41,7 +41,7 @@ LPWSTR ExtractCmdLine(IN LPWSTR lpszCommandLine)
             ++lpszCommandLine;
         }
 
-        /* Skip all white spaces preceeding the second token. */
+        /* Skip all white spaces preceding the second token. */
         while (*lpszCommandLine && (*lpszCommandLine <= SPACECHAR))
             ++lpszCommandLine;
     }
@@ -73,7 +73,7 @@ VOID ExtractCmdLine_U(IN OUT PUNICODE_STRING pCommandLine_U)
             pCommandLine_U->Length -= sizeof(WCHAR);
         }
 
-        /* Skip all white spaces preceeding the second token. */
+        /* Skip all white spaces preceding the second token. */
         while ((pCommandLine_U->Length > 0) && *lpszCommandLine && (*lpszCommandLine <= SPACECHAR))
         {
             ++lpszCommandLine;
