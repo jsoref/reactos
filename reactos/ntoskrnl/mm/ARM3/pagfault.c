@@ -1982,7 +1982,7 @@ _WARN("Session space stuff is not implemented yet!")
                              1);
             }
 
-            /* Check for no protecton at all */
+            /* Check for no protection at all */
             if (TempPte.u.Soft.Protection == MM_ZERO_ACCESS)
             {
                 /* Bugcheck the system! */
