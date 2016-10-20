@@ -724,7 +724,7 @@ VgaConsoleCreateTextScreen(// OUT PCHAR_CELL* TextFramebuffer,
                            IN HANDLE PaletteHandle)
 {
     /* Switch to the text buffer */
-    // FIXME: Wouldn't it be preferrable to switch to it AFTER we reset everything??
+    // FIXME: Wouldn't it be preferable to switch to it AFTER we reset everything??
     SetActiveScreenBuffer(TextConsoleBuffer);
 
     /* Adjust the text framebuffer if we changed the resolution */
