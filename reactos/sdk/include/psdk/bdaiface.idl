@@ -386,16 +386,16 @@ interface IBDA_FrequencyFilter : IUnknown
 ]
 interface IBDA_LNBInfo : IUnknown
 {
-        HRESULT put_LocalOscilatorFrequencyLowBand(
+        HRESULT put_LocalOscillatorFrequencyLowBand(
             [in] ULONG ulLOFLow);
 
-        HRESULT get_LocalOscilatorFrequencyLowBand(
+        HRESULT get_LocalOscillatorFrequencyLowBand(
             [in, out] ULONG * pulLOFLow);
 
-        HRESULT put_LocalOscilatorFrequencyHighBand(
+        HRESULT put_LocalOscillatorFrequencyHighBand(
             [in] ULONG ulLOFHigh);
 
-        HRESULT get_LocalOscilatorFrequencyHighBand(
+        HRESULT get_LocalOscillatorFrequencyHighBand(
             [in, out] ULONG * pulLOFHigh);
 
         HRESULT put_HighLowSwitchFrequency(
