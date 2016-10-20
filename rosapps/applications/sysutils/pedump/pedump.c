@@ -2568,7 +2568,7 @@ GetListOfResourceTypes (
       //    pMem += strlen (pMem) + 1;
       //
       // modified by ...................................Sang Cho..
-      // I can't user M/S provied functions here so I have to figure out
+      // I can't user M/S provided functions here so I have to figure out
       // how to do above functions. But I can settle down with the following
       // code, which works pretty good for me.
       //
