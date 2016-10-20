@@ -274,7 +274,7 @@ BmpFwGetApplicationDirectoryPath (
                                   AppPathLength - sizeof(UNICODE_NULL));
                     PathCopy[AppPathLength] = UNICODE_NULL;
 
-                    /* Finally, initialize the outoing string */
+                    /* Finally, initialize the outgoing string */
                     RtlInitUnicodeString(ApplicationDirectoryPath, PathCopy);
                 }
                 else
