@@ -4964,7 +4964,7 @@ DiskSetInfoExceptionInformation(
 
     //
     // We will attempt (twice) to issue the mode select with the page.
-    // Make the setting persistant so that we don't have to turn it back
+    // Make the setting persistent so that we don't have to turn it back
     // on after a bus reset.
     //
 

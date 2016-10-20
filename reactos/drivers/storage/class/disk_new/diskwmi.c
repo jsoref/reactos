@@ -1919,7 +1919,7 @@ Routine Description:
 
 
     When NT boots, failure prediction is not automatically enabled, although
-    it may have been persistantly enabled on a previous boot. Polling is also
+    it may have been persistently enabled on a previous boot. Polling is also
     not automatically enabled. When the first data block that accesses SMART
     such as SmartStatusGuid, SmartDataGuid, SmartPerformFunction, or
     SmartEventGuid is accessed then SMART is automatically enabled in the

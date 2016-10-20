@@ -17,7 +17,7 @@
 #define min(a,b) (((a) < (b)) ? (a) : (b))
 
 #define SRB_CLASS_FLAGS_LOW_PRIORITY      0x10000000
-#define SRB_CLASS_FLAGS_PERSISTANT        0x20000000
+#define SRB_CLASS_FLAGS_PERSISTENT        0x20000000
 #define SRB_CLASS_FLAGS_PAGING            0x40000000
 #define SRB_CLASS_FLAGS_FREE_MDL          0x80000000
 

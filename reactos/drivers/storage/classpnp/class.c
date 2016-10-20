@@ -2538,7 +2538,7 @@ ClassIoComplete(
     // Free the srb
     //
 
-    if(!TEST_FLAG(srb->SrbFlags, SRB_CLASS_FLAGS_PERSISTANT)) {
+    if(!TEST_FLAG(srb->SrbFlags, SRB_CLASS_FLAGS_PERSISTENT)) {
 
         if (PORT_ALLOCATED_SENSE(fdoExtension, srb)) {
             FREE_PORT_ALLOCATED_SENSE_BUFFER(fdoExtension, srb);
@@ -2555,10 +2555,10 @@ ClassIoComplete(
     } else {
 
         DebugPrint((2, "ClassIoComplete: Not Freeing srb @ %p because "
-                    "SRB_CLASS_FLAGS_PERSISTANT set\n", srb));
+                    "SRB_CLASS_FLAGS_PERSISTENT set\n", srb));
         if (PORT_ALLOCATED_SENSE(fdoExtension, srb)) {
             DebugPrint((2, "ClassIoComplete: Not Freeing sensebuffer @ %p "
-                        " because SRB_CLASS_FLAGS_PERSISTANT set\n",
+                        " because SRB_CLASS_FLAGS_PERSISTENT set\n",
                         srb->SenseInfoBuffer));
         }
 

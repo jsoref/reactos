@@ -1227,7 +1227,7 @@ typedef union _CDB {
     UCHAR LogicalUnitNumber:3;
     UCHAR Reserved2[2];
     UCHAR Prevent:1;
-    UCHAR Persistant:1;
+    UCHAR Persistent:1;
     UCHAR Reserved3:6;
     UCHAR Control;
   } MEDIA_REMOVAL, *PMEDIA_REMOVAL;
@@ -2486,7 +2486,7 @@ typedef struct _CDVD_FEATURE_SET_PAGE {
   UCHAR CDAudio[2];
   UCHAR EmbeddedChanger[2];
   UCHAR PacketSMART[2];
-  UCHAR PersistantPrevent[2];
+  UCHAR PersistentPrevent[2];
   UCHAR EventStatusNotification[2];
   UCHAR DigitalOutput[2];
   UCHAR CDSequentialRecordable[2];
