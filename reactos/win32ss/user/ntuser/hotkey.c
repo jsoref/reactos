@@ -7,7 +7,7 @@
  */
 
 /*
- * FIXME: Hotkey notifications are triggered by keyboard input (physical or programatically)
+ * FIXME: Hotkey notifications are triggered by keyboard input (physical or programmatically)
  * and since only desktops on WinSta0 can receive input in seems very wrong to allow
  * windows/threads on desktops not belonging to WinSta0 to set hotkeys (receive notifications).
  *     -- Gunnar
