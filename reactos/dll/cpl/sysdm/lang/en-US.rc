@@ -48,7 +48,7 @@ BEGIN
     LTEXT "Administrator privileges are required for most of these settings.", IDC_STATIC, 12, 5, 236, 8
     GROUPBOX "Performance", IDC_STATIC, 6, 18, 244, 50
     LTEXT "Performance options control how applications use memory, which affects the speed of your computer.", IDC_STATIC, 16, 29, 228, 17
-    PUSHBUTTON "&Settings", IDC_PERFOR, 194, 48, 50, 15
+    PUSHBUTTON "&Settings", IDC_PERFORMANCE, 194, 48, 50, 15
     GROUPBOX "User Profiles", IDC_STATIC, 6, 75, 244, 48
     LTEXT "Desktop settings related to your logon", IDC_STATIC, 16, 88, 228, 20
     PUSHBUTTON "S&ettings", IDC_USERPROFILE, 194, 103, 50, 15

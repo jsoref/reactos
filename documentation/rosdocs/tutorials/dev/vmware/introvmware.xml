@@ -30,7 +30,7 @@ A Virtual Machine is a software program much like an emulator that provides a vi
 <listitem>You can try out a completely different operating system without tinkering with your real system.</listitem>
 <listitem>You can run potentially unstable software without the fear of damaging your real system.</listitem>
 <listitem>For operating systems developers, it provides a way to debug the system without constant reboots.</listitem>
-<listitem>The performace is much faster then a true emulator such as bochs.</listitem>
+<listitem>The performance is much faster then a true emulator such as bochs.</listitem>
 </itemizedlist>
 </para>
 </sect2>

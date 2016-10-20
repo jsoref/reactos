@@ -102,7 +102,7 @@ Applied (in revision 1.29, 2002/07/14).
 URL:
 http://bibl4.oru.se/projects/rdesktop/patch19/patches/frank_fasttext.patch.txt
 Description:
-Some kind of performence improvements. 
+Some kind of performance improvements. 
 Status:
 From what I can tell, this patch is no longer necessary. 
 

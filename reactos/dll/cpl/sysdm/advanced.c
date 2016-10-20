@@ -130,7 +130,7 @@ AdvancedPageProc(HWND hwndDlg,
         {
             switch (LOWORD(wParam))
             {
-                case IDC_PERFOR:
+                case IDC_PERFORMANCE:
                     DialogBox(hApplet,
                               MAKEINTRESOURCE(IDD_VIRTMEM),
                               hwndDlg,

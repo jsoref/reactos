@@ -182,7 +182,7 @@ GetTime(PAPPINFO pInfo)
 {
     LARGE_INTEGER Time;
 
-    /* Get the system time using preformance counters if available */
+    /* Get the system time using performance counters if available */
     if (pInfo->bUsePerformanceCounter)
     {
         if (QueryPerformanceCounter(&Time))
