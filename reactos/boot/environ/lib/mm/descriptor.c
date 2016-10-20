@@ -44,7 +44,7 @@ MmMdpHasPrecedence (
     BL_MEMORY_CLASS Class1, Class2;
     ULONG i, j;
 
-    /* Descriptor is free RAM -- it preceeds */
+    /* Descriptor is free RAM -- it precedes */
     if (Type1 == BlConventionalMemory)
     {
         return TRUE;
@@ -56,7 +56,7 @@ MmMdpHasPrecedence (
         return FALSE;
     }
 
-    /* Descriptor is not system, application, or loader class -- it preceeds */
+    /* Descriptor is not system, application, or loader class -- it precedes */
     Class1 = Type1 >> BL_MEMORY_CLASS_SHIFT;
     if ((Class1 != BlSystemClass) &&
         (Class1 != BlApplicationClass) &&
@@ -124,7 +124,7 @@ MmMdpHasPrecedence (
             }
         }
 
-        /* The comparator isn't system, so it preceeds it */
+        /* The comparator isn't system, so it precedes it */
         return TRUE;
     }
 
@@ -134,7 +134,7 @@ MmMdpHasPrecedence (
         return FALSE;
     }
 
-    /* Descriptor is loader class -- it preceeds */
+    /* Descriptor is loader class -- it precedes */
     if (Class1 == BlLoaderClass)
     {
         return TRUE;

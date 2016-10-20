@@ -748,7 +748,7 @@ NtYieldExecution(VOID)
     PKPRCB Prcb;
     PKTHREAD Thread, NextThread;
 
-    /* NB: No instructions (other than entry code) should preceed this line */
+    /* NB: No instructions (other than entry code) should precede this line */
 
     /* Fail if there's no ready summary */
     if (!KiGetCurrentReadySummary()) return STATUS_NO_YIELD_PERFORMED;
