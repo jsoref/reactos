@@ -204,7 +204,7 @@ RtlAppendStringToString(IN PSTRING Destination,
  * NOTES
  *  If src->length is zero dest is unchanged.
  *  Dest is nullterminated when the MaximumLength allows it.
- *  When dest fits exactly in MaximumLength characters the nullterm is ommitted.
+ *  When dest fits exactly in MaximumLength characters the nullterm is omitted.
  */
 NTSTATUS
 NTAPI
@@ -688,7 +688,7 @@ RtlInitUnicodeStringEx(
  * NOTES
  *  Writes at most length characters to the string str.
  *  Str is nullterminated when length allows it.
- *  When str fits exactly in length characters the nullterm is ommitted.
+ *  When str fits exactly in length characters the nullterm is omitted.
  */
 NTSTATUS NTAPI RtlIntegerToChar(
     ULONG value,   /* [I] Value to be converted */
@@ -2389,7 +2389,7 @@ RtlDowncaseUnicodeString(
  * NOTES
  *  if src is NULL dest is unchanged.
  *  dest is '\0' terminated when the MaximumLength allows it.
- *  When dest fits exactly in MaximumLength characters the '\0' is ommitted.
+ *  When dest fits exactly in MaximumLength characters the '\0' is omitted.
  */
 NTSTATUS
 NTAPI
