@@ -940,7 +940,7 @@ ClasspPowerDownCompletion(
 
             DebugPrint((1, "(%p)\tFreeing srb and completing\n", Irp));
             context->InUse = FALSE;
-            status = context->FinalStatus; // allow failure to propogate
+            status = context->FinalStatus; // allow failure to propagate
             context = NULL;
 
             if(Irp->PendingReturned) {
