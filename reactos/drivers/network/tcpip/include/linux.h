@@ -1635,7 +1635,7 @@ typedef struct kmem_cache_s kmem_cache_t;
  * The first 3 are only valid when the allocator as been build
  * SLAB_DEBUG_SUPPORT.
  */
-#define	SLAB_DEBUG_FREE		0x00000100UL	/* Peform (expensive) checks on free */
+#define	SLAB_DEBUG_FREE		0x00000100UL	/* Perform (expensive) checks on free */
 #define	SLAB_DEBUG_INITIAL	0x00000200UL	/* Call constructor (as verifier) */
 #define	SLAB_RED_ZONE		0x00000400UL	/* Red zone objs in a cache */
 #define	SLAB_POISON		0x00000800UL	/* Poison objects */

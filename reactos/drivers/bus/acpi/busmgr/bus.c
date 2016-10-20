@@ -1120,7 +1120,7 @@ acpi_bus_get_flags (
 	if (ACPI_SUCCESS(status))
 		device->flags.power_manageable = 1;
 
-	/* TBD: Peformance management */
+	/* TBD: Performance management */
 
 	return_VALUE(0);
 }

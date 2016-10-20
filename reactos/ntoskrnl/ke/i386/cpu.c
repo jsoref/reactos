@@ -112,7 +112,7 @@ KiSetProcessorType(VOID)
         EFlags |= EFLAGS_ID;
         __writeeflags(EFlags);
 
-        /* Peform CPUID 0 to see if CPUID 1 is supported */
+        /* Perform CPUID 0 to see if CPUID 1 is supported */
         KiCpuId(&CpuInfo, 0);
         if (CpuInfo.Eax > 0)
         {
