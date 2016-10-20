@@ -455,7 +455,7 @@ CcpFindMatchingMap(PLIST_ENTRY Head,
 /*
 
 Internal function that's used by all pinning functions.
-It causes a mapped region to exist and prefaults the pages in it if possible,
+It causes a mapped region to exist and pre-faults the pages in it if possible,
 possibly evicting another stripe in order to get our stripe.
 
 */
