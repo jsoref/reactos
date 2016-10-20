@@ -2957,7 +2957,7 @@ MmCreateDataFileSection(PROS_SECTION_OBJECT *SectionObject,
     }
 
     /*
-     * FIXME: This is propably not entirely correct. We can't look into
+     * FIXME: This is probably not entirely correct. We can't look into
      * the standard FCB header because it might not be initialized yet
      * (as in case of the EXT2FS driver by Manoj Paul Joseph where the
      * standard file information is filled on first request).

@@ -215,7 +215,7 @@ typedef BOOL
 (WINAPI *PGETFREEDISKSPACEEX)(LPCTSTR, PULARGE_INTEGER, PULARGE_INTEGER, PULARGE_INTEGER);
 
 /* Globally save the # of dirs, files and bytes,
- * probabaly later pass them to functions. Rob Lake  */
+ * probably later pass them to functions. Rob Lake  */
 static ULONG recurse_dir_cnt;
 static ULONG recurse_file_cnt;
 static ULONGLONG recurse_bytes;
