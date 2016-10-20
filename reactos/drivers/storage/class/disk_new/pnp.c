@@ -495,7 +495,7 @@ Return Value:
     DiskCreateSymbolicLinks(Fdo);
 
     //
-    // Determine the type of disk and enable failure preiction in the hardware
+    // Determine the type of disk and enable failure prediction in the hardware
     // and enable failure prediction polling.
     //
 
