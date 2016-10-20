@@ -121,7 +121,7 @@ BOOLEAN FsRtlTest_StartTest() {
     FSRTL_TEST("FsRtlCopyWrite() - FastIo is not possible flag",!FsRtlCopyWrite(Pfo,&Offset,Length,TRUE,0,Buffer,&IoStatus,NULL))
     /* Set the flag back to what it was */
     FcbHeader->IsFastIoPossible = FastIoIsPossible;
-    FSRTL_TEST("FsRtlCopyWrite() - FastIo is possbile flag",FsRtlCopyWrite(Pfo,&Offset,Length,TRUE,0,Buffer,&IoStatus,NULL))
+    FSRTL_TEST("FsRtlCopyWrite() - FastIo is possible flag",FsRtlCopyWrite(Pfo,&Offset,Length,TRUE,0,Buffer,&IoStatus,NULL))
 
     if (Pfo)
     {
@@ -210,7 +210,7 @@ BOOLEAN FsRtlTest_StartTest() {
     FSRTL_TEST("FsRtlCopyWrite() - FastIo is not possible flag. Wait = FALSE",!FsRtlCopyWrite(Pfo,&Offset,Length,FALSE,0,Buffer,&IoStatus,NULL))
     /* Set the flag back to what it was */
     FcbHeader->IsFastIoPossible = FastIoIsPossible;
-    FSRTL_TEST("FsRtlCopyWrite() - FastIo is possbile flag. Wait = FALSE",FsRtlCopyWrite(Pfo,&Offset,Length,FALSE,0,Buffer,&IoStatus,NULL))
+    FSRTL_TEST("FsRtlCopyWrite() - FastIo is possible flag. Wait = FALSE",FsRtlCopyWrite(Pfo,&Offset,Length,FALSE,0,Buffer,&IoStatus,NULL))
 
 
     /*  ------------------------------------------------------------------------------------------
