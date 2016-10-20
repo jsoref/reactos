@@ -23,7 +23,7 @@ void* __cdecl memcpy(void* dest, const void* src, size_t count)
     }
     else
     {
-        /* overlaping buffers */
+        /* overlapping buffers */
         char_dest = (char *)dest + count - 1;
         char_src = (char *)src + count - 1;
 
