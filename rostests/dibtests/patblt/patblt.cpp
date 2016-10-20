@@ -198,7 +198,7 @@ LRESULT CALLBACK MainWndProc(HWND HWnd, UINT Msg, WPARAM WParam,
 
             // erase the previous rectangle
             RenderTrackingRect(HScreenDC, RTrack);
-            // update the postion
+            // update the position
             OffsetRect(&RTrack, dX, dY);
             // render the new tracking rectangle
             RenderTrackingRect(HScreenDC, RTrack);

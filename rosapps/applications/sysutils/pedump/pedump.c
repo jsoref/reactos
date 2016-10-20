@@ -862,7 +862,7 @@ typedef struct _Str_P
   {
     char flag;			// string_flag '@' or '%' or '#'
 
-    char *pos;			// starting postion of string
+    char *pos;			// starting position of string
 
     int length;			// length of string
 
@@ -1919,7 +1919,7 @@ StringExpands (
 //----------------------------------------------------------------------
 //typedef struct _Str_P {
 //    char    flag;               // string_flag '@' or '%' or '#'
-//    char    *pos;               // starting postion of string
+//    char    *pos;               // starting position of string
 //    int     length;     // length of string
 //      BOOL    wasString;    // if it were stringMode or not
 //} Str_P;
