@@ -870,7 +870,7 @@ KspHandleDataIntersection(
                DataRange->FormatSize, DataRange->SampleSize, DataRange->Alignment, DataRange->Flags, DataRange->Reserved, DataLength);
 
         /* FIXME implement KsPinDataIntersectionEx */
-        /* Call miniport's properitary handler */
+        /* Call miniport's proprietary handler */
         Status = This->Filter.Descriptor->PinDescriptors[Pin->PinId].IntersectHandler(&This->Filter,
                                                                                       Irp,
                                                                                       Pin,
