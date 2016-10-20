@@ -969,21 +969,21 @@ namespace
 			return hr;
 		}
 
-		virtual STDMETHODIMP IMsTscAdvancedSettings::put_BitmapPeristence(long pbitmapPeristence)
+		virtual STDMETHODIMP IMsTscAdvancedSettings::put_BitmapPersistence(long pbitmapPersistence)
 		{
 			IMsTscAdvancedSettings * pIMsTscAdvancedSettings = getIMsTscAdvancedSettings();
-			dbgprintf(TEXT("CAdvancedSettings::put_BitmapPeristence(%ld)"), pbitmapPeristence);
-			HRESULT hr = pIMsTscAdvancedSettings->put_BitmapPeristence(pbitmapPeristence);
-			dbgprintf(TEXT("CAdvancedSettings::put_BitmapPeristence -> %08X"), hr);
+			dbgprintf(TEXT("CAdvancedSettings::put_BitmapPersistence(%ld)"), pbitmapPersistence);
+			HRESULT hr = pIMsTscAdvancedSettings->put_BitmapPersistence(pbitmapPersistence);
+			dbgprintf(TEXT("CAdvancedSettings::put_BitmapPersistence -> %08X"), hr);
 			return hr;
 		}
 
-		virtual STDMETHODIMP IMsTscAdvancedSettings::get_BitmapPeristence(long * pbitmapPeristence)
+		virtual STDMETHODIMP IMsTscAdvancedSettings::get_BitmapPersistence(long * pbitmapPersistence)
 		{
 			IMsTscAdvancedSettings * pIMsTscAdvancedSettings = getIMsTscAdvancedSettings();
-			dbgprintf(TEXT("CAdvancedSettings::get_BitmapPeristence(%p)"), pbitmapPeristence);
-			HRESULT hr = pIMsTscAdvancedSettings->get_BitmapPeristence(pbitmapPeristence);
-			dbgprintf(TEXT("CAdvancedSettings::get_BitmapPeristence -> %08X, bitmapPeristence = %ld"), hr, *pbitmapPeristence);
+			dbgprintf(TEXT("CAdvancedSettings::get_BitmapPersistence(%p)"), pbitmapPersistence);
+			HRESULT hr = pIMsTscAdvancedSettings->get_BitmapPersistence(pbitmapPersistence);
+			dbgprintf(TEXT("CAdvancedSettings::get_BitmapPersistence -> %08X, bitmapPersistence = %ld"), hr, *pbitmapPersistence);
 			return hr;
 		}
 

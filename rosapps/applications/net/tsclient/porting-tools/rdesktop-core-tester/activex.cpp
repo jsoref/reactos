@@ -2555,14 +2555,14 @@ private:
 			return Outer()->GetProperty(Outer()->m_Compress, pcompress);
 		}
 
-		virtual STDMETHODIMP IMsTscAdvancedSettings::put_BitmapPeristence(long pbitmapPeristence)
+		virtual STDMETHODIMP IMsTscAdvancedSettings::put_BitmapPersistence(long pbitmapPersistence)
 		{
-			return Outer()->SetProperty(Outer()->m_BitmapPersistence, pbitmapPeristence);
+			return Outer()->SetProperty(Outer()->m_BitmapPersistence, pbitmapPersistence);
 		}
 
-		virtual STDMETHODIMP IMsTscAdvancedSettings::get_BitmapPeristence(long * pbitmapPeristence) const
+		virtual STDMETHODIMP IMsTscAdvancedSettings::get_BitmapPersistence(long * pbitmapPersistence) const
 		{
-			return Outer()->GetProperty(Outer()->m_BitmapPersistence, pbitmapPeristence);
+			return Outer()->GetProperty(Outer()->m_BitmapPersistence, pbitmapPersistence);
 		}
 
 		virtual STDMETHODIMP IMsTscAdvancedSettings::put_allowBackgroundInput(long pallowBackgroundInput)
@@ -3060,12 +3060,12 @@ private:
 
 		virtual STDMETHODIMP IMsRdpClientAdvancedSettings::put_BitmapPersistence(long pbitmapPersistence)
 		{
-			return put_BitmapPeristence(pbitmapPersistence);
+			return put_BitmapPersistence(pbitmapPersistence);
 		}
 
 		virtual STDMETHODIMP IMsRdpClientAdvancedSettings::get_BitmapPersistence(long * pbitmapPersistence) const
 		{
-			return get_BitmapPeristence(pbitmapPersistence);
+			return get_BitmapPersistence(pbitmapPersistence);
 		}
 
 		virtual STDMETHODIMP IMsRdpClientAdvancedSettings::put_MinutesToIdleTimeout(long pminutesToIdleTimeout)
