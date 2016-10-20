@@ -1555,7 +1555,7 @@ Routine Description:
     If the device object is a PDO (partition object) then the request will
     simply be adjusted for Partition0 and issued to the lower device driver.
 
-    IF the device object is an FDO (paritition 0 object), the number of bytes
+    IF the device object is an FDO (partition 0 object), the number of bytes
     in the request are checked against the maximum byte counts that the adapter
     supports and requests are broken up into
     smaller sizes if necessary.

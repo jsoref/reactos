@@ -67,7 +67,7 @@ typedef struct _DISK_DATA {
     // Partition number of this device object
     //
     // This field is set during driver initialization or when the partition
-    // is created to identify a parition to the system.
+    // is created to identify a partition to the system.
     //
 
     ULONG PartitionNumber;
@@ -1247,7 +1247,7 @@ CreatePartitionDeviceObjects(
         if (!initData)
         {
             DebugPrint((1,
-                        "Disk.CreatePartionDeviceObjects - Allocation of initData failed\n"));
+                        "Disk.CreatePartitionDeviceObjects - Allocation of initData failed\n"));
 
             status = STATUS_INSUFFICIENT_RESOURCES;
             goto CreatePartitionDeviceObjectsExit;
@@ -2235,7 +2235,7 @@ Return Value:
         else if (diskData->PartitionNumber == 0) {
 
             //
-            // Paritition zero is not a partition so this is not a
+            // Partition zero is not a partition so this is not a
             // reasonable request.
             //
 
@@ -2313,7 +2313,7 @@ Return Value:
         else if (diskData->PartitionNumber == 0) {
 
             //
-            // Paritition zero is not a partition so this is not a
+            // Partition zero is not a partition so this is not a
             // reasonable request.
             //
 
@@ -4451,7 +4451,7 @@ Return Value:
         partitionNumber = diskData->PartitionNumber - 1;
 
         //
-        // Update the partition information for this parition.
+        // Update the partition information for this partition.
         //
 
         diskData->PartitionType =
@@ -4475,7 +4475,7 @@ Return Value:
     } else if (diskData->PartitionNumber != 0) {
 
         //
-        // The paritition does not exist.  Zero all the data.
+        // The partition does not exist.  Zero all the data.
         //
 
         diskData->PartitionType = 0;
@@ -4486,7 +4486,7 @@ Return Value:
     }
 
     //
-    // Free the parition list allocate by I/O read partition table.
+    // Free the partition list allocate by I/O read partition table.
     //
 
     ExFreePool(partitionList);

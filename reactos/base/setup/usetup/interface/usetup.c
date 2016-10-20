@@ -1488,7 +1488,7 @@ IsDiskSizeValid(PPARTENTRY PartEntry)
 
     if (size < RequiredPartitionDiskSpace)
     {
-        /* partition is too small so ask for another partion */
+        /* partition is too small so ask for another partition */
         DPRINT1("Partition is too small (size: %I64u MB), required disk space is %lu MB\n", size, RequiredPartitionDiskSpace);
         return FALSE;
     }

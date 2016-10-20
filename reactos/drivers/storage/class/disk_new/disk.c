@@ -5635,7 +5635,7 @@ Return Values:
     }
 
     //
-    // Convert the parititon information structure into an extended
+    // Convert the partition information structure into an extended
     // structure.
     //
 
@@ -6283,7 +6283,7 @@ DiskIoctlSetPartitionInfo(
     // The HAL routines IoGet- and IoSetPartitionInformation were
     // developed before support of dynamic partitioning and therefore
     // don't distinguish between partition ordinal (that is the order
-    // of a paritition on a disk) and the partition number.  (The
+    // of a partition on a disk) and the partition number.  (The
     // partition number is assigned to a partition to identify it to
     // the system.) Use partition ordinals for these legacy calls.
     //
@@ -6354,7 +6354,7 @@ DiskIoctlSetPartitionInfoEx(
     // The HAL routines IoGet- and IoSetPartitionInformation were
     // developed before support of dynamic partitioning and therefore
     // don't distinguish between partition ordinal (that is the order
-    // of a paritition on a disk) and the partition number.  (The
+    // of a partition on a disk) and the partition number.  (The
     // partition number is assigned to a partition to identify it to
     // the system.) Use partition ordinals for these legacy calls.
     //
