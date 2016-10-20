@@ -664,7 +664,7 @@ static HRESULT WINAPI IDirect3D9Impl_CheckDeviceMultiSampleType(LPDIRECT3D9 ifac
 * One of the D3DDEVTYPE enum members.
 *
 * @param D3DFORMAT AdapterFormat
-* One of the D3DFORMAT enum members except D3DFMT_UNKNOWN that the display adapter mode where the test should occurr.
+* One of the D3DFORMAT enum members except D3DFMT_UNKNOWN that the display adapter mode where the test should occur.
 *
 * @param D3DFORMAT RenderTargetFormat
 * One of the D3DFORMAT enum members except D3DFMT_UNKNOWN for the display adapter mode's render target format to be tested.
