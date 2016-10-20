@@ -42,7 +42,7 @@ A CVS repository is a central location for all CVS information to be stored. Thi
 <sect3>
 <title>Version control of the source code</title>
 <para>
-CVS maintains a copy of each version of each file in the repository. Every time an update is made to a file in the repository, the version number goes up and prevoius versions are preserved. This is extremely useful as you can always backtrack and see what changes where made and when. Even if a file is deleted from the latest version of the source, its history is still maintained. Versioning is essential to the ReactOS project as many people are constantly working on the same source tree.
+CVS maintains a copy of each version of each file in the repository. Every time an update is made to a file in the repository, the version number goes up and previous versions are preserved. This is extremely useful as you can always backtrack and see what changes where made and when. Even if a file is deleted from the latest version of the source, its history is still maintained. Versioning is essential to the ReactOS project as many people are constantly working on the same source tree.
 </para>
 </sect3>
 

@@ -103,7 +103,7 @@ overriding any potentially pre-existing SEH handlers.
         2. Determine whatever the interrupted thread was runing in
 ring0 or in ring3 and save this information in PreviousMode field of
 The Trap frame. This is also important , since many internal API's will
-check the Provious mode , acting  differently in each case. (check CS
+check the Previous mode , acting  differently in each case. (check CS
 image on stack for this )
 
         3. Get a pointer to the top of KeTrapFrame , and patch it into
