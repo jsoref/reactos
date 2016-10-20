@@ -1338,7 +1338,7 @@ LdrpInitializeExecutionOptions(PUNICODE_STRING ImagePathName, PPEB Peb, PHANDLE 
     /* Return error if we were not provided a pointer where to save the options key handle */
     if (!OptionsKey) return STATUS_INVALID_HANDLE;
 
-    /* Zero initialize the optinos key pointer */
+    /* Zero initialize the options key pointer */
     *OptionsKey = NULL;
 
     /* Open the options key */
