@@ -246,7 +246,7 @@ ULONG FindHigherIrqlMask[32] =
     0b00000000000111111111111111110000, /* IRQL 10 */
 
     /*
-     * Now we start progressivly limiting which slave PIC interrupts have the
+     * Now we start progressively limiting which slave PIC interrupts have the
      * right to preempt us at each level.
      */
     0b00000000000011111111111111110000, /* IRQL 11 */
