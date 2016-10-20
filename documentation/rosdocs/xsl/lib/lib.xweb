@@ -348,7 +348,7 @@ number.
 <literal>em</literal>. It relies on the default <parameter>em.size</parameter>
 which is initially <literal>10</literal> (for 10pt).</para>
 
-<para>Similarly, converting pixesl to points relies on the
+<para>Similarly, converting pixels to points relies on the
 <parameter>pixels.per.inch</parameter> parameter which is initially
 <literal>90</literal>.
 </para>
