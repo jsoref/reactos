@@ -79,8 +79,8 @@ int main(int argc, char** argv)
         exit(EXIT_FAILURE);
     }
 
-    for (set<string>::iterator it = project_file.get_file_pathes_iterator_begin();
-         it != project_file.get_file_pathes_iterator_end(); ++it)
+    for (set<string>::iterator it = project_file.get_file_paths_iterator_begin();
+         it != project_file.get_file_paths_iterator_end(); ++it)
     {
         clog << "File: " << *it << endl;
         struct stat buf;

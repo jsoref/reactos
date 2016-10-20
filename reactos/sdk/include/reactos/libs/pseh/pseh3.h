@@ -465,7 +465,7 @@ _Pragma("GCC diagnostic ignored \"-Wdeclaration-after-statement\"") \
         goto _SEH3$_l_EndTry; \
 \
     _SEH3$_l_OnException: (void)0; \
-        /* Force GCC to create proper code pathes */ \
+        /* Force GCC to create proper code paths */ \
         _SEH3$_SCARE_GCC(); \
 \
     _SEH3$_l_EndTry:(void)0; \

@@ -113,11 +113,11 @@ private:
     map<string, hhp_section*> sections;
     hhp_options_section* options;
     hhp_files_section* files;
-    set<string> unique_file_pathes;
+    set<string> unique_file_paths;
     
     void add_section(hhp_section* section);
     void read();
-    void compute_unique_file_pathes_set();
+    void compute_unique_file_paths_set();
     
 public:
     hhp_reader(string filename);
@@ -130,7 +130,7 @@ public:
     unsigned int get_language_code();
     string get_compiled_file_string();
     
-    set<string>::iterator get_file_pathes_iterator_begin();
-    set<string>::iterator get_file_pathes_iterator_end();
+    set<string>::iterator get_file_paths_iterator_begin();
+    set<string>::iterator get_file_paths_iterator_end();
 };
 

@@ -360,7 +360,7 @@ int main()
 
     CRT_Tests();
 
-    /* There are two code pathes in WideCharToMultiByte, one when Flags || DefaultChar || UsedDefaultChar is set and one when it's not.
+    /* There are two code paths in WideCharToMultiByte, one when Flags || DefaultChar || UsedDefaultChar is set and one when it's not.
        Test both here. */
     Win32_Tests(NULL);
     Win32_Tests(&UsedDefaultChar);
