@@ -73,7 +73,7 @@ SCANTOASCII ucShiftScanToAscii_DE[]=
 	{44,'Y'},{45,'X'},{46,'C'},{47,'V'},{48,'B'},
 	{49,'N'},{50,'M'},
 	{2,'!'},{3,'\"'}, // " // (fixes mc syntax highlighting)
-	                {4,'@'}, // is pragraph sign on keyboard
+	                {4,'@'}, // is paragraph sign on keyboard
 					        { 5,'$'},{ 6,'%'},
 	{7,'&'},{8,'/'},{9,'('},{10,')'},{11,'='},
 	{12,'?'},
