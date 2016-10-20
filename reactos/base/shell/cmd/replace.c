@@ -33,7 +33,7 @@ void invalid_switch(LPTSTR is)
     ConOutResPaging(TRUE,STRING_REPLACE_HELP3);
 }
 
-/* retrives the pathe dependen om the input file name */
+/* retrives the pathe dependent om the input file name */
 void getPath(TCHAR* out, LPTSTR in)
 {
     if (_tcslen(in) == 2 && in[1] == _T(':'))
