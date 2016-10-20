@@ -650,7 +650,7 @@ MiniportMediaDetectionTimer(
     IN PVOID SystemSpecific2,
     IN PVOID SystemSpecific3)
 /*
- * FUNCTION: Periodially query media state
+ * FUNCTION: Periodically query media state
  * ARGUMENTS:
  *     FunctionContext: Adapter context
  * NOTES:
