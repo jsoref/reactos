@@ -26,14 +26,14 @@ CcPfInitializePrefetcher(VOID)
     /* Notify debugger */
     DbgPrintEx(DPFLTR_PREFETCHER_ID,
                DPFLTR_TRACE_LEVEL,
-               "CCPF: InitializePrefetecher()\n");
+               "CCPF: InitializePrefetcher()\n");
 
     /* Setup the Prefetcher Data */
     InitializeListHead(&CcPfGlobals.ActiveTraces);
     InitializeListHead(&CcPfGlobals.CompletedTraces);
     ExInitializeFastMutex(&CcPfGlobals.CompletedTracesLock);
 
-    /* FIXME: Setup the rest of the prefetecher */
+    /* FIXME: Setup the rest of the prefetcher */
 }
 
 BOOLEAN
