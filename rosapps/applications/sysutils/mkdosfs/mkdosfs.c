@@ -519,7 +519,7 @@ char dummy_boot_code[BOOTCODE_SIZE] =
 static char *program_name = "mkdosfs";	/* Name of the program */
 static char *device_name = NULL;	/* Name of the device on which to create the filesystem */
 static int atari_format = 0;	/* Use Atari variation of MS-DOS FS format */
-static int check = FALSE;	/* Default to no readablity checking */
+static int check = FALSE;	/* Default to no readability checking */
 static int verbose = 0;		/* Default to verbose mode off */
 static long volume_id;		/* Volume ID number */
 static time_t create_time;	/* Creation time */
