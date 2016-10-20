@@ -1037,7 +1037,7 @@ typedef CCB *PCCB;
 
 
 //
-//  The Irp Context record is allocated for every orginating Irp.  It is
+//  The Irp Context record is allocated for every originating Irp.  It is
 //  created by the Fsd dispatch routines, and deallocated by the CdComplete
 //  request routine
 //
