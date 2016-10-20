@@ -217,7 +217,7 @@ Language=English
 A conflict has been detected between two drivers which claimed equivalent DMA
 channels.
 Driver %2, with device <%3>, claimed the DMA Channel in data address 0x28, with
-optinal port in data address 0x2c.
+optional port in data address 0x2c.
 .
 
 MessageId=24
