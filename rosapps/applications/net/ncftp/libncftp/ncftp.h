@@ -604,7 +604,7 @@ void (*NcSignal(int signum, void (*handler)(int)))(int);
 #	define NcSignal signal
 #endif
 
-/* Obselete routines. */
+/* Obsolete routines. */
 int FTPGetOneFile(const FTPCIPtr cip, const char *const file, const char *const dstfile);
 int FTPGetOneFile2(const FTPCIPtr cip, const char *const file, const char *const dstfile, const int xtype, const int fdtouse, const int resumeflag, const int appendflag);
 int FTPGetFiles(const FTPCIPtr cip, const char *const pattern, const char *const dstdir, const int recurse, const int doGlob);

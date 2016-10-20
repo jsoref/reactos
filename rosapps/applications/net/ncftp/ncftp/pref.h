@@ -34,11 +34,11 @@ typedef struct PrefOpt {
 	int visible;
 } PrefOpt;
 
-#define kPrefOptObselete (-1)
+#define kPrefOptObsolete (-1)
 #define kPrefOptInvisible 0
 #define kPrefOptVisible 1
 
-#define PREFOBSELETE (PrefProc) 0, kPrefOptObselete,
+#define PREFOBSELETE (PrefProc) 0, kPrefOptObsolete,
 
 /* pref.c */
 void SetAnonPass(int, const char *const, FILE *const);

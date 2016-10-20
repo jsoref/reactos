@@ -72,7 +72,7 @@ extern char gOurDirectoryPath[], gUser[], gVersion[];
 
 PrefOpt gPrefOpts[] = {
 	{ "anonopen",				PREFOBSELETE },
-	{ "anonpass", 				SetAnonPass, kPrefOptObselete },
+	{ "anonpass", 				SetAnonPass, kPrefOptObsolete },
 	{ "anon-password",			SetAnonPass, 1 },
 	{ "auto-ascii",				SetAutoAscii, 1 },
 	{ "auto-resume",			SetAutoResume, 1 },
@@ -441,8 +441,8 @@ Set(const char *const tok1, const char *const tok2)
 		/* Show one. */
 		for (t=0; t<gNumPrefOpts; t++) {
 			if (ISTREQ(tok1, gPrefOpts[t].varname)) {
-				if (gPrefOpts[t].visible == kPrefOptObselete) {
-					(void) printf("The \"%s\" option is obselete or not implemented.\n", tok1);
+				if (gPrefOpts[t].visible == kPrefOptObsolete) {
+					(void) printf("The \"%s\" option is obsolete or not implemented.\n", tok1);
 				} else {
 					Show1(t);
 				}
@@ -456,8 +456,8 @@ Set(const char *const tok1, const char *const tok2)
 		/* Set one. */
 		for (t=0; t<gNumPrefOpts; t++) {
 			if (ISTREQ(tok1, gPrefOpts[t].varname)) {
-				if (gPrefOpts[t].visible == kPrefOptObselete) {
-					(void) printf("The \"%s\" option is obselete or not implemented.\n", tok1);
+				if (gPrefOpts[t].visible == kPrefOptObsolete) {
+					(void) printf("The \"%s\" option is obsolete or not implemented.\n", tok1);
 				} else if (gPrefOpts[t].proc != (PrefProc) 0) {
 					(*gPrefOpts[t].proc)(t, tok2, NULL);
 					gPrefsDirty++;
@@ -534,7 +534,7 @@ ProcessPrefsFile(FILE *const fp)
 
 		for (t=0; t<gNumPrefOpts; t++) {
 			if (ISTREQ(tok1, gPrefOpts[t].varname)) {
-				if (gPrefOpts[t].visible == kPrefOptObselete) {
+				if (gPrefOpts[t].visible == kPrefOptObsolete) {
 					/* Probably converting an
 					 * old 2.4.2 file.
 					 */
@@ -714,7 +714,7 @@ SavePrefs(void)
 	} else {
 		(void) fprintf(fp, "%s", "# NcFTP 3 preferences file\n# This file is loaded and overwritten each time NcFTP is run.\n#\n");
 		for (t=0; t<gNumPrefOpts; t++) {
-			if (gPrefOpts[t].visible != kPrefOptObselete) {
+			if (gPrefOpts[t].visible != kPrefOptObsolete) {
 				(void) fprintf(fp, "%s=", gPrefOpts[t].varname);
 				(*gPrefOpts[t].proc)(t, NULL, fp);
 				(void) fprintf(fp, "\n");
