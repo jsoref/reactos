@@ -4455,7 +4455,7 @@ NtAllocateVirtualMemory(IN HANDLE ProcessHandle,
             return STATUS_INVALID_PARAMETER_5;
         }
 
-        /* Only these flags are allowed with MEM_PHYSIAL */
+        /* Only these flags are allowed with MEM_PHYSICAL */
         if (AllocationType & ~(MEM_RESERVE | MEM_TOP_DOWN | MEM_PHYSICAL))
         {
             DPRINT1("Using illegal flags with MEM_PHYSICAL\n");

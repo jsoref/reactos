@@ -650,7 +650,7 @@ NdisMCompleteBufferPhysicalMapping(
  * ARGUMENTS:
  *     - MiniportAdapterHandle: handle originally input to MiniportInitialize
  *     - Buffer: NDIS_BUFFER to complete the mapping on
- *     - PhyscialMapRegister: the chosen map register
+ *     - PhysicalMapRegister: the chosen map register
  * NOTES:
  *     - May be called at IRQL <= DISPATCH_LEVEL
  */
