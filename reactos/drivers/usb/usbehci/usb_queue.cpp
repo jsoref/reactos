@@ -53,7 +53,7 @@ protected:
     PQUEUE_HEAD AsyncListQueueHead;                                                     // async queue head
     LIST_ENTRY m_CompletedRequestAsyncList;                                             // completed async request list
     LIST_ENTRY m_PendingRequestAsyncList;                                               // pending async request list
-    ULONG m_MaxPeriodicListEntries;                                                     // max perdiodic list entries
+    ULONG m_MaxPeriodicListEntries;                                                     // max periodic list entries
     ULONG m_MaxPollingInterval;                                                         // max polling interval
     PHYSICAL_ADDRESS m_SyncFrameListAddr;                                               // physical address of sync frame list
     PULONG m_SyncFrameList;                                                             // virtual address of sync frame list
