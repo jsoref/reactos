@@ -86,7 +86,7 @@ INT replace(TCHAR source[MAX_PATH], TCHAR dest[MAX_PATH], DWORD dwFlags, BOOL *d
     if (IsExistingFile (dest))
     {
         /*
-         * Resets the attributes to avoid probles with read only files,
+         * Resets the attributes to avoid problems with read only files,
          * checks for read only has been made earlier.
          */
         SetFileAttributes(dest,FILE_ATTRIBUTE_NORMAL);
