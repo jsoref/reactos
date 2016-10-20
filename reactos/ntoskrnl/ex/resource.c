@@ -1882,7 +1882,7 @@ ExReleaseResourceForThreadLite(IN PERESOURCE Resource,
             /* Remove the exclusive flag */
             Resource->Flag &= ~ResourceOwnedExclusive;
             
-            /* Give ownage to another thread */
+            /* Give ownership to another thread */
             Count = Resource->NumberOfSharedWaiters;
             Resource->ActiveEntries = Count;
             Resource->NumberOfSharedWaiters = 0;
