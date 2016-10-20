@@ -1631,7 +1631,7 @@ Arguments:
 
     DeviceObject - Pointer to the class device object to be addressed.
 
-    Irp - Pointer to Irp the orginal request.
+    Irp - Pointer to Irp the original request.
 
 Return Value:
 
@@ -1691,9 +1691,9 @@ Return Value:
             DebugPrint((1,"ScsiClassSplitRequest: Can't allocate Irp\n"));
 
             //
-            // If an Irp can't be allocated then the orginal request cannot
+            // If an Irp can't be allocated then the original request cannot
             // be executed.  If this is the first request then just fail the
-            // orginal request; otherwise just return.  When the pending
+            // original request; otherwise just return.  When the pending
             // requests complete, they will complete the original request.
             // In either case set the IRP status to failure.
             //
@@ -3696,7 +3696,7 @@ Routine Description:
     the port driver.
 
 Arguments:
-    DeviceObject - Supplies the device object for the orginal request.
+    DeviceObject - Supplies the device object for the original request.
 
     Srb - Supplies a paritally built ScsiRequestBlock.  In particular, the
         CDB and the SRB timeout value must be filled in.  The SRB must not be

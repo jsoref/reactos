@@ -37,7 +37,7 @@
  Logitech serial mouse
 
    Logitech uses the Microsoft serial mouse protocol in their mouses (for
-   example Logitech Pilot mouse and others). The origianal protocol supports
+   example Logitech Pilot mouse and others). The original protocol supports
    only two buttons, but logitech as added third button to some of their
    mouse models. To make this possible logitech has made one extension to
    the protocol. 

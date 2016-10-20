@@ -2290,7 +2290,7 @@ LdrpGetProcedureAddress(IN PVOID BaseAddress,
             return STATUS_INVALID_PARAMETER;
         }
 
-        /* Set the orginal flag in the thunk */
+        /* Set the original flag in the thunk */
         Thunk.u1.Ordinal = Ordinal | IMAGE_ORDINAL_FLAG;
     }
 
