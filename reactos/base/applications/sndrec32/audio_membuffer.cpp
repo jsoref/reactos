@@ -19,7 +19,7 @@ audio_membuffer::alloc_mem_(unsigned int bytes)
     if (bytes == 0)
         return;
 
-    /* Checks previsiously alloc'd memory and frees it */
+    /* Checks previously alloc'd memory and frees it */
     if (audio_data)
         delete[] audio_data;
 
