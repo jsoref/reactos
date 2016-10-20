@@ -312,7 +312,7 @@ StopStreamingInSoundThread(
         CompleteWaveHeader( SoundDeviceInstance, SoundDeviceInstance->HeadWaveHeader );
     }
 
-    /* there should be no oustanding buffers now */
+    /* there should be no outstanding buffers now */
     SND_ASSERT(SoundDeviceInstance->OutstandingBuffers == 0);
 
 
