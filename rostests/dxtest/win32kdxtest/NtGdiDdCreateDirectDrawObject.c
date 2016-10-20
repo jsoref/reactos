@@ -32,7 +32,7 @@ test_NtGdiDdCreateDirectDrawObject()
 
     if (hdc == NULL)
     {
-        printf("No hdc was created at all perpare all test will fail\n");
+        printf("No hdc was created at all prepare all test will fail\n");
         return NULL;
     }
 
