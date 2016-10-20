@@ -51,7 +51,7 @@ UnpackServEnt(PSERVENT Servent)
     /* Convert all the List Offsets to Pointers */
     FixList(&Servent->s_aliases, ServentPtr);
 
-    /* Convert the Name and Protocol Offesets to Pointers */
+    /* Convert the Name and Protocol Offsets to Pointers */
     Servent->s_name = (PCHAR)(Servent->s_name + ServentPtr);
     Servent->s_proto = (PCHAR)(Servent->s_proto + ServentPtr);
 }
