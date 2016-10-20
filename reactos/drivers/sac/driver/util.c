@@ -699,7 +699,7 @@ InitializeMachineInformation(VOID)
     RTL_OSVERSIONINFOEXW VersionInformation;
     SAC_DBG(SAC_DBG_ENTRY_EXIT, "SAC Initialize Machine Information : Entering.\n");
 
-    /* Don't do anything if we already quried this */
+    /* Don't do anything if we already queried this */
     if (MachineInformation)
     {
         SAC_DBG(SAC_DBG_MACHINE, "SAC Initialize Machine Information:: MachineInformationBuffer already initialized.\n");
