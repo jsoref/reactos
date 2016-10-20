@@ -41,7 +41,7 @@
  *        printf(str). Don't ask how I find em just be glad I do :)
  *
  *    7/12/97 (Tim Norman)
- *        Note: above changes pre-empted Steffan's ctrl-break checking.
+ *        Note: above changes preempted Steffan's ctrl-break checking.
  *
  *    7/7/97 (Marc Desrochers)
  *        rewrote a new findxy() because the new dir() used it.  This

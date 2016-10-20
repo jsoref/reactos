@@ -1361,7 +1361,7 @@ KxQueueReadyThread(IN PKTHREAD Thread,
         /* Set thread ready for execution */
         Thread->State = Ready;
 
-        /* Save current priority and if someone had pre-empted it */
+        /* Save current priority and if someone had preempted it */
         Priority = Thread->Priority;
         Preempted = Thread->Preempted;
 

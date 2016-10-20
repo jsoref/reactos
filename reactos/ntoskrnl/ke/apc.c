@@ -421,7 +421,7 @@ KiDeliverApc(IN KPROCESSOR_MODE DeliveryMode,
             /* Check if there still is a Normal Routine */
             if (NormalRoutine)
             {
-                /* At Passive Level, an APC can be prempted by a Special APC */
+                /* At Passive Level, an APC can be preempted by a Special APC */
                 Thread->ApcState.KernelApcInProgress = TRUE;
                 KeLowerIrql(PASSIVE_LEVEL);
 
