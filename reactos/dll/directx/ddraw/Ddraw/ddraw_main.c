@@ -45,7 +45,7 @@ Main_DirectDraw_QueryInterface (LPDDRAWI_DIRECTDRAW_INT This,
     _SEH2_TRY
     {
         /* FIXME
-            the D3D object can be optained from here
+            the D3D object can be obtained from here
             Direct3D7
         */
         if (IsEqualGUID(&IID_IDirectDraw7, id))
@@ -465,7 +465,7 @@ Main_DirectDraw_GetFourCCCodes(LPDDRAWI_DIRECTDRAW_INT This, LPDWORD lpNumCodes,
 
 
 /*
- * We can optain the version of the directdraw object by compare the
+ * We can obtain the version of the directdraw object by compare the
  * vtl table pointer from iface we do not need pass which version
  * we whant to use
  *

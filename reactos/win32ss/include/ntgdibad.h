@@ -117,7 +117,7 @@ NtGdiSetWindowOrgEx (
 /* Follow thing need be rewriten
  *
  * Opengl icd are complete hacked in reactos and are using own way, this need be rewriten and be setup with the correct syscall
- * and the opengl32 shall using correct syscall to optain then driver interface or using the correct version in gdi32.
+ * and the opengl32 shall using correct syscall to obtain then driver interface or using the correct version in gdi32.
  * it mean whole icd are hacked in frist place and need be rewtiten from scrash. and it need enum the opengl correct way and
  * export the driver correct
  *
