@@ -1783,7 +1783,7 @@ BmpProcessBootEntry (
     /* If the legacy menu must be shown, or if we have a boot entry */
     if ((BmGetBootMenuPolicy(BootEntry) != MenuPolicyStandard) || (BootEntry))
     {
-        /* Check if any key has been presseed */
+        /* Check if any key has been pressed */
         BmDisplayGetBootMenuStatus(&MenuStatus);
         if (MenuStatus.AnyKey)
         {
