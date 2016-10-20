@@ -214,7 +214,7 @@ MmNotPresentFaultCachePage (
     else if (MM_IS_WAIT_PTE(Entry))
     {
         // Whenever MM_WAIT_ENTRY is required as a swap entry, we need to
-        // ask the fault handler to wait until we should continue.  Rathern
+        // ask the fault handler to wait until we should continue.  Rather
         // than recopy this boilerplate code everywhere, we just ask them
         // to wait.
         MmUnlockSectionSegment(Segment);
