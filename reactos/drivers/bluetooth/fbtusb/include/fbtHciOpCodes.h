@@ -3,7 +3,7 @@
 
 // Opcode Group Field (OGF) codes
 #define FBT_HCI_OGF_LINK_CONTROL                      			0x01	// Link control group
-#define FBT_HCI_OGF_LINK_POLICY                       			0x02	// Link polic group
+#define FBT_HCI_OGF_LINK_POLICY                       			0x02	// Link policy group
 #define FBT_HCI_OGF_CONTROL_BASEBAND                  			0x03	// Host Controller & Baseband group
 #define FBT_HCI_OGF_INFORMATIONAL_PARAMETERS          			0x04	// Information parameters group
 #define FBT_HCI_OGF_STATUS_PARAMETERS                 			0x05	// Status parameters group
