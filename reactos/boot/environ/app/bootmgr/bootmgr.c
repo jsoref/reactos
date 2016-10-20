@@ -1729,7 +1729,7 @@ BmGetBootMenuPolicy (
             return MenuPolicyLegacy;
         }
 
-        /* Use the correct opetion ID */
+        /* Use the correct option ID */
         OptionId = BcdResumeInteger_BootMenuPolicy;
     }
 
