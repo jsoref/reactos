@@ -161,7 +161,7 @@ typedef struct _GINAINSTANCE
  *    the dialog.
  *
  * STATE_LOCKED_SAS
- *    Winlogon shows the unlock dialog. Presing "Cancel" or a timeout will
+ *    Winlogon shows the unlock dialog. Pressing "Cancel" or a timeout will
  *    change the state back to STATE_LOCKED. Entering the right credentials and
  *    pressing "OK" unlocks the computer and changes the state to
  *    STATE_LOGGED_ON.
@@ -172,7 +172,7 @@ typedef struct _GINAINSTANCE
  *    and changes the state to STATE_LOGGED_OFF.
  *
  * STATE_SHUTTING_DOWN
- *    Winlogon shows the shutdown dialog. Presing "Cancel" or a timeout will
+ *    Winlogon shows the shutdown dialog. Pressing "Cancel" or a timeout will
  *    change the state back to STATE_LOGGED_ON_SAS. Pressing "OK" will change
  *    the state to STATE_SHUT_DOWN.
  *
