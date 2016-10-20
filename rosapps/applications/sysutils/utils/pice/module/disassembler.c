@@ -71,7 +71,7 @@ typedef struct
 #define DIS_ADDRESS32       0x0002  // Address size 16/32 bits (0/1)
 #define   DIS_GETADDRSIZE(flags) (((flags)&DIS_ADDRESS32)?1:0)
 
-#define DIS_SEGOVERRIDE     0x0004  // Default segment has been overriden
+#define DIS_SEGOVERRIDE     0x0004  // Default segment has been overridden
 
 #define DIS_REP             0x0100  // Return: REP prefix found (followed by..)
 #define DIS_REPNE           0x0200  // Return: REPNE prefix found
@@ -411,7 +411,7 @@ StartInstructionNoMODRM:
 
              case _Ma :                                         // Used by bound instruction, skip the pointer info
 
-                 // Print the segment if it is overriden
+                 // Print the segment if it is overridden
                  //
                  nPos += PICE_sprintf( pDis->szDisasm+nPos,"%s", sSegOverride[ bSegOverride ] );
 
