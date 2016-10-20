@@ -3,7 +3,7 @@ spec2def(powercfg.cpl powercfg.spec)
 
 list(APPEND SOURCE
     powercfg.c
-    powershemes.c
+    powerschemes.c
     alarms.c
     advanced.c
     hibernate.c
