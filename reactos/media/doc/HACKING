@@ -118,7 +118,7 @@ Debugging kernel-mode code is tricky, these are some snippets
     only. Legally therefore it can not be used to develop ReactOS, neither the
     documentation or the sample code. I'm not a lawyer, but I doubt the
     efficacy of 'shrinkwrap licenses' particularly on freely downloadable 
-    software. The only precendent I know of, in a Scottish court, didn't
+    software. The only precedent I know of, in a Scottish court, didn't
     upload this type of license.
     
     Also the 'fair use' section of copyright law allows the 'quoting' of small
