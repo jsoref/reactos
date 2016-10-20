@@ -249,7 +249,7 @@ KiUserModeCallout(PKCALLOUT_FRAME CalloutFrame)
     CurrentThread = KeGetCurrentThread();
 
 #if DBG
-    /* Check if we are at pasive level */
+    /* Check if we are at passive level */
     if (KeGetCurrentIrql() != PASSIVE_LEVEL)
     {
         /* We're not, bugcheck */
