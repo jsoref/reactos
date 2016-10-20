@@ -473,7 +473,7 @@ VOID ScreenEventHandler(PWINDOW_BUFFER_SIZE_RECORD ScreenEvent)
 {
     /*
      * This function monitors and allows console resizings only if they are triggered by us.
-     * User-driven resizings via the console properties, or programmatical console resizings
+     * User-driven resizings via the console properties, or programmatic console resizings
      * made by explicit calls to SetConsoleScreenBufferSize by external applications, are forbidden.
      * In that case only a console window resize is done in case the size is reduced.
      * This protection is enabled in CONSRV side when NTVDM registers as a VDM to CONSRV,
