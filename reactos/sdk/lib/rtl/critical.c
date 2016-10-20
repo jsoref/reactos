@@ -100,7 +100,7 @@ RtlpCreateCriticalSectionSem(PRTL_CRITICAL_SECTION CriticalSection)
  *     CriticalSection - Critical section to acquire.
  *
  * Returns:
- *     STATUS_SUCCESS, or raises an exception if a deadlock is occuring.
+ *     STATUS_SUCCESS, or raises an exception if a deadlock is occurring.
  *
  * Remarks:
  *     None
