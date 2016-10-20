@@ -4403,7 +4403,7 @@ Return Value:
             }
 
             //
-            // Zero the ouput buffer as the input buffer info. has been saved off locally (the buffers are the same).
+            // Zero the output buffer as the input buffer info. has been saved off locally (the buffers are the same).
             //
 
             for (i = 0; i < (sizeof(SENDCMDOUTPARAMS) + READ_ATTRIBUTE_BUFFER_SIZE - 1); i++) {
@@ -4453,7 +4453,7 @@ Return Value:
             }
 
             //
-            // Zero the ouput buffer as the input buffer info. has been saved off locally (the buffers are the same).
+            // Zero the output buffer as the input buffer info. has been saved off locally (the buffers are the same).
             //
 
             for (i = 0; i < (sizeof(SENDCMDOUTPARAMS) - 1); i++) {

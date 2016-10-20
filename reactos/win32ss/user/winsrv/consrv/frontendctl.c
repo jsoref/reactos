@@ -20,7 +20,7 @@
  *
  *  DESCRIPTION
  *      Set/Get the value of the HardwareState and switch
- *      between direct video buffer ouput and GDI windowed
+ *      between direct video buffer output and GDI windowed
  *      output.
  *  ARGUMENTS
  *      Client hands us a CONSOLE_GETSETHWSTATE object.

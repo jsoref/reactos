@@ -120,7 +120,7 @@ Copyright notice:
 	3		auxillary output #2.(Note: This bit must be
 			set to allow the communications card to send
 			interrupts to the system)
-	4		UART ouput looped back as input.
+	4		UART output looped back as input.
 	5-7		not used.
  *------------------------------------------------------------------*/
 #define DTR             0x01
