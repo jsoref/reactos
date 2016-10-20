@@ -306,14 +306,14 @@ DdCreateSurface(LPDDHAL_CREATESURFACEDATA pCreateSurface)
      * DD_SURFACE_GLOBAL DdSurfaceGlobal, HANDLE hPrevSurface, hSurface like
      * struct { DD_SURFACE_LOCAL DdSurfaceLocal1, DD_SURFACE_LOCAL DdSurfaceLocal2 }
      * in a way that it may contain two surfaces, maybe even four. We need to watch what is most common before
-     * we create the size. Activate this IF when you start doing the optimze and please also
+     * we create the size. Activate this IF when you start doing the optimize and please also
      * take reports from users which value they got here.
      */
 #if 1
     {
         char buffer[1024];
         \
-        sprintf ( buffer, "Function %s : Optimze max to %d Surface ? (%s:%d)\n", __FUNCTION__, (int)SurfaceCount,__FILE__,__LINE__ );
+        sprintf ( buffer, "Function %s : Optimize max to %d Surface ? (%s:%d)\n", __FUNCTION__, (int)SurfaceCount,__FILE__,__LINE__ );
         OutputDebugStringA(buffer);
     }
 #endif
