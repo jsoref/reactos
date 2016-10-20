@@ -278,7 +278,7 @@ NTAPI
 INIT_FUNCTION
 MiBuildNonPagedPool(VOID)
 {
-    /* Check if this is a machine with less than 256MB of RAM, and no overide */
+    /* Check if this is a machine with less than 256MB of RAM, and no override */
     if ((MmNumberOfPhysicalPages <= MI_MIN_PAGES_FOR_NONPAGED_POOL_TUNING) &&
         !(MmSizeOfNonPagedPoolInBytes))
     {
