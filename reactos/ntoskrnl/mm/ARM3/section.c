@@ -3023,7 +3023,7 @@ MmUnmapViewInSessionSpace(IN PVOID MappedBase)
     /* Process must be in a session */
     if (PsGetCurrentProcess()->ProcessInSession == FALSE)
     {
-        DPRINT1("Proess is not in session\n");
+        DPRINT1("Process is not in session\n");
         return STATUS_NOT_MAPPED_VIEW;
     }
 

@@ -912,7 +912,7 @@ CPortPinWaveCyclic::DeviceIoControl(
             //determine state of reset request
             if (ResetValue == KSRESET_BEGIN)
             {
-                // start reset procress
+                // start reset process
                 // incoming read/write requests will be rejected
                 m_ResetState = KSRESET_BEGIN;
 

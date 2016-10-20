@@ -1197,7 +1197,7 @@ GspStopReply(NTSTATUS ExceptionCode, PKTRAP_FRAME TrapFrame)
 }
 
 /*
- * This function does all command procesing for interfacing to GDB.
+ * This function does all command processing for interfacing to GDB.
  */
 KD_CONTINUE_TYPE
 NTAPI

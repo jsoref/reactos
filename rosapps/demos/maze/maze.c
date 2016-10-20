@@ -889,7 +889,7 @@ LRESULT CALLBACK WndProc(
 			PostQuitMessage(0);
 			break;
 
-		default:          // Passes it on if unproccessed
+		default:          // Passes it on if unprocessed
 			return (DefWindowProc(hWnd, message, wParam, lParam));
 	}
 	return (0);

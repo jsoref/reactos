@@ -321,7 +321,7 @@ Execute(LPTSTR Full, LPTSTR First, LPTSTR Rest, PARSED_COMMAND *Cmd)
     TRACE ("Execute: \'%s\' \'%s\'\n", debugstr_aw(First), debugstr_aw(Rest));
 
     /* Though it was already parsed once, we have a different set of rules
-       for parsing before we pass to CreateProccess */
+       for parsing before we pass to CreateProcess */
     if (First[0] == _T('/') || (First[0] && First[1] == _T(':')))
     {
         /* Use the entire first word as the program name (no change) */

@@ -136,7 +136,7 @@ CsrProcessRefcountZero(IN PCSR_PROCESS CsrProcess)
     /* Close the process handle */
     NtClose(CsrProcess->ProcessHandle);
 
-    /* Free the Proces Object */
+    /* Free the Process Object */
     CsrDeallocateProcess(CsrProcess);
 }
 

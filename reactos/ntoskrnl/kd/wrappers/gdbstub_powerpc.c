@@ -1244,7 +1244,7 @@ GspUnloadBreakpoints(PKTRAP_FRAME TrapFrame)
 
 static BOOLEAN gdb_attached_yet = FALSE;
 /*
- * This function does all command procesing for interfacing to gdb.
+ * This function does all command processing for interfacing to gdb.
  */
 KD_CONTINUE_TYPE
 NTAPI

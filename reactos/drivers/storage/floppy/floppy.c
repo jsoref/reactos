@@ -1199,7 +1199,7 @@ DriverEntry(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)
     ZwClose(ThreadHandle);
 
     /*
-     * Start the device discovery proces.  Returns STATUS_SUCCESS if
+     * Start the device discovery process.  Returns STATUS_SUCCESS if
      * it finds even one drive attached to one controller.
      */
     if(!AddControllers(DriverObject))
