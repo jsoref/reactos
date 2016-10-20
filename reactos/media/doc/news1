@@ -117,7 +117,7 @@ error code on stack , some exceptions do , and traps never push an
 error code by default. Suplimentary information can be found in intel
 arch. reference manual .
 
-        5. Optionaly enable the interrupts trough a STI . NT uses
+        5. Optionally enable the interrupts trough a STI . NT uses
 usualy interrupt gates , so the CPU will clear IF upon entering an
 exception handler. Note that in the case handling the interrupt or
 exception trough a trap gate , IF will not be automatically cleared.
