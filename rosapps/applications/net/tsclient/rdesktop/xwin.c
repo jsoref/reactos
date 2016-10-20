@@ -470,7 +470,7 @@ translate_colour(RDPCLIENT * This, uint32 colour)
 /* *INDENT-OFF* */
 
 /* repeat and unroll, similar to bitmap.c */
-/* potentialy any of the following translate */
+/* potentially any of the following translate */
 /* functions can use repeat but just doing */
 /* the most common ones */
 

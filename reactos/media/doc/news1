@@ -98,7 +98,7 @@ frame are : (assumes that the handler already set the FS register to
 kernel PCR selector )
 
         1. Save old Exception List head , and patch -1 to FS:0 ( thus
-overriding any potentialy pre-existing SEH handlers.
+overriding any potentially pre-existing SEH handlers.
 
         2. Determine whatever the interrupted thread was runing in
 ring0 or in ring3 and save this information in PreviousMode field of
