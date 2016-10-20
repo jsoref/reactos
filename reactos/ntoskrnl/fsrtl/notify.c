@@ -558,7 +558,7 @@ FsRtlNotifyUpdateBuffer(OUT PFILE_NOTIFY_INFORMATION OutputBuffer,
  * @name FsRtlNotifyChangeDirectory
  * @implemented
  *
- * Lets FSD know if changes occures in the specified directory.
+ * Lets FSD know if changes occurs in the specified directory.
  * Directory will be reenumerated.
  *
  * @param NotifySync
@@ -1413,7 +1413,7 @@ FsRtlNotifyFilterReportChange(IN PNOTIFY_SYNC NotifySync,
  * @name FsRtlNotifyFullChangeDirectory
  * @implemented
  *
- * Lets FSD know if changes occures in the specified directory.
+ * Lets FSD know if changes occurs in the specified directory.
  *
  * @param NotifySync
  *        Synchronization object pointer
