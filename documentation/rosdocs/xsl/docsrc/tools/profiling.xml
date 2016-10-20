@@ -156,7 +156,7 @@ distribution and can be found in file
 <para>If you want to generate Unix specific guide from our sample
 document (<xref linkend="ex.doc"/>) you can do it in the following
 way. (We assume, that command <command>saxon</command> is able to run
-XSLT processor on your machine. You can use your preffered XSLT
+XSLT processor on your machine. You can use your preferred XSLT
 processor instead.)</para>
 
 <screen><command>saxon</command> <option>-o</option> unixsample.xml sample.xml profile.xsl "os=unix"</screen>
