@@ -119,7 +119,7 @@ typedef struct _VMEMHEAP
     DWORD dwTotalSize;
     FLATPTR fpGARTLin;
     FLATPTR fpGARTDev;
-    DWORD dwCommitedSize;
+    DWORD dwCommittedSize;
     DWORD dwCoalesceCount;
     HEAPALIGNMENT Alignment;
     DDSCAPSEX ddsCapsEx;

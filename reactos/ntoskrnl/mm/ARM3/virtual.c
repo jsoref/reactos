@@ -53,7 +53,7 @@ MiCalculatePageCommitment(IN ULONG_PTR StartingAddress,
     PointerPte = MiAddressToPte(StartingAddress);
     LastPte = MiAddressToPte(EndingAddress);
 
-    /* Handle commited pages first */
+    /* Handle committed pages first */
     if (Vad->u.VadFlags.MemCommit == 1)
     {
         /* This is a committed VAD, so Assume the whole range is committed */
@@ -109,13 +109,13 @@ MiCalculatePageCommitment(IN ULONG_PTR StartingAddress,
             /* Is this PTE demand zero? */
             if (PointerPte->u.Long != 0)
             {
-                /* It isn't -- is it a decommited, invalid, or faulted PTE? */
+                /* It isn't -- is it a decommitted, invalid, or faulted PTE? */
                 if ((PointerPte->u.Soft.Protection == MM_DECOMMIT) &&
                     (PointerPte->u.Hard.Valid == 0) &&
                     ((PointerPte->u.Soft.Prototype == 0) ||
                      (PointerPte->u.Soft.PageFileHigh == MI_PTE_LOOKUP_NEEDED)))
                 {
-                    /* It is, so remove it from the count of commited pages */
+                    /* It is, so remove it from the count of committed pages */
                     CommittedPages--;
                 }
             }
@@ -128,7 +128,7 @@ MiCalculatePageCommitment(IN ULONG_PTR StartingAddress,
         return CommittedPages;
     }
 
-    /* This is a non-commited VAD, so assume none of it is committed */
+    /* This is a non-committed VAD, so assume none of it is committed */
     CommittedPages = 0;
 
     /* Is the PDE demand-zero? */
@@ -181,7 +181,7 @@ MiCalculatePageCommitment(IN ULONG_PTR StartingAddress,
         /* Is this PTE demand-zero? */
         if (PointerPte->u.Long != 0)
         {
-            /* Nope. Is it a valid, non-decommited, non-paged out PTE? */
+            /* Nope. Is it a valid, non-decommitted, non-paged out PTE? */
             if ((PointerPte->u.Soft.Protection != MM_DECOMMIT) ||
                 (PointerPte->u.Hard.Valid == 1) ||
                 ((PointerPte->u.Soft.Prototype == 1) &&
@@ -1546,7 +1546,7 @@ MiQueryAddressState(IN PVOID Va,
             /* The PTE is valid, so it's not zeroed out */
             DemandZeroPte = FALSE;
 
-            /* Is it a decommited, invalid, or faulted PTE? */
+            /* Is it a decommitted, invalid, or faulted PTE? */
             if ((TempPte.u.Soft.Protection == MM_DECOMMIT) &&
                 (TempPte.u.Hard.Valid == 0) &&
                 ((TempPte.u.Soft.Prototype == 0) ||
@@ -1589,7 +1589,7 @@ MiQueryAddressState(IN PVOID Va,
         ASSERT(Vad->u.VadFlags.VadType != VadDevicePhysicalMemory);
         ASSERT(Vad->u.VadFlags.VadType != VadAwe);
 
-        /* Check if this is private commited memory, or an section-backed VAD */
+        /* Check if this is private committed memory, or an section-backed VAD */
         if ((Vad->u.VadFlags.PrivateMemory == 0) && (Vad->ControlArea))
         {
             /* Tell caller about the next range */
@@ -2027,7 +2027,7 @@ MiIsEntireRangeCommitted(IN ULONG_PTR StartingAddress,
         }
         else
         {
-            /* It isn't -- is it a decommited, invalid, or faulted PTE? */
+            /* It isn't -- is it a decommitted, invalid, or faulted PTE? */
             if ((PointerPte->u.Soft.Protection == MM_DECOMMIT) &&
                 (PointerPte->u.Hard.Valid == 0) &&
                 ((PointerPte->u.Soft.Prototype == 0) ||
@@ -2516,7 +2516,7 @@ MiDecommitPages(IN PVOID StartingAddress,
     //
     // Get the PTE and PTE for the address, and lock the working set
     // If this was a VAD for a MEM_COMMIT allocation, also figure out where the
-    // commited range ends so that we can do the right accounting.
+    // committed range ends so that we can do the right accounting.
     //
     PointerPde = MiAddressToPde(StartingAddress);
     PointerPte = MiAddressToPte(StartingAddress);
@@ -2567,7 +2567,7 @@ MiDecommitPages(IN PVOID StartingAddress,
             if (PointerPte->u.Long == MmDecommittedPte.u.Long)
             {
                 //
-                // It's already decommited, so there's nothing for us to do here
+                // It's already decommitted, so there's nothing for us to do here
                 //
                 CommitReduction++;
             }

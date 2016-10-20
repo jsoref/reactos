@@ -447,7 +447,7 @@ BehaviorChecks(HANDLE FileHandleReadOnly, HANDLE FileHandleWriteOnly)
 
     ZwClose(WriteSectionHandle);
 
-    //section created with sec_reserve should not be commited.
+    //section created with sec_reserve should not be committed.
     BaseAddress = NULL;
     ViewSize = 0;
     SectionOffset.QuadPart = 0;

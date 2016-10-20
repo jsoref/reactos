@@ -1536,7 +1536,7 @@ MiCreatePagingFileMap(OUT PSEGMENT *Segment,
     /* Calculate how many Prototype PTEs will be needed */
     PteCount = (PFN_COUNT)((*MaximumSize + PAGE_SIZE - 1) >> PAGE_SHIFT);
 
-    /* For commited memory, we must have a valid protection mask */
+    /* For committed memory, we must have a valid protection mask */
     if (AllocationAttributes & SEC_COMMIT) ASSERT(ProtectionMask != 0);
 
     /* The segment contains all the Prototype PTEs, allocate it in paged pool */
@@ -3158,7 +3158,7 @@ MmCommitSessionMappedView(IN PVOID MappedBase,
     if (ControlArea->FilePointer != NULL)
     {
         /* It is, so we have to bail out */
-        DPRINT1("Only page-filed backed sections can be commited\n");
+        DPRINT1("Only page-filed backed sections can be committed\n");
         KeReleaseGuardedMutex(Session->SystemSpaceViewLockPointer);
         return STATUS_ALREADY_COMMITTED;
     }

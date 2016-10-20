@@ -40,7 +40,7 @@ MiCreatePebOrTeb(IN PEPROCESS Process,
     Vad = ExAllocatePoolWithTag(NonPagedPool, sizeof(MMVAD_LONG), 'ldaV');
     if (!Vad) return STATUS_NO_MEMORY;
 
-    /* Setup the primary flags with the size, and make it commited, private, RW */
+    /* Setup the primary flags with the size, and make it committed, private, RW */
     Vad->u.LongFlags = 0;
     Vad->u.VadFlags.CommitCharge = BYTES_TO_PAGES(Size);
     Vad->u.VadFlags.MemCommit = TRUE;

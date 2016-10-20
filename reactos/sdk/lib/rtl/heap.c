@@ -3231,7 +3231,7 @@ RtlpValidateHeapSegment(
         if (UcrDescriptor &&
             ((PVOID)CurrentEntry >= UcrDescriptor->Address))
         {
-            DPRINT1("HEAP: Entry %p is not inside uncommited range [%p .. %p)\n",
+            DPRINT1("HEAP: Entry %p is not inside uncommitted range [%p .. %p)\n",
                     CurrentEntry, UcrDescriptor->Address,
                     (PCHAR)UcrDescriptor->Address + UcrDescriptor->Size);
 
