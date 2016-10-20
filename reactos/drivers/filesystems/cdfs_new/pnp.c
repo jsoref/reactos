@@ -527,7 +527,7 @@ Return Value:
     //
     //  Now make our dismount happen.  This may not vaporize the
     //  Vcb, of course, since there could be any number of handles
-    //  outstanding if we were not preceeded by a QUERY.
+    //  outstanding if we were not preceded by a QUERY.
     //
     //  PnP will take care of disconnecting this stack if we
     //  couldn't get off of it immediately.

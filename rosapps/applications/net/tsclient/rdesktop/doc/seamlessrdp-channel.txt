@@ -146,7 +146,7 @@ State can have one of three values:
  1 : Minimized.
  2 : Maximized.
 
-The initial STATE for a window will always be preceeded by one CREATE and one
+The initial STATE for a window will always be preceded by one CREATE and one
 POSITION. Optionally, a TITLE may also be sent before the first STATE.
 
 DEBUG

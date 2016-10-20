@@ -1140,7 +1140,7 @@ CreateOutputFile(FILE *OutFile, void *InData,
 
         PaddedStringTableLength = StringTableLength + PaddingSize;
         PaddedStringTable = malloc(PaddedStringTableLength);
-        /* COFF string section is preceeded by a length */
+        /* COFF string section is preceded by a length */
         assert(sizeof(StringTableLength) == 4);
         memcpy(PaddedStringTable, &StringTableLength, sizeof(StringTableLength));
         /* We just copy enough of the string table to contain the strings we want
