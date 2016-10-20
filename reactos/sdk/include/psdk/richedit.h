@@ -826,7 +826,7 @@ void WINAPI HyphenateProc(WCHAR*, LANGID, LONG, HYPHRESULT*);
 /* ENOLEOPFAILED.lOper value that indicates operation failure */
 #define OLEOP_DOVERB          0x00000001
 
-/* punctionation type values for wParam of EM_SETPUNCTUATION message */
+/* punctuation type values for wParam of EM_SETPUNCTUATION message */
 #define PC_FOLLOWING          0x00000001
 #define PC_LEADING            0x00000002
 #define PC_OVERFLOW           0x00000003
