@@ -674,7 +674,7 @@ VfatVerify(
         {
             /*
              * FIXME:
-             *   Preformated floppy disks have very often a serial number of 0000:0000.
+             *   Preformatted floppy disks have very often a serial number of 0000:0000.
              *   We should calculate a crc sum over the sectors from the root directory as secondary volume number.
              *   Each write to the root directory must update this crc sum.
              */
