@@ -224,7 +224,7 @@ CGridView::OnSize(
                  SWP_NOZORDER | SWP_SHOWWINDOW);
 
     // Get the client area we can draw on. The position we set above includes
-    // a scrollbar which we obvioulsy can't draw on. GetClientRect gives us
+    // a scrollbar which we obviously can't draw on. GetClientRect gives us
     // the size without the scroll, and it's more efficient than getting the
     // scroll metrics and calculating the size from that
     RECT ClientRect;
