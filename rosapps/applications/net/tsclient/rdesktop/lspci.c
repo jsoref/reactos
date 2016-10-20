@@ -50,7 +50,7 @@ handle_child_line(RDPCLIENT * This, const char *line, void *data)
 	if (str_startswith(line, "Class:"))
 	{
 		val = line + sizeof("Class:");
-		/* Skip whitespace and second Class: occurance */
+		/* Skip whitespace and second Class: occurrence */
 		val += strspn(val, " \t") + sizeof("Class");
 		current_device.klass = strtol(val, NULL, 16);
 	}

@@ -504,7 +504,7 @@ fault stack and call the inner fault handler in a worker thread if required.
 Note that faults are taken at passive level and have access to ordinary
 driver entry points such as those that read and write files, and filesystems
 should use paged structures whenever possible.  This makes recursive faults
-both a perfectly normal occurrance, and a worthwhile case to handle.
+both a perfectly normal occurrence, and a worthwhile case to handle.
 
 The code below will repeatedly call MiCowSectionPage as long as it returns
 either STATUS_SUCCESS + 1 or STATUS_MORE_PROCESSING_REQUIRED.  In the more

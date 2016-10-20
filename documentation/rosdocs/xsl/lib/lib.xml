@@ -118,7 +118,7 @@ to be incomplete. Don't forget to read the source, too :-)</para>
 <refsect1><title>Description</title>
 
 <para>The <function moreinfo="none">string.subst</function> template replaces all
-occurances of <parameter moreinfo="none">target</parameter> in <parameter moreinfo="none">string</parameter>
+occurrences of <parameter moreinfo="none">target</parameter> in <parameter moreinfo="none">string</parameter>
 with <parameter moreinfo="none">replacement</parameter> and returns the result.
 </para>
 

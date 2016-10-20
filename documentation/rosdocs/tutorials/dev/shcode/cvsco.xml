@@ -80,7 +80,7 @@ To check out the "reactos" module, we will first create a "ros" directory that w
 <sect2>
 <title>Updating your tree</title>
 <para>
-The next section "Updating your tree with the latest code" will explain how to use the "update" CVS command to update your tree with the latest changes. You should only have to check out a tree once and perform updates on the tree after that. If you encounter abnormalities with your tree in the future, however, you may wish to delete it and do a checkout again (this should be a rare occurance).
+The next section "Updating your tree with the latest code" will explain how to use the "update" CVS command to update your tree with the latest changes. You should only have to check out a tree once and perform updates on the tree after that. If you encounter abnormalities with your tree in the future, however, you may wish to delete it and do a checkout again (this should be a rare occurrence).
 </para>
 </sect2>
 
