@@ -20,7 +20,7 @@
 /*
   problems with nanox lib
     opcodes don't work, can only rely on copy
-    stipple orgins don't work
+    stipple origins don't work
     clip seems to affect source too, it should only affect dest
       in copyarea functions
 */
