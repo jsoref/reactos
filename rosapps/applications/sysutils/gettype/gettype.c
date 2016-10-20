@@ -281,7 +281,7 @@ _tmain (VOID)
 				_tcscpy(Password,argv[++i]);
 			else
 			{
-				wprintf(L"Error in paramters, please see usage\n");
+				wprintf(L"Error in parameters, please see usage\n");
 				return 255;
 			}
 		}

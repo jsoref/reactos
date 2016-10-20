@@ -52,7 +52,7 @@ void Test_CombineTransform()
 {
     XFORM xform1, xform2, xform3;
 
-    /* Test NULL paramters */
+    /* Test NULL parameters */
     set_xform(&xform1, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0);
     set_xform(&xform2, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0);
     SetLastError(ERROR_SUCCESS);

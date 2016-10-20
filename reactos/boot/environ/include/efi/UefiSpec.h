@@ -817,7 +817,7 @@ image is successfully loaded.
 
 @retval EFI_SUCCESS           Image was loaded into memory correctly.
 @retval EFI_NOT_FOUND         Both SourceBuffer and DevicePath are NULL.
-@retval EFI_INVALID_PARAMETER One or more parametes are invalid.
+@retval EFI_INVALID_PARAMETER One or more parameters are invalid.
 @retval EFI_UNSUPPORTED       The image type is not supported.
 @retval EFI_OUT_OF_RESOURCES  Image was not loaded due to insufficient resources.
 @retval EFI_LOAD_ERROR        Image was not loaded because the image format was corrupt or not
