@@ -534,7 +534,7 @@ NtCreatePagingFile(IN PUNICODE_STRING FileName,
         SafeMaximumSize = *MaximumSize;
     }
 
-    /* Pagefiles can't be larger than 4GB and ofcourse the minimum should be
+    /* Pagefiles can't be larger than 4GB and of course the minimum should be
        smaller than the maximum */
     if (0 != SafeInitialSize.u.HighPart)
     {
