@@ -4294,7 +4294,7 @@ Arguments:
 
     Fdo - Supplies the functional device object for the orginal request.
 
-    Srb - Supplies a paritally build ScsiRequestBlock.  In particular, the
+    Srb - Supplies a paritally built ScsiRequestBlock.  In particular, the
         CDB and the SRB timeout value must be filled in.  The SRB must not be
         allocated from zone.
 
