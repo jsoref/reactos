@@ -33,14 +33,14 @@ It calls a function called SearchForExecuteable() to find the full path name and
 Some useful functions that are used a lot:
 
 split() - splits a string into an array of string on spaces that aren't inside quotes. which you need to call freep() on later t clean up.
-//Split it큦 used to take the Arguments from Command Line,it큦 the best option for almost all the cases.
+//Split it큦 used to take the Arguments from Command Line, it큦 the best option for almost all the cases.
 //If the Command has special needs as Dir, it큦 better to make a Parser INSIDE that Command(as DIR has)
 //Dont get mad(as i did): Split() can be find in Misc.c file.Really easy to follow.
-//Also remember split() recive the Command Line,but the Command Line WITHOUT command name.
+//Also remember split() recive the Command Line, but the Command Line WITHOUT command name.
 
 splitspace()-split a string into an array of string using spaces as splitters.which you need to call freep() on later to clean up.
 //This is the son of split() for commands that manage in the same way "/" and "\" when are INSIDE the paths.
-//i.e move works in the same way with: move C:\this/is\a/mess C:\i/know,and with move C:/this/is/a/mess C:/i/know
+//i.e move works in the same way with: move C:\this/is\a/mess C:\i/know, and with move C:/this/is/a/mess C:/i/know
 //Other commands DOESNT.
 //You can find also in misc.c
 
