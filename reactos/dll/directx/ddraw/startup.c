@@ -500,7 +500,7 @@ StartDirectDrawHal(LPDIRECTDRAW iface, BOOL reenable)
     }
 
     /* Some card disable the dx after it have been created so
-     * we are force reanble it
+     * we are force reenabling it
      */
     if (!DdReenableDirectDrawObject(This->lpLcl->lpGbl, &newmode))
     {
