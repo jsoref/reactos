@@ -247,7 +247,7 @@ i8042PowerWorkItem(
 				return;
 			}
 		}
-		/* Enable the interface. This leads to receving a IOCTL_GET_SYS_BUTTON_CAPS,
+		/* Enable the interface. This leads to receiving a IOCTL_GET_SYS_BUTTON_CAPS,
 		 * so we can report new capability */
 		Status = IoSetDeviceInterfaceState(
 				&DeviceExtension->PowerInterfaceName,
