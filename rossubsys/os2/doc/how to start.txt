@@ -9,7 +9,7 @@ For the native components (OS2SS.EXE and OS2.EXE) you'll need the same compiler 
 
 Getting documentation
 ---------------------
-I'm not the inventor of OS/2. IBM still did the work, and they did also good work in terms of documentation. If you plan to do core-dll work, you'll also need NT-Native-API documentation. There exists a book called "The Native API", but there should be a preliminary PDF-file floating around. OS/2-API documentation is available on the CDs belonging to your OS/2-compiler. If you develope under OS/2 you have an INF-viewer on board. If your developementsystem is NT, I recomend you OVIEW (http://hobbes.nmsu.edu/pub/windows/win_inf.zip). This two 'books' should be, what you need.
+I'm not the inventor of OS/2. IBM still did the work, and they did also good work in terms of documentation. If you plan to do core-dll work, you'll also need NT-Native-API documentation. There exists a book called "The Native API", but there should be a preliminary PDF-file floating around. OS/2-API documentation is available on the CDs belonging to your OS/2-compiler. If you develope under OS/2 you have an INF-viewer on board. If your developementsystem is NT, I recommend you OVIEW (http://hobbes.nmsu.edu/pub/windows/win_inf.zip). This two 'books' should be, what you need.
 
 Contacting me
 -------------
