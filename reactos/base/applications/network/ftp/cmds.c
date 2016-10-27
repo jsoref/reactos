@@ -2265,7 +2265,7 @@ void modtime(int argc, const char *argv[])
 }
 
 /*
- * show status on reomte machine
+ * show status on remote machine
  */
 void rmtstatus(int argc, const char *argv[])
 {
