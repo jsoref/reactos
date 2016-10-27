@@ -31,7 +31,7 @@ interface IBDA_NetworkProvider : IUnknown
 
         HRESULT RegisterDeviceFilter(
             [in] IUnknown * pUnkFilterControl,
-            [in, out] ULONG * ppvRegisitrationContext);
+            [in, out] ULONG * ppvRegistrationContext);
 
         HRESULT UnRegisterDeviceFilter(
             [in] ULONG pvRegistrationContext);
