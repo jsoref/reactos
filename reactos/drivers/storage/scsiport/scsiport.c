@@ -4417,7 +4417,7 @@ SpiProcessCompletedRequest(IN PSCSI_PORT_DEVICE_EXTENSION DeviceExtension,
 
         DPRINT("Busy SRB status %x\n", Srb->SrbStatus);
 
-        /* Requeu, if needed */
+        /* Requeue, if needed */
         if (LunExtension->Flags & (LUNEX_FROZEN_QUEUE | LUNEX_BUSY))
         {
             DPRINT("it's being requeued\n");
