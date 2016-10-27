@@ -2277,7 +2277,7 @@ CmCountOpenSubKeys(IN PCM_KEY_CONTROL_BLOCK RootKcb,
 
     DPRINT("CmCountOpenSubKeys() called\n");
 
-    /* The root key is the only referenced key. There are no refereced sub keys. */
+    /* The root key is the only referenced key. There are no referenced sub keys. */
     if (RootKcb->RefCount == 1)
     {
         DPRINT("open sub keys: 0\n");
