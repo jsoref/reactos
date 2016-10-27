@@ -117,7 +117,7 @@ DECLARE_INTERFACE_(IHCDController, IUnknown)
 // Initialize
 //
 // Description: This function initializes the IHCDController implementation. 
-// It creates an IUSBHardwareDevice object and initializes it. It also registeres itself with
+// It creates an IUSBHardwareDevice object and initializes it. It also registers itself with
 // the IRootHCDController
 //
     virtual NTSTATUS Initialize(IN PROOTHDCCONTROLLER RootHCDController,
