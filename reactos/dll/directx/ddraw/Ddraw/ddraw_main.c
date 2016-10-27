@@ -214,7 +214,7 @@ Main_DirectDraw_Release (LPDDRAWI_DIRECTDRAW_INT This)
 
             if ( This->lpLcl->lpGbl->dwRefCnt == 0)
             {
-                // set resoltion back to the one in registry
+                // set resolution back to the one in registry
                 /*if(This->cooperative_level & DDSCL_EXCLUSIVE)
                 {
                     ChangeDisplaySettings(NULL, 0);
