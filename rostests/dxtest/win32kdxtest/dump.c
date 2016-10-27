@@ -1135,7 +1135,7 @@ dump_D3dBufferCallbacks(DD_D3DBUFCALLBACKS *puD3dBufferCallbacks, char *text)
         printf(" puD3dBufferCallbacks->dwSize                                   : 0x%08lx\n",(long)puD3dBufferCallbacks->dwSize);
         printf(" puD3dBufferCallbacks->dwFlags                                  : ");
 
-        /* rember this flags are not in msdn only in ms ddk */
+        /* remember this flags are not in msdn only in ms ddk */
         count = 0;
         flag = puD3dBufferCallbacks->dwFlags;
         checkflag(flag,DDHAL_D3DBUFCB32_CANCREATED3DBUF,"DDHAL_D3DBUFCB32_CANCREATED3DBUF");

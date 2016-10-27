@@ -13,7 +13,7 @@
 PUBLIC _DIB_32BPP_HLine
 
 _DIB_32BPP_HLine:
-                  sub     esp, 12             // rember the base is not hex it is dec
+                  sub     esp, 12             // remember the base is not hex it is dec
                   mov     ecx, [esp+16]
                   mov     [esp+4], ebx
                   mov     edx, [esp+20]      // edx =  LONG x1

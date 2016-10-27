@@ -72,7 +72,7 @@ DxApiGetVersion(VOID)
 * Our input buffer to the functions we call to, This param can be NULL
 *
 * @param ULONG cbInBuffer
-* Our size in bytes of the input buffer, rember wrong size will result in the function
+* Our size in bytes of the input buffer, remember wrong size will result in the function
 * does not being call.
 *
 * @param PVOID lpvOutBuffer
@@ -80,7 +80,7 @@ DxApiGetVersion(VOID)
 * be null. if it null the functions we trying call on will not be call
 *
 * @param ULONG cbOutBuffer
-* Our size in bytes of the output buffer, rember wrong size will result in the function
+* Our size in bytes of the output buffer, remember wrong size will result in the function
 * does not being call.
 *
 * @return

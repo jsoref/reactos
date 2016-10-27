@@ -1523,7 +1523,7 @@ LdrpInitializeProcess(IN PCONTEXT Context,
                                      IMAGE_DIRECTORY_ENTRY_COM_DESCRIPTOR,
                                      &ComSectionSize))
     {
-        /* Remeber this for later */
+        /* Remember this for later */
         IsDotNetImage = TRUE;
     }
 

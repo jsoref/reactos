@@ -42,7 +42,7 @@ int main(int argc, char **argv)
             printf("the %s support follow param \n",argv[0]);
             printf("-dump              : It dump all data it resvie to screen \n");
             printf("-dumpfile filename : It dump all data it resvie to file \n");
-            printf("\nrember u can only use one of them at time \n");
+            printf("\nremember u can only use one of them at time \n");
             exit(1);
         }
     }

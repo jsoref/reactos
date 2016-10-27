@@ -275,7 +275,7 @@ START_TEST(NtGdiDdQueryDirectDrawObject)
     /* We do not retesting DD_HALINFO, instead we compare it */
     RTEST(memcmp(&oldHalInfo, pHalInfo, sizeof(DD_HALINFO)) == 0);
 
-    /* Rember on some nvidia drv the pCallBackFlags will not be set even they api exists in the drv
+    /* Remember on some nvidia drv the pCallBackFlags will not be set even they api exists in the drv
      * known workaround is to check if the drv really return a kmode pointer for the drv functions
      * we want to use.
      */
@@ -303,7 +303,7 @@ START_TEST(NtGdiDdQueryDirectDrawObject)
     RTEST(pCallBackFlags != NULL);
     ASSERT(pCallBackFlags != NULL);
 
-    /* rember puD3dCallbacks shall never return NULL */
+    /* remember puD3dCallbacks shall never return NULL */
     RTEST(puD3dCallbacks != NULL);
     ASSERT(puD3dCallbacks != NULL);
 
