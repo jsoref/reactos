@@ -1330,7 +1330,7 @@ DirList(LPTSTR szPath,              /* [IN] The path that dir starts */
     WIN32_FIND_DATA wfdFileInfo;        /* The info of file that found */
     PDIRFINDINFO * ptrFileArray;        /* An array of pointers with all the files */
     PDIRFINDLISTNODE ptrStartNode;      /* The pointer to the first node */
-    PDIRFINDLISTNODE ptrNextNode;       /* A pointer used for relatives refernces */
+    PDIRFINDLISTNODE ptrNextNode;       /* A pointer used for relatives references */
     TCHAR szFullPath[MAX_PATH];         /* The full path that we are listing with trailing \ */
     TCHAR szSubPath[MAX_PATH];
     LPTSTR pszFilePart;
