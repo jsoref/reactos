@@ -4499,7 +4499,7 @@ Error:
             /* If LUN is busy, we have to requeue it in order to allow request sense */
             if (LunExtension->Flags & LUNEX_BUSY)
             {
-                DPRINT("Requeueing busy request to allow request sense\n");
+                DPRINT("Requeuing busy request to allow request sense\n");
 
                 if (!KeInsertByKeyDeviceQueue(&LunExtension->DeviceQueue,
                     &LunExtension->BusyRequest->Tail.Overlay.DeviceQueueEntry,
