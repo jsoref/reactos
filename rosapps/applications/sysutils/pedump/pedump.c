@@ -1930,7 +1930,7 @@ StringExpands (
 //
 // well I have to rewrite whole part of TranslateFunctionName..
 // this time I am a little bit more experienced than 5 days ago.
-// or am i??? anyway i use stacks instead of recurcive calls
+// or am i??? anyway i use stacks instead of recursive calls
 // and i hope this will take care of every symptoms i have experienced..
 //                                                        october 10, 1997 .... sang
 // It took a lot of time for me to figure out what is all about....
