@@ -1193,7 +1193,7 @@ SearchPathA(IN LPCSTR lpPath,
             goto Quickie;
         }
 
-        /* If the correct ANSI size is too big, return requird length plus a NULL */
+        /* If the correct ANSI size is too big, return required length plus a NULL */
         if (AnsiLength >= nBufferLength)
         {
             PathSize = AnsiLength + 1;

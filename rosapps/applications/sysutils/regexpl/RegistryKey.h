@@ -190,8 +190,8 @@ public:
   // Call this method to get data and/or type of default value.
   //
   // Parameters:
-  //   pdwType - optional pointer to variable receiving default value type. NULL if not requred.
-  //   pbValueDataBuffer - optional pointer to buffer receiving default value data. NULL if not requred.
+  //   pdwType - optional pointer to variable receiving default value type. NULL if not required.
+  //   pbValueDataBuffer - optional pointer to buffer receiving default value data. NULL if not required.
   //   dwValueDataBufferSize - size of buffer pointer by pbValueDataBuffer. Ignored if pbValueDataBuffer is NULL.
   //   pdwValueDataActualSize - optional pointer to variable receiving size, in bytes, of data stored into buffer. If pbValueDataBuffer is NULL, returned value is size of default value data, in bytes.
   //

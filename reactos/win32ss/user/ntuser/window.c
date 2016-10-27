@@ -2841,7 +2841,7 @@ IntFindWindow(PWND Parent,
  *       NULL = start from beginning
  *
  *   ucClassName    = Class name to search for
- *       Reguired parameter.
+ *       Required parameter.
  *
  *   ucWindowName   = Window name
  *       ->Buffer == NULL = don't care

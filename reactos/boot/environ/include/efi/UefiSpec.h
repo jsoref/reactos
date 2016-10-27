@@ -1277,7 +1277,7 @@ protocol interface was returned in Interface.
 @retval EFI_UNSUPPORTED       Handle does not support Protocol.
 @retval EFI_INVALID_PARAMETER One or more parameters are invalid.
 @retval EFI_ACCESS_DENIED     Required attributes can't be supported in current environment.
-@retval EFI_ALREADY_STARTED   Item on the open list already has requierd attributes whose agent
+@retval EFI_ALREADY_STARTED   Item on the open list already has required attributes whose agent
 handle is the same as AgentHandle.
 
 **/
