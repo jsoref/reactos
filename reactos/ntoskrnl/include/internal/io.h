@@ -450,7 +450,7 @@ typedef struct _IO_BUS_TYPE_GUID_LIST
 extern PIO_BUS_TYPE_GUID_LIST IopBusTypeGuidList;
 
 //
-// Shutdown entry for registed devices
+// Shutdown entry for registered devices
 //
 typedef struct _SHUTDOWN_ENTRY
 {

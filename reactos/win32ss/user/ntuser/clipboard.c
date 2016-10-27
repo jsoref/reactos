@@ -711,7 +711,7 @@ NtUserGetClipboardFormatName(UINT fmt, LPWSTR lpszFormatName, INT cchMaxCount)
     /* If the format is built-in we fail */
     if (fmt < 0xc000)
     {
-        /* Registetrated formats are >= 0xc000 */
+        /* Registered formats are >= 0xc000 */
         goto cleanup;
     }
 

@@ -218,7 +218,7 @@ i8042PowerWorkItem(
 
 		if (DeviceExtension->PowerInterfaceName.MaximumLength == 0)
 		{
-			/* We have never registred this interface ; do it */
+			/* We have never registered this interface ; do it */
 			Status = IoRegisterDeviceInterface(
 				DeviceExtension->Common.Pdo,
 				&GUID_DEVICE_SYS_BUTTON,
