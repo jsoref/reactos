@@ -862,7 +862,7 @@ BOOL CConsole::GetTextAttribute(WORD& rwAttributes)
 // Parameters:
 //		dwBufferSize - size in chars of the input line buffer
 //
-// Rerturns:
+// Returns:
 //		NULL - Failed.
 //		pointer to the input buffer
 TCHAR * CConsole::Init(DWORD dwBufferSize, DWORD dwMaxHistoryLines)
