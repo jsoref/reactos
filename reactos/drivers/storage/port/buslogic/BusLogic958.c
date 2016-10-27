@@ -27,7 +27,7 @@
 // This is an effort to build a driver for this card for the windows XP environment
 // since the native XP installation doesnt provide this driver.
 //
-// The technical refernece for this device is at :
+// The technical reference for this device is at :
 //
 // Author: Namita Lal, Sirish Raghuram Calsoft Pvt Ltd
 // Date:   5th Feb 2003

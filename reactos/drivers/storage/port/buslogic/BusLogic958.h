@@ -23,7 +23,7 @@
 //_________________________________________________________________________________________
 //
 // File description :The header file the driver for BusLogic-958 SCSI Host adapter card.
-// The technical refernece for this driver is at :
+// The technical reference for this driver is at :
 //
 // Author: Namita Lal, Sirish Raghuram ( Calsoft Pvt Ltd)
 // Date: 10th June 2002

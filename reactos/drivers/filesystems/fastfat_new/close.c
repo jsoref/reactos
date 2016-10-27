@@ -228,7 +228,7 @@ close_done:
         }
         else
         {
-            /* Remove extra referenec */
+            /* Remove extra reference */
             Vcb->OpenFileCount --;
         }
 

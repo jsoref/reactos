@@ -368,7 +368,7 @@ Return Value:
     CdUpdateVcbCondition( Vcb, VcbMountInProgress);
 
     //
-    //  Refererence the Vcb for two reasons.  The first is a reference
+    //  Reference the Vcb for two reasons.  The first is a reference
     //  that prevents the Vcb from going away on the last close unless
     //  dismount has already occurred.  The second is to make sure
     //  we don't go into the dismount path on any error during mount
@@ -495,7 +495,7 @@ Return Value:
         if (ARGUMENT_PRESENT( RawIsoVd )) {
 
             //
-            //  Create the path table Fcb and refererence it and the Vcb.
+            //  Create the path table Fcb and reference it and the Vcb.
             //
 
             CdLockVcb( IrpContext, Vcb );
@@ -686,7 +686,7 @@ Return Value:
             ULONG RootDirectorySize;
 
             //
-            //  Create the path table Fcb and refererence it and the Vcb.
+            //  Create the path table Fcb and reference it and the Vcb.
             //
 
             CdLockVcb( IrpContext, Vcb );
