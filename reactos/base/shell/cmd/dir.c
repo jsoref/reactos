@@ -1325,7 +1325,7 @@ DirList(LPTSTR szPath,              /* [IN] The path that dir starts */
 {
     BOOL fPoint;                        /* If szPath is a file with extension fPoint will be True*/
     HANDLE hSearch;                     /* The handle of the search */
-    HANDLE hRecSearch;                  /* The handle for searching recursivly */
+    HANDLE hRecSearch;                  /* The handle for searching recursively */
     HANDLE hStreams;                    /* The handle for alternate streams */
     WIN32_FIND_DATA wfdFileInfo;        /* The info of file that found */
     PDIRFINDINFO * ptrFileArray;        /* An array of pointers with all the files */
