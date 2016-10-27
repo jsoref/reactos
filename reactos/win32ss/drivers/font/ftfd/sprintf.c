@@ -26,7 +26,7 @@
 #define LEFT	16		/* left justified */
 #define SPECIAL	32		/* 0x */
 #define LARGE	64		/* use 'ABCDEF' instead of 'abcdef' */
-#define REMOVEHEX	256		/* use 256 as remve 0x frim BASE 16  */
+#define REMOVEHEX	256		/* use 256 as remve 0x from BASE 16  */
 typedef struct {
     unsigned int mantissal:32;
     unsigned int mantissah:20;
