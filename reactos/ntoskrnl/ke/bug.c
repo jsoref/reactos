@@ -492,7 +492,7 @@ KiDoBugCheckCallbacks(VOID)
         NextEntry = ListHead->Flink;
         while (NextEntry != ListHead)
         {
-            /* Get the reord */
+            /* Get the record */
             CurrentRecord = CONTAINING_RECORD(NextEntry,
                                               KBUGCHECK_CALLBACK_RECORD,
                                               Entry);
