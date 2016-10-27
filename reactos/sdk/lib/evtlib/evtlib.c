@@ -932,7 +932,7 @@ ElfCreateFile(
     LogFile->OffsetInfoSize = OFFSET_INFO_INCREMENT;
     LogFile->OffsetInfoNext = 0;
 
-    // FIXME: Always use the regitry values for MaxSize,
+    // FIXME: Always use the registry values for MaxSize,
     // even for existing logs!
 
     // FIXME: On Windows, EventLog uses the MaxSize setting

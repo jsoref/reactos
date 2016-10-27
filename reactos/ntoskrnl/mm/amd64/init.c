@@ -303,7 +303,7 @@ MiBuildNonPagedPool(VOID)
                                        256 * MmMinAdditionNonPagedPoolPerMb;
     }
 
-    /* Check if the registy setting or our dynamic calculation was too high */
+    /* Check if the registry setting or our dynamic calculation was too high */
     if (MmSizeOfNonPagedPoolInBytes > MI_MAX_INIT_NONPAGED_POOL_SIZE)
     {
         /* Set it to the maximum */
