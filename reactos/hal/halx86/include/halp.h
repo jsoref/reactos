@@ -533,7 +533,7 @@ typedef struct _IDTUsageFlags
 typedef struct
 {
     KIRQL Irql;
-    UCHAR BusReleativeVector;
+    UCHAR BusRelativeVector;
 } IDTUsage;
 
 typedef struct _HalAddressUsage

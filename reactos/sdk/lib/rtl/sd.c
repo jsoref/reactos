@@ -874,7 +874,7 @@ RtlSelfRelativeToAbsoluteSD2(IN OUT PSECURITY_DESCRIPTOR SelfRelativeSD,
                                 &SaclLength);
 
     /*
-     * Check if there's a difference in structure layout between relatiev and
+     * Check if there's a difference in structure layout between relative and
      * absolute descriptors. On 32-bit, there won't be, since an offset is the
      * same size as a pointer (32-bit), but on 64-bit, the offsets remain 32-bit
      * as they are not SIZE_T, but ULONG, while the pointers now become 64-bit

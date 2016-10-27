@@ -161,8 +161,8 @@ HalpBuildPartialFromIdt(IN ULONG Entry,
     }
 
     /* Get vector and level from IDT usage */
-    RawDescriptor->u.Interrupt.Vector = HalpIDTUsage[Entry].BusReleativeVector;
-    RawDescriptor->u.Interrupt.Level = HalpIDTUsage[Entry].BusReleativeVector;
+    RawDescriptor->u.Interrupt.Vector = HalpIDTUsage[Entry].BusRelativeVector;
+    RawDescriptor->u.Interrupt.Level = HalpIDTUsage[Entry].BusRelativeVector;
 
     /* Affinity is all the CPUs */
     RawDescriptor->u.Interrupt.Affinity = HalpActiveProcessors;
@@ -324,7 +324,7 @@ HalpReportResourceUsage(IN PUNICODE_STRING HalName,
         {
             /* Then register it for internal usage */
             HalpIDTUsageFlags[i].Flags = IDT_INTERNAL;
-            HalpIDTUsage[i].BusReleativeVector = (UCHAR)i;
+            HalpIDTUsage[i].BusRelativeVector = (UCHAR)i;
         }
     }
 
@@ -535,7 +535,7 @@ HalpRegisterVector(IN UCHAR Flags,
 
     /* Save the vector data */
     HalpIDTUsage[SystemVector].Irql  = Irql;
-    HalpIDTUsage[SystemVector].BusReleativeVector = (UCHAR)BusVector;
+    HalpIDTUsage[SystemVector].BusRelativeVector = (UCHAR)BusVector;
 }
 
 #ifndef _MINIHAL_
