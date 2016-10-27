@@ -258,7 +258,7 @@ MSG_ENTRY mouseleave3to2_dropmousell_chain[]={{0, WH_MOUSE_LL, HOOK, WM_MOUSEMOV
                                              {0,0}};
 
 /* after WH_MOUSE drops WM_MOUSEMOVE, WM_MOUSELEAVE is still in the queue */
-MSG_ENTRY mouseleave3_remainging_chain[]={{3, WM_MOUSELEAVE, POST},
+MSG_ENTRY mouseleave3_remaining_chain[]={{3, WM_MOUSELEAVE, POST},
                                           {0,0}};
 
 void Test_TrackMouseEvent()
@@ -427,7 +427,7 @@ void Test_TrackMouseEvent()
 
     /* after WH_MOUSE drops WM_MOUSEMOVE, WM_MOUSELEAVE is still in the queue */
     FLUSH_MESSAGES(QS_POSTMESSAGE, QS_TIMER|QS_MOUSEMOVE);
-    COMPARE_CACHE(mouseleave3_remainging_chain);
+    COMPARE_CACHE(mouseleave3_remaining_chain);
 
     FlushMessages();
     COMPARE_CACHE(empty_chain);

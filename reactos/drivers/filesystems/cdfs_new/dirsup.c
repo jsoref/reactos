@@ -1283,7 +1283,7 @@ Routine Description:
 
     This routine is called to walk through the directory until we find the
     first possible dirent for file.  We are positioned at some point described
-    by the FileContext.  We will walk through any remaing dirents for the
+    by the FileContext.  We will walk through any remaining dirents for the
     current file until we find the first dirent for some subsequent file.
 
     We can be called when we have found just one dirent for a file or all

@@ -5624,7 +5624,7 @@ Return Values:
     if (inputBufferLength < listSize) {
 
         //
-        // The remaning size of the input buffer not big enough to
+        // The remaining size of the input buffer not big enough to
         // hold the additional partition entries
         //
 
@@ -5782,7 +5782,7 @@ Return Values:
     if (inputBufferLength < listSize) {
 
         //
-        // The remaning size of the input buffer not big enough to
+        // The remaining size of the input buffer not big enough to
         // hold the additional partition entries
         //
 

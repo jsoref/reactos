@@ -865,7 +865,7 @@ SpiAllocateCommonBuffer(PSCSI_PORT_DEVICE_EXTENSION DeviceExtension, ULONG NonCa
         SrbExtension = (PVOID *)CommonBuffer;
         DeviceExtension->FreeSrbExtensions = SrbExtension;
 
-        /* Fill the remainding pointers (if we have more than 1 SRB) */
+        /* Fill the remaining pointers (if we have more than 1 SRB) */
         while (CommonBufferLength >= 2 * BufSize)
         {
             *SrbExtension = (PVOID*)((PCHAR)SrbExtension + BufSize);
