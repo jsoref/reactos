@@ -556,7 +556,7 @@ CmpQueryKeyData(IN PHHIVE Hive,
             }
             break;
 
-        /* Full information requsted */
+        /* Full information requested */
         case KeyFullInformation:
 
             /* This is the size we need */
