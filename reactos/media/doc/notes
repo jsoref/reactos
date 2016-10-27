@@ -2,7 +2,7 @@
 as previous discussions all of which have useful info on fixes
 that need to be added to ReactOS. messages are between five
 dashes on a line by themselves.  If you implement the fix
-reffered to in a message, feel free to delete it from the file.
+referred to in a message, feel free to delete it from the file.
 Rex ***
 -----
 Subject: [ros-kernel] Inside the Boot Process
