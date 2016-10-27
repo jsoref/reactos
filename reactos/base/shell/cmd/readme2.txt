@@ -36,7 +36,7 @@ split() - splits a string into an array of string on spaces that aren't inside q
 //Split it´s used to take the Arguments from Command Line, it´s the best option for almost all the cases.
 //If the Command has special needs as Dir, it´s better to make a Parser INSIDE that Command(as DIR has)
 //Dont get mad(as i did): Split() can be find in Misc.c file.Really easy to follow.
-//Also remember split() recive the Command Line, but the Command Line WITHOUT command name.
+//Also remember split() receives the Command Line, but the Command Line WITHOUT command name.
 
 splitspace()-split a string into an array of string using spaces as splitters.which you need to call freep() on later to clean up.
 //This is the son of split() for commands that manage in the same way "/" and "\" when are INSIDE the paths.

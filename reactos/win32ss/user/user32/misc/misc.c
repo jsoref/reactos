@@ -69,7 +69,7 @@ GetW32ThreadInfo(VOID)
  *  2) pSecurityInfo - type of information to retrieve
  *  3) pSecurityDescriptor - buffer which receives descriptor
  *  4) dwLength - size, in bytes, of buffer 'pSecurityDescriptor'
- *  5) pdwLengthNeeded - reseives actual size of descriptor
+ *  5) pdwLengthNeeded - receives actual size of descriptor
  *
  * Return Vaules:
  *  TRUE on success
