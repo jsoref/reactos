@@ -3432,7 +3432,7 @@ SpiAllocateSrbStructures(PSCSI_PORT_DEVICE_EXTENSION DeviceExtension,
                 LunExtension->PendingRequest = Srb->OriginalRequest;
                 LunExtension->Flags |= LUNEX_REQUEST_PENDING | SCSI_PORT_LU_ACTIVE;
 
-                /* Relese the spinlock and return */
+                /* Release the spinlock and return */
                 KeReleaseSpinLockFromDpcLevel(&DeviceExtension->SpinLock);
                 return NULL;
             }

@@ -528,7 +528,7 @@ DirReadParam(LPTSTR Line,               /* [IN] The line with the parameters & s
 
 
             }
-            /* We check if we calculated the negative value and realese the flag */
+            /* We check if we calculated the negative value and release the flag */
             if ((cCurChar != _T('-')) && bPNegative)
                 bPNegative = FALSE;
         }

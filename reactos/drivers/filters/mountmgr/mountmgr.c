@@ -1612,7 +1612,7 @@ MountMgrMountedDeviceRemoval(IN PDEVICE_EXTENSION DeviceExtension,
         }
     }
 
-    /* Releave driver */
+    /* Release driver */
     KeReleaseSemaphore(&(DeviceExtension->DeviceLock), IO_NO_INCREMENT, 1, FALSE);
 }
 
