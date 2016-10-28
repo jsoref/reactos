@@ -2265,8 +2265,8 @@ typedef struct _MODE_CACHING_PAGE {
   UCHAR MultiplicationFactor:1;
   UCHAR WriteCacheEnable:1;
   UCHAR Reserved2:5;
-  UCHAR WriteRetensionPriority:4;
-  UCHAR ReadRetensionPriority:4;
+  UCHAR WriteRetentionPriority:4;
+  UCHAR ReadRetentionPriority:4;
   UCHAR DisablePrefetchTransfer[2];
   UCHAR MinimumPrefetch[2];
   UCHAR MaximumPrefetch[2];

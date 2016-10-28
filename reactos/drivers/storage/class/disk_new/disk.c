@@ -4403,8 +4403,8 @@ DiskGetCacheInformation(
     CacheInfo->ReadCacheEnabled = !(pageData->ReadDisableCache);
     CacheInfo->WriteCacheEnabled = pageData->WriteCacheEnable;
 
-    CacheInfo->ReadRetentionPriority = pageData->ReadRetensionPriority;
-    CacheInfo->WriteRetentionPriority = pageData->WriteRetensionPriority;
+    CacheInfo->ReadRetentionPriority = pageData->ReadRetentionPriority;
+    CacheInfo->WriteRetentionPriority = pageData->WriteRetentionPriority;
 
     CacheInfo->DisablePrefetchTransferLength =
         ((pageData->DisablePrefetchTransfer[0] << 8) +
@@ -4525,8 +4525,8 @@ DiskSetCacheInformation(
     pageData->MultiplicationFactor = CacheInfo->PrefetchScalar;
     pageData->WriteCacheEnable = CacheInfo->WriteCacheEnabled;
 
-    pageData->WriteRetensionPriority = (UCHAR) CacheInfo->WriteRetentionPriority;
-    pageData->ReadRetensionPriority = (UCHAR) CacheInfo->ReadRetentionPriority;
+    pageData->WriteRetentionPriority = (UCHAR) CacheInfo->WriteRetentionPriority;
+    pageData->ReadRetentionPriority = (UCHAR) CacheInfo->ReadRetentionPriority;
 
     pageData->DisablePrefetchTransfer[0] =
         (UCHAR) (CacheInfo->DisablePrefetchTransferLength >> 8);
