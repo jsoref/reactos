@@ -60,7 +60,7 @@ DoWaveStreaming(
         HeaderExtension = (PWAVEHDR_EXTENSION) Header->reserved;
         SND_ASSERT( HeaderExtension );
 
-        /* Saniy checks */
+        /* Sanity checks */
         SND_ASSERT(Header->dwFlags & WHDR_PREPARED);
         SND_ASSERT(Header->dwFlags & WHDR_INQUEUE);
 

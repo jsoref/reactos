@@ -670,7 +670,7 @@ IKsFilter_GetFilterFromIrp(
     /* get current irp stack */
     IoStack = IoGetCurrentIrpStackLocation(Irp);
 
-    /* santiy check */
+    /* sanity check */
     ASSERT(IoStack->FileObject != NULL);
 
     ObjectHeader = (PKSIOBJECT_HEADER)IoStack->FileObject->FsContext2;
