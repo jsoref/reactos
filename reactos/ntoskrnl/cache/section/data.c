@@ -355,7 +355,7 @@ MmCreateCacheSection(PROS_SECTION_OBJECT *SectionObject,
 
     DPRINT("Getting original file size\n");
     /* A hack: If we're cached, we can overcome deadlocking with the upper
-    * layer filesystem call by retriving the object sizes from the cache
+    * layer filesystem call by retrieving the object sizes from the cache
     * which is made to keep track.  If I had to guess, they were figuring
     * out a similar problem.
     */
