@@ -200,7 +200,7 @@ void test_CShellMenu()
 }
 
 /* The following struct holds info about the order callbacks are called */
-/* By passing different arrays of results to CMenuCallback, we can test different sequenses of callbacks */
+/* By passing different arrays of results to CMenuCallback, we can test different sequences of callbacks */
    struct _test_info{
        int iTest;
        UINT uMsg;};
