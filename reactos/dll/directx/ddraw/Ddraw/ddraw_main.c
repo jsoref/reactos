@@ -539,7 +539,7 @@ Main_DirectDraw_CreateSurface4(LPDDRAWI_DIRECTDRAW_INT This, LPDDSURFACEDESC2 pD
     return ret;
 }
 
-/* 5 of 31 DirectDraw7_Vtable api are working simluare to windows */
+/* 5 of 31 DirectDraw7_Vtable api are working similar to windows */
 /* 8 of 31 DirectDraw7_Vtable api are under devloping / testing */
 
 HRESULT WINAPI Main_DirectDraw_CreatePalette(LPDDRAWI_DIRECTDRAW_INT This, DWORD dwFlags,
