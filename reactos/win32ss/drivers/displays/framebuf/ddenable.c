@@ -173,7 +173,7 @@ DrvGetDirectDrawInfo(
 
 	/*
 	   check see if pvmList and pdwFourCC are frist call
-	   or frist. Secon call  we fill in pHalInfo info
+	   or frist. Second call  we fill in pHalInfo info
     */
 
 	if(!(pvmList && pdwFourCC))
