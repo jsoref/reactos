@@ -134,7 +134,7 @@ If you search for more information, look into the Subversion repository.
 04.05.2005	greatlrd	Fixes for Swedish resource script
 20.05.2005	navaraf	Luk "denzil" Frolka: partial Czech translation of Explorer
 02.06.2005	fireball	First version of Explorer's translation into Russian. Done by Dmitry Philippov, checked by me, DarkHobbit and others
-03.06.2005	m. fuchs	split the big explorer resource file into smaller language specific rescource scripts
+03.06.2005	m. fuchs	split the big explorer resource file into smaller language specific resource scripts
 05.06.2005	hpoussin	Include French resources in explorer
 15.07.2005	greatlrd	update swedish .rc and rename it from sw to sv, remove the german part in swedish rc
 16.07.2005	greatlrd	crop the startmenu side bar logo to 30x280

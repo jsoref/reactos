@@ -4192,7 +4192,7 @@ diskMatched:
 
     //
     // Check that the data is long enough to hold a full resource descriptor,
-    // and that the last resouce list is device-specific and long enough.
+    // and that the last resource list is device-specific and long enough.
     //
 
     if (keyData->DataLength < sizeof(CM_FULL_RESOURCE_DESCRIPTOR) ||

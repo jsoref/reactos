@@ -501,7 +501,7 @@ PciQueryResources(IN PPCI_PDO_EXTENSION PdoExtension,
         }
     }
 
-    /* Return the resouce list */
+    /* Return the resource list */
     *Buffer = ResourceList;
     return STATUS_SUCCESS;
 }

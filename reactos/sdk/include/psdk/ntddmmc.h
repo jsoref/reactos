@@ -227,7 +227,7 @@ typedef struct _FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE {
   UCHAR DataTypeSupported[2];
   UCHAR BufferUnderrunFree:1;
   UCHAR AddressModeReservation:1;
-  UCHAR TrackRessourceInformation:1;
+  UCHAR TrackResourceInformation:1;
   UCHAR Reserved01:5;
   UCHAR NumberOfLinkSizes;
 #if !defined(__midl) && !defined(__WIDL__)

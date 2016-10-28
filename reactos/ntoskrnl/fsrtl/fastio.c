@@ -664,7 +664,7 @@ FsRtlCopyWrite(IN PFILE_OBJECT FileObject,
                 OldValidDataLength.QuadPart = FcbHeader->ValidDataLength.QuadPart;
 
                 /* If the high part of the filesize is going
-                 * to change, grab the Paging IoResouce.
+                 * to change, grab the Paging IoResource.
                  */
                 if (NewSize.HighPart != FcbHeader->FileSize.HighPart &&
                     FcbHeader->PagingIoResource)
@@ -1420,7 +1420,7 @@ FsRtlPrepareMdlWriteDev(IN PFILE_OBJECT FileObject,
             OldValidDataLength.QuadPart = FcbHeader->ValidDataLength.QuadPart;
 
             /* If the high part of the filesize is going
-             * to change, grab the Paging IoResouce.
+             * to change, grab the Paging IoResource.
              */
             if (NewSize.HighPart != FcbHeader->FileSize.HighPart &&
                 FcbHeader->PagingIoResource)
