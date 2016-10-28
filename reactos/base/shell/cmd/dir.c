@@ -122,7 +122,7 @@
  *    27-Feb-2005 (Konstantinos Paliouras <squarious@gmail.com>)
  *        Implemented all the switches that were missing, and made
  *        the ros dir very similar to windows dir. Major part of
- *        the code is rewritten. /p is removed, to be rewriten in
+ *        the code is rewritten. /p is removed, to be rewritten in
  *        the main cmd code.
  *
  *    1-Jul-2004 (Brandon Turner <turnerb7@msu.edu>)
