@@ -50,7 +50,7 @@ under a single lock acquisition, check the state, and either take necessary
 action atomically, or place a wait entry and return a continuation to the
 caller.  This lends itself to code that has a simple, structured form,
 doesn't make assumptions about lock taking and breaking, and provides an
-obvious, graphic seperation between code that may block and code that isn't
+obvious, graphic separation between code that may block and code that isn't
 allowed to.  This file contains the non-blocking half.
 
 In order to request a blocking operation to happen outside locks, place a

@@ -253,7 +253,7 @@ typedef enum _SYSTEM_INFORMATION_CLASS
     SystemContextSwitchInformation,
     SystemRegistryQuotaInformation,
     SystemExtendServiceTableInformation,
-    SystemPrioritySeperation,
+    SystemPrioritySeparation,
     SystemPlugPlayBusInformation,
     SystemDockInformation,
     SystemPowerInformationNative,
