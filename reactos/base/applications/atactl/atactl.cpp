@@ -91,7 +91,7 @@ void print_help() {
            "    will switch device at Scsi2, bus 1, taget_id 1 to UDMA0 mode\n"
            "  atactl -h -d 30 c1:b0:d0:l0 \n"
            "    will hide Master (d0:l0) device on secondary (c1:b0) IDE channel\n"
-           "    and lock i/o on this channel for 30 seconds to ensure safity\n"
+           "    and lock i/o on this channel for 30 seconds to ensure safety\n"
            "    of removal process"
            "------\n"
            "Device address format:\n"
