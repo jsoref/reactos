@@ -180,7 +180,7 @@ LdrQueryImageFileExecutionOptions(
     _In_ ULONG ValueSize,
     _Out_ PVOID Buffer,
     _In_ ULONG BufferSize,
-    _Out_opt_ PULONG RetunedLength
+    _Out_opt_ PULONG ReturnedLength
 );
 
 NTSTATUS

@@ -262,7 +262,7 @@ DdCanCreateSurface(LPDDHAL_CANCREATESURFACEDATA CanCreateSurface)
     /*
      * Note : This functions are basic same, in win32k
      * NtGdiDdCanCreateD3DBuffer and  NtGdiDdCanCreateSurface are mergs
-     * toghter in win32k at end and retrurn same data, it is still sepreated
+     * toghter in win32k at end and return same data, it is still sepreated
      * at user mode but in kmode it is not.
      */
 
@@ -1258,7 +1258,7 @@ DdCanCreateD3DBuffer(LPDDHAL_CANCREATESURFACEDATA CanCreateD3DBuffer)
     /*
      * Note : This functions are basic same, in win32k
      * NtGdiDdCanCreateD3DBuffer and  NtGdiDdCanCreateSurface are mergs
-     * toghter in win32k at end and retrurn same data, it is still sepreated
+     * toghter in win32k at end and return same data, it is still sepreated
      * at user mode but in kmode it is not.
      */
 

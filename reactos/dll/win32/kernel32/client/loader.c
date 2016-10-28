@@ -569,7 +569,7 @@ GetModuleFileNameA(HINSTANCE hModule,
         Status = BasepUnicodeStringTo8BitString(&FilenameA, &FilenameW, TRUE);
         if (!NT_SUCCESS(Status))
         {
-            /* Set last error, free string and retun failure */
+            /* Set last error, free string and return failure */
             BaseSetLastNTError(Status);
             RtlFreeUnicodeString(&FilenameW);
             return 0;

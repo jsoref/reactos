@@ -10,7 +10,7 @@
 
 /**
  * \name difftime
- * \brief Retrurns the difference between two time_t values in seconds.
+ * \brief Returns the difference between two time_t values in seconds.
  * \param time1 Beginning time.
  * \param time2 Ending time.
  */

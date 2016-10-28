@@ -304,7 +304,7 @@ VdmEndExecution(IN PKTRAP_FRAME TrapFrame,
         }
     }
 
-    /* Lower IRQL and reutrn */
+    /* Lower IRQL and return */
     KeLowerIrql(OldIrql);
 }
 

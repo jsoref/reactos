@@ -3746,7 +3746,7 @@ NtDeleteFile(IN POBJECT_ATTRIBUTES ObjectAttributes)
                                 &Handle);
     if (OpenPacket.ParseCheck == FALSE) return Status;
 
-    /* Retrn the Io status */
+    /* Return the Io status */
     return OpenPacket.FinalStatus;
 }
 
