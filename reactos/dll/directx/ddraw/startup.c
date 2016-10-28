@@ -75,7 +75,7 @@ Create_DirectDraw (LPGUID pGUID, LPDIRECTDRAW* pIface,
 
         DX_STUB_str("2.linking\n");
 
-        /* step 1.Alloc the new  DDRAWI_DIRECTDRAW_INT for the lnking */
+        /* step 1.Alloc the new  DDRAWI_DIRECTDRAW_INT for the link */
         DxHeapMemAlloc(newThis, sizeof(DDRAWI_DIRECTDRAW_INT));
         if (newThis == NULL)
         {
