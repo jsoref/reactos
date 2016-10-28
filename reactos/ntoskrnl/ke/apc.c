@@ -638,7 +638,7 @@ _KeLeaveCriticalRegion(VOID)
  *        Specifies the processor mode at which to run the Normal Routine.
  *
  * @param Context
- *        Specifices the value to pass as Context parameter to the registered
+ *        Specifies the value to pass as Context parameter to the registered
  *        routines.
  *
  * @return None.

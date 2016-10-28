@@ -995,7 +995,7 @@ IoAssignResources(IN PUNICODE_STRING RegistryPath,
  * ARGUMENTS:
  *     BusType          - MCA, ISA, EISA...specifies the Bus Type
  *     BusNumber	- Which bus of above should be queried
- *     ControllerType	- Specifices the Controller Type
+ *     ControllerType	- Specifies the Controller Type
  *     ControllerNumber	- Which of the controllers to query.
  *     CalloutRoutine	- Which function to call for each valid query.
  *     Context          - Value to pass to the callback.
