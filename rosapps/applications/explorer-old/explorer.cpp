@@ -509,7 +509,7 @@ const Icon& IconCache::extract(LPCTSTR path, int icon_idx, ICONCACHE_FLAGS flags
         return icon;
     } else {
 
-        ///@todo retreive "http://.../favicon.ico" format icons
+        ///@todo retrieve "http://.../favicon.ico" format icons
 
         return _icons[ICID_NONE];
     }

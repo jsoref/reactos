@@ -534,7 +534,7 @@ User32CallClientLoadLibraryFromKernel(PVOID Arguments, ULONG ArgumentLength)
     BOOL bResult;
     PCLIENT_LOAD_LIBRARY_ARGUMENTS Argument;
 
-    /* Retireve the callback parameters */
+    /* Retrieve the callback parameters */
     Argument = (PCLIENT_LOAD_LIBRARY_ARGUMENTS)Arguments;
     if(Argument->strLibraryName.Buffer != NULL)
     {

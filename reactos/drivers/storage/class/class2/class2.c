@@ -3531,7 +3531,7 @@ Arguments:
 
     Length - Supplies the length in bytes of the mode sense buffer.
 
-    PageMode - Supplies the page or pages of mode sense data to be retrived.
+    PageMode - Supplies the page or pages of mode sense data to be retrieved.
 
 Return Value:
 

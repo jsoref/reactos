@@ -421,7 +421,7 @@ protected:
 
  // window utilities
 
- /// ClientRect retreives the client area rectangle of a window.
+ /// ClientRect retrieves the client area rectangle of a window.
 struct ClientRect : public RECT
 {
 	ClientRect(HWND hwnd)
@@ -434,7 +434,7 @@ struct ClientRect : public RECT
 	POINT& pos() {return *(LPPOINT)this;}
 };
 
- /// ClientRect retreives the window rectangle of a window.
+ /// ClientRect retrieves the window rectangle of a window.
 struct WindowRect : public RECT
 {
 	WindowRect(HWND hwnd)

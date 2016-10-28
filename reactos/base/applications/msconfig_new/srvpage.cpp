@@ -927,7 +927,7 @@ ServicesPageWndProc(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)
 
                                 if (lpServiceConfig->dwStartType == SERVICE_DISABLED) // We have a disabled service which is becoming to be enabled.
                                 {
-                                    // 3a- Retrive the properties of the disabled service from the registry.
+                                    // 3a- Retrieve the properties of the disabled service from the registry.
                                     RegistryDisabledServiceItemParams params = {};
 
                                     QUERY_REGISTRY_KEYS_TABLE KeysQueryTable[2] = {};
