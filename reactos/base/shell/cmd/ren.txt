@@ -76,7 +76,7 @@ If we are just renaming one file,then we dont make the while loop.The do..while 
 bPath==TRUE means that Source Argument was a Path so now we have to Join again the Path with the Name File:
     -srcFINAL: srcPath+f.cFileName
     -dstFINAL: dstPath+dstFile
-bPath==False then Souce wasn a Path an we dont need to join anything.
+bPath==False then Source wasn a Path an we dont need to join anything.
     -srcFINAL:f.cFileName
     -dstFINAL:dstFile
 

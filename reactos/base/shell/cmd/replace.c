@@ -239,7 +239,7 @@ INT recReplace(DWORD dwFlags,
             break;
     }
 
-    /* Go through all the soursfiles and copy/replace them */
+    /* Go through all the sourcefiles and copy/replace them */
     do
     {
         if (CheckCtrlBreak(BREAK_INPUT))
