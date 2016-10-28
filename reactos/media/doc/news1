@@ -15,7 +15,7 @@ Dabak from one of my friends and read it. While reading the chapters
 regarding building your own interrupt handlers or callgates under NT ,
 I found that the book glosses over very important topics such as IDT
 in SMP enviroments , and a complete wrong presentation of what structure
-a interrupt handler is supposed to build on the stack to ensure shamless
+a interrupt handler is supposed to build on the stack to ensure shamless [sic]
 OS functionality. Mr's Prasad  choice is a straigtforward pushad ,
 followed by setting the FS segment to the ring0 PCR selector. This way
 to build a trap frame for a interrupt is still used in Windows 95 ,
@@ -83,7 +83,7 @@ required only to debug builds. The declaration is for NASM , a free X86
 assembler  , but this shouldnt have  any kind of importance.
 
        Now why one should build the correct layout for this stack
-frame ? The  answer is that for shamlees operation of OS , a interrupt
+frame ? The  answer is that for shamlees [sic] operation of OS , a interrupt
 handler HAS to poke into interrupted thread's KTHREAD structure a
 pointer to current TrapFrame existing on stack. This pointer will be
 later used by several ntoskrnl API's to gain access to interrupted
