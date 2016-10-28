@@ -260,7 +260,7 @@ const TCHAR * CCompletionList::Get(unsigned __int64 nIndex, BOOL& rblnIsKey)
     blnForward = nIndex > m_nLastSearched;
     nRelativeIndex = blnForward?(nIndex-m_nLastSearched):(m_nLastSearched-nIndex);
     if ((nRelativeIndex > nIndex)||(nRelativeIndex > m_nCount-nIndex-1))
-      pNode = NULL; // seraching from tail or from head is more effective
+      pNode = NULL; // searching from tail or from head is more effective
   }
 
   if (!pNode && (nIndex <= m_nCount/2))

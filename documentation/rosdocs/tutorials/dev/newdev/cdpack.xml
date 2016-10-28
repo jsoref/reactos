@@ -125,7 +125,7 @@ Start your CD recording application and write the ISO image file 'ReactOS.iso' o
 <sect2>
 <title>Booting ReactOS from the CD</title>
 <para>
-I assume you already know how to boot your computer from a CD. If not, ask your local guru, seach the web or read the manual.
+I assume you already know how to boot your computer from a CD. If not, ask your local guru, search the web or read the manual.
 </para>
 </sect2>
 </chapter>
