@@ -230,8 +230,8 @@ typedef struct _VCB
     &(VcbToVolumeDeviceObject(xVcb)->DeviceObject)
 
 
-#define SectorsToBytes(xVcb, xSectrors) \
-	((xVcb)->Bpb.BytesPerSector * (xSectrors))
+#define SectorsToBytes(xVcb, xSectors) \
+	((xVcb)->Bpb.BytesPerSector * (xSectors))
 
 #define BytesToSectors(xVcb, xBytes) \
 	((xBytes + (xVcb)->Bpb.BytesPerSector - 1) / (xVcb)->Bpb.BytesPerSector)
