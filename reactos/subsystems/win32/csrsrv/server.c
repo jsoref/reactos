@@ -368,7 +368,7 @@ CsrSrvCreateSharedSection(IN PCHAR ParameterValue)
     /* Multiply by 1024 entries and round to page size */
     CsrSrvSharedSectionSize = ROUND_UP(Size * 1024, CsrNtSysInfo.PageSize);
 
-    /* Create the Secion */
+    /* Create the Section */
     SectionSize.LowPart = CsrSrvSharedSectionSize;
     SectionSize.HighPart = 0;
     Status = NtCreateSection(&CsrSrvSharedSection,
