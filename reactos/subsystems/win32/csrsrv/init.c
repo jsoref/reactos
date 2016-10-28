@@ -447,7 +447,7 @@ CsrCreateSessionObjectDirectory(IN ULONG Session)
     /* Check if this is the first Session */
     if (Session)
     {
-        /* Not the first, so the name will be slighly more complex */
+        /* Not the first, so the name will be slightly more complex */
         swprintf(BnoBuffer, L"%ws\\%ld\\BaseNamedObjects", SESSION_ROOT, Session);
         RtlInitUnicodeString(&BnoString, BnoBuffer);
     }
