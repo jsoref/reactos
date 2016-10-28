@@ -8281,7 +8281,7 @@ ClasspReleaseQueue(
     lowerDevice = fdoExtension->CommonExtension.LowerDeviceObject;
 
     //
-    // we raise irql seperately so we're not swapped out or suspended
+    // we raise irql separately so we're not swapped out or suspended
     // while holding the release queue irp in this routine.  this lets
     // us release the spin lock before lowering irql.
     //

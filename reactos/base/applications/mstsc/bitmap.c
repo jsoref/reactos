@@ -17,7 +17,7 @@
    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-/* three seperate function for speed when decompressing the bitmaps
+/* three separate function for speed when decompressing the bitmaps
    when modifying one function make the change in the others
    jay.sorg@gmail.com */
 

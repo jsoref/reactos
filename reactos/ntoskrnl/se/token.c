@@ -766,7 +766,7 @@ SepCreateToken(OUT PHANDLE TokenHandle,
     /*
      * Normally we would just point these members into the variable information
      * area; however, our ObCreateObject() call can't allocate a variable information
-     * area, so we allocate them seperately and provide a destroy function.
+     * area, so we allocate them separately and provide a destroy function.
      */
 
     uLength = sizeof(SID_AND_ATTRIBUTES) * AccessToken->UserAndGroupCount;

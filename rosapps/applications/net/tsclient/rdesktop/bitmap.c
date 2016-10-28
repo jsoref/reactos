@@ -18,7 +18,7 @@
    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-/* three seperate function for speed when decompressing the bitmaps */
+/* three separate function for speed when decompressing the bitmaps */
 /* when modifying one function make the change in the others */
 /* comment out #define BITMAP_SPEED_OVER_SIZE below for one slower function */
 /* j@american-data.com */

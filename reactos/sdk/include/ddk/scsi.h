@@ -2552,7 +2552,7 @@ typedef struct _CDVD_CAPABILITIES_PAGE {
   UCHAR Reserved6:1;
   UCHAR LoadingMechanismType:3;
   UCHAR SeparateVolume:1;
-  UCHAR SeperateChannelMute:1;
+  UCHAR SeparateChannelMute:1;
   UCHAR SupportsDiskPresent:1;
   UCHAR SWSlotSelection:1;
   UCHAR SideChangeCapable:1;

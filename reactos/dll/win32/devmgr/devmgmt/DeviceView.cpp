@@ -191,7 +191,7 @@ CDeviceView::Refresh(
     _In_ bool UpdateView
     )
 {
-    // Enum devices on a seperate thread to keep the gui responsive
+    // Enum devices on a separate thread to keep the gui responsive
 
     m_ViewType = Type;
 

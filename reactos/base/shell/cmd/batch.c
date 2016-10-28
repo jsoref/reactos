@@ -30,7 +30,7 @@
  *        implement proper BATCH file nesting and other improvements.
  *
  *    16 Jul 1998 (John P Price <linux-guru@gcfl.net>)
- *        Seperated commands into individual files.
+ *        Separated commands into individual files.
  *
  *    19 Jul 1998 (Hans B Pufal) [HBP_001]
  *        Preserve state of echo flag across batch calls.

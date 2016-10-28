@@ -25,7 +25,7 @@ How to check out a source tree from the CVS repository onto the local hard drive
 <sect2>
 <title>Modules in ReactOS' CVS Repository</title>
 <para>
-There are several modules in ReactOS' CVS repository. Each of these modules contains a seperate tree of files. Whenever you check out a tree, you must specify which module you want. The following modules are available in our repository:
+There are several modules in ReactOS' CVS repository. Each of these modules contains a separate tree of files. Whenever you check out a tree, you must specify which module you want. The following modules are available in our repository:
 <table>
 <title>Modules</title>
 <tgroup cols="2">
