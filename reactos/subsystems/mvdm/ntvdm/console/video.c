@@ -250,7 +250,7 @@ static VOID ResizeTextConsole(PCOORD Resolution, PSMALL_RECT WindowSize OPTIONAL
         /*
          * SetConsoleScreenBufferSize automatically takes into account the current
          * cursor position when it computes starting which row it should copy text
-         * when resizing the sceenbuffer, and scrolls the console window such that
+         * when resizing the screenbuffer, and scrolls the console window such that
          * the cursor is placed in it again. We therefore do not need to care about
          * the cursor position and do the maths ourselves.
          */

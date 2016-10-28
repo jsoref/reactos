@@ -600,7 +600,7 @@ ConsoleFirmwareTextClear (
             return STATUS_NOT_IMPLEMENTED;
         }
 
-        /* Clear the scren */
+        /* Clear the screen */
         EfiStatus = Console->Protocol->ClearScreen(Console->Protocol);
 
         /* Switch back to protected mode if we came from there */

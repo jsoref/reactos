@@ -70,7 +70,7 @@ LRESULT WINAPI ScreenSaverProc (HWND hwnd, UINT iMsg, WPARAM wparam, LPARAM lpar
                 x + width, 
                 y + width);
 
-            //Track the number of painted circles on scren
+            //Track the number of painted circles on screen
             circlesCount++;
             if (circlesCount == MAX_CIRCLES)
             {
