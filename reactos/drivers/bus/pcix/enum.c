@@ -748,7 +748,7 @@ PciConfigureIdeController(IN PPCI_PDO_EXTENSION PdoExtension,
             PciData->ProgIf = ProgIf;
             PdoExtension->ProgIf = NewProgIf;
 
-            /* Clear the first four BARs to reset current BAR setttings */
+            /* Clear the first four BARs to reset current BAR settings */
             PciData->u.type0.BaseAddresses[0] = 0;
             PciData->u.type0.BaseAddresses[1] = 0;
             PciData->u.type0.BaseAddresses[2] = 0;
