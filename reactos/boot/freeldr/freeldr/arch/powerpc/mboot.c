@@ -359,7 +359,7 @@ FrLdrGetKernelBase(VOID)
  * FrLdrGetPaeMode
  * INTERNAL
  *
- *     Determines whether PAE mode shoudl be enabled or not.
+ *     Determines whether PAE mode should be enabled or not.
  *
  * Params:
  *     None.

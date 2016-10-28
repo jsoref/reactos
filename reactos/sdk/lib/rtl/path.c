@@ -2402,7 +2402,7 @@ RtlDosSearchPath_Ustr(IN ULONG Flags,
                     goto Quickie;
                 }
 
-                /* We checked before that the maximum possible size shoudl fit! */
+                /* We checked before that the maximum possible size should fit! */
                 ASSERT((SegmentSize + FileNameString->Length + ExtensionLength) <
                         UNICODE_STRING_MAX_BYTES);
                 if ((SegmentSize + ExtensionLength + FileNameString->Length) >

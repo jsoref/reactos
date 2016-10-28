@@ -1444,7 +1444,7 @@ MiDereferencePfnAndDropLockCount(IN PMMPFN Pfn1)
         /* Are we the last one */
         if (OldRefCount == 1)
         {
-            /* The page shoudln't be shared not active at this point */
+            /* The page shouldn't be shared not active at this point */
             ASSERT(Pfn1->u3.e2.ReferenceCount == 1);
             ASSERT(Pfn1->u3.e1.PageLocation != ActiveAndValid);
             ASSERT(Pfn1->u2.ShareCount == 0);

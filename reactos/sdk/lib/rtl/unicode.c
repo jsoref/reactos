@@ -2705,7 +2705,7 @@ RtlDnsHostNameToComputerName(PUNICODE_STRING ComputerName, PUNICODE_STRING DnsHo
                                         DnsHostName->Buffer,
                                         ComputerNameLength);
 
-        /* status STATUS_BUFFER_OVERFLOW is not a problem since the computername shoud only
+        /* status STATUS_BUFFER_OVERFLOW is not a problem since the computername should only
            have MAX_COMPUTERNAME_LENGTH characters */
         if ((Status == STATUS_SUCCESS) ||
                 (Status == STATUS_BUFFER_OVERFLOW))

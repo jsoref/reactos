@@ -75,7 +75,7 @@ DdDestroySurface(LPDDHAL_DESTROYSURFACEDATA pDestroySurface)
 
     if (pDestroySurface->lpDDSurface->hDDSurface)
     {
-        /* Check if we shoudl really destroy it */
+        /* Check if we should really destroy it */
         RealDestroy = !(pDestroySurface->lpDDSurface->dwFlags & DDRAWISURF_DRIVERMANAGED) ||
                       !(pDestroySurface->lpDDSurface->dwFlags & DDRAWISURF_INVALID);
 
