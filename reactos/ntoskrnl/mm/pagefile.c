@@ -57,12 +57,12 @@ typedef struct _PAGINGFILE
 }
 PAGINGFILE, *PPAGINGFILE;
 
-typedef struct _RETRIEVEL_DESCRIPTOR_LIST
+typedef struct _RETRIEVAL_DESCRIPTOR_LIST
 {
-    struct _RETRIEVEL_DESCRIPTOR_LIST* Next;
+    struct _RETRIEVAL_DESCRIPTOR_LIST* Next;
     RETRIEVAL_POINTERS_BUFFER RetrievalPointers;
 }
-RETRIEVEL_DESCRIPTOR_LIST, *PRETRIEVEL_DESCRIPTOR_LIST;
+RETRIEVAL_DESCRIPTOR_LIST, *PRETRIEVAL_DESCRIPTOR_LIST;
 
 /* GLOBALS *******************************************************************/
 
@@ -460,13 +460,13 @@ MmAllocSwapPage(VOID)
     return(0);
 }
 
-static PRETRIEVEL_DESCRIPTOR_LIST FASTCALL
-MmAllocRetrievelDescriptorList(ULONG Pairs)
+static PRETRIEVAL_DESCRIPTOR_LIST FASTCALL
+MmAllocRetrievalDescriptorList(ULONG Pairs)
 {
     ULONG Size;
-    PRETRIEVEL_DESCRIPTOR_LIST RetDescList;
+    PRETRIEVAL_DESCRIPTOR_LIST RetDescList;
 
-    Size = sizeof(RETRIEVEL_DESCRIPTOR_LIST) + Pairs * 2 * sizeof(LARGE_INTEGER);
+    Size = sizeof(RETRIEVAL_DESCRIPTOR_LIST) + Pairs * 2 * sizeof(LARGE_INTEGER);
     RetDescList = ExAllocatePool(NonPagedPool, Size);
     if (RetDescList)
     {
@@ -491,8 +491,8 @@ NtCreatePagingFile(IN PUNICODE_STRING FileName,
     KIRQL oldIrql;
     ULONG AllocMapSize;
     FILE_FS_SIZE_INFORMATION FsSizeInformation;
-    PRETRIEVEL_DESCRIPTOR_LIST RetDescList;
-    PRETRIEVEL_DESCRIPTOR_LIST CurrentRetDescList;
+    PRETRIEVAL_DESCRIPTOR_LIST RetDescList;
+    PRETRIEVAL_DESCRIPTOR_LIST CurrentRetDescList;
     ULONG i;
     ULONG BytesPerAllocationUnit;
     LARGE_INTEGER Vcn;
@@ -634,7 +634,7 @@ NtCreatePagingFile(IN PUNICODE_STRING FileName,
         return(Status);
     }
 
-    CurrentRetDescList = RetDescList = MmAllocRetrievelDescriptorList(PAIRS_PER_RUN);
+    CurrentRetDescList = RetDescList = MmAllocRetrievalDescriptorList(PAIRS_PER_RUN);
 
     if (CurrentRetDescList == NULL)
     {
@@ -679,7 +679,7 @@ NtCreatePagingFile(IN PUNICODE_STRING FileName,
         ExtentCount += CurrentRetDescList->RetrievalPointers.ExtentCount;
         if (CurrentRetDescList->RetrievalPointers.Extents[CurrentRetDescList->RetrievalPointers.ExtentCount-1].NextVcn.QuadPart < MaxVcn.QuadPart)
         {
-            CurrentRetDescList->Next = MmAllocRetrievelDescriptorList(PAIRS_PER_RUN);
+            CurrentRetDescList->Next = MmAllocRetrievalDescriptorList(PAIRS_PER_RUN);
             if (CurrentRetDescList->Next == NULL)
             {
                 while (RetDescList)
