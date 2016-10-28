@@ -3221,7 +3221,7 @@ typedef HVDD *PHVDD;
 
 ULONG DosCloseVDD (HVDD hvdd);
 ULONG DosOpenVDD (PCSZ pszVDD, PHVDD phvdd);
-ULONG DosQueryDOSProperty (SGID sgidSesssionID, PCSZ pszName,
+ULONG DosQueryDOSProperty (SGID sgidSessionID, PCSZ pszName,
     ULONG ulBufferLength, PSZ pBuffer);
 ULONG DosRequestVDD (HVDD hvdd, SGID sgidSessionID, ULONG ulCommand,
     ULONG ulInputBufferLength, PVOID pInputBuffer,
