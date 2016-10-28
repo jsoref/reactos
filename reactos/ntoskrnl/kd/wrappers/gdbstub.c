@@ -487,7 +487,7 @@ GspGetRegisters(PCHAR Address, PKTRAP_FRAME TrapFrame)
             else if (i == PC)
             {
                 /*
-                 * This thread has not been sheduled yet so assume it
+                 * This thread has not been scheduled yet so assume it
                  * is still in PsBeginThreadWithContextInternal().
                  */
                 Value = (ULONG)KiThreadStartup;
