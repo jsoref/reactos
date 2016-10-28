@@ -267,7 +267,7 @@ WahDisableNonIFSHandleSupport(VOID)
     /* Open the service */
     Ws2IfsHandle = OpenService(ServiceMgrHandle, "WS2IFSL", SERVICE_ALL_ACCESS);
 
-    /* Disable the servce */
+    /* Disable the service */
     ChangeServiceConfig(Ws2IfsHandle,
                         SERVICE_NO_CHANGE,
                         SERVICE_DISABLED,

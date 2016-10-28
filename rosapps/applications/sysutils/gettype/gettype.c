@@ -209,7 +209,7 @@ GetBasicInfo(LPOSVERSIONINFOEX osvi, TCHAR * HostName, TCHAR * OSName, TCHAR * V
 	if(osvi->wSuiteMask & VER_SUITE_SMALLBUSINESS_RESTRICTED && osvi->wSuiteMask & VER_SUITE_SMALLBUSINESS)
 		_tcscat(OSName, _T("Small Business Edition"));
 
-	/* Version - 5.1 Build 2600 Serivce Pack 2 */
+	/* Version - 5.1 Build 2600 Service Pack 2 */
 	_stprintf(Version, _T("%d.%d Build %d %s"),(int)osvi->dwMajorVersion,(int)osvi->dwMinorVersion,(int)osvi->dwBuildNumber, osvi->szCSDVersion);
 
 	/* Role - Workgroup / Server / Domain Controller */
