@@ -193,7 +193,7 @@ IoCsqInsertIrp(
  *
  * @note
  *     - Passes the additional context through to the driver-supplied callback,
- *       which can be used with more sophistocated queues
+ *       which can be used with more sophisticated queues
  *     - Marks the IRP pending in all cases
  *     - Guaranteed to not queue a canceled IRP
  *     - This is complicated logic, and is patterend after the Microsoft library.
