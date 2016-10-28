@@ -996,7 +996,7 @@ PciApplyHacks(IN PPCI_FDO_EXTENSION DeviceExtension,
             /*
              * Check for Intel ICH PCI-to-PCI (i82801) bridges (used on the i810,
              * i820, i840, i845 Chipsets) that have subtractive decode enabled,
-             * and whose hack flags do not specifiy that this support is broken.
+             * and whose hack flags do not specify that this support is broken.
              */
             if ((PdoExtension->HeaderType == PCI_BRIDGE_TYPE) &&
                 (PdoExtension->Dependent.type1.SubtractiveDecode) &&

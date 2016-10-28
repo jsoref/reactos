@@ -218,7 +218,7 @@ public:
   //   pszKeyName - pointer to buffer containing name of key to create.
   //   rhKey - reference to variable that receives handle of opened key. If method fails, variable value is unchanged.
   //   pblnOpened - optional pointer to variable that receives create/open status. If subkey is opened value is TRUE. If key is created value is FALSE.
-  //   blnVolatile - optional parameter specifining if created key is volatile.
+  //   blnVolatile - optional parameter specifying if created key is volatile.
   //
   // Return value:
   //   If the method succeeds, the return value is ERROR_SUCCESS.

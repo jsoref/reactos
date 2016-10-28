@@ -140,7 +140,7 @@ ERASE [/N /P /T /Q /S /W /Y /Z /A[[:]attributes]] file ...\n\n\
     STRING_DEL_HELP4 "    %lu files deleted\n"
     STRING_DELAY_HELP "pause for n seconds or milliseconds\n\
 DELAY [/m]n\n\n\
-  /m          specifiy than n are milliseconds\n\
+  /m          specify than n are milliseconds\n\
               otherwise n are seconds\n"
     STRING_DIR_HELP1 "DIR [drive:][path][filename] [/A[[:]attributes]] [/B] [/C] [/D] [/L] [/N]\n\
   [/O[[:]sortorder]] [/P] [/Q] [/R] [/S] [/T[[:]timefield]] [/W] [/X] [/4]\n\n\
@@ -396,7 +396,7 @@ TIMER  [ON|OFF] [/S] [/n] [/Fn]\n\n\
   OFF         set stopwatch OFF\n\
   /S          Split time. Return stopwatch split\n\
               time without changing its value\n\
-  /n          Specifiy the stopwatch number.\n\
+  /n          Specify the stopwatch number.\n\
               Stopwatches available are 0 to 9\n\
               If it is not specified default is 1\n\
   /Fn         Format for output\n\

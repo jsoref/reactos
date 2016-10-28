@@ -717,7 +717,7 @@ xclip_handle_SelectionRequest(RDPCLIENT * This, XSelectionRequestEvent * event)
 						 &prop_return);
 			if (res != Success)
 			{
-				DEBUG_CLIPBOARD(("Requested native format but didn't specifiy which.\n"));
+				DEBUG_CLIPBOARD(("Requested native format but didn't specify which.\n"));
 				xclip_refuse_selection(This, event);
 				return;
 			}
