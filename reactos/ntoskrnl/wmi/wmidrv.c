@@ -195,7 +195,7 @@ WmipRegisterGuids(
         return STATUS_UNSUCCESSFUL;
     }
 
-    /* Make sure we have a resonable GUID count */
+    /* Make sure we have a reasonable GUID count */
     if ((RegisterGuids->RegInfo.GuidCount == 0) ||
         (RegisterGuids->RegInfo.GuidCount > 0x10000))
     {
