@@ -600,7 +600,7 @@ BlockIoGetInformation (
     _Out_ PBL_DEVICE_INFORMATION DeviceInformation
     )
 {
-    /* Copy the device speciifc data into the block device information */
+    /* Copy the device specific data into the block device information */
     RtlCopyMemory(&DeviceInformation->BlockDeviceInfo,
                    DeviceEntry->DeviceSpecificData,
                    sizeof(DeviceInformation->BlockDeviceInfo));
