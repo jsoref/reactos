@@ -138,7 +138,7 @@ MiComputeNonPagedPoolVa(IN ULONG FreePages)
     /* Hyperspace ends here */
     MmHyperSpaceEnd = (PVOID)((ULONG_PTR)MmSystemCacheWorkingSetList - 1);
 
-    /* Check if the user gave a ridicuously large nonpaged pool RAM size */
+    /* Check if the user gave a ridiculously large nonpaged pool RAM size */
     if ((MmSizeOfNonPagedPoolInBytes >> PAGE_SHIFT) > (FreePages * 7 / 8))
     {
         /* More than 7/8ths of RAM was dedicated to nonpaged pool, ignore! */

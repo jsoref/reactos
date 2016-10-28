@@ -286,7 +286,7 @@ MiBuildNonPagedPool(VOID)
         MmSizeOfNonPagedPoolInBytes = 2 * 1024 * 1024;
     }
 
-    /* Check if the user gave a ridicuously large nonpaged pool RAM size */
+    /* Check if the user gave a ridiculously large nonpaged pool RAM size */
     if ((MmSizeOfNonPagedPoolInBytes >> PAGE_SHIFT) >
         (MmNumberOfPhysicalPages * 7 / 8))
     {
