@@ -940,7 +940,7 @@ WriteBusLogicPort(UCHAR data,
 }
 
 //_________________________________________________________________________________________
-// Declarations for the device registers and rewading and writing to them
+// Declarations for the device registers and reading and writing to them
 //_________________________________________________________________________________________
 
 //  Define the BusLogic SCSI Host Adapter I/O Register Offsets.
