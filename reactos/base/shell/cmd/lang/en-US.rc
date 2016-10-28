@@ -274,7 +274,7 @@ MOVE [/N][drive:][path]dirname1 dirname2\n\n\
   /N                    Nothing. Do everything but move files or directories.\n\n\
 Current limitations:\n\
   - You can't move a file or directory from one drive to another.\n"
-    STRING_MSGBOX_HELP "display a message box and return user responce\n\n\
+    STRING_MSGBOX_HELP "display a message box and return user response\n\n\
 MSGBOX type ['title'] prompt\n\n\
 type          button displayed\n\
               possible values are: OK, OKCANCEL,\n\
