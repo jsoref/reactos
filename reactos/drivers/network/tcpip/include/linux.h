@@ -1775,7 +1775,7 @@ extern void poll_freewait(poll_table* pt);
 
 
 /*
- * Scaleable version of the fd_set.
+ * Scalable version of the fd_set.
  */
 
 typedef struct {
