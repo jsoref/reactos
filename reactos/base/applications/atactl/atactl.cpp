@@ -1283,7 +1283,7 @@ ata_scan(
         to.WaitForPhysicalLink = lock;
         to.Flags = unhide ? UNIATA_ADD_FLAGS_UNHIDE : 0;
 
-        printf("Scaning bus for new devices.\n");
+        printf("Scanning bus for new devices.\n");
         if(lock) {
             printf("You have %d seconds to connect device.\n", lock);
         }
