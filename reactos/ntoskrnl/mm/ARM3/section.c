@@ -1553,7 +1553,7 @@ MiCreatePagingFileMap(OUT PSEGMENT *Segment,
                                         'tCmM');
     ASSERT(ControlArea);
 
-    /* And zero it out, filling the basic segmnet pointer and reference fields */
+    /* And zero it out, filling the basic segment pointer and reference fields */
     RtlZeroMemory(ControlArea, sizeof(CONTROL_AREA) + sizeof(SUBSECTION));
     ControlArea->Segment = NewSegment;
     ControlArea->NumberOfSectionReferences = 1;

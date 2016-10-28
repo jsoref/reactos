@@ -2077,7 +2077,7 @@ FRESULT follow_path (	/* FR_OK(0): successful, !=0: error code */
 		for (;;) {
 			res = create_name(dp, &path);	/* Get a segment name of the path */
 			if (res != FR_OK) break;
-			res = dir_find(dp);				/* Find an object with the sagment name */
+			res = dir_find(dp);				/* Find an object with the segment name */
 			ns = dp->fn[NSFLAG];
 			if (res != FR_OK) {				/* Failed to find the object */
 				if (res == FR_NO_FILE) {	/* Object is not found */

@@ -1003,7 +1003,7 @@ MmUnsharePageEntrySectionSegment(PROS_SECTION_OBJECT Section,
             }
             else
             {
-                DPRINT1("Found a swapentry for a non private page in an image or data file sgment\n");
+                DPRINT1("Found a swapentry for a non private page in an image or data file segment\n");
                 KeBugCheck(MEMORY_MANAGEMENT);
             }
         }
