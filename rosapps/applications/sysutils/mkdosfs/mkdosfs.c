@@ -661,7 +661,7 @@ do_check (char *buffer, int try, unsigned int current_block)
 }
 
 #ifndef _WIN32
-/* Alarm clock handler - display the status of the quest for bad blocks!  Then retrigger the alarm for five senconds
+/* Alarm clock handler - display the status of the quest for bad blocks!  Then retrigger the alarm for five seconds
    later (so we can come here again) */
 
 static void
