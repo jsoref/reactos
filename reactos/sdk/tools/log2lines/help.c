@@ -69,7 +69,7 @@ char *verboseUsage =
 "       - check:\n"
 "         To be combined with -S. Check each source file in the log and issue\n"
 "         a warning if its revision is higher than that of the tested build.\n"
-"         Also when the revison of the source tree is lower than that of the\n"
+"         Also when the revision of the source tree is lower than that of the\n"
 "         tested build (for every source file).\n"
 "         In both cases the source file's -S output would be unreliable.\n"
 "       - update:\n"
