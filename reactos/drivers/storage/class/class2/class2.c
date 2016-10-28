@@ -3993,7 +3993,7 @@ Return Value:
         scsiPass->Lun = deviceExtension->Lun;
 
         //
-        // NOTICE:  The SCSI-II specificaiton indicates that this field
+        // NOTICE:  The SCSI-II specification indicates that this field
         // should be zero; however, some target controllers ignore the logical
         // unit number in the IDENTIFY message and only look at the logical
         // unit number field in the CDB.
@@ -4917,7 +4917,7 @@ Return Value:
     srb->Lun = deviceExtension->Lun;
 
     //
-    // NOTICE:  The SCSI-II specificaiton indicates that this field should be
+    // NOTICE:  The SCSI-II specification indicates that this field should be
     // zero; however, some target controllers ignore the logical unit number
     // in the IDENTIFY message and only look at the logical unit number field
     // in the CDB.
