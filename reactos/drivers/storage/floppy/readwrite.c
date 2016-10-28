@@ -328,7 +328,7 @@ RWSeekToCylinder(PDRIVE_INFO DriveInfo, UCHAR Cylinder)
 
     if(CurCylinder != Cylinder)
     {
-        WARN_(FLOPPY, "RWSeekToTrack(): Seeek to track failed; current cylinder is 0x%x\n", CurCylinder);
+        WARN_(FLOPPY, "RWSeekToTrack(): Seek to track failed; current cylinder is 0x%x\n", CurCylinder);
         return STATUS_UNSUCCESSFUL;
     }
 
