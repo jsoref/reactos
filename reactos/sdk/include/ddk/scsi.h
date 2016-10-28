@@ -2384,7 +2384,7 @@ typedef struct _MODE_RIGID_GEOMETRY_PAGE {
   UCHAR Reserved2:6;
   UCHAR RotationOffset;
   UCHAR Reserved3;
-  UCHAR RoataionRate[2];
+  UCHAR RotationRate[2];
   UCHAR Reserved4[2];
 } MODE_RIGID_GEOMETRY_PAGE, *PMODE_RIGID_GEOMETRY_PAGE;
 
