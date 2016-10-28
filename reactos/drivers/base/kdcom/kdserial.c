@@ -36,7 +36,7 @@ KdpSendBuffer(
  * \param Buffer Pointer to a buffer that receives the data.
  * \param Size Size of data to receive in bytes.
  * \return KDP_PACKET_RECEIVED if successful.
- *         KDP_PACKET_TIMEOUT if the receice timed out.
+ *         KDP_PACKET_TIMEOUT if the receive timed out.
  */
 KDP_STATUS
 NTAPI

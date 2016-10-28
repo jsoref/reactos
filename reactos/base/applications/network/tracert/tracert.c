@@ -345,7 +345,7 @@ ReceivePacket(PAPPINFO pInfo)
         {
             /* get time packet was received */
             pInfo->lTimeEnd = GetTime(pInfo);
-            DebugPrint(_T("reveived %d bytes\n"), iSockRet);
+            DebugPrint(_T("received %d bytes\n"), iSockRet);
             bRet = TRUE;
         }
         else
