@@ -2479,7 +2479,7 @@ RtlCreateUserProcess(
     _In_ PUNICODE_STRING ImageFileName,
     _In_ ULONG Attributes,
     _In_ PRTL_USER_PROCESS_PARAMETERS ProcessParameters,
-    _In_opt_ PSECURITY_DESCRIPTOR ProcessSecutityDescriptor,
+    _In_opt_ PSECURITY_DESCRIPTOR ProcessSecurityDescriptor,
     _In_opt_ PSECURITY_DESCRIPTOR ThreadSecurityDescriptor,
     _In_opt_ HANDLE ParentProcess,
     _In_ BOOLEAN CurrentDirectory,

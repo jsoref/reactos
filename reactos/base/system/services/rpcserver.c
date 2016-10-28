@@ -1439,7 +1439,7 @@ DWORD RSetServiceObjectSecurity(
     SC_RPC_HANDLE hService,
     DWORD dwSecurityInformation,
     LPBYTE lpSecurityDescriptor,
-    DWORD dwSecuityDescriptorSize)
+    DWORD dwSecurityDescriptorSize)
 {
     PSERVICE_HANDLE hSvc;
     PSERVICE lpService;

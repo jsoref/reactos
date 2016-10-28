@@ -335,8 +335,8 @@ interface svcctl
     DWORD RSetServiceObjectSecurity(
         [in] SC_RPC_HANDLE hService,
         [in] DWORD dwSecurityInformation,
-        [in, size_is(dwSecuityDescriptorSize)] LPBYTE lpSecurityDescriptor,
-        [in] DWORD dwSecuityDescriptorSize);
+        [in, size_is(dwSecurityDescriptorSize)] LPBYTE lpSecurityDescriptor,
+        [in] DWORD dwSecurityDescriptorSize);
 
     /* Function 6 */
     DWORD RQueryServiceStatus(
