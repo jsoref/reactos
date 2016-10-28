@@ -324,7 +324,7 @@ Arguments:
         then this can be returned as NULL.
 
     *Pdo returns with the device object for the PDO associated with this
-        device if the WMIREG_FLAG_INSTANCE_PDO flag is retured in
+        device if the WMIREG_FLAG_INSTANCE_PDO flag is returned in
         *RegFlags.
 
 Return Value:
