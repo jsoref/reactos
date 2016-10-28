@@ -630,7 +630,7 @@ _KeLeaveCriticalRegion(VOID)
  *
  * @param NormalRoutine
  *        Points to the NormalRoutine to associate with the APC.
- *        This routine is executed at PASSIVE_LEVEL. If this is not specifed,
+ *        This routine is executed at PASSIVE_LEVEL. If this is not specified,
  *        the APC becomes a Special APC and the Mode and Context parameters are
  *        ignored.
  *

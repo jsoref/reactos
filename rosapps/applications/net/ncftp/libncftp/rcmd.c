@@ -779,7 +779,7 @@ FTPStartDataCmd(const FTPCIPtr cip, int netMode, int type, longest_int startPoin
 	/* Re-set the cancellation flag. */
 	cip->cancelXfer = 0;
 
-	/* To transfer data, we do these things in order as specifed by
+	/* To transfer data, we do these things in order as specified by
 	 * the RFC.
 	 *
 	 * First, we tell the other side to set up a data line.  This

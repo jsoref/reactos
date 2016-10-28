@@ -623,7 +623,7 @@ static HRESULT WINAPI IDirect3D9Impl_CheckDeviceFormat(LPDIRECT3D9 iface, UINT A
 
         if (RType != D3DRTYPE_TEXTURE)
         {
-            DPRINT1("Invalid Usage speficied, D3DUSAGE_DMAP must be combined with RType D3DRTYPE_TEXTURE");
+            DPRINT1("Invalid Usage specified, D3DUSAGE_DMAP must be combined with RType D3DRTYPE_TEXTURE");
             UNLOCK_D3D9();
             return D3DERR_INVALIDCALL;
         }

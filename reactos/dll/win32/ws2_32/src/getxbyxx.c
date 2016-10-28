@@ -449,7 +449,7 @@ getservbyport(IN int port,
         return NULL;
     }
 
-    /* No protocol specifed */
+    /* No protocol specified */
     if(!proto) proto = "";
 
     /* Allocate memory for the port name */
@@ -518,7 +518,7 @@ getservbyname(IN const char FAR * name,
         return NULL;
     }
 
-    /* No protocol specifed */
+    /* No protocol specified */
     if(!proto) proto = "";
 
     /* Allocate buffer for it */
