@@ -100,7 +100,7 @@ kernel PCR selector )
         1. Save old Exception List head , and patch -1 to FS:0 ( thus
 overriding any potentially pre-existing SEH handlers.
 
-        2. Determine whatever the interrupted thread was runing in
+        2. Determine whatever the interrupted thread was running in
 ring0 or in ring3 and save this information in PreviousMode field of
 The Trap frame. This is also important , since many internal API's will
 check the Previous mode , acting  differently in each case. (check CS

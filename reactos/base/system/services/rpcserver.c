@@ -1022,7 +1022,7 @@ DWORD RCloseServiceHandle(
                     return ERROR_SUCCESS;
                 }
 
-                /* There are no references and no runnning dependencies,
+                /* There are no references and no running dependencies,
                    it is now safe to delete the service */
 
                 /* Delete the Service Key */
