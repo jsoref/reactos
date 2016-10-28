@@ -2898,7 +2898,7 @@ BmMain (
     /* Write out the first XML tag */
     BlXmiWrite(L"<bootmgr/>");
 
-    /* Check for factory resset */
+    /* Check for factory reset */
     BlSecureBootCheckForFactoryReset();
 
     /* Load the revocation list */
