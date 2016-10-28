@@ -772,7 +772,7 @@ ClassDispatchPnp(
 
                     //
                     // ASSERT that we never get two queries in a row, as
-                    // this will severly mess up the state machine
+                    // this will severely mess up the state machine
                     //
                     ASSERT(commonExtension->CurrentState != irpStack->MinorFunction);
                     commonExtension->PreviousState = commonExtension->CurrentState;
