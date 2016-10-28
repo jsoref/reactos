@@ -82,7 +82,7 @@ struct RegPidlEntry
 
     union {
         struct {
-            // For Value entries, this contains the value contents, if it's resonably small.
+            // For Value entries, this contains the value contents, if it's reasonably small.
             // For Key entries, this contains the custom class name
             DWORD contentType;
             USHORT contentsLength;
