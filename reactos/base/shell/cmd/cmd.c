@@ -181,7 +181,7 @@ WORD wDefColor;           /* default color */
  * insert commas into a number
  */
 INT
-ConvertULargeInteger(ULONGLONG num, LPTSTR des, UINT len, BOOL bPutSeperator)
+ConvertULargeInteger(ULONGLONG num, LPTSTR des, UINT len, BOOL bPutSeparator)
 {
     TCHAR temp[39];   /* maximum length with nNumberGroups == 1 */
     UINT  n, iTarget;
@@ -192,11 +192,11 @@ ConvertULargeInteger(ULONGLONG num, LPTSTR des, UINT len, BOOL bPutSeperator)
     n = 0;
     iTarget = nNumberGroups;
     if (!nNumberGroups)
-        bPutSeperator = FALSE;
+        bPutSeparator = FALSE;
 
     do
     {
-        if (iTarget == n && bPutSeperator)
+        if (iTarget == n && bPutSeparator)
         {
             iTarget += nNumberGroups + 1;
             temp[38 - n++] = cThousandSeparator;

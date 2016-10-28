@@ -42,7 +42,7 @@
 /*
  * Globals
  */
-const char SEPERATOR = '-';
+const char SEPARATOR = '-';
 int _CRT_glob = 0; // stop * from listing dir files in arp -d *
 
 /*
@@ -287,7 +287,7 @@ INT Addhost(PTCHAR pszInetAddr, PTCHAR pszEthAddr, PTCHAR pszIfAddr)
     }
     for (i=0; i<17; i++)
     {
-        if (pszEthAddr[i] == SEPERATOR)
+        if (pszEthAddr[i] == SEPARATOR)
             continue;
 
         if (!isxdigit(pszEthAddr[i]))

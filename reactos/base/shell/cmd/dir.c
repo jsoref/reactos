@@ -165,7 +165,7 @@ enum EOrderBy
 typedef struct _DirSwitchesFlags
 {
     BOOL bBareFormat;   /* Bare Format */
-    BOOL bTSeperator;   /* Thousands seperator */
+    BOOL bTSeparator;   /* Thousands separator */
     BOOL bWideList;     /* Wide list format */
     BOOL bWideListColSort;  /* Wide list format but sorted by column */
     BOOL bLowerCase;    /* Uses lower case */
@@ -326,7 +326,7 @@ DirReadParam(LPTSTR Line,               /* [IN] The line with the parameters & s
             else if (cCurUChar == _T('B'))
                 lpFlags->bBareFormat = ! bNegative;
             else if (cCurUChar == _T('C'))
-                lpFlags->bTSeperator = ! bNegative;
+                lpFlags->bTSeparator = ! bNegative;
             else if (cCurUChar == _T('W'))
                 lpFlags->bWideList = ! bNegative;
             else if (cCurUChar == _T('D'))
@@ -780,7 +780,7 @@ PrintSummary(LPTSTR szPath,
     /* Take this code offline to fix /S does not print double info */
     if (TotalSummary && lpFlags->bRecursive)
     {
-        ConvertULargeInteger(u64Bytes, szBuffer, sizeof(szBuffer), lpFlags->bTSeperator);
+        ConvertULargeInteger(u64Bytes, szBuffer, sizeof(szBuffer), lpFlags->bTSeparator);
         LoadString(CMD_ModuleHandle, STRING_DIR_HELP5, szMsg, ARRAYSIZE(szMsg));
         DirPrintf(lpFlags, szMsg, ulFiles, szBuffer);
     }
@@ -789,7 +789,7 @@ PrintSummary(LPTSTR szPath,
         /* Print File Summary */
         /* Condition to print summary is:
         If we are not in bare format and if we have results! */
-        ConvertULargeInteger(u64Bytes, szBuffer, 20, lpFlags->bTSeperator);
+        ConvertULargeInteger(u64Bytes, szBuffer, 20, lpFlags->bTSeparator);
         LoadString(CMD_ModuleHandle, STRING_DIR_HELP8, szMsg, ARRAYSIZE(szMsg));
         DirPrintf(lpFlags, szMsg, ulFiles, szBuffer);
     }
@@ -798,7 +798,7 @@ PrintSummary(LPTSTR szPath,
     if (!lpFlags->bRecursive || TotalSummary)
     {
         GetUserDiskFreeSpace(szPath, &uliFree);
-        ConvertULargeInteger(uliFree.QuadPart, szBuffer, sizeof(szBuffer), lpFlags->bTSeperator);
+        ConvertULargeInteger(uliFree.QuadPart, szBuffer, sizeof(szBuffer), lpFlags->bTSeparator);
         LoadString(CMD_ModuleHandle, STRING_DIR_HELP6, szMsg, ARRAYSIZE(szMsg));
         DirPrintf(lpFlags, szMsg, ulDirs, szBuffer);
     }
@@ -891,7 +891,7 @@ DirPrintNewList(PDIRFINDINFO ptrFiles[],        /* [IN]Files' Info */
             iSizeFormat = 14;
             u64FileSize.HighPart = ptrFiles[i]->stFindInfo.nFileSizeHigh;
             u64FileSize.LowPart = ptrFiles[i]->stFindInfo.nFileSizeLow;
-            ConvertULargeInteger(u64FileSize.QuadPart, szSize, 20, lpFlags->bTSeperator);
+            ConvertULargeInteger(u64FileSize.QuadPart, szSize, 20, lpFlags->bTSeparator);
         }
 
         /* Calculate short name */
@@ -915,7 +915,7 @@ DirPrintNewList(PDIRFINDINFO ptrFiles[],        /* [IN]Files' Info */
         ptrCurStream = ptrFiles[i]->ptrHead;
         while (ptrCurStream)
         {
-            ConvertULargeInteger(ptrCurStream->stStreamInfo.StreamSize.QuadPart, szSize, 20, lpFlags->bTSeperator);
+            ConvertULargeInteger(ptrCurStream->stStreamInfo.StreamSize.QuadPart, szSize, 20, lpFlags->bTSeparator);
 
             /* Print the line */
             DirPrintf(lpFlags, _T("%10s  %-6s    %*s%s %s%s\n"),
@@ -1062,7 +1062,7 @@ DirPrintOldList(PDIRFINDINFO ptrFiles[],        /* [IN] Files' Info */
             iSizeFormat = 17;
             u64FileSize.HighPart = ptrFiles[i]->stFindInfo.nFileSizeHigh;
             u64FileSize.LowPart = ptrFiles[i]->stFindInfo.nFileSizeLow;
-            ConvertULargeInteger(u64FileSize.QuadPart, szSize, 20, lpFlags->bTSeperator);
+            ConvertULargeInteger(u64FileSize.QuadPart, szSize, 20, lpFlags->bTSeparator);
         }
 
         /* Format date and time */
@@ -1674,7 +1674,7 @@ CommandDir(LPTSTR rest)
     stFlags.bPause = FALSE;
     stFlags.bRecursive = FALSE;
     stFlags.bShortName = FALSE;
-    stFlags.bTSeperator = TRUE;
+    stFlags.bTSeparator = TRUE;
     stFlags.bUser = FALSE;
     stFlags.bWideList = FALSE;
     stFlags.bWideListColSort = FALSE;
@@ -1736,7 +1736,7 @@ CommandDir(LPTSTR rest)
             int i;
             TRACE("Attributes mask/value %x/%x\n",stFlags.stAttribs.dwAttribMask,stFlags.stAttribs.dwAttribVal  );
             TRACE("(B) Bare format : %i\n", stFlags.bBareFormat );
-            TRACE("(C) Thousand : %i\n", stFlags.bTSeperator );
+            TRACE("(C) Thousand : %i\n", stFlags.bTSeparator );
             TRACE("(W) Wide list : %i\n", stFlags.bWideList );
             TRACE("(D) Wide list sort by column : %i\n", stFlags.bWideListColSort );
             TRACE("(L) Lowercase : %i\n", stFlags.bLowerCase );

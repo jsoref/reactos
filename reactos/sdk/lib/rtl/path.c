@@ -1301,8 +1301,8 @@ RtlGetLongestNtPathLength(VOID)
 
 /*
  * @implemented
- * @note: the export is called RtlGetLengthWithoutTrailingPathSeperators
- *        (with a 'e' instead of a 'a' in "Seperators").
+ * @note: the export is called RtlGetLengthWithoutTrailingPathSeparators
+ *        (with a 'e' instead of a 'a' in "Separators").
  */
 NTSTATUS
 NTAPI

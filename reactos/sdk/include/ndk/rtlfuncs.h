@@ -2830,7 +2830,7 @@ RtlGetFullPathName_UstrEx(
 NTSYSAPI
 NTSTATUS
 NTAPI
-RtlGetLengthWithoutTrailingPathSeperators(
+RtlGetLengthWithoutTrailingPathSeparators(
     _Reserved_ ULONG Flags,
     _In_ PCUNICODE_STRING PathString,
     _Out_ PULONG Length

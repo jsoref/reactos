@@ -29,13 +29,13 @@
 #define SUBST_DRIVE_LETTER 'M'
 #define SUBST_DRIVE "M:"
 #define SUBST_DRIVE_NON_EXIST_DIR "M:\\deadbeef"
-#define SUBST_DRIVE_WITH_TRAILING_PATH_SEPERATOR "M:\\"
+#define SUBST_DRIVE_WITH_TRAILING_PATH_SEPARATOR "M:\\"
 #define SUBST_DRIVE_SEARCH "M:\\*"
 #define SUBST_DRIVE_LOWERCASE "m:"
 #define SUBST_DRIVE_LOWERCASE_SEARCH "m:\\*"
 #define SUBST_DRIVE2_LETTER 'R'
 #define SUBST_DRIVE2 "R:"
-#define SUBST_DRIVE2_WITH_TRAILING_PATH_SEPERATOR "R:\\"
+#define SUBST_DRIVE2_WITH_TRAILING_PATH_SEPARATOR "R:\\"
 #define SUBST_DRIVE2_SEARCH "R:\\*"
 
 static void test_DefineDosDeviceA(void)
@@ -61,10 +61,10 @@ static void test_DefineDosDeviceA(void)
     dwMaskPrev = GetLogicalDrives();
     Result = DefineDosDeviceA(0, SUBST_DRIVE, Target);
     ok(Result, "Failed to subst drive\n");
-    DriveType1 = GetDriveTypeA(SUBST_DRIVE_WITH_TRAILING_PATH_SEPERATOR);
+    DriveType1 = GetDriveTypeA(SUBST_DRIVE_WITH_TRAILING_PATH_SEPARATOR);
     Result = DefineDosDeviceA(0, SUBST_DRIVE2, SUBST_DRIVE);
     ok(Result, "Failed to subst drive\n");
-    DriveType2 = GetDriveTypeA(SUBST_DRIVE2_WITH_TRAILING_PATH_SEPERATOR);
+    DriveType2 = GetDriveTypeA(SUBST_DRIVE2_WITH_TRAILING_PATH_SEPARATOR);
     dwMaskCur = GetLogicalDrives();
     ok(dwMaskCur != dwMaskPrev, "Drive masks match when it shouldn't\n");
     ok((dwMaskCur & (1 << (SUBST_DRIVE_LETTER - 'A'))), "Drive bit is not set\n");
@@ -93,7 +93,7 @@ static void test_DefineDosDeviceA(void)
     dwMaskPrev = GetLogicalDrives();
     Result = DefineDosDeviceA(0, SUBST_DRIVE_LOWERCASE, Target);
     ok(Result, "Failed to subst drive using lowercase drive letter\n");
-    DriveType1 = GetDriveTypeA(SUBST_DRIVE_WITH_TRAILING_PATH_SEPERATOR);
+    DriveType1 = GetDriveTypeA(SUBST_DRIVE_WITH_TRAILING_PATH_SEPARATOR);
     ok(DriveType1 == SystemDriveType, "subst drive types don't match\n");
     dwMaskCur = GetLogicalDrives();
     ok(dwMaskCur != dwMaskPrev, "Drive masks match when it shouldn't\n");
@@ -112,7 +112,7 @@ static void test_DefineDosDeviceA(void)
     dwMaskPrev = GetLogicalDrives();
     Result = DefineDosDeviceA(0, SUBST_DRIVE, Target);
     ok(Result, "Failed to subst drive\n");
-    DriveType1 = GetDriveTypeA(SUBST_DRIVE_WITH_TRAILING_PATH_SEPERATOR);
+    DriveType1 = GetDriveTypeA(SUBST_DRIVE_WITH_TRAILING_PATH_SEPARATOR);
     ok(DriveType1 == SystemDriveType, "subst drive types don't match\n");
     dwMaskCur = GetLogicalDrives();
     ok(dwMaskCur != dwMaskPrev, "Drive masks match when it shouldn't\n");
@@ -135,7 +135,7 @@ static void test_DefineDosDeviceA(void)
     ok(Result, "Failed to subst drive\n");
     Result = DefineDosDeviceA(0, SUBST_DRIVE, "C:\\temp3");
     ok(Result, "Failed to subst drive\n");
-    DriveType1 = GetDriveTypeA(SUBST_DRIVE_WITH_TRAILING_PATH_SEPERATOR);
+    DriveType1 = GetDriveTypeA(SUBST_DRIVE_WITH_TRAILING_PATH_SEPARATOR);
     ok(DriveType1 != SystemDriveType, "subst drive types match when it shouldn't\n");
     ok(GetLastError() == ERROR_FILE_NOT_FOUND, "Wrong last error. Expected %lu, got %lu\n", (DWORD)(ERROR_FILE_NOT_FOUND), GetLastError());
     dwMaskCur = GetLogicalDrives();
@@ -166,7 +166,7 @@ static void test_DefineDosDeviceA(void)
     ok(Result, "Failed to subst drive\n");
     Result = DefineDosDeviceA(0, SUBST_DRIVE, "C:\\temp3");
     ok(Result, "Failed to subst drive\n");
-    DriveType1 = GetDriveTypeA(SUBST_DRIVE_WITH_TRAILING_PATH_SEPERATOR);
+    DriveType1 = GetDriveTypeA(SUBST_DRIVE_WITH_TRAILING_PATH_SEPARATOR);
     ok(DriveType1 != SystemDriveType, "subst drive types match when it shouldn't\n");
     ok(GetLastError() == ERROR_FILE_NOT_FOUND, "Wrong last error. Expected %lu, got %lu\n", (DWORD)(ERROR_FILE_NOT_FOUND), GetLastError());
     dwMaskCur = GetLogicalDrives();
@@ -201,7 +201,7 @@ static void test_DefineDosDeviceA(void)
     ok(Result, "Failed to subst drive\n");
     Result = DefineDosDeviceA(0, SUBST_DRIVE, "C:\\temp5");
     ok(Result, "Failed to subst drive\n");
-    DriveType1 = GetDriveTypeA(SUBST_DRIVE_WITH_TRAILING_PATH_SEPERATOR);
+    DriveType1 = GetDriveTypeA(SUBST_DRIVE_WITH_TRAILING_PATH_SEPARATOR);
     ok(DriveType1 != SystemDriveType, "subst drive types match when it shouldn't\n");
     ok(GetLastError() == ERROR_FILE_NOT_FOUND, "Wrong last error. Expected %lu, got %lu\n", (DWORD)(ERROR_FILE_NOT_FOUND), GetLastError());
     dwMaskCur = GetLogicalDrives();
@@ -239,7 +239,7 @@ static void test_DefineDosDeviceA(void)
     snprintf(Buffer, sizeof(Buffer), "%s\\\\\\", Target);
     Result = DefineDosDeviceA(0, SUBST_DRIVE, Buffer);
     ok(Result, "Failed to subst drive\n");
-    DriveType1 = GetDriveTypeA(SUBST_DRIVE_WITH_TRAILING_PATH_SEPERATOR);
+    DriveType1 = GetDriveTypeA(SUBST_DRIVE_WITH_TRAILING_PATH_SEPARATOR);
     ok(DriveType1 == SystemDriveType, "subst drive types don't match\n");
     dwMaskCur = GetLogicalDrives();
     ok(dwMaskCur != dwMaskPrev, "Drive masks match when it shouldn't\n");
@@ -259,7 +259,7 @@ static void test_DefineDosDeviceA(void)
     snprintf(Buffer, sizeof(Buffer), "\\??\\%s\\\\\\", Target);
     Result = DefineDosDeviceA(DDD_RAW_TARGET_PATH, SUBST_DRIVE, Buffer);
     ok(Result, "Failed to subst drive\n");
-    DriveType1 = GetDriveTypeA(SUBST_DRIVE_WITH_TRAILING_PATH_SEPERATOR);
+    DriveType1 = GetDriveTypeA(SUBST_DRIVE_WITH_TRAILING_PATH_SEPARATOR);
     ok(DriveType1 != SystemDriveType, "subst drive types match when they shouldn't\n");
     dwMaskCur = GetLogicalDrives();
     ok(dwMaskCur != dwMaskPrev, "Drive masks match when it shouldn't\n");
@@ -277,9 +277,9 @@ static void test_DefineDosDeviceA(void)
 
     /* Test using trailing \ against drive letter */
     dwMaskPrev = GetLogicalDrives();
-    Result = DefineDosDeviceA(0, SUBST_DRIVE_WITH_TRAILING_PATH_SEPERATOR, Target);
-    ok(!Result, "Subst drive using trailing path seperator, this should not happen\n");
-    DriveType1 = GetDriveTypeA(SUBST_DRIVE_WITH_TRAILING_PATH_SEPERATOR);
+    Result = DefineDosDeviceA(0, SUBST_DRIVE_WITH_TRAILING_PATH_SEPARATOR, Target);
+    ok(!Result, "Subst drive using trailing path separator, this should not happen\n");
+    DriveType1 = GetDriveTypeA(SUBST_DRIVE_WITH_TRAILING_PATH_SEPARATOR);
     ok(DriveType1 != SystemDriveType, "subst drive types match when it shouldn't\n");
     dwMaskCur = GetLogicalDrives();
     ok(dwMaskCur == dwMaskPrev, "Drive masks don't match\n");
@@ -287,9 +287,9 @@ static void test_DefineDosDeviceA(void)
     hnd = FindFirstFileA(SUBST_DRIVE_SEARCH, &Data);
     ok(hnd == INVALID_HANDLE_VALUE, "Opened subst drive when it should fail\n");
     if (hnd) FindClose(hnd);
-    Result = DefineDosDeviceA(DDD_REMOVE_DEFINITION | DDD_EXACT_MATCH_ON_REMOVE, SUBST_DRIVE_WITH_TRAILING_PATH_SEPERATOR, Target);
-    ok(!Result, "Removing Subst drive using trailing path seperator passed when it should fail\n");
-    Result = QueryDosDeviceA(SUBST_DRIVE_WITH_TRAILING_PATH_SEPERATOR, Buffer, MAX_PATH);
+    Result = DefineDosDeviceA(DDD_REMOVE_DEFINITION | DDD_EXACT_MATCH_ON_REMOVE, SUBST_DRIVE_WITH_TRAILING_PATH_SEPARATOR, Target);
+    ok(!Result, "Removing Subst drive using trailing path separator passed when it should fail\n");
+    Result = QueryDosDeviceA(SUBST_DRIVE_WITH_TRAILING_PATH_SEPARATOR, Buffer, MAX_PATH);
     ok(!Result, "Subst drive is present when it should not be created in the first place\n");
     dwMaskCur = GetLogicalDrives();
     ok(dwMaskCur == dwMaskPrev, "Drive masks don't match\n");
@@ -311,7 +311,7 @@ static void test_DefineDosDeviceA(void)
     dwMaskPrev = GetLogicalDrives();
     Result = DefineDosDeviceA(0, SUBST_DRIVE, SUBST_DRIVE);
     ok(Result, "Failed to subst drive\n");
-    DriveType1 = GetDriveTypeA(SUBST_DRIVE_WITH_TRAILING_PATH_SEPERATOR);
+    DriveType1 = GetDriveTypeA(SUBST_DRIVE_WITH_TRAILING_PATH_SEPARATOR);
     ok(DriveType1 != SystemDriveType, "subst drive types match when it shouldn't\n");
     ok(GetLastError() == ERROR_FILE_NOT_FOUND, "Wrong last error. Expected %lu, got %lu\n", (DWORD)(ERROR_FILE_NOT_FOUND), GetLastError());
     dwMaskCur = GetLogicalDrives();
@@ -331,7 +331,7 @@ static void test_DefineDosDeviceA(void)
     dwMaskPrev = GetLogicalDrives();
     Result = DefineDosDeviceA(0, SUBST_DRIVE, SUBST_DRIVE_NON_EXIST_DIR);
     ok(Result, "Failed to subst drive\n");
-    DriveType1 = GetDriveTypeA(SUBST_DRIVE_WITH_TRAILING_PATH_SEPERATOR);
+    DriveType1 = GetDriveTypeA(SUBST_DRIVE_WITH_TRAILING_PATH_SEPARATOR);
     ok(DriveType1 != SystemDriveType, "subst drive types match when it shouldn't\n");
     ok(GetLastError() == ERROR_FILE_NOT_FOUND, "Wrong last error. Expected %lu, got %lu\n", (DWORD)(ERROR_FILE_NOT_FOUND), GetLastError());
     dwMaskCur = GetLogicalDrives();

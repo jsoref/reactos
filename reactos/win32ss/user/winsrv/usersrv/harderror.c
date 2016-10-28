@@ -323,7 +323,7 @@ UserpFormatMessages(
                              HEAP_ZERO_MEMORY,
                              CaptionStringU->MaximumLength);
 
-    /* Append the file name, seperator and the caption text */
+    /* Append the file name, separator and the caption text */
     CaptionStringU->Length = 0;
     RtlAppendUnicodeStringToString(CaptionStringU, &FileNameU);
     RtlAppendUnicodeToString(CaptionStringU, L" - ");

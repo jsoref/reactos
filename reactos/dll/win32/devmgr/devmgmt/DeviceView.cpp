@@ -844,10 +844,10 @@ CDeviceView::BuildActionMenuForNode(
     _In_ bool MainMenu
     )
 {
-    // Create a seperator structure 
-    MENUITEMINFOW MenuSeperator = { 0 };
-    MenuSeperator.cbSize = sizeof(MENUITEMINFOW);
-    MenuSeperator.fType = MFT_SEPARATOR;
+    // Create a separator structure 
+    MENUITEMINFOW MenuSeparator = { 0 };
+    MenuSeparator.cbSize = sizeof(MENUITEMINFOW);
+    MenuSeparator.fType = MFT_SEPARATOR;
 
     // Setup the 
     MENUITEMINFOW MenuItemInfo = { 0 };
@@ -899,7 +899,7 @@ CDeviceView::BuildActionMenuForNode(
             i++;
         }
 
-        InsertMenuItemW(OwnerMenu, i, TRUE, &MenuSeperator);
+        InsertMenuItemW(OwnerMenu, i, TRUE, &MenuSeparator);
         i++;
     }
 
@@ -921,7 +921,7 @@ CDeviceView::BuildActionMenuForNode(
 
     if (Node->HasProperties())
     {
-        InsertMenuItemW(OwnerMenu, i, TRUE, &MenuSeperator);
+        InsertMenuItemW(OwnerMenu, i, TRUE, &MenuSeparator);
         i++;
 
         String.LoadStringW(g_hThisInstance, IDS_MENU_PROPERTIES);

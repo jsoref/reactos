@@ -36,7 +36,7 @@ list(APPEND SOURCE
     RtlGetFullPathName_U.c
     RtlGetFullPathName_Ustr.c
     RtlGetFullPathName_UstrEx.c
-    RtlGetLengthWithoutTrailingPathSeperators.c
+    RtlGetLengthWithoutTrailingPathSeparators.c
     RtlGetLongestNtPathLength.c
     RtlImageRvaToVa.c
     RtlInitializeBitMap.c
