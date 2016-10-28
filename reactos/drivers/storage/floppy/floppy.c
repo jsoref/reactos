@@ -595,7 +595,7 @@ Isr(PKINTERRUPT Interrupt, PVOID ServiceContext)
  *       triggered, this is safe to not do here, as we can just wait for the DPC.
  *     - Either way, we don't want to do this here.  The controller shouldn't interrupt again, so we'll
  *       schedule a DPC to take care of it.
- *     - This driver really cannot shrare interrupts, as I don't know how to conclusively say
+ *     - This driver really cannot share interrupts, as I don't know how to conclusively say
  *       whether it was our controller that interrupted or not.  I just have to assume that any time
  *       my ISR gets called, it was my board that called it.  Dumb design, yes, but it goes back to
  *       the semantics of ISA buses.  That, and I don't know much about ISA drivers. :-)
