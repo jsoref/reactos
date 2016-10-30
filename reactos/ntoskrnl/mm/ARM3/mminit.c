@@ -2085,7 +2085,7 @@ MmArmInitSystem(IN ULONG Phase,
         MmHighSectionBase = (PVOID)((ULONG_PTR)MmHighestUserAddress - 0x800000);
 
 #if DBG
-        /* The subection PTE format depends on things being 8-byte aligned */
+        /* The subsection PTE format depends on things being 8-byte aligned */
         ASSERT((sizeof(CONTROL_AREA) % 8) == 0);
         ASSERT((sizeof(SUBSECTION) % 8) == 0);
 
