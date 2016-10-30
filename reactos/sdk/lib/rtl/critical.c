@@ -735,7 +735,7 @@ RtlLeaveCriticalSection(PRTL_CRITICAL_SECTION CriticalSection)
         }
     }
 
-    /* Sucessful! */
+    /* Successful! */
     return STATUS_SUCCESS;
 }
 

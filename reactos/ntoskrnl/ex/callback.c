@@ -351,7 +351,7 @@ ExpInitializeCallbacks(VOID)
  *        Determines if more then one registered callback function
  *        can be attached to this Callback Object.
  *
- * @return STATUS_SUCESS if not failed.
+ * @return STATUS_SUCCESS if not failed.
  *
  * @remarks Must be called at IRQL = PASSIVE_LEVEL
  *

@@ -423,7 +423,7 @@ SeCreateAccessStateEx(IN PETHREAD Thread,
                                                           Privileges));
     if (GenericMapping) AuxData->GenericMapping = *GenericMapping;
 
-    /* Return Sucess */
+    /* Return Success */
     return STATUS_SUCCESS;
 }
 

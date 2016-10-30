@@ -1173,7 +1173,7 @@ CmpCreateRegistryRoot(VOID)
         return FALSE;
     }
 
-    /* Completely sucessful */
+    /* Completely successful */
     return TRUE;
 }
 

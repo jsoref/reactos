@@ -249,7 +249,7 @@ WORD str_to_color(LPTSTR* arg_str)
  * SC_TXT 4nt's syntax ( "bri gre on bla" or "10 on 0")
  * **********************************************************
  *
- * If succedes also move the LPTSTR to end of
+ * If success also move the LPTSTR to end of
  * string that specify color.
  */
 BOOL StringToColor(LPWORD lpColor, LPTSTR*str)

@@ -177,7 +177,7 @@ CheckSACLArgument:
     }
     else
     {
-      _sntprintf(pszError_msg,ERROR_MSG_BUFFER_SIZE-1,_T("\nCannot enable %s privilege.\nAdjustTokenPrivileges succeds with error: %u\n"),SE_SECURITY_NAME,(unsigned int)dwError);
+      _sntprintf(pszError_msg,ERROR_MSG_BUFFER_SIZE-1,_T("\nCannot enable %s privilege.\nAdjustTokenPrivileges success with error: %u\n"),SE_SECURITY_NAME,(unsigned int)dwError);
     }
 
     goto Error;

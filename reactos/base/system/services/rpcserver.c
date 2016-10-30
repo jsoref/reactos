@@ -1238,7 +1238,7 @@ DWORD RControlService(
                 dwControl == SERVICE_CONTROL_PAUSE ||
                 dwControl == SERVICE_CONTROL_CONTINUE)
             {
-                /* Log a sucessful send control */
+                /* Log a successful send control */
 
                 switch (dwControl)
                 {

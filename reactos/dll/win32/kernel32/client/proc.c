@@ -2001,7 +2001,7 @@ GetProcessHandleCount(IN HANDLE hProcess,
                                        NULL);
     if (NT_SUCCESS(Status))
     {
-        /* Copy the count and return sucecss */
+        /* Copy the count and return success */
         *pdwHandleCount = phc;
         return TRUE;
     }

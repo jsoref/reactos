@@ -617,7 +617,7 @@ IoAllocateIrp(IN CCHAR StackSize,
             Irp = ExAllocatePoolWithTag(NonPagedPool, Size, TAG_IRP);
         }
 
-        /* Make sure it was sucessful */
+        /* Make sure it was successful */
         if (!Irp) return NULL;
     }
     else if (Flags & IRP_QUOTA_CHARGED)

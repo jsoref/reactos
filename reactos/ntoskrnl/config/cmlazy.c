@@ -61,7 +61,7 @@ CmpDoFlushNextHive(_In_  BOOLEAN ForceFlush,
         if (!(CmHive->Hive.HiveFlags & HIVE_NOLAZYFLUSH) &&
             (CmHive->FlushCount != CmpLazyFlushCount))
         {
-            /* Great sucess! */
+            /* Great success! */
             Result = TRUE;
 
             /* One less to flush */

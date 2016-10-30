@@ -449,7 +449,7 @@ Next:
         }
     }
 
-    /* Cleanup sucess path */
+    /* Cleanup success path */
     VideoPortFreePool(VgaExtension, VbeInfo);
     VgaExtension->Int10Interface.Int10FreeBuffer(Context,
                                                  TrampolineMemorySegment,
