@@ -1856,7 +1856,7 @@ QueryPathCompletionRoutine(PDEVICE_OBJECT DeviceObject,
                 TableStatus = MupOrderedErrorList[0];
                 LatestPos = 0;
 
-                /* Otherwise, time to compare statuteses, between the latest failed
+                /* Otherwise, time to compare statuses, between the latest failed
                  * and the current failure.
                  * We have an order table of failed status: the deeper you go in the
                  * table, the more the error is critical.
