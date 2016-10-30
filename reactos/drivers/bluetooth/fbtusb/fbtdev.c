@@ -931,7 +931,7 @@ VOID NTAPI IdleNotificationCallback(IN PDEVICE_EXTENSION DeviceExtension)
         // increment the count. In the HoldIoRequestWorkerRoutine, the
         // count is decremented twice (one for the system Irp and the
         // other for the device Irp. An increment here compensates for
-        // the sytem irp..The decrement corresponding to this increment
+        // the system irp..The decrement corresponding to this increment
         // is in the completion function
         //
 
