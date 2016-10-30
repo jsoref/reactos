@@ -2237,7 +2237,7 @@ BlpDeviceOpen (
         Status = STATUS_NOT_IMPLEMENTED;
     }
 
-    /* Check if the device was opened successfuly */
+    /* Check if the device was opened successfully */
     if (NT_SUCCESS(Status))
     {
 DeviceOpened:

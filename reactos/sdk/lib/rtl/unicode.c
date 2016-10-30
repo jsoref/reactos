@@ -494,7 +494,7 @@ RtlpDidUnicodeToOemWork(IN PCUNICODE_STRING UnicodeString,
             i++;
         }
 
-        /* All chars were translated successfuly */
+        /* All chars were translated successfully */
         return TRUE;
     }
     else

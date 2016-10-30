@@ -945,7 +945,7 @@ FTPEndDataCmd(const FTPCIPtr cip, int didXfer)
 	result = kNoErr;
 	if (didXfer) {
 		/* Get the response to the data transferred.  Most likely a message
-		 * saying that the transfer completed succesfully.  However, if
+		 * saying that the transfer completed successfully.  However, if
 		 * we tried to abort the transfer using ABOR, we will have a response
 		 * to that command instead.
 		 */

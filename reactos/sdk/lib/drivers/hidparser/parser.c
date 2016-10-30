@@ -428,7 +428,7 @@ HidParser_ReserveReportItems(
     *OutReport = NewReport;
 
     //
-    // completed sucessfully
+    // completed successfully
     //
     return HIDPARSER_STATUS_SUCCESS;
 }

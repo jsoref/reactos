@@ -316,7 +316,7 @@ bool MainFrameBase::ProcessMessage(UINT nmsg, WPARAM wparam, LPARAM lparam, LRES
 		return true;
 
 	  case WM_SHOWWINDOW:
-		if (wparam) {	// trigger child resizing after window creation - now we can succesfully call IsWindowVisible()
+		if (wparam) {	// trigger child resizing after window creation - now we can successfully call IsWindowVisible()
             int height = SendMessage(_hwndrebar, RB_GETBARHEIGHT, 0, 0);
     		MoveWindow(_hwndrebar, 0, 0, LOWORD(lparam), height, TRUE);
 			resize_frame_client();

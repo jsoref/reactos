@@ -269,7 +269,7 @@ VOID ShowIpStatistics()
         _tprintf(_T("  %-34s = %lu\n"), _T("Reassembly Required"), pIpStats->dwReasmReqds);
         _tprintf(_T("  %-34s = %lu\n"), _T("Reassembly Succesful"), pIpStats->dwReasmOks);
         _tprintf(_T("  %-34s = %lu\n"), _T("Reassembly Failures"), pIpStats->dwReasmFails);
-       // _tprintf(_T("  %-34s = %lu\n"), _T("Datagrams succesfully fragmented"), NULL); /* FIXME: what is this one? */
+       // _tprintf(_T("  %-34s = %lu\n"), _T("Datagrams successfully fragmented"), NULL); /* FIXME: what is this one? */
         _tprintf(_T("  %-34s = %lu\n"), _T("Datagrams Failing Fragmentation"), pIpStats->dwFragFails);
         _tprintf(_T("  %-34s = %lu\n"), _T("Fragments Created"), pIpStats->dwFragCreates);
     }

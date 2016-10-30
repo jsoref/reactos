@@ -925,7 +925,7 @@ Return Value:
                 if (TryingYellowbookMode2) {
 
                     //
-                    //  We succesfully got data when we tried switching the trackmode,
+                    //  We successfully got data when we tried switching the trackmode,
                     //  so change the state of the FCB to remember that.
                     //
 

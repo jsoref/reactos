@@ -123,7 +123,7 @@ Dns_Ip4StringToAddress_W(OUT PIN_ADDR Address,
                                AnsiString);
     if (ErrorCode)
     {
-        /* Copy made sucesfully, now convert it */
+        /* Copy made successfully, now convert it */
         ErrorCode = Dns_Ip4StringToAddress_A(Address, AnsiName);
     }
 
@@ -149,7 +149,7 @@ Dns_Ip4ReverseNameToAddress_W(OUT PIN_ADDR Address,
                                AnsiString);
     if (ErrorCode)
     {
-        /* Copy made sucesfully, now convert it */
+        /* Copy made successfully, now convert it */
         ErrorCode = Dns_Ip4ReverseNameToAddress_A(Address, AnsiName);
     }
 

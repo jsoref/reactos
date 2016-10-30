@@ -558,7 +558,7 @@ applyPatch_file_open_error:
          free(file);
       }
 
-      printf("Patch applied sucessfully!\n");
+      printf("Patch applied successfully!\n");
    }
 
    return 0;
