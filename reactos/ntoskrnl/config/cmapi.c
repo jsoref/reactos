@@ -1476,7 +1476,7 @@ CmpQueryKeyDataFromCache(
     }
     else if (Kcb->ExtFlags & CM_KCB_SUBKEY_ONE)
     {
-        /* There is exactly one subley */
+        /* There is exactly one subkey */
         KeyCachedInfo->SubKeys = 1;
     }
     else if (Kcb->ExtFlags & CM_KCB_SUBKEY_HINT)
