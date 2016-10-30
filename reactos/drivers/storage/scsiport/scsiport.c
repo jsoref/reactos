@@ -4668,7 +4668,7 @@ SpiSaveInterruptData(IN PVOID Context)
                                           Srb->TargetId,
                                           Srb->Lun);
 
-        /* We have to check special cases if request is unsuccessfull*/
+        /* We have to check special cases if request is unsuccessful*/
         if (Srb->SrbStatus != SRB_STATUS_SUCCESS)
         {
             /* Check if we need request sense by a few conditions */

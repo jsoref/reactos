@@ -412,7 +412,7 @@ PinSetStateWorkerRoutine(
 
         if (PinWorkContext->Pin->m_ConnectDetails->Interface.Id == KSINTERFACE_STANDARD_LOOPED_STREAMING && PinWorkContext->Pin->m_State == KSSTATE_STOP)
         {
-            /* FIXME complete pending irps with successfull state */
+            /* FIXME complete pending irps with successful state */
             PinWorkContext->Pin->m_IrpQueue->CancelBuffers();
         }
         //HACK

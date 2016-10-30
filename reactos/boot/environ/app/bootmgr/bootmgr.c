@@ -2558,7 +2558,7 @@ TryAgain:
         return Status;
     }
 
-    /* Check if boot was successfull, or  cancelled and we're not doing WinRE */
+    /* Check if boot was successful, or  cancelled and we're not doing WinRE */
     if (((NT_SUCCESS(Status)) || (Status == STATUS_CANCELLED)) && !(DoRecovery))
     {
         return Status;

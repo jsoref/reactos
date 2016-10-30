@@ -115,7 +115,7 @@ KiRosPcToUserFileHeader(IN PVOID Pc,
 
     /*
      * We know this is valid because we should only be called after a
-     * succesfull address from RtlWalkFrameChain for UserMode, which
+     * successful address from RtlWalkFrameChain for UserMode, which
      * validates everything for us.
      */
     ListHead = &KeGetCurrentThread()->

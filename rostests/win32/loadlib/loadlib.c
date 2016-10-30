@@ -144,7 +144,7 @@ DWORD LoadLibraryList(char** libnames, int counter, BOOL bUseAnsi)
         dprintf("ERROR: failed to free module %s - %x\n", *libnames, hModule);
         return ReportLastError();
     } else {
-        dprintf("FreeLibrary(%x) - successfull.\n", hModule);
+        dprintf("FreeLibrary(%x) - successful.\n", hModule);
     }
     return 0L;
 }

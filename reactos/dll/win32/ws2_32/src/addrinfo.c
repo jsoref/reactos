@@ -361,7 +361,7 @@ LookupNodeByAddr(IN LPWSTR pNodeBuffer,
                                        &LookupHandle);
     if (ErrorCode == ERROR_SUCCESS)
     {
-        /* Lookup succesfull, now get the data */
+        /* Lookup successful, now get the data */
         BufferLength = (NI_MAXHOST - 1) * sizeof(WCHAR) + sizeof(Restrictions);
         ErrorCode = WSALookupServiceNextW(LookupHandle,
                                           0,

@@ -99,7 +99,7 @@ audio_membuffer::truncate_(void)
         audio_data = newbuf;
         buf_size = bytes_received;
 
-        /* Buffer truncation successfull. Now the buffer size is exactly big
+        /* Buffer truncation successful. Now the buffer size is exactly big
            as much audio data was received */
     }
 }

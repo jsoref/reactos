@@ -231,7 +231,7 @@ cleanup:
  *        KEY_WRITE, etc)
  *
  * @param DeviceInterfaceKey
- *        If a call has been succesfull, a handle to the registry key
+ *        If a call has been successful, a handle to the registry key
  *        will be stored there
  *
  * @return Three different NTSTATUS values in case of errors, and STATUS_SUCCESS
