@@ -722,7 +722,7 @@ FsRtlCopyWrite(IN PFILE_OBJECT FileObject,
             /* Reset the top component */
             PsGetCurrentThread()->TopLevelIrp = FSRTL_FAST_IO_TOP_LEVEL_IRP;
 
-            /* Did the operation suceeded */
+            /* Did the operation succeeded */
             if (Result)
             {
                 /* Check if we need to update the filesize */
@@ -1477,7 +1477,7 @@ FsRtlPrepareMdlWriteDev(IN PFILE_OBJECT FileObject,
         /* Reset the top component */
         PsGetCurrentThread()->TopLevelIrp = 0;
 
-        /* Did the operation suceeded */
+        /* Did the operation succeeded */
         if (Result)
         {
             /* Check if we need to update the filesize */

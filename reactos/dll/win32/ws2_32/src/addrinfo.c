@@ -472,7 +472,7 @@ LookupAddressForName(IN LPCSTR NodeName,
         Swap(Name, Alias, Scratch);
     }
 
-    /* Check if we suceeded and the canonical name is requested */
+    /* Check if we succeeded and the canonical name is requested */
     if (!iError && bAI_CANONNAME)
     {
         /* Allocate memory for a copy */
@@ -843,7 +843,7 @@ getaddrinfo(const char FAR *nodename,
                              (PADDRINFOW)hints,
                              (PADDRINFOW*)res);
 
-    /* Convert it to ANSI if we suceeded */
+    /* Convert it to ANSI if we succeeded */
     if (ErrorCode == ERROR_SUCCESS) ConvertAddrinfoFromUnicodeToAnsi((PADDRINFOW)*res);
 
 Quickie:
@@ -942,7 +942,7 @@ GetNameInfoW(IN CONST SOCKADDR *pSockaddr,
             }
             else
             {
-                /* We suceeded, no need to get the numeric address */
+                /* We succeeded, no need to get the numeric address */
                 goto SkipNumeric;
             }
         }

@@ -1356,7 +1356,7 @@ NtRegisterThreadTerminatePort(IN HANDLE PortHandle)
                                        NULL);
     if (!NT_SUCCESS(Status)) return(Status);
 
-    /* Allocate the Port and make sure it suceeded */
+    /* Allocate the Port and make sure it succeeded */
     TerminationPort = ExAllocatePoolWithTag(NonPagedPool,
                                             sizeof(TERMINATION_PORT),
                                             '=TsP');

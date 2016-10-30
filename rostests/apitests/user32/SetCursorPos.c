@@ -168,7 +168,7 @@ void Test_DesktopAccess()
     ok(hDeskInitial != NULL, "Failed to retrieve the initial desktop\n");
 
     ret = GetCursorPos(&initialPoint);
-    ok(ret == TRUE, "GetCursorPos should succed\n");
+    ok(ret == TRUE, "GetCursorPos should succeed\n");
 
     hDesk = CreateDesktopW(L"testDesktop", NULL, NULL, 0, 0x01ff, NULL);
     ok(hDesk != 0, "Failed to create a new desktop\n");
@@ -194,7 +194,7 @@ void Test_DesktopAccess()
     SetThreadDesktop(hDeskInitial);
 
     ret = GetCursorPos(&curPoint);
-    ok(ret == TRUE, "GetCursorPos should succed\n");
+    ok(ret == TRUE, "GetCursorPos should succeed\n");
     ok(curPoint.x ==  initialPoint.x && curPoint.y ==  initialPoint.y, "Mouse position changed\n");
 }
 

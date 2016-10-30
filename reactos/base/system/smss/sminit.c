@@ -2166,7 +2166,7 @@ Quickie:
         }
         else
         {
-            /* We suceeded with a delete */
+            /* We succeeded with a delete */
             DPRINT("SMSS: '%wZ' (deleted)\n", &RegEntry->Name);
         }
 

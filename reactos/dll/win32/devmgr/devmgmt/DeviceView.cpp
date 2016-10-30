@@ -822,7 +822,7 @@ CDeviceView::InsertIntoTreeView(
     tvi.iImage = Node->GetClassImage();
     tvi.iSelectedImage = Node->GetClassImage();
 
-    // try to cast it to a device node. This will only suceed if it's the correct type
+    // try to cast it to a device node. This will only succeed if it's the correct type
     CDeviceNode *DeviceNode = dynamic_cast<CDeviceNode *>(Node);
     if (DeviceNode && DeviceNode->GetOverlayImage())
     {

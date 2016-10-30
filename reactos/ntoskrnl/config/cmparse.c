@@ -832,7 +832,7 @@ CmpCreateLinkNode(IN PHHIVE Hive,
         }
     }
 
-    /* Check if open or create suceeded */
+    /* Check if open or create succeeded */
     if (NT_SUCCESS(Status))
     {
         /* Mark the cell dirty */

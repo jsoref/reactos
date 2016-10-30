@@ -50,7 +50,7 @@ MmMdpHasPrecedence (
         return TRUE;
     }
 
-    /* It isn't free RAM, but the comparator is -- it suceeds it */
+    /* It isn't free RAM, but the comparator is -- it succeeds it */
     if (Type2 == BlConventionalMemory)
     {
         return FALSE;
@@ -65,7 +65,7 @@ MmMdpHasPrecedence (
         return TRUE;
     }
 
-    /* It isn't one of those classes, but the comparator it -- it suceeds it */
+    /* It isn't one of those classes, but the comparator it -- it succeeds it */
     Class2 = Type2 >> BL_MEMORY_CLASS_SHIFT;
     if ((Class2 != BlSystemClass) &&
         (Class2 != BlApplicationClass) &&
@@ -128,7 +128,7 @@ MmMdpHasPrecedence (
         return TRUE;
     }
 
-    /* Descriptor is not system class, but comparator is -- it suceeds it */
+    /* Descriptor is not system class, but comparator is -- it succeeds it */
     if (Class2 == BlSystemClass)
     {
         return FALSE;
@@ -140,7 +140,7 @@ MmMdpHasPrecedence (
         return TRUE;
     }
 
-    /* It isn't loader class  -- if the other guy is, suceed it */
+    /* It isn't loader class  -- if the other guy is, succeed it */
     return Class2 != BlLoaderClass;
 }
 

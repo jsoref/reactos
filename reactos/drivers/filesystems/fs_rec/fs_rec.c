@@ -255,7 +255,7 @@ FsRecRegisterFs(IN PDRIVER_OBJECT DriverObject,
                           0);
     if (NT_SUCCESS(Status))
     {
-        /* We suceeded, close the handle */
+        /* We succeeded, close the handle */
         ZwClose(FileHandle);
     }
     else if (Status != STATUS_OBJECT_NAME_NOT_FOUND)

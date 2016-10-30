@@ -642,7 +642,7 @@ void test_IsPwrSuspendAllowed(void)
         BOOLEAN ret;
 
         ret = IsPwrSuspendAllowed();
-        ok(ret, "function was expected to succed, error %x\n",(UINT)GetLastError());
+        ok(ret, "function was expected to succeed, error %x\n",(UINT)GetLastError());
  */
 }
 

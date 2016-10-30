@@ -2251,7 +2251,7 @@ ProcessIdToSessionId(IN DWORD dwProcessId,
                                            sizeof(SessionInformation),
                                            NULL);
 
-        /* Close the handle and check if we suceeded */
+        /* Close the handle and check if we succeeded */
         NtClose(ProcessHandle);
         if (NT_SUCCESS(Status))
         {
