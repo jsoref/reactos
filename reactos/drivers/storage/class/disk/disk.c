@@ -4572,7 +4572,7 @@ ScanForSpecial(
 
 Routine Description:
 
-    This function checks to see if an SCSI logical unit requires speical
+    This function checks to see if an SCSI logical unit requires special
     flags to be set.
 
 Arguments:
