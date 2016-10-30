@@ -517,7 +517,7 @@ VOID ShowUdpTable()
 PCHAR
 GetPortName(UINT Port, PCSTR Proto, CHAR Name[], INT NameLen)
 {
-    struct servent *pSrvent;
+    struct servent *pServent;
 
     if (bDoShowNumbers)
     {
@@ -525,8 +525,8 @@ GetPortName(UINT Port, PCSTR Proto, CHAR Name[], INT NameLen)
         return Name;
     }
     /* Try to translate to a name */
-    if ((pSrvent = getservbyport(Port, Proto)))
-        strcpy(Name, pSrvent->s_name );
+    if ((pServent = getservbyport(Port, Proto)))
+        strcpy(Name, pServent->s_name );
     else
         sprintf(Name, "%d", htons((WORD)Port));
     return Name;
