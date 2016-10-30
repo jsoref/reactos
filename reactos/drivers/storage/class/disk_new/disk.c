@@ -3713,7 +3713,7 @@ DiskIoctlVerify(
 
     IoFreeWorkItem(Context->WorkItem);
 
-    DebugPrint((1, "Disk.DiskIoctlVerify: Spliting up the request\n"));
+    DebugPrint((1, "Disk.DiskIoctlVerify: Splitting up the request\n"));
 
     //
     // Add disk offset to starting the sector
