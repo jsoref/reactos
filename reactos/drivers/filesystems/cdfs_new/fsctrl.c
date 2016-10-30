@@ -867,7 +867,7 @@ Return Value:
                 //  Since we're always last in the mount order,  we won't be preventing
                 //  any other FS from trying to mount the data track.  However if the 
                 //  data track was at the start of the disc,  then we abort,  to avoid
-                //  having to filter it from our synthesised directory listing later.  We
+                //  having to filter it from our synthesized directory listing later.  We
                 //  already filtered off any data track at the end.
                 //
 
