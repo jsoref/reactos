@@ -59,7 +59,7 @@ extern wchar_t ** SnapshotOfEnvironmentW(wchar_t **);
 #define _CONSOLE_APP    1
 #define _GUI_APP        2
 
-/* I/O Streamming flags missing from stdio.h */
+/* I/O Streaming flags missing from stdio.h */
 #define _IOYOURBUF      0x0100
 #define _IOAPPEND       0x0200
 #define _IOSETVBUF      0x0400
