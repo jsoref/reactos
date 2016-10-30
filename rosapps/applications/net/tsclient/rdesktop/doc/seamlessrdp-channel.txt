@@ -175,7 +175,7 @@ SYNCEND
 
 Indicates that a synchronisation is complete.
 
-Syntac:
+Syntax:
 	SYNCEND,<SERIAL>,<FLAGS>
 
 Sent when the last message that is part of the synchronisation has been sent.
