@@ -1349,7 +1349,7 @@ QueryVolumeName(IN HANDLE RootDirectory,
         return STATUS_BUFFER_TOO_SMALL;
     }
 
-    /* Copy symoblic name */
+    /* Copy symbolic name */
     SymbolicName->Length = ReparseDataBuffer->MountPointReparseBuffer.SubstituteNameLength;
     RtlCopyMemory(SymbolicName->Buffer,
                   (PWSTR)((ULONG_PTR)ReparseDataBuffer->MountPointReparseBuffer.PathBuffer +
