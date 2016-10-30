@@ -222,7 +222,7 @@ SmpHandleConnectionRequest(IN HANDLE SmApiPort,
         SmpGetProcessMuSessionId(ProcessHandle, &SessionId);
     }
 
-    /* See if we already know about the caller's subystem */
+    /* See if we already know about the caller's subsystem */
     CidSubsystem = SmpLocateKnownSubSysByCid(&SbApiMsg->h.ClientId);
     if ((CidSubsystem) && (Accept))
     {

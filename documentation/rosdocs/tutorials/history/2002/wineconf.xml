@@ -132,7 +132,7 @@ ReactOS currently has a unusable fork of the wine code base. This fork will make
 <sect2>
 <title>POSIX Subsystem</title>
 <para>
-Initial POSIX 2 substem work started, implemented as psx.dll. Initial POSIX application headers are detected by kernel32 and invoke the posix subsystem. POSIX subsystem crashes after this point. POSIX subproject is in its first year.
+Initial POSIX 2 subsystem work started, implemented as psx.dll. Initial POSIX application headers are detected by kernel32 and invoke the posix subsystem. POSIX subsystem crashes after this point. POSIX subproject is in its first year.
 </para>
 <para>
 Future plans for POSIX subsystem:
