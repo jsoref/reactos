@@ -3020,7 +3020,7 @@ Return Value:
                                              0,
                                              TRUE);
 
-        DebugPrint((1, "ScsiDiskShutdownFlush: Synchonize cache sent. Status = %lx\n", status ));
+        DebugPrint((1, "ScsiDiskShutdownFlush: Synchronize cache sent. Status = %lx\n", status ));
     }
 
     //

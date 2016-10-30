@@ -39,7 +39,7 @@ DoDeviceSync( SURFOBJ *Surface, PRECTL Rect, FLONG fl)
 
 VOID
 FASTCALL
-SynchonizeDriver(FLONG Flags)
+SynchronizeDriver(FLONG Flags)
 {
   SURFOBJ *SurfObj;
   //PPDEVOBJ Device;
@@ -152,7 +152,7 @@ APIENTRY
 NtGdiFlush(
     VOID)
 {
-    SynchonizeDriver(GCAPS2_SYNCFLUSH);
+    SynchronizeDriver(GCAPS2_SYNCFLUSH);
     return STATUS_SUCCESS;
 }
 

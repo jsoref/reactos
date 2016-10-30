@@ -3387,7 +3387,7 @@ Return Value:
                                          0,
                                          TRUE);
 
-        DebugPrint((1, "DiskShutdownFlush: Synchonize cache sent. Status = %lx\n", status ));
+        DebugPrint((1, "DiskShutdownFlush: Synchronize cache sent. Status = %lx\n", status ));
     }
 
     //
