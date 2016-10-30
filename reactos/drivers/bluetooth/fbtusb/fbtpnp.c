@@ -1276,7 +1276,7 @@ NTSTATUS NTAPI HandleQueryCapabilities(IN PDEVICE_OBJECT DeviceObject, IN PIRP I
         }
 
         // since its safe to surprise-remove this device, we shall
-        // set the SurpriseRemoveOK flag to supress any dialog to
+        // set the SurpriseRemoveOK flag to suppress any dialog to
         // user.
         pdc->SurpriseRemovalOK = 1;
 
