@@ -162,7 +162,7 @@ typedef struct {
   UCHAR BearerClass;
   UCHAR TrafficType;
   UCHAR TimingRequirements;
-  UCHAR ClippingSusceptability;
+  UCHAR ClippingSusceptibility;
   UCHAR UserPlaneConnectionConfig;
 } ATM_BROADBAND_BEARER_CAPABILITY_IE;
 
