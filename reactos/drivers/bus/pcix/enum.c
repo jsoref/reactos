@@ -610,7 +610,7 @@ PciQueryRequirements(IN PPCI_PDO_EXTENSION PdoExtension,
         /* Check if the requirements are actually the zero list */
         if (*RequirementsList == PciZeroIoResourceRequirements)
         {
-            /* A simple NULL will sufficie for the PnP Manager */
+            /* A simple NULL will suffice for the PnP Manager */
             *RequirementsList = NULL;
             DPRINT1("Returning NULL requirements list\n");
         }
