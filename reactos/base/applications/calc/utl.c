@@ -25,7 +25,7 @@ void prepare_rpn_result_2(calc_number_t *rpn, TCHAR *buffer, int size, int base)
             TCHAR *ptr, *dst;
 
             ptr = buffer + _stprintf(buffer, TEXT("%#*.*f"), width, ((MAX_LD_WIDTH-width-1)>=0) ? MAX_LD_WIDTH-width-1 : 0, rpn->f);
-            /* format sring ensures there is a '.': */
+            /* format string ensures there is a '.': */
             dst = _tcschr(buffer, TEXT('.'));
             while (--ptr > dst)
                 if (*ptr != TEXT('0'))
