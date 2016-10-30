@@ -148,7 +148,7 @@ extern VOID __cdecl KiInterruptTemplate(VOID);
 #define AFFINITY_MASK(Id) KiMask32Array[Id]
 #define PRIORITY_MASK(Id) KiMask32Array[Id]
 
-/* Tells us if the Timer or Event is a Syncronization or Notification Object */
+/* Tells us if the Timer or Event is a Synchronization or Notification Object */
 #define TIMER_OR_EVENT_TYPE 0x7L
 
 /* One of the Reserved Wait Blocks, this one is for the Thread's Timer */

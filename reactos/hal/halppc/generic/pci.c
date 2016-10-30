@@ -33,7 +33,7 @@ PCI_CONFIG_HANDLER PCIConfigHandlerType1 =
 {
     /* Synchronization */
     (FncSync)HalpPCISynchronizeType1,
-    (FncReleaseSync)HalpPCIReleaseSynchronzationType1,
+    (FncReleaseSync)HalpPCIReleaseSynchronizationType1,
 
     /* Read */
     {
@@ -55,7 +55,7 @@ PCI_CONFIG_HANDLER PCIConfigHandlerType2 =
 {
     /* Synchronization */
     (FncSync)HalpPCISynchronizeType2,
-    (FncReleaseSync)HalpPCIReleaseSynchronzationType2,
+    (FncReleaseSync)HalpPCIReleaseSynchronizationType2,
 
     /* Read */
     {
@@ -130,7 +130,7 @@ HalpPCISynchronizeType1(IN PBUS_HANDLER BusHandler,
 
 VOID
 NTAPI
-HalpPCIReleaseSynchronzationType1(IN PBUS_HANDLER BusHandler,
+HalpPCIReleaseSynchronizationType1(IN PBUS_HANDLER BusHandler,
                                   IN KIRQL Irql)
 {
     PCI_TYPE1_CFG_BITS PciCfg1;
@@ -187,7 +187,7 @@ HalpPCISynchronizeType2(IN PBUS_HANDLER BusHandler,
 
 VOID
 NTAPI
-HalpPCIReleaseSynchronzationType2(IN PBUS_HANDLER BusHandler,
+HalpPCIReleaseSynchronizationType2(IN PBUS_HANDLER BusHandler,
                                   IN KIRQL Irql)
 {
     PCI_TYPE2_CSE_BITS PciCfg2Cse;
@@ -247,7 +247,7 @@ HalpPCIConfig(IN PBUS_HANDLER BusHandler,
     }
 
     /* Release the lock and PCI bus */
-    PCIConfigHandler.ReleaseSynchronzation(BusHandler, OldIrql);
+    PCIConfigHandler.ReleaseSynchronization(BusHandler, OldIrql);
 }
 
 VOID
