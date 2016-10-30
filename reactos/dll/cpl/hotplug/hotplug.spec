@@ -8,5 +8,5 @@
 ;@ stub HotPlugRemovalVetoedW
 ;@ stub HotPlugSafeRemovalDriveNotificationW
 ;@ stub HotPlugSafeRemovalNotificationW
-;@ stub HotPlugStandyVetoedW
+;@ stub HotPlugStandbyVetoedW
 ;@ stub HotPlugWarmEjectVetoedW
