@@ -101,7 +101,7 @@ VOID Blt_Test (LPDIRECTDRAWSURFACE7 Surface, INT* passed, INT* failed)
 	bltfx.dwDDROP = 0x123;
     TEST (Surface->Blt(NULL, Source, NULL, DDBLT_WAIT|DDBLT_DDROPS, &bltfx) == DDERR_NODDROPSHW);
 
-    // Streching
+    // Stretching
 	bltfx.dwDDFX = DDBLTFX_ARITHSTRETCHY;
     TEST (Surface->Blt(NULL, Source, NULL, DDBLT_WAIT|DDBLT_DDFX, &bltfx) == DDERR_NOSTRETCHHW);
 }
