@@ -7196,7 +7196,7 @@ ClassRemoveDevice(
                     (PPHYSICAL_DEVICE_EXTENSION) commonExtension;
 
                 //
-                // See if this device is in the child list (if this was a suprise
+                // See if this device is in the child list (if this was a surprise
                 // removal it might be) and remove it.
                 //
 
