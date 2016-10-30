@@ -598,7 +598,7 @@ BOOLEAN
 APIENTRY
 DxEngNUIsTermSrv(VOID)
 {
-    /* FIXME: ReactOS does not suport terminal server yet, we can not check if we got connections or not */
+    /* FIXME: ReactOS does not support terminal server yet, we can not check if we got connections or not */
     UNIMPLEMENTED;
     return FALSE;
 }

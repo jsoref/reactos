@@ -451,7 +451,7 @@ Main_DDrawSurface_Lock (LPDDRAWI_DDRAWSURFACE_INT ThisDest, LPRECT prect,
         return DDERR_INVALIDPARAMS; 
     }
 
-    /* FIXME add a check see if lock suport or not */
+    /* FIXME add a check see if lock support or not */
 
     if (prect!=NULL)
     {

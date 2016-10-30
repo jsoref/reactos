@@ -45,7 +45,7 @@
 * Inside the dxg.sys they are redirected to the same function. Examine the memory addresses on the driver list functions
 * table and you will see they are pointed to the same memory address.
 *
-* Before calling this function please set the puCanCreateSurfaceData->ddRVal to an error value such as DDERR_NOTUSPORTED,
+* Before calling this function please set the puCanCreateSurfaceData->ddRVal to an error value such as DDERR_NOTSUPPORTED,
 * for the ddRVal will otherwise be unchanged even if an error occurs inside the driver. 
 * puCanCreateSurfaceData->lpDD  is a pointer to DDRAWI_DIRECTDRAW_GBL, not PDD_DIRECTDRAW_GLOBAL as MSDN claims.
 * puCanCreateSurfaceData->lpDD->hDD also needs be filled in with the handle we got from NtGdiDdCreateDirectDrawObject.
@@ -101,7 +101,7 @@ NtGdiDdCanCreateD3DBuffer(HANDLE hDirectDraw,
 * @remarks.
 * dxg.sys NtGdiD3dContextCreate calls are redirected to the same function in the dxg.sys. As such they all work the same way.
 *
-* Before calling this function please set the pdcci->ddRVal to an error value such as DDERR_NOTSUPORTED,
+* Before calling this function please set the pdcci->ddRVal to an error value such as DDERR_NOTSUPPORTED,
 * for the ddRVal will otherwise be unchanged even if an error occurs inside the driver. 
 *
 * pdcci->lpDDLcl is a pointer to DDRAWI_DIRECTDRAW_LCL, not DD_DIRECTDRAW_LOCAL  as MSDN claims.
@@ -145,7 +145,7 @@ NtGdiD3dContextCreate(HANDLE hDirectDrawLocal,
 * @remarks.
 * dxg.sys NtGdiD3dContextDestroy calls are redirected to the same functions in the dxg.sys. As such they all work the same way.
 *
-* Before calling this function please set the pContextDestroyData->ddRVal to an error value such DDERR_NOTUSPORTED,
+* Before calling this function please set the pContextDestroyData->ddRVal to an error value such DDERR_NOTSUPPORTED,
 * for the ddRVal will otherwise be unchanged even if an error occurs inside the driver. 
 * pContextDestroyData->dwhContext also needs to be filled in with the handle we got from NtGdiDdCreateDirectDrawObject
 *
@@ -181,7 +181,7 @@ NtGdiD3dContextDestroy(LPD3DNTHAL_CONTEXTDESTROYDATA pContextDestroyData)
 * @remarks.
 * dxg.sys NtGdiD3dContextDestroy calls are redirected to the same function in the dxg.sys. As such they all work the same way.
 *
-* Before calling this function please set the pdcad->ddRVal to an error value such as DDERR_NOTUSPORTED,
+* Before calling this function please set the pdcad->ddRVal to an error value such as DDERR_NOTSUPPORTED,
 * for the ddRVal will otherwise be unchanged even if an error occurs inside the driver. 
 * pdcad->dwPID also needs to be filled in with the ID of the process that needs its context data destroyed.
 *
@@ -249,7 +249,7 @@ NtGdiD3dContextDestroyAll(LPD3DNTHAL_CONTEXTDESTROYALLDATA pdcad)
 * Inside the dxg.sys they are redirected to the same function. Examine the memory addresses on the driver list functions
 * table and you will see they are pointed to the same memory address.
 *
-* Before calling this function please set the puCreateSurfaceData->ddRVal to an error value such as DDERR_NOTUSPORTED,
+* Before calling this function please set the puCreateSurfaceData->ddRVal to an error value such as DDERR_NOTSUPPORTED,
 * for the ddRVal will otherwise be unchanged even if an error occurs inside the driver. 
 * puCreateSurfaceData->lpDD  is a pointer to DDRAWI_DIRECTDRAW_GBL. MSDN claims it is PDD_DIRECTDRAW_GLOBAL but it is not.
 * puCreateSurfaceData->lpDD->hDD also needs to be filled in with the handle we got from NtGdiDdCreateDirectDrawObject

@@ -1568,7 +1568,7 @@ PciQueryPowerCapabilities(IN PPCI_PDO_EXTENSION PdoExtension,
         DevicePowerState = AttachedCaps.DeviceState[CurrentState];
         NewPowerState = DevicePowerState;
 
-        /* The attachee suports D1, but this PDO does not */
+        /* The attachee supports D1, but this PDO does not */
         if ((NewPowerState == PowerDeviceD1) &&
             !(PdoExtension->PowerCapabilities.Support.D1))
         {

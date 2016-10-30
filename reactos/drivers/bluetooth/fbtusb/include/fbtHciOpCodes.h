@@ -103,7 +103,7 @@
 
 // Informational parameter commands
 #define FBT_HCI_OCF_READ_LOCAL_VERSION_INFORMATION            	0x0001
-#define FBT_HCI_OCF_LOCAL_SUPPPROTED_FEATURES                 	0x0003
+#define FBT_HCI_OCF_LOCAL_SUPPORTED_FEATURES                 	0x0003
 #define FBT_HCI_OCF_READ_BUFFER_SIZE                          	0x0005
 #define FBT_HCI_OCF_READ_COUNTRY_CODE                         	0x0007
 #define FBT_HCI_OCF_READ_BD_ADDR                              	0x0009

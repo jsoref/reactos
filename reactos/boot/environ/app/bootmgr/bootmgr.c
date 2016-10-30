@@ -2947,7 +2947,7 @@ BmMain (
                                     &CustomActions);
     if ((NT_SUCCESS(Status)) && (CustomActions))
     {
-        /* We don't suppport this yet */
+        /* We don't support this yet */
         EfiPrintf(L"Not implemented\r\n");
         Status = STATUS_NOT_IMPLEMENTED;
         goto Failure;

@@ -1825,7 +1825,7 @@ Return Value:
 
     //
     // See if this is an IDE drive that supports SMART. If so enable SMART
-    // and then ensure that it suports the SMART READ STATUS command
+    // and then ensure that it supports the SMART READ STATUS command
     //
     status = DiskGetIdentifyInfo(FdoExtension,
                                  &supportFP);

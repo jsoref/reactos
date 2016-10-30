@@ -567,7 +567,7 @@ bool DesktopShellView::InitDragDrop()
 	ftetc.tymed = TYMED_HGLOBAL;
 	ftetc.cfFormat = CF_HDROP;
 
-	pDropTarget->AddSuportedFormat(ftetc);
+	pDropTarget->AddSupportedFormat(ftetc);
 	pDropTarget->Release();
 
 	return true;

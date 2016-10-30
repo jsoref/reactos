@@ -220,7 +220,7 @@ bool ShellBrowser::InitDragDrop()
 	ftetc.tymed = TYMED_HGLOBAL;
 	ftetc.cfFormat = CF_HDROP;
 
-	_pDropTarget->AddSuportedFormat(ftetc);
+	_pDropTarget->AddSupportedFormat(ftetc);
 
 	return true;
 }

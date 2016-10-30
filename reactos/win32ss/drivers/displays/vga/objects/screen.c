@@ -86,7 +86,7 @@ DWORD getAvailableModes(
         return 0;
     }
 
-    /* Which modes supported by miniport driver are also suppoted by us, the
+    /* Which modes supported by miniport driver are also supported by us, the
      * display driver */
 
     Temp = modes.NumModes;

@@ -266,7 +266,7 @@ MiCheckVirtualAddress(IN PVOID VirtualAddress,
         }
         else
         {
-            /* ReactOS does not supoprt these VADs yet */
+            /* ReactOS does not support these VADs yet */
             ASSERT(Vad->u.VadFlags.VadType != VadImageMap);
             ASSERT(Vad->u2.VadFlags2.ExtendableFile == 0);
 

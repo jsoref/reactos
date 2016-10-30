@@ -451,7 +451,7 @@ l_ReadHeaderFromFile:
             ImageSectionObject->ImageInformation.DllCharacteristics = piohOptHeader->DllCharacteristics;
 
             /*
-             * Since we don't really implement SxS yet and LD doesn't supoprt /ALLOWISOLATION:NO, hard-code
+             * Since we don't really implement SxS yet and LD doesn't support /ALLOWISOLATION:NO, hard-code
              * this flag here, which will prevent the loader and other code from doing any .manifest or SxS
              * magic to any binary.
              *

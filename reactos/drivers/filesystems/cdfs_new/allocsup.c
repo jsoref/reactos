@@ -698,7 +698,7 @@ Return Value:
 
 
 //
-//  Local suupport routine
+//  Local support routine
 //
 
 ULONG
