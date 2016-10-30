@@ -1764,7 +1764,7 @@ QueryPathCompletionRoutine(PDEVICE_OBJECT DeviceObject,
             }
 
             /* Otherwise, if the prefix was in the prefix table, just drop it:
-             * we have a provider which superseeds the accepted prefix, so leave
+             * we have a provider which supersedes the accepted prefix, so leave
              * room for the new prefix/provider
              */
             ExAcquireResourceExclusiveLite(&MupPrefixTableLock, TRUE);
