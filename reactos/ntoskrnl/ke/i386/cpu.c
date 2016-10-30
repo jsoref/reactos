@@ -689,7 +689,7 @@ KiGetCacheInformation(VOID)
                     /* Compute size */
                     Size = (CpuInfo.Ecx >> 16) << 10;
 
-                    /* Hack for Model 6, Steping 300 */
+                    /* Hack for Model 6, Stepping 300 */
                     if ((KeGetCurrentPrcb()->CpuType == 6) &&
                         (KeGetCurrentPrcb()->CpuStep == 0x300))
                     {
