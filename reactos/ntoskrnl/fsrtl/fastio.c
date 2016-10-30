@@ -494,7 +494,7 @@ FsRtlCopyWrite(IN PFILE_OBJECT FileObject,
             /* Flag the file as modified */
             FileObject->Flags |= FO_FILE_MODIFIED;
 
-            /* Update the strucutres if the file size changed */
+            /* Update the structures if the file size changed */
             if (FileSizeModified)
             {
                 SharedCacheMap =

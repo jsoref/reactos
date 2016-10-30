@@ -177,7 +177,7 @@ LRESULT CALLBACK MainWndProc(HWND HWnd, UINT Msg, WPARAM WParam,
                // extract dimensions of the bitmap
                GetObject(HBmp, sizeof(BITMAP), &bmp);
 
-			   // fill the BITMAPINFO stucture for further use by StretchDIBits
+			   // fill the BITMAPINFO structure for further use by StretchDIBits
 			   bmInfo.bmiHeader.biSize = sizeof(BITMAPINFOHEADER);
 			   bmInfo.bmiHeader.biWidth = bmp.bmWidth;
 			   bmInfo.bmiHeader.biHeight = bmp.bmHeight;
