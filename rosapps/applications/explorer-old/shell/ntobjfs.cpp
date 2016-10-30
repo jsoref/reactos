@@ -124,7 +124,7 @@ const LPCWSTR NTDLL::s_ObjectTypes[] = {
 	L"Mutant", L"Section", L"Event", L"Semaphore",
 	L"Timer", L"Key", L"EventPair", L"IoCompletion",
 	L"Device", L"File", L"Controller", L"Profile",
-	L"Type", L"Desktop", L"WindowStatiom", L"Driver",
+	L"Type", L"Desktop", L"WindowStation", L"Driver",
 	L"Token", L"Process", L"Thread", L"Adapter", L"Port",
 	0
 };
