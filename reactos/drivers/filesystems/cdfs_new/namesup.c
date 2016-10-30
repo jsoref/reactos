@@ -650,7 +650,7 @@ Return Value:
 
     //
     //  Figure out the maximum number of characters we can copy of the base
-    //  name.  We subract the number of characters in the dirent string from 8.
+    //  name.  We subtract the number of characters in the dirent string from 8.
     //  We will copy this many characters or stop when we reach a '.' character
     //  or a '~' character in the name.
     //
