@@ -348,7 +348,7 @@ ClasspPerfIncrementErrorCount(
         //
         // If the error count has exceeded the error limit, then disable
         // any tagged queuing, multiple requests per lu queueing
-        // and sychronous data transfers.
+        // and synchronous data transfers.
         //
         // Clearing the no queue freeze flag prevents the port driver
         // from sending multiple requests per logical unit.

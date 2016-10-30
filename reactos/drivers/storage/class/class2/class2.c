@@ -853,7 +853,7 @@ Routine Description:
 
     This routine builds and sends a request to the port driver to
     get a pointer to a structure that describes the adapter's
-    capabilities/limitations. This routine is sychronous.
+    capabilities/limitations. This routine is synchronous.
 
 Arguments:
 
@@ -3044,7 +3044,7 @@ Return Value:
         //
         // If the error count has exceeded the error limit, then disable
         // any tagged queuing, multiple requests per lu queueing
-        // and sychronous data transfers.
+        // and synchronous data transfers.
         //
 
         if (deviceExtension->ErrorCount == 4) {
