@@ -274,7 +274,7 @@ BlMmUnmapVirtualAddressEx (
     /* Increment call depth */
     ++MmDescriptorCallTreeCount;
 
-    /* Make sure all parameters are tehre */
+    /* Make sure all parameters are there */
     if ((VirtualAddress) && (Size))
     {
         /* Unmap the virtual address */
