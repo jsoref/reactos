@@ -319,7 +319,7 @@ DirectDrawEnumerateExW(LPDDENUMCALLBACKEXW lpCallback,
 *     The D3DParseUnknownCommand routine    <FILLMEIN>.
 *
 * @param lpCmd
-*       Is a typcast to LPD3DHAL_DP2COMMAND struct
+*       Is a typecast to LPD3DHAL_DP2COMMAND struct
 *       typedef struct _D3DHAL_DP2COMMAND
 *       {
 *           BYTE  bCommand;
