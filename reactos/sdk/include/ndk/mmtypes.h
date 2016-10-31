@@ -899,7 +899,7 @@ typedef struct _MMSUPPORT
     LIST_ENTRY WorkingSetExpansionLinks;
 #endif
 #if (NTDDI_VERSION >= NTDDI_LONGHORN)
-    USHORT LastTrimpStamp;
+    USHORT LastTrimStamp;
     USHORT NextPageColor;
 #else
     LARGE_INTEGER LastTrimTime;
