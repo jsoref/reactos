@@ -71,7 +71,7 @@ GetW32ThreadInfo(VOID)
  *  4) dwLength - size, in bytes, of buffer 'pSecurityDescriptor'
  *  5) pdwLengthNeeded - receives actual size of descriptor
  *
- * Return Vaules:
+ * Return Values:
  *  TRUE on success
  *  FALSE on failure, call GetLastError() for more information
  */
@@ -121,7 +121,7 @@ NTSTATUS Status;
  *  2) pSecurityInfo - type of information to apply
  *  3) pSecurityDescriptor - buffer which descriptor to set
  *
- * Return Vaules:
+ * Return Values:
  *  TRUE on success
  *  FALSE on failure, call GetLastError() for more information
  */
