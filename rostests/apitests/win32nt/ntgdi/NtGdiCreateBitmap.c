@@ -181,18 +181,18 @@ void Test_NtGdiCreateBitmap_Params(void)
 	TEST(NtGdiCreateBitmap(1, -1, 1, 1, NULL) == NULL);
 	TEST(GetLastError() == ERROR_INVALID_PARAMETER);
 
-	/* Test witdth 0 params */
+	/* Test width 0 params */
 	SetLastError(ERROR_SUCCESS);
 	TEST(NtGdiCreateBitmap(0, 1, 1, 1, NULL) == NULL);
 	TEST(GetLastError() == ERROR_INVALID_PARAMETER);
 
-	/* Test witdth -1 params */
+	/* Test width -1 params */
 	SetLastError(ERROR_SUCCESS);
 	TEST(NtGdiCreateBitmap(-1, 0, 1, 1, NULL) == NULL);
 	TEST(GetLastError() == ERROR_INVALID_PARAMETER);
 
 
-    /* Test witdth -1 params */
+    /* Test width -1 params */
 	SetLastError(ERROR_SUCCESS);
 	TEST(NtGdiCreateBitmap(0, 0, 1, 1, NULL) == NULL);
 	TEST(GetLastError() == ERROR_INVALID_PARAMETER);
