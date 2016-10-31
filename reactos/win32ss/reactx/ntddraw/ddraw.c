@@ -129,7 +129,7 @@ DxDdStartupDxGraphics(  ULONG ulc1,
     NTSTATUS Status = STATUS_PROCEDURE_NOT_FOUND;
 
     /* FIXME: Setup of gaEngFuncs driver export list
-     * but not in this api, we can add it here tempary until we figout where
+     * but not in this api, we can add it here temporary until we figout where
      * no code have been writen for it yet
      */
 

@@ -69,7 +69,7 @@ CGridView::SetFont(
     )
 {
 
-    // Create a temperary container for the new font
+    // Create a temporary container for the new font
     CurrentFont NewFont = { 0 };
     NewFont.FontName = FontName;
 

@@ -17,9 +17,9 @@ Now we come to if IN HDC is null basic we need create
    and return susses.
  
 2.  if no internal cache of directdraw handle is found we need create it
-    by using CreateDC for tempary HDC that will be cache in the win32k later
+    by using CreateDC for temporary HDC that will be cache in the win32k later
  
-3.  we need check see if we got a tempary HDC or not, if we fail getting tempary 
+3.  we need check see if we got a temporary HDC or not, if we fail getting temporary 
     HDC return FALSE
  
 4. Now we trying create directdraw handler it being cache to (pDirectDrawGlobalInternal->hDD)
