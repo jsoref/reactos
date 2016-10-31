@@ -85,7 +85,7 @@ DECLARE_INTERFACE_(IRootHCDController, IUnknown)
 //
 // UnregisterHCD
 //
-// Description: this function unregistes a host controller
+// Description: this function unregisters a host controller
 
     virtual NTSTATUS UnregisterHCD(struct IHCDController * Controller) = 0;
 

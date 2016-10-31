@@ -61,7 +61,7 @@ FsRecLoadFileSystem(IN PDEVICE_OBJECT DeviceObject,
         /* Make sure that we haven't already loaded the FS */
         if (DeviceExtension->State != Loaded)
         {
-            /* Unregiser us, and set us as loaded */
+            /* Unregister us, and set us as loaded */
             IoUnregisterFileSystem(DeviceObject);
             DeviceExtension->State = Loaded;
         }
