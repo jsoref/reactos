@@ -401,7 +401,7 @@ int __cdecl _vsnprintf(char *buf, size_t cnt, const char *fmt, va_list args)
 				   number of chars for from string */
 	int qualifier;		/* 'h', 'l', 'L', 'I' or 'w' for integer fields */
 
-    /* clear the string buffer with zero so we do not need NULL terment it at end */
+    /* clear the string buffer with zero so we do not need NULL terminate it at end */
 
 	str = buf;
 	end = buf + cnt - 1;
