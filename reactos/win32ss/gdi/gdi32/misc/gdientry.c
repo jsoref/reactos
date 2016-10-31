@@ -1067,7 +1067,7 @@ DdGetDriverInfo(LPDDHAL_GETDRIVERINFODATA pData)
         pUserMisc->dwFlags = pMisc.dwFlags & DDHAL_MISCCB32_GETAVAILDRIVERMEMORY;
         pUserMisc->GetAvailDriverMemory = (LPDDHAL_GETAVAILDRIVERMEMORY) DdGetAvailDriverMemory;
 
-        /* This callbacks are only for win9x and theirfor it is not longer use in NT or ReactOS
+        /* This callbacks are only for win9x and therefore it is not longer use in NT or ReactOS
          * pUserMisc->UpdateNonLocalHeap;
          * pUserMisc->GetHeapAlignment;
          * pUserMisc->GetSysmemBltStatus; */
