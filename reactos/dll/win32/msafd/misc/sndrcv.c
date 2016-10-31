@@ -229,7 +229,7 @@ WSPRecv(SOCKET Handle,
         }
     }
 
-    /* Verifiy if we should use APC */
+    /* Verify if we should use APC */
 
     if (lpOverlapped == NULL)
     {
@@ -444,7 +444,7 @@ WSPRecvFrom(SOCKET Handle,
         }
     }
 
-    /* Verifiy if we should use APC */
+    /* Verify if we should use APC */
 
     if (lpOverlapped == NULL)
     {
@@ -618,7 +618,7 @@ WSPSend(SOCKET Handle,
         }
     }
 
-    /* Verifiy if we should use APC */
+    /* Verify if we should use APC */
     if (lpOverlapped == NULL)
     {
         /* Not using Overlapped structure, so use normal blocking on event */
@@ -817,7 +817,7 @@ WSPSendTo(SOCKET Handle,
     SendInfo.TdiConnection.RemoteAddress = RemoteAddress;
     SendInfo.TdiConnection.RemoteAddressLength = Socket->HelperData->MaxTDIAddressLength;
 
-    /* Verifiy if we should use APC */
+    /* Verify if we should use APC */
     if (lpOverlapped == NULL)
     {
         /* Not using Overlapped structure, so use normal blocking on event */
