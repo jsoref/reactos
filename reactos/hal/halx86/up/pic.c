@@ -261,7 +261,7 @@ ULONG FindHigherIrqlMask[32] =
 
     /*
      * Also recall from the earlier table that IRQL 18/19 are treated the same
-     * in order to spread the masks better thoughout the 32 IRQLs and to reflect
+     * in order to spread the masks better throughout the 32 IRQLs and to reflect
      * the fact that some bits will always stay on until much higher IRQLs since
      * they are system-critical. One such example is the 1 bit that you start to
      * see trickling down here. This is IRQ8, the RTC timer used for profiling,
