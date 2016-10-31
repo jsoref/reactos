@@ -108,11 +108,11 @@ Return Value:
    ASSERT(Srb->DataTransferLength >= sizeof(ULONG));
    ASSERT(Srb->DataBuffer);
 
-   // Check if the WMI SRB is targetted for the adapter or one of the disks
+   // Check if the WMI SRB is targeted for the adapter or one of the disks
    if (!(Srb->WMIFlags & SRB_WMI_FLAGS_ADAPTER_REQUEST))
    {
 
-      // This is targetted to one of the disks, since there are no per disk
+      // This is targeted to one of the disks, since there are no per disk
       // wmi information we return an error. Note that if there was per
       // disk information, then you'd likely have a differen WmiLibContext
       // and a different set of guids.
