@@ -132,7 +132,7 @@ typedef struct _EDD_DIRECTDRAW_GLOBAL
                                                                           HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\DCI
                                                                           Specifies how long a DirectDraw application can keep a graphics-device frame-buffer locked
                                                                           in second, if this value are set to 0 it disable directdraw acceleration.
-                                                                          it is normal set to 7 (7 sec in windwos xp/2003)
+                                                                          it is normal set to 7 (7 sec in windows xp/2003)
                                                                         */
 
 /* 0x030 */    DWORD dwNumHeaps;                                       // 0x030 <-- verified to match Windows XP, dwNumHeaps

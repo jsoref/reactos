@@ -969,7 +969,7 @@ MiResolveTransitionFault(IN BOOLEAN StoreInstruction,
     DPRINT("Transition fault on 0x%p with PTE 0x%p in process %s\n",
             FaultingAddress, PointerPte, CurrentProcess->ImageFileName);
 
-    /* Windowss does this check */
+    /* Windows does this check */
     ASSERT(*InPageBlock == NULL);
 
     /* ARM3 doesn't support this path */
