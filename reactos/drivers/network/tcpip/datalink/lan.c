@@ -927,7 +927,7 @@ VOID NTAPI ProtocolBindAdapter(
     IN  PVOID          SystemSpecific2)
 /*
  * FUNCTION: Called by NDIS during NdisRegisterProtocol to set up initial
- *           bindings, and periodically thereafer as new adapters come online
+ *           bindings, and periodically thereafter as new adapters come online
  * ARGUMENTS:
  *     Status: Return value to NDIS
  *     BindContext: Handle provided by NDIS to track pending binding operations
