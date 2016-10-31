@@ -477,7 +477,7 @@ HvLoadHive(IN PHHIVE Hive,
     }
 
     // This is a HACK!
-    /* Free our base block... it's usless in this implementation */
+    /* Free our base block... it's useless in this implementation */
     Hive->Free(BaseBlock, Hive->BaseBlockAlloc);
 
     /* Initialize the hive directly from memory */
