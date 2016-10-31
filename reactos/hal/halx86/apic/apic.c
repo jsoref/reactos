@@ -485,7 +485,7 @@ ApicInitializeIOApic(VOID)
         IOApicWrite(IOAPIC_REDTBL + 2 * Index + 1, ReDirReg.Long1);
     }
 
-    /* Init the vactor to index table */
+    /* Init the vector to index table */
     for (Vector = 0; Vector <= 255; Vector++)
     {
         HalpVectorToIndex[Vector] = 0xFF;
