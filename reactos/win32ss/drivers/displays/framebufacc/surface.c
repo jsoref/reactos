@@ -155,7 +155,7 @@ DrvEnableSurface(
        return FALSE;
    }
 
-   /* Rest the desktop vitual position */
+   /* Rest the desktop virtual position */
    ppdev->ScreenOffsetXY.x = 0;
    ppdev->ScreenOffsetXY.y = 0;
 

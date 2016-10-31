@@ -51,7 +51,7 @@ typedef struct _PDEV
    BYTE PaletteShift;
    PVOID ScreenPtr;
 
-   /* Vitual desktop stuff */
+   /* Virtual desktop stuff */
    POINTL ScreenOffsetXY;
 
    /* Palette data */

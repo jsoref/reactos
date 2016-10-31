@@ -62,7 +62,7 @@ extern "C" {
 #define MMPFNUSE_KERNELSTACK                                11
 
 //
-// Lock/Unlock Virtuam Memory Flags
+// Lock/Unlock Virtual Memory Flags
 //
 #define MAP_PROCESS                                         1
 #define MAP_SYSTEM                                          2
