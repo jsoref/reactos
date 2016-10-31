@@ -69,7 +69,7 @@ INT cmd_rename (LPTSTR param)
     TCHAR dstPath[MAX_PATH]; /*Source Path Directories*/
     LPTSTR dstFILE = NULL; /*Contains the files name(s)*/
 
-    TCHAR dstLast[MAX_PATH]; /*It saves the File name after unmasked with wildcarts*/
+    TCHAR dstLast[MAX_PATH]; /*It saves the File name after unmasked with wildcards*/
     TCHAR dstFinal[MAX_PATH]; /*It saves the Final destiny Path*/
 
     BOOL bDstWildcard = FALSE;
