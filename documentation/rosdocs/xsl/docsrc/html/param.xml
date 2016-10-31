@@ -4248,7 +4248,7 @@ as external binary entities or if you are using absolute path in image names.</p
 </refmeta>
 <refnamediv>
 <refname>htmlhelp.force.map.and.alias</refname>
-<refpurpose>Should be [MAP] and [ALIAS] section added to project file unconditionaly?</refpurpose>
+<refpurpose>Should be [MAP] and [ALIAS] section added to project file unconditionally?</refpurpose>
 </refnamediv>
 
 <refsynopsisdiv>

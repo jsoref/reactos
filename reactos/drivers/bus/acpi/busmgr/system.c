@@ -384,7 +384,7 @@ acpi_suspend (
 	status = acpi_system_suspend(state);
 
 	/* Even if we failed to go to sleep, all of the devices are in an suspended
-	 * mode. So, we run these unconditionaly to make sure we have a usable system
+	 * mode. So, we run these unconditionally to make sure we have a usable system
 	 * no matter what.
 	 */
 	AcpiLeaveSleepState(state);
