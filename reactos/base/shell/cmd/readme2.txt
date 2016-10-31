@@ -10,7 +10,7 @@ This is where all command lines switches given to cmd on startup are done.
 
 From here main calls ProcessInput().  This is where cmd loops for getting input and doing the commands.  
 First it checks to see if there is a batch file(note: there is a global struct "bc" which is NULL when not processing a batch file) 
-and if there is it will pull a new line from that file.  If not, thne it will wait for input.  
+and if there is it will pull a new line from that file.  If not, then it will wait for input.  
 Currently there is some stuff for set /a in there, which might stay there or see if we can find a better spot. 
 
 Once there is input taken in from the command line it is sent into ParseCommandLine().  
