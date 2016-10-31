@@ -35,8 +35,8 @@ typedef set<HWND> WindowSet;
 	natural order without explicitly specifying any access mode at the begin
 	of the definition.
 	First are public constructors and destructor, then public member functions.
-	After that we list protected member varibables and functions. If needed,
-	private implementation varibales and functions are positioned at the end.
+	After that we list protected member variables and functions. If needed,
+	private implementation variables and functions are positioned at the end.
  */
 
 
