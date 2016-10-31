@@ -969,7 +969,7 @@ typedef enum {
     ///
     /// Used to induce a system-wide reset. This sets all circuitry within the 
     /// system to its initial state.  This type of reset is asynchronous to system
-    /// operation and operates withgout regard to cycle boundaries.  EfiColdReset 
+    /// operation and operates without regard to cycle boundaries.  EfiColdReset 
     /// is tantamount to a system power cycle.
     ///
     EfiResetCold,
