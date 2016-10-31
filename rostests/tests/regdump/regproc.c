@@ -744,7 +744,7 @@ void processSetValue(LPTSTR line)
       }
       if (line[line_idx] != _T('=')) {
           line[line_idx] = _T('\"');
-          _tprintf(_T("Warning! uncrecognized line:\n%s\n"), line);
+          _tprintf(_T("Warning! unrecognized line:\n%s\n"), line);
           return;
       }
   } else {
