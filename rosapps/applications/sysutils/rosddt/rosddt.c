@@ -148,7 +148,7 @@ static void do_update_base()
 	u_long  size;
 	FILE   *f = NULL;
 
-	if (GetPrivateProfileString(L"URL", L"udpate", NULL, up_url, MAX_PATH, gl_ini_file) == 0) {
+	if (GetPrivateProfileString(L"URL", L"update", NULL, up_url, MAX_PATH, gl_ini_file) == 0) {
 		wprintf(L"Update URL not found in rosddt.ini\n"); return;
 	}
 
