@@ -1357,7 +1357,7 @@ KiTrap10Handler(IN PKTRAP_FRAME TrapFrame)
     /* Save trap frame */
     KiEnterTrap(TrapFrame);
 
-    /* Check if this is the NPX thrad */
+    /* Check if this is the NPX thread */
     Thread = KeGetCurrentThread();
     SaveArea = KiGetThreadNpxArea(Thread);
     if (Thread != KeGetCurrentPrcb()->NpxThread)
@@ -1399,7 +1399,7 @@ KiTrap13Handler(IN PKTRAP_FRAME TrapFrame)
     /* Save trap frame */
     KiEnterTrap(TrapFrame);
 
-    /* Check if this is the NPX thrad */
+    /* Check if this is the NPX thread */
     Thread = KeGetCurrentThread();
     if (Thread != KeGetCurrentPrcb()->NpxThread)
     {
