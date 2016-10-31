@@ -503,7 +503,7 @@ PNEIGHBOR_CACHE_ENTRY NBFindOrCreateNeighbor(
   PIP_ADDRESS Address,
   BOOLEAN NoTimeout)
 /*
- * FUNCTION: Tries to find a neighbor and if unsuccesful, creates a new NCE
+ * FUNCTION: Tries to find a neighbor and if unsuccessful, creates a new NCE
  * ARGUMENTS:
  *   Interface = Pointer to interface to use (in case NCE is not found)
  *   Address   = Pointer to IP address
