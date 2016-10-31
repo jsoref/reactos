@@ -191,7 +191,7 @@ IO_ALLOCATION_ACTION NTAPI NdisSubordinateMapRegisterCallback (
 /*
  * FUNCTION: Called back during reservation of map registers
  * ARGUMENTS:
- *     DeviceObject: Device object of the deivce setting up DMA
+ *     DeviceObject: Device object of the device setting up DMA
  *     Irp: Reserved; must be ignored
  *     MapRegisterBase: Map registers assigned for transfer
  *     Context: LOGICAL_ADAPTER object of the requesting miniport
@@ -221,7 +221,7 @@ IO_ALLOCATION_ACTION NTAPI NdisBusMasterMapRegisterCallback (
 /*
  * FUNCTION: Called back during reservation of map registers
  * ARGUMENTS:
- *     DeviceObject: Device object of the deivce setting up DMA
+ *     DeviceObject: Device object of the device setting up DMA
  *     Irp: Reserved; must be ignored
  *     MapRegisterBase: Map registers assigned for transfer
  *     Context: LOGICAL_ADAPTER object of the requesting miniport

@@ -538,7 +538,7 @@ protected:
 
  // double buffering classes
 
- /// Memory Canvas creates and destroys memory devoce contexts.
+ /// Memory Canvas creates and destroys memory device contexts.
 struct MemCanvas : public Canvas
 {
 	MemCanvas(HDC hdc=0)

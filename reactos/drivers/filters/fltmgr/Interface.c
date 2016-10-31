@@ -35,7 +35,7 @@ static
 NTSTATUS
 FltpAttachDeviceObject(
     _In_ PDEVICE_OBJECT SourceDevice,
-    _In_ PDEVICE_OBJECT Targetevice,
+    _In_ PDEVICE_OBJECT TargetDevice,
     _Out_ PDEVICE_OBJECT *AttachedToDeviceObject
 );
 
