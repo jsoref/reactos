@@ -3972,7 +3972,7 @@ Return Value:
         nextStack = IoGetNextIrpStackLocation(Irp);
 
         //
-        // Validiate the user buffer.
+        // Validate the user buffer.
         //
 
         if (irpStack->Parameters.DeviceIoControl.InputBufferLength < sizeof(SCSI_PASS_THROUGH)){

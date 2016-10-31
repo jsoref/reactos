@@ -4616,7 +4616,7 @@ ClassDeviceControl(
         //PSCSI_PASS_THROUGH scsiPass;
 
         //
-        // Validiate the user buffer.
+        // Validate the user buffer.
         //
         #if defined (_WIN64)
 
