@@ -168,7 +168,7 @@ audio_wavein::close(void)
     /* Updating status */
     status = WAVEIN_NOTREADY;
 
-    /* Wakeing up recording thread, so it can receive
+    /* Waking up recording thread, so it can receive
        the `MM_WIM_CLOSE' message then dies */
     if (wakeup_recthread)
         SetEvent(wakeup_recthread);
