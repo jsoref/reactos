@@ -312,7 +312,7 @@ IopParseDevice(IN PVOID ParseObject,
         /* Validate the open packet */
         if (!IopValidateOpenPacket(OpenPacket)) return STATUS_OBJECT_TYPE_MISMATCH;
 
-        /* Valide reparse point in case we traversed a mountpoint */
+        /* Valid reparse point in case we traversed a mountpoint */
         if (OpenPacket->TraversedMountPoint)
         {
             /* This is a reparse point we understand */

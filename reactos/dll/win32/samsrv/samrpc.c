@@ -899,7 +899,7 @@ SamrOpenDomain(IN SAMPR_HANDLE ServerHandle,
     }
     else
     {
-        /* No vaild domain SID */
+        /* No valid domain SID */
         Status = STATUS_INVALID_PARAMETER;
     }
 

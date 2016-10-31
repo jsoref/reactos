@@ -372,7 +372,7 @@ D3DParseUnknownCommand( LPVOID lpCmd,
 
     switch (dp2command->bCommand)
     {
-       /* check for vaild command, only 3 commands are vaild */
+       /* check for valid command, only 3 commands are valid */
        case D3DDP2OP_VIEWPORTINFO:
            *(PBYTE)lpRetCmd += ((dp2command->wStateCount * sizeof(D3DHAL_DP2VIEWPORTINFO)) + sizeof(D3DHAL_DP2COMMAND));
            break;

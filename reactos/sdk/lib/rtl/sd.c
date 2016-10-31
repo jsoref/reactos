@@ -1108,7 +1108,7 @@ RtlValidRelativeSecurityDescriptor(IN PSECURITY_DESCRIPTOR SecurityDescriptorInp
 
     /* Note that Windows allows no DACL/SACL even if RequiredInfo wants it */
 
-    /* Do we have enough space, is the revision vaild, and is this SD relative? */
+    /* Do we have enough space, is the revision valid, and is this SD relative? */
     if ((SecurityDescriptorLength < sizeof(SECURITY_DESCRIPTOR_RELATIVE)) ||
         (Sd->Revision != SECURITY_DESCRIPTOR_REVISION) ||
         !(Sd->Control & SE_SELF_RELATIVE))

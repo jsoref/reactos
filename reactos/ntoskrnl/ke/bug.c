@@ -504,7 +504,7 @@ KiDoBugCheckCallbacks(VOID)
             Checksum += (ULONG_PTR)CurrentRecord->Length;
             Checksum += (ULONG_PTR)CurrentRecord->Component;
 
-            /* Make sure it's inserted and valitdated */
+            /* Make sure it's inserted and validated */
             if ((CurrentRecord->State == BufferInserted) &&
                 (CurrentRecord->Checksum == Checksum))
             {

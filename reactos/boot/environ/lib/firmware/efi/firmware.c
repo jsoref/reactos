@@ -1724,7 +1724,7 @@ BlpFwInitialize (
     NTSTATUS Status = STATUS_SUCCESS;
     EFI_KEY_TOGGLE_STATE KeyToggleState;
 
-    /* Check if we have vaild firmware data */
+    /* Check if we have valid firmware data */
     if (!(FirmwareData) || !(FirmwareData->Version))
     {
         return STATUS_INVALID_PARAMETER;

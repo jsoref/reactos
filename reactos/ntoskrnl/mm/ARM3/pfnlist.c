@@ -1167,7 +1167,7 @@ MiDecrementShareCount(IN PMMPFN Pfn1,
             PointerPte = Pfn1->PteAddress;
             ASSERT((PointerPte >= (PMMPTE)MmPagedPoolStart) && (PointerPte <= (PMMPTE)MmPagedPoolEnd));
 
-            /* The PTE that backs it should also be valdi */
+            /* The PTE that backs it should also be valid */
             PointerPte = MiAddressToPte(PointerPte);
             ASSERT(PointerPte->u.Hard.Valid == 1);
 
