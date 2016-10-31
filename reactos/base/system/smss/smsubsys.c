@@ -220,7 +220,7 @@ SmpLoadSubSystem(IN PUNICODE_STRING FileName,
     NewSubsystem->PortHandle = NULL;
     NewSubsystem->SbApiPort = NULL;
 
-    /* Create the event we'll be wating on for initialization */
+    /* Create the event we'll be waiting on for initialization */
     Status = NtCreateEvent(&NewSubsystem->Event,
                            EVENT_ALL_ACCESS,
                            NULL,
