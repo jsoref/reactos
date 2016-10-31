@@ -443,7 +443,7 @@ bool Database::fromXml(XMLHandle dbNode)
         }
         else if (NodeName == "FLAG")
         {
-            SHIM_ERR("Unhanled FLAG type\n");
+            SHIM_ERR("Unhandled FLAG type\n");
         }
         libChild = libChild.NextSibling();
     }
