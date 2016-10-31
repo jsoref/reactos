@@ -342,7 +342,7 @@ Return Value:
         //  Since we were able to lock the volume, we are guaranteed to
         //  move this volume into dismount state and disconnect it from
         //  the underlying storage stack.  The force on our part is actually
-        //  unnecesary, though complete.
+        //  unnecessary, though complete.
         //
         //  What is not strictly guaranteed, though, is that the closes
         //  for the metadata streams take effect synchronously underneath

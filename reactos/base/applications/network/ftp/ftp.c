@@ -614,7 +614,7 @@ null();//	oldintp = signal(SIGPIPE, SIG_IGN);
 					(void) fflush(stdout);
 					hashbytes += HASHBYTES;
 				}
-// Szurgot: The following code is unncessary on Win32.
+// Szurgot: The following code is unnecessary on Win32.
 //				(void) fputcSocket(dout, '\r');
 //				bytes++;
 			}
