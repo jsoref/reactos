@@ -266,7 +266,7 @@ _MmGetPageEntrySectionSegment(PMM_SECTION_SEGMENT Segment,
 
 Destroy the rtl generic table that serves as the section's page table.  Call
 the FreePage function for each non-zero entry in the section page table as
-we go.  Note that the page table is still techinally valid until after all
+we go.  Note that the page table is still technically valid until after all
 pages are destroyed, as we don't finally destroy the table until we've free
 each slice.  There is no order guarantee for deletion of individual elements
 although it's in-order as written now.
