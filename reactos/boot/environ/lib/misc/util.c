@@ -679,7 +679,7 @@ BlHtStore (
     PLIST_ENTRY HashLinkHead;
     PBL_HASH_TABLE HashTable;
 
-    /* Check for invalid tablle ID, missing arguments, or malformed entry */
+    /* Check for invalid table ID, missing arguments, or malformed entry */
     if ((HtTableSize <= TableId) ||
         !(Entry) ||
         !(Data) ||

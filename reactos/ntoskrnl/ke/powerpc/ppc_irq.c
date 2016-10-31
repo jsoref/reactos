@@ -624,7 +624,7 @@ KeDisconnectInterrupt(PKINTERRUPT InterruptObject)
     /* Set the affinity */
     KeSetSystemAffinityThread(1 << InterruptObject->Number);
 
-    /* Get the ISR Tabe */
+    /* Get the ISR Table */
     CurrentIsr = &IsrTable[InterruptObject->Vector]
                           [(ULONG)InterruptObject->Number];
 

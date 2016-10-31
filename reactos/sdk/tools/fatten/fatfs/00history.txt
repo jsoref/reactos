@@ -239,7 +239,7 @@ R0.11a (September 05, 2015)
   Fixed wrong media change can lead a deadlock at thread-safe configuration.
   Added code page 771, 860, 861, 863, 864, 865 and 869. (_CODE_PAGE)
   Removed some code pages actually not exist on the standard systems. (_CODE_PAGE)
-  Fixed errors in the case conversion teble of code page 437 and 850 (ff.c).
-  Fixed errors in the case conversion teble of Unicode (cc*.c).
+  Fixed errors in the case conversion table of code page 437 and 850 (ff.c).
+  Fixed errors in the case conversion table of Unicode (cc*.c).
 
 
