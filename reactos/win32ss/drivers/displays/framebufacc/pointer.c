@@ -211,7 +211,7 @@ CopyColorPointer(PPDEV ppdev,
                 SURFOBJ *psoColor,
                 XLATEOBJ *pxlo)
 {
-    /* FIXME unimplement */
+    /* FIXME unimplemented */
     return FALSE;
 }
 
@@ -219,7 +219,7 @@ BOOL
 CopyMonoPointer(PPDEV ppdev,
                 SURFOBJ *pso)
 {
-    /* FIXME unimplement */
+    /* FIXME unimplemented */
     return FALSE;
 }
 
