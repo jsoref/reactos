@@ -202,7 +202,7 @@ VOID Hal_DirectDraw_Release (LPDIRECTDRAW7);
    ReactOS ddraw.dll or ms ddraw.dll, so you can see what
    value ms are being setup.
 
-   This macro will create allot warings and can not be help when you compile
+   This macro will create allot warnings and can not be help when you compile
 */
 
 
@@ -218,7 +218,7 @@ VOID Hal_DirectDraw_Release (LPDIRECTDRAW7);
    so you can figout what going wrong and what
    api are being call or if it hel or is it hal
 
-   This marco does not create warings when you compile
+   This marco does not create warnings when you compile
 */
 
 #define DX_STUB \
