@@ -357,7 +357,7 @@ void test_DeletePwrScheme(void)
    ok(GetLastError() == ERROR_ACCESS_DENIED, "function should have failed with ERROR_ACCESS_DENIED but got %x\n", (UINT)GetLastError());
 
    /*
-    * delete a temporarly created power scheme
+    * delete a temporarily created power scheme
     */
    retval = DeletePwrScheme(g_TempPwrScheme);
    ok(retval, "function should have succeeded\n");
@@ -4825,7 +4825,7 @@ void test_WritePwrScheme(void)
    static const WCHAR szTestSchemeDesc[] = {'P','o','w','r','p','r','o','f',' ','S','c','h','e','m','e',0};
 
    /*
-    * create a temporarly profile, will be deleted in test_DeletePwrScheme
+    * create a temporarily profile, will be deleted in test_DeletePwrScheme
     */
 
    retval = WritePwrScheme(&g_TempPwrScheme, (LPWSTR)szTestSchemeName, (LPWSTR)szTestSchemeDesc, &g_PowerPolicy);
