@@ -21,7 +21,7 @@ BOOLEAN g_ShimsEnabled;
 
 /* FUNCTIONS *****************************************************************/
 
-/* NOTE: Remove thise one once our actctx support becomes better */
+/* NOTE: Remove this one once our actctx support becomes better */
 NTSTATUS find_actctx_dll( LPCWSTR libname, WCHAR *fullname )
 {
     static const WCHAR winsxsW[] = {'\\','w','i','n','s','x','s','\\'};
