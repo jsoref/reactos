@@ -99,7 +99,7 @@ handle_child_line(RDPCLIENT * This, const char *line, void *data)
 	}
 	else
 	{
-		warning("lspci: Unrecoqnized line '%s'\n", line);
+		warning("lspci: Unrecognised line '%s'\n", line);
 	}
 	return True;
 }
