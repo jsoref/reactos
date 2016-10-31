@@ -1546,7 +1546,7 @@ CreatePortConfig:
 
           for (i = 0; i < DeviceExtension->InterruptCount; i++)
           {
-              /* Determing IRQ sharability as usual */
+              /* Determine IRQ sharability as usual */
               if (PortConfig->AdapterInterfaceType == MicroChannel ||
                   InterruptMode[i] == LevelSensitive)
               {

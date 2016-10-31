@@ -125,7 +125,7 @@ DrvEnablePDEV(
         if ( (ppdev->PointerCapabilities.Flags & VIDEO_MODE_MONO_POINTER) ||
              (ppdev->PointerCapabilities.Flags & VIDEO_MODE_COLOR_POINTER) )
         {
-            /* determent the hw mouse mode */
+            /* determine the hw mouse mode */
             if (!(ppdev->PointerCapabilities.Flags & VIDEO_MODE_ASYNC_POINTER))
             {
                 DevInfo.flGraphicsCaps &= ~GCAPS_ASYNCMOVE;
