@@ -5767,7 +5767,7 @@ Arguments:
 
     ParameterName - parameter name to look up
 
-    ParameterValuse - default parameter value
+    ParameterValue - default parameter value
 
 Return Value:
 
@@ -5843,7 +5843,7 @@ Arguments:
 
     ParameterName - parameter name
 
-    ParameterValuse - parameter value
+    ParameterValue - parameter value
 
 Return Value:
 

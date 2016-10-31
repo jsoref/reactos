@@ -423,7 +423,7 @@ SmpApiLoop(IN PVOID Parameter)
                                                                   SmApiPort);
                 }
 
-                /* Write the result valud and return the message back */
+                /* Write the result value and return the message back */
                 RequestMsg.ReturnValue = Status;
                 ReplyMsg = &RequestMsg;
                 break;
