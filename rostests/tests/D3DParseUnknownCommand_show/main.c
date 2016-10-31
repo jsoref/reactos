@@ -9,7 +9,7 @@
  *
  * This program scanning all return valu that D3DParseUnknownCommand have in ddraw.dll
  * This command is not 100% document in MSDN so I using ddk kit doc and WinCE document
- * and ms ddk / ms sdk to figout the basic. and MSDN was unclare what this command support for
+ * and ms ddk / ms sdk to figout the basic. and MSDN was unclear what this command support for
  * D3DHAL_DP2COMMAND dp2command->bCommand so I wrote this small scanner
  *
  * it will show D3DParseUnknownCommand  dp2command->bCommand support follow command
