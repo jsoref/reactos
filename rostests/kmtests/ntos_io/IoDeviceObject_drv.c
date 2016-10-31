@@ -368,7 +368,7 @@ TestDeviceCreated(
             "Expected Flags DO_DEVICE_HAS_NAME | DO_DEVICE_INITIALIZING, got %lu\n", DeviceObject->Flags);
     }
     ok(DeviceObject->DeviceType == FILE_DEVICE_UNKNOWN,
-        "Expected DeviceType to match creation parameter FILE_DEVICE_UNKNWOWN, got %lu\n",
+        "Expected DeviceType to match creation parameter FILE_DEVICE_UNKNOWN, got %lu\n",
         DeviceObject->DeviceType);
     ok(DeviceObject->ActiveThreadCount == 0, "Expected ActiveThreadCount = 0, got %lu\n", DeviceObject->ActiveThreadCount);
 
@@ -420,7 +420,7 @@ TestDeviceDeletion(
     ok(DeviceObject->Flags == (DO_DEVICE_HAS_NAME | (Lower ? DO_EXCLUSIVE : 0)),
         "Expected Flags DO_DEVICE_HAS_NAME, got %lu\n", DeviceObject->Flags);
     ok(DeviceObject->DeviceType == FILE_DEVICE_UNKNOWN,
-        "Expected DeviceType to match creation parameter FILE_DEVICE_UNKNWOWN, got %lu\n",
+        "Expected DeviceType to match creation parameter FILE_DEVICE_UNKNOWN, got %lu\n",
         DeviceObject->DeviceType);
     ok(DeviceObject->ActiveThreadCount == 0, "Expected ActiveThreadCount = 0, got %lu\n", DeviceObject->ActiveThreadCount);
 

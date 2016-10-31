@@ -2383,22 +2383,22 @@ BmpTransferExecution (
     }
     else if (ReturnArgs.Flags & 4)
     {
-        /* Flag 4 -- unkown */
+        /* Flag 4 -- unknown */
         *LaunchCode = 1;
     }
     else if (ReturnArgs.Flags & 8)
     {
-        /* Flag 5 -- unkown */
+        /* Flag 5 -- unknown */
         *LaunchCode = 5;
     }
     else if (ReturnArgs.Flags & 0x10)
     {
-        /* Flag 6 -- unkown */
+        /* Flag 6 -- unknown */
         *LaunchCode = 6;
     }
     else if (ReturnArgs.Flags & 0x20)
     {
-        /* Flag 7 -- unkown */
+        /* Flag 7 -- unknown */
         *LaunchCode = 7;
     }
     else if (ReturnArgs.Flags & BL_RETURN_ARGUMENTS_NO_PAE_FLAG)

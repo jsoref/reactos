@@ -733,7 +733,7 @@ HalpInitializePciStubs(VOID)
         default:
 
             /* Invalid type */
-            DbgPrint("HAL: Unnkown PCI type\n");
+            DbgPrint("HAL: Unknown PCI type\n");
     }
 
     /* Loop all possible buses */

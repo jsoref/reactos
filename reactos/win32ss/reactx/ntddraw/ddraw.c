@@ -1494,7 +1494,7 @@ dump_halinfo(DD_HALINFO *pHalInfo)
     {
         if (pHalInfo->dwSize !=0)
         {
-            DPRINT1("unkonwn dwSize DD_HALINFO : the size found is 0x%08lx\n",pHalInfo->dwSize);
+            DPRINT1("unknown dwSize DD_HALINFO : the size found is 0x%08lx\n",pHalInfo->dwSize);
         }
         else
         {

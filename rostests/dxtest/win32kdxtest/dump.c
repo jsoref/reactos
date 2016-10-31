@@ -538,7 +538,7 @@ dump_halinfo(DD_HALINFO *pHalInfo, char *text)
     {
         if (pHalInfo->dwSize !=0)
         {
-            printf("unkonwn dwSize DD_HALINFO : the size found is 0x%08lx\n",pHalInfo->dwSize);
+            printf("unknown dwSize DD_HALINFO : the size found is 0x%08lx\n",pHalInfo->dwSize);
         }
         else
         {

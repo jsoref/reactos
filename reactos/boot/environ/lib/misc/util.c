@@ -221,7 +221,7 @@ BlUtlInitialize (
 
 VOID
 BmUpdateProgressInfo (
-    _In_ PVOID Uknown,
+    _In_ PVOID Unknown,
     _In_ PWCHAR ProgressInfo
     )
 {
