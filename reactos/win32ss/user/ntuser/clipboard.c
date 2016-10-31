@@ -1084,7 +1084,7 @@ NtUserSetClipboardViewer(HWND hWndNewViewer)
         goto cleanup;
     }
 
-    /* Return previous viewer. New viever window should
+    /* Return previous viewer. New viewer window should
        send messages to rest of the chain */
     if (pWinStaObj->spwndClipViewer)
         hWndNext = pWinStaObj->spwndClipViewer->head.h;
