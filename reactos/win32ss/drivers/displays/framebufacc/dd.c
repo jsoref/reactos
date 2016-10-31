@@ -50,7 +50,7 @@ DdCanCreateSurface(LPDDHAL_CANCREATESURFACEDATA pccsd)
 		//			return DDHAL_DRIVER_HANDLED;
 		//	}
 		//}
-		// /* check the texture support, we do not support testure for now */
+		// /* check the texture support, we do not support texture for now */
 		//else if((pccsd->lpDDSurfaceDesc->ddsCaps.dwCaps & DDSCAPS_TEXTURE))
 		//{
 		//	/* We do not support texture surface */
