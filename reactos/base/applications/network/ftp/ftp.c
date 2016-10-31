@@ -201,7 +201,7 @@ int login(const char *host)
 		acct = pacct;
 	}
 	while (user == NULL) {
-		const char *myname = "none"; // This needs to become the usename env
+		const char *myname = "none"; // This needs to become the username env
 
 		if (myname)
 			printf("Name (%s:%s): ", host, myname);
