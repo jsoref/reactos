@@ -378,7 +378,7 @@ DiskScanBusDetectInfo(
 Routine Description:
 
     The routine queries the registry to determine which disks are visible to
-    the BIOS.  If a disk is visable to the BIOS then the geometry information
+    the BIOS.  If a disk is visible to the BIOS then the geometry information
     is updated with the disk's signature and MBR checksum.
 
 Arguments:

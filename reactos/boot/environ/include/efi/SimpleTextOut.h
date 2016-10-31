@@ -368,7 +368,7 @@ typedef struct {
     ///
     INT32   CursorRow;
     ///
-    /// The cursor is currently visbile or not.
+    /// The cursor is currently visible or not.
     ///
     BOOLEAN CursorVisible;
 } EFI_SIMPLE_TEXT_OUTPUT_MODE;

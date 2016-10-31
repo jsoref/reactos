@@ -136,7 +136,7 @@ IntSendSyncPaint(PWND Wnd, ULONG Flags)
    ptiWnd = Wnd->head.pti;
    ptiCur = PsGetCurrentThreadWin32Thread();
    /*
-      Not the current thread, Wnd is in send Nonclient paint also in send erase background and it is visiable.
+      Not the current thread, Wnd is in send Nonclient paint also in send erase background and it is visible.
    */
    if ( Wnd->head.pti != ptiCur &&
         Wnd->state & WNDS_SENDNCPAINT &&

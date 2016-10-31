@@ -3721,7 +3721,7 @@ EnumerateBusKey(
 Routine Description:
 
     The routine queries the registry to determine if this disk is visible to
-    the BIOS.  If the disk is visable to the BIOS, then the geometry information
+    the BIOS.  If the disk is visible to the BIOS, then the geometry information
     is updated.
 
 Arguments:
@@ -4034,7 +4034,7 @@ UpdateGeometry(
 Routine Description:
 
     The routine queries the registry to determine if this disk is visible to
-    the BIOS.  If the disk is visable to the BIOS, then the geometry information
+    the BIOS.  If the disk is visible to the BIOS, then the geometry information
     is updated.
 
 Arguments:
