@@ -1119,7 +1119,7 @@ MmCreateProcessAddressSpace(IN ULONG MinWs,
         OldIrql = KeAcquireQueuedSpinLock(LockQueuePfnLock);
     }
 
-    /* Get a zero page for the woring set list, if possible */
+    /* Get a zero page for the working set list, if possible */
     MI_SET_USAGE(MI_USAGE_PAGE_TABLE);
     Color = MI_GET_NEXT_PROCESS_COLOR(Process);
     WsListIndex = MiRemoveZeroPageSafe(Color);
