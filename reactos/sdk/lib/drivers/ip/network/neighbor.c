@@ -390,7 +390,7 @@ NBResetNeighborTimeout(PIP_ADDRESS Address)
     UINT HashValue;
     PNEIGHBOR_CACHE_ENTRY NCE;
 
-    TI_DbgPrint(DEBUG_NCACHE, ("Resetting NCE timout for 0x%s\n", A2S(Address)));
+    TI_DbgPrint(DEBUG_NCACHE, ("Resetting NCE timeout for 0x%s\n", A2S(Address)));
 
     HashValue  = *(PULONG)(&Address->Address);
     HashValue ^= HashValue >> 16;

@@ -126,7 +126,7 @@ VOID CALLBACK TimerCallback1(PVOID Param, BOOLEAN Fired)
   {
     BOOL stat;
 
-    _tprintf(_T("[%d]Timout finished, delete timer queue..."), (int)Info->Test->id);
+    _tprintf(_T("[%d]Timeout finished, delete timer queue..."), (int)Info->Test->id);
     stat = DeleteTimerQueueTimer(NULL, Info->hTimer, NULL);
     if(stat)
       _tprintf(_T("returned OK -> test FAILED!\n"));
@@ -219,7 +219,7 @@ VOID Test2(PTEST Test, HANDLE hEvent)
 
   WaitForSingleObject(Info.Test2.hWaitEvent, INFINITE);
 
-  _tprintf(_T("[%d]Timout finished, delete timer queue..."), (int)Test->id);
+  _tprintf(_T("[%d]Timeout finished, delete timer queue..."), (int)Test->id);
   stat = DeleteTimerQueueTimer(NULL, Info.hTimer, INVALID_HANDLE_VALUE);
   if(stat)
   {
@@ -301,7 +301,7 @@ VOID Test3(PTEST Test, HANDLE hEvent)
 
   WaitForSingleObject(Info.Test3.hWaitEvent, INFINITE);
 
-  _tprintf(_T("[%d]Timout finished, delete timer queue..."), (int)Test->id);
+  _tprintf(_T("[%d]Timeout finished, delete timer queue..."), (int)Test->id);
   stat = DeleteTimerQueueTimer(NULL, Info.hTimer, Info.Test3.hNotification);
   if(stat)
   {
