@@ -1401,7 +1401,7 @@ private:
 	long m_HotKeyAltTab;
 	long m_HotKeyCtrlAltDel;
 	long m_HotKeyCtrlEsc;
-	long m_orderDrawThresold;
+	long m_orderDrawThreshold;
 	long m_BitmapCacheSize;
 	long m_BitmapVirtualCacheSize;
 	long m_NumBitmapCaches;
@@ -2293,7 +2293,7 @@ private:
 		m_HotKeyAltTab(VK_PRIOR),
 		m_HotKeyCtrlAltDel(VK_END),
 		m_HotKeyCtrlEsc(VK_HOME),
-		m_orderDrawThresold(0),
+		m_orderDrawThreshold(0),
 		m_BitmapCacheSize(1500),
 		m_BitmapVirtualCacheSize(10),
 		m_brushSupportLevel(),

@@ -1413,7 +1413,7 @@ NTSTATUS NTAPI ClassPnpStartDevice(IN PDEVICE_OBJECT DeviceObject)
                                         CLASSP_REG_PERF_RESTORE_VALUE_NAME,
                                         &t);
                 if (t >= CLASS_PERF_RESTORE_MINIMUM) {
-                    fdoExtension->PrivateFdoData->Perf.ReEnableThreshhold = t;
+                    fdoExtension->PrivateFdoData->Perf.ReEnableThreshold = t;
                 }
             }
 

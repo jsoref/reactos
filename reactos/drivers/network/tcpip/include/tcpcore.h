@@ -2984,7 +2984,7 @@ static __inline void tcp_cwnd_validate(struct sock *sk, struct tcp_opt *tp)
 #endif
 }
 
-/* Set slow start threshould and cwnd not falling to slow start */
+/* Set slow start threshold and cwnd not falling to slow start */
 static __inline void __tcp_enter_cwr(struct tcp_opt *tp)
 {
 #if 0
