@@ -25,7 +25,7 @@ in ntoskrnl/ldr/loader.c after the line loading keyboard driver.
 of ReactOS.
 
 3. If you want to add symbolic information you should use loader.exe to
-create .dbg file from the unstrippped version of exe or driver:
+create .dbg file from the unstripped version of exe or driver:
 For example:
 pice\loader\loader.exe -t ntoskrnl.nostrip.exe
 
