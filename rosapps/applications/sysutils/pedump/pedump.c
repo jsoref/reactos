@@ -2384,7 +2384,7 @@ GetExportFunctionNames (
   DWORD *pdwNames;
   WORD *pwOrd;
   int i, nCnt = 0, ntmp = 0;
-  int enid = 0, ordBase = 1;	// usally ordBase is 1....
+  int enid = 0, ordBase = 1;	// usually ordBase is 1....
 
   int enames = 0;
 
