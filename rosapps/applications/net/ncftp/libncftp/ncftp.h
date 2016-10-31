@@ -58,7 +58,7 @@
 
 #include "ncftp_errno.h"
 
-/* This is used to verify validty of the data passed in.
+/* This is used to verify validity of the data passed in.
  * It also specifies the minimum version that is binary-compatible with
  * this version.  (So this may not necessarily be kLibraryVersion.)
  */
