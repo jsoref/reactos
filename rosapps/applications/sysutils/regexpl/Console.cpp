@@ -1063,7 +1063,7 @@ void CConsole::DisableWrite()
 {
 	m_blnDisableWrite = TRUE;
 	INPUT_RECORD InputRecord;
-	DWORD dwRecordsWriten;
+	DWORD dwRecordsWritten;
 	InputRecord.EventType = KEY_EVENT;
 	InputRecord.Event.KeyEvent.bKeyDown = TRUE;
 #ifdef UNICODE
@@ -1071,7 +1071,7 @@ void CConsole::DisableWrite()
 #else
 	InputRecord.Event.KeyEvent.uChar.AsciiChar = ' ';
 #endif
-	BOOL ret = WriteConsoleInput(m_hStdIn,&InputRecord,1,&dwRecordsWriten);
+	BOOL ret = WriteConsoleInput(m_hStdIn,&InputRecord,1,&dwRecordsWritten);
 	ASSERT(ret);
 }
 

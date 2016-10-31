@@ -130,7 +130,7 @@ DxDdStartupDxGraphics(  ULONG ulc1,
 
     /* FIXME: Setup of gaEngFuncs driver export list
      * but not in this api, we can add it here temporary until we figout where
-     * no code have been writen for it yet
+     * no code have been written for it yet
      */
 
 

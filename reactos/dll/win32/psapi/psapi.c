@@ -969,7 +969,7 @@ GetModuleBaseNameW(HANDLE hProcess,
             lpBaseName[nSize - 1] = UNICODE_NULL;
         }
     }
-    /* Otherwise, nullify at last writen char */
+    /* Otherwise, nullify at last written char */
     else
     {
         ASSERT(Len + sizeof(UNICODE_NULL) <= nSize * sizeof(WCHAR));
@@ -1061,7 +1061,7 @@ GetModuleFileNameExW(HANDLE hProcess,
             lpFilename[nSize - 1] = UNICODE_NULL;
         }
     }
-    /* Otherwise, nullify at last writen char */
+    /* Otherwise, nullify at last written char */
     else
     {
         ASSERT(Len + sizeof(UNICODE_NULL) <= nSize * sizeof(WCHAR));
