@@ -1901,14 +1901,14 @@ KdEnterDebugger(IN PKTRAP_FRAME TrapFrame,
     /* Check freeze flag */
     if (KiFreezeFlag & 1)
     {
-        /* Print out errror */
+        /* Print out error */
         KdpDprintf("FreezeLock was jammed!  Backup SpinLock was used!\n");
     }
 
     /* Check processor state */
     if (KiFreezeFlag & 2)
     {
-        /* Print out errror */
+        /* Print out error */
         KdpDprintf("Some processors not frozen in debugger!\n");
     }
 

@@ -89,7 +89,7 @@ IopAttachDeviceToDeviceStackSafe(IN PDEVICE_OBJECT SourceDevice,
     }
     else
     {
-        /* Update atached device fields */
+        /* Update attached device fields */
         AttachedDevice->AttachedDevice = SourceDevice;
         AttachedDevice->Spare1++;
 
@@ -797,7 +797,7 @@ IoAttachDeviceToDeviceStackSafe(IN PDEVICE_OBJECT SourceDevice,
 /*
  * IoCreateDevice
  *
- * Allocates memory for and intializes a device object for use for
+ * Allocates memory for and initializes a device object for use for
  * a driver.
  *
  * Parameters
@@ -1713,7 +1713,7 @@ IoStartPacket(IN PDEVICE_OBJECT DeviceObject,
             if (Irp->Cancel)
             {
                 /*
-                 * Set the cancel IRQL, clear the currnet cancel routine and
+                 * Set the cancel IRQL, clear the current cancel routine and
                  * call ours
                  */
                 Irp->CancelIrql = CancelIrql;

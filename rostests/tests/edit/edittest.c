@@ -1,6 +1,6 @@
 /* Edit Control Test for ReactOS, quick n' dirty. Very rigid too.
  * There you go, is only a test program. Not made to be fast, small
- * easy to mantain, or portable. Lots of duplicated code too.
+ * easy to maintain, or portable. Lots of duplicated code too.
 
  * I'm not erasing text because I don't want to use other functions from th API
  * or make this more complex.
@@ -182,7 +182,7 @@ struct
         DWORD MsgCode;             	/* Message Code */
         WPARAM wParam;             	/* Well hope you can understand this */
         LPARAM lParam;             	/* ditto */
-        LPFUNCTIONHANDLER Handler; 	/* Funtion called to handle the result of each message */
+        LPFUNCTIONHANDLER Handler; 	/* Function called to handle the result of each message */
 }
 Msg[] =
 {
@@ -383,8 +383,8 @@ WndProc ( HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam )
         Buttons[i++] = CreatePushButton("Width +",70,100,WS_VISIBLE);
         Buttons[i++] = CreatePushButton("Width -",70,101,WS_VISIBLE);
 
-        Buttons[i++] = CreatePushButton("Heigth +",70,102,WS_VISIBLE);
-        Buttons[i++] = CreatePushButton("Heigth -",70,103,WS_VISIBLE);
+        Buttons[i++] = CreatePushButton("Height +",70,102,WS_VISIBLE);
+        Buttons[i++] = CreatePushButton("Height -",70,103,WS_VISIBLE);
 
         Buttons[i++] = CreatePushButton("CreateWindowA",140,CREATEWINDOW,WS_VISIBLE);
         Buttons[i++] = CreatePushButton("CreateWindowExA",140,CREATEWINDOWEX,WS_VISIBLE);

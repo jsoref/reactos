@@ -237,8 +237,8 @@ library MSTSCLib
 	{
 		[id(0x00000079), propput] HRESULT Compress([in] long pcompress);
 		[id(0x00000079), propget] HRESULT Compress([out, retval] long * pcompress);
-		[id(0x0000007a), propput] HRESULT BitmapPeristence([in] long pbitmapPeristence);
-		[id(0x0000007a), propget] HRESULT BitmapPeristence([out, retval] long * pbitmapPeristence);
+		[id(0x0000007a), propput] HRESULT BitmapPersistence([in] long pbitmapPersistence);
+		[id(0x0000007a), propget] HRESULT BitmapPersistence([out, retval] long * pbitmapPersistence);
 		[id(0x000000a1), propput] HRESULT allowBackgroundInput([in] long pallowBackgroundInput);
 		[id(0x000000a1), propget] HRESULT allowBackgroundInput([out, retval] long * pallowBackgroundInput);
 		[id(0x000000a2), propput] HRESULT KeyBoardLayoutStr([in] BSTR rhs);

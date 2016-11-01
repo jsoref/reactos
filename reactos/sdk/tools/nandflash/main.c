@@ -166,7 +166,7 @@ main(ULONG argc,
     WriteBootLdr(NandImageFile);
     if (NeedsOob)
     {
-        /* Write the ramdisk normaly */
+        /* Write the ramdisk normally */
         WriteFileSystem(NandImageFile);
     }
     else

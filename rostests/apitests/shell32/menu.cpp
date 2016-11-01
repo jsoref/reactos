@@ -199,8 +199,8 @@ void test_CShellMenu()
     DestroyWindow(hWndParent);
 }
 
-/* The folowing struct holds info about the order callbacks are called */
-/* By passing different arrays of results to CMenuCallback, we can test different sequenses of callbacks */
+/* The following struct holds info about the order callbacks are called */
+/* By passing different arrays of results to CMenuCallback, we can test different sequences of callbacks */
    struct _test_info{
        int iTest;
        UINT uMsg;};
@@ -348,7 +348,7 @@ void test_CShellMenu_with_DeskBar(IShellFolder *shellFolder, HMENU hmenu)
     IMenuPopup* menuPopup;
     IBandSite* bandSite;
 
-    /* Create the tree objects and query the nescesary interfaces */
+    /* Create the tree objects and query the necessary interfaces */
     BOOL bCreated = CreateCShellMenu(&shellMenu, &dockingMenu, &menuWithSite);
     hResult = CoCreateInstance(CLSID_MenuDeskBar, NULL, CLSCTX_INPROC_SERVER, IID_IMenuPopup, reinterpret_cast<void **>(&menuPopup));
     test_S_OK(hResult, "Failed to instantiate CLSID_MenuDeskBar");

@@ -70,7 +70,7 @@ LRESULT WINAPI ScreenSaverProc (HWND hwnd, UINT iMsg, WPARAM wparam, LPARAM lpar
                 x + width, 
                 y + width);
 
-            //Track the number of painted circles on scren
+            //Track the number of painted circles on screen
             circlesCount++;
             if (circlesCount == MAX_CIRCLES)
             {
@@ -95,7 +95,7 @@ BOOL WINAPI ScreenSaverConfigureDialog(HWND hDlg, UINT uMsg, WPARAM wParam, LPAR
 }
 
 // This function is only called one time before opening the configuration dialog.
-// Use it to show a message that no configuration is necesssary and return FALSE to indicate that no configuration dialog shall be opened.
+// Use it to show a message that no configuration is necessary and return FALSE to indicate that no configuration dialog shall be opened.
 BOOL WINAPI RegisterDialogClasses(HANDLE hInst)
 {
     TCHAR szMessage[256];

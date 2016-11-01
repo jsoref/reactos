@@ -166,7 +166,7 @@ GetObjectA(
 {
     DWORD dwType = GDI_HANDLE_GET_TYPE(hGdiObj);
 
-    /* Chjeck if this is anything else but a font */
+    /* Check if this is anything else but a font */
     if (dwType == GDI_OBJECT_TYPE_FONT)
     {
         return GetFontObjectA(hGdiObj, cbSize, lpBuffer);

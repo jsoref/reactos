@@ -167,7 +167,7 @@ GetBasicInfo(LPOSVERSIONINFOEX osvi, TCHAR * HostName, TCHAR * OSName, TCHAR * V
 	GetComputerName(HostName, &bufCharCount);
 
 
-	/* OSName - Windows XP Home Editition */
+	/* OSName - Windows XP Home Edition */
 	if(osvi->dwMajorVersion == 4)
 	{
 		_tcscpy(OSName, _T("Microsoft Windows NT 4.0 "));
@@ -207,9 +207,9 @@ GetBasicInfo(LPOSVERSIONINFOEX osvi, TCHAR * HostName, TCHAR * OSName, TCHAR * V
 	if(osvi->wSuiteMask & VER_SUITE_PERSONAL)
 		_tcscat(OSName, _T("Home Edition"));
 	if(osvi->wSuiteMask & VER_SUITE_SMALLBUSINESS_RESTRICTED && osvi->wSuiteMask & VER_SUITE_SMALLBUSINESS)
-		_tcscat(OSName, _T("Small Bussiness Edition"));
+		_tcscat(OSName, _T("Small Business Edition"));
 
-	/* Version - 5.1 Build 2600 Serivce Pack 2 */
+	/* Version - 5.1 Build 2600 Service Pack 2 */
 	_stprintf(Version, _T("%d.%d Build %d %s"),(int)osvi->dwMajorVersion,(int)osvi->dwMinorVersion,(int)osvi->dwBuildNumber, osvi->szCSDVersion);
 
 	/* Role - Workgroup / Server / Domain Controller */
@@ -281,7 +281,7 @@ _tmain (VOID)
 				_tcscpy(Password,argv[++i]);
 			else
 			{
-				wprintf(L"Error in paramters, please see usage\n");
+				wprintf(L"Error in parameters, please see usage\n");
 				return 255;
 			}
 		}

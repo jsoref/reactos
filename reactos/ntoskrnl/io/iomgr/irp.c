@@ -87,7 +87,7 @@ IopAbortInterruptedIrp(IN PKEVENT EventObject,
             Wait.QuadPart = -100000;
             while (!KeReadStateEvent(EventObject))
             {
-                /* Delay indefintely */
+                /* Delay indefinitely */
                 KeDelayExecutionThread(KernelMode, FALSE, &Wait);
             }
         }
@@ -617,7 +617,7 @@ IoAllocateIrp(IN CCHAR StackSize,
             Irp = ExAllocatePoolWithTag(NonPagedPool, Size, TAG_IRP);
         }
 
-        /* Make sure it was sucessful */
+        /* Make sure it was successful */
         if (!Irp) return NULL;
     }
     else if (Flags & IRP_QUOTA_CHARGED)
@@ -1022,7 +1022,7 @@ IoBuildSynchronousFsdRequest(IN ULONG MajorFunction,
                                         IoStatusBlock );
     if (!Irp) return NULL;
 
-    /* Set the Event which makes it Syncronous */
+    /* Set the Event which makes it Synchronous */
     Irp->UserEvent = Event;
 
     /* Sync IRPs are queued to requestor thread's irp cancel/cleanup list */

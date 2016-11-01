@@ -7,7 +7,7 @@ int split_ip( char *text, u8b *dest, int place )
 {
   int dotcount;
 
-  /* Don't touch this, unless you like pointer aritmethic */
+  /* Don't touch this, unless you like pointer arithmetic */
 
   *dest = 0;
 
@@ -34,7 +34,7 @@ int split_ip( char *text, u8b *dest, int place )
 
 int get_ip( char *text, u32b *dest )
 {
-  /* Don't touch this, unless you like pointer aritmethic */
+  /* Don't touch this, unless you like pointer arithmetic */
 
   *dest = 0;
 

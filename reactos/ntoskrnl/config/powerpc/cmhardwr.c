@@ -137,7 +137,7 @@ CmpGetBiosVersion(IN PCHAR BiosStart,
     PCHAR p, pp;
     USHORT i;
 
-    /* Check if we were given intitial data for the search */
+    /* Check if we were given initial data for the search */
     if (BiosStart)
     {
         /* Save it for later use */
@@ -428,7 +428,7 @@ CmpInitializeMachineDependentConfiguration(IN PLOADER_PARAMETER_BLOCK LoaderBloc
                     //Ki386Cpuid(0x80000000, &ExtendedId, &Dummy, &Dummy, &Dummy);
                     if (ExtendedId >= 0x80000004)
                     {
-                        /* Do all the CPUIDs requred to get the full name */
+                        /* Do all the CPUIDs required to get the full name */
                         PartialString = CpuString;
                         for (ExtendedId = 2; ExtendedId <= 4; ExtendedId++)
                         {

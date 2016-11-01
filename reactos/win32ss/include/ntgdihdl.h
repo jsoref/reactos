@@ -62,7 +62,7 @@
 #define GDI_OBJECT_TYPE_ENUMFONT      0x00160000
 #define GDI_OBJECT_TYPE_DRIVEROBJ     0x001C0000
 
-/* Confrim on XP value is taken from NtGdiCreateDirectDrawObject */
+/* Confirm on XP value is taken from NtGdiCreateDirectDrawObject */
 #define GDI_OBJECT_TYPE_DIRECTDRAW  0x00200000
 
 /* Following object types are derived types from the above base types
@@ -111,7 +111,7 @@
 #define GDI_OBJECT_GET_TYPE_INDEX(t) \
     ((t & GDI_HANDLE_BASETYPE_MASK) >> GDI_HANDLE_BASETYPE_SHIFT)
 
-/* Gdi Object Handle Managment Pid lock masking sets. */
+/* Gdi Object Handle Management Pid lock masking sets. */
 /* Ref: used with DxEngSetDCOwner */
 #define GDI_OBJ_HMGR_PUBLIC     0          /* Public owner, Open access? */
 #define GDI_OBJ_HMGR_POWNED     0x80000002 /* Set to current owner. */
@@ -255,7 +255,7 @@ typedef struct __GDI_SHARED_HANDLE_TABLE /* Must match win32k/include/gdiobj.h *
     GDI_TABLE_ENTRY Entries[GDI_HANDLE_COUNT]; /* Handle table. */
     DEVCAPS         DevCaps;                   /* Shared device capabilities. */
     FLONG           flDeviceUniq;              /* Device settings uniqueness. */
-    PVOID           pvLangPack;                /* Lanuage Pack. */
+    PVOID           pvLangPack;                /* Language Pack. */
     CFONT           cfPublic[GDI_CFONT_MAX];   /* Public Fonts. */
     DWORD           dwCFCount;
 } GDI_SHARED_HANDLE_TABLE, *PGDI_SHARED_HANDLE_TABLE;

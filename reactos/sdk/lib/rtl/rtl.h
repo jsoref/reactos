@@ -2,7 +2,7 @@
  * COPYRIGHT:       See COPYING in the top level directory
  * PROJECT:         ReactOS System Libraries
  * FILE:            lib/rtl/rtl.h
- * PURPOSE:         Run-Time Libary Header
+ * PURPOSE:         Run-Time Library Header
  * PROGRAMMER:      Alex Ionescu
  */
 

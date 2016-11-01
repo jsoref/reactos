@@ -103,7 +103,7 @@ VOID
 // infinite series) and divides it by three, one obtains 1.19318167.
 //
 // It may be that the original NT HAL source code introduced a typo and turned
-// 119318167 into 1193167 by ommitting the "18". This is very plausible as the
+// 119318167 into 1193167 by omitting the "18". This is very plausible as the
 // number is quite long.
 //
 #define PIT_FREQUENCY 1193182
@@ -533,7 +533,7 @@ typedef struct _IDTUsageFlags
 typedef struct
 {
     KIRQL Irql;
-    UCHAR BusReleativeVector;
+    UCHAR BusRelativeVector;
 } IDTUsage;
 
 typedef struct _HalAddressUsage
@@ -838,7 +838,7 @@ HalpInitProcessor(
 
 #ifdef _M_AMD64
 #define KfLowerIrql KeLowerIrql
-#define KiEnterInterruptTrap(TrapFrame) /* We do all neccessary in asm code */
+#define KiEnterInterruptTrap(TrapFrame) /* We do all necessary in asm code */
 #define KiEoiHelper(TrapFrame) return /* Just return to the caller */
 #define HalBeginSystemInterrupt(Irql, Vector, OldIrql) ((*(OldIrql) = PASSIVE_LEVEL), TRUE)
 #ifndef CONFIG_SMP

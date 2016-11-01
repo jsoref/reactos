@@ -266,7 +266,7 @@ VOID FASTCALL EmulatorCopyMemory(PFAST486_STATE State, ULONG DestAddress, ULONG 
     //     RtlFreeHeap(RtlGetProcessHeap(), 0, LocalBuffer);
 
     // Note that we don't free HeapBuffer since it's an always-growing buffer.
-    // It is freed when NTVDM termiantes.
+    // It is freed when NTVDM terminates.
 }
 
 VOID EmulatorSetA20(BOOLEAN Enabled)

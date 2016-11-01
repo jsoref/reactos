@@ -477,7 +477,7 @@ HvLoadHive(IN PHHIVE Hive,
     }
 
     // This is a HACK!
-    /* Free our base block... it's usless in this implementation */
+    /* Free our base block... it's useless in this implementation */
     Hive->Free(BaseBlock, Hive->BaseBlockAlloc);
 
     /* Initialize the hive directly from memory */
@@ -491,7 +491,7 @@ HvLoadHive(IN PHHIVE Hive,
 /**
  * @name HvInitialize
  *
- * Allocate a new hive descriptor structure and intialize it.
+ * Allocate a new hive descriptor structure and initialize it.
  *
  * @param RegistryHive
  *        Output variable to store pointer to the hive descriptor.

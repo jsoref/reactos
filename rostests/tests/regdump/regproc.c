@@ -646,13 +646,13 @@ void doSetValue(LPTSTR stdInput)
 }
 
 /******************************************************************************
- * This funtion is the main entry point to the queryValue type of action.  It
+ * This function is the main entry point to the queryValue type of action.  It
  * receives the currently read line and dispatch the work depending on the
  * context.
  */
 void doQueryValue(LPTSTR stdInput) {
   /*
-   * We encoutered the end of the file, make sure we
+   * We encountered the end of the file, make sure we
    * close the opened key and exit
    */
   if (stdInput == NULL) {
@@ -679,7 +679,7 @@ void doQueryValue(LPTSTR stdInput) {
 }
 
 /******************************************************************************
- * This funtion is the main entry point to the deletetValue type of action.  It
+ * This function is the main entry point to the DeleteValue type of action.  It
  * receives the currently read line and dispatch the work depending on the
  * context.
  */
@@ -688,7 +688,7 @@ void doDeleteValue(LPTSTR line) {
 }
 
 /******************************************************************************
- * This funtion is the main entry point to the deleteKey type of action.  It
+ * This function is the main entry point to the deleteKey type of action.  It
  * receives the currently read line and dispatch the work depending on the
  * context.
  */
@@ -697,7 +697,7 @@ void doDeleteKey(LPTSTR line)   {
 }
 
 /******************************************************************************
- * This funtion is the main entry point to the createKey type of action.  It
+ * This function is the main entry point to the createKey type of action.  It
  * receives the currently read line and dispatch the work depending on the
  * context.
  */
@@ -744,7 +744,7 @@ void processSetValue(LPTSTR line)
       }
       if (line[line_idx] != _T('=')) {
           line[line_idx] = _T('\"');
-          _tprintf(_T("Warning! uncrecognized line:\n%s\n"), line);
+          _tprintf(_T("Warning! unrecognized line:\n%s\n"), line);
           return;
       }
   } else {
@@ -988,7 +988,7 @@ void processRegLines(FILE *in, CommandAPI command)
 }
 
 /******************************************************************************
- * This funtion is the main entry point to the registerDLL action.  It
+ * This function is the main entry point to the registerDLL action.  It
  * receives the currently read line, then loads and registers the requested DLLs
  */
 void doRegisterDLL(LPTSTR stdInput)
@@ -1018,7 +1018,7 @@ void doRegisterDLL(LPTSTR stdInput)
 }
 
 /******************************************************************************
- * This funtion is the main entry point to the unregisterDLL action.  It
+ * This function is the main entry point to the unregisterDLL action.  It
  * receives the currently read line, then loads and unregisters the requested DLLs
  */
 void doUnregisterDLL(LPTSTR stdInput)

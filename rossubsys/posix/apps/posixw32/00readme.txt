@@ -19,7 +19,7 @@ use EMACS to edit, or to connect up to your favorite mud with ANSI color
 and graphics characters.
 
 The VT-100 emulator is broken into two parts. The first is the front end,
-vt100.c and vt100.h. These files were written to be fairly device-independant,
+vt100.c and vt100.h. These files were written to be fairly device-independent,
 though admittedly if you're running under a 16-bit operating system instead
 of a 32-bit, you might need to change some of the 'int' values to 'long.'
 Otherwise, it should work 'as-is'.

@@ -72,7 +72,7 @@
 #define IDC_SYSSETTINGS      401
 #define IDC_ENVVAR           402
 #define IDC_STAREC           403
-#define IDC_PERFOR           404
+#define IDC_PERFORMANCE           404
 #define IDC_USERPROFILE      405
 #define IDC_ERRORREPORT      406
 

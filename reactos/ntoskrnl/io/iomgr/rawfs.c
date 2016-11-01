@@ -464,7 +464,7 @@ RawMountVolume(IN PIO_STACK_LOCATION IoStackLocation)
 
     /* Increment OpenCount by two to avoid dismount when RawClose() will be called on ObDereferenceObject() */
     Volume->Vcb.OpenCount += 2;
-    /* Notify for sucessful mount */
+    /* Notify for successful mount */
     FsRtlNotifyVolumeEvent(FileObject, FSRTL_VOLUME_MOUNT);
     /* Decrease refcount to 0 to make FileObject being released */
     ObDereferenceObject(FileObject);
@@ -982,7 +982,7 @@ RawQueryVolumeInformation(IN PVCB Vcb,
             Status = RawQueryFsVolumeInfo(Vcb, Buffer, &Length);
             break;
 
-        /* File system size invormation */
+        /* File system size information */
         case FileFsSizeInformation:
 
             Status = RawQueryFsSizeInfo(Vcb, Buffer, &Length);

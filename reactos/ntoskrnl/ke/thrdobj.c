@@ -413,7 +413,7 @@ KeResumeThread(IN PKTHREAD Thread)
         /* Decrease the suspend count */
         Thread->SuspendCount--;
 
-        /* Check if the thrad is still suspended or not */
+        /* Check if the thread is still suspended or not */
         if ((!Thread->SuspendCount) && (!Thread->FreezeCount))
         {
             /* Acquire the dispatcher lock */

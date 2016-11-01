@@ -72,7 +72,7 @@ int __fdtable_entry_nextavail(__fdtable_t * fdtable, int fileno)
     significative) bit of cell 0 to file number 7, the leftmost bit of cell 1 to
     file number 8, and so on
   */
- /* NOTE: I'm sure the algorytm can be greatly optimized, but I prefer to privilege
+ /* NOTE: I'm sure the algorithm can be greatly optimized, but I prefer to privilege
     readability - it allows for more maintenable code. Please don't pretend to
     outsmart the compiler: such optimizations as performing divisions as bit shifts
     are useless */
@@ -80,7 +80,7 @@ int __fdtable_entry_nextavail(__fdtable_t * fdtable, int fileno)
  /* index of the bitmap cell containing nUnusedIndex */
  nCurMapIndex = nUnusedIndex / 32;
 
- /* get a copy of the bitmap cell containg nUnusedIndex, and shift it to the right
+ /* get a copy of the bitmap cell containing nUnusedIndex, and shift it to the right
     so that the rightmost (least significative) bit is the one referencing nUnusedIndex */
  nCurMapCell = fdtable->DescriptorsBitmap[nCurMapIndex] >> (nUnusedIndex % 32);
 

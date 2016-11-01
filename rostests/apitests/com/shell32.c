@@ -240,7 +240,7 @@ static const CLASS_AND_INTERFACES ExpectedInterfaces[] =
             {    0xc,   &IID_IInitializeObject },
         }
     },
-#if 0 // This is registered to shell32, but can't be instanciated
+#if 0 // This is registered to shell32, but can't be instantiated
     {
         ID_NAME(CLSID_MenuToolbarBase),
         {

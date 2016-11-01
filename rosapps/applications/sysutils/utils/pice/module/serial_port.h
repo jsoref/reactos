@@ -51,7 +51,7 @@ Copyright notice:
 	o LCR Initialize the serial port.
 	o IER Controls interrupt generation.
 	o IIR Identifies interrupts.
-	o MCR Send contorl signals to the modem.
+	o MCR Send control signals to the modem.
 	o LSR Monitor the status of the serial port.
 	o MSR Receive status of the modem.
 	o DLL Low byte of baud rate divisor.
@@ -120,7 +120,7 @@ Copyright notice:
 	3		auxillary output #2.(Note: This bit must be
 			set to allow the communications card to send
 			interrupts to the system)
-	4		UART ouput looped back as input.
+	4		UART output looped back as input.
 	5-7		not used.
  *------------------------------------------------------------------*/
 #define DTR             0x01

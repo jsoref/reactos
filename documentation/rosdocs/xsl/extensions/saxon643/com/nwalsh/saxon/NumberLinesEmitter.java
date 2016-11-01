@@ -147,12 +147,12 @@ public class NumberLinesEmitter extends CopyEmitter {
 	  AttributeCollection attr = (AttributeCollection)elem.getAttributes();
 	  AttributeCollection newAttr = new AttributeCollection(namePool);
 
-	  for (int acount = 0; acount < attr.getLength(); acount++) {
-	    String localName = attr.getLocalName(acount);
-	    int nameCode = attr.getNameCode(acount);
-	    String type = attr.getType(acount);
-	    String value = attr.getValue(acount);
-	    String uri = attr.getURI(acount);
+	  for (int account = 0; account < attr.getLength(); account++) {
+	    String localName = attr.getLocalName(account);
+	    int nameCode = attr.getNameCode(account);
+	    String type = attr.getType(account);
+	    String value = attr.getValue(account);
+	    String uri = attr.getURI(account);
 	    String prefix = "";
 
 	    if (localName.indexOf(':') > 0) {

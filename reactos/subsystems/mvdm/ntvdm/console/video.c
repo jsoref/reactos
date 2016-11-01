@@ -250,7 +250,7 @@ static VOID ResizeTextConsole(PCOORD Resolution, PSMALL_RECT WindowSize OPTIONAL
         /*
          * SetConsoleScreenBufferSize automatically takes into account the current
          * cursor position when it computes starting which row it should copy text
-         * when resizing the sceenbuffer, and scrolls the console window such that
+         * when resizing the screenbuffer, and scrolls the console window such that
          * the cursor is placed in it again. We therefore do not need to care about
          * the cursor position and do the maths ourselves.
          */
@@ -473,7 +473,7 @@ VOID ScreenEventHandler(PWINDOW_BUFFER_SIZE_RECORD ScreenEvent)
 {
     /*
      * This function monitors and allows console resizings only if they are triggered by us.
-     * User-driven resizings via the console properties, or programmatical console resizings
+     * User-driven resizings via the console properties, or programmatic console resizings
      * made by explicit calls to SetConsoleScreenBufferSize by external applications, are forbidden.
      * In that case only a console window resize is done in case the size is reduced.
      * This protection is enabled in CONSRV side when NTVDM registers as a VDM to CONSRV,
@@ -724,7 +724,7 @@ VgaConsoleCreateTextScreen(// OUT PCHAR_CELL* TextFramebuffer,
                            IN HANDLE PaletteHandle)
 {
     /* Switch to the text buffer */
-    // FIXME: Wouldn't it be preferrable to switch to it AFTER we reset everything??
+    // FIXME: Wouldn't it be preferable to switch to it AFTER we reset everything??
     SetActiveScreenBuffer(TextConsoleBuffer);
 
     /* Adjust the text framebuffer if we changed the resolution */

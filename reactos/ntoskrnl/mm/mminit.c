@@ -197,7 +197,7 @@ MmMpwThreadMain(PVOID Parameter)
 #ifndef NEWCC
         PagesWritten = 0;
 
-        // XXX arty -- we flush when evicting pages or destorying cache
+        // XXX arty -- we flush when evicting pages or destroying cache
         // sections.
         CcRosFlushDirtyPages(128, &PagesWritten, FALSE);
 #endif
@@ -283,7 +283,7 @@ MmInitSystem(IN ULONG Phase,
 
     MmKernelAddressSpace = &PsIdleProcess->Vm;
 
-    /* Intialize system memory areas */
+    /* Initialize system memory areas */
     MiInitSystemMemoryAreas();
 
     /* Dump the address space */

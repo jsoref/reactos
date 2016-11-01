@@ -123,7 +123,7 @@ APIENTRY
 NtGdiDvpGetVideoPortBandwidth(HANDLE hVideoPort,
                               PDD_GETVPORTBANDWIDTHDATA puGetVPortBandwidthData)
 {
-    PGD_DVPGETVIDEOPORTBANDWITH pfnDvpGetVideoPortBandwidth = (PGD_DVPGETVIDEOPORTBANDWITH)gpDxFuncs[DXG_INDEX_DxDvpGetVideoPortBandwidth].pfn;
+    PGD_DVPGETVIDEOPORTBANDWIDTH pfnDvpGetVideoPortBandwidth = (PGD_DVPGETVIDEOPORTBANDWIDTH)gpDxFuncs[DXG_INDEX_DxDvpGetVideoPortBandwidth].pfn;
 
     if (pfnDvpGetVideoPortBandwidth == NULL)
     {

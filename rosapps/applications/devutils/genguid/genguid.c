@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 		printf("usage: %s n\n",argv[0]);
 		printf("n = format of output\n");
 		printf("values are:\n");
-		printf("1 = IMPLEMENT_OLECREATE defintion\n");
+		printf("1 = IMPLEMENT_OLECREATE definition\n");
 		printf("2 = DEFINE_GUID definition\n");
 		printf("3 = static const GUID definition\n");
 		printf("4 = registry format\n");

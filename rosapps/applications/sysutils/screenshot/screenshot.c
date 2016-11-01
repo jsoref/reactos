@@ -72,7 +72,7 @@ DoWriteFile(PSCREENSHOT pScrSht,
     if ((!bSuccess) || (dwBytesWritten < sizeof(BITMAPINFOHEADER)))
         goto fail;
 
-    /* calculate the size of the pallete * /
+    /* calculate the size of the palette * /
     if (pScrSht->lpbi->bmiHeader.biCompression == BI_BITFIELDS)
         PalEntries = 3;
     else
@@ -85,7 +85,7 @@ DoWriteFile(PSCREENSHOT pScrSht,
     if (pScrSht->lpbi->bmiHeader.biClrUsed)
         PalEntries = pScrSht->lpbi->bmiHeader.biClrUsed;
 
-    / * write pallete to file * /
+    / * write palette to file * /
     if (PalEntries != 0)
     {
         bSuccess = WriteFile(hFile,
@@ -97,7 +97,7 @@ DoWriteFile(PSCREENSHOT pScrSht,
             goto fail;
     }
 */
-    /* save the current file position at the bginning of the bitmap bits */
+    /* save the current file position at the beginning of the bitmap bits */
     bmfh.bfOffBits = SetFilePointer(hFile, 0, 0, FILE_CURRENT);
 
     /* write the bitmap bits to file */

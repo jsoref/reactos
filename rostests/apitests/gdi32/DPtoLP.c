@@ -39,7 +39,7 @@ void Test_DPtoLP_Params()
 
     SetLastError(ERROR_SUCCESS);
     ok_int(DPtoLP(NULL, apt, 0), 1);
-    ok(GetLastError() == ERROR_SUCCESS, "Exected ERROR_SUCCESS, got %ld\n", GetLastError());
+    ok(GetLastError() == ERROR_SUCCESS, "Executed ERROR_SUCCESS, got %ld\n", GetLastError());
 
     SetLastError(ERROR_SUCCESS);
     ok_int(DPtoLP(NULL, apt, -2), 1);

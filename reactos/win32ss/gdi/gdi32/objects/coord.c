@@ -68,7 +68,7 @@ CombineTransform(
 {
     XFORM xformTmp;
 
-    /* Check paramters */
+    /* Check parameters */
     if (!pxfResult || !pxf1 || !pxf2) return FALSE;
 
     /* Do matrix multiplication, start with scaling elements */

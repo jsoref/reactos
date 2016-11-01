@@ -171,7 +171,7 @@ CmpGetNameControlBlock(IN PUNICODE_STRING NodeName)
         p++;
     }
 
-    /* Set assumed lengh and loop to check */
+    /* Set assumed length and loop to check */
     Length = NodeName->Length / sizeof(WCHAR);
     for (i = 0; i < (NodeName->Length / sizeof(WCHAR)); i++)
     {

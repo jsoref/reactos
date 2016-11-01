@@ -1097,7 +1097,7 @@ UGFydGl0aW9uCkJvb3RQYXRoPW11bHRpKDApZGlzaygwKXJkaXNrKDEpcGFydGl0aW9uKDEpCg</byte
 																</object>
 																<int key="NSTVFlags">6</int>
 																<string key="NSMaxSize">{454, 1e+07}</string>
-																<string key="NSMinize">{83, 102}</string>
+																<string key="NSMinimize">{83, 102}</string>
 																<nil key="NSDelegate"/>
 															</object>
 														</object>

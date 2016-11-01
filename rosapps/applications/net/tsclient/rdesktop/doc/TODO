@@ -78,7 +78,7 @@
 
   * Support for sending focus information from client to server.
 
-  * Implement something similiar to explhook.dll - support for running
+  * Implement something similar to explhook.dll - support for running
     explorer.exe in non-shell mode. 
 
   * Better compatibility with Task Manager. 

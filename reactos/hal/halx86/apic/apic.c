@@ -326,8 +326,8 @@ VOID
 NTAPI
 ApicInitializeLocalApic(ULONG Cpu)
 {
-    APIC_BASE_ADRESS_REGISTER BaseRegister;
-    APIC_SPURIOUS_INERRUPT_REGISTER SpIntRegister;
+    APIC_BASE_ADDRESS_REGISTER BaseRegister;
+    APIC_SPURIOUS_INTERRUPT_REGISTER SpIntRegister;
     LVT_REGISTER LvtEntry;
 
     /* Enable the APIC if it wasn't yet */
@@ -485,7 +485,7 @@ ApicInitializeIOApic(VOID)
         IOApicWrite(IOAPIC_REDTBL + 2 * Index + 1, ReDirReg.Long1);
     }
 
-    /* Init the vactor to index table */
+    /* Init the vector to index table */
     for (Vector = 0; Vector <= 255; Vector++)
     {
         HalpVectorToIndex[Vector] = 0xFF;

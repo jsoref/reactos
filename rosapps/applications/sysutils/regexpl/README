@@ -1,7 +1,7 @@
 
 Registry Explorer is console mode tool for reading/writing ReactOS
 registry. Currently, access is provided only by means of interactive
-commands, but scrpting support is planned too. Some of features are:
+commands, but scripting support is planned too. Some of features are:
  - Registry object name completion.
  - DACL/SACL/Owner read access for keys.
  - Remote machine registry access.

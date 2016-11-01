@@ -91,7 +91,7 @@ StreamClassAddDevice(
     KeInitializeDpc(&DeviceExtension->InterruptDpc, StreamClassInterruptDpc, (PVOID)DeviceExtension);
 
     /* Set device transfer method */
-    DeviceObject->Flags |= DO_DIRECT_IO | DO_POWER_PAGABLE;
+    DeviceObject->Flags |= DO_DIRECT_IO | DO_POWER_PAGEABLE;
     /* Clear init flag */
     DeviceObject->Flags &= ~ DO_DEVICE_INITIALIZING;
 

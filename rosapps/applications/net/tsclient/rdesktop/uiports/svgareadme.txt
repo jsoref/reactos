@@ -1,5 +1,5 @@
 This is the svga ui port
-send any fixes or improvments to me Jay Sorg(j@american-data.com)
+send any fixes or improvements to me Jay Sorg(j@american-data.com)
 svgalib should be installed
 tested with versions 1.4.3, 1.9.x
 
@@ -20,7 +20,7 @@ If running on really slow hardware(486), use one of these cards,
 it improves performance alot.
 
 run ./svgardesktop with no parameters to see a list of
-commnad line options
+command line options
 
 You will need to modify the libvga.config file most likely.
 Its in /etc/vga.

@@ -33,7 +33,7 @@ APIRET STDCALL DosSleep(ULONG msec)
 
 /* $Id$ */
 /* Terminates the current thread or the current Process.
-	Decission is made by action 
+	Decision is made by action 
 	FIXME:	move this code to OS2.EXE */
 VOID APIENTRY DosExit(ULONG action, ULONG result)
 {

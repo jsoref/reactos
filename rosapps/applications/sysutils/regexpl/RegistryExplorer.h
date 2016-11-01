@@ -13,7 +13,7 @@
 #define HELLO_MSG           _T("ReactOS ") PRODUCT_NAME _T(" version ") CURRENT_VERSION _T("\n")\
                             _T("License is GNU GPL. Type `help gpl` for details.\n\n")
 
-#define NOWARANTY_MSG       _T("Registry Explorer comes with ABSOLUTELY NO WARRANTY\n")\
+#define NOWARRANTY_MSG       _T("Registry Explorer comes with ABSOLUTELY NO WARRANTY\n")\
                             _T("This is free software, and you are welcome to redistribute it\n")\
                             _T("under certain conditions; type `help gpl' for details.\n")
 
@@ -26,7 +26,7 @@
 
 #define VER_MSG             COPYRIGHT_MSG\
                             _T("\n")\
-                            NOWARANTY_MSG\
+                            NOWARRANTY_MSG\
                             _T("\n")\
                             CREDITS_MSG\
                             _T("\n")\

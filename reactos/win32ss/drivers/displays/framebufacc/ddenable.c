@@ -173,7 +173,7 @@ DrvGetDirectDrawInfo(
 
 	/*
 	   check see if pvmList and pdwFourCC are frist call
-	   or frist. Secon call  we fill in pHalInfo info
+	   or frist. Second call  we fill in pHalInfo info
     */
 
 	if(!(pvmList && pdwFourCC))
@@ -200,7 +200,7 @@ DrvGetDirectDrawInfo(
 	    pHalInfo->ddCaps.dwSVBCaps = DDCAPS_BLT;
 	    pHalInfo->ddCaps.ddsCaps.dwCaps |= DDSCAPS_LOCALVIDMEM | DDSCAPS_NONLOCALVIDMEM;
 
-		/* Calc how much memmory is left on the video cards memmory */
+		/* Calc how much memory is left on the video cards memory */
 		pHalInfo->ddCaps.dwVidMemTotal = (ppdev->MemHeight - ppdev->ScreenHeight) * ppdev->ScreenDelta;
 
         /* fill in some basic info that we need */

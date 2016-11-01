@@ -2,7 +2,7 @@
  * PROJECT:     ReactOS VT100 emulator
  * LICENSE:     GPL - See COPYING in the top level directory
  * FILE:        drivers/base/green/misc.c
- * PURPOSE:     Misceallenous operations
+ * PURPOSE:     Miscellaneous operations
  * PROGRAMMERS: Copyright 2005-2006 Hervé Poussineau (hpoussin@reactos.org)
  */
 

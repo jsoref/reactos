@@ -236,7 +236,7 @@ START_TEST(NtGdiCreateDIBSection)
     TEST(dibsection.dshSection == 0);
     TEST(dibsection.dsOffset == 0);
 
-printf("dib with bitfileds: %p\n", hbmp);
+printf("dib with bitfields: %p\n", hbmp);
 //system("PAUSE");
 
     if (hbmp) DeleteObject(hbmp);

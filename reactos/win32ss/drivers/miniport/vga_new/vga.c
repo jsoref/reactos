@@ -226,7 +226,7 @@ Return Value:
     //
 
     //
-    // We will try the PCI bus first so that our ISA detection does'nt claim
+    // We will try the PCI bus first so that our ISA detection doesn't claim
     // PCI cards (since it is impossible to differentiate between the two
     // by looking at the registers).
     //
@@ -584,7 +584,7 @@ Return Value:
     ULONG Result;
 
     //
-    // Switch on the IoContolCode in the RequestPacket. It indicates which
+    // Switch on the IoControlCode in the RequestPacket. It indicates which
     // function must be performed by the driver.
     //
 // eVb: 1.9 [IOCTL] - Remove IOCTLs not needed yet
@@ -752,7 +752,7 @@ Return Value:
         // Always return succcess since settings the text mode will fail on
         // non-x86.
         //
-        // Also, failiure to set the text mode is not fatal in any way, since
+        // Also, failure to set the text mode is not fatal in any way, since
         // this operation must be followed by another set mode operation.
         //
 

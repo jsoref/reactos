@@ -40,7 +40,7 @@ Dns_StringCopy(OUT PVOID Destination,
         }
     }
 
-    /* Check if we have a limit on the desination size */
+    /* Check if we have a limit on the destination size */
     if (DestinationSize)
     {
         /* Make sure that we can respect it */
@@ -74,7 +74,7 @@ Dns_StringCopy(OUT PVOID Destination,
         /* Check if the output is ANSI */
         if (OutputType == AnsiString)
         {
-            /* Convert and return the final desination size */
+            /* Convert and return the final destination size */
             OutputSize = WideCharToMultiByte(CP_ACP,
                                              0,
                                              String,

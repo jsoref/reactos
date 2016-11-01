@@ -73,7 +73,7 @@ interface IAssemblyCache : IUnknown
         DWORD dwFlags;
         GUID guidScheme;
         LPCWSTR szIdentifier;
-        LPCWSTR szNonCannonicalData;
+        LPCWSTR szNonCanonicalData;
     } FUSION_INSTALL_REFERENCE, *LPFUSION_INSTALL_REFERENCE;
 
     typedef const FUSION_INSTALL_REFERENCE  *LPCFUSION_INSTALL_REFERENCE;

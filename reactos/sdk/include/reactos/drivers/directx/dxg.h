@@ -90,7 +90,7 @@
 /* you can not do syscallback to thuse but you can import them from win32k.sys     */
 /* for them are in the export list                                                 */
 /***********************************************************************************/
-/* not addedd yet */
+/* not added yet */
 #define DXG_INDEX_DxDdHeapVidMemAllocAligned      0x4A
 #define DXG_INDEX_DxDdHeapVidMemFree              0x4B
 #define DXG_INDEX_DxDdAllocPrivateUserMem         0x54
@@ -101,7 +101,7 @@
 
 
 /***********************************************************************************/
-/* Internal use in diffent part in Windows and ReactOS                             */
+/* Internal use in different part in Windows and ReactOS                             */
 /***********************************************************************************/
 /* not inuse yet */
 #define DXG_INDEX_DxDdEnableDirectDraw            0x4C

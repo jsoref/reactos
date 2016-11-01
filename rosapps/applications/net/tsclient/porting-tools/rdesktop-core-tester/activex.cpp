@@ -1401,7 +1401,7 @@ private:
 	long m_HotKeyAltTab;
 	long m_HotKeyCtrlAltDel;
 	long m_HotKeyCtrlEsc;
-	long m_orderDrawThresold;
+	long m_orderDrawThreshold;
 	long m_BitmapCacheSize;
 	long m_BitmapVirtualCacheSize;
 	long m_NumBitmapCaches;
@@ -2293,7 +2293,7 @@ private:
 		m_HotKeyAltTab(VK_PRIOR),
 		m_HotKeyCtrlAltDel(VK_END),
 		m_HotKeyCtrlEsc(VK_HOME),
-		m_orderDrawThresold(0),
+		m_orderDrawThreshold(0),
 		m_BitmapCacheSize(1500),
 		m_BitmapVirtualCacheSize(10),
 		m_brushSupportLevel(),
@@ -2555,14 +2555,14 @@ private:
 			return Outer()->GetProperty(Outer()->m_Compress, pcompress);
 		}
 
-		virtual STDMETHODIMP IMsTscAdvancedSettings::put_BitmapPeristence(long pbitmapPeristence)
+		virtual STDMETHODIMP IMsTscAdvancedSettings::put_BitmapPersistence(long pbitmapPersistence)
 		{
-			return Outer()->SetProperty(Outer()->m_BitmapPersistence, pbitmapPeristence);
+			return Outer()->SetProperty(Outer()->m_BitmapPersistence, pbitmapPersistence);
 		}
 
-		virtual STDMETHODIMP IMsTscAdvancedSettings::get_BitmapPeristence(long * pbitmapPeristence) const
+		virtual STDMETHODIMP IMsTscAdvancedSettings::get_BitmapPersistence(long * pbitmapPersistence) const
 		{
-			return Outer()->GetProperty(Outer()->m_BitmapPersistence, pbitmapPeristence);
+			return Outer()->GetProperty(Outer()->m_BitmapPersistence, pbitmapPersistence);
 		}
 
 		virtual STDMETHODIMP IMsTscAdvancedSettings::put_allowBackgroundInput(long pallowBackgroundInput)
@@ -3060,12 +3060,12 @@ private:
 
 		virtual STDMETHODIMP IMsRdpClientAdvancedSettings::put_BitmapPersistence(long pbitmapPersistence)
 		{
-			return put_BitmapPeristence(pbitmapPersistence);
+			return put_BitmapPersistence(pbitmapPersistence);
 		}
 
 		virtual STDMETHODIMP IMsRdpClientAdvancedSettings::get_BitmapPersistence(long * pbitmapPersistence) const
 		{
-			return get_BitmapPeristence(pbitmapPersistence);
+			return get_BitmapPersistence(pbitmapPersistence);
 		}
 
 		virtual STDMETHODIMP IMsRdpClientAdvancedSettings::put_MinutesToIdleTimeout(long pminutesToIdleTimeout)

@@ -26,7 +26,7 @@
 #define LEFT	16		/* left justified */
 #define SPECIAL	32		/* 0x */
 #define LARGE	64		/* use 'ABCDEF' instead of 'abcdef' */
-#define REMOVEHEX	256		/* use 256 as remve 0x frim BASE 16  */
+#define REMOVEHEX	256		/* use 256 as remove 0x from BASE 16  */
 typedef struct {
     unsigned int mantissal:32;
     unsigned int mantissah:20;
@@ -401,7 +401,7 @@ int __cdecl _vsnprintf(char *buf, size_t cnt, const char *fmt, va_list args)
 				   number of chars for from string */
 	int qualifier;		/* 'h', 'l', 'L', 'I' or 'w' for integer fields */
 
-    /* clear the string buffer with zero so we do not need NULL terment it at end */
+    /* clear the string buffer with zero so we do not need NULL terminate it at end */
 
 	str = buf;
 	end = buf + cnt - 1;

@@ -59,7 +59,7 @@ typedef struct _HIDP_KEYBOARD_MODIFIER_STATE {
       ULONG  RightControl : 1;
       ULONG  RightShift : 1;
       ULONG  RightAlt : 1;
-      ULONG  RigthGUI : 1;
+      ULONG  RightGUI : 1;
       ULONG  CapsLock : 1;
       ULONG  ScollLock : 1;
       ULONG  NumLock : 1;

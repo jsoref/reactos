@@ -485,7 +485,7 @@ MiAllocatePoolPages(IN POOL_TYPE PoolType,
             DPRINT("Paged pool expansion: %lu %x\n", i, SizeInPages);
 
             //
-            // Check if there is enougn paged pool expansion space left
+            // Check if there is enough paged pool expansion space left
             //
             if (MmPagedPoolInfo.NextPdeForPagedPoolExpansion >
                 (PMMPDE)MiAddressToPte(MmPagedPoolInfo.LastPteForPagedPool))
@@ -580,7 +580,7 @@ MiAllocatePoolPages(IN POOL_TYPE PoolType,
             KeReleaseQueuedSpinLock(LockQueuePfnLock, OldIrql);
 
             //
-            // These pages are now available, clear their availablity bits
+            // These pages are now available, clear their availability bits
             //
             EndAllocation = (ULONG)(MmPagedPoolInfo.NextPdeForPagedPoolExpansion -
                              (PMMPDE)MiAddressToPte(MmPagedPoolInfo.FirstPteForPagedPool)) *

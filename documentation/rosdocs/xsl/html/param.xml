@@ -513,7 +513,7 @@ TOC entries will be displayed.
 
 <refsect1><title>Description</title>
 
-<para>String to use to seperate labels and title in a table of contents.</para>
+<para>String to use to separate labels and title in a table of contents.</para>
 
 </refsect1>
 </refentry>
@@ -1984,7 +1984,7 @@ instruction).</para>
 <para>In order to convert CALS column widths into HTML column widths, it
 is sometimes necessary to have an absolute table width to use for conversion
 of mixed absolute and relative widths. This value must be an absolute
-length (not a percentag).</para>
+length (not a percentage).</para>
 
 </refsect1>
 </refentry>
@@ -2422,7 +2422,7 @@ all of the entries referenced appeared there literally.</para>
 </refmeta>
 <refnamediv>
 <refname>glossterm.auto.link</refname>
-<refpurpose>Generate links from glossterm to glossentry automaticaly?</refpurpose>
+<refpurpose>Generate links from glossterm to glossentry automatically?</refpurpose>
 </refnamediv>
 
 <refsynopsisdiv>
@@ -2433,7 +2433,7 @@ all of the entries referenced appeared there literally.</para>
 <refsect1><title>Description</title>
 
 <para>If true, a link will be automatically created from glossterm 
-to glossentry for that glossary term. This is usefull when your
+to glossentry for that glossary term. This is useful when your
 glossterm names are consistent and you don't want to add links
 manually.</para>
 <para>If there is <sgmltag class="attribute">linkend</sgmltag> on
@@ -2634,7 +2634,7 @@ the &lt;parameter&gt;glossary.collection&lt;/parameter&gt; parameter.&lt;/para&g
 
 <para>What about glossary divisions? If your glossary database has glossary
 divisions <emphasis>and</emphasis> your automatic glossary contains at least
-one <sgmltag>glossdiv</sgmltag>, the automic glossary will have divisions.
+one <sgmltag>glossdiv</sgmltag>, the automatic glossary will have divisions.
 If the <sgmltag>glossdiv</sgmltag> is missing from either location, no divisions
 will be rendered.</para>
 
@@ -2651,7 +2651,7 @@ customization layer or directly through your processor's interface) to
 point to your global glossary.</para>
 
 <para>The stylesheets will format the glossary in your document as if
-all of the entries implicilty referenced appeared there literally.</para>
+all of the entries implicitly referenced appeared there literally.</para>
 </refsect2>
 </refsect1>
 </refentry>
@@ -3013,7 +3013,7 @@ store TeX inside <sgmltag>alt</sgmltag> element:</para>
 
 <para>If you want use this feature, you should process your FO with
 PassiveTeX, which only supports TeX math notation. When calling
-stylsheet, don't forget to specify also
+stylesheet, don't forget to specify also
 passivetex.extensions=1.</para>
 
 <para>If you want equations in HTML, just process generated file
@@ -3979,7 +3979,7 @@ ones (<filename moreinfo="none">docbook.xsl</filename>,
 
 <refsect1><title>Description</title>
 
-<para>This parameter is used in conjuction with <link linkend="profile.value"><parameter moreinfo="none">profile.value</parameter></link>.</para>
+<para>This parameter is used in conjunction with <link linkend="profile.value"><parameter moreinfo="none">profile.value</parameter></link>.</para>
 
 <para>This parameter has effect only when you are using profiling
 stylesheets (<filename moreinfo="none">profile-docbook.xsl</filename>,
@@ -4068,7 +4068,7 @@ ones (<filename moreinfo="none">docbook.xsl</filename>,
 <refsect1><title>Description</title>
 
 <para>HTML Help Compiler is not UTF-8 aware, so you should always use
-apropriate single-byte encoding here.</para>
+appropriate single-byte encoding here.</para>
 
 </refsect1>
 </refentry>
@@ -4248,7 +4248,7 @@ as external binary entities or if you are using absolute path in image names.</p
 </refmeta>
 <refnamediv>
 <refname>htmlhelp.force.map.and.alias</refname>
-<refpurpose>Should be [MAP] and [ALIAS] section added to project file unconditionaly?</refpurpose>
+<refpurpose>Should be [MAP] and [ALIAS] section added to project file unconditionally?</refpurpose>
 </refnamediv>
 
 <refsynopsisdiv>

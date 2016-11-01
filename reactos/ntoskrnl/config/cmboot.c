@@ -601,7 +601,7 @@ CmpSortDriverList(IN PHHIVE Hive,
     if (!DependList.Buffer) return FALSE;
     DependList.Length = DependList.MaximumLength = (USHORT)Length - sizeof(UNICODE_NULL);
     
-    /* And start the recurive sort algorithm */
+    /* And start the recursive sort algorithm */
     return CmpDoSort(DriverListHead, &DependList);
 }
 

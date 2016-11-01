@@ -567,7 +567,7 @@ CmBattCreateFdo(IN PDRIVER_OBJECT DriverObject,
     }
 
     /* Set FDO flags */
-    FdoDeviceObject->Flags |= (DO_POWER_PAGABLE | DO_BUFFERED_IO);
+    FdoDeviceObject->Flags |= (DO_POWER_PAGEABLE | DO_BUFFERED_IO);
     FdoDeviceObject->Flags &= ~DO_DEVICE_INITIALIZING;
 
     /* Initialize the extension */
@@ -669,7 +669,7 @@ CmBattAddBattery(IN PDRIVER_OBJECT DriverObject,
         return Status;
     }
 
-    /* Build the FDO extensio, check if we support trip points */
+    /* Build the FDO extension, check if we support trip points */
     FdoExtension = FdoDeviceObject->DeviceExtension;
     FdoExtension->FdoType = CmBattBattery;
     FdoExtension->Started = 0;
@@ -750,7 +750,7 @@ CmBattAddAcAdapter(IN PDRIVER_OBJECT DriverObject,
     {
         /* Don't do anything */
         if (CmBattDebug & 0xC)
-            DbgPrint("CmBatt: Second AC adapter found.  Current version of driver only supports 1 aadapter.\n");
+            DbgPrint("CmBatt: Second AC adapter found.  Current version of driver only supports 1 adapter.\n");
     }
     else
     {

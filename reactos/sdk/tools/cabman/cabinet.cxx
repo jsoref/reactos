@@ -697,7 +697,7 @@ bool CCabinet::SetCabinetReservedFile(char* FileName)
 
 char* CCabinet::GetCabinetReservedFile()
 /*
- * FUNCTION: Returns cabionet reserved file
+ * FUNCTION: Returns cabinet reserved file
  * RETURNS:
  *    Pointer to string with name of cabinet reserved file
  */

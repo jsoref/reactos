@@ -22,12 +22,12 @@ I found these issues while running your explorer from Windows XP SP2's explorer.
 - program manager "progman" DDE server
 - Windows-key combos
 - Application Desktop Toolbars
-- hide CVS subdirectories, may be even implement a CVS managment plugin
+- hide CVS subdirectories, may be even implement a CVS management plugin
 - printer and RAS connection icons in desktop notification area
 - use multi threading for launching of programs and filling start menu subdirectories
 - close start start menu when resizing explorer bar
 - adjust already open windows of all running applications when resizing explorer bar
-- implement blink effect in task bar for SetForegoundWindow() requests
+- implement blink effect in task bar for SetForegroundWindow() requests
 - Execute selected programs with additional command line options ("Run" dialog with pre-filled edit field)
 - switch background images with desktop switcher
 - Desktop Manager: Desktop Names; Speicherung der Verteilung von Applikations-Fenstern auf die verschiedenen Desktops -> config file
@@ -40,7 +40,7 @@ I found these issues while running your explorer from Windows XP SP2's explorer.
 - Search Programs -> performance monitor.msc -> Abort
 
 
-<Nonvo> Martin, I would have a whish concerning explorer: I often want to start a program and give it some parameters. So nice featue: "Start with param..."
+<Nonvo> Martin, I would have a whish concerning explorer: I often want to start a program and give it some parameters. So nice feature: "Start with param..."
 <tinus_> Nonvo: shell extension
 <m-fuchs> tinus: we should think about installing some default shell extensions
 <tinus_> m-fuchs: perhaps, but it'd be nice if they actually were shell extensions

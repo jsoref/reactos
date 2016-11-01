@@ -137,14 +137,14 @@ typedef struct _FAT_IO_CONTEXT
     PIRP AssociatedIrp[0];
 } FAT_IO_CONTEXT;
 
-typedef ULONG (*PFAT_SCANFAT_FOR_CONTINOUS_RUN_ROUTINE) (PFAT_PAGE_CONTEXT, PULONG, BOOLEAN);
-typedef ULONG (*PFAT_SETFAT_CONTINOUS_RUN_ROUTINE) (PFAT_PAGE_CONTEXT, ULONG, ULONG, BOOLEAN);
+typedef ULONG (*PFAT_SCANFAT_FOR_CONTIGUOUS_RUN_ROUTINE) (PFAT_PAGE_CONTEXT, PULONG, BOOLEAN);
+typedef ULONG (*PFAT_SETFAT_CONTIGUOUS_RUN_ROUTINE) (PFAT_PAGE_CONTEXT, ULONG, ULONG, BOOLEAN);
 typedef ULONG (*PFAT_SCANFAT_FOR_VALUE_RUN_ROUTINE) (PFAT_PAGE_CONTEXT, PULONG, ULONG, BOOLEAN);
 typedef ULONG (*PFAT_SETFAT_VALUE_RUN_ROUTINE) (PFAT_PAGE_CONTEXT, ULONG, ULONG, ULONG, BOOLEAN);
 
 typedef struct _FAT_METHODS {
-    PFAT_SCANFAT_FOR_CONTINOUS_RUN_ROUTINE ScanContinousRun;
-    PFAT_SETFAT_CONTINOUS_RUN_ROUTINE SetContinousRun;
+    PFAT_SCANFAT_FOR_CONTIGUOUS_RUN_ROUTINE ScanContinousRun;
+    PFAT_SETFAT_CONTIGUOUS_RUN_ROUTINE SetContinousRun;
     PFAT_SCANFAT_FOR_VALUE_RUN_ROUTINE ScanValueRun;
     PFAT_SETFAT_VALUE_RUN_ROUTINE SetValueRun;
 } FAT_METHODS, *PFAT_METHODS;
@@ -230,8 +230,8 @@ typedef struct _VCB
     &(VcbToVolumeDeviceObject(xVcb)->DeviceObject)
 
 
-#define SectorsToBytes(xVcb, xSectrors) \
-	((xVcb)->Bpb.BytesPerSector * (xSectrors))
+#define SectorsToBytes(xVcb, xSectors) \
+	((xVcb)->Bpb.BytesPerSector * (xSectors))
 
 #define BytesToSectors(xVcb, xBytes) \
 	((xBytes + (xVcb)->Bpb.BytesPerSector - 1) / (xVcb)->Bpb.BytesPerSector)

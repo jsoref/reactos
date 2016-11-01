@@ -1839,7 +1839,7 @@ IoGetBootDiskInformation(IN OUT PBOOTDISK_INFORMATION BootDiskInformation,
      * Check whether we have a single disk
      * Check received structure size (extended or not?)
      * Init boot strings (system/boot)
-     * Finaly, get disk count
+     * Finally, get disk count
      */
     ArcDiskInformation = IopLoaderBlock->ArcDiskInformation;
     SingleDisk = IsListEmpty(&(ArcDiskInformation->DiskSignatureListHead));

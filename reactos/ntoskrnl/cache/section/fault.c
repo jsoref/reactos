@@ -50,7 +50,7 @@ under a single lock acquisition, check the state, and either take necessary
 action atomically, or place a wait entry and return a continuation to the
 caller.  This lends itself to code that has a simple, structured form,
 doesn't make assumptions about lock taking and breaking, and provides an
-obvious, graphic seperation between code that may block and code that isn't
+obvious, graphic separation between code that may block and code that isn't
 allowed to.  This file contains the non-blocking half.
 
 In order to request a blocking operation to happen outside locks, place a
@@ -214,7 +214,7 @@ MmNotPresentFaultCachePage (
     else if (MM_IS_WAIT_PTE(Entry))
     {
         // Whenever MM_WAIT_ENTRY is required as a swap entry, we need to
-        // ask the fault handler to wait until we should continue.  Rathern
+        // ask the fault handler to wait until we should continue.  Rather
         // than recopy this boilerplate code everywhere, we just ask them
         // to wait.
         MmUnlockSectionSegment(Segment);
@@ -493,7 +493,7 @@ MmpFaultWorker(PVOID Parameter)
 
 /*
 
-This code seperates the action of fault handling into an upper and lower
+This code separates the action of fault handling into an upper and lower
 handler to allow the inner handler to optionally be called in work item
 if the stack is getting too deep.  My experiments show that the third
 recursive page fault taken at PASSIVE_LEVEL must be shunted away to a
@@ -504,7 +504,7 @@ fault stack and call the inner fault handler in a worker thread if required.
 Note that faults are taken at passive level and have access to ordinary
 driver entry points such as those that read and write files, and filesystems
 should use paged structures whenever possible.  This makes recursive faults
-both a perfectly normal occurrance, and a worthwhile case to handle.
+both a perfectly normal occurrence, and a worthwhile case to handle.
 
 The code below will repeatedly call MiCowSectionPage as long as it returns
 either STATUS_SUCCESS + 1 or STATUS_MORE_PROCESSING_REQUIRED.  In the more
@@ -675,7 +675,7 @@ MmpSectionAccessFaultInner(KPROCESSOR_MODE Mode,
 /*
 
 This is the outer fault handler mentioned in the description of
-MmpSectionAccsesFaultInner.  It increments a fault depth count in the current
+MmpSectionAccessFaultInner.  It increments a fault depth count in the current
 thread.
 
 In the ultimate form of this code, the lower fault handler will optionally
@@ -734,7 +734,7 @@ MmAccessFaultCacheSection(KPROCESSOR_MODE Mode,
 
 /*
 
-As above, this code seperates the active part of fault handling from a carrier
+As above, this code separates the active part of fault handling from a carrier
 that can use the thread's active fault count to determine whether a work item
 is required.  Also as above, this function repeatedly calls the active not
 present fault handler until a clear success or failure is received, using a

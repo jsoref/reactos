@@ -431,7 +431,7 @@ typedef struct _HCD_ISO_STAT_COUNTERS {
   USHORT MaxInterruptLatency;
   USHORT BadStartFrame;
   USHORT StaleUrbs;
-  USHORT IsoPacketNotAccesed;
+  USHORT IsoPacketNotAccessed;
   USHORT IsoPacketHWError;
   USHORT SmallestUrbPacketCount;
   USHORT LargestUrbPacketCount;

@@ -249,7 +249,7 @@ KiUserModeCallout(PKCALLOUT_FRAME CalloutFrame)
     CurrentThread = KeGetCurrentThread();
 
 #if DBG
-    /* Check if we are at pasive level */
+    /* Check if we are at passive level */
     if (KeGetCurrentIrql() != PASSIVE_LEVEL)
     {
         /* We're not, bugcheck */
@@ -410,7 +410,7 @@ NtCallbackReturn(
     /* Disable interrupts for NPX save and stack switch */
     _disable();
 
-    /* Set desination and origin NPX Frames */
+    /* Set destination and origin NPX Frames */
     CbFxSaveArea = (PVOID)((ULONG)CurrentThread->InitialStack - sizeof(FX_SAVE_AREA));
     FxSaveArea = (PVOID)(CalloutFrame->InitialStack - sizeof(FX_SAVE_AREA));
 

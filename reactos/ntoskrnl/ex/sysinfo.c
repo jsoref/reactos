@@ -1253,7 +1253,7 @@ QSI_DEF(SystemHandleInformation)
 
                         HandleInformation->Handles[Index].CreatorBackTraceIndex = 0;
 
-#if 0 /* FIXME!!! Type field currupted */
+#if 0 /* FIXME!!! Type field corrupted */
                         HandleInformation->Handles[Index].ObjectTypeIndex =
                             (UCHAR) ObjectHeader->Type->Index;
 #else
@@ -1865,7 +1865,7 @@ SSI_DEF(SystemExtendServiceTableInformation)
 }
 
 /* Class 39 - Priority Separation */
-SSI_DEF(SystemPrioritySeperation)
+SSI_DEF(SystemPrioritySeparation)
 {
     /* Check if the size is correct */
     if (Size != sizeof(ULONG))
@@ -2422,7 +2422,7 @@ CallQS [] =
     SI_QX(SystemContextSwitchInformation),
     SI_QS(SystemRegistryQuotaInformation),
     SI_XS(SystemExtendServiceTableInformation),
-    SI_XS(SystemPrioritySeperation),
+    SI_XS(SystemPrioritySeparation),
     SI_QX(SystemVerifierAddDriverInformation), /* it should be SI_XX */
     SI_QX(SystemVerifierRemoveDriverInformation), /* it should be SI_XX */
     SI_QX(SystemProcessorIdleInformation), /* it should be SI_XX */

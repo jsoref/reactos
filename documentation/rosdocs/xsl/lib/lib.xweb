@@ -112,7 +112,7 @@ to be incomplete. Don't forget to read the source, too :-)</para>
 <refsect1><title>Description</title>
 
 <para>The <function>string.subst</function> template replaces all
-occurances of <parameter>target</parameter> in <parameter>string</parameter>
+occurrences of <parameter>target</parameter> in <parameter>string</parameter>
 with <parameter>replacement</parameter> and returns the result.
 </para>
 
@@ -240,7 +240,7 @@ unqualified length ("20" for "20pt") from a dimension.
 
 <para>The <function>length-units</function> template returns the
 units ("pt" for "20pt") from a length. If no units are supplied on the
-length, the <parameter>defauilt.units</parameter> are returned.</para>
+length, the <parameter>default.units</parameter> are returned.</para>
 
 <programlisting><src:fragment id='length-units.frag'>
 <xsl:template name="length-units">
@@ -348,7 +348,7 @@ number.
 <literal>em</literal>. It relies on the default <parameter>em.size</parameter>
 which is initially <literal>10</literal> (for 10pt).</para>
 
-<para>Similarly, converting pixesl to points relies on the
+<para>Similarly, converting pixels to points relies on the
 <parameter>pixels.per.inch</parameter> parameter which is initially
 <literal>90</literal>.
 </para>

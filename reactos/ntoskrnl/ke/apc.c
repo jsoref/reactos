@@ -77,7 +77,7 @@ KiCheckForKernelApcDelivery(VOID)
  * @remarks The APC will execute at APC_LEVEL for the KernelRoutine registered,
  *          and at PASSIVE_LEVEL for the NormalRoutine registered.
  *
- *          Callers of this routine must have locked the dipatcher database.
+ *          Callers of this routine must have locked the dispatcher database.
  *
  *--*/
 VOID
@@ -421,7 +421,7 @@ KiDeliverApc(IN KPROCESSOR_MODE DeliveryMode,
             /* Check if there still is a Normal Routine */
             if (NormalRoutine)
             {
-                /* At Passive Level, an APC can be prempted by a Special APC */
+                /* At Passive Level, an APC can be preempted by a Special APC */
                 Thread->ApcState.KernelApcInProgress = TRUE;
                 KeLowerIrql(PASSIVE_LEVEL);
 
@@ -630,7 +630,7 @@ _KeLeaveCriticalRegion(VOID)
  *
  * @param NormalRoutine
  *        Points to the NormalRoutine to associate with the APC.
- *        This routine is executed at PASSIVE_LEVEL. If this is not specifed,
+ *        This routine is executed at PASSIVE_LEVEL. If this is not specified,
  *        the APC becomes a Special APC and the Mode and Context parameters are
  *        ignored.
  *
@@ -638,7 +638,7 @@ _KeLeaveCriticalRegion(VOID)
  *        Specifies the processor mode at which to run the Normal Routine.
  *
  * @param Context
- *        Specifices the value to pass as Context parameter to the registered
+ *        Specifies the value to pass as Context parameter to the registered
  *        routines.
  *
  * @return None.

@@ -108,7 +108,7 @@ R0.07 (April 01, 2009)
 
 R0.07a (April 14, 2009)
 
-  Septemberarated out OS dependent code on reentrant cfg.
+  Separated out OS dependent code on reentrant cfg.
   Added multiple sector size feature.
 
 
@@ -125,7 +125,7 @@ R0.07c (June 21, 2009)
 
 R0.07e (November 03, 2009)
 
-  Septemberarated out configuration options from ff.h to ffconf.h.
+  Separated out configuration options from ff.h to ffconf.h.
   Fixed f_unlink() fails to remove a sub-directory on _FS_RPATH.
   Fixed name matching error on the 13 character boundary.
   Added a configuration option, _LFN_UNICODE.
@@ -222,7 +222,7 @@ R0.10c (November 09, 2014)
   Changed option name _USE_ERASE to _USE_TRIM.
   Fixed volume label created by Mac OS X cannot be retrieved with f_getlabel(). (appeared at R0.09b)
   Fixed a potential problem of FAT access that can appear on disk error.
-  Fixed null pointer dereference on attempting to delete the root direcotry. (appeared at R0.08)
+  Fixed null pointer dereference on attempting to delete the root directory. (appeared at R0.08)
 
 
 
@@ -239,7 +239,7 @@ R0.11a (September 05, 2015)
   Fixed wrong media change can lead a deadlock at thread-safe configuration.
   Added code page 771, 860, 861, 863, 864, 865 and 869. (_CODE_PAGE)
   Removed some code pages actually not exist on the standard systems. (_CODE_PAGE)
-  Fixed errors in the case conversion teble of code page 437 and 850 (ff.c).
-  Fixed errors in the case conversion teble of Unicode (cc*.c).
+  Fixed errors in the case conversion table of code page 437 and 850 (ff.c).
+  Fixed errors in the case conversion table of Unicode (cc*.c).
 
 

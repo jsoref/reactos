@@ -90,7 +90,7 @@ USBHUB_AddDevice(
     // Set this to Fdo
     //
     HubDeviceExtension->Common.IsFDO = TRUE;
-    DeviceObject->Flags |= DO_POWER_PAGABLE;
+    DeviceObject->Flags |= DO_POWER_PAGEABLE;
 
     //
     // initialize reset complete event

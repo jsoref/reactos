@@ -470,7 +470,7 @@ translate_colour(RDPCLIENT * This, uint32 colour)
 /* *INDENT-OFF* */
 
 /* repeat and unroll, similar to bitmap.c */
-/* potentialy any of the following translate */
+/* potentially any of the following translate */
 /* functions can use repeat but just doing */
 /* the most common ones */
 
@@ -1408,8 +1408,8 @@ ui_init(RDPCLIENT * This)
 	}
 
 	{
-		uint16 endianess_test = 1;
-		This->xwin.host_be = !(BOOL) (*(uint8 *) (&endianess_test));
+		uint16 endianness_test = 1;
+		This->xwin.host_be = !(BOOL) (*(uint8 *) (&endianness_test));
 	}
 
 	/*This->xwin.old_error_handler = XSetErrorHandler(error_handler);*/
@@ -1787,7 +1787,7 @@ handle_button_event(RDPCLIENT * This, XEvent xevent, BOOL down)
 			if (xevent.type == ButtonRelease)
 			{
 				/* Release the mouse button outside the minimize button, to prevent the
-				   actual minimazation to happen */
+				   actual minimization to happen */
 				rdp_send_input(This, time(NULL), RDP_INPUT_MOUSE, button, 1, 1);
 				XIconifyWindow(This->display, This->wnd, DefaultScreen(This->display));
 				return;

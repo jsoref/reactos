@@ -28,7 +28,7 @@
 #include "RegistryExplorer.h"
 
 #define EXIT_CMD			_T("EXIT")
-#define EXIT_CMD_SHORT_DESC	EXIT_CMD _T(" command termiantes current instance of Registry Explorer.\n")
+#define EXIT_CMD_SHORT_DESC	EXIT_CMD _T(" command terminates current instance of Registry Explorer.\n")
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction
 //////////////////////////////////////////////////////////////////////

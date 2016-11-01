@@ -931,7 +931,7 @@ VOID NTAPI IdleNotificationCallback(IN PDEVICE_EXTENSION DeviceExtension)
         // increment the count. In the HoldIoRequestWorkerRoutine, the
         // count is decremented twice (one for the system Irp and the
         // other for the device Irp. An increment here compensates for
-        // the sytem irp..The decrement corresponding to this increment
+        // the system irp..The decrement corresponding to this increment
         // is in the completion function
         //
 
@@ -1118,7 +1118,7 @@ VOID NTAPI CancelSelectSuspend(IN PDEVICE_EXTENSION DeviceExtension)
     {
         // This routine has the irp pointer.
         // It is safe to call IoCancelIrp because we know that
-        // the compleiton routine will not free this irp unless...
+        // the completion routine will not free this irp unless...
         //
         //
         if(IoCancelIrp(irp))

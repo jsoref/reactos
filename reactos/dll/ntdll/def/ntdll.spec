@@ -663,7 +663,7 @@
 661 stdcall RtlGetLastWin32Error()
 662 stdcall RtlGetLengthWithoutLastFullDosOrNtPathElement(long ptr ptr)
 ; Yes, Microsoft really misspelled this one!
-663 stdcall RtlGetLengthWithoutTrailingPathSeperators(long ptr ptr) RtlGetLengthWithoutTrailingPathSeparators
+663 stdcall RtlGetLengthWithoutTrailingPathSeparators(long ptr ptr) RtlGetLengthWithoutTrailingPathSeparators
 664 stdcall RtlGetLongestNtPathLength()
 665 stdcall RtlGetNativeSystemInformation(long long long long) NtQuerySystemInformation
 666 stdcall RtlGetNtGlobalFlags()

@@ -10,7 +10,7 @@
 #include "bookmark.h"
 #include "cmds.h"
 
-/* These will be sorted lexiographically when the program is run, but
+/* These will be sorted lexicographically when the program is run, but
  * they should already be listed that way.
  */
 Command gCommands[] = {

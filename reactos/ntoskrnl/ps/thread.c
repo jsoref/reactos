@@ -329,7 +329,7 @@ PspCreateThread(OUT PHANDLE ThreadHandle,
         }
         _SEH2_END;
 
-        /* Let the kernel intialize the Thread */
+        /* Let the kernel initialize the Thread */
         if (NT_SUCCESS(Status))
         {
             Status = KeInitThread(&Thread->Tcb,
@@ -348,7 +348,7 @@ PspCreateThread(OUT PHANDLE ThreadHandle,
         Thread->StartAddress = StartRoutine;
         PspSetCrossThreadFlag(Thread, CT_SYSTEM_THREAD_BIT);
 
-        /* Let the kernel intialize the Thread */
+        /* Let the kernel initialize the Thread */
         Status = KeInitThread(&Thread->Tcb,
                               NULL,
                               PspSystemThreadStartup,
@@ -375,7 +375,7 @@ PspCreateThread(OUT PHANDLE ThreadHandle,
     KeEnterCriticalRegion();
     ExAcquirePushLockExclusive(&Process->ProcessLock);
 
-    /* Make sure the proces didn't just die on us */
+    /* Make sure the process didn't just die on us */
     if (Process->ProcessDelete) goto Quickie;
 
     /* Check if the thread was ours, terminated and it was user mode */
@@ -578,7 +578,7 @@ Quickie:
     ExReleasePushLockExclusive(&Process->ProcessLock);
     KeLeaveCriticalRegion();
 
-    /* Uninitailize it */
+    /* Uninitialize it */
     KeUninitThread(&Thread->Tcb);
 
     /* If we had a TEB, delete it */

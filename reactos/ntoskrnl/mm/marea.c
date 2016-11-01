@@ -357,7 +357,7 @@ MmFreeMemoryArea(
             ASSERT(MemoryArea->EndingVpn + 1 < (ULONG_PTR)MmSystemRangeStart >> PAGE_SHIFT);
             ASSERT(MemoryArea->Type == MEMORY_AREA_SECTION_VIEW || MemoryArea->Type == MEMORY_AREA_CACHE);
 
-            /* MmCleanProcessAddressSpace might have removed it (and this would be MmDeleteProcessAdressSpace) */
+            /* MmCleanProcessAddressSpace might have removed it (and this would be MmDeleteProcessAddressSpace) */
             ASSERT(MemoryArea->VadNode.u.VadFlags.Spare != 0);
             if (((PMMVAD)MemoryArea->Vad)->u.VadFlags.Spare == 1)
             {
@@ -613,7 +613,7 @@ MmDeleteProcessAddressSpace(PEPROCESS Process)
             }
 
             pointerPde = MiAddressToPde(Address);
-            /* Unlike in ARM3, we don't necesarrily free the PDE page as soon as reference reaches 0,
+            /* Unlike in ARM3, we don't necessarily free the PDE page as soon as reference reaches 0,
              * so we must clean up a bit when process closes */
             if (pointerPde->u.Hard.Valid)
                 MiDeletePte(pointerPde, MiPdeToPte(pointerPde), Process, NULL);

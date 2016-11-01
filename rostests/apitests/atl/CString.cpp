@@ -150,7 +150,7 @@ START_TEST(CString)
 
     if ((ALLOC_EXPECT(1, 2)) == 2)
     {
-        skip("Ignoring real GetAllocLength() lenght\n");
+        skip("Ignoring real GetAllocLength() lengtht\n");
     }
 
     test_operators_initW();

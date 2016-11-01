@@ -25,7 +25,7 @@ VdmpGetVdmTib(OUT PVDM_TIB *VdmTib)
     PVDM_TIB Tib;
     PAGED_CODE();
 
-    /* Assume vailure */
+    /* Assume failure */
     *VdmTib = NULL;
 
     /* Get the current TIB */
@@ -304,7 +304,7 @@ VdmEndExecution(IN PKTRAP_FRAME TrapFrame,
         }
     }
 
-    /* Lower IRQL and reutrn */
+    /* Lower IRQL and return */
     KeLowerIrql(OldIrql);
 }
 

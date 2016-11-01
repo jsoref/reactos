@@ -6,7 +6,7 @@ SelectSetInit(SelectSetPtr const ssp, const double timeout)
 	double i;
 	long l;
 
-	/* Inititalize SelectSet, which will clear the fd_set, the
+	/* Initialize SelectSet, which will clear the fd_set, the
 	 * timeval, and the maxfd and numfds to 0.
 	 */
 	memset(ssp, 0, sizeof(SelectSet));

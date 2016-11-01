@@ -2,7 +2,7 @@
  * COPYRIGHT:       See COPYING in the top level directory
  * PROJECT:         ReactOS kernel
  * FILE:            ntoskrnl/io/iomgr/iorsrce.c
- * PURPOSE:         Hardware resource managment
+ * PURPOSE:         Hardware resource management
  *
  * PROGRAMMERS:     David Welch (welch@mcmail.com)
  *                  Alex Ionescu (alex@relsoft.net)
@@ -862,7 +862,7 @@ IoReportResourceUsage(PUNICODE_STRING DriverClassName,
       *       DeviceList - List of resources which should be claimed for the
       *       device.
       *       DeviceListSize - Size of the per-device resource list in bytes.
-      *       OverrideConflict - True if the resources should be cliamed
+      *       OverrideConflict - True if the resources should be claimed
       *       even if a conflict is found.
       *       ConflictDetected - Points to a variable that receives TRUE if
       *       a conflict is detected with another driver.
@@ -995,7 +995,7 @@ IoAssignResources(IN PUNICODE_STRING RegistryPath,
  * ARGUMENTS:
  *     BusType          - MCA, ISA, EISA...specifies the Bus Type
  *     BusNumber	- Which bus of above should be queried
- *     ControllerType	- Specifices the Controller Type
+ *     ControllerType	- Specifies the Controller Type
  *     ControllerNumber	- Which of the controllers to query.
  *     CalloutRoutine	- Which function to call for each valid query.
  *     Context          - Value to pass to the callback.

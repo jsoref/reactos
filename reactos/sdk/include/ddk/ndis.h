@@ -4057,7 +4057,7 @@ NdisUnicodeStringToAnsiString(
 #define NdisFreeString(_s) NdisFreeMemory((_s).Buffer, (_s).MaximumLength, 0)
 #define NdisPrintString(_s) DbgPrint("%ls", (_s).Buffer)
 
-/* Spin lock reoutines */
+/* Spin lock routines */
 
 /*
 NDISAPI
@@ -4467,12 +4467,12 @@ NdisGetCurrentProcessorCpuUsage(
 
 /*
  * VOID
- * NDIS_PAGABLE_FUNCTION(FunctionName)
+ * NDIS_PAGEABLE_FUNCTION(FunctionName)
  */
 #define NDIS_PAGEABLE_FUNCTION(FunctionName) \
   alloc_text(page, FunctionName)
 
-#define NDIS_PAGABLE_FUNCTION NDIS_PAGEABLE_FUNCTION
+#define NDIS_PAGEABLE_FUNCTION NDIS_PAGEABLE_FUNCTION
 
 
 /* NDIS 4.0 extensions */

@@ -156,7 +156,7 @@ GetComputerNameExW(COMPUTER_NAME_FORMAT NameType,
                                                nSize);
 
         case ComputerNameDnsDomain:
-            /* Save original buffer size for the second call if neccessery */
+            /* Save original buffer size for the second call if necessary */
             nBufferSize = *nSize;
             if (!GetComputerNameFromRegistry(L"\\Registry\\Machine\\System\\CurrentControlSet"
                                              L"\\Services\\Tcpip\\Parameters",

@@ -2,7 +2,7 @@
 as previous discussions all of which have useful info on fixes
 that need to be added to ReactOS. messages are between five
 dashes on a line by themselves.  If you implement the fix
-reffered to in a message, feel free to delete it from the file.
+referred to in a message, feel free to delete it from the file.
 Rex ***
 -----
 Subject: [ros-kernel] Inside the Boot Process
@@ -96,7 +96,7 @@ in memory somewhere.  Perhaps the exception
 dump could check offending addresses to see if
 they lie in the kernel or in a module, and if they
 lie in a module the proper offset could be subtracted
-and this number could be displayed seperately.  If
+and this number could be displayed separately.  If
 I get a chance today, I'll make this change and send
 it to ya.
 
@@ -109,7 +109,7 @@ Organization: Microsoft Corp.
 Newsgroups: microsoft.public.win32.programmer.kernel, comp.os.ms-windows.programmer.nt.kernel-mode
 References: 1
 
-Radu, I post the following information occassionally for questions such as
+Radu, I post the following information occasionally for questions such as
 yours.  I hope it helps.
 
 -Paul
@@ -148,7 +148,7 @@ I/O Manager perspective
 examines nInBufferSize and nOutBufferSize.  Allocates memory from non-paged
 pool and puts the address of this pool in Irp->AssociatedIrp.SystemBuffer.
 The size of this buffer is equal to the size of the larger of the two
-bufferes.  This buffer is accessible at any IRQL.
+buffers.  This buffer is accessible at any IRQL.
 
 copies nInBufferSize to irpSp->Parameters.DeviceIoControl.InputBufferLength
 copies nOutBufferSize to
@@ -165,7 +165,7 @@ from this buffer and you write output data to the same buffer, overwriting
 the input data.
 
 Before calling IoCompleteRequest, you must
-- set IoStatus.Status to an approriate NtStatus
+- set IoStatus.Status to an appropriate NtStatus
 - if IoStatus.Status == STATUS_SUCCESS
  set IoStatus.Information to the
  number of bytes you want copied
@@ -252,9 +252,9 @@ return status pending
 Device Driver Completion Routine perspective
 
 standard completion routine operations
-set IoStatus.Status to an approriate NtStatus
+set IoStatus.Status to an appropriate NtStatus
 IoStatus.Information is not needed
-completete the request
+complete the request
 
 
 
@@ -333,9 +333,9 @@ return status pending
 Device Driver Completion Routine perspective
 
 standard completion routine operations
-set IoStatus.Status to an approriate NtStatus
+set IoStatus.Status to an appropriate NtStatus
 IoStatus.Information is not needed
-completete the request
+complete the request
 
 
 
@@ -419,7 +419,7 @@ Something(
 >runs in the context of the calling thread so DeviceIoControl hasn't
 >returned yet (?? or so I think) so aDataI
 n will still be valid at the
->time IOManager copyes it to its buffer. So, this apears to work ok (at
+>time IOManager copies it to its buffer. So, this apears to work ok (at
 >least in my opinion).
 >
 >Does I/O Manager use the Input buffer from the call to the Win32
@@ -531,7 +531,7 @@ VOID CancelRoutine(PDEVICE_OBJECT DeviceObject, PIRP Irp)
 You need to remember that the C language specification requires that
 evaluation of boolean operators short circuit when the result is known.
 So, if StartIo discovers that the Irp it got as an argument is not the
-same as CurrentIrp, it will not attempt to evaulate Irp->Cancel.
+same as CurrentIrp, it will not attempt to evaluate Irp->Cancel.
 
 Now, as to why this works: StartIo gets called either by IoStartPacket
 or IoStartNextPacket. Each of them will grab the cancel spin lock and

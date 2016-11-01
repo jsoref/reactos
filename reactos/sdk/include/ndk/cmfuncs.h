@@ -170,7 +170,7 @@ NtNotifyChangeKey(
     _In_opt_ PVOID ApcContext,
     _Out_ PIO_STATUS_BLOCK IoStatusBlock,
     _In_ ULONG CompletionFilter,
-    _In_ BOOLEAN Asynchroneous,
+    _In_ BOOLEAN Asynchronous,
     _Out_bytecap_(Length) PVOID ChangeBuffer,
     _In_ ULONG Length,
     _In_ BOOLEAN WatchSubtree
@@ -466,7 +466,7 @@ ZwNotifyChangeKey(
     _In_opt_ PVOID ApcContext,
     _Out_ PIO_STATUS_BLOCK IoStatusBlock,
     _In_ ULONG CompletionFilter,
-    _In_ BOOLEAN Asynchroneous,
+    _In_ BOOLEAN Asynchronous,
     _Out_bytecap_(Length) PVOID ChangeBuffer,
     _In_ ULONG Length,
     _In_ BOOLEAN WatchSubtree

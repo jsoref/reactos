@@ -25,7 +25,7 @@ How to check out a source tree from the CVS repository onto the local hard drive
 <sect2>
 <title>Modules in ReactOS' CVS Repository</title>
 <para>
-There are several modules in ReactOS' CVS repository. Each of these modules contains a seperate tree of files. Whenever you check out a tree, you must specify which module you want. The following modules are available in our repository:
+There are several modules in ReactOS' CVS repository. Each of these modules contains a separate tree of files. Whenever you check out a tree, you must specify which module you want. The following modules are available in our repository:
 <table>
 <title>Modules</title>
 <tgroup cols="2">
@@ -80,7 +80,7 @@ To check out the "reactos" module, we will first create a "ros" directory that w
 <sect2>
 <title>Updating your tree</title>
 <para>
-The next section "Updating your tree with the latest code" will explain how to use the "update" CVS command to update your tree with the latest changes. You should only have to check out a tree once and perform updates on the tree after that. If you encounter abnormalities with your tree in the future, however, you may wish to delete it and do a checkout again (this should be a rare occurance).
+The next section "Updating your tree with the latest code" will explain how to use the "update" CVS command to update your tree with the latest changes. You should only have to check out a tree once and perform updates on the tree after that. If you encounter abnormalities with your tree in the future, however, you may wish to delete it and do a checkout again (this should be a rare occurrence).
 </para>
 </sect2>
 

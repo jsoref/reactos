@@ -65,7 +65,7 @@ NTSYSAPI
 NTSTATUS
 NTAPI
 DbgUiWaitStateChange(
-    _In_ PDBGUI_WAIT_STATE_CHANGE DbgUiWaitStateCange,
+    _In_ PDBGUI_WAIT_STATE_CHANGE WaitStateChange,
     _In_ PLARGE_INTEGER TimeOut
 );
 
@@ -180,7 +180,7 @@ LdrQueryImageFileExecutionOptions(
     _In_ ULONG ValueSize,
     _Out_ PVOID Buffer,
     _In_ ULONG BufferSize,
-    _Out_opt_ PULONG RetunedLength
+    _Out_opt_ PULONG ReturnedLength
 );
 
 NTSTATUS
@@ -221,7 +221,7 @@ LdrVerifyImageMatchesChecksum(
     _In_ HANDLE FileHandle,
     _In_ PLDR_CALLBACK Callback,
     _In_ PVOID CallbackContext,
-    _Out_ PUSHORT ImageCharacterstics
+    _Out_ PUSHORT ImageCharacteristics
 );
 
 NTSTATUS

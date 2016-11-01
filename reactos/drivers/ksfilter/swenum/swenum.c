@@ -383,7 +383,7 @@ SwAddDevice(
     if (NT_SUCCESS(Status))
     {
         /* set device flags */
-        FunctionalDeviceObject->Flags |= DO_POWER_PAGABLE;
+        FunctionalDeviceObject->Flags |= DO_POWER_PAGEABLE;
         FunctionalDeviceObject->Flags &= ~ DO_DEVICE_INITIALIZING;
     }
     else

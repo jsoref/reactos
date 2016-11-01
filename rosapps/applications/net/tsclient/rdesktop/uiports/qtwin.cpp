@@ -596,15 +596,15 @@ int ui_create_window(void)
     g_SV->setCaption(g_title);
   }
 
-/*  XGrayKey(0, 64, AnyModifie, SV->winId(), 0, GrabModeAsync, GrabModeAsync);
-  XGrayKey(0, 113, AnyModifie, SV->winId(), 0, GrabModeAsync, GrabModeAsync);
-  XGrayKey(0, 37, AnyModifie, SV-winId(), 0, GrabModeAsync, GrabModeAsync);
-  XGrayKey(0, 109, AnyModifie, SV->winId(), 0, GrabModeAsync, GrabModeAsync);
-  XGrayKey(0, 115, AnyModifie, SV->winId(), 0, GrabModeAsync, GrabModeAsync);
-  XGrayKey(0, 116, AnyModifie, SV->winId(), 0, GrabModeAsync, GrabModeAsync);
-  XGrayKey(0, 117, AnyModifie, SV->winId(), 0, GrabModeAsync, GrabModeAsync);
-  XGrayKey(0, 62, AnyModifie, SV->winId(), 0, GrabModeAsync, GrabModeAsync);
-  XGrayKey(0, 50, AnyModifie, SV->winId(), 0, GrabModeAsync, GrabModeAsync);*/
+/*  XGrayKey(0, 64, AnyModifier, SV->winId(), 0, GrabModeAsync, GrabModeAsync);
+  XGrayKey(0, 113, AnyModifier, SV->winId(), 0, GrabModeAsync, GrabModeAsync);
+  XGrayKey(0, 37, AnyModifier, SV-winId(), 0, GrabModeAsync, GrabModeAsync);
+  XGrayKey(0, 109, AnyModifier, SV->winId(), 0, GrabModeAsync, GrabModeAsync);
+  XGrayKey(0, 115, AnyModifier, SV->winId(), 0, GrabModeAsync, GrabModeAsync);
+  XGrayKey(0, 116, AnyModifier, SV->winId(), 0, GrabModeAsync, GrabModeAsync);
+  XGrayKey(0, 117, AnyModifier, SV->winId(), 0, GrabModeAsync, GrabModeAsync);
+  XGrayKey(0, 62, AnyModifier, SV->winId(), 0, GrabModeAsync, GrabModeAsync);
+  XGrayKey(0, 50, AnyModifier, SV->winId(), 0, GrabModeAsync, GrabModeAsync);*/
 
   return 1;
 }
@@ -748,7 +748,7 @@ void ui_destroy_colourmap(HCOLOURMAP map)
 /*****************************************************************************/
 void ui_set_colourmap(void * map)
 {
-  // destoy old colormap
+  // destroy old colormap
   ui_destroy_colourmap(g_CM);
   g_CM = (QColorMap*)map;
 }

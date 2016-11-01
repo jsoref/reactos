@@ -1792,7 +1792,7 @@ NtSetInformationObject(IN HANDLE ObjectHandle,
                                                    NULL);
                 if (NT_SUCCESS(Status))
                 {
-                    /* FIXME: Missng locks */
+                    /* FIXME: Missing locks */
                     /* Set its session ID */
                     Directory->SessionId = PsGetCurrentProcessSessionId();
                     ObDereferenceObject(Directory);

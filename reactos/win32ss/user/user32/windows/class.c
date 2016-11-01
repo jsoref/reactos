@@ -39,13 +39,13 @@ ClassNameToVersion(
 {
    NTSTATUS Status;
    UNICODE_STRING SectionName;
-   WCHAR SeactionNameBuf[MAX_PATH] = {0};
+   WCHAR SectionNameBuf[MAX_PATH] = {0};
    ACTCTX_SECTION_KEYED_DATA KeyedData = { sizeof(KeyedData) };
 
    if (IS_ATOM(lpszClass))
    {
-      SectionName.Buffer = (LPWSTR)&SeactionNameBuf;
-      SectionName.MaximumLength = sizeof(SeactionNameBuf);
+      SectionName.Buffer = (LPWSTR)&SectionNameBuf;
+      SectionName.MaximumLength = sizeof(SectionNameBuf);
       if(!NtUserGetAtomName(LOWORD((DWORD_PTR)lpszClass), &SectionName))
       {
          return NULL;

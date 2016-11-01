@@ -26,7 +26,7 @@ void Test_bug3481()
 
     SelectObject(hdc, GetStockObject(DEFAULT_GUI_FONT));
 
-    /* Convert the charcaters into glyph indices */
+    /* Convert the characters into glyph indices */
     result = GetGlyphIndicesA(hdc, text, COUNT, agi, 0);
     ok(result != 0, "result=%d, GetLastError()=%ld\n", result, GetLastError());
 

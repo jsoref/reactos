@@ -1559,13 +1559,13 @@ NtUserVkKeyScanEx(
 
     pKbdTbl = pKl->spkf->pKbdTbl;
 
-    // Interate through all VkToWchar tables while pVkToWchars is not NULL
+    // Iterate through all VkToWchar tables while pVkToWchars is not NULL
     for (i = 0; pKbdTbl->pVkToWcharTable[i].pVkToWchars; i++)
     {
         pVkToWchTbl = &pKbdTbl->pVkToWcharTable[i];
         pVkToWch = (PVK_TO_WCHARS10)(pVkToWchTbl->pVkToWchars);
 
-        // Interate through all virtual keys
+        // Iterate through all virtual keys
         while (pVkToWch->VirtualKey)
         {
             for (dwModNumber = 0; dwModNumber < pVkToWchTbl->nModifications; dwModNumber++)

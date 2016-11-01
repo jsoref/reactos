@@ -363,7 +363,7 @@ bool ext2_read_block(PEXT2_FILESYS fs, ULONG block, void *inbuf);
  *  Mke2fs.c
  */
 
-bool parase_cmd(int argc, char *argv[], PEXT2_FILESYS pExt2Sys);
+bool parse_cmd(int argc, char *argv[], PEXT2_FILESYS pExt2Sys);
 
 bool zero_blocks(PEXT2_FILESYS fs, ULONG blk, ULONG num,
                  ULONG *ret_blk, ULONG *ret_count);

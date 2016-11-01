@@ -79,7 +79,7 @@ dump_CallBackFlags(DWORD *pCallBackFlags, char *text)
     endcheckflag(flag,"pCallBackFlags[1]");
 
 
-    /* palleted */
+    /* paletted */
     printf("pCallBackFlags[2] : ");
     flag = pCallBackFlags[2];
     count = 0;
@@ -538,7 +538,7 @@ dump_halinfo(DD_HALINFO *pHalInfo, char *text)
     {
         if (pHalInfo->dwSize !=0)
         {
-            printf("unkonwn dwSize DD_HALINFO : the size found is 0x%08lx\n",pHalInfo->dwSize);
+            printf("unknown dwSize DD_HALINFO : the size found is 0x%08lx\n",pHalInfo->dwSize);
         }
         else
         {
@@ -1135,7 +1135,7 @@ dump_D3dBufferCallbacks(DD_D3DBUFCALLBACKS *puD3dBufferCallbacks, char *text)
         printf(" puD3dBufferCallbacks->dwSize                                   : 0x%08lx\n",(long)puD3dBufferCallbacks->dwSize);
         printf(" puD3dBufferCallbacks->dwFlags                                  : ");
 
-        /* rember this flags are not in msdn only in ms ddk */
+        /* remember this flags are not in msdn only in ms ddk */
         count = 0;
         flag = puD3dBufferCallbacks->dwFlags;
         checkflag(flag,DDHAL_D3DBUFCB32_CANCREATED3DBUF,"DDHAL_D3DBUFCB32_CANCREATED3DBUF");
@@ -1384,7 +1384,7 @@ dump_D3dTextureFormats(DDSURFACEDESC *puD3dTextureFormats, int dwNum, char *text
             printf(" puD3dTextureFormats->ddsCaps.dwCaps                            : ");
             count = 0;
             flag = myTextureFormats->ddsCaps.dwCaps;
-            // not in use longer acoing msdn checkflag(flag,DDSCAPS_3D,"DDSCAPS_3D");
+            // not in use longer according to msdn checkflag(flag,DDSCAPS_3D,"DDSCAPS_3D");
             checkflag(flag,DDSCAPS_3DDEVICE  ,"DDSCAPS_3DDEVICE");
             checkflag(flag,DDSCAPS_ALLOCONLOAD,"DDSCAPS_ALLOCONLOAD ");
             checkflag(flag,DDSCAPS_ALPHA,"DDSCAPS_ALPHA");

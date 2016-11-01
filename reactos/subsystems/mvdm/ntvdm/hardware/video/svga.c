@@ -688,7 +688,7 @@ static VOID VgaChangeMode(VOID)
         goto Quit;
     }
 
-    // FIXME: Wouldn't it be preferrable to switch to the new console SB
+    // FIXME: Wouldn't it be preferable to switch to the new console SB
     // *ONLY* if we succeeded in setting the new mode??
 
     /* Leave the current video mode */

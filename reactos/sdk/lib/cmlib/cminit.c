@@ -31,7 +31,7 @@ CmCreateRootNode(
                                    HCELL_NIL);
     if (RootCellIndex == HCELL_NIL) return FALSE;
 
-    /* Seutp the base block */
+    /* Setup the base block */
     Hive->BaseBlock->RootCell = RootCellIndex;
     Hive->BaseBlock->CheckSum = HvpHiveHeaderChecksum(Hive->BaseBlock);
 

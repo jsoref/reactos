@@ -105,7 +105,7 @@ enum
     APIC_DSH_Destination,
     APIC_DSH_Self,
     APIC_DSH_AllIncludingSelf,
-    APIC_DSH_AllExclusingSelf
+    APIC_DSH_AllExcludingSelf
 };
 
 enum
@@ -127,7 +127,7 @@ enum
 };
 
 
-typedef union _APIC_BASE_ADRESS_REGISTER
+typedef union _APIC_BASE_ADDRESS_REGISTER
 {
     ULONG64 Long;
     struct
@@ -139,9 +139,9 @@ typedef union _APIC_BASE_ADRESS_REGISTER
         ULONG64 BaseAddress:40;
         ULONG64 ReservedMBZ:12;
     };
-} APIC_BASE_ADRESS_REGISTER;
+} APIC_BASE_ADDRESS_REGISTER;
 
-typedef union _APIC_SPURIOUS_INERRUPT_REGISTER
+typedef union _APIC_SPURIOUS_INTERRUPT_REGISTER
 {
     ULONG Long;
     struct
@@ -151,7 +151,7 @@ typedef union _APIC_SPURIOUS_INERRUPT_REGISTER
         ULONG FocusCPUCoreChecking:1;
         ULONG ReservedMBZ:22;
     };
-} APIC_SPURIOUS_INERRUPT_REGISTER;
+} APIC_SPURIOUS_INTERRUPT_REGISTER;
 
 typedef union
 {

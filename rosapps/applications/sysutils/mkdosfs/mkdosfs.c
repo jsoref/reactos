@@ -519,7 +519,7 @@ char dummy_boot_code[BOOTCODE_SIZE] =
 static char *program_name = "mkdosfs";	/* Name of the program */
 static char *device_name = NULL;	/* Name of the device on which to create the filesystem */
 static int atari_format = 0;	/* Use Atari variation of MS-DOS FS format */
-static int check = FALSE;	/* Default to no readablity checking */
+static int check = FALSE;	/* Default to no readability checking */
 static int verbose = 0;		/* Default to verbose mode off */
 static long volume_id;		/* Volume ID number */
 static time_t create_time;	/* Creation time */
@@ -661,7 +661,7 @@ do_check (char *buffer, int try, unsigned int current_block)
 }
 
 #ifndef _WIN32
-/* Alarm clock handler - display the status of the quest for bad blocks!  Then retrigger the alarm for five senconds
+/* Alarm clock handler - display the status of the quest for bad blocks!  Then retrigger the alarm for five seconds
    later (so we can come here again) */
 
 static void
@@ -1294,7 +1294,7 @@ setup_tables (void)
     } while (bs.cluster_size && bs.cluster_size <= maxclustsize);
 
     /* Use the optimal FAT size if not specified;
-     * FAT32 is (not yet) choosen automatically */
+     * FAT32 is (not yet) chosen automatically */
     if (!size_fat) {
 	size_fat = (clust16 > clust12) ? 16 : 12;
 	if (verbose >= 2)
@@ -1661,7 +1661,7 @@ write_tables (void)
   for (x = 1; x <= nr_fats; x++)
 #ifdef _WIN32
 	  /*
-	   * WIN32 appearently has problems writing very large chunks directly
+	   * WIN32 apparently has problems writing very large chunks directly
 	   * to disk devices. To not produce errors because of resource shortages
 	   * split up the write in sector size chunks.
 	   */
@@ -2026,7 +2026,7 @@ main (int argc, char **argv)
   else
     /*
      * Ignore any 'full' fixed disk devices, if -I is not given.
-     * On a MO-disk one doesn't need partitions.  The filesytem can go
+     * On a MO-disk one doesn't need partitions.  The filesystem can go
      * directly to the whole disk.  Under other OSes this is known as
      * the 'superfloppy' format.  As I don't know how to find out if
      * this is a MO disk I introduce a -I (ignore) switch.  -Joey

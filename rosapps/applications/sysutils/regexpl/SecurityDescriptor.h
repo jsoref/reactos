@@ -28,7 +28,7 @@ public:
 		SystemAudit
 	};
 	ACEntryType GetDACLEntry(DWORD nIndex);
-	ACEntryType GetSACLEntry(DWORD nIndex, BOOL& blnFailedAccess, BOOL& blnSeccessfulAccess);
+	ACEntryType GetSACLEntry(DWORD nIndex, BOOL& blnFailedAccess, BOOL& blnSuccessfulAccess);
 	DWORD GetDACLEntriesCount();
 	DWORD GetSACLEntriesCount();
 	BOOL HasValidDACL();
@@ -37,8 +37,8 @@ public:
 	BOOL HasNULLSACL();
 	BOOL DescriptorContainsDACL();
 	BOOL DescriptorContainsSACL();
-	DWORD BeginDACLInteration();
-	DWORD BeginSACLInteration();
+	DWORD BeginDACLIteration();
+	DWORD BeginSACLIteration();
 	void AssociateDescriptor(PSECURITY_DESCRIPTOR pSecurityDescriptor);
 	CSecurityDescriptor();
 	virtual ~CSecurityDescriptor();

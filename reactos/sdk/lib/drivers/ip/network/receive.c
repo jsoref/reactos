@@ -145,7 +145,7 @@ PIPDATAGRAM_REASSEMBLY GetReassemblyInfo(
  * ARGUMENTS:
  *     IPPacket = Pointer to IP packet
  * NOTES:
- *     A datagram is identified by four paramters, which are
+ *     A datagram is identified by four parameters, which are
  *     Source and destination address, protocol number and
  *     identification number
  */
@@ -300,7 +300,7 @@ VOID ProcessFragment(
   /* Check if we already have an reassembly structure for this datagram */
   IPDR = GetReassemblyInfo(IPPacket);
   if (IPDR) {
-    TI_DbgPrint(DEBUG_IP, ("Continueing assembly.\n"));
+    TI_DbgPrint(DEBUG_IP, ("Continuing assembly.\n"));
     /* We have a reassembly structure */
     TcpipAcquireSpinLock(&IPDR->Lock, &OldIrql);
       

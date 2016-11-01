@@ -502,7 +502,7 @@ co_IntLoadDefaultCursors(VOID)
       return FALSE;
    }
 
-   /* HACK: The desktop class doen't have a proper cursor yet, so set it here */
+   /* HACK: The desktop class doesn't have a proper cursor yet, so set it here */
     gDesktopCursor = *((HCURSOR*)ResultPointer);
 
    return TRUE;
@@ -1126,13 +1126,13 @@ co_IntSetWndIcons(VOID)
    gpsi->hIconSmWindows = Common->hIconSmWindows;
    gpsi->hIconWindows   = Common->hIconWindows;
 
-   IntLoadSystenIcons(Common->hIconSample,   OIC_SAMPLE);
-   IntLoadSystenIcons(Common->hIconHand,     OIC_HAND);
-   IntLoadSystenIcons(Common->hIconQuestion, OIC_QUES);
-   IntLoadSystenIcons(Common->hIconBang,     OIC_BANG);
-   IntLoadSystenIcons(Common->hIconNote,     OIC_NOTE);
-   IntLoadSystenIcons(gpsi->hIconWindows,    OIC_WINLOGO);
-   IntLoadSystenIcons(gpsi->hIconSmWindows,  OIC_WINLOGO+1);
+   IntLoadSystemIcons(Common->hIconSample,   OIC_SAMPLE);
+   IntLoadSystemIcons(Common->hIconHand,     OIC_HAND);
+   IntLoadSystemIcons(Common->hIconQuestion, OIC_QUES);
+   IntLoadSystemIcons(Common->hIconBang,     OIC_BANG);
+   IntLoadSystemIcons(Common->hIconNote,     OIC_NOTE);
+   IntLoadSystemIcons(gpsi->hIconWindows,    OIC_WINLOGO);
+   IntLoadSystemIcons(gpsi->hIconSmWindows,  OIC_WINLOGO+1);
 
    ERR("hIconSmWindows %p hIconWindows %p \n",gpsi->hIconSmWindows,gpsi->hIconWindows);
 

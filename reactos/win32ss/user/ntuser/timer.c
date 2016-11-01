@@ -384,7 +384,7 @@ SystemTimerSet( PWND Window,
   if (Window && Window->head.pti->pEThread->ThreadsProcess != PsGetCurrentProcess())
   {
      EngSetLastError(ERROR_ACCESS_DENIED);
-     TRACE("SysemTimerSet: Access Denied!\n");
+     TRACE("SystemTimerSet: Access Denied!\n");
      return 0;
   }
   return IntSetTimer( Window, nIDEvent, uElapse, lpTimerFunc, TMRF_SYSTEM);

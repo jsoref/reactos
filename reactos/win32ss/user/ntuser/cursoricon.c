@@ -134,7 +134,7 @@ IntRemoveCursorFromList(
 }
 
 VOID
-IntLoadSystenIcons(HICON hcur, DWORD id)
+IntLoadSystemIcons(HICON hcur, DWORD id)
 {
     PCURICON_OBJECT pcur;
     int i;

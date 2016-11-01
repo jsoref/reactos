@@ -116,7 +116,7 @@ VGAInitialize(PVOID DeviceExtension)
 //    VGAStartIO
 //
 //  DESCRIPTION:
-//    This function gets called in responce to GDI EngDeviceIoControl
+//    This function gets called in response to GDI EngDeviceIoControl
 //    calls.  Device requests are passed in VRPs.
 //      Required VRPs:
 //        IOCTL_VIDEO_QUERY_NUM_AVAIL_MODES

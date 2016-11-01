@@ -615,7 +615,7 @@ IntCreateRegistryPath(
     }
     else
     {
-        WARN_(VIDEOPRT, "Unparsable registry path %wZ\n", DriverRegistryPath);
+        WARN_(VIDEOPRT, "Unparseable registry path %wZ\n", DriverRegistryPath);
     }
 
     /* If path doesn't point to *ControlSet*, use DriverRegistryPath directly */

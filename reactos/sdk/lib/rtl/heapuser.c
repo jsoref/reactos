@@ -77,7 +77,7 @@ RtlpRemoveHeapFromProcessList(PHEAP Heap)
     }
 
     /* The process actually has more than one heap.
-       Use classic, lernt from university times algorithm for removing an entry
+       Use classic, learnt from university times algorithm for removing an entry
        from a static array */
 
     Current = (PHEAP *)&Peb->ProcessHeaps[Heap->ProcessHeapsListIndex - 1];

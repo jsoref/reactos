@@ -99,15 +99,15 @@ int WINAPI WinMain (HINSTANCE hInst, HINSTANCE hPrevInst,
     DdResetVisrgn            = (BOOL (APIENTRY*)(LPDDRAWI_DDRAWSURFACE_LCL, HWND))GetProcAddress(lib, "GdiEntry6");
 
 	printf("This apps showing how to start up directx draw/d3d interface and some other as well\n");
-	printf("This code have been releae to some close applactons with my premtions, if any company\n");
-    printf("want use part or whole code, you need contact the orginal author to ask for premtions\n");
-    printf("This code are release under alot of diffent licen\n");
-    printf("All GPL and LGPL project have right use and studing this code.\n");
-    printf("This code maybe need more comment to known how stuff working and maybe looking bit mesy\n");
+	printf("This code have been released to some close applications with my permissions, if any company\n");
+    printf("want use part or whole code, you need contact the original author to ask for permissions\n");
+    printf("This code are release under alot of different licenses.\n");
+    printf("All GPL and LGPL project have right use and studying this code.\n");
+    printf("This code maybe need more comment to known how stuff working and maybe looking bit messy\n");
 	printf("Bestreagds Magnus Olsen magnus@greatlord.com or greatlord@reactos.org\n");
     printf("Copyright 2006 by Magnus Olsen\n\n");
     printf("This demo showing how to  start dx draw hal and create a primary surface,\n");
-	printf("and a overlay sufrace and blt to the primary surface\n");
+	printf("and a overlay surface and blt to the primary surface\n");
 
 
     /*
@@ -145,7 +145,7 @@ int WINAPI WinMain (HINSTANCE hInst, HINSTANCE hPrevInst,
     }
 
     /*
-      Dectect RGB bit mask
+      Detect RGB bit mask
     */
     hbmp = CreateCompatibleBitmap(hdc, 1, 1);
     if (hbmp==NULL)
@@ -208,11 +208,11 @@ int WINAPI WinMain (HINSTANCE hInst, HINSTANCE hPrevInst,
 
 	mDDrawGlobal.dwRefCnt = 1; //addref / remove ref
 
-    // Do not relase HDC it have been map in kernel mode
+    // Do not release HDC it have been map in kernel mode
     // DeleteDC(hdc);
 
-    /* we need reanable it if screen res have changes, and some bad drv need be reanble very few
-	   to contiune */
+    /* we need reenable it if screen res have changes, and some bad drv need be reenable very few
+	   to continue */
 	/*
     if (!DdReenableDirectDrawObject(&mDDrawGlobal, &newmode))
     {
@@ -350,7 +350,7 @@ int WINAPI WinMain (HINSTANCE hInst, HINSTANCE hPrevInst,
 
   /* Hal insate is down now */
 
-  /* cleare surface code now*/
+  /* clear surface code now*/
 
   //  memset(&mGlobal, 0, sizeof(DDRAWI_DDRAWSURFACE_GBL));
   //  memset(&mMore,   0, sizeof(DDRAWI_DDRAWSURFACE_MORE));
@@ -361,9 +361,9 @@ int WINAPI WinMain (HINSTANCE hInst, HINSTANCE hPrevInst,
 
    mPrimaryLocal.lpSurfMore = &mPrimaryMore;
 
-  /* cleare surface ends now */
+  /* clear surface ends now */
 
-  /* create primare surface now */
+  /* create primary surface now */
 
    memset(&mddsdPrimary,   0, sizeof(DDSURFACEDESC));
    mddsdPrimary.dwSize      = sizeof(DDSURFACEDESC);
@@ -453,7 +453,7 @@ int WINAPI WinMain (HINSTANCE hInst, HINSTANCE hPrevInst,
   mDdBlt.lpDDDestSurface = mpPrimaryLocals[0];
 
 
-  /* create primare surface is down now */
+  /* create primary surface is down now */
 
   /* create overlay surface now */
 

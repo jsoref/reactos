@@ -177,7 +177,7 @@ LRESULT CALLBACK MainWndProc(HWND HWnd, UINT Msg, WPARAM WParam,
                // extract dimensions of the bitmap
                GetObject(HBmp, sizeof(BITMAP), &bmp);
 
-			   // fill the BITMAPINFO stucture for further use by StretchDIBits
+			   // fill the BITMAPINFO structure for further use by StretchDIBits
 			   bmInfo.bmiHeader.biSize = sizeof(BITMAPINFOHEADER);
 			   bmInfo.bmiHeader.biWidth = bmp.bmWidth;
 			   bmInfo.bmiHeader.biHeight = bmp.bmHeight;
@@ -251,14 +251,14 @@ LRESULT CALLBACK MainWndProc(HWND HWnd, UINT Msg, WPARAM WParam,
             // is zooming in?
             bool zoom_in = (new_width > RDest.right - RDest.left);
 
-            // caculate the area that needs to be updated
+            // calculate the area that needs to be updated
             RECT RUpdate = {
                RDest.left, RDest.top,
                RDest.left + max(new_width, RDest.right - RDest.left),
                RDest.top + max(new_height, RDest.bottom - RDest.top)
                };
 
-            // adjust the dimenstions of the
+            // adjust the dimensions of the
             // destination rectangle
             RDest.right = RDest.left + new_width;
             RDest.bottom = RDest.top + new_height;

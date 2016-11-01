@@ -377,21 +377,21 @@ LONG CRegistryKey::GetSubkeyCount(DWORD &rdwSubkeyCount)
 	return RegQueryInfoKeyW(m_hKey,NULL,NULL,NULL,&rdwSubkeyCount,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 }
 
-LONG CRegistryKey::GetMaxValueDataSize(DWORD& rdwMaxValueDataBuferSize)
+LONG CRegistryKey::GetMaxValueDataSize(DWORD& rdwMaxValueDataBufferSize)
 {
-	return RegQueryInfoKeyW(m_hKey,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,&rdwMaxValueDataBuferSize,NULL,NULL);
+	return RegQueryInfoKeyW(m_hKey,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,&rdwMaxValueDataBufferSize,NULL,NULL);
 }
 
-LONG CRegistryKey::GetMaxValueNameLength(DWORD& rdwMaxValueNameBuferSize)
+LONG CRegistryKey::GetMaxValueNameLength(DWORD& rdwMaxValueNameBufferSize)
 {
-  rdwMaxValueNameBuferSize = 0;
+  rdwMaxValueNameBufferSize = 0;
 
   if (!m_hKey)
     return 0; // the root key abstraction has only subkeys (hives)
 
-	LONG nError = RegQueryInfoKeyW(m_hKey,NULL,NULL,NULL,NULL,NULL,NULL,NULL,&rdwMaxValueNameBuferSize,NULL,NULL,NULL);
+	LONG nError = RegQueryInfoKeyW(m_hKey,NULL,NULL,NULL,NULL,NULL,NULL,NULL,&rdwMaxValueNameBufferSize,NULL,NULL,NULL);
 
-  rdwMaxValueNameBuferSize++;
+  rdwMaxValueNameBufferSize++;
   return nError;
 }
 
@@ -489,7 +489,7 @@ const TCHAR * CRegistryKey::GetValueTypeName(DWORD dwType)
 	case REG_RESOURCE_REQUIREMENTS_LIST:
 		return _T("REG_RESOURCE_REQUIREMENTS_LIST");
 	default:
-		return _T("Unkown Type");
+		return _T("Unknown Type");
 	}
 }
 

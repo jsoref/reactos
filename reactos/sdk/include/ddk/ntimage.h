@@ -262,7 +262,7 @@ typedef struct _IMAGE_FILE_HEADER {
 #define IMAGE_FILE_EXECUTABLE_IMAGE          0x0002
 #define IMAGE_FILE_LINE_NUMS_STRIPPED        0x0004
 #define IMAGE_FILE_LOCAL_SYMS_STRIPPED       0x0008
-#define IMAGE_FILE_AGGRESIVE_WS_TRIM         0x0010
+#define IMAGE_FILE_AGGRESSIVE_WS_TRIM         0x0010
 #define IMAGE_FILE_LARGE_ADDRESS_AWARE       0x0020
 #define IMAGE_FILE_BYTES_REVERSED_LO         0x0080
 #define IMAGE_FILE_32BIT_MACHINE             0x0100
@@ -422,7 +422,7 @@ typedef PIMAGE_NT_HEADERS32                 PIMAGE_NT_HEADERS;
 #endif /* _NTDDK_ */
 
 //
-// Retreives the first image section header from the Nt Header
+// Retrieves the first image section header from the Nt Header
 //
 #define IMAGE_FIRST_SECTION( NtHeader )                \
   ((PIMAGE_SECTION_HEADER) ((ULONG_PTR)(NtHeader) +    \

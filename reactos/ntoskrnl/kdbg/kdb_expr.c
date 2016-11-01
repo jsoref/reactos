@@ -400,7 +400,7 @@ RpnpTopStack(
  * \param Expression       String to parse.
  * \param CharacterOffset  Character offset of the subexpression from the beginning of the expression.
  * \param End              On success End is set to the character at which parsing stopped.
- * \param ErrOffset        On failure this is set to the character offset at which the error occoured.
+ * \param ErrOffset        On failure this is set to the character offset at which the error occurred.
  * \param ErrMsg           On failure a message describing the problem is copied into this buffer (128 bytes)
  *
  * \retval TRUE   Success.
@@ -872,7 +872,7 @@ get_operand:
  * \param Stack      Pointer to a RPN_STACK structure.
  * \param TrapFrame  Register values.
  * \param Result     Pointer to an ULONG to store the result into.
- * \param ErrOffset  On failure this is set to the character offset at which the error occoured.
+ * \param ErrOffset  On failure this is set to the character offset at which the error occurred.
  * \param ErrMsg     Buffer which receives an error message on failure (128 bytes)
  *
  * \retval TRUE   Success.

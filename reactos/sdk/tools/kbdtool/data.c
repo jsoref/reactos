@@ -230,7 +230,7 @@ SCVK ScVk[] =
     {0xe066, 0xab, "Speedracer: Browser Favorites", FALSE},
     {0xe067, 0xa8, "Speedracer: Browser Refresh", FALSE},
     {0xe068, 0xa9, "Speedracer: Browser Stop", FALSE},
-    {0xe069, 0xa7, "Speedracer: Browser Foward", FALSE},
+    {0xe069, 0xa7, "Speedracer: Browser Forward", FALSE},
     {0xe06a, 0xa6, "Speedracer: Browser Back", FALSE},
     {0xe06b, 0xb6, "Speedracer: Launch App 1", FALSE},
     {0xe06c, 0xb4, "Speedracer: Launch Mail", FALSE},

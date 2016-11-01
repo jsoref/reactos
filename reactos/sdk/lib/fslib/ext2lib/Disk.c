@@ -1146,7 +1146,7 @@ errorout:
 
 /*
  * Ext2GetMediaInfo
- *     Get volume gemmetry information ...
+ *     Get volume geometry information ...
  *
  * ARGUMENTS:
  *     VolumeHandle:    Volume handle.
@@ -1299,7 +1299,7 @@ Ext2OpenDevice(  PEXT2_FILESYS Ext2Sys,
 
     //
     // Do the create.  In this particular case, we'll have the I/O Manager
-    // make our write requests syncrhonous for our convenience.
+    // make our write requests synchronous for our convenience.
     //
     Status = NtCreateFile(&FileHandle,                      // returned file handle
                           (GENERIC_READ | GENERIC_WRITE | SYNCHRONIZE),    // desired access

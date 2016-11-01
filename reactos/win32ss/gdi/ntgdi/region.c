@@ -1618,7 +1618,7 @@ REGION_SubtractO(
         }
         else if (r2->left <= left)
         {
-            /* Subtrahend preceeds minuend: nuke left edge of minuend. */
+            /* Subtrahend precedes minuend: nuke left edge of minuend. */
             left = r2->right;
             if (left >= r1->right)
             {

@@ -53,7 +53,7 @@ void test_CallNtPowerInformation(void)
    retval = CallNtPowerInformation(AdministratorPowerPolicy, 0, 0, &apolicy, sizeof(ADMINISTRATOR_POWER_POLICY));
    ok(retval == STATUS_SUCCESS, "function expected STATUS_SUCCESS but got %d\n", (UINT)retval);
    retval = CallNtPowerInformation(AdministratorPowerPolicy, &apolicy, sizeof(ADMINISTRATOR_POWER_POLICY), 0, 0);
-   ok(retval != STATUS_PRIVILEGE_NOT_HELD, "Privileg not held!!!! more errors to expect\n");
+   ok(retval != STATUS_PRIVILEGE_NOT_HELD, "Privilege not held!!!! more errors to expect\n");
    ok(retval == STATUS_SUCCESS, "function expected STATUS_SUCCESS but got %d\n", (UINT)retval);
 
    /* LastSleepTime tests */
@@ -339,7 +339,7 @@ void test_DeletePwrScheme(void)
 
 
    /*
-    *  try inexistant profile number, should fail
+    *  try nonexistent profile number, should fail
     */
 
    retval = DeletePwrScheme(0xFFFFFFFF);
@@ -357,7 +357,7 @@ void test_DeletePwrScheme(void)
    ok(GetLastError() == ERROR_ACCESS_DENIED, "function should have failed with ERROR_ACCESS_DENIED but got %x\n", (UINT)GetLastError());
 
    /*
-    * delete a temporarly created power scheme
+    * delete a temporarily created power scheme
     */
    retval = DeletePwrScheme(g_TempPwrScheme);
    ok(retval, "function should have succeeded\n");
@@ -403,7 +403,7 @@ void test_EnumPwrSchemes(void)
    ok(!retval, "function was expected to false\n");
 
    /*
-    *  enumerate half of all avalailble profiles
+    *  enumerate half of all available profiles
     */
 
    g_NumPwrSchemesEnumerated = 0;
@@ -430,7 +430,7 @@ void test_GetSetActivePwrScheme(void)
    ok(retval <= g_NumPwrSchemes, "expected index lower as power scheme count %d but got %d\n", g_NumPwrSchemes, g_ActivePwrScheme);
 
    /*
-    *  sets active power scheme to inexistant profile
+    *  sets active power scheme to nonexistent profile
     * -> corrupts power scheme enumeration on Windows XP SP2
     */
    //corrupts registry
@@ -546,7 +546,7 @@ void test_GetPwrCapabilities(void)
    ok(!ret, "function was expected to fail\n");
    if (!ret)
    {
-      ok(GetLastError() == ERROR_INVALID_PARAMETER,"function was expectet to return ERROR_INVALID_PARAMETER, but returns: %x\n",(UINT)GetLastError());
+      ok(GetLastError() == ERROR_INVALID_PARAMETER,"function was expected to return ERROR_INVALID_PARAMETER, but returns: %x\n",(UINT)GetLastError());
    }
    ret = GetPwrCapabilities(&spc);
    ok(ret, "function was expected to succeed, error %x\n",(UINT)GetLastError());
@@ -642,7 +642,7 @@ void test_IsPwrSuspendAllowed(void)
         BOOLEAN ret;
 
         ret = IsPwrSuspendAllowed();
-        ok(ret, "function was expected to succed, error %x\n",(UINT)GetLastError());
+        ok(ret, "function was expected to succeed, error %x\n",(UINT)GetLastError());
  */
 }
 
@@ -4825,7 +4825,7 @@ void test_WritePwrScheme(void)
    static const WCHAR szTestSchemeDesc[] = {'P','o','w','r','p','r','o','f',' ','S','c','h','e','m','e',0};
 
    /*
-    * create a temporarly profile, will be deleted in test_DeletePwrScheme
+    * create a temporarily profile, will be deleted in test_DeletePwrScheme
     */
 
    retval = WritePwrScheme(&g_TempPwrScheme, (LPWSTR)szTestSchemeName, (LPWSTR)szTestSchemeDesc, &g_PowerPolicy);

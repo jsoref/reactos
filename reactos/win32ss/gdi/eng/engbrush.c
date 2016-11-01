@@ -273,7 +273,7 @@ FixupDIBBrushPalette(
                                    0);
     if (ppalNew == NULL)
     {
-        ERR("Failed to allcate palette for brush\n");
+        ERR("Failed to allocate palette for brush\n");
         return NULL;
     }
 

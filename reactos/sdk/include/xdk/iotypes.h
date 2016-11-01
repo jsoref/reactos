@@ -227,7 +227,7 @@ $if (_WDMDDK_)
 #define DO_DEVICE_INITIALIZING            0x00000080
 #define DO_SHUTDOWN_REGISTERED            0x00000800
 #define DO_BUS_ENUMERATED_DEVICE          0x00001000
-#define DO_POWER_PAGABLE                  0x00002000
+#define DO_POWER_PAGEABLE                  0x00002000
 #define DO_POWER_INRUSH                   0x00004000
 
 /* DEVICE_OBJECT.Characteristics */

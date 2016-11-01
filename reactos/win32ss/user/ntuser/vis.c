@@ -36,7 +36,7 @@ VIS_ComputeVisibleRegion(
    }
 
    /*
-    * Walk through all parent windows and for each clip the visble region
+    * Walk through all parent windows and for each clip the visible region
     * to the parent's client area and exclude all siblings that are over
     * our window.
     */

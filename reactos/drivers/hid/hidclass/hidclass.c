@@ -102,7 +102,7 @@ HidClassAddDevice(
     NewDeviceObject->StackSize++;
 
     /* init device object */
-    NewDeviceObject->Flags |= DO_BUFFERED_IO | DO_POWER_PAGABLE;
+    NewDeviceObject->Flags |= DO_BUFFERED_IO | DO_POWER_PAGEABLE;
     NewDeviceObject->Flags  &= ~DO_DEVICE_INITIALIZING;
 
     /* now call driver provided add device routine */

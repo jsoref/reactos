@@ -1214,7 +1214,7 @@ MouHid_AddDevice(
     PoSetPowerState(DeviceObject, DevicePowerState, State);
 
     /* init device object */
-    DeviceObject->Flags |= DO_BUFFERED_IO | DO_POWER_PAGABLE;
+    DeviceObject->Flags |= DO_BUFFERED_IO | DO_POWER_PAGEABLE;
     DeviceObject->Flags  &= ~DO_DEVICE_INITIALIZING;
 
     /* completed successfully */

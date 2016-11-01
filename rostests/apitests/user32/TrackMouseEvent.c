@@ -258,7 +258,7 @@ MSG_ENTRY mouseleave3to2_dropmousell_chain[]={{0, WH_MOUSE_LL, HOOK, WM_MOUSEMOV
                                              {0,0}};
 
 /* after WH_MOUSE drops WM_MOUSEMOVE, WM_MOUSELEAVE is still in the queue */
-MSG_ENTRY mouseleave3_remainging_chain[]={{3, WM_MOUSELEAVE, POST},
+MSG_ENTRY mouseleave3_remaining_chain[]={{3, WM_MOUSELEAVE, POST},
                                           {0,0}};
 
 void Test_TrackMouseEvent()
@@ -385,7 +385,7 @@ void Test_TrackMouseEvent()
     EXPECT_TME_FLAGS(hWnd3, TME_HOVER|TME_LEAVE);
     FLUSH_MESSAGES(QS_TIMER, QS_MOUSEMOVE);         /* WH_MOUSE_LL drops WM_MOUSEMOVE */
     EXPECT_TME_FLAGS(hWnd3, TME_LEAVE);           
-    COMPARE_CACHE(mousehover3_dropmousell_chain);   /* we get WM_MOUSEHOVER normaly */
+    COMPARE_CACHE(mousehover3_dropmousell_chain);   /* we get WM_MOUSEHOVER normally */
     ignore_mousell = FALSE;
 
     FlushMessages();
@@ -399,7 +399,7 @@ void Test_TrackMouseEvent()
     EXPECT_TME_FLAGS(hWnd3, TME_HOVER|TME_LEAVE);
     FLUSH_MESSAGES(QS_TIMER|QS_MOUSEMOVE, 0);     /* WH_MOUSE drops WM_MOUSEMOVE */
     EXPECT_TME_FLAGS(hWnd3, TME_LEAVE);           
-    COMPARE_CACHE(mousehover3_dropmouse_chain);   /* we get WM_MOUSEHOVER normaly */
+    COMPARE_CACHE(mousehover3_dropmouse_chain);   /* we get WM_MOUSEHOVER normally */
     ignore_mouse = FALSE;
 
     FlushMessages();
@@ -427,7 +427,7 @@ void Test_TrackMouseEvent()
 
     /* after WH_MOUSE drops WM_MOUSEMOVE, WM_MOUSELEAVE is still in the queue */
     FLUSH_MESSAGES(QS_POSTMESSAGE, QS_TIMER|QS_MOUSEMOVE);
-    COMPARE_CACHE(mouseleave3_remainging_chain);
+    COMPARE_CACHE(mouseleave3_remaining_chain);
 
     FlushMessages();
     COMPARE_CACHE(empty_chain);

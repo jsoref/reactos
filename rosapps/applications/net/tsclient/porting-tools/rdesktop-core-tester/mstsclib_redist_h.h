@@ -3033,11 +3033,11 @@ EXTERN_C const IID IID_IMsTscAdvancedSettings;
         virtual /* [propget][id] */ HRESULT STDMETHODCALLTYPE get_Compress(
             /* [retval][out] */ long *pcompress) = 0;
 
-        virtual /* [propput][id] */ HRESULT STDMETHODCALLTYPE put_BitmapPeristence(
-            /* [in] */ long pbitmapPeristence) = 0;
+        virtual /* [propput][id] */ HRESULT STDMETHODCALLTYPE put_BitmapPersistence(
+            /* [in] */ long pbitmapPersistence) = 0;
 
-        virtual /* [propget][id] */ HRESULT STDMETHODCALLTYPE get_BitmapPeristence(
-            /* [retval][out] */ long *pbitmapPeristence) = 0;
+        virtual /* [propget][id] */ HRESULT STDMETHODCALLTYPE get_BitmapPersistence(
+            /* [retval][out] */ long *pbitmapPersistence) = 0;
 
         virtual /* [propput][id] */ HRESULT STDMETHODCALLTYPE put_allowBackgroundInput(
             /* [in] */ long pallowBackgroundInput) = 0;
@@ -3126,13 +3126,13 @@ EXTERN_C const IID IID_IMsTscAdvancedSettings;
             IMsTscAdvancedSettings * This,
             /* [retval][out] */ long *pcompress);
 
-        /* [propput][id] */ HRESULT ( STDMETHODCALLTYPE *put_BitmapPeristence )(
+        /* [propput][id] */ HRESULT ( STDMETHODCALLTYPE *put_BitmapPersistence )(
             IMsTscAdvancedSettings * This,
-            /* [in] */ long pbitmapPeristence);
+            /* [in] */ long pbitmapPersistence);
 
-        /* [propget][id] */ HRESULT ( STDMETHODCALLTYPE *get_BitmapPeristence )(
+        /* [propget][id] */ HRESULT ( STDMETHODCALLTYPE *get_BitmapPersistence )(
             IMsTscAdvancedSettings * This,
-            /* [retval][out] */ long *pbitmapPeristence);
+            /* [retval][out] */ long *pbitmapPersistence);
 
         /* [propput][id] */ HRESULT ( STDMETHODCALLTYPE *put_allowBackgroundInput )(
             IMsTscAdvancedSettings * This,
@@ -3216,11 +3216,11 @@ EXTERN_C const IID IID_IMsTscAdvancedSettings;
 #define IMsTscAdvancedSettings_get_Compress(This,pcompress)	\
     ( (This)->lpVtbl -> get_Compress(This,pcompress) )
 
-#define IMsTscAdvancedSettings_put_BitmapPeristence(This,pbitmapPeristence)	\
-    ( (This)->lpVtbl -> put_BitmapPeristence(This,pbitmapPeristence) )
+#define IMsTscAdvancedSettings_put_BitmapPersistence(This,pbitmapPersistence)	\
+    ( (This)->lpVtbl -> put_BitmapPersistence(This,pbitmapPersistence) )
 
-#define IMsTscAdvancedSettings_get_BitmapPeristence(This,pbitmapPeristence)	\
-    ( (This)->lpVtbl -> get_BitmapPeristence(This,pbitmapPeristence) )
+#define IMsTscAdvancedSettings_get_BitmapPersistence(This,pbitmapPersistence)	\
+    ( (This)->lpVtbl -> get_BitmapPersistence(This,pbitmapPersistence) )
 
 #define IMsTscAdvancedSettings_put_allowBackgroundInput(This,pallowBackgroundInput)	\
     ( (This)->lpVtbl -> put_allowBackgroundInput(This,pallowBackgroundInput) )
@@ -3686,13 +3686,13 @@ EXTERN_C const IID IID_IMsRdpClientAdvancedSettings;
             IMsRdpClientAdvancedSettings * This,
             /* [retval][out] */ long *pcompress);
 
-        /* [propput][id] */ HRESULT ( STDMETHODCALLTYPE *put_BitmapPeristence )(
+        /* [propput][id] */ HRESULT ( STDMETHODCALLTYPE *put_BitmapPersistence )(
             IMsRdpClientAdvancedSettings * This,
-            /* [in] */ long pbitmapPeristence);
+            /* [in] */ long pbitmapPersistence);
 
-        /* [propget][id] */ HRESULT ( STDMETHODCALLTYPE *get_BitmapPeristence )(
+        /* [propget][id] */ HRESULT ( STDMETHODCALLTYPE *get_BitmapPersistence )(
             IMsRdpClientAdvancedSettings * This,
-            /* [retval][out] */ long *pbitmapPeristence);
+            /* [retval][out] */ long *pbitmapPersistence);
 
         /* [propput][id] */ HRESULT ( STDMETHODCALLTYPE *put_allowBackgroundInput )(
             IMsRdpClientAdvancedSettings * This,
@@ -4244,11 +4244,11 @@ EXTERN_C const IID IID_IMsRdpClientAdvancedSettings;
 #define IMsRdpClientAdvancedSettings_get_Compress(This,pcompress)	\
     ( (This)->lpVtbl -> get_Compress(This,pcompress) )
 
-#define IMsRdpClientAdvancedSettings_put_BitmapPeristence(This,pbitmapPeristence)	\
-    ( (This)->lpVtbl -> put_BitmapPeristence(This,pbitmapPeristence) )
+#define IMsRdpClientAdvancedSettings_put_BitmapPersistence(This,pbitmapPersistence)	\
+    ( (This)->lpVtbl -> put_BitmapPersistence(This,pbitmapPersistence) )
 
-#define IMsRdpClientAdvancedSettings_get_BitmapPeristence(This,pbitmapPeristence)	\
-    ( (This)->lpVtbl -> get_BitmapPeristence(This,pbitmapPeristence) )
+#define IMsRdpClientAdvancedSettings_get_BitmapPersistence(This,pbitmapPersistence)	\
+    ( (This)->lpVtbl -> get_BitmapPersistence(This,pbitmapPersistence) )
 
 #define IMsRdpClientAdvancedSettings_put_allowBackgroundInput(This,pallowBackgroundInput)	\
     ( (This)->lpVtbl -> put_allowBackgroundInput(This,pallowBackgroundInput) )
@@ -4850,13 +4850,13 @@ EXTERN_C const IID IID_IMsRdpClientAdvancedSettings2;
             IMsRdpClientAdvancedSettings2 * This,
             /* [retval][out] */ long *pcompress);
 
-        /* [propput][id] */ HRESULT ( STDMETHODCALLTYPE *put_BitmapPeristence )(
+        /* [propput][id] */ HRESULT ( STDMETHODCALLTYPE *put_BitmapPersistence )(
             IMsRdpClientAdvancedSettings2 * This,
-            /* [in] */ long pbitmapPeristence);
+            /* [in] */ long pbitmapPersistence);
 
-        /* [propget][id] */ HRESULT ( STDMETHODCALLTYPE *get_BitmapPeristence )(
+        /* [propget][id] */ HRESULT ( STDMETHODCALLTYPE *get_BitmapPersistence )(
             IMsRdpClientAdvancedSettings2 * This,
-            /* [retval][out] */ long *pbitmapPeristence);
+            /* [retval][out] */ long *pbitmapPersistence);
 
         /* [propput][id] */ HRESULT ( STDMETHODCALLTYPE *put_allowBackgroundInput )(
             IMsRdpClientAdvancedSettings2 * This,
@@ -5428,11 +5428,11 @@ EXTERN_C const IID IID_IMsRdpClientAdvancedSettings2;
 #define IMsRdpClientAdvancedSettings2_get_Compress(This,pcompress)	\
     ( (This)->lpVtbl -> get_Compress(This,pcompress) )
 
-#define IMsRdpClientAdvancedSettings2_put_BitmapPeristence(This,pbitmapPeristence)	\
-    ( (This)->lpVtbl -> put_BitmapPeristence(This,pbitmapPeristence) )
+#define IMsRdpClientAdvancedSettings2_put_BitmapPersistence(This,pbitmapPersistence)	\
+    ( (This)->lpVtbl -> put_BitmapPersistence(This,pbitmapPersistence) )
 
-#define IMsRdpClientAdvancedSettings2_get_BitmapPeristence(This,pbitmapPeristence)	\
-    ( (This)->lpVtbl -> get_BitmapPeristence(This,pbitmapPeristence) )
+#define IMsRdpClientAdvancedSettings2_get_BitmapPersistence(This,pbitmapPersistence)	\
+    ( (This)->lpVtbl -> get_BitmapPersistence(This,pbitmapPersistence) )
 
 #define IMsRdpClientAdvancedSettings2_put_allowBackgroundInput(This,pallowBackgroundInput)	\
     ( (This)->lpVtbl -> put_allowBackgroundInput(This,pallowBackgroundInput) )
@@ -5987,13 +5987,13 @@ EXTERN_C const IID IID_IMsRdpClientAdvancedSettings3;
             IMsRdpClientAdvancedSettings3 * This,
             /* [retval][out] */ long *pcompress);
 
-        /* [propput][id] */ HRESULT ( STDMETHODCALLTYPE *put_BitmapPeristence )(
+        /* [propput][id] */ HRESULT ( STDMETHODCALLTYPE *put_BitmapPersistence )(
             IMsRdpClientAdvancedSettings3 * This,
-            /* [in] */ long pbitmapPeristence);
+            /* [in] */ long pbitmapPersistence);
 
-        /* [propget][id] */ HRESULT ( STDMETHODCALLTYPE *get_BitmapPeristence )(
+        /* [propget][id] */ HRESULT ( STDMETHODCALLTYPE *get_BitmapPersistence )(
             IMsRdpClientAdvancedSettings3 * This,
-            /* [retval][out] */ long *pbitmapPeristence);
+            /* [retval][out] */ long *pbitmapPersistence);
 
         /* [propput][id] */ HRESULT ( STDMETHODCALLTYPE *put_allowBackgroundInput )(
             IMsRdpClientAdvancedSettings3 * This,
@@ -6581,11 +6581,11 @@ EXTERN_C const IID IID_IMsRdpClientAdvancedSettings3;
 #define IMsRdpClientAdvancedSettings3_get_Compress(This,pcompress)	\
     ( (This)->lpVtbl -> get_Compress(This,pcompress) )
 
-#define IMsRdpClientAdvancedSettings3_put_BitmapPeristence(This,pbitmapPeristence)	\
-    ( (This)->lpVtbl -> put_BitmapPeristence(This,pbitmapPeristence) )
+#define IMsRdpClientAdvancedSettings3_put_BitmapPersistence(This,pbitmapPersistence)	\
+    ( (This)->lpVtbl -> put_BitmapPersistence(This,pbitmapPersistence) )
 
-#define IMsRdpClientAdvancedSettings3_get_BitmapPeristence(This,pbitmapPeristence)	\
-    ( (This)->lpVtbl -> get_BitmapPeristence(This,pbitmapPeristence) )
+#define IMsRdpClientAdvancedSettings3_get_BitmapPersistence(This,pbitmapPersistence)	\
+    ( (This)->lpVtbl -> get_BitmapPersistence(This,pbitmapPersistence) )
 
 #define IMsRdpClientAdvancedSettings3_put_allowBackgroundInput(This,pallowBackgroundInput)	\
     ( (This)->lpVtbl -> put_allowBackgroundInput(This,pallowBackgroundInput) )
@@ -7135,13 +7135,13 @@ EXTERN_C const IID IID_IMsRdpClientAdvancedSettings4;
             IMsRdpClientAdvancedSettings4 * This,
             /* [retval][out] */ long *pcompress);
 
-        /* [propput][id] */ HRESULT ( STDMETHODCALLTYPE *put_BitmapPeristence )(
+        /* [propput][id] */ HRESULT ( STDMETHODCALLTYPE *put_BitmapPersistence )(
             IMsRdpClientAdvancedSettings4 * This,
-            /* [in] */ long pbitmapPeristence);
+            /* [in] */ long pbitmapPersistence);
 
-        /* [propget][id] */ HRESULT ( STDMETHODCALLTYPE *get_BitmapPeristence )(
+        /* [propget][id] */ HRESULT ( STDMETHODCALLTYPE *get_BitmapPersistence )(
             IMsRdpClientAdvancedSettings4 * This,
-            /* [retval][out] */ long *pbitmapPeristence);
+            /* [retval][out] */ long *pbitmapPersistence);
 
         /* [propput][id] */ HRESULT ( STDMETHODCALLTYPE *put_allowBackgroundInput )(
             IMsRdpClientAdvancedSettings4 * This,
@@ -7737,11 +7737,11 @@ EXTERN_C const IID IID_IMsRdpClientAdvancedSettings4;
 #define IMsRdpClientAdvancedSettings4_get_Compress(This,pcompress)	\
     ( (This)->lpVtbl -> get_Compress(This,pcompress) )
 
-#define IMsRdpClientAdvancedSettings4_put_BitmapPeristence(This,pbitmapPeristence)	\
-    ( (This)->lpVtbl -> put_BitmapPeristence(This,pbitmapPeristence) )
+#define IMsRdpClientAdvancedSettings4_put_BitmapPersistence(This,pbitmapPersistence)	\
+    ( (This)->lpVtbl -> put_BitmapPersistence(This,pbitmapPersistence) )
 
-#define IMsRdpClientAdvancedSettings4_get_BitmapPeristence(This,pbitmapPeristence)	\
-    ( (This)->lpVtbl -> get_BitmapPeristence(This,pbitmapPeristence) )
+#define IMsRdpClientAdvancedSettings4_get_BitmapPersistence(This,pbitmapPersistence)	\
+    ( (This)->lpVtbl -> get_BitmapPersistence(This,pbitmapPersistence) )
 
 #define IMsRdpClientAdvancedSettings4_put_allowBackgroundInput(This,pallowBackgroundInput)	\
     ( (This)->lpVtbl -> put_allowBackgroundInput(This,pallowBackgroundInput) )

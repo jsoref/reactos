@@ -440,7 +440,7 @@ MiAddMappedPtes(IN PMMPTE FirstPte,
     PointerPte = FirstPte;
     LastPte = FirstPte + PteCount;
 
-    /* Get the prototype PTEs that desribe the section mapping in the subsection */
+    /* Get the prototype PTEs that describe the section mapping in the subsection */
     Subsection = (PSUBSECTION)(ControlArea + 1);
     ProtoPte = Subsection->SubsectionBase;
     LastProtoPte = &Subsection->SubsectionBase[Subsection->PtesInSubsection];
@@ -1130,7 +1130,7 @@ MiMapViewInSystemSpace(IN PVOID Section,
                              ControlArea);
     ASSERT(NT_SUCCESS(Status));
 
-    /* Return the base adress of the mapping and success */
+    /* Return the base address of the mapping and success */
     *MappedBase = Base;
     return STATUS_SUCCESS;
 }
@@ -1536,7 +1536,7 @@ MiCreatePagingFileMap(OUT PSEGMENT *Segment,
     /* Calculate how many Prototype PTEs will be needed */
     PteCount = (PFN_COUNT)((*MaximumSize + PAGE_SIZE - 1) >> PAGE_SHIFT);
 
-    /* For commited memory, we must have a valid protection mask */
+    /* For committed memory, we must have a valid protection mask */
     if (AllocationAttributes & SEC_COMMIT) ASSERT(ProtectionMask != 0);
 
     /* The segment contains all the Prototype PTEs, allocate it in paged pool */
@@ -1553,7 +1553,7 @@ MiCreatePagingFileMap(OUT PSEGMENT *Segment,
                                         'tCmM');
     ASSERT(ControlArea);
 
-    /* And zero it out, filling the basic segmnet pointer and reference fields */
+    /* And zero it out, filling the basic segment pointer and reference fields */
     RtlZeroMemory(ControlArea, sizeof(CONTROL_AREA) + sizeof(SUBSECTION));
     ControlArea->Segment = NewSegment;
     ControlArea->NumberOfSectionReferences = 1;
@@ -2948,7 +2948,7 @@ MmUnmapViewInSessionSpace(IN PVOID MappedBase)
     /* Process must be in a session */
     if (PsGetCurrentProcess()->ProcessInSession == FALSE)
     {
-        DPRINT1("Proess is not in session\n");
+        DPRINT1("Process is not in session\n");
         return STATUS_NOT_MAPPED_VIEW;
     }
 
@@ -3083,7 +3083,7 @@ MmCommitSessionMappedView(IN PVOID MappedBase,
     if (ControlArea->FilePointer != NULL)
     {
         /* It is, so we have to bail out */
-        DPRINT1("Only page-filed backed sections can be commited\n");
+        DPRINT1("Only page-filed backed sections can be committed\n");
         KeReleaseGuardedMutex(Session->SystemSpaceViewLockPointer);
         return STATUS_ALREADY_COMMITTED;
     }

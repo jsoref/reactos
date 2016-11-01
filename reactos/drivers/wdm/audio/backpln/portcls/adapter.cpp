@@ -151,7 +151,7 @@ PcAddAdapterDevice(
     IoStartTimer(fdo);
 
     // set io flags
-    fdo->Flags |= DO_DIRECT_IO | DO_POWER_PAGABLE;
+    fdo->Flags |= DO_DIRECT_IO | DO_POWER_PAGEABLE;
     // clear initializing flag
     fdo->Flags &= ~ DO_DEVICE_INITIALIZING;
 

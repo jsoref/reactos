@@ -67,8 +67,8 @@ AddDeviceInternal(IN PDRIVER_OBJECT DriverObject,
         goto done;
     }
 
-    if (DeviceExtension->LowerDevice->Flags & DO_POWER_PAGABLE)
-        Fdo->Flags |= DO_POWER_PAGABLE;
+    if (DeviceExtension->LowerDevice->Flags & DO_POWER_PAGEABLE)
+        Fdo->Flags |= DO_POWER_PAGEABLE;
 
     if (DeviceExtension->LowerDevice->Flags & DO_BUFFERED_IO)
         Fdo->Flags |= DO_BUFFERED_IO;
@@ -186,7 +186,7 @@ FdoStartDevice(IN PDEVICE_OBJECT DeviceObject,
                 break;
 
             default:
-                DPRINT1("Other ressource: \n");
+                DPRINT1("Other resource: \n");
                 break;
         }
     }
@@ -255,7 +255,7 @@ FdoCreateRawParallelPdo(
     }
 
     Pdo->Flags |= DO_BUS_ENUMERATED_DEVICE;
-    Pdo->Flags |= DO_POWER_PAGABLE;
+    Pdo->Flags |= DO_POWER_PAGEABLE;
 
     PdoDeviceExtension = (PPDO_DEVICE_EXTENSION)Pdo->DeviceExtension;
     RtlZeroMemory(PdoDeviceExtension, sizeof(PDO_DEVICE_EXTENSION));

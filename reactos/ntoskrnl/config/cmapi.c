@@ -414,7 +414,7 @@ CmpQueryKeyData(IN PHHIVE Hive,
             *ResultLength = Size;
             Status = STATUS_SUCCESS;
 
-            /* Check if the bufer we got is too small */
+            /* Check if the buffer we got is too small */
             if (Length < MinimumSize)
             {
                 /* Let the caller know and fail */
@@ -556,7 +556,7 @@ CmpQueryKeyData(IN PHHIVE Hive,
             }
             break;
 
-        /* Full information requsted */
+        /* Full information requested */
         case KeyFullInformation:
 
             /* This is the size we need */
@@ -1476,7 +1476,7 @@ CmpQueryKeyDataFromCache(
     }
     else if (Kcb->ExtFlags & CM_KCB_SUBKEY_ONE)
     {
-        /* There is exactly one subley */
+        /* There is exactly one subkey */
         KeyCachedInfo->SubKeys = 1;
     }
     else if (Kcb->ExtFlags & CM_KCB_SUBKEY_HINT)
@@ -2277,7 +2277,7 @@ CmCountOpenSubKeys(IN PCM_KEY_CONTROL_BLOCK RootKcb,
 
     DPRINT("CmCountOpenSubKeys() called\n");
 
-    /* The root key is the only referenced key. There are no refereced sub keys. */
+    /* The root key is the only referenced key. There are no referenced sub keys. */
     if (RootKcb->RefCount == 1)
     {
         DPRINT("open sub keys: 0\n");

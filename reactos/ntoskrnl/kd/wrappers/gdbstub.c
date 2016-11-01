@@ -487,7 +487,7 @@ GspGetRegisters(PCHAR Address, PKTRAP_FRAME TrapFrame)
             else if (i == PC)
             {
                 /*
-                 * This thread has not been sheduled yet so assume it
+                 * This thread has not been scheduled yet so assume it
                  * is still in PsBeginThreadWithContextInternal().
                  */
                 Value = (ULONG)KiThreadStartup;
@@ -1197,7 +1197,7 @@ GspStopReply(NTSTATUS ExceptionCode, PKTRAP_FRAME TrapFrame)
 }
 
 /*
- * This function does all command procesing for interfacing to GDB.
+ * This function does all command processing for interfacing to GDB.
  */
 KD_CONTINUE_TYPE
 NTAPI

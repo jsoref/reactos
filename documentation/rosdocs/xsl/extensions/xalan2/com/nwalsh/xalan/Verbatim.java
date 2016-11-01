@@ -380,7 +380,7 @@ public class Verbatim {
    * <tt>areaset</tt> get the same number.</p>
    *
    * <p>Only the <tt>linecolumn</tt> and <tt>linerange</tt> units are
-   * supported. If no unit is specifed, <tt>linecolumn</tt> is assumed.
+   * supported. If no unit is specified, <tt>linecolumn</tt> is assumed.
    * If only a line is specified, the callout decoration appears in
    * the defaultColumn. Lines will be padded with blanks to reach the
    * necessary column, but callouts that are located beyond the last
@@ -419,7 +419,7 @@ public class Verbatim {
    * parenthesis.</p>
    *
    * <p>Only the <tt>linecolumn</tt> and <tt>linerange</tt> units are
-   * supported. If no unit is specifed, <tt>linecolumn</tt> is assumed.
+   * supported. If no unit is specified, <tt>linecolumn</tt> is assumed.
    * If only a line is specified, the callout decoration appears in
    * the defaultColumn. Lines will be padded with blanks to reach the
    * necessary column, but callouts that are located beyond the last
@@ -722,7 +722,7 @@ public class Verbatim {
    * the global callout array if it can be interpreted.</p>
    *
    * <p>Only the <tt>linecolumn</tt> and <tt>linerange</tt> units are
-   * supported. If no unit is specifed, <tt>linecolumn</tt> is assumed.
+   * supported. If no unit is specified, <tt>linecolumn</tt> is assumed.
    * If only a line is specified, the callout decoration appears in
    * the <tt>defaultColumn</tt>.</p>
    *
@@ -821,7 +821,7 @@ public class Verbatim {
    *
    * <p>This method adds <tt>numBlanks</tt> to the result tree fragment.
    * It's used to pad lines when callouts occur after the last existing
-   * characater in a line.</p>
+   * character in a line.</p>
    *
    * @param rtf The resulting verbatim environment with numbered lines.
    * @param numBlanks The number of blanks to add.
@@ -888,8 +888,8 @@ public class Verbatim {
       NamedNodeMap domAttr = elem.getAttributes();
 
       AttributesImpl attr = new AttributesImpl();
-      for (int acount = 0; acount < domAttr.getLength(); acount++) {
-	Node a = domAttr.item(acount);
+      for (int account = 0; account < domAttr.getLength(); account++) {
+	Node a = domAttr.item(account);
 
 	if (((ns == null || ns == "http://www.w3.org/1999/xhtml")
 	     && localName.equalsIgnoreCase("a"))

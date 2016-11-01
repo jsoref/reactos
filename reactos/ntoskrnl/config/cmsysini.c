@@ -679,7 +679,7 @@ UseSet:
         /* Check if we failed or got a non DWORD-value */
         if (!(NT_SUCCESS(Status)) || (ValueInfo->Type != REG_DWORD)) goto Cleanup;
 
-        /* Get the hadware profile */
+        /* Get the hardware profile */
         HwProfile = *(PULONG)((PUCHAR)ValueInfo + ValueInfo->DataOffset);
     }
 
@@ -1173,7 +1173,7 @@ CmpCreateRegistryRoot(VOID)
         return FALSE;
     }
 
-    /* Completely sucessful */
+    /* Completely successful */
     return TRUE;
 }
 
@@ -1953,7 +1953,7 @@ CmpLockRegistry(VOID)
     /* Check if we have to starve writers */
     if (CmpFlushStarveWriters)
     {
-        /* Starve exlusive waiters */
+        /* Starve exclusive waiters */
         ExAcquireSharedStarveExclusive(&CmpRegistryLock, TRUE);
     }
     else

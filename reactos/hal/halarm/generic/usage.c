@@ -41,7 +41,7 @@ HalpRegisterVector(IN UCHAR Flags,
 
     /* Save the vector data */
     HalpIDTUsage[SystemVector].Irql  = Irql;
-    HalpIDTUsage[SystemVector].BusReleativeVector = BusVector;
+    HalpIDTUsage[SystemVector].BusRelativeVector = BusVector;
 }
 
 VOID

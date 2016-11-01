@@ -58,7 +58,7 @@ How to create an ISO image file and a bootable CD.
 <sect2>
 <title>Directory structure</title>
 <para>
-To create a bootable CD all required components must be copied into a separate directory to write them onto the CD. At present, this root directory will be created in your local cvs root directory. For example, if you checked-out the reactos and freeldr modules to 'c:\cvs' the new root directoy will be 'c:\cvs\bootcd'. The directory layout looks like this:
+To create a bootable CD all required components must be copied into a separate directory to write them onto the CD. At present, this root directory will be created in your local cvs root directory. For example, if you checked-out the reactos and freeldr modules to 'c:\cvs' the new root directory will be 'c:\cvs\bootcd'. The directory layout looks like this:
 </para>
 
 <para>
@@ -125,7 +125,7 @@ Start your CD recording application and write the ISO image file 'ReactOS.iso' o
 <sect2>
 <title>Booting ReactOS from the CD</title>
 <para>
-I assume you already know how to boot your computer from a CD. If not, ask your local guru, seach the web or read the manual.
+I assume you already know how to boot your computer from a CD. If not, ask your local guru, search the web or read the manual.
 </para>
 </sect2>
 </chapter>

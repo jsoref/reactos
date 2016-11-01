@@ -779,7 +779,7 @@ FTPStartDataCmd(const FTPCIPtr cip, int netMode, int type, longest_int startPoin
 	/* Re-set the cancellation flag. */
 	cip->cancelXfer = 0;
 
-	/* To transfer data, we do these things in order as specifed by
+	/* To transfer data, we do these things in order as specified by
 	 * the RFC.
 	 *
 	 * First, we tell the other side to set up a data line.  This
@@ -945,7 +945,7 @@ FTPEndDataCmd(const FTPCIPtr cip, int didXfer)
 	result = kNoErr;
 	if (didXfer) {
 		/* Get the response to the data transferred.  Most likely a message
-		 * saying that the transfer completed succesfully.  However, if
+		 * saying that the transfer completed successfully.  However, if
 		 * we tried to abort the transfer using ABOR, we will have a response
 		 * to that command instead.
 		 */

@@ -11,7 +11,7 @@
 #define TAG_CALLBACK_ROUTINE_BLOCK 'brbC'
 #define TAG_CALLBACK_REGISTRATION  'eRBC'
 
-/* formely located in dbg/dbgkobj.c */
+/* formerly located in dbg/dbgkobj.c */
 #define TAG_DEBUG_EVENT     'EgbD'
 
 /* formerly located in ex/resource.c */
@@ -177,7 +177,7 @@
 #define TAG_LUID              'uLeS'
 #define TAG_PRIVILEGE_SET     'rPeS'
 #define TAG_TOKEN_USERS       'uKOT'
-#define TAG_TOKEN_PRIVILAGES  'pKOT'
+#define TAG_TOKEN_PRIVILEGES  'pKOT'
 #define TAG_TOKEN_ACL         'kDOT'
 
 /* LPC Tags */

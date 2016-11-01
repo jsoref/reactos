@@ -38,7 +38,7 @@ DdCanCreateSurface(LPDDHAL_CANCREATESURFACEDATA pccsd)
 	 /* Check if another pixel format or not, we fail for now */
 	 if (pccsd->bIsDifferentPixelFormat)
      {
-		/* check the fourcc diffent FOURCC, but we only support BMP for now */
+		/* check the fourcc different FOURCC, but we only support BMP for now */
 		//if(pccsd->lpDDSurfaceDesc->ddpfPixelFormat.dwFlags & DDPF_FOURCC)
         //{
 		//	/* We do not support other pixel format */
@@ -49,7 +49,7 @@ DdCanCreateSurface(LPDDHAL_CANCREATESURFACEDATA pccsd)
 		//			return DDHAL_DRIVER_HANDLED;
 		//	}
 		//}
-		// /* check the texture support, we do not support testure for now */
+		// /* check the texture support, we do not support texture for now */
 		//else if((pccsd->lpDDSurfaceDesc->ddsCaps.dwCaps & DDSCAPS_TEXTURE))
 		//{
 		//	/* We do not support texture surface */

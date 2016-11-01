@@ -7,7 +7,7 @@
  *
  * Full permission is granted to use, modify and distribute
  * this code, provided:
- * 1) This comment field is included in its entirity
+ * 1) This comment field is included in its entirety
  * 2) No money is charged for any work including or based on 
  *    portions of this code.
  *
@@ -50,7 +50,7 @@
 char    cBuffer[MAXVTBUFLEN+1]; /* terminal output buffer for unprocessed characters */
 int     BufLen;                 /* Number of characters in cBuffer waiting for output */
 
-/* List of all device-independant colors. These colors will be transmitted to a
+/* List of all device-independent colors. These colors will be transmitted to a
  * back-end routine responsible for setting the foreground and background text
  * colors appropriately. Note that the color combinations are ordered to correspond
  * with combinations of red (0x1), green (0x2) and blue (0x4) bit flags.

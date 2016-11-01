@@ -246,7 +246,7 @@ ULONG FindHigherIrqlMask[32] =
     0b00000000000111111111111111110000, /* IRQL 10 */
 
     /*
-     * Now we start progressivly limiting which slave PIC interrupts have the
+     * Now we start progressively limiting which slave PIC interrupts have the
      * right to preempt us at each level.
      */
     0b00000000000011111111111111110000, /* IRQL 11 */
@@ -261,7 +261,7 @@ ULONG FindHigherIrqlMask[32] =
 
     /*
      * Also recall from the earlier table that IRQL 18/19 are treated the same
-     * in order to spread the masks better thoughout the 32 IRQLs and to reflect
+     * in order to spread the masks better throughout the 32 IRQLs and to reflect
      * the fact that some bits will always stay on until much higher IRQLs since
      * they are system-critical. One such example is the 1 bit that you start to
      * see trickling down here. This is IRQ8, the RTC timer used for profiling,

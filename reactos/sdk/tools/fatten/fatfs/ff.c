@@ -670,7 +670,7 @@ FRESULT dec_lock (	/* Decrement object open counter */
 		if (!n) Files[i].fs = 0;	/* Delete the entry if open count gets zero */
 		res = FR_OK;
 	} else {
-		res = FR_INT_ERR;			/* Invalid index nunber */
+		res = FR_INT_ERR;			/* Invalid index number */
 	}
 	return res;
 }
@@ -2077,14 +2077,14 @@ FRESULT follow_path (	/* FR_OK(0): successful, !=0: error code */
 		for (;;) {
 			res = create_name(dp, &path);	/* Get a segment name of the path */
 			if (res != FR_OK) break;
-			res = dir_find(dp);				/* Find an object with the sagment name */
+			res = dir_find(dp);				/* Find an object with the segment name */
 			ns = dp->fn[NSFLAG];
 			if (res != FR_OK) {				/* Failed to find the object */
 				if (res == FR_NO_FILE) {	/* Object is not found */
 					if (_FS_RPATH && (ns & NS_DOT)) {	/* If dot entry is not exist, */
 						dp->sclust = 0; dp->dir = 0;	/* it is the root directory and stay there */
 						if (!(ns & NS_LAST)) continue;	/* Continue to follow if not last segment */
-						res = FR_OK;					/* Ended at the root directroy. Function completed. */
+						res = FR_OK;					/* Ended at the root directory. Function completed. */
 					} else {							/* Could not find the object */
 						if (!(ns & NS_LAST)) res = FR_NO_PATH;	/* Adjust error code if not last segment */
 					}
@@ -2177,7 +2177,7 @@ BYTE check_fs (	/* 0:Valid FAT-BS, 1:Valid BS but not FAT, 2:Not a BS, 3:Disk er
 	DWORD sect	/* Sector# (lba) to check if it is an FAT boot record or not */
 )
 {
-	fs->wflag = 0; fs->winsect = 0xFFFFFFFF;	/* Invaidate window */
+	fs->wflag = 0; fs->winsect = 0xFFFFFFFF;	/* Invalidate window */
 	if (move_window(fs, sect) != FR_OK)			/* Load boot record */
 		return 3;
 
@@ -3004,7 +3004,7 @@ FRESULT f_getcwd (
 #endif
 			if (i == len) {					/* Root-directory */
 				*tp++ = '/';
-			} else {						/* Sub-directroy */
+			} else {						/* Sub-directory */
 				do		/* Add stacked path str */
 					*tp++ = buff[i++];
 				while (i < len);
@@ -3228,7 +3228,7 @@ FRESULT f_opendir (
 		}
 		if (res == FR_NO_FILE) res = FR_NO_PATH;
 	}
-	if (res != FR_OK) dp->fs = 0;		/* Invalidate the directory object if function faild */
+	if (res != FR_OK) dp->fs = 0;		/* Invalidate the directory object if function failed */
 
 	LEAVE_FF(fs, res);
 }
@@ -3425,7 +3425,7 @@ FRESULT f_getfree (
 			/* Get number of free clusters */
 			fat = fs->fs_type;
 			nfree = 0;
-			if (fat == FS_FAT12) {	/* Sector unalighed entries: Search FAT via regular routine. */
+			if (fat == FS_FAT12) {	/* Sector unaligned entries: Search FAT via regular routine. */
 				clst = 2;
 				do {
 					stat = get_fat(fs, clst);
@@ -3433,7 +3433,7 @@ FRESULT f_getfree (
 					if (stat == 1) { res = FR_INT_ERR; break; }
 					if (stat == 0) nfree++;
 				} while (++clst < fs->n_fatent);
-			} else {				/* Sector alighed entries: Accelerate the FAT search. */
+			} else {				/* Sector aligned entries: Accelerate the FAT search. */
 				clst = fs->n_fatent; sect = fs->fatbase;
 				i = 0; p = 0;
 				do {
@@ -3642,7 +3642,7 @@ FRESULT f_mkdir (
 					mem_set(dir, 0, SS(dj.fs));
 				}
 			}
-			if (res == FR_OK) res = dir_register(&dj);	/* Register the object to the directoy */
+			if (res == FR_OK) res = dir_register(&dj);	/* Register the object to the directory */
 			if (res != FR_OK) {
 				remove_chain(dj.fs, dcl);			/* Could not register, remove cluster chain */
 			} else {

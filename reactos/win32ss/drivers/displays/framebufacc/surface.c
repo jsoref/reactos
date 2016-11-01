@@ -1,5 +1,5 @@
 /*
- * ReactOS Generic Framebuffer acclations display driver
+ * ReactOS Generic Framebuffer accelerations display driver
  *
  * Copyright (C) 2004 Filip Navara
  * Copyright (C) 2007 Magnus Olsen
@@ -155,7 +155,7 @@ DrvEnableSurface(
        return FALSE;
    }
 
-   /* Rest the desktop vitual position */
+   /* Rest the desktop virtual position */
    ppdev->ScreenOffsetXY.x = 0;
    ppdev->ScreenOffsetXY.y = 0;
 

@@ -292,7 +292,7 @@ int main(int argc, char** argv)
         LONG error = read_pipe(hPipe, sock);
 
 
-        // close TCP connectiom
+        // close TCP connection
         closesocket(sock);
         sock = (SOCKET)-1;
 

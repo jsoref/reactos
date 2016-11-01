@@ -17,7 +17,7 @@
 #define NDEBUG
 #include <debug.h>
 
-/* DEFINITONS and MACROS ******************************************************/
+/* DEFINITIONS and MACROS ******************************************************/
 
 #define MAX_PFX_SIZE       16
 
@@ -1301,8 +1301,8 @@ RtlGetLongestNtPathLength(VOID)
 
 /*
  * @implemented
- * @note: the export is called RtlGetLengthWithoutTrailingPathSeperators
- *        (with a 'e' instead of a 'a' in "Seperators").
+ * @note: the export is called RtlGetLengthWithoutTrailingPathSeparators
+ *        (with a 'e' instead of a 'a' in "Separators").
  */
 NTSTATUS
 NTAPI
@@ -2402,7 +2402,7 @@ RtlDosSearchPath_Ustr(IN ULONG Flags,
                     goto Quickie;
                 }
 
-                /* We checked before that the maximum possible size shoudl fit! */
+                /* We checked before that the maximum possible size should fit! */
                 ASSERT((SegmentSize + FileNameString->Length + ExtensionLength) <
                         UNICODE_STRING_MAX_BYTES);
                 if ((SegmentSize + ExtensionLength + FileNameString->Length) >
@@ -2539,7 +2539,7 @@ RtlDosSearchPath_Ustr(IN ULONG Flags,
                     /* If there's a path separator, there's no extension */
                     if (IS_PATH_SEPARATOR(*--End)) break;
 
-                    /* Othwerwise, did we find an extension dot? */
+                    /* Otherwise, did we find an extension dot? */
                     if (*End == L'.')
                     {
                         /* File already had an extension, so fail */

@@ -60,7 +60,7 @@ of this change is that a mapping of a small files takes a bit more than 1/4
 of the size in nonpaged kernel space as it did previously.
 
 When we need other threads that may be competing for the same page fault to
-wait, we have a mechanism seperate from PageOps for dealing with that, which
+wait, we have a mechanism separate from PageOps for dealing with that, which
 was suggested by Travis Geiselbrecht after a conversation I had with Alex
 Ionescu.  That mechanism is the MM_WAIT_ENTRY, which is the all-ones SWAPENTRY.
 
@@ -355,7 +355,7 @@ MmCreateCacheSection(PROS_SECTION_OBJECT *SectionObject,
 
     DPRINT("Getting original file size\n");
     /* A hack: If we're cached, we can overcome deadlocking with the upper
-    * layer filesystem call by retriving the object sizes from the cache
+    * layer filesystem call by retrieving the object sizes from the cache
     * which is made to keep track.  If I had to guess, they were figuring
     * out a similar problem.
     */
@@ -363,7 +363,7 @@ MmCreateCacheSection(PROS_SECTION_OBJECT *SectionObject,
     {
         ULONG Information;
         /*
-        * FIXME: This is propably not entirely correct. We can't look into
+        * FIXME: This is probably not entirely correct. We can't look into
         * the standard FCB header because it might not be initialized yet
         * (as in case of the EXT2FS driver by Manoj Paul Joseph where the
         * standard file information is filled on first request).

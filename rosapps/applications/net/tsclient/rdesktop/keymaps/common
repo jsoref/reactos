@@ -150,7 +150,7 @@ SunF36 0x57 localstate
 F12 0x58 localstate
 SunF37 0x58 localstate
 
-# Printscreen, Scrollock and Pause
+# Printscreen, Scrolllock and Pause
 # Printscreen really requires four scancodes (0xe0, 0x2a, 0xe0, 0x37),
 # but (0xe0, 0x37) seems to work. 
 Print 0xb7 localstate

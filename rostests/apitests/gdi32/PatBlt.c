@@ -90,14 +90,14 @@ void Test_BrushOrigin()
     hbmp = CreateBitmap(2, 2, 1, 1, aulBits);
     if (!hbmp)
     {
-        printf("Couln not create a bitmap\n");
+        printf("Could not create a bitmap\n");
         return;
     }
 
     hbr = CreatePatternBrush(hbmp);
     if (!hbr)
     {
-        printf("Couln not create a bitmap\n");
+        printf("Could not create a bitmap\n");
         return;
     }
 
@@ -149,14 +149,14 @@ START_TEST(PatBlt)
                                    0);
     if (!ghbmpTarget)
     {
-        printf("Couln not create target bitmap\n");
+        printf("Could not create target bitmap\n");
         return;
     }
 
     hdcTarget = CreateCompatibleDC(0);
     if (!hdcTarget)
     {
-        printf("Couln not create target dc\n");
+        printf("Could not create target dc\n");
         return;
     }
 

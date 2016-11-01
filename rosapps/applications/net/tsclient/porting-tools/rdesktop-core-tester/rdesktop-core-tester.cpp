@@ -636,7 +636,7 @@ int wmain()
 		This
 	);
 
-	// The righ time to start the protocol thread
+	// The right time to start the protocol thread
 	DWORD dwThreadId;
 	HANDLE hThread = CreateThread(NULL, 0, mstsc_ProtocolIOThread, This, 0, &dwThreadId);
 

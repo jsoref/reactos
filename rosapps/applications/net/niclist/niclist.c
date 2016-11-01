@@ -48,7 +48,7 @@ int main(int argc, char **argv)
 	char* PacketLibraryVersion;
 
 
-    // Attemp to load the WinPCap dynamic link library
+    // Attempt to load the WinPCap dynamic link library
     HINSTANCE hPacket = LoadLibrary("PACKET.DLL");
     if (hPacket) {
         PacketGetAdapterNames = (BOOLEAN (*)(PTSTR, PULONG))GetProcAddress(hPacket, "PacketGetAdapterNames");

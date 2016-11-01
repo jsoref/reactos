@@ -143,7 +143,7 @@ typedef VOID
 typedef struct _PCI_CONFIG_HANDLER
 {
     FncSync Synchronize;
-    FncReleaseSync ReleaseSynchronzation;
+    FncReleaseSync ReleaseSynchronization;
     FncConfigIO ConfigRead[3];
     FncConfigIO ConfigWrite[3];
 } PCI_CONFIG_HANDLER, *PPCI_CONFIG_HANDLER;
@@ -299,7 +299,7 @@ HalpPCISynchronizeType1(
 
 VOID
 NTAPI
-HalpPCIReleaseSynchronzationType1(
+HalpPCIReleaseSynchronizationType1(
     IN PBUS_HANDLER BusHandler,
     IN KIRQL Irql
 );

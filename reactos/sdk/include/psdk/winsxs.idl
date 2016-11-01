@@ -29,7 +29,7 @@ typedef struct _FUSION_INSTALL_REFERENCE_
     DWORD   dwFlags;
     GUID    guidScheme;
     LPCWSTR szIdentifier;
-    LPCWSTR szNonCannonicalData;
+    LPCWSTR szNonCanonicalData;
 } FUSION_INSTALL_REFERENCE, *LPFUSION_INSTALL_REFERENCE;
 
 typedef struct _ASSEMBLY_INFO

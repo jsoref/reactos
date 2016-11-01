@@ -1029,7 +1029,7 @@ static int _lzx_get_bytes(void *arg, int n, void *buf)
 
 	// compression state machine
 	// lzx compressor ask for block input bytes
-	// need to keep current entry file and offset trought blocks
+	// need to keep current entry file and offset through blocks
 	// until last entry
 	while (todo) {
 		// end of entries reached?

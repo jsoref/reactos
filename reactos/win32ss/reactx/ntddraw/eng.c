@@ -156,7 +156,7 @@ EngDxIoctl(ULONG ulIoctl,
 * The handle of a surface
 *
 * @return
-* This return a vaild or NULL pointer to a PDD_SURFACE_LOCAL object
+* This return a valid or NULL pointer to a PDD_SURFACE_LOCAL object
 *
 * @remarks.
 * None

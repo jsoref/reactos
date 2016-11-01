@@ -2,7 +2,7 @@
  * COPYRIGHT:       See COPYING in the top level directory
  * PROJECT:         ReactOS System Libraries
  * FILE:            lib/rtl/heap.h
- * PURPOSE:         Run-Time Libary Heap Manager header
+ * PURPOSE:         Run-Time Library Heap Manager header
  * PROGRAMMER:      Aleksey Bragin
  */
 
@@ -55,7 +55,7 @@
 /* Segment flags */
 #define HEAP_USER_ALLOCATED    0x1
 
-/* A handy inline to distinguis normal heap, special "debug heap" and special "page heap" */
+/* A handy inline to distinguish normal heap, special "debug heap" and special "page heap" */
 FORCEINLINE BOOLEAN
 RtlpHeapIsSpecial(ULONG Flags)
 {
@@ -123,7 +123,7 @@ struct _HEAP_COMMON_ENTRY
             UCHAR Code3;
             UCHAR Code4;
         };
-        ULONGLONG AgregateCode;
+        ULONGLONG AggregateCode;
     };
 };
 
@@ -170,24 +170,24 @@ typedef struct _HEAP_COUNTERS
     SIZE_T TotalSizeInVirtualBlocks;
     ULONG TotalSegments;
     ULONG TotalUCRs;
-    ULONG CommittOps;
+    ULONG CommitOps;
     ULONG DeCommitOps;
     ULONG LockAcquires;
     ULONG LockCollisions;
     ULONG CommitRate;
-    ULONG DecommittRate;
+    ULONG DecommitRate;
     ULONG CommitFailures;
     ULONG InBlockCommitFailures;
     ULONG CompactHeapCalls;
     ULONG CompactedUCRs;
-    ULONG InBlockDeccommits;
-    SIZE_T InBlockDeccomitSize;
+    ULONG InBlockDecommits;
+    SIZE_T InBlockDecommitSize;
 } HEAP_COUNTERS, *PHEAP_COUNTERS;
 
 typedef struct _HEAP_TUNING_PARAMETERS
 {
-    ULONG CommittThresholdShift;
-    SIZE_T MaxPreCommittThreshold;
+    ULONG CommitThresholdShift;
+    SIZE_T MaxPreCommitThreshold;
 } HEAP_TUNING_PARAMETERS, *PHEAP_TUNING_PARAMETERS;
 
 typedef struct _HEAP_LIST_LOOKUP

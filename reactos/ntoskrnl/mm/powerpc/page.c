@@ -2,7 +2,7 @@
  * COPYRIGHT:       See COPYING in the top level directory
  * PROJECT:         ReactOS kernel
  * FILE:            ntoskrnl/mm/powerpc/page.c
- * PURPOSE:         Low level memory managment manipulation
+ * PURPOSE:         Low level memory management manipulation
  *
  * PROGRAMMERS:     David Welch (welch@cwcom.net)
  * Revised for PowerPC by arty

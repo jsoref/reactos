@@ -112,7 +112,7 @@ KiSetProcessorType(VOID)
         EFlags |= EFLAGS_ID;
         __writeeflags(EFlags);
 
-        /* Peform CPUID 0 to see if CPUID 1 is supported */
+        /* Perform CPUID 0 to see if CPUID 1 is supported */
         KiCpuId(&CpuInfo, 0);
         if (CpuInfo.Eax > 0)
         {
@@ -689,7 +689,7 @@ KiGetCacheInformation(VOID)
                     /* Compute size */
                     Size = (CpuInfo.Ecx >> 16) << 10;
 
-                    /* Hack for Model 6, Steping 300 */
+                    /* Hack for Model 6, Stepping 300 */
                     if ((KeGetCurrentPrcb()->CpuType == 6) &&
                         (KeGetCurrentPrcb()->CpuStep == 0x300))
                     {

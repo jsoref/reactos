@@ -703,7 +703,7 @@ namespace std
         // Information
         static const bool is_exact = true;
         static const bool is_iec559 = false;
-        static const bool is_longeger = true;
+        static const bool is_integer = true;
         static const bool is_modulo = true;
 
         // misc
@@ -767,7 +767,7 @@ namespace std
         // Information
         static const bool is_exact = true;
         static const bool is_iec559 = false;
-        static const bool is_longeger = true;
+        static const bool is_integer = true;
         static const bool is_modulo = true;
         static const bool is_signed = false;
 

@@ -76,7 +76,7 @@ PKI_SYSCALL_PARAM_HANDLER KiSyscallHandlers[0x12] =
     KiSyscall11Param,
 };
 
-/* FUNCIONS *******************************************************************/
+/* FUNCTIONS *******************************************************************/
 
 VOID
 KiSystemService(IN PKTHREAD Thread,

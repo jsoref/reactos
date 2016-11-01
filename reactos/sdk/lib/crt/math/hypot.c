@@ -11,7 +11,7 @@
  * silently replaced by zero; this won't cause an exception, but might
  * have an adverse effect on the accuracy of the result.
  *
- * This implementation tries to avoid the above pitfals, without
+ * This implementation tries to avoid the above pitfalls, without
  * inflicting too much of a performance hit.
  *
  */

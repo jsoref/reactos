@@ -524,12 +524,12 @@ typedef union _ARM_CACHE_REGISTER
     {
         ULONG ILength:2;
         ULONG IMultipler:1;
-        ULONG IAssociativty:3;
+        ULONG IAssociativity:3;
         ULONG ISize:4;
         ULONG IReserved:2;
         ULONG DLength:2;
         ULONG DMultipler:1;
-        ULONG DAssociativty:3;
+        ULONG DAssociativity:3;
         ULONG DSize:4;
         ULONG DReserved:2;
         ULONG Separate:1;

@@ -605,7 +605,7 @@ BOOLEAN ScanExportsByAddress(LPSTR *pFind,ULONG ulValue)
     BOOLEAN bResult = FALSE;
 	PDEBUG_MODULE pd;
     ULONG ulMinValue = -1;
-	PIMAGE_SYMBOL pSym,pSymEnd;			  		//running pointer to symbols and end of sym talbe
+	PIMAGE_SYMBOL pSym,pSymEnd;			  		//running pointer to symbols and end of sym table
 	PIMAGE_SYMBOL pFoundSym = NULL;    	  		//current best symbol match
 	ULONG ulAddr = 0x0;		  					//address of the best match
 	LPSTR pStr;

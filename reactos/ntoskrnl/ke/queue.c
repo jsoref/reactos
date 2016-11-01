@@ -309,7 +309,7 @@ KeRemoveQueue(IN PKQUEUE Queue,
             /* Decrease the number of entries */
             Queue->Header.SignalState--;
 
-            /* Increase numbef of running threads */
+            /* Increase number of running threads */
             Queue->CurrentCount++;
 
             /* Check if the entry is valid. If not, bugcheck */

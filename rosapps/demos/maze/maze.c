@@ -232,7 +232,7 @@ static void draw_solid_square(int, int, int, HDC, HBRUSH);
 static void enter_square(int, HDC, HBRUSH);
 
 static void
-create_maze()             /* create a maze layout given the intiialized maze */
+create_maze()             /* create a maze layout given the initialized maze */
 {
   register int i, newdoor = 0;
   HDC hDC;
@@ -889,7 +889,7 @@ LRESULT CALLBACK WndProc(
 			PostQuitMessage(0);
 			break;
 
-		default:          // Passes it on if unproccessed
+		default:          // Passes it on if unprocessed
 			return (DefWindowProc(hWnd, message, wParam, lParam));
 	}
 	return (0);

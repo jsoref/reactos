@@ -405,7 +405,7 @@ NtGdiPolyPolyDraw( IN HDC hDC,
         ProbeForRead(UnsafePoints, Count * sizeof(POINT), 1);
         ProbeForRead(UnsafeCounts, Count * sizeof(ULONG), 1);
 
-        /* Count points and validate poligons */
+        /* Count points and validate polygons */
         for (i = 0; i < Count; i++)
         {
             if (UnsafeCounts[i] < 2)

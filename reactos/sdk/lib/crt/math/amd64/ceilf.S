@@ -19,7 +19,7 @@ FUNC ceilf
     sub rsp, 16
     .ENDPROLOG
 
-    /* Duplicate the bits into eax (zero exteneded to rax) */
+    /* Duplicate the bits into eax (zero extended to rax) */
     movd eax, xmm0
 
     /* Invert the sign bit */

@@ -95,7 +95,7 @@
 
 2001-08-23  Jirka Kosek <kosek@users.sourceforge.net>
 
-	* htmlhelp-common.xsl: Synchronized puncation generation in ToC with rest of stylesheets.
+	* htmlhelp-common.xsl: Synchronized punctuation generation in ToC with rest of stylesheets.
 
 2001-08-21  Jirka Kosek <kosek@users.sourceforge.net>
 

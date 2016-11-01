@@ -833,7 +833,7 @@ KiCheckAlertability(IN PKTHREAD Thread,
         }
         else if (Thread->Alerted[KernelMode])
         {
-            /* It isn't that either, but we're alered in kernel mode */
+            /* It isn't that either, but we're alerted in kernel mode */
             Thread->Alerted[KernelMode] = FALSE;
             return STATUS_ALERTED;
         }
@@ -1341,11 +1341,11 @@ KxQueueReadyThread(IN PKTHREAD Thread,
         /* Set thread ready for execution */
         Thread->State = Ready;
 
-        /* Save current priority and if someone had pre-empted it */
+        /* Save current priority and if someone had preempted it */
         Priority = Thread->Priority;
         Preempted = Thread->Preempted;
 
-        /* We're not pre-empting now, and set the wait time */
+        /* We're not preempting now, and set the wait time */
         Thread->Preempted = FALSE;
         Thread->WaitTime = KeTickCount.LowPart;
 

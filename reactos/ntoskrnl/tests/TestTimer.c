@@ -9,7 +9,7 @@ void main ( int argc, char** argv, char** environ )
  LARGE_INTEGER liCurrentTime;
 
  QueryPerformanceFrequency ( &liFrequency );
- printf ( "HIGH RESOLUTION PERFOMANCE COUNTER Frequency = %I64d CLOCKS IN SECOND\n",
+ printf ( "HIGH RESOLUTION PERFORMANCE COUNTER Frequency = %I64d CLOCKS IN SECOND\n",
 	     liFrequency.QuadPart );
 
 

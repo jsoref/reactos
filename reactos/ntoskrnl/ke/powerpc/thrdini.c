@@ -94,7 +94,7 @@ KiInitializeContextThread(IN PKTHREAD Thread,
         /* Setup the Fx Area */
         FxSaveArea = &InitFrame->FxSaveArea;
 
-        /* Disable any debug regiseters */
+        /* Disable any debug registers */
         Context->ContextFlags &= ~CONTEXT_DEBUG_REGISTERS;
 
         /* Setup the Trap Frame */

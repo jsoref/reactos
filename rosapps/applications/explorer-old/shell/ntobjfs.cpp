@@ -124,7 +124,7 @@ const LPCWSTR NTDLL::s_ObjectTypes[] = {
 	L"Mutant", L"Section", L"Event", L"Semaphore",
 	L"Timer", L"Key", L"EventPair", L"IoCompletion",
 	L"Device", L"File", L"Controller", L"Profile",
-	L"Type", L"Desktop", L"WindowStatiom", L"Driver",
+	L"Type", L"Desktop", L"WindowStation", L"Driver",
 	L"Token", L"Process", L"Thread", L"Adapter", L"Port",
 	0
 };
@@ -161,7 +161,7 @@ static DWORD NtOpenObject(OBJECT_TYPE type, HANDLE* phandle, DWORD access, LPCWS
 
 	DWORD ioStatusBlock[2];	// IO_STATUS_BLOCK
 
-	if (type>=DIRECTORY_OBJECT && type<=IOCOMPLETITION_OBJECT)
+	if (type>=DIRECTORY_OBJECT && type<=IOCOMPLETION_OBJECT)
 		return g_NTDLL->_ObjectOpenFunctions[type](phandle, access|STANDARD_RIGHTS_READ, &open_struct);
 	else if (type == FILE_OBJECT)
 		return (*g_NTDLL->NtOpenFile)(phandle, access, &open_struct, ioStatusBlock, FILE_SHARE_READ|FILE_SHARE_WRITE|FILE_SHARE_DELETE, 0/*OpenOptions*/);

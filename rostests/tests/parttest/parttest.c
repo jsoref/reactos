@@ -320,7 +320,7 @@ int main(int argc, char ** argv)
     /* Is it FAT? */
     if (CheckAgainstFAT(Sector))
     {
-        printf("Seems to be a FAT partittion\n");
+        printf("Seems to be a FAT partition\n");
     }
     /* Is it NTFS? */
     else if (CheckAgainstNTFS(Sector))

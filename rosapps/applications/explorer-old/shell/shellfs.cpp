@@ -277,7 +277,7 @@ void ShellDirectory::read_directory(int scan_flags)
 
 		if (hFind != INVALID_HANDLE_VALUE) {
 			do {
-				 // ignore hidden files (usefull in the start menu)
+				 // ignore hidden files (useful in the start menu)
 				if (w32fd.dwFileAttributes & FILE_ATTRIBUTE_HIDDEN)
 					continue;
 

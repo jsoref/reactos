@@ -369,7 +369,7 @@ INLINE_SIMPLE_STRUCTS  = NO
 # with name TypeT. When disabled the typedef will appear as a member of a file,
 # namespace, or class. And the struct will be named TypeS. This can typically be
 # useful for C code in case the coding convention dictates that all compound
-# types are typedef'ed and only the typedef is referenced, never the tag name.
+# types are typedef'd and only the typedef is referenced, never the tag name.
 # The default value is: NO.
 
 TYPEDEF_HIDES_STRUCT   = NO
@@ -1948,7 +1948,7 @@ PREDEFINED             =
 EXPAND_AS_DEFINED      =
 
 # If the SKIP_FUNCTION_MACROS tag is set to YES then doxygen's preprocessor will
-# remove all refrences to function-like macros that are alone on a line, have an
+# remove all references to function-like macros that are alone on a line, have an
 # all uppercase name, and do not end with a semicolon. Such function macros are
 # typically used for boiler-plate code, and will confuse the parser if not
 # removed.

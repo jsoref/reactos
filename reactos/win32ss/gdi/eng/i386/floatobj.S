@@ -124,7 +124,7 @@ PUBLIC _FLOATOBJ_SetFloat@8
 
 	xor ecx, edx				/* Make use of the sign bit expanded to full edx */
 
-	sub eax, 125				/* Adjust exonent bias */
+	sub eax, 125				/* Adjust exponent bias */
 
 	sub ecx, edx				/* Substract -1 or add 1 if sign was set */
 
@@ -289,7 +289,7 @@ PUBLIC _FLOATOBJ_Equal@8
 	mov edx, [ecx + lExp]		/* Get float1 in ecx, edx */
 	mov ecx, [ecx + lMant]
 
-	sub edx, [eax + lExp]		/* Calculate diference to float2 */
+	sub edx, [eax + lExp]		/* Calculate difference to float2 */
 	sub ecx, [eax + lMant]
 
 	or edx, ecx					/* Combine */

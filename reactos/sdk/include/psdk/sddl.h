@@ -124,7 +124,7 @@ extern "C" {
  * SDDL Separators - character version
  */
 #define SDDL_SEPERATORC                     TEXT(';')
-#define SDDL_DELIMINATORC                   TEXT(':')
+#define SDDL_DELIMITERC                   TEXT(':')
 #define SDDL_ACE_BEGINC                     TEXT('(')
 #define SDDL_ACE_ENDC                       TEXT(')')
 
@@ -132,7 +132,7 @@ extern "C" {
  * SDDL Separators - string version
  */
 #define SDDL_SEPERATOR                     TEXT(";")
-#define SDDL_DELIMINATOR                   TEXT(":")
+#define SDDL_DELIMITER                   TEXT(":")
 #define SDDL_ACE_BEGIN                     TEXT("(")
 #define SDDL_ACE_END                       TEXT(")")
 

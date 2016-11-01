@@ -123,7 +123,7 @@ FsRtlIsNameInExpressionPrivate(IN PUNICODE_STRING Expression,
         /* Test star */
         else if (Expression->Buffer[ExpressionPosition] == L'*')
         {
-            /* Skip contigous stars */
+            /* Skip contiguous stars */
             while ((ExpressionPosition + 1 < (USHORT)(Expression->Length / sizeof(WCHAR))) &&
                    (Expression->Buffer[ExpressionPosition + 1] == L'*'))
             {
@@ -162,7 +162,7 @@ FsRtlIsNameInExpressionPrivate(IN PUNICODE_STRING Expression,
         /* Check DOS_STAR */
         else if (Expression->Buffer[ExpressionPosition] == DOS_STAR)
         {
-            /* Skip contigous stars */
+            /* Skip contiguous stars */
             while ((ExpressionPosition + 1 < (USHORT)(Expression->Length / sizeof(WCHAR))) &&
                    (Expression->Buffer[ExpressionPosition + 1] == DOS_STAR))
             {

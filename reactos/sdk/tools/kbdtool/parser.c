@@ -33,7 +33,7 @@ PCHAR KeyWordList[KEYWORD_COUNT] =
     "COPYRIGHT",
     "COMPANY",
     "LOCALENAME",
-    "MODIIFERS",
+    "MODIFIERS",
     "SHIFTSTATE",
     "ATTRIBUTES",
     "LAYOUT",

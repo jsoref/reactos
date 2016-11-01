@@ -144,7 +144,7 @@ IopNotifyPlugPlayNotification(
 		}
 	}
 
-	/* Loop through procedures registred in PnpNotifyListHead
+	/* Loop through procedures registered in PnpNotifyListHead
 	 * list to find those that meet some criteria.
 	 */
 	ListEntry = PnpNotifyListHead.Flink;

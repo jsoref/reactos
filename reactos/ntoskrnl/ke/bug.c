@@ -115,7 +115,7 @@ KiRosPcToUserFileHeader(IN PVOID Pc,
 
     /*
      * We know this is valid because we should only be called after a
-     * succesfull address from RtlWalkFrameChain for UserMode, which
+     * successful address from RtlWalkFrameChain for UserMode, which
      * validates everything for us.
      */
     ListHead = &KeGetCurrentThread()->
@@ -416,7 +416,7 @@ KeGetBugMessageText(IN ULONG BugCheckCode,
     /* Make sure we're not bugchecking too early */
     if (!KiBugCodeMessages) return Result;
 
-    /* Find the message. This code is based on RtlFindMesssage */
+    /* Find the message. This code is based on RtlFindMessage */
     for (i = 0; i < KiBugCodeMessages->NumberOfBlocks; i++)
     {
         /* Check if the ID Matches */
@@ -492,7 +492,7 @@ KiDoBugCheckCallbacks(VOID)
         NextEntry = ListHead->Flink;
         while (NextEntry != ListHead)
         {
-            /* Get the reord */
+            /* Get the record */
             CurrentRecord = CONTAINING_RECORD(NextEntry,
                                               KBUGCHECK_CALLBACK_RECORD,
                                               Entry);
@@ -504,7 +504,7 @@ KiDoBugCheckCallbacks(VOID)
             Checksum += (ULONG_PTR)CurrentRecord->Length;
             Checksum += (ULONG_PTR)CurrentRecord->Component;
 
-            /* Make sure it's inserted and valitdated */
+            /* Make sure it's inserted and validated */
             if ((CurrentRecord->State == BufferInserted) &&
                 (CurrentRecord->Checksum == Checksum))
             {
@@ -820,7 +820,7 @@ KeBugCheckWithTf(IN ULONG BugCheckCode,
             MessageId = FAT_FILE_SYSTEM;
             break;
 
-        /* Check if this is a coruption of the Mm's Pool */
+        /* Check if this is a corruption of the Mm's Pool */
         case DRIVER_CORRUPTED_MMPOOL:
 
             /* Use generic corruption message */

@@ -1,7 +1,7 @@
 /*
  * gdb2 - gdb output splitter
  *
- * Copyright (C) 2000,2001 Nedko Arnaoudov <nedkohome@atia.com>
+ * Copyright (C) 2000,2001 Nedko Arnaudov <nedkohome@atia.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -80,14 +80,14 @@ int main(int argc, char* argv[])
 		&hOutputRead, // Address of new handle.
 		0,FALSE, // Make it uninheritable.
 		DUPLICATE_SAME_ACCESS))
-		DisplayError("DupliateHandle");
+		DisplayError("DuplicateHandle");
 
 	if (!DuplicateHandle(GetCurrentProcess(),hInputWriteTmp,
 		GetCurrentProcess(),
 		&hInputWrite, // Address of new handle.
 		0,FALSE, // Make it uninheritable.
 		DUPLICATE_SAME_ACCESS))
-		DisplayError("DupliateHandle");
+		DisplayError("DuplicateHandle");
 
 
 	// Close inheritable copies of the handles you do not want to be

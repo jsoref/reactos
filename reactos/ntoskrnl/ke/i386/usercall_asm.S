@@ -140,7 +140,7 @@ _KeSwitchKernelStack@8:
     /* Calculate stack size */
     sub ecx, esp
 
-    /* Get desination and origin */
+    /* Get destination and origin */
     sub edi, ecx
     mov esi, esp
 

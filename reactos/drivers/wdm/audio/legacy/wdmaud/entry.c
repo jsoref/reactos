@@ -165,7 +165,7 @@ WdmaudAddDevice(
     /* start the timer */
     IoStartTimer(DeviceObject);
 
-    DeviceObject->Flags |= DO_DIRECT_IO | DO_POWER_PAGABLE;
+    DeviceObject->Flags |= DO_DIRECT_IO | DO_POWER_PAGEABLE;
     DeviceObject->Flags &= ~ DO_DEVICE_INITIALIZING;
 
     return STATUS_SUCCESS;

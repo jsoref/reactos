@@ -80,7 +80,7 @@ CompareUnicodeStrings(IN PUNICODE_STRING Prefix,
     FoundPrefix = Prefix->Buffer[i];
     FoundString = String->Buffer[i];
 
-    /* Check if we exausted the search above */
+    /* Check if we exhausted the search above */
     if (i == CaseCheckChar)
     {
         /* Do a case-insensitive search */
@@ -512,7 +512,7 @@ RtlNextUnicodePrefix(PUNICODE_PREFIX_TABLE PrefixTable,
                                       UNICODE_PREFIX_TABLE_ENTRY,
                                       Links);
 
-            /* Get its tree and make sure somethign is in it */
+            /* Get its tree and make sure something is in it */
             Entry = Entry->NextPrefixTree;
             if (Entry->NameLength <= 0) return NULL;
 

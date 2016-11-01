@@ -20,7 +20,7 @@
 
 struct test_info {
     WCHAR* ExpectedWinsta;
-    WCHAR* ExpectedDesktp;
+    WCHAR* ExpectedDesktop;
 };
 
 struct test_info TestResults[] = {{L"WinSta0",L"Default"},
@@ -59,7 +59,7 @@ void do_InitialDesktop_child(int i)
 
     ret = GetUserObjectInformationW( hdesktop, UOI_NAME, buffer, sizeof(buffer), &size );
     ok(ret == TRUE, "ret = %d\n", ret);
-    ok(wcscmp(buffer, TestResults[i].ExpectedDesktp) == 0, "Wrong desktop %S insted of %S\n", buffer, TestResults[i].ExpectedDesktp);
+    ok(wcscmp(buffer, TestResults[i].ExpectedDesktop) == 0, "Wrong desktop %S insted of %S\n", buffer, TestResults[i].ExpectedDesktop);
 }
 
 void test_CreateProcessWithDesktop(int i, char *argv0, char* Desktop, DWORD expectedExitCode)

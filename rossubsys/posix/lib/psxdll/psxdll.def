@@ -210,7 +210,7 @@ wcstombs
 wcstoul
 ;implemented internally
 
-;others (FIXME: cathegorize these calls)
+;others (FIXME: categorize these calls)
 RtlAnsiCharToUnicodeChar
 RtlFillMemory
 RtlMoveMemory

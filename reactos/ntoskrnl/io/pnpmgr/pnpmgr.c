@@ -2081,7 +2081,7 @@ IopActionInterrogateDeviceStack(PDEVICE_NODE DeviceNode,
          IoStatusBlock.Information &&
          (*(PWSTR)IoStatusBlock.Information != 0))
       {
-         /* This key is overriden when a driver is installed. Don't write the
+         /* This key is overridden when a driver is installed. Don't write the
           * new description if another one already exists */
          Status = ZwSetValueKey(InstanceKey,
                                 &ValueName,

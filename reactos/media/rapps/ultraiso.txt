@@ -1,7 +1,7 @@
 [Section]
 Name = UltraISO
 Version = 9.6.5.3237
-License = Trial verison
+License = Trial version
 Description = An ISO CD/DVD image file creating/editing/converting tool and a bootable CD/DVD maker, it can directly edit the CD/DVD image file and extract files and folders from it, as well as directly make ISO files from your CD/DVD-ROM or hard disk.
 Size = 4.2 MiB
 Category = 12

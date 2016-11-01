@@ -20,7 +20,7 @@
 VOID
 NTAPI
 INIT_FUNCTION
-Ki386VdmEnablePentiumExtentions(IN BOOLEAN Enable)
+Ki386VdmEnablePentiumExtensions(IN BOOLEAN Enable)
 {
     ULONG EFlags, Cr4;
     
@@ -74,7 +74,7 @@ KeI386VdmInitialize(VOID)
         if (KeGetPcr()->Prcb->FeatureBits & KF_V86_VIS)
         {
             /* Enable them. FIXME: Use IPI */
-            Ki386VdmEnablePentiumExtentions(TRUE);
+            Ki386VdmEnablePentiumExtensions(TRUE);
             KeI386VirtualIntExtensions = TRUE;
         }
     }

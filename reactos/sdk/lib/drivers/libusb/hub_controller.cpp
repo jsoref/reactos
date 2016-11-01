@@ -254,7 +254,7 @@ CHubController::Initialize(
     DeviceExtension->Dispatcher = PDISPATCHIRP(this);
 
     //
-    // intialize device descriptor
+    // initialize device descriptor
     //
     C_ASSERT(sizeof(USB_DEVICE_DESCRIPTOR) == sizeof(ROOTHUB2_DEVICE_DESCRIPTOR));
     RtlMoveMemory(&m_DeviceDescriptor, ROOTHUB2_DEVICE_DESCRIPTOR, sizeof(USB_DEVICE_DESCRIPTOR));
@@ -3388,7 +3388,7 @@ InitRootHub(IN PVOID Context)
     WorkItem->CallbackRoutine(WorkItem->CallbackContext);
 
     //
-    // free contextg
+    // free context
     //
     ExFreePoolWithTag(Context, TAG_USBLIB);
 }
@@ -3523,7 +3523,7 @@ USB_BUSIFFN
 USBDI_GetUSBDIVersion(
     PVOID BusContext,
     PUSBD_VERSION_INFORMATION VersionInformation,
-    PULONG HcdCapabilites)
+    PULONG HcdCapabilities)
 {
     CHubController * Controller;
     PUSBHARDWAREDEVICE Device;
@@ -3564,7 +3564,7 @@ USBDI_GetUSBDIVersion(
     //
     // no flags supported
     //
-    *HcdCapabilites = 0;
+    *HcdCapabilities = 0;
 }
 
 NTSTATUS

@@ -1,6 +1,6 @@
 /*
  * COPYRIGHT:         BSD - See COPYING.ARM in the top level directory
- * PROJECT:           ReactOS CRT librariy
+ * PROJECT:           ReactOS CRT library
  * PURPOSE:           Implementation of _chkstk and _alloca_probe
  * PROGRAMMER:        Timo Kreuzer (timo.kreuzer@reactos.org)
  *                    Yuntian Zhang (yuntian.zh@gmail.com)

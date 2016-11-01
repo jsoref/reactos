@@ -205,7 +205,7 @@ ScreenAddDevice(
 		return Status;
 	}
 
-	/* We definately have a device object. PreviousBlue may or may
+	/* We definitely have a device object. PreviousBlue may or may
 	 * not be null */
 	DeviceExtension = (PSCREEN_DEVICE_EXTENSION)Fdo->DeviceExtension;
 	RtlZeroMemory(DeviceExtension, sizeof(SCREEN_DEVICE_EXTENSION));
@@ -240,7 +240,7 @@ ScreenAddDevice(
 	AddToSendBuffer(DeviceExtension, 4, ESC, '[', '7', 'l'); /* disable line wrap */
 	AddToSendBuffer(DeviceExtension, 4, ESC, '[', '3', 'g'); /* clear all tabs */
 
-	Fdo->Flags |= DO_POWER_PAGABLE;
+	Fdo->Flags |= DO_POWER_PAGEABLE;
 	Fdo->Flags &= ~DO_DEVICE_INITIALIZING;
 
 	Status = STATUS_SUCCESS;

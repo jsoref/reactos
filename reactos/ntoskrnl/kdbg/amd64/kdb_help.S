@@ -146,7 +146,7 @@ KdbpStackSwitchAndCall:
     /* Call function */
     call rdx
 
-    /* Restire old stack */
+    /* Restore old stack */
     pop rax
     mov rsp, rax
 

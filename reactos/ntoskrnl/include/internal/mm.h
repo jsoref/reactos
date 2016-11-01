@@ -60,7 +60,7 @@ typedef ULONG_PTR SWAPENTRY;
 //
 #define MMDBG_COPY_MAX_SIZE         0x8
 
-#if defined(_X86_) // intenal for marea.c
+#if defined(_X86_) // internal for marea.c
 #define MI_STATIC_MEMORY_AREAS              (14)
 #else
 #define MI_STATIC_MEMORY_AREAS              (13)
@@ -270,7 +270,7 @@ typedef enum _MI_PFN_USAGES
     MI_USAGE_PAGE_DIRECTORY,
     MI_USAGE_LEGACY_PAGE_DIRECTORY,
     MI_USAGE_DRIVER_PAGE,
-    MI_USAGE_CONTINOUS_ALLOCATION,
+    MI_USAGE_CONTIGUOUS_ALLOCATION,
     MI_USAGE_MDL,
     MI_USAGE_DEMAND_ZERO,
     MI_USAGE_ZERO_LOOP,

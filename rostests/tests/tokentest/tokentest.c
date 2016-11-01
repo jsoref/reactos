@@ -397,7 +397,7 @@ CreateInitialSystemToken(HANDLE* phSystemToken)
 
 	// Under WinXP (the only MS OS I've tested) ZwCreateToken()
 	// squawks if we use sidAdministrators here -- though running
-	// a progrem under AT and using the DisplayToken() function
+	// a program under AT and using the DisplayToken() function
 	// shows that the system token does default ownership to
 	// Administrator.
 

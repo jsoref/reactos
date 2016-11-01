@@ -68,7 +68,7 @@ was born \
 ");
 
 #if 0
- /* TODO: LdrLoadNtDll() or LdrLoadDllEx() (the former is preferrable, since
+ /* TODO: LdrLoadNtDll() or LdrLoadDllEx() (the former is preferable, since
     the latter is more likely to be implemented with different purposes from
     Microsoft), accepting native NT paths */
 

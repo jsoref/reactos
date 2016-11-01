@@ -85,7 +85,7 @@ mbstowcs_s(
                     retval = STRUNCATE;
                 }
 
-                /* zero teminate the buffer */
+                /* zero terminate the buffer */
                 pwcstr[cwcWritten - 1] = L'\0';
             }
             else

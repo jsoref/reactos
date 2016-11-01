@@ -1293,7 +1293,7 @@ static ChildWnd* alloc_child_window(LPCWSTR path, LPITEMIDLIST pidl, HWND hwnd)
 {
 	WCHAR drv[_MAX_DRIVE+1], dir[_MAX_DIR], name[_MAX_FNAME], ext[_MAX_EXT];
 	WCHAR dir_path[MAX_PATH];
-	static const WCHAR sAsterics[] = {'*', '\0'};
+	static const WCHAR sAsterisks[] = {'*', '\0'};
 	static const WCHAR sTitleFmt[] = {'%','s',' ','-',' ','%','s','\0'};
 
 	ChildWnd* child = HeapAlloc(GetProcessHeap(), 0, sizeof(ChildWnd));
@@ -1336,7 +1336,7 @@ static ChildWnd* alloc_child_window(LPCWSTR path, LPITEMIDLIST pidl, HWND hwnd)
         _wsplitpath(child->path, drv, dir, name, ext);
 	}
 
-	lstrcpyW(child->filter_pattern, sAsterics);
+	lstrcpyW(child->filter_pattern, sAsterisks);
 	child->filter_flags = TF_ALL;
 
 	root->entry.level = 0;

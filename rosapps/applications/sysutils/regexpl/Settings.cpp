@@ -19,7 +19,7 @@
  * Boston, MA 02111-1307, USA.
  */
 
-// Settings.cpp : implemetation of CSettings class - user customizable settings for Registry Explorer
+// Settings.cpp : implementation of CSettings class - user customizable settings for Registry Explorer
 
 #include "ph.h"
 #include "RegistryExplorer.h"

@@ -35,7 +35,7 @@ returned.  It is used when the call may block.
 @blockdev.c:73-80  -- Allocate a read IRP
 @blockdev.c:86-92  -- If override, set SL_OVERRIDE_VERIFY_VOLUME as in [1]
 @blockdev.c:93     -- Pass on IRP
-@blockdev.c:93-112 -- Await completion, propogate status
+@blockdev.c:93-112 -- Await completion, propagate status
 
 [1] http://msdn.microsoft.com/library/default.asp?url=/library/en-us/Kernel_r/hh/Kernel_r/k112_8fcba8ca-d004-4800-87d1-d5c7714a494b.xml.asp
 
@@ -72,7 +72,7 @@ synchronous.
 @blockdev.c:310-316 -- Override flag as above
 @blockdev.c:317     -- Call underlying driver
 @blockdev.c:320-329 -- Wait if needed
-@blockdev.c:334     -- Propogate returned data length [3]
+@blockdev.c:334     -- Propagate returned data length [3]
 
 [3] http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dndevice/html/IRP_Handle.asp
 

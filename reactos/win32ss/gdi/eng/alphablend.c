@@ -136,7 +136,7 @@ EngAlphaBlend(
             ClipRect.bottom = ClipRegion->rclBounds.bottom + Translate.y;
             if (RECTL_bIntersectRect(&CombinedRect, &OutputRect, &ClipRect))
             {
-                /* take into acount clipping results when calculating new input rect (scaled to input rect size) */
+                /* take into account clipping results when calculating new input rect (scaled to input rect size) */
                 Rect.left = InputRect.left + (CombinedRect.left - OutputRect.left) * (InputRect.right - InputRect.left) / (OutputRect.right - OutputRect.left);
                 Rect.right = InputRect.right + (CombinedRect.right - OutputRect.right) * (InputRect.right - InputRect.left) / (OutputRect.right - OutputRect.left);
                 Rect.top = InputRect.top + (CombinedRect.top - OutputRect.top) * (InputRect.bottom - InputRect.top) / (OutputRect.bottom - OutputRect.top);
@@ -164,7 +164,7 @@ EngAlphaBlend(
                     ClipRect.bottom = RectEnum.arcl[i].bottom + Translate.y;
                     if (RECTL_bIntersectRect(&CombinedRect, &OutputRect, &ClipRect))
                     {
-                        /* take into acount clipping results when calculating new input rect (scaled to input rect size) */
+                        /* take into account clipping results when calculating new input rect (scaled to input rect size) */
                         Rect.left = InputRect.left + (CombinedRect.left - OutputRect.left) * (InputRect.right - InputRect.left) / (OutputRect.right - OutputRect.left);
                         Rect.right = InputRect.right + (CombinedRect.right - OutputRect.right) * (InputRect.right - InputRect.left) / (OutputRect.right - OutputRect.left);
                         Rect.top = InputRect.top + (CombinedRect.top - OutputRect.top) * (InputRect.bottom - InputRect.top) / (OutputRect.bottom - OutputRect.top);

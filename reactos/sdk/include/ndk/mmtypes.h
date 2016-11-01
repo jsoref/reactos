@@ -62,7 +62,7 @@ extern "C" {
 #define MMPFNUSE_KERNELSTACK                                11
 
 //
-// Lock/Unlock Virtuam Memory Flags
+// Lock/Unlock Virtual Memory Flags
 //
 #define MAP_PROCESS                                         1
 #define MAP_SYSTEM                                          2
@@ -178,7 +178,7 @@ typedef enum _MEMORY_INFORMATION_CLASS
 } MEMORY_INFORMATION_CLASS;
 
 //
-// Section Information Clasess for NtQuerySection
+// Section Information Classes for NtQuerySection
 //
 typedef enum _SECTION_INFORMATION_CLASS
 {
@@ -673,7 +673,7 @@ typedef struct _MM_AVL_TABLE
 } MM_AVL_TABLE, *PMM_AVL_TABLE;
 
 //
-// Virtual Adress List used in VADs
+// Virtual Address List used in VADs
 //
 typedef struct _MMADDRESS_LIST
 {
@@ -899,7 +899,7 @@ typedef struct _MMSUPPORT
     LIST_ENTRY WorkingSetExpansionLinks;
 #endif
 #if (NTDDI_VERSION >= NTDDI_LONGHORN)
-    USHORT LastTrimpStamp;
+    USHORT LastTrimStamp;
     USHORT NextPageColor;
 #else
     LARGE_INTEGER LastTrimTime;

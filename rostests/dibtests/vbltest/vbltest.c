@@ -1,6 +1,6 @@
 /*
  * Tests various blit and blend operations with different src
- * bit depths and scaling where possbile.
+ * bit depths and scaling where possible.
  * 
  * Created by Gregor Schneider <grschneider AT gmail DOT com>, November 2008
 */

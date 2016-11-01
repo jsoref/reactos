@@ -170,7 +170,7 @@ VOID APICClear(VOID)
 #endif
 }
 
-/* Enable symetric I/O mode ie. connect the BSP's local APIC to INT and NMI lines */
+/* Enable symmetric I/O mode ie. connect the BSP's local APIC to INT and NMI lines */
 VOID EnableApicMode(VOID)
 {
    /*
@@ -182,7 +182,7 @@ VOID EnableApicMode(VOID)
    WRITE_PORT_UCHAR((PUCHAR)0x23, 0x01);
 }
 
-/* Disable symetric I/O mode ie. go to PIC mode */
+/* Disable symmetric I/O mode ie. go to PIC mode */
 __inline VOID DisableSMPMode(VOID)
 {
    /*
@@ -545,7 +545,7 @@ VOID APICSetup(VOID)
    * Set up LVT0, LVT1:
    *
    * set up through-local-APIC on the BP's LINT0. This is not
-   * strictly necessery in pure symmetric-IO mode, but sometimes
+   * strictly necessary in pure symmetric-IO mode, but sometimes
    * we delegate interrupts to the 8259A.
    */
   tmp = APICRead(APIC_LINT0) & APIC_LVT_MASKED;

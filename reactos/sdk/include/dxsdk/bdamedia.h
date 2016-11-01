@@ -334,9 +334,9 @@ typedef enum {
 
 
 typedef struct tagBDA_TRANSPORT_INFO {
-  ULONG ulcbPhyiscalPacket;
-  ULONG ulcbPhyiscalFrame;
-  ULONG ulcbPhyiscalFrameAlignment;
+  ULONG ulcbPhysicalPacket;
+  ULONG ulcbPhysicalFrame;
+  ULONG ulcbPhysicalFrameAlignment;
   REFERENCE_TIME AvgTimePerFrame;
 } BDA_TRANSPORT_INFO, *PBDA_TRANSPORT_INFO;
 

@@ -137,7 +137,7 @@ CmpGetBiosVersion(IN PCHAR BiosStart,
     PCHAR p, pp;
     USHORT i;
 
-    /* Check if we were given intitial data for the search */
+    /* Check if we were given initial data for the search */
     if (BiosStart)
     {
         /* Save it for later use */
@@ -939,7 +939,7 @@ CmpInitializeMachineDependentConfiguration(IN PLOADER_PARAMETER_BLOCK LoaderBloc
     if (BiosVersion) ExFreePoolWithTag(BiosVersion, TAG_CM);
 
 Quickie:
-    /* Close the procesor handle */
+    /* Close the processor handle */
     NtClose(KeyHandle);
     return STATUS_SUCCESS;
 }

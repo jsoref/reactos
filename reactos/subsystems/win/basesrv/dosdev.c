@@ -212,7 +212,7 @@ CSR_API(BaseSrvDefineDosDevice)
 
                 if (Matched && IsListEmpty(ListHead))
                 {
-                    /* Current symlink target macthed and there is nothing to revert to */
+                    /* Current symlink target matched and there is nothing to revert to */
                     RequestLinkTarget = NULL;
                 }
                 else if (Matched && !IsListEmpty(ListHead))

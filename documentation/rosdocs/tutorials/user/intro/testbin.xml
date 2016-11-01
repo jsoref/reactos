@@ -45,7 +45,7 @@ Go on to next section.
 <title>Reporting Problems</title>
 <para>
 If you encounter problems with either booting or running your application, please send a email to ros-general@reactos.com with a subject of "BUG REPORT: Problem run foo while booting on bar". Foo being your application and bar being the release 
-of ReactOS you are running, (0.0.19-Release). Please Include in the body of your email, a detailed discription of the hardware you are running on, application you are having problems with and all debug output.
+of ReactOS you are running, (0.0.19-Release). Please Include in the body of your email, a detailed description of the hardware you are running on, application you are having problems with and all debug output.
 </para>
 </sect2>
 

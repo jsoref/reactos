@@ -453,7 +453,7 @@ SepDuplicateToken(PTOKEN Token,
     uLength = AccessToken->PrivilegeCount * sizeof(LUID_AND_ATTRIBUTES);
     AccessToken->Privileges = ExAllocatePoolWithTag(PagedPool,
                                                     uLength,
-                                                    TAG_TOKEN_PRIVILAGES);
+                                                    TAG_TOKEN_PRIVILEGES);
     if (AccessToken->Privileges == NULL)
     {
         Status = STATUS_INSUFFICIENT_RESOURCES;
@@ -613,7 +613,7 @@ SepDeleteToken(PVOID ObjectBody)
         ExFreePoolWithTag(AccessToken->UserAndGroups, TAG_TOKEN_USERS);
 
     if (AccessToken->Privileges)
-        ExFreePoolWithTag(AccessToken->Privileges, TAG_TOKEN_PRIVILAGES);
+        ExFreePoolWithTag(AccessToken->Privileges, TAG_TOKEN_PRIVILEGES);
 
     if (AccessToken->DefaultDacl)
         ExFreePoolWithTag(AccessToken->DefaultDacl, TAG_TOKEN_ACL);
@@ -766,7 +766,7 @@ SepCreateToken(OUT PHANDLE TokenHandle,
     /*
      * Normally we would just point these members into the variable information
      * area; however, our ObCreateObject() call can't allocate a variable information
-     * area, so we allocate them seperately and provide a destroy function.
+     * area, so we allocate them separately and provide a destroy function.
      */
 
     uLength = sizeof(SID_AND_ATTRIBUTES) * AccessToken->UserAndGroupCount;
@@ -817,7 +817,7 @@ SepCreateToken(OUT PHANDLE TokenHandle,
     if (uLength == 0) uLength = sizeof(PVOID);
     AccessToken->Privileges = ExAllocatePoolWithTag(PagedPool,
                                                     uLength,
-                                                    TAG_TOKEN_PRIVILAGES);
+                                                    TAG_TOKEN_PRIVILEGES);
     if (AccessToken->Privileges == NULL)
     {
         Status = STATUS_INSUFFICIENT_RESOURCES;

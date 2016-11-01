@@ -558,7 +558,7 @@ FsRtlNotifyUpdateBuffer(OUT PFILE_NOTIFY_INFORMATION OutputBuffer,
  * @name FsRtlNotifyChangeDirectory
  * @implemented
  *
- * Lets FSD know if changes occures in the specified directory.
+ * Lets FSD know if changes occurs in the specified directory.
  * Directory will be reenumerated.
  *
  * @param NotifySync
@@ -1285,7 +1285,7 @@ FsRtlNotifyFilterReportChange(IN PNOTIFY_SYNC NotifySync,
 
                     /* Get the position where we can put our data (aligned!) */
                     AlignedDataLength = ROUND_UP(NotifyChange->DataLength, sizeof(ULONG));
-                    /* If it's higher than buffer length, then, bail out without outputing */
+                    /* If it's higher than buffer length, then, bail out without outputting */
                     if (DataLength > NumberOfBytes || AlignedDataLength + DataLength > NumberOfBytes)
                     {
                         NotifyChange->Flags |= NOTIFY_IMMEDIATELY;
@@ -1332,7 +1332,7 @@ FsRtlNotifyFilterReportChange(IN PNOTIFY_SYNC NotifySync,
                                 NotifyChange->Buffer = OutputBuffer;
                                 NotifyChange->AllocatedBuffer = OutputBuffer;
                             }
-                            /* If something went wrong during allocation, notify immediately instead of outputing */
+                            /* If something went wrong during allocation, notify immediately instead of outputting */
                             _SEH2_EXCEPT(EXCEPTION_EXECUTE_HANDLER)
                             {
                                 if (PoolQuotaCharged)
@@ -1413,7 +1413,7 @@ FsRtlNotifyFilterReportChange(IN PNOTIFY_SYNC NotifySync,
  * @name FsRtlNotifyFullChangeDirectory
  * @implemented
  *
- * Lets FSD know if changes occures in the specified directory.
+ * Lets FSD know if changes occurs in the specified directory.
  *
  * @param NotifySync
  *        Synchronization object pointer
@@ -1483,7 +1483,7 @@ FsRtlNotifyFullChangeDirectory(IN PNOTIFY_SYNC NotifySync,
  * @name FsRtlNotifyFullReportChange
  * @implemented
  *
- * Complets the pending notify IRPs.
+ * Completes the pending notify IRPs.
  *
  * @param NotifySync
  *        Synchronization object pointer
@@ -1577,7 +1577,7 @@ FsRtlNotifyInitializeSync(IN PNOTIFY_SYNC *NotifySync)
  * @name FsRtlNotifyReportChange
  * @implemented
  *
- * Complets the pending notify IRPs.
+ * Completes the pending notify IRPs.
  *
  * @param NotifySync
  *        Synchronization object pointer

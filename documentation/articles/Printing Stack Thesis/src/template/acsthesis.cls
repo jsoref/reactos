@@ -12,7 +12,7 @@
 %------------------------------------------------------------------------------%
 % Include packages
 %------------------------------------------------------------------------------%
-\RequirePackage[utf8]{luainputenc} 		% Enconding of the tex file
+\RequirePackage[utf8]{luainputenc} 		% Encoding of the tex file
 \RequirePackage{cmap} 						% Nice ligatures
 \RequirePackage[T1]{fontenc} 				% Encoding of the output PDF
 \RequirePackage{textcomp} 					% ????

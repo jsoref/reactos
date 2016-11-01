@@ -707,7 +707,7 @@ Paste:
 						blnQuotedParameter = !blnQuotedParameter;
 					}
 					else if (!blnQuotedParameter && _istspace(m_pchBuffer[dwCompletionOffset]))
-					{ // Found ! We are not inside quored parameter and we are on whitespace.
+					{ // Found ! We are not inside quoted parameter and we are on whitespace.
 						dwCompletionOffset++; // dwCompletionOffset must point at char AFTER first non-quoted whitespace.
 						break;
 					}
@@ -722,7 +722,7 @@ Paste:
         // Size of changing part
 				dwCompletionStringSize = dwCurrentCharOffset-dwCompletionOffset;
 
-        // Save intial changing part of completion in m_pchBuffer2
+        // Save initial changing part of completion in m_pchBuffer2
 				if (dwCompletionStringSize)
 					_tcsncpy(m_pchBuffer2,m_pchBuffer+dwCompletionOffset,dwCompletionStringSize);
 				m_pchBuffer2[dwCompletionStringSize] = 0;
@@ -744,7 +744,7 @@ Paste:
 
 			if (pchCompletion) // If completion found
 			{
-				// Set cursor position to compeltion position
+				// Set cursor position to completion position
 				m_CursorPosition = CompletionPosition;
 				if (!SetConsoleCursorPosition(m_hStdOut,m_CursorPosition))
           return FALSE;
@@ -765,7 +765,7 @@ Paste:
 
 				if (dwCompletionStringSize)
 				{
-          // Copy competion into main buffer
+          // Copy competition into main buffer
 					_tcsncpy(m_pchBuffer+dwCompletionOffset,pchCompletion,dwCompletionStringSize);
 
 					// Write completion string to console
@@ -862,7 +862,7 @@ BOOL CConsole::GetTextAttribute(WORD& rwAttributes)
 // Parameters:
 //		dwBufferSize - size in chars of the input line buffer
 //
-// Rerturns:
+// Returns:
 //		NULL - Failed.
 //		pointer to the input buffer
 TCHAR * CConsole::Init(DWORD dwBufferSize, DWORD dwMaxHistoryLines)
@@ -1063,7 +1063,7 @@ void CConsole::DisableWrite()
 {
 	m_blnDisableWrite = TRUE;
 	INPUT_RECORD InputRecord;
-	DWORD dwRecordsWriten;
+	DWORD dwRecordsWritten;
 	InputRecord.EventType = KEY_EVENT;
 	InputRecord.Event.KeyEvent.bKeyDown = TRUE;
 #ifdef UNICODE
@@ -1071,7 +1071,7 @@ void CConsole::DisableWrite()
 #else
 	InputRecord.Event.KeyEvent.uChar.AsciiChar = ' ';
 #endif
-	BOOL ret = WriteConsoleInput(m_hStdIn,&InputRecord,1,&dwRecordsWriten);
+	BOOL ret = WriteConsoleInput(m_hStdIn,&InputRecord,1,&dwRecordsWritten);
 	ASSERT(ret);
 }
 

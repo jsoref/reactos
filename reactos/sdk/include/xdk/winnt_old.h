@@ -585,7 +585,7 @@
 #define IMAGE_FILE_EXECUTABLE_IMAGE    2
 #define IMAGE_FILE_LINE_NUMS_STRIPPED    4
 #define IMAGE_FILE_LOCAL_SYMS_STRIPPED    8
-#define IMAGE_FILE_AGGRESIVE_WS_TRIM     16
+#define IMAGE_FILE_AGGRESSIVE_WS_TRIM     16
 #define IMAGE_FILE_LARGE_ADDRESS_AWARE    32
 #define IMAGE_FILE_BYTES_REVERSED_LO    128
 #define IMAGE_FILE_32BIT_MACHINE    256
@@ -1800,7 +1800,7 @@ typedef struct _CONTEXT {
 /*  N.B. This frame must be exactly a multiple of 16 bytes in length. */
 
 /*  This frame has a several purposes: 1) it is used as an argument to */
-/*  NtContinue, 2) it is used to constuct a call frame for APC delivery, */
+/*  NtContinue, 2) it is used to construct a call frame for APC delivery, */
 /*  3) it is used to construct a call frame for exception dispatching */
 /*  in user mode, and 4) it is used in the user level thread creation */
 /*  routines. */

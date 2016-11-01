@@ -1796,7 +1796,7 @@ IoAllocateDriverObjectExtension(IN PDRIVER_OBJECT DriverObject,
     RtlZeroMemory(NewDriverExtension,
                   sizeof(IO_CLIENT_EXTENSION) + DriverObjectExtensionSize);
 
-    /* Acqure lock */
+    /* Acquire lock */
     OldIrql = KeRaiseIrqlToDpcLevel();
 
     /* Fill out the extension */

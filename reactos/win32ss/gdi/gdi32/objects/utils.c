@@ -10,7 +10,7 @@
  *        BITMAPINFOHEADER or BITMAPCOREHEADER.
  *
  * @param ColorSpec
- *        Pointer to variable which specifiing the color mode (DIB_RGB_COLORS
+ *        Pointer to variable which specifying the color mode (DIB_RGB_COLORS
  *        or DIB_RGB_COLORS). On successful return this value is normalized
  *        according to the bitmap info.
  *

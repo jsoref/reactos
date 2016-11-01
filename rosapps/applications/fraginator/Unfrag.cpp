@@ -103,7 +103,7 @@ void FraggerHelp (void)
     wprintf (L"          moved. Only one pass is made over the file list. Using this option\n");
     wprintf (L"          may result in not all files being defragmented, depending on\n");
     wprintf (L"          available disk space.\n");
-    wprintf (L"-e      : Do an extensive defragmention. Files will be moved in an attempt to\n");
+    wprintf (L"-e      : Do an extensive defragmentation. Files will be moved in an attempt to\n");
     wprintf (L"          defragment both files and free space.\n");
 
     if (!CheckWinVer())

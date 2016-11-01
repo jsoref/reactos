@@ -376,7 +376,7 @@ RtlRealPredecessor(PRTL_SPLAY_LINKS Links)
     /* The parent should be a right child, return the real predecessor */
     if (RtlIsRightChild(Child)) return RtlParent(Child);
 
-    /* The parent isn't a right child, so no real precessor for us */
+    /* The parent isn't a right child, so no real predecessor for us */
     return NULL;
 }
 

@@ -62,7 +62,7 @@ BOOL CreateSurface(LPDIRECTDRAWSURFACE7* pSurface)
 
     if(DirectDraw->CreateSurface(&Desc, &Surface, NULL) != DD_OK)
     {
-        printf("ERROR: Faild to create Surface\n");
+        printf("ERROR: Failed to create Surface\n");
         return FALSE;
     }
 

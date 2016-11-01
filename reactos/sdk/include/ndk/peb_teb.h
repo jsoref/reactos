@@ -322,7 +322,7 @@ typedef struct STRUCT(_TEB)
     PVOID FlsData;
 #endif
 #if (NTDDI_VERSION >= NTDDI_LONGHORN)
-    PVOID PreferredLangauges;
+    PVOID PreferredLanguages;
     PVOID UserPrefLanguages;
     PVOID MergedPrefLanguages;
     ULONG MuiImpersonation;

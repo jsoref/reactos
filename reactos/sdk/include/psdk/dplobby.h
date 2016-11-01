@@ -103,7 +103,7 @@ typedef struct tagDPLDATA_PLAYERSCORE
  * System messages can be identified by dwMessageFlags having a value of DPLMSG_SYSTEM
  * after a call to ReceiveLobbyMessage.
  *
- * Standard messages can be indentified by dwMessageFlags having a value of DPLMSG_STANDARD
+ * Standard messages can be identified by dwMessageFlags having a value of DPLMSG_STANDARD
  * after a call to ReceiveLobbyMessage.
  */
 
@@ -127,7 +127,7 @@ typedef struct tagDPLDATA_PLAYERSCORE
 
 
 
-/* Used to indentify the message type */
+/* Used to identify the message type */
 typedef struct tagDPLMSG_GENERIC
 {
     DWORD       dwType;         /* Message type */
@@ -193,7 +193,7 @@ typedef struct tagDPLMSG_NEWSESSIONHOST
 
 /*****************************************************************************
  * DirectPlay Address ID's
- * A DirectPlay address is composed of multiple data chunks, each assocated with
+ * A DirectPlay address is composed of multiple data chunks, each associated with
  * a GUID to give significance to the type of data. All chunks have an associated
  * size so that unknown chunks can be ignored for backwards compatibility!
  * EnumAddresses function is used to parse the address data chunks.

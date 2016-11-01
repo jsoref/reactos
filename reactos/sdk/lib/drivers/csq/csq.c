@@ -193,7 +193,7 @@ IoCsqInsertIrp(
  *
  * @note
  *     - Passes the additional context through to the driver-supplied callback,
- *       which can be used with more sophistocated queues
+ *       which can be used with more sophisticated queues
  *     - Marks the IRP pending in all cases
  *     - Guaranteed to not queue a canceled IRP
  *     - This is complicated logic, and is patterend after the Microsoft library.
@@ -406,7 +406,7 @@ IoCsqRemoveNextIrp(
          * If the cancel routine is gone, we're already canceled,
          * and are spinning on the queue lock in our own cancel
          * routine.  Move on to the next candidate.  It'll get
-         * removed by the cance routine.
+         * removed by the cancel routine.
          */
         if(!IoSetCancelRoutine(Irp, NULL))
             continue;

@@ -16,7 +16,7 @@
  * creating the first POSIX+ process in a group without the ability to
  * fork+exec (for example from inside a Win32 process). Processes created by
  * __PdxSpawnPosixProcess() will *not* inherit anything from the parent, not
- * even handles: all creation parameters have to be specified explicitely
+ * even handles: all creation parameters have to be specified explicitly
  */
 
 #include <ddk/ntddk.h>

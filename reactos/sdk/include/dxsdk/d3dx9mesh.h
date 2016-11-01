@@ -656,7 +656,7 @@ DECLARE_INTERFACE_(ID3DXPRTEngine, IUnknown)
     STDMETHOD(SetMinMaxIntersection)(THIS_ FLOAT min, FLOAT max) PURE;
     STDMETHOD(RobustMeshRefine)(THIS_ FLOAT min_edge_length, UINT max_subdiv) PURE;
     STDMETHOD(SetSamplingInfo)(THIS_ UINT num_rays, BOOL use_sphere,
-        BOOL use_cosine, BOOL adaptive, FLOAT adpative_thresh) PURE;
+        BOOL use_cosine, BOOL adaptive, FLOAT adaptive_thresh) PURE;
     STDMETHOD(ComputeDirectLightingSH)(THIS_ UINT sh_order, ID3DXPRTBuffer *data_out) PURE;
     STDMETHOD(ComputeDirectLightingSHAdaptive)(THIS_ UINT sh_order, float adaptive_thresh,
             float min_edge_length, UINT max_subdiv, ID3DXPRTBuffer *data_out) PURE;

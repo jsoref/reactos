@@ -368,7 +368,7 @@ TestDeviceCreated(
             "Expected Flags DO_DEVICE_HAS_NAME | DO_DEVICE_INITIALIZING, got %lu\n", DeviceObject->Flags);
     }
     ok(DeviceObject->DeviceType == FILE_DEVICE_UNKNOWN,
-        "Expected DeviceType to match creation parameter FILE_DEVICE_UNKNWOWN, got %lu\n",
+        "Expected DeviceType to match creation parameter FILE_DEVICE_UNKNOWN, got %lu\n",
         DeviceObject->DeviceType);
     ok(DeviceObject->ActiveThreadCount == 0, "Expected ActiveThreadCount = 0, got %lu\n", DeviceObject->ActiveThreadCount);
 
@@ -377,7 +377,7 @@ TestDeviceCreated(
     ok(extdev->ExtensionFlags == 0, "Expected Extended ExtensionFlags to be 0, got %lu\n", extdev->ExtensionFlags);
     ok (extdev->Type == 13, "Expected Type of 13, got %d\n", extdev->Type);
     ok (extdev->Size == 0, "Expected Size of 0, got %d\n", extdev->Size);
-    ok (extdev->DeviceObject == DeviceObject, "Expected DeviceOject to match newly created device %p, got %p\n",
+    ok (extdev->DeviceObject == DeviceObject, "Expected DeviceObject to match newly created device %p, got %p\n",
         DeviceObject, extdev->DeviceObject);
     ok(extdev->AttachedTo == NULL, "Expected AttachTo to be NULL, got %p\n", extdev->AttachedTo);
     ok(extdev->StartIoCount == 0, "Expected StartIoCount = 0, got %lu\n", extdev->StartIoCount);
@@ -420,7 +420,7 @@ TestDeviceDeletion(
     ok(DeviceObject->Flags == (DO_DEVICE_HAS_NAME | (Lower ? DO_EXCLUSIVE : 0)),
         "Expected Flags DO_DEVICE_HAS_NAME, got %lu\n", DeviceObject->Flags);
     ok(DeviceObject->DeviceType == FILE_DEVICE_UNKNOWN,
-        "Expected DeviceType to match creation parameter FILE_DEVICE_UNKNWOWN, got %lu\n",
+        "Expected DeviceType to match creation parameter FILE_DEVICE_UNKNOWN, got %lu\n",
         DeviceObject->DeviceType);
     ok(DeviceObject->ActiveThreadCount == 0, "Expected ActiveThreadCount = 0, got %lu\n", DeviceObject->ActiveThreadCount);
 
@@ -430,7 +430,7 @@ TestDeviceDeletion(
         "Expected Extended ExtensionFlags to be DOE_UNLOAD_PENDING, got %lu\n", extdev->ExtensionFlags);
     ok (extdev->Type == 13, "Expected Type of 13, got %d\n", extdev->Type);
     ok (extdev->Size == 0, "Expected Size of 0, got %d\n", extdev->Size);
-    ok (extdev->DeviceObject == DeviceObject, "Expected DeviceOject to match newly created device %p, got %p\n",
+    ok (extdev->DeviceObject == DeviceObject, "Expected DeviceObject to match newly created device %p, got %p\n",
         DeviceObject, extdev->DeviceObject);
     if (Lower || !Attached)
     {
@@ -465,7 +465,7 @@ TestDeviceCreateDelete(
                             &DeviceObject);
     ok(Status == STATUS_OBJECT_PATH_NOT_FOUND, "Expected STATUS_OBJECT_PATH_NOT_FOUND, got 0x%lX\n", Status);
 
-    /* Create using correct params with exclusice access */
+    /* Create using correct params with exclusive access */
     RtlInitUnicodeString(&DeviceString, L"\\Device\\Kmtest-IoDeviceObject");
     Status = IoCreateDevice(DriverObject,
                             0,
@@ -486,7 +486,7 @@ TestDeviceCreateDelete(
             DriverObject->DeviceObject);
     }
 
-    /* Create using correct params without exclusice access */
+    /* Create using correct params without exclusive access */
     Status = IoCreateDevice(DriverObject,
                             0,
                             &DeviceString,

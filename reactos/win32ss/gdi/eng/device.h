@@ -25,7 +25,7 @@ PGRAPHICS_DEVICE
 NTAPI
 EngpRegisterGraphicsDevice(
     _In_ PUNICODE_STRING pustrDeviceName,
-    _In_ PUNICODE_STRING pustrDiplayDrivers,
+    _In_ PUNICODE_STRING pustrDisplayDrivers,
     _In_ PUNICODE_STRING pustrDescription,
     _In_ PDEVMODEW pdmDefault);
 

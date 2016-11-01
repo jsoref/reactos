@@ -178,7 +178,7 @@ BOOLEAN InitThreads()
         ok(hKbdHookLL!=NULL,"failed to set hook\n");
     }
 
-    /* create test clases */
+    /* create test classes */
     RegisterSimpleClass(TestProc, L"TestClass");
 
     memset(&data[0], 0, sizeof(data[0]));
@@ -237,7 +237,7 @@ static void cleanup_attachments()
 void Test_SimpleParameters()
 {
     BOOL ret;
-    /* FIXME: acording to msdn xp doesn't set last error but vista+ does*/
+    /* FIXME: according to msdn xp doesn't set last error but vista+ does*/
 
     /* test wrong thread */
     ret = AttachThreadInput( 0, 1, TRUE);

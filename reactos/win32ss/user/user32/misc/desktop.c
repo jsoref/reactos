@@ -483,7 +483,7 @@ CreateDesktopW(LPCWSTR lpszDesktop,
   HDESK hDesktop;
   ULONG Attributes = (OBJ_OPENIF|OBJ_CASE_INSENSITIVE);
 
-  /* Retrive WinStation handle. */
+  /* Retrieve WinStation handle. */
   hWinSta = NtUserGetProcessWindowStation();
 
   /* Initialize the strings. */

@@ -490,7 +490,7 @@ MmReferencePage(PFN_NUMBER Pfn)
 {
     PMMPFN Pfn1;
 
-    DPRINT("MmReferencePage(PysicalAddress %x)\n", Pfn << PAGE_SHIFT);
+    DPRINT("MmReferencePage(PhysicalAddress %x)\n", Pfn << PAGE_SHIFT);
 
     ASSERT(KeGetCurrentIrql() == DISPATCH_LEVEL);
     ASSERT(Pfn != 0);

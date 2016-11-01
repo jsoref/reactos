@@ -227,7 +227,7 @@ typedef struct _FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE {
   UCHAR DataTypeSupported[2];
   UCHAR BufferUnderrunFree:1;
   UCHAR AddressModeReservation:1;
-  UCHAR TrackRessourceInformation:1;
+  UCHAR TrackResourceInformation:1;
   UCHAR Reserved01:5;
   UCHAR NumberOfLinkSizes;
 #if !defined(__midl) && !defined(__WIDL__)
@@ -255,7 +255,7 @@ typedef struct _FEATURE_DATA_FORMATTABLE {
 typedef struct _FEATURE_DATA_DEFECT_MANAGEMENT {
   FEATURE_HEADER Header;
   UCHAR Reserved1:7;
-  UCHAR SupplimentalSpareArea:1;
+  UCHAR SupplementalSpareArea:1;
   UCHAR Reserved2[3];
 } FEATURE_DATA_DEFECT_MANAGEMENT, *PFEATURE_DATA_DEFECT_MANAGEMENT;
 
@@ -534,8 +534,8 @@ typedef struct _FEATURE_DATA_EMBEDDED_CHANGER {
 
 typedef struct _FEATURE_DATA_CD_AUDIO_ANALOG_PLAY {
   FEATURE_HEADER Header;
-  UCHAR SeperateVolume:1;
-  UCHAR SeperateChannelMute:1;
+  UCHAR SeparateVolume:1;
+  UCHAR SeparateChannelMute:1;
   UCHAR ScanSupported:1;
   UCHAR Reserved1:5;
   UCHAR Reserved2;

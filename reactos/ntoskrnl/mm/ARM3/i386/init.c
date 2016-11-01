@@ -34,7 +34,7 @@ MMPTE DemandZeroPte  = {{MM_READWRITE << MM_PTE_SOFTWARE_PROTECTION_BITS}};
 MMPTE PrototypePte = {{(MM_READWRITE << MM_PTE_SOFTWARE_PROTECTION_BITS) |
                       PTE_PROTOTYPE | (MI_PTE_LOOKUP_NEEDED << PAGE_SHIFT)}};
 
-/* Template PTE for decommited page */
+/* Template PTE for decommitted page */
 MMPTE MmDecommittedPte = {{MM_DECOMMIT << MM_PTE_SOFTWARE_PROTECTION_BITS}};
 
 /* PRIVATE FUNCTIONS **********************************************************/
@@ -127,7 +127,7 @@ MiComputeNonPagedPoolVa(IN ULONG FreePages)
 {
     IN PFN_NUMBER PoolPages;
 
-    /* Check if this is a machine with less than 256MB of RAM, and no overide */
+    /* Check if this is a machine with less than 256MB of RAM, and no override */
     if ((MmNumberOfPhysicalPages <= MI_MIN_PAGES_FOR_NONPAGED_POOL_TUNING) &&
         !(MmSizeOfNonPagedPoolInBytes))
     {
@@ -138,7 +138,7 @@ MiComputeNonPagedPoolVa(IN ULONG FreePages)
     /* Hyperspace ends here */
     MmHyperSpaceEnd = (PVOID)((ULONG_PTR)MmSystemCacheWorkingSetList - 1);
 
-    /* Check if the user gave a ridicuously large nonpaged pool RAM size */
+    /* Check if the user gave a ridiculously large nonpaged pool RAM size */
     if ((MmSizeOfNonPagedPoolInBytes >> PAGE_SHIFT) > (FreePages * 7 / 8))
     {
         /* More than 7/8ths of RAM was dedicated to nonpaged pool, ignore! */
@@ -153,7 +153,7 @@ MiComputeNonPagedPoolVa(IN ULONG FreePages)
         MmSizeOfNonPagedPoolInBytes += (FreePages - 1024) / 256 * MmMinAdditionNonPagedPoolPerMb;
     }
 
-    /* Check if the registy setting or our dynamic calculation was too high */
+    /* Check if the registry setting or our dynamic calculation was too high */
     if (MmSizeOfNonPagedPoolInBytes > MI_MAX_INIT_NONPAGED_POOL_SIZE)
     {
         /* Set it to the maximum */
@@ -341,7 +341,7 @@ MiInitMachineDependent(IN PLOADER_PARAMETER_BLOCK LoaderBlock)
     // Normally, the PFN database should start after the loader images.
     // This is already the case in ReactOS, but for now we want to co-exist
     // with the old memory manager, so we'll create a "Shadow PFN Database"
-    // instead, and arbitrarly start it at 0xB0000000.
+    // instead, and arbitrarily start it at 0xB0000000.
     //
     MmPfnDatabase = (PVOID)0xB0000000;
     ASSERT(((ULONG_PTR)MmPfnDatabase & (PDE_MAPPED_VA - 1)) == 0);
@@ -431,7 +431,7 @@ MiInitMachineDependent(IN PLOADER_PARAMETER_BLOCK LoaderBlock)
     while (PointerPte <= LastPte)
     {
         //
-        // Use one of our contigous pages
+        // Use one of our contiguous pages
         //
         TempPte.u.Hard.PageFrameNumber = PageFrameIndex++;
         MI_WRITE_VALID_PTE(PointerPte++, TempPte);

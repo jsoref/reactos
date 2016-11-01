@@ -40,7 +40,7 @@ MiCreatePebOrTeb(IN PEPROCESS Process,
     Vad = ExAllocatePoolWithTag(NonPagedPool, sizeof(MMVAD_LONG), 'ldaV');
     if (!Vad) return STATUS_NO_MEMORY;
 
-    /* Setup the primary flags with the size, and make it commited, private, RW */
+    /* Setup the primary flags with the size, and make it committed, private, RW */
     Vad->u.LongFlags = 0;
     Vad->u.VadFlags.CommitCharge = BYTES_TO_PAGES(Size);
     Vad->u.VadFlags.MemCommit = TRUE;
@@ -1119,7 +1119,7 @@ MmCreateProcessAddressSpace(IN ULONG MinWs,
         OldIrql = KeAcquireQueuedSpinLock(LockQueuePfnLock);
     }
 
-    /* Get a zero page for the woring set list, if possible */
+    /* Get a zero page for the working set list, if possible */
     MI_SET_USAGE(MI_USAGE_PAGE_TABLE);
     Color = MI_GET_NEXT_PROCESS_COLOR(Process);
     WsListIndex = MiRemoveZeroPageSafe(Color);
@@ -1296,7 +1296,7 @@ MmCleanProcessAddressSpace(IN PEPROCESS Process)
             MiUnlockProcessWorkingSetUnsafe(Process, Thread);
         }
 
-         /* Skip ARM3 fake VADs, they'll be freed by MmDeleteProcessAddresSpace */
+         /* Skip ARM3 fake VADs, they'll be freed by MmDeleteProcessAddressSpace */
         if (Vad->u.VadFlags.Spare == 1)
         {
             /* Set a flag so MmDeleteMemoryArea knows to free, but not to remove */

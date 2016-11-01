@@ -1544,7 +1544,7 @@ MiFindInitializationCode(OUT PVOID *StartVa,
                         }
                         else
                         {
-                            /* Non-contigous discard flag, or no flag, break out */
+                            /* Non-contiguous discard flag, or no flag, break out */
                             break;
                         }
                     }
@@ -1563,7 +1563,7 @@ MiFindInitializationCode(OUT PVOID *StartVa,
                     /* Have we reached the last section yet? */
                     if (SectionCount != 1)
                     {
-                        /* Then align this accross the session boundary */
+                        /* Then align this across the session boundary */
                         InitEnd = ((Alignment + InitEnd - 1) & 0XFFFFF000) - 1;
                     }
                 }

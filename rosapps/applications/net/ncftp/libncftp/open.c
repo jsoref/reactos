@@ -863,7 +863,7 @@ FTPOpenHost(const FTPCIPtr cip)
 			/* Close and try again. */
 			(void) FTPCloseHost(cip);
 
-			/* Originally we also stopped retyring if
+			/* Originally we also stopped retrying if
 			 * we got kErrBadRemoteUser and non-anonymous,
 			 * but some FTP servers apparently do their
 			 * max user check after the username is sent.

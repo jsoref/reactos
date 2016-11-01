@@ -103,7 +103,7 @@ static DMA_OPERATIONS HalpDmaOperations = {
    NULL, /* Initialized in HalpInitDma() */
    (PGET_DMA_ALIGNMENT)HalpDmaGetDmaAlignment,
    (PREAD_DMA_COUNTER)HalReadDmaCounter,
-   /* FIXME: Implement the S/G funtions. */
+   /* FIXME: Implement the S/G functions. */
    NULL /*(PGET_SCATTER_GATHER_LIST)HalGetScatterGatherList*/,
    NULL /*(PPUT_SCATTER_GATHER_LIST)HalPutScatterGatherList*/,
    NULL /*(PCALCULATE_SCATTER_GATHER_LIST_SIZE)HalCalculateScatterGatherListSize*/,
@@ -139,7 +139,7 @@ HalpInitDma(VOID)
       HalpEisaDma = TRUE;
 
    /*
-    * Intialize all the global variables and allocate master adapter with
+    * Initialize all the global variables and allocate master adapter with
     * first map buffers.
     */
 
@@ -272,7 +272,7 @@ HalpGrowMapBuffers(
           * using RtlFindClearBits for contiguous map register regions.
           *
           * Also for non-EISA DMA leave one free entry for every 64Kb
-          * break, because the DMA controller can handle only coniguous
+          * break, because the DMA controller can handle only contiguous
           * 64Kb regions.
           */
 
@@ -1113,7 +1113,7 @@ HalAllocateAdapterChannel(
        * - If some adapter is already present in the queue we must
        *   respect the order of adapters asking for map registers and
        *   so the fast case described above can't take place.
-       *   This case is also entered if not enough coniguous map
+       *   This case is also entered if not enough contiguous map
        *   registers are present.
        *
        *   A work queue item is allocated and queued, the adapter is
@@ -1736,7 +1736,7 @@ IoMapTransfer(
 
    /*
     * The code below applies to slave DMA adapters and bus master adapters
-    * without hardward S/G support.
+    * without hardware S/G support.
     */
 
    RealMapRegisterBase =

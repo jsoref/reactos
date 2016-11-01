@@ -42,7 +42,7 @@ typedef struct
 //            
 //
 //  Each IHCDController creates an IUSBHardwareDevice class upon initialization. The 
-//  IUSBHardwardeDevice class is used to abstract usb controller specifics. The IHubController
+//  IUSBHardwareDevice class is used to abstract usb controller specifics. The IHubController
 //  manages all attached devices and handles hub control ioctl requests.
 //
 //  Each IUSBHardwareDevice has one IDMAMemoryManager and one IUSBQueue. The IDMAMemoryManager
@@ -55,7 +55,7 @@ typedef struct
 //
 // class IRootHCDController
 //
-// Description: This class serves as the root host controller. The host controller mantains
+// Description: This class serves as the root host controller. The host controller maintains
 // a list of registered controllers and provides support functions for the host controllers
 
 struct IHCDController;
@@ -85,7 +85,7 @@ DECLARE_INTERFACE_(IRootHCDController, IUnknown)
 //
 // UnregisterHCD
 //
-// Description: this function unregistes a host controller
+// Description: this function unregisters a host controller
 
     virtual NTSTATUS UnregisterHCD(struct IHCDController * Controller) = 0;
 
@@ -117,7 +117,7 @@ DECLARE_INTERFACE_(IHCDController, IUnknown)
 // Initialize
 //
 // Description: This function initializes the IHCDController implementation. 
-// It creates an IUSBHardwareDevice object and initializes it. It also registeres itself with
+// It creates an IUSBHardwareDevice object and initializes it. It also registers itself with
 // the IRootHCDController
 //
     virtual NTSTATUS Initialize(IN PROOTHDCCONTROLLER RootHCDController,

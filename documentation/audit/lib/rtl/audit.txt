@@ -19,7 +19,7 @@ openrce.org however documents the call flow... The parameters are kind of
 obvious, and it doesn't really make a lot of sense to choose different ones.
 w3seek posted a patch in bug 1344 that modifies (extends) the parameters
 of this internal function to reduce code duplication even more. The functions
-themselves are nothing complex, only basic structure maniuplations.
+themselves are nothing complex, only basic structure manipulations.
 The structure layout is thoroughly documented in the platform sdk and on
 various websites.
 Result: No signs of reverse engineering found, the only hardcoded value is
@@ -30,7 +30,7 @@ Info: w3seek rewrote some (he doesn't know how much) of the code so it
 would work with the new structure definitions that were added to the ndk
 around June, 2004. w3seek changed it to use rtl handle tables (as per
 definitions of the new atom structures) and added support for pinned atoms.
-The implementation containted a few bugs that were later fixed by others. Atom
+The implementation contained a few bugs that were later fixed by others. Atom
 tables are more or less just referenced hash tables, nothing complicated.
 Result: Clean
 
@@ -58,7 +58,7 @@ Taking ownership:
 2) the well-known SID of the Administrators group
 3) creating a new security descriptor with the new owner
 4) changing the owner by setting the new descriptor
-5) restoring the enabled privillege.
+5) restoring the enabled privilege.
 
 Checking security is also not very difficult:
 1) reading the owner+dacl
@@ -113,13 +113,13 @@ generictable.c:
  - Doesn't contain much code...
 
 handle.c:
- - Implements the very basic RTL handle tables. The code is very incomplete and barely does it's job. I fixed some severe flaws of the previous implementation when making the atom code depend on it. Also because of updated structures in the ndk. It's a minimalistic implementation, mostly just manages an array of handle table entries. Studied wine's implementation before.
+ - Implements the very basic RTL handle tables. The code is very incomplete and barely does it's job. I fixed some severe flaws of the previous implementation when making the atom code depend on it. Also because of updated structures in the ndk. It's a minimalist implementation, mostly just manages an array of handle table entries. Studied wine's implementation before.
 
 heap.c:
  - Implements the heap manager. Imported from wine...
 
 image.c:
- - Implements some PE header functions, nothing complicated. Should be self-explainatory considering how well the PE structures are documented.
+ - Implements some PE header functions, nothing complicated. Should be self-explanatory considering how well the PE structures are documented.
 
 largeint.c:
  - 64 bit maths is very difficult, especially when the compiler does most of the magic for us...

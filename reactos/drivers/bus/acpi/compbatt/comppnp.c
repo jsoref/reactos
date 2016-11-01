@@ -361,7 +361,7 @@ CompBattAddDevice(IN PDRIVER_OBJECT DriverObject,
     }
 
     /* Set device object flags */
-    DeviceObject->Flags |= (DO_POWER_PAGABLE | DO_BUFFERED_IO);
+    DeviceObject->Flags |= (DO_POWER_PAGEABLE | DO_BUFFERED_IO);
     DeviceObject->Flags &= ~DO_DEVICE_INITIALIZING;
 
     /* Setup the device extension */

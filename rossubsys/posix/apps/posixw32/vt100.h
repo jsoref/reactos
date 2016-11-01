@@ -7,7 +7,7 @@
  *
  * Full permission is granted to use, modify and distribute
  * this code, provided:
- * 1) This comment field is included in its entirity
+ * 1) This comment field is included in its entirety
  * 2) No money is charged for any work including or based on 
  *    portions of this code.
  *
@@ -118,7 +118,7 @@ int vtProcessedTextOut(char *cbuf, int count);
 /* Prototype for functions which MUST BE SUPPLIED BY THE BACK END!!! */
 
 /* Back-end specific initialization is performed in this function.
- * this is gauranteed to be called before any other requests are made
+ * this is guaranteed to be called before any other requests are made
  * of the back end.
  */
 
@@ -183,7 +183,7 @@ int beSaveCursor(void);
 /* beGetTextAttributes -
  *
  * given a pointer to 'fore'ground and 'back'ground ints,
- * fill them with a device-independant description of the
+ * fill them with a device-independent description of the
  * current foreground and background colors, as well as any
  * font information in the foreground variable.
  */
@@ -192,7 +192,7 @@ int beGetTextAttributes(int *fore, int *back);
 
 /* beSetTextAttributes -
  *
- * Given a foreground and a background device independant (SC) color and font
+ * Given a foreground and a background device independent (SC) color and font
  * specification, apply these to the display, and save the state in the 
  * static screen variables.
  *

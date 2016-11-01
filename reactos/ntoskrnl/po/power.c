@@ -379,7 +379,7 @@ VOID
 FASTCALL
 PopIdle0(IN PPROCESSOR_POWER_STATE PowerState)
 {
-    /* FIXME: Extremly naive implementation */
+    /* FIXME: Extremely naive implementation */
     HalProcessorIdle();
 }
 
@@ -771,7 +771,7 @@ NtSetThreadExecutionState(IN EXECUTION_STATE esFlags,
         _SEH2_END;
     }
 
-    /* Save the previous state, always masking in the continous flag */
+    /* Save the previous state, always masking in the continuous flag */
     PreviousState = Thread->PowerState | ES_CONTINUOUS;
 
     /* Check if we need to update the power state */

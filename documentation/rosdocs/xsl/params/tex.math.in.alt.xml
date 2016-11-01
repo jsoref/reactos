@@ -44,7 +44,7 @@ store TeX inside <sgmltag>alt</sgmltag> element:</para>
 
 <para>If you want use this feature, you should process your FO with
 PassiveTeX, which only supports TeX math notation. When calling
-stylsheet, don't forget to specify also
+stylesheet, don't forget to specify also
 passivetex.extensions=1.</para>
 
 <para>If you want equations in HTML, just process generated file

@@ -5470,7 +5470,7 @@ NtUserGetTitleBarInfo(
     TRACE("Enter NtUserGetTitleBarInfo\n");
     UserEnterExclusive();
 
-    /* Vaildate the windows handle */
+    /* Validate the windows handle */
     if (!(WindowObject = UserGetWindowObject(hwnd)))
     {
         EngSetLastError(ERROR_INVALID_WINDOW_HANDLE);

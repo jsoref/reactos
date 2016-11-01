@@ -772,7 +772,7 @@ ClassDispatchPnp(
 
                     //
                     // ASSERT that we never get two queries in a row, as
-                    // this will severly mess up the state machine
+                    // this will severely mess up the state machine
                     //
                     ASSERT(commonExtension->CurrentState != irpStack->MinorFunction);
                     commonExtension->PreviousState = commonExtension->CurrentState;
@@ -946,7 +946,7 @@ ClassDispatchPnp(
 
                     case DeviceUsageTypePaging: {
 
-                        BOOLEAN setPagable;
+                        BOOLEAN setPageable;
 
                         if((irpStack->Parameters.UsageNotification.InPath) &&
                            (commonExtension->CurrentState != IRP_MN_START_DEVICE)) {
@@ -993,11 +993,11 @@ ClassDispatchPnp(
                         }
 
                         //
-                        // if removing last paging device, need to set DO_POWER_PAGABLE
+                        // if removing last paging device, need to set DO_POWER_PAGEABLE
                         // bit here, and possible re-set it below on failure.
                         //
 
-                        setPagable = FALSE;
+                        setPageable = FALSE;
 
                         if (!irpStack->Parameters.UsageNotification.InPath &&
                             commonExtension->PagingPathCount == 1
@@ -1005,7 +1005,7 @@ ClassDispatchPnp(
 
                             //
                             // removing last paging file
-                            // must have DO_POWER_PAGABLE bits set, but only
+                            // must have DO_POWER_PAGEABLE bits set, but only
                             // if noone set the DO_POWER_INRUSH bit
                             //
 
@@ -1014,15 +1014,15 @@ ClassDispatchPnp(
                                 DebugPrint((2, "ClassDispatchPnp (%p,%p): Last "
                                             "paging file removed, but "
                                             "DO_POWER_INRUSH was set, so NOT "
-                                            "setting DO_POWER_PAGABLE\n",
+                                            "setting DO_POWER_PAGEABLE\n",
                                             DeviceObject, Irp));
                             } else {
                                 DebugPrint((2, "ClassDispatchPnp (%p,%p): Last "
                                             "paging file removed, "
-                                            "setting DO_POWER_PAGABLE\n",
+                                            "setting DO_POWER_PAGEABLE\n",
                                             DeviceObject, Irp));
-                                SET_FLAG(DeviceObject->Flags, DO_POWER_PAGABLE);
-                                setPagable = TRUE;
+                                SET_FLAG(DeviceObject->Flags, DO_POWER_PAGEABLE);
+                                setPageable = TRUE;
                             }
 
                         }
@@ -1049,9 +1049,9 @@ ClassDispatchPnp(
                             if (irpStack->Parameters.UsageNotification.InPath) {
                                 if (commonExtension->PagingPathCount == 1) {
                                     DebugPrint((2, "ClassDispatchPnp (%p,%p): "
-                                                "Clearing PAGABLE bit\n",
+                                                "Clearing PAGEABLE bit\n",
                                                 DeviceObject, Irp));
-                                    CLEAR_FLAG(DeviceObject->Flags, DO_POWER_PAGABLE);
+                                    CLEAR_FLAG(DeviceObject->Flags, DO_POWER_PAGEABLE);
                                 }
                             }
 
@@ -1061,12 +1061,12 @@ ClassDispatchPnp(
                             // cleanup the changes done above
                             //
 
-                            if (setPagable == TRUE) {
+                            if (setPageable == TRUE) {
                                 DebugPrint((2, "ClassDispatchPnp (%p,%p): Unsetting "
-                                            "PAGABLE bit due to irp failure\n",
+                                            "PAGEABLE bit due to irp failure\n",
                                             DeviceObject, Irp));
-                                CLEAR_FLAG(DeviceObject->Flags, DO_POWER_PAGABLE);
-                                setPagable = FALSE;
+                                CLEAR_FLAG(DeviceObject->Flags, DO_POWER_PAGEABLE);
+                                setPageable = FALSE;
                             }
 
                             //
@@ -1413,7 +1413,7 @@ NTSTATUS NTAPI ClassPnpStartDevice(IN PDEVICE_OBJECT DeviceObject)
                                         CLASSP_REG_PERF_RESTORE_VALUE_NAME,
                                         &t);
                 if (t >= CLASS_PERF_RESTORE_MINIMUM) {
-                    fdoExtension->PrivateFdoData->Perf.ReEnableThreshhold = t;
+                    fdoExtension->PrivateFdoData->Perf.ReEnableThreshold = t;
                 }
             }
 
@@ -1555,7 +1555,7 @@ Routine Description:
     If the device object is a PDO (partition object) then the request will
     simply be adjusted for Partition0 and issued to the lower device driver.
 
-    IF the device object is an FDO (paritition 0 object), the number of bytes
+    IF the device object is an FDO (partition 0 object), the number of bytes
     in the request are checked against the maximum byte counts that the adapter
     supports and requests are broken up into
     smaller sizes if necessary.
@@ -1987,7 +1987,7 @@ ClassSendStartUnit()
 Routine Description:
 
     Send command to SCSI unit to start or power up.
-    Because this command is issued asynchronounsly, that is, without
+    Because this command is issued asynchronously, that is, without
     waiting on it to complete, the IMMEDIATE flag is not set. This
     means that the CDB will not return until the drive has powered up.
     This should keep subsequent requests from being submitted to the
@@ -2034,7 +2034,7 @@ ClassSendStartUnit(
 
         //
         // ISSUE-2000/02/03-peterwie
-        // This code path was inheritted from the NT 4.0 class2.sys driver.
+        // This code path was inherited from the NT 4.0 class2.sys driver.
         // It needs to be changed to survive low-memory conditions.
         //
 
@@ -2101,7 +2101,7 @@ ClassSendStartUnit(
 
         //
         // ISSUE-2000/02/03-peterwie
-        // This code path was inheritted from the NT 4.0 class2.sys driver.
+        // This code path was inherited from the NT 4.0 class2.sys driver.
         // It needs to be changed to survive low-memory conditions.
         //
 
@@ -2145,7 +2145,7 @@ ClassAsynchronousCompletion() ISSUE-2000/02/18-henrygab - why public?!
 Routine Description:
 
     This routine is called when an asynchronous I/O request
-    which was issused by the class driver completes.  Examples of such requests
+    which was issued by the class driver completes.  Examples of such requests
     are release queue or START UNIT. This routine releases the queue if
     necessary.  It then frees the context and the IRP.
 
@@ -2538,7 +2538,7 @@ ClassIoComplete(
     // Free the srb
     //
 
-    if(!TEST_FLAG(srb->SrbFlags, SRB_CLASS_FLAGS_PERSISTANT)) {
+    if(!TEST_FLAG(srb->SrbFlags, SRB_CLASS_FLAGS_PERSISTENT)) {
 
         if (PORT_ALLOCATED_SENSE(fdoExtension, srb)) {
             FREE_PORT_ALLOCATED_SENSE_BUFFER(fdoExtension, srb);
@@ -2555,10 +2555,10 @@ ClassIoComplete(
     } else {
 
         DebugPrint((2, "ClassIoComplete: Not Freeing srb @ %p because "
-                    "SRB_CLASS_FLAGS_PERSISTANT set\n", srb));
+                    "SRB_CLASS_FLAGS_PERSISTENT set\n", srb));
         if (PORT_ALLOCATED_SENSE(fdoExtension, srb)) {
             DebugPrint((2, "ClassIoComplete: Not Freeing sensebuffer @ %p "
-                        " because SRB_CLASS_FLAGS_PERSISTANT set\n",
+                        " because SRB_CLASS_FLAGS_PERSISTENT set\n",
                         srb->SenseInfoBuffer));
         }
 
@@ -2667,8 +2667,8 @@ ClassSendSrbSynchronous(
     BOOLEAN retry;
 
     //
-    // NOTE: This code is only pagable because we are not freezing
-    //       the queue.  Allowing the queue to be frozen from a pagable
+    // NOTE: This code is only pageable because we are not freezing
+    //       the queue.  Allowing the queue to be frozen from a pageable
     //       routine could leave the queue frozen as we try to page in
     //       the code to unfreeze the queue.  The result would be a nice
     //       case of deadlock.  Therefore, since we are unfreezing the
@@ -3188,7 +3188,7 @@ ClassInterpretSenseInfo(
                         SCSI_SENSE_NOT_READY/SCSI_ADSENSE_NO_MEDIA_IN_DEVICE
 
                         These drives should not pass WHQL certification due
-                        to this discrepency.
+                        to this discrepancy.
 
                         */
                         retry = FALSE;
@@ -4112,7 +4112,7 @@ Arguments:
 
     Length - Supplies the length in bytes of the mode sense buffer.
 
-    PageMode - Supplies the page or pages of mode sense data to be retrived.
+    PageMode - Supplies the page or pages of mode sense data to be retrieved.
 
 Return Value:
 
@@ -4292,9 +4292,9 @@ Routine Description:
 
 Arguments:
 
-    Fdo - Supplies the functional device object for the orginal request.
+    Fdo - Supplies the functional device object for the original request.
 
-    Srb - Supplies a paritally build ScsiRequestBlock.  In particular, the
+    Srb - Supplies a partially built ScsiRequestBlock.  In particular, the
         CDB and the SRB timeout value must be filled in.  The SRB must not be
         allocated from zone.
 
@@ -4616,7 +4616,7 @@ ClassDeviceControl(
         //PSCSI_PASS_THROUGH scsiPass;
 
         //
-        // Validiate the user buffer.
+        // Validate the user buffer.
         //
         #if defined (_WIN64)
 
@@ -5860,7 +5860,7 @@ ClassCreateDeviceObject(
             // Set the initial device object flags.
             //
 
-            SET_FLAG(deviceObject->Flags, DO_POWER_PAGABLE);
+            SET_FLAG(deviceObject->Flags, DO_POWER_PAGEABLE);
 
             //
             // Clear the PDO list
@@ -5911,7 +5911,7 @@ ClassCreateDeviceObject(
             PFUNCTIONAL_DEVICE_EXTENSION p0Extension =
                 LowerDevice->DeviceExtension;
 
-            SET_FLAG(deviceObject->Flags, DO_POWER_PAGABLE);
+            SET_FLAG(deviceObject->Flags, DO_POWER_PAGEABLE);
 
             commonExtension->PartitionZeroExtension = p0Extension;
 
@@ -6951,7 +6951,7 @@ ClassRemoveDevice() ISSUE-2000/02/18-henrygab - why public?!
 Routine Description:
 
     This routine is called to handle the "removal" of a device.  It will
-    forward the request downwards if necesssary, call into the driver
+    forward the request downwards if necessary, call into the driver
     to release any necessary resources (memory, events, etc) and then
     will delete the device object.
 
@@ -7196,7 +7196,7 @@ ClassRemoveDevice(
                     (PPHYSICAL_DEVICE_EXTENSION) commonExtension;
 
                 //
-                // See if this device is in the child list (if this was a suprise
+                // See if this device is in the child list (if this was a surprise
                 // removal it might be) and remove it.
                 //
 
@@ -8281,7 +8281,7 @@ ClasspReleaseQueue(
     lowerDevice = fdoExtension->CommonExtension.LowerDeviceObject;
 
     //
-    // we raise irql seperately so we're not swapped out or suspended
+    // we raise irql separately so we're not swapped out or suspended
     // while holding the release queue irp in this routine.  this lets
     // us release the spin lock before lowering irql.
     //
@@ -8389,7 +8389,7 @@ ClassReleaseQueueCompletion()
 Routine Description:
 
     This routine is called when an asynchronous I/O request
-    which was issused by the class driver completes.  Examples of such requests
+    which was issued by the class driver completes.  Examples of such requests
     are release queue or START UNIT. This routine releases the queue if
     necessary.  It then frees the context and the IRP.
 

@@ -567,7 +567,7 @@ bool DesktopShellView::InitDragDrop()
 	ftetc.tymed = TYMED_HGLOBAL;
 	ftetc.cfFormat = CF_HDROP;
 
-	pDropTarget->AddSuportedFormat(ftetc);
+	pDropTarget->AddSupportedFormat(ftetc);
 	pDropTarget->Release();
 
 	return true;
@@ -761,7 +761,7 @@ void DesktopShellView::PositionIcons(int dir)
 	RECT work_area;
 	SystemParametersInfo(SPI_GETWORKAREA, 0, &work_area, 0);
 
-	/* disable default allignment */
+	/* disable default alignment */
 	SetWindowStyle(_hwndListView, GetWindowStyle(_hwndListView)&~LVS_ALIGNMASK);//|LVS_ALIGNTOP|LVS_AUTOARRANGE);
 
 	const POINTS& dir1 = s_align_dir1[_icon_algo];

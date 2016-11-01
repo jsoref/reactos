@@ -58,7 +58,7 @@ IopCleanupAfterException(IN PFILE_OBJECT FileObject,
     /* Check if we had a local event */
     if (LocalEvent) ExFreePool(LocalEvent);
 
-    /* Derefenrce the FO */
+    /* Dereference the FO */
     ObDereferenceObject(FileObject);
 }
 
@@ -617,7 +617,7 @@ IopDeviceFsIoControl(IN HANDLE DeviceHandle,
         Irp->Flags |= IRP_DEFER_IO_COMPLETION;
     }
 
-    /* If we are dismounting a volume, increaase the dismount count */
+    /* If we are dismounting a volume, increase the dismount count */
     if (IoControlCode == FSCTL_DISMOUNT_VOLUME)
     {
         InterlockedIncrement((PLONG)&SharedUserData->DismountCount);

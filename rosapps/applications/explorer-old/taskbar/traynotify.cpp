@@ -120,7 +120,7 @@ bool NotifyInfo::modify(NOTIFYICONDATA* pnid)
 	}
 
 	if (pnid->uFlags & NIF_ICON) {
-		 // Some applications destroy the icon immediatelly after completing the
+		 // Some applications destroy the icon immediately after completing the
 		 // NIM_ADD/MODIFY message, so we have to make a copy of it.
 		if (_hIcon)
 			DestroyIcon(_hIcon);
@@ -484,7 +484,7 @@ LRESULT NotifyArea::WndProc(UINT nmsg, WPARAM wparam, LPARAM lparam)
 								(*AllowSetForegroundWindow)(pid);
 						}
 
-						 // use PostMessage() for notifcation icons of Shell Service Objects in the own process
+						 // use PostMessage() for notification icons of Shell Service Objects in the own process
 						if (pid == GetCurrentProcessId())
 							PostMessage(entry._hWnd, entry._uCallbackMessage, entry._uID, nmsg);
 						else

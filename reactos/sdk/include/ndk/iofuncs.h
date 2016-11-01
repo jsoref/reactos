@@ -255,7 +255,7 @@ NtLockFile(
     _In_ PLARGE_INTEGER ByteOffset,
     _In_ PLARGE_INTEGER Length,
     _In_ ULONG Key,
-    _In_ BOOLEAN FailImmediatedly,
+    _In_ BOOLEAN FailImmediately,
     _In_ BOOLEAN ExclusiveLock
 );
 
@@ -304,7 +304,7 @@ NTSYSCALLAPI
 NTSTATUS
 NTAPI
 NtOpenIoCompletion(
-    _Out_ PHANDLE CompetionPort,
+    _Out_ PHANDLE CompetitionPort,
     _In_ ACCESS_MASK DesiredAccess,
     _In_ POBJECT_ATTRIBUTES ObjectAttributes
 );
@@ -775,7 +775,7 @@ ZwLockFile(
     _In_ PLARGE_INTEGER ByteOffset,
     _In_ PLARGE_INTEGER Length,
     _In_ ULONG Key,
-    _In_ BOOLEAN FailImmediatedly,
+    _In_ BOOLEAN FailImmediately,
     _In_ BOOLEAN ExclusiveLock
 );
 
@@ -810,7 +810,7 @@ NTSYSAPI
 NTSTATUS
 NTAPI
 ZwOpenIoCompletion(
-    _Out_ PHANDLE CompetionPort,
+    _Out_ PHANDLE CompetitionPort,
     _In_ ACCESS_MASK DesiredAccess,
     _In_ POBJECT_ATTRIBUTES ObjectAttributes
 );

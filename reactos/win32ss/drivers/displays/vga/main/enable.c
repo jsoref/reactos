@@ -12,7 +12,7 @@ static BOOL VGAInitialized = FALSE;
 
 static DRVFN FuncList[] =
 {
-    /* Required Display driver fuctions */
+    /* Required Display driver functions */
     {INDEX_DrvAssertMode, (PFN) DrvAssertMode},
     {INDEX_DrvCompletePDEV, (PFN) DrvCompletePDEV},
     {INDEX_DrvCopyBits, (PFN) DrvCopyBits},

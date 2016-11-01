@@ -60,7 +60,7 @@ DoWaveStreaming(
         HeaderExtension = (PWAVEHDR_EXTENSION) Header->reserved;
         SND_ASSERT( HeaderExtension );
 
-        /* Saniy checks */
+        /* Sanity checks */
         SND_ASSERT(Header->dwFlags & WHDR_PREPARED);
         SND_ASSERT(Header->dwFlags & WHDR_INQUEUE);
 
@@ -312,7 +312,7 @@ StopStreamingInSoundThread(
         CompleteWaveHeader( SoundDeviceInstance, SoundDeviceInstance->HeadWaveHeader );
     }
 
-    /* there should be no oustanding buffers now */
+    /* there should be no outstanding buffers now */
     SND_ASSERT(SoundDeviceInstance->OutstandingBuffers == 0);
 
 

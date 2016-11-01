@@ -20,7 +20,7 @@
 /*
   problems with nanox lib
     opcodes don't work, can only rely on copy
-    stipple orgins don't work
+    stipple origins don't work
     clip seems to affect source too, it should only affect dest
       in copyarea functions
 */
@@ -263,7 +263,7 @@ void ui_set_clip(int x, int y, int cx, int cy)
   region = GrNewRegion();
   GrUnionRectWithRegion(region, &g_clip);
   GrSetGCRegion(g_gc, region); /* can't destroy region here, i guess gc */
-                               /* takes owership, if you destroy it */
+                               /* takes ownership, if you destroy it */
                                /* clip is reset, hum */
 }
 

@@ -25,7 +25,7 @@
 	and ntddk.h. What this file here does is, it puts the os2-types+
 	functions into the namespace OS2 while the nt-types+functions are
 	put into the namespace NT. The still conflicting #defines are handled
-	like this:  If ntddk.h defintes a symbol FOO and os2.h does the same,
+	like this:  If ntddk.h defines a symbol FOO and os2.h does the same,
 	this file here undefines the ntddk.h-one and renames it to NT_FOO.
 	This is only done for conflicting symbols. Of course, this list is a 
 	source for errors. But is there a better solution than renaming 

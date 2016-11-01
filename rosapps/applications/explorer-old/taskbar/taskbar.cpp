@@ -78,7 +78,7 @@ TaskBar::TaskBar(HWND hwnd)
 	SystemParametersInfo(SPI_GETMINIMIZEDMETRICS, sizeof(_mmMetrics_org), &_mmMetrics_org, 0);
 
 	 // configure the window manager to hide windows when they are minimized
-	 // This is neccessary to enable shell hook messages.
+	 // This is necessary to enable shell hook messages.
 	if (!(_mmMetrics_org.iArrange & ARW_HIDE)) {
 		MINIMIZEDMETRICS _mmMetrics_new = _mmMetrics_org;
 

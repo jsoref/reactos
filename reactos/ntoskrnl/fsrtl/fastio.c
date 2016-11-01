@@ -359,7 +359,7 @@ FsRtlCopyWrite(IN PFILE_OBJECT FileObject,
         }
 
         /* Nagar p.544/545.
-         * Make sure that caching is initated.
+         * Make sure that caching is initiated.
          * That fast are allowed for this file stream.
          * That we are not extending past the allocated size.
          * That we are not creating a hole bigger than 8k.
@@ -494,7 +494,7 @@ FsRtlCopyWrite(IN PFILE_OBJECT FileObject,
             /* Flag the file as modified */
             FileObject->Flags |= FO_FILE_MODIFIED;
 
-            /* Update the strucutres if the file size changed */
+            /* Update the structures if the file size changed */
             if (FileSizeModified)
             {
                 SharedCacheMap =
@@ -580,7 +580,7 @@ FsRtlCopyWrite(IN PFILE_OBJECT FileObject,
         }
 
         /* Nagar p.544/545.
-         * Make sure that caching is initated.
+         * Make sure that caching is initiated.
          * That fast are allowed for this file stream.
          * That we are not extending past the allocated size.
          * That we are not creating a hole bigger than 8k.
@@ -664,7 +664,7 @@ FsRtlCopyWrite(IN PFILE_OBJECT FileObject,
                 OldValidDataLength.QuadPart = FcbHeader->ValidDataLength.QuadPart;
 
                 /* If the high part of the filesize is going
-                 * to change, grab the Paging IoResouce.
+                 * to change, grab the Paging IoResource.
                  */
                 if (NewSize.HighPart != FcbHeader->FileSize.HighPart &&
                     FcbHeader->PagingIoResource)
@@ -722,7 +722,7 @@ FsRtlCopyWrite(IN PFILE_OBJECT FileObject,
             /* Reset the top component */
             PsGetCurrentThread()->TopLevelIrp = FSRTL_FAST_IO_TOP_LEVEL_IRP;
 
-            /* Did the operation suceeded */
+            /* Did the operation succeeded */
             if (Result)
             {
                 /* Check if we need to update the filesize */
@@ -1420,7 +1420,7 @@ FsRtlPrepareMdlWriteDev(IN PFILE_OBJECT FileObject,
             OldValidDataLength.QuadPart = FcbHeader->ValidDataLength.QuadPart;
 
             /* If the high part of the filesize is going
-             * to change, grab the Paging IoResouce.
+             * to change, grab the Paging IoResource.
              */
             if (NewSize.HighPart != FcbHeader->FileSize.HighPart &&
                 FcbHeader->PagingIoResource)
@@ -1477,7 +1477,7 @@ FsRtlPrepareMdlWriteDev(IN PFILE_OBJECT FileObject,
         /* Reset the top component */
         PsGetCurrentThread()->TopLevelIrp = 0;
 
-        /* Did the operation suceeded */
+        /* Did the operation succeeded */
         if (Result)
         {
             /* Check if we need to update the filesize */

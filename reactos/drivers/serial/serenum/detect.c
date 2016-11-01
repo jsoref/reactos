@@ -125,7 +125,7 @@ ReportDetectedDevice(
 	if (!NT_SUCCESS(Status)) goto ByeBye;
 
 	Pdo->Flags |= DO_BUS_ENUMERATED_DEVICE;
-	Pdo->Flags |= DO_POWER_PAGABLE;
+	Pdo->Flags |= DO_POWER_PAGEABLE;
 	PdoDeviceExtension = (PPDO_DEVICE_EXTENSION)Pdo->DeviceExtension;
 	FdoDeviceExtension = (PFDO_DEVICE_EXTENSION)DeviceObject->DeviceExtension;
 	RtlZeroMemory(PdoDeviceExtension, sizeof(PDO_DEVICE_EXTENSION));

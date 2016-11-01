@@ -875,7 +875,7 @@ SystemThread(
 
     SeCaptureSubjectContext(&SubjectContext);
     TestSeAssignSecurity(&SubjectContext);
-    /* TODO: Test SeSetSecurityDescrptorInfo[Ex] */
+    /* TODO: Test SeSetSecurityDescriptorInfo[Ex] */
     SeReleaseSubjectContext(&SubjectContext);
 }
 

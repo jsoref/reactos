@@ -319,7 +319,7 @@ NTSTATUS NTAPI ConfigureDevice(IN PDEVICE_OBJECT DeviceObject)
 
     // Read the first configuration descriptor
     // This requires two steps:
-    // 1. Read the fixed sized configuration desciptor (CD)
+    // 1. Read the fixed sized configuration descriptor (CD)
     // 2. Read the CD with all embedded interface and endpoint descriptors
     urb = (PURB) ExAllocatePool(NonPagedPool, sizeof(struct _URB_CONTROL_DESCRIPTOR_REQUEST));
     if (urb)
@@ -1276,7 +1276,7 @@ NTSTATUS NTAPI HandleQueryCapabilities(IN PDEVICE_OBJECT DeviceObject, IN PIRP I
         }
 
         // since its safe to surprise-remove this device, we shall
-        // set the SurpriseRemoveOK flag to supress any dialog to
+        // set the SurpriseRemoveOK flag to suppress any dialog to
         // user.
         pdc->SurpriseRemovalOK = 1;
 

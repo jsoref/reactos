@@ -1,7 +1,7 @@
 /*
  * PROJECT:         ReactOS api tests
  * LICENSE:         GPLv2+ - See COPYING in the top level directory
- * PURPOSE:         Test for RtlGetLengthWithoutTrailingPathSeperators
+ * PURPOSE:         Test for RtlGetLengthWithoutTrailingPathSeparators
  * PROGRAMMER:      David Quintana <gigaherz@gmail.com>
  */
 
@@ -89,7 +89,7 @@ struct test_data {
 
 int num_tests = sizeof(test_entries) / sizeof(struct test_data);
 
-START_TEST(RtlGetLengthWithoutTrailingPathSeperators)
+START_TEST(RtlGetLengthWithoutTrailingPathSeparators)
 {
     ULONG len;
     UNICODE_STRING str;
@@ -106,7 +106,7 @@ START_TEST(RtlGetLengthWithoutTrailingPathSeperators)
         len = 0xDEADBEEF;
 
         StartSeh()
-            res = RtlGetLengthWithoutTrailingPathSeperators(0, &str, &len);
+            res = RtlGetLengthWithoutTrailingPathSeparators(0, &str, &len);
         EndSeh(STATUS_SUCCESS);
 
         ok(res == pentry->expected_result,
@@ -124,7 +124,7 @@ START_TEST(RtlGetLengthWithoutTrailingPathSeperators)
     len = 0xDEADBEEF;
 
     StartSeh()
-        res = RtlGetLengthWithoutTrailingPathSeperators(0, NULL, &len);
+        res = RtlGetLengthWithoutTrailingPathSeparators(0, NULL, &len);
     EndSeh(STATUS_SUCCESS);
 
     ok(res == STATUS_INVALID_PARAMETER,
@@ -135,7 +135,7 @@ START_TEST(RtlGetLengthWithoutTrailingPathSeperators)
         len);
 
     StartSeh()
-        res = RtlGetLengthWithoutTrailingPathSeperators(0, &str, NULL);
+        res = RtlGetLengthWithoutTrailingPathSeparators(0, &str, NULL);
     EndSeh(STATUS_SUCCESS);
 
     ok(res == STATUS_INVALID_PARAMETER,
@@ -143,7 +143,7 @@ START_TEST(RtlGetLengthWithoutTrailingPathSeperators)
         res);
 
     StartSeh()
-        res = RtlGetLengthWithoutTrailingPathSeperators(0, NULL, NULL);
+        res = RtlGetLengthWithoutTrailingPathSeparators(0, NULL, NULL);
     EndSeh(STATUS_SUCCESS);
 
     ok(res == STATUS_INVALID_PARAMETER,
@@ -155,7 +155,7 @@ START_TEST(RtlGetLengthWithoutTrailingPathSeperators)
         len = 0xDEADBEEF;
 
         StartSeh()
-            res = RtlGetLengthWithoutTrailingPathSeperators(1<<i, &str, &len);
+            res = RtlGetLengthWithoutTrailingPathSeparators(1<<i, &str, &len);
         EndSeh(STATUS_SUCCESS);
 
         ok(res == STATUS_INVALID_PARAMETER,
@@ -170,7 +170,7 @@ START_TEST(RtlGetLengthWithoutTrailingPathSeperators)
     len = 0xDEADBEEF;
 
     StartSeh()
-        res = RtlGetLengthWithoutTrailingPathSeperators(0xFFFFFFFF, &str, &len);
+        res = RtlGetLengthWithoutTrailingPathSeparators(0xFFFFFFFF, &str, &len);
     EndSeh(STATUS_SUCCESS);
 
     ok(res == STATUS_INVALID_PARAMETER,

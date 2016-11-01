@@ -978,7 +978,7 @@ BOOL FASTCALL UITOOLS95_DrawFrameMenu(HDC dc, LPRECT r, UINT uFlags)
 */
             return FALSE;
     }
-    /* acquire ressources only if valid menu */
+    /* acquire resources only if valid menu */
     RtlZeroMemory(&lf, sizeof(LOGFONTW));
     lf.lfHeight = r->bottom - r->top;
     lf.lfWidth = 0;

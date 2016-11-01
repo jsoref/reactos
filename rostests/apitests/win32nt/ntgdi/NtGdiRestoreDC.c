@@ -17,7 +17,7 @@ static
 void
 SetSpecialDCState(HDC hdc)
 {
-    /* Select spcial Objects */
+    /* Select special Objects */
     SelectObject(hdc, hbrush);
     SelectObject(hdc, hpen);
     SelectObject(hdc, hbitmap);
@@ -44,7 +44,7 @@ static
 void
 SetSpecialDCState2(HDC hdc)
 {
-    /* Select spcial Objects */
+    /* Select special Objects */
     SelectObject(hdc, GetStockObject(DC_BRUSH));
     SelectObject(hdc, GetStockObject(DC_PEN));
     SelectObject(hdc, GetStockObject(DEFAULT_BITMAP));

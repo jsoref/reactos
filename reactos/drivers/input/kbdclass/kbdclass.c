@@ -397,7 +397,7 @@ cleanup:
 		return STATUS_NO_MEMORY;
 	}
 	DeviceExtension->DeviceName = DeviceNameU.Buffer;
-	Fdo->Flags |= DO_POWER_PAGABLE;
+	Fdo->Flags |= DO_POWER_PAGEABLE;
 	Fdo->Flags |= DO_BUFFERED_IO; /* FIXME: Why is it needed for 1st stage setup? */
 	Fdo->Flags &= ~DO_DEVICE_INITIALIZING;
 
@@ -677,8 +677,8 @@ ClassAddDevice(
 		WARN_(CLASS_NAME, "IoAttachDeviceToDeviceStackSafe() failed with status 0x%08lx\n", Status);
 		goto cleanup;
 	}
-	if (DeviceExtension->LowerDevice->Flags & DO_POWER_PAGABLE)
-		Fdo->Flags |= DO_POWER_PAGABLE;
+	if (DeviceExtension->LowerDevice->Flags & DO_POWER_PAGEABLE)
+		Fdo->Flags |= DO_POWER_PAGEABLE;
 	if (DeviceExtension->LowerDevice->Flags & DO_BUFFERED_IO)
 		Fdo->Flags |= DO_BUFFERED_IO;
 	if (DeviceExtension->LowerDevice->Flags & DO_DIRECT_IO)
@@ -707,7 +707,7 @@ ClassAddDevice(
 	Fdo->Flags &= ~DO_DEVICE_INITIALIZING;
 
 	/* Register interface ; ignore the error (if any) as having
-	 * a registred interface is not so important... */
+	 * a registered interface is not so important... */
 	Status = IoRegisterDeviceInterface(
 		Pdo,
 		&GUID_DEVINTERFACE_KEYBOARD,

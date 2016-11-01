@@ -3,7 +3,7 @@
 VOID
 DriverUnload(PDRIVER_OBJECT pDriverObject)
 {
-    DbgPrint("Test driver unloaded sucessfully\n");
+    DbgPrint("Test driver unloaded successfully\n");
 }
 
 NTSTATUS
@@ -12,7 +12,7 @@ DriverEntry(PDRIVER_OBJECT DriverObject,
 {
     DriverObject->DriverUnload = DriverUnload;
 
-    DbgPrint("Test driver loaded sucessfully\n");
+    DbgPrint("Test driver loaded successfully\n");
 
     return STATUS_SUCCESS;
 }

@@ -228,7 +228,7 @@ typedef struct _ATM_BLLI_IE {
 #define TR_END_TO_END                  0x01
 #define TR_NO_END_TO_END               0x02
 
-/* ATM_BROADBAND_BEARER_CAPABILITY_IE.ClippingSusceptability constants */
+/* ATM_BROADBAND_BEARER_CAPABILITY_IE.ClippingSusceptibility constants */
 #define CLIP_NOT                       0x00
 #define CLIP_SUS                       0x20
 
@@ -240,7 +240,7 @@ typedef struct _ATM_BROADBAND_BEARER_CAPABILITY_IE {
   UCHAR BearerClass;
   UCHAR TrafficType;
   UCHAR TimingRequirements;
-  UCHAR ClippingSusceptability;
+  UCHAR ClippingSusceptibility;
   UCHAR UserPlaneConnectionConfig;
 } ATM_BROADBAND_BEARER_CAPABILITY_IE, *PATM_BROADBAND_BEARER_CAPABILITY_IE;
 
@@ -282,7 +282,7 @@ typedef struct _ATM_CALLING_PARTY_NUMBER_IE {
 #define ATM_CAUSE_VPI_VCI_UNAVAILABLE               0x23
 #define ATM_CAUSE_NETWORK_OUT_OF_ORDER              0x26
 #define ATM_CAUSE_TEMPORARY_FAILURE                 0x29
-#define ATM_CAUSE_ACCESS_INFORMAION_DISCARDED       0x2B
+#define ATM_CAUSE_ACCESS_INFORMATION_DISCARDED       0x2B
 #define ATM_CAUSE_NO_VPI_VCI_AVAILABLE              0x2D
 #define ATM_CAUSE_RESOURCE_UNAVAILABLE              0x2F
 #define ATM_CAUSE_QOS_UNAVAILABLE                   0x31

@@ -80,7 +80,7 @@ VOID
 KdbCommand_Gdi_dumpht(ULONG argc, char *argv[])
 {
     ULONG i;
-    UCHAR Objt, jReqestedType;
+    UCHAR Objt, jRequestedType;
     PENTRY pentry;
     POBJ pobj;
     KAPC_STATE ApcState;
@@ -140,7 +140,7 @@ KdbCommand_Gdi_dumpht(ULONG argc, char *argv[])
             }
         }
 
-        jReqestedType = i;
+        jRequestedType = i;
 
         /* Print header */
         DbgPrint("Index Handle   Type      pObject    ThreadId cLocks  ulRefCount\n");
@@ -158,8 +158,8 @@ KdbCommand_Gdi_dumpht(ULONG argc, char *argv[])
             Objt = pentry->Objt & 0x1F;
 
             /* Check if ALL objects are requested, or the object type matches */
-            if ((jReqestedType == GDIObjType_MAX_TYPE + 1) ||
-                (Objt == jReqestedType))
+            if ((jRequestedType == GDIObjType_MAX_TYPE + 1) ||
+                (Objt == jRequestedType))
             {
                 DbgPrint("%04lx  %p %-9s 0x%p 0x%06lx %-6ld ",
                          i, pobj->hHmgr, gpszObjectTypes[Objt], pobj,
@@ -220,7 +220,7 @@ KdbCommand_Gdi_handle(char *argv)
     }
     else
     {
-        DbgPrint("Coudn't access ENTRY. Probably paged out.\n");
+        DbgPrint("Couldn't access ENTRY. Probably paged out.\n");
     }
 
     KeUnstackDetachProcess(&ApcState);

@@ -2617,7 +2617,7 @@ interface IHTMLStyle3 : IDispatch
 }
 
 /*****************************************************************************
- *    IHTMLSytyle4 interface
+ *    IHTMLStyle4 interface
  */
 [
     odl,
@@ -2641,7 +2641,7 @@ interface IHTMLStyle4 : IDispatch
 }
 
 /*****************************************************************************
- *    IHTMLSytyle5 interface
+ *    IHTMLStyle5 interface
  */
 [
     odl,
@@ -2677,7 +2677,7 @@ interface IHTMLStyle5 : IDispatch
 }
 
 /*****************************************************************************
- *    IHTMLSytyle6 interface
+ *    IHTMLStyle6 interface
  */
 [
     odl,
@@ -9772,7 +9772,7 @@ interface IHTMLSelection : IDispatch
     [id(DISPID_IHTMLSELECTION_COLLAPSE)]
     HRESULT collapse(
         [in] IDispatch *parentNode,
-        [in] long offfset);
+        [in] long offset);
 
     [id(DISPID_IHTMLSELECTION_COLLAPSETOSTART)]
     HRESULT collapseToStart();

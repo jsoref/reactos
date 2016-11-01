@@ -657,7 +657,7 @@ RtlCreateSystemVolumeInformationFolder(IN PUNICODE_STRING VolumeRootPath)
 
         if (NT_SUCCESS(Status))
         {
-            /* check security now and adjust it if neccessary */
+            /* check security now and adjust it if necessary */
             Status = RtlpSysVolCheckOwnerAndSecurity(hDirectory,
                                                      SecurityDescriptor);
             ZwClose(hDirectory);
@@ -819,7 +819,7 @@ RtlLockBootStatusData(OUT PHANDLE FileHandle)
     HANDLE LocalFileHandle;
     NTSTATUS Status;
 
-    /* Intialize the file handle */
+    /* Initialize the file handle */
     *FileHandle = NULL;
 
     /* Initialize the file name */

@@ -152,7 +152,7 @@ KiInitializeContextThread(IN PKTHREAD Thread,
         /* Check if the CPU has NPX */
         if (KeI386NpxPresent)
         {
-            /* Set an intial NPX State */
+            /* Set an initial NPX State */
             Context->FloatSave.Cr0NpxState = 0;
             FxSaveArea->Cr0NpxState = 0;
             FxSaveArea->NpxSavedCpu = 0;

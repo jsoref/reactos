@@ -390,7 +390,7 @@ NBResetNeighborTimeout(PIP_ADDRESS Address)
     UINT HashValue;
     PNEIGHBOR_CACHE_ENTRY NCE;
 
-    TI_DbgPrint(DEBUG_NCACHE, ("Resetting NCE timout for 0x%s\n", A2S(Address)));
+    TI_DbgPrint(DEBUG_NCACHE, ("Resetting NCE timeout for 0x%s\n", A2S(Address)));
 
     HashValue  = *(PULONG)(&Address->Address);
     HashValue ^= HashValue >> 16;
@@ -503,7 +503,7 @@ PNEIGHBOR_CACHE_ENTRY NBFindOrCreateNeighbor(
   PIP_ADDRESS Address,
   BOOLEAN NoTimeout)
 /*
- * FUNCTION: Tries to find a neighbor and if unsuccesful, creates a new NCE
+ * FUNCTION: Tries to find a neighbor and if unsuccessful, creates a new NCE
  * ARGUMENTS:
  *   Interface = Pointer to interface to use (in case NCE is not found)
  *   Address   = Pointer to IP address

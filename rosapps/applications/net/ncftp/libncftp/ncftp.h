@@ -58,8 +58,8 @@
 
 #include "ncftp_errno.h"
 
-/* This is used to verify validty of the data passed in.
- * It also specifies the minimum version that is binary-compatibile with
+/* This is used to verify validity of the data passed in.
+ * It also specifies the minimum version that is binary-compatible with
  * this version.  (So this may not necessarily be kLibraryVersion.)
  */
 #define kLibraryMagic "LibNcFTP 3.0.6"
@@ -604,7 +604,7 @@ void (*NcSignal(int signum, void (*handler)(int)))(int);
 #	define NcSignal signal
 #endif
 
-/* Obselete routines. */
+/* Obsolete routines. */
 int FTPGetOneFile(const FTPCIPtr cip, const char *const file, const char *const dstfile);
 int FTPGetOneFile2(const FTPCIPtr cip, const char *const file, const char *const dstfile, const int xtype, const int fdtouse, const int resumeflag, const int appendflag);
 int FTPGetFiles(const FTPCIPtr cip, const char *const pattern, const char *const dstdir, const int recurse, const int doGlob);

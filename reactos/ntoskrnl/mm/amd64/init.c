@@ -42,7 +42,7 @@ MMPTE DemandZeroPte  = {{MM_READWRITE << MM_PTE_SOFTWARE_PROTECTION_BITS}};
 MMPTE PrototypePte = {{(MM_READWRITE << MM_PTE_SOFTWARE_PROTECTION_BITS) |
                       PTE_PROTOTYPE | (MI_PTE_LOOKUP_NEEDED << 32)}};
 
-/* Template PTE for decommited page */
+/* Template PTE for decommitted page */
 MMPTE MmDecommittedPte = {{MM_DECOMMIT << MM_PTE_SOFTWARE_PROTECTION_BITS}};
 
 /* Address ranges */
@@ -176,7 +176,7 @@ MiMapPTEs(
             TmplPte.u.Hard.PageFrameNumber = MxGetNextPage(1);
             MI_WRITE_VALID_PTE(PointerPte, TmplPte);
 
-            /* Zero out the page (FIXME: not always neccessary) */
+            /* Zero out the page (FIXME: not always necessary) */
             RtlZeroMemory(MiPteToAddress(PointerPte), PAGE_SIZE);
         }
     }
@@ -278,7 +278,7 @@ NTAPI
 INIT_FUNCTION
 MiBuildNonPagedPool(VOID)
 {
-    /* Check if this is a machine with less than 256MB of RAM, and no overide */
+    /* Check if this is a machine with less than 256MB of RAM, and no override */
     if ((MmNumberOfPhysicalPages <= MI_MIN_PAGES_FOR_NONPAGED_POOL_TUNING) &&
         !(MmSizeOfNonPagedPoolInBytes))
     {
@@ -286,7 +286,7 @@ MiBuildNonPagedPool(VOID)
         MmSizeOfNonPagedPoolInBytes = 2 * 1024 * 1024;
     }
 
-    /* Check if the user gave a ridicuously large nonpaged pool RAM size */
+    /* Check if the user gave a ridiculously large nonpaged pool RAM size */
     if ((MmSizeOfNonPagedPoolInBytes >> PAGE_SHIFT) >
         (MmNumberOfPhysicalPages * 7 / 8))
     {
@@ -303,7 +303,7 @@ MiBuildNonPagedPool(VOID)
                                        256 * MmMinAdditionNonPagedPoolPerMb;
     }
 
-    /* Check if the registy setting or our dynamic calculation was too high */
+    /* Check if the registry setting or our dynamic calculation was too high */
     if (MmSizeOfNonPagedPoolInBytes > MI_MAX_INIT_NONPAGED_POOL_SIZE)
     {
         /* Set it to the maximum */

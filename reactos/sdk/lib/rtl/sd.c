@@ -759,7 +759,7 @@ RtlSelfRelativeToAbsoluteSD(IN PSECURITY_DESCRIPTOR SelfRelativeSD,
     PACL pDacl, pSacl;
     PAGED_CODE_RTL();
 
-    /* Must be relative, otherwiise fail */
+    /* Must be relative, otherwise fail */
     if (!(RelSd->Control & SE_SELF_RELATIVE)) return STATUS_BAD_DESCRIPTOR_FORMAT;
 
     /* Get all the components */
@@ -874,7 +874,7 @@ RtlSelfRelativeToAbsoluteSD2(IN OUT PSECURITY_DESCRIPTOR SelfRelativeSD,
                                 &SaclLength);
 
     /*
-     * Check if there's a difference in structure layout between relatiev and
+     * Check if there's a difference in structure layout between relative and
      * absolute descriptors. On 32-bit, there won't be, since an offset is the
      * same size as a pointer (32-bit), but on 64-bit, the offsets remain 32-bit
      * as they are not SIZE_T, but ULONG, while the pointers now become 64-bit
@@ -1108,7 +1108,7 @@ RtlValidRelativeSecurityDescriptor(IN PSECURITY_DESCRIPTOR SecurityDescriptorInp
 
     /* Note that Windows allows no DACL/SACL even if RequiredInfo wants it */
 
-    /* Do we have enough space, is the revision vaild, and is this SD relative? */
+    /* Do we have enough space, is the revision valid, and is this SD relative? */
     if ((SecurityDescriptorLength < sizeof(SECURITY_DESCRIPTOR_RELATIVE)) ||
         (Sd->Revision != SECURITY_DESCRIPTOR_REVISION) ||
         !(Sd->Control & SE_SELF_RELATIVE))

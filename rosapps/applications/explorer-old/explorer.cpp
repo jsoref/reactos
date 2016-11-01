@@ -509,7 +509,7 @@ const Icon& IconCache::extract(LPCTSTR path, int icon_idx, ICONCACHE_FLAGS flags
         return icon;
     } else {
 
-        ///@todo retreive "http://.../favicon.ico" format icons
+        ///@todo retrieve "http://.../favicon.ico" format icons
 
         return _icons[ICID_NONE];
     }
@@ -1127,7 +1127,7 @@ int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdL
     }
 #ifdef ROSSHELL
     else
-        return 0;    // no shell to launch, so exit immediatelly
+        return 0;    // no shell to launch, so exit immediately
 #endif
 
 

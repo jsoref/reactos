@@ -549,7 +549,7 @@ SeCaptureSecurityDescriptor(
         /*
          * Setup the offsets and copy the SIDs and ACLs to the new
          * self-relative security descriptor. Probing the pointers is not
-         * neccessary anymore as we did that when collecting the sizes!
+         * necessary anymore as we did that when collecting the sizes!
          * Make sure to validate the SIDs and ACLs *again* as they could have
          * been modified in the meanwhile!
          */
@@ -710,7 +710,7 @@ SeQuerySecurityDescriptorInfo(
         return STATUS_BUFFER_TOO_SMALL;
     }
 
-    /* Build the new security descrtiptor */
+    /* Build the new security descriptor */
     RtlCreateSecurityDescriptorRelative(RelSD,
                                         SECURITY_DESCRIPTOR_REVISION);
     RelSD->Control = Control;
@@ -1334,7 +1334,7 @@ SeAssignSecurityEx(
     Descriptor = ExAllocatePoolWithTag(PagedPool, Length, TAG_SD);
     if (Descriptor == NULL)
     {
-        DPRINT1("ExAlloctePool() failed\n");
+        DPRINT1("ExAllocatePool() failed\n");
         SeUnlockSubjectContext(SubjectContext);
         return STATUS_INSUFFICIENT_RESOURCES;
     }

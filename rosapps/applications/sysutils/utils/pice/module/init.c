@@ -201,7 +201,7 @@ BOOLEAN InitPICE(void)
 	DPRINT((0,"pNameSpaceRoot @ %X\n",pNameSpaceRoot));
     if(!pNameSpaceRoot)
 	{
-		Print(OUTPUT_WINDOW,"pICE: ABORT (couldn't retreive name space root)\n");
+		Print(OUTPUT_WINDOW,"pICE: ABORT (couldn't retrieve name space root)\n");
 		Print(OUTPUT_WINDOW,"pICE: press any key to continue...\n");
         while(!GetKeyPolled());
 		UnloadExports();

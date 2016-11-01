@@ -217,7 +217,7 @@ Language=English
 A conflict has been detected between two drivers which claimed equivalent DMA
 channels.
 Driver %2, with device <%3>, claimed the DMA Channel in data address 0x28, with
-optinal port in data address 0x2c.
+optional port in data address 0x2c.
 .
 
 MessageId=24
@@ -360,6 +360,6 @@ Severity=Warning
 Facility=IO
 SymbolicName=IO_FILE_QUOTA_FAILED
 Language=English
-The system has encounted an error rebuilding the user disk quota
+The system has encountered an error rebuilding the user disk quota
 information on device %1 with label "%2".
 .

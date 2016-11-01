@@ -27,7 +27,7 @@ ConDrvChangeScreenBufferAttributes(IN PCONSOLE Console,
                                    IN USHORT NewScreenAttrib,
                                    IN USHORT NewPopupAttrib);
 /*
- * NOTE: This function explicitely references Console->ActiveBuffer.
+ * NOTE: This function explicitly references Console->ActiveBuffer.
  * It is possible that it should go into some frontend...
  */
 VOID

@@ -75,7 +75,7 @@ is the special file corresponding to the device (e.g /dev/hdXX).
 .I block-count
 is the number of blocks on the device.  If omitted,
 .B mkdosfs
-automatically determiness the file system size.
+automatically determines the file system size.
 .SH OPTIONS
 .TP
 .B \-A
@@ -137,7 +137,7 @@ Normally you are not allowed to use any 'full' fixed disk devices.
 .B mkdosfs
 will complain and tell you that it refuses to work.  This is different
 when usind MO disks.  One doesn't always need partitions on MO disks.
-The filesytem can go directly to the whole disk.  Under other OSes
+The filesystem can go directly to the whole disk.  Under other OSes
 this is known as the 'superfloppy' format.
 
 This switch will force
@@ -164,7 +164,7 @@ Select the number of entries available in the root directory.  The
 default is 112 or 224 for floppies and 512 for hard disks.
 .TP
 .BI \-R " number-of-reserved-sectors "
-Select the number of reserved sectos. With FAT32 format at least 2
+Select the number of reserved sectors. With FAT32 format at least 2
 reserved sectors are needed, the default is 32. Otherwise the default
 is 1 (only the boot sector).
 .TP

@@ -4,7 +4,7 @@
 //                                                                               computer science and engineering
 //                                                                               chongju university
 // this program is based on the program pefile.c
-// which is written by Randy Kath(Microsoft Developmer Network Technology Group)
+// which is written by Randy Kath(Microsoft Developer Network Technology Group)
 // in june 12, 1993.
 // I have investigated P.E. file format as thoroughly as possible,
 // but I cannot claim that I am an expert yet, so some of its information
@@ -157,8 +157,8 @@ IMAGE_FILE_HEADER, *PIMAGE_FILE_HEADER;
 #define IMAGE_SIZEOF_FILE_HEADER             20
 
 #define IMAGE_FILE_RELOCS_STRIPPED           0x0001	// Relocation info stripped from file.
-#define IMAGE_FILE_EXECUTABLE_IMAGE          0x0002	// File is executable  (i.e. no unresolved externel references).
-#define IMAGE_FILE_LINE_NUMS_STRIPPED        0x0004	// Line nunbers stripped from file.
+#define IMAGE_FILE_EXECUTABLE_IMAGE          0x0002	// File is executable  (i.e. no unresolved external references).
+#define IMAGE_FILE_LINE_NUMS_STRIPPED        0x0004	// Line numbers stripped from file.
 #define IMAGE_FILE_LOCAL_SYMS_STRIPPED       0x0008	// Local symbols stripped from file.
 #define IMAGE_FILE_BYTES_REVERSED_LO         0x0080	// Bytes of machine word are reversed.
 #define IMAGE_FILE_32BIT_MACHINE             0x0100	// 32 bit word machine.
@@ -352,7 +352,7 @@ IMAGE_IMPORT_BY_NAME, *PIMAGE_IMPORT_BY_NAME;
 //
 // This structure allows fast lookup by either name or number, but for any
 // given resource entry only one form of lookup is supported, not both.
-// This is consistant with the syntax of the .RC file and the .RES file.
+// This is consistent with the syntax of the .RC file and the .RES file.
 //
 
 // Predefined resource types ... there may be some more, but I don't have
@@ -862,7 +862,7 @@ typedef struct _Str_P
   {
     char flag;			// string_flag '@' or '%' or '#'
 
-    char *pos;			// starting postion of string
+    char *pos;			// starting position of string
 
     int length;			// length of string
 
@@ -1338,7 +1338,7 @@ GetImportFunctionNamesByModule (
   // these informations are used where they are needed.
   //                      ...........sang cho..................
   //
-  /* copy function names to mempry pointer */
+  /* copy function names to memory pointer */
   dwFunctionName = pid->dwRVAFunctionNameList;
   dwFunctionAddress = pid->dwRVAFunctionAddressList;
   while (dwFunctionName &&
@@ -1919,7 +1919,7 @@ StringExpands (
 //----------------------------------------------------------------------
 //typedef struct _Str_P {
 //    char    flag;               // string_flag '@' or '%' or '#'
-//    char    *pos;               // starting postion of string
+//    char    *pos;               // starting position of string
 //    int     length;     // length of string
 //      BOOL    wasString;    // if it were stringMode or not
 //} Str_P;
@@ -1930,7 +1930,7 @@ StringExpands (
 //
 // well I have to rewrite whole part of TranslateFunctionName..
 // this time I am a little bit more experienced than 5 days ago.
-// or am i??? anyway i use stacks instead of recurcive calls
+// or am i??? anyway i use stacks instead of recursive calls
 // and i hope this will take care of every symptoms i have experienced..
 //                                                        october 10, 1997 .... sang
 // It took a lot of time for me to figure out what is all about....
@@ -1948,7 +1948,7 @@ StringExpands (
 // This function is written by sang cho
 //                                                         October 5, 1997
 //
-/* translate condesed import function name */
+/* translate condensed import function name */
 char * WINAPI
 TranslateFunctionName (
 			char *psz)
@@ -2384,7 +2384,7 @@ GetExportFunctionNames (
   DWORD *pdwNames;
   WORD *pwOrd;
   int i, nCnt = 0, ntmp = 0;
-  int enid = 0, ordBase = 1;	// usally ordBase is 1....
+  int enid = 0, ordBase = 1;	// usually ordBase is 1....
 
   int enames = 0;
 
@@ -2568,7 +2568,7 @@ GetListOfResourceTypes (
       //    pMem += strlen (pMem) + 1;
       //
       // modified by ...................................Sang Cho..
-      // I can't user M/S provied funcitons here so I have to figure out
+      // I can't user M/S provided functions here so I have to figure out
       // how to do above functions. But I can settle down with the following
       // code, which works pretty good for me.
       //
@@ -2906,7 +2906,7 @@ MenuFill (
 //              flag                        popup menu flag (internal node)
 //              popupname                   popup menu name
 //
-//                 flag                             it may folows
+//                 flag                             it may follows
 //                         id                                   normal menu id
 //                 name                                 normal menu name
 //             or                                 or
@@ -3903,10 +3903,10 @@ GetSeparateDebugHeader (
 }
 
 //
-// I tried to immitate the output of w32dasm disassembler.
+// I tried to imitate the output of w32dasm disassembler.
 // which is a pretty good program.
 // but I am disappointed with this program and I myself
-// am writting a disassembler.
+// am writing a disassembler.
 // This PEdump program is a byproduct of that project.
 // so enjoy this program and I hope we will have a little more
 // knowledge on windows programming world.
@@ -3943,7 +3943,7 @@ main (
 
   int nFunctions;		// number of functions in the imported module
 
-  int nExportedFunctions;	// number of exported funcions
+  int nExportedFunctions;	// number of exported functions
 
   int imageBase;
   int entryPoint;

@@ -142,7 +142,7 @@ START_TEST(IsTextUnicode)
     };
 
     const char japanese_with_lead[] = "ABC" "\x83\x40" "D";
-    const char simplfied_chinese_with_lead[] = "ABC" "\xC5\xC5" "D";
+    const char simplified_chinese_with_lead[] = "ABC" "\xC5\xC5" "D";
     const char korean_with_lead[] = "ABC" "\xBF\xAD" "D";
     const char traditional_chinese_with_lead[] = "ABC" "\xB1\xC1" "D";
 
@@ -170,7 +170,7 @@ START_TEST(IsTextUnicode)
     SetupLocale(936, 936, -1);
 
     Result = IS_TEXT_UNICODE_DBCS_LEADBYTE;
-    ok(!IsTextUnicode(simplfied_chinese_with_lead, sizeof(simplfied_chinese_with_lead), &Result), "IsTextUnicode() returned TRUE, expected FALSE\n");
+    ok(!IsTextUnicode(simplified_chinese_with_lead, sizeof(simplified_chinese_with_lead), &Result), "IsTextUnicode() returned TRUE, expected FALSE\n");
     ok(Result == IS_TEXT_UNICODE_DBCS_LEADBYTE, "Result returned 0x%x, expected 0x%x\n", Result, IS_TEXT_UNICODE_DBCS_LEADBYTE);
 
     /* Korean */

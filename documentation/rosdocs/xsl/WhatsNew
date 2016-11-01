@@ -78,7 +78,7 @@ Changes to xsl/docsrc/*
   | 
   | 2002-03-25  Norman Walsh <nwalsh@users.sourceforge.net>
   | 
-  | 	* Makefile: The lib documenation is now built with Literate
+  | 	* Makefile: The lib documentation is now built with Literate
   | 	  XML
   | 
   | 	* reference.xml: Update documentation build to reflect use of

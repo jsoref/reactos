@@ -135,14 +135,14 @@
 #endif
 
 //
-// Set default netural ANSI Language ID
+// Set default neutral ANSI Language ID
 //
 #ifndef VER_VERSION_ANSI_LANG
 #define VER_VERSION_ANSI_LANG     "000004E4"
 #endif
 
 //
-// Set default netural translation ID
+// Set default neutral translation ID
 //
 #ifndef VER_VERSION_TRANSLATION
 #define VER_VERSION_TRANSLATION   0x0000, 0x04B0

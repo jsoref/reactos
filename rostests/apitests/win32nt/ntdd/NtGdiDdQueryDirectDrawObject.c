@@ -193,14 +193,14 @@ START_TEST(NtGdiDdQueryDirectDrawObject)
         RTEST( ( (DWORD)pHalInfo->vmiData.pvPrimary & (~0x80000000)) != 0 );
 
         /* test see if we got back the pvmList here
-         * acording msdn vmiData.dwNumHeaps and vmiData.pvmList
+         * according to msdn vmiData.dwNumHeaps and vmiData.pvmList
          * exists for _VIDEOMEMORYINFO but they do not, it reviews
          * in ddk and wdk and own testcase
          */
          // RTEST(pHalInfo->vmiData.dwNumHeaps  != 0 );
          // RTEST(pHalInfo->vmiData.pvmList  != 0 );
 
-        /* Test see if we got any hardware acclartions for 2d or 3d, this always fill in
+        /* Test see if we got any hardware acceleration for 2d or 3d, this always fill in
          * that mean we found a bugi drv and dx does not work on this drv
          */
 
@@ -218,7 +218,7 @@ START_TEST(NtGdiDdQueryDirectDrawObject)
 
 
         /* basic dx 2 is found if this flags not set
-         * if this fail we do not have a dx driver install acodring ms, some version of windows it
+         * if this fail we do not have a dx driver install according to ms, some version of windows it
          * is okay this fail and drv does then only support basic dx
          *
          */
@@ -275,7 +275,7 @@ START_TEST(NtGdiDdQueryDirectDrawObject)
     /* We do not retesting DD_HALINFO, instead we compare it */
     RTEST(memcmp(&oldHalInfo, pHalInfo, sizeof(DD_HALINFO)) == 0);
 
-    /* Rember on some nivida drv the pCallBackFlags will not be set even they api exists in the drv
+    /* Remember on some nvidia drv the pCallBackFlags will not be set even they api exists in the drv
      * known workaround is to check if the drv really return a kmode pointer for the drv functions
      * we want to use.
      */
@@ -303,7 +303,7 @@ START_TEST(NtGdiDdQueryDirectDrawObject)
     RTEST(pCallBackFlags != NULL);
     ASSERT(pCallBackFlags != NULL);
 
-    /* rember puD3dCallbacks shall never return NULL */
+    /* remember puD3dCallbacks shall never return NULL */
     RTEST(puD3dCallbacks != NULL);
     ASSERT(puD3dCallbacks != NULL);
 
@@ -313,13 +313,13 @@ START_TEST(NtGdiDdQueryDirectDrawObject)
      */
     RTEST(puD3dCallbacks->dwSize == sizeof(D3DNTHAL_CALLBACKS));
 
-    /* Nivda like GF7900GS will not follow ms design rule here,
-     * ContextDestroyAll must alwyas be NULL for it is not longer inuse in windows 2000 and higher
+    /* Nvidia like GF7900GS will not follow ms design rule here,
+     * ContextDestroyAll must always be NULL for it is not longer inuse in windows 2000 and higher
      */
     RTEST(puD3dCallbacks->ContextDestroyAll == NULL);
 
-    /* Nivda like GF7900GS will not follow ms design rule here,
-     * SceneCapture must alwyas be NULL for it is not longer inuse in windows 2000 and higher
+    /* Nvidia like GF7900GS will not follow ms design rule here,
+     * SceneCapture must always be NULL for it is not longer inuse in windows 2000 and higher
      */
     RTEST(puD3dCallbacks->SceneCapture  == NULL);
     RTEST(puD3dCallbacks->dwReserved10 == 0);
@@ -353,7 +353,7 @@ START_TEST(NtGdiDdQueryDirectDrawObject)
     RTEST(puD3dCallbacks->dwReserved8 == 0);
     RTEST(puD3dCallbacks->dwReserved9 == 0);
 
-    /* how detect puD3dCallbacks->ContextCreate and puD3dCallbacks->ContextDestroy shall be set for bugi drv like nivda ? */
+    /* how detect puD3dCallbacks->ContextCreate and puD3dCallbacks->ContextDestroy shall be set for bugi drv like nvidia ? */
     /* pointer direcly to the graphic drv, it is kmode pointer */
     // RTEST( ( (DWORD)puD3dCallbacks->ContextCreate & (~0x80000000)) != 0 );
     // RTEST( ( (DWORD)puD3dCallbacks->ContextDestroy & (~0x80000000)) != 0 );

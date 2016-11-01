@@ -227,7 +227,7 @@ UserInitiateShutdown(IN PETHREAD Thread,
     /*
      * Check if this is the System LUID, and adjust flags if needed.
      * In particular, be sure there is no EWX_CALLER_SYSTEM flag
-     * spuriously set (could be the sign of malicous app!).
+     * spuriously set (could be the sign of malicious app!).
      */
     if (RtlEqualLuid(&CallerLuid, &SystemLuid))
         Flags |= EWX_CALLER_SYSTEM;
@@ -246,7 +246,7 @@ UserInitiateShutdown(IN PETHREAD Thread,
     {
         /*
          * Here also, be sure there is no EWX_CALLER_WINLOGON flag
-         * spuriously set (could be the sign of malicous app!).
+         * spuriously set (could be the sign of malicious app!).
          */
         Flags &= ~EWX_CALLER_WINLOGON;
 

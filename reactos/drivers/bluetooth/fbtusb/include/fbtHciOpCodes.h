@@ -3,7 +3,7 @@
 
 // Opcode Group Field (OGF) codes
 #define FBT_HCI_OGF_LINK_CONTROL                      			0x01	// Link control group
-#define FBT_HCI_OGF_LINK_POLICY                       			0x02	// Link polic group
+#define FBT_HCI_OGF_LINK_POLICY                       			0x02	// Link policy group
 #define FBT_HCI_OGF_CONTROL_BASEBAND                  			0x03	// Host Controller & Baseband group
 #define FBT_HCI_OGF_INFORMATIONAL_PARAMETERS          			0x04	// Information parameters group
 #define FBT_HCI_OGF_STATUS_PARAMETERS                 			0x05	// Status parameters group
@@ -103,7 +103,7 @@
 
 // Informational parameter commands
 #define FBT_HCI_OCF_READ_LOCAL_VERSION_INFORMATION            	0x0001
-#define FBT_HCI_OCF_LOCAL_SUPPPROTED_FEATURES                 	0x0003
+#define FBT_HCI_OCF_LOCAL_SUPPORTED_FEATURES                 	0x0003
 #define FBT_HCI_OCF_READ_BUFFER_SIZE                          	0x0005
 #define FBT_HCI_OCF_READ_COUNTRY_CODE                         	0x0007
 #define FBT_HCI_OCF_READ_BD_ADDR                              	0x0009

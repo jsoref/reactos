@@ -793,7 +793,7 @@ MiSessionCreateInternal(OUT PULONG SessionId)
     Result = MiInitializeSystemSpaceMap(&SessionGlobal->Session);
     ASSERT(Result == TRUE);
 
-    /* Initialize the process list, make sure the workign set list is empty */
+    /* Initialize the process list, make sure the working set list is empty */
     ASSERT(SessionGlobal->WsListEntry.Flink == NULL);
     ASSERT(SessionGlobal->WsListEntry.Blink == NULL);
     InitializeListHead(&SessionGlobal->ProcessList);

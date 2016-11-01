@@ -126,7 +126,7 @@ interface IAudioEndpointVolume : IUnknown
     HRESULT GetVolumeRange(
         [out] FLOAT *pflVolumeMindB,
         [out] FLOAT *pflVolumeMaxdB,
-        [out] FLOAT *pflVolumeIncrementdB
+        [out] FLOAT *pflVolumeIncrementDB
     );
 }
 
@@ -143,6 +143,6 @@ interface IAudioEndpointVolumeEx : IAudioEndpointVolume
         [in] UINT iChannel,
         [out] FLOAT *pflVolumeMindB,
         [out] FLOAT *pflVolumeMaxdB,
-        [out] FLOAT *pflVolumeIncrementdB
+        [out] FLOAT *pflVolumeIncrementDB
     );
 }

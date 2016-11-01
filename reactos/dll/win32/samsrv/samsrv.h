@@ -391,11 +391,11 @@ SampSetUserPassword(IN PSAM_DB_OBJECT UserObject,
                     IN BOOLEAN LmPasswordPresent);
 
 NTSTATUS
-SampGetLogonHoursAttrbute(IN PSAM_DB_OBJECT UserObject,
+SampGetLogonHoursAttribute(IN PSAM_DB_OBJECT UserObject,
                           IN OUT PSAMPR_LOGON_HOURS LogonHours);
 
 NTSTATUS
-SampSetLogonHoursAttrbute(IN PSAM_DB_OBJECT UserObject,
+SampSetLogonHoursAttribute(IN PSAM_DB_OBJECT UserObject,
                           IN PSAMPR_LOGON_HOURS LogonHours);
 
 

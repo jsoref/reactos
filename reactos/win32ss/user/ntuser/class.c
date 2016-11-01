@@ -2325,7 +2325,7 @@ UserRegisterSystemClasses(VOID)
         wc.cbWndExtra = DefaultServerClasses[i].ExtraBytes;
         wc.hIcon = NULL;
 
-        //// System Cursors should be initilized!!!
+        //// System Cursors should be initialized!!!
         wc.hCursor = NULL;
         if (DefaultServerClasses[i].hCursor == (HICON)OCR_NORMAL)
         {

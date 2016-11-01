@@ -312,7 +312,7 @@ IopParseDevice(IN PVOID ParseObject,
         /* Validate the open packet */
         if (!IopValidateOpenPacket(OpenPacket)) return STATUS_OBJECT_TYPE_MISMATCH;
 
-        /* Valide reparse point in case we traversed a mountpoint */
+        /* Valid reparse point in case we traversed a mountpoint */
         if (OpenPacket->TraversedMountPoint)
         {
             /* This is a reparse point we understand */
@@ -2074,7 +2074,7 @@ IopQueryAttributesFile(IN POBJECT_ATTRIBUTES ObjectAttributes,
 
     /*
      * Attempt opening the file. This will call the I/O Parse Routine for
-     * the File Object (IopParseDevice) which will use the dummy file obejct
+     * the File Object (IopParseDevice) which will use the dummy file object
      * send the IRP to its device object. Note that we have two statuses
      * to worry about: the Object Manager's status (in Status) and the I/O
      * status, which is in the Open Packet's Final Status, and determined
@@ -2918,7 +2918,7 @@ IoFastQueryNetworkAttributes(IN POBJECT_ATTRIBUTES ObjectAttributes,
 
     /*
      * Attempt opening the file. This will call the I/O Parse Routine for
-     * the File Object (IopParseDevice) which will use the dummy file obejct
+     * the File Object (IopParseDevice) which will use the dummy file object
      * send the IRP to its device object. Note that we have two statuses
      * to worry about: the Object Manager's status (in Status) and the I/O
      * status, which is in the Open Packet's Final Status, and determined
@@ -3563,7 +3563,7 @@ NtQueryFullAttributesFile(IN POBJECT_ATTRIBUTES ObjectAttributes,
  *        Handle to file object to cancel requests for. No specific
  *        access rights are needed.
  * @param IoStatusBlock
- *        Pointer to status block which is filled with final completition
+ *        Pointer to status block which is filled with final completion
  *        status on successful return.
  *
  * @return Status.
@@ -3731,7 +3731,7 @@ NtDeleteFile(IN POBJECT_ATTRIBUTES ObjectAttributes)
 
     /*
      * Attempt opening the file. This will call the I/O Parse Routine for
-     * the File Object (IopParseDevice) which will use the dummy file obejct
+     * the File Object (IopParseDevice) which will use the dummy file object
      * send the IRP to its device object. Note that we have two statuses
      * to worry about: the Object Manager's status (in Status) and the I/O
      * status, which is in the Open Packet's Final Status, and determined
@@ -3746,7 +3746,7 @@ NtDeleteFile(IN POBJECT_ATTRIBUTES ObjectAttributes)
                                 &Handle);
     if (OpenPacket.ParseCheck == FALSE) return Status;
 
-    /* Retrn the Io status */
+    /* Return the Io status */
     return OpenPacket.FinalStatus;
 }
 

@@ -193,7 +193,7 @@ extern "C" {
 #define MODE_PAGE_FORMAT_DEVICE         0x03
 #define MODE_PAGE_MRW                   0x03
 #define MODE_PAGE_RIGID_GEOMETRY        0x04
-#define MODE_PAGE_FLEXIBILE             0x05
+#define MODE_PAGE_FLEXIBLE             0x05
 #define MODE_PAGE_WRITE_PARAMETERS      0x05
 #define MODE_PAGE_VERIFY_ERROR          0x07
 #define MODE_PAGE_CACHING               0x08
@@ -1227,7 +1227,7 @@ typedef union _CDB {
     UCHAR LogicalUnitNumber:3;
     UCHAR Reserved2[2];
     UCHAR Prevent:1;
-    UCHAR Persistant:1;
+    UCHAR Persistent:1;
     UCHAR Reserved3:6;
     UCHAR Control;
   } MEDIA_REMOVAL, *PMEDIA_REMOVAL;
@@ -1308,7 +1308,7 @@ typedef union _CDB {
   struct _INIT_ELEMENT_STATUS {
     UCHAR OperationCode;
     UCHAR Reserved1:5;
-    UCHAR LogicalUnitNubmer:3;
+    UCHAR LogicalUnitNumber:3;
     UCHAR Reserved2[3];
     UCHAR Reserved3:7;
     UCHAR NoBarCode:1;
@@ -1317,7 +1317,7 @@ typedef union _CDB {
     UCHAR OperationCode;
     UCHAR Range:1;
     UCHAR Reserved1:4;
-    UCHAR LogicalUnitNubmer:3;
+    UCHAR LogicalUnitNumber:3;
     UCHAR FirstElementAddress[2];
     UCHAR Reserved2[2];
     UCHAR NumberOfElements[2];
@@ -2265,8 +2265,8 @@ typedef struct _MODE_CACHING_PAGE {
   UCHAR MultiplicationFactor:1;
   UCHAR WriteCacheEnable:1;
   UCHAR Reserved2:5;
-  UCHAR WriteRetensionPriority:4;
-  UCHAR ReadRetensionPriority:4;
+  UCHAR WriteRetentionPriority:4;
+  UCHAR ReadRetentionPriority:4;
   UCHAR DisablePrefetchTransfer[2];
   UCHAR MinimumPrefetch[2];
   UCHAR MaximumPrefetch[2];
@@ -2336,7 +2336,7 @@ typedef struct _MODE_FLEXIBLE_DISK_PAGE {
   UCHAR TrueReadySignal:1;
   UCHAR StepPlusePerCyclynder:4;
   UCHAR Reserved3:4;
-  UCHAR WriteCompenstation;
+  UCHAR WriteCompensation;
   UCHAR HeadLoadDelay;
   UCHAR HeadUnloadDelay;
   UCHAR Pin2Usage:4;
@@ -2384,7 +2384,7 @@ typedef struct _MODE_RIGID_GEOMETRY_PAGE {
   UCHAR Reserved2:6;
   UCHAR RotationOffset;
   UCHAR Reserved3;
-  UCHAR RoataionRate[2];
+  UCHAR RotationRate[2];
   UCHAR Reserved4[2];
 } MODE_RIGID_GEOMETRY_PAGE, *PMODE_RIGID_GEOMETRY_PAGE;
 
@@ -2486,7 +2486,7 @@ typedef struct _CDVD_FEATURE_SET_PAGE {
   UCHAR CDAudio[2];
   UCHAR EmbeddedChanger[2];
   UCHAR PacketSMART[2];
-  UCHAR PersistantPrevent[2];
+  UCHAR PersistentPrevent[2];
   UCHAR EventStatusNotification[2];
   UCHAR DigitalOutput[2];
   UCHAR CDSequentialRecordable[2];
@@ -2552,7 +2552,7 @@ typedef struct _CDVD_CAPABILITIES_PAGE {
   UCHAR Reserved6:1;
   UCHAR LoadingMechanismType:3;
   UCHAR SeparateVolume:1;
-  UCHAR SeperateChannelMute:1;
+  UCHAR SeparateChannelMute:1;
   UCHAR SupportsDiskPresent:1;
   UCHAR SWSlotSelection:1;
   UCHAR SideChangeCapable:1;

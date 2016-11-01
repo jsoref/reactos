@@ -235,7 +235,7 @@ IntVideoPortCreateAdapterDeviceObject(
     IntCreateNewRegistryPath(DeviceExtension);
     IntSetupDeviceSettingsKey(DeviceExtension);
 
-    /* Remove the initailizing flag */
+    /* Remove the initializing flag */
     (*DeviceObject)->Flags &= ~DO_DEVICE_INITIALIZING;
     return STATUS_SUCCESS;
 }

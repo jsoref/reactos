@@ -88,13 +88,13 @@ KiFillTrapFrameDebug(IN PKTRAP_FRAME TrapFrame)
 
 #define DR7_RESERVED_READ_AS_1 0x400
 
-#define CheckDr(DrNumner, ExpectedValue) \
+#define CheckDr(DrNumber, ExpectedValue) \
     { \
-        ULONG DrValue = __readdr(DrNumner); \
+        ULONG DrValue = __readdr(DrNumber); \
         if (DrValue != (ExpectedValue)) \
         { \
             DbgPrint("Dr%ld: expected %.8lx, got %.8lx\n", \
-                    DrNumner, ExpectedValue, DrValue); \
+                    DrNumber, ExpectedValue, DrValue); \
             __debugbreak(); \
         } \
     }
@@ -149,7 +149,7 @@ KiExitTrapDebugChecks(IN PKTRAP_FRAME TrapFrame,
     /* If we're ignoring previous mode, make sure caller doesn't actually want it */
     if (SkipPreviousMode && (TrapFrame->PreviousPreviousMode != -1))
     {
-        DbgPrint("Exiting a trap witout restoring previous mode, yet previous mode seems valid: %lx\n", TrapFrame->PreviousPreviousMode);
+        DbgPrint("Exiting a trap without restoring previous mode, yet previous mode seems valid: %lx\n", TrapFrame->PreviousPreviousMode);
         __debugbreak();
     }
 

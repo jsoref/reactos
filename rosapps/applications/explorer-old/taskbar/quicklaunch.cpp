@@ -105,7 +105,7 @@ void QuickLaunchBar::AddShortcuts()
 
 		_dir->smart_scan(SORT_NAME);
 
-		 // immediatelly extract the shortcut icons
+		 // immediately extract the shortcut icons
 		for(Entry*entry=_dir->_down; entry; entry=entry->_next)
 			entry->_icon_id = entry->safe_extract_icon(ICF_NORMAL);
 	} catch(COMException&) {

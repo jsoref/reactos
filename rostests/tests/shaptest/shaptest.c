@@ -137,7 +137,7 @@ void PolygonTest ( HDC hdc )
   Rectangle ( hdc,  9, 27, 12, 30 );
   Rectangle ( hdc, 13, 27, 16, 30 );
 
-  // switch to null pen to make surey they display correctly
+  // switch to null pen to make sure they display correctly
   DeleteObject ( SelectObject(hdc, OldPen) );
   Pen = CreatePen ( PS_NULL, 0, 0 );
   ASSERT(Pen);

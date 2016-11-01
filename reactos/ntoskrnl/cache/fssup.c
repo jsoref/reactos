@@ -34,7 +34,7 @@ A note about private cache maps.
 CcInitializeCacheMap and CcUninitializeCacheMap are not meant to be paired,
 although they can work that way.
 
-The actual operation I've gleaned from reading both jan kratchovil's writing
+The actual operation I've gleaned from reading both jan kratochvil's writing
 and real filesystems is this:
 
 CcInitializeCacheMap means:
@@ -47,7 +47,7 @@ CcUninitializeCacheMap means:
 Take away the private cache map from this FILE_OBJECT.  If it's the last
 private cache map corresponding to a specific shared cache map (the one that
 was present in the FILE_OBJECT when it was created), then delete that too,
-flusing all cached information.
+flushing all cached information.
 
 Using these simple semantics, filesystems can do all the things they actually
 do:
@@ -114,14 +114,14 @@ CcPfInitializePrefetcher(VOID)
     /* Notify debugger */
     DbgPrintEx(DPFLTR_PREFETCHER_ID,
                DPFLTR_TRACE_LEVEL,
-               "CCPF: InitializePrefetecher()\n");
+               "CCPF: InitializePrefetcher()\n");
 
     /* Setup the Prefetcher Data */
     InitializeListHead(&CcPfGlobals.ActiveTraces);
     InitializeListHead(&CcPfGlobals.CompletedTraces);
     ExInitializeFastMutex(&CcPfGlobals.CompletedTracesLock);
 
-    /* FIXME: Setup the rest of the prefetecher */
+    /* FIXME: Setup the rest of the prefetcher */
 }
 
 BOOLEAN

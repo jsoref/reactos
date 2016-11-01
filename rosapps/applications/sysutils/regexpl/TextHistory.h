@@ -20,7 +20,7 @@ private:
 	DWORD m_dwMaxHistoryLineSize;
 	DWORD m_dwFirstHistoryIndex;
 	DWORD m_dwLastHistoryIndex;
-	DWORD m_dwHisoryFull;
+	DWORD m_dwHistoryFull;
 };
 
 #endif // !defined(TEXTHISTORY_H__AD9C6555_1D97_11D4_9F58_204C4F4F5020__INCLUDED_)

@@ -70,7 +70,7 @@ BOOL Test_DisplayModes (INT* passed, INT* failed)
 	DDSURFACEDESC2 DisplayMode = {0};
 	TEST ( DirectDraw->GetDisplayMode (&DisplayMode) == DDERR_INVALIDPARAMS );
 
-	//* Now try getting vaild modes from drive */
+	//* Now try getting valid modes from drive */
 	TEST (DirectDraw->EnumDisplayModes(DDEDM_STANDARDVGAMODES, NULL, (PVOID)&Context, NULL) == DDERR_INVALIDPARAMS);
 	TEST (DirectDraw->EnumDisplayModes(0, NULL, (PVOID)&Context, (LPDDENUMMODESCALLBACK2)DummyEnumDisplayModes) == DD_OK );
 	TEST (DirectDraw->EnumDisplayModes(DDEDM_REFRESHRATES, NULL, (PVOID)&Context, (LPDDENUMMODESCALLBACK2)DummyEnumDisplayModes) == DD_OK );

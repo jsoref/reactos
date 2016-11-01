@@ -76,7 +76,7 @@ utf16_lf2crlf(uint8 * data, uint32 * size)
 {
 	uint8 *result;
 	uint16 *inptr, *outptr;
-	Bool swap_endianess;
+	Bool swap_endianness;
 
 	/* Worst case: Every char is LF */
 	result = xmalloc((*size * 2) + 2);
@@ -87,15 +87,15 @@ utf16_lf2crlf(uint8 * data, uint32 * size)
 	outptr = (uint16 *) result;
 
 	/* Check for a reversed BOM */
-	swap_endianess = (*inptr == 0xfffe);
+	swap_endianness = (*inptr == 0xfffe);
 
 	while ((uint8 *) inptr < data + *size)
 	{
 		uint16 uvalue = *inptr;
-		if (swap_endianess)
+		if (swap_endianness)
 			uvalue = ((uvalue << 8) & 0xff00) + (uvalue >> 8);
 		if (uvalue == 0x0a)
-			*outptr++ = swap_endianess ? 0x0d00 : 0x0d;
+			*outptr++ = swap_endianness ? 0x0d00 : 0x0d;
 		*outptr++ = *inptr++;
 	}
 	*outptr++ = 0;		/* null termination */
@@ -717,7 +717,7 @@ xclip_handle_SelectionRequest(RDPCLIENT * This, XSelectionRequestEvent * event)
 						 &prop_return);
 			if (res != Success)
 			{
-				DEBUG_CLIPBOARD(("Requested native format but didn't specifiy which.\n"));
+				DEBUG_CLIPBOARD(("Requested native format but didn't specify which.\n"));
 				xclip_refuse_selection(This, event);
 				return;
 			}
@@ -792,7 +792,7 @@ xclip_handle_PropertyNotify(RDPCLIENT * This, XPropertyEvent * event)
 
 		while (bytes_left > 0)
 		{
-			/* Unlike the specification, we don't set the 'delete' arugment to True
+			/* Unlike the specification, we don't set the 'delete' argument to True
 			   since we slurp the INCR's chunks in even-smaller chunks of 4096 bytes. */
 			if ((XGetWindowProperty
 			     (This->display, This->wnd, This->xclip.rdesktop_clipboard_target_atom, offset, 4096L,
@@ -858,11 +858,11 @@ ui_clip_format_announce(RDPCLIENT * This, uint8 * data, uint32 length)
 
 	XSetSelectionOwner(This->display, This->xclip.primary_atom, This->wnd, This->xclip.acquire_time);
 	if (XGetSelectionOwner(This->display, This->xclip.primary_atom) != This->wnd)
-		warning("Failed to aquire ownership of PRIMARY clipboard\n");
+		warning("Failed to acquire ownership of PRIMARY clipboard\n");
 
 	XSetSelectionOwner(This->display, This->xclip.clipboard_atom, This->wnd, This->xclip.acquire_time);
 	if (XGetSelectionOwner(This->display, This->xclip.clipboard_atom) != This->wnd)
-		warning("Failed to aquire ownership of CLIPBOARD clipboard\n");
+		warning("Failed to acquire ownership of CLIPBOARD clipboard\n");
 
 	if (This->xclip.formats_data)
 		xfree(This->xclip.formats_data);

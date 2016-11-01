@@ -374,7 +374,7 @@ IopFixupResourceListWithRequirements(
                 NewDesc.Flags = IoDesc->Flags;
                 NewDesc.ShareDisposition = IoDesc->ShareDisposition;
 
-                /* Let'se see if we can find a resource to satisfy this */
+                /* Let's see if we can find a resource to satisfy this */
                 switch (IoDesc->Type)
                 {
                     case CmResourceTypeInterrupt:

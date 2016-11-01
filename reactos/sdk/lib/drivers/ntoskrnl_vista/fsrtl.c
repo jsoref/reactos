@@ -188,10 +188,10 @@ FsRtlValidateReparsePointBuffer(IN ULONG BufferLength,
             /* We need information */
             if (DataLength >= REPARSE_DATA_BUFFER_HEADER_SIZE)
             {
-                /* Substitue must be the first in row */
+                /* Substitute must be the first in row */
                 if (!ReparseBuffer->MountPointReparseBuffer.SubstituteNameOffset)
                 {
-                    /* Substitude must be null-terminated */
+                    /* Substitute must be null-terminated */
                     if (ReparseBuffer->MountPointReparseBuffer.PrintNameOffset == ReparseBuffer->MountPointReparseBuffer.SubstituteNameLength + sizeof(UNICODE_NULL))
                     {
                         /* There must just be the Offset/Length fields + buffer + 2 null chars */

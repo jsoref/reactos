@@ -2004,7 +2004,7 @@ RtlAllocateHeap(IN PVOID HeapPtr,
             /* This bit magic disables all sizes which are less than the requested allocation size */
             FreeListsInUseUlong = *FreeListsInUse++ & ~((1 << ((ULONG)Index & 0x1f)) - 1);
 
-            /* If size is definitily more than our lists - go directly to the non-dedicated one */
+            /* If size is definitely more than our lists - go directly to the non-dedicated one */
             if (InUseIndex > 3)
                 return RtlpAllocateNonDedicated(Heap, Flags, Size, AllocationSize, Index, HeapLocked);
 
@@ -3216,7 +3216,7 @@ RtlpValidateHeapSegment(
         if (UcrDescriptor &&
             ((PVOID)CurrentEntry >= UcrDescriptor->Address))
         {
-            DPRINT1("HEAP: Entry %p is not inside uncommited range [%p .. %p)\n",
+            DPRINT1("HEAP: Entry %p is not inside uncommitted range [%p .. %p)\n",
                     CurrentEntry, UcrDescriptor->Address,
                     (PCHAR)UcrDescriptor->Address + UcrDescriptor->Size);
 

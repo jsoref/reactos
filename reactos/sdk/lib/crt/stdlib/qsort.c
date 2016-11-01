@@ -42,7 +42,7 @@
  * middle elements).  (Using this median instead of the first element is a big
  * win).  Then, the usual partitioning/swapping, followed by moving the
  * discriminator into the right place.  Then, figure out the sizes of the two
- * partions, do the smaller one recursively and the larger one via a repeat of
+ * partitions, do the smaller one recursively and the larger one via a repeat of
  * this code.  Stopping when there are less than THRESH elements in a partition
  * and cleaning up with an insertion sort (in our caller) is a huge win.
  * All data swaps are done in-line, which is space-losing but time-saving.

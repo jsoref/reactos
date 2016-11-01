@@ -6,7 +6,7 @@
  * PROGRAMMERS:     ReactOS Portable Systems Group
  */
 
-/* NOTE: This library follows the precise serial port intialization steps documented
+/* NOTE: This library follows the precise serial port initialization steps documented
  * by Microsoft in some of their Server hardware guidance. Because they've clearly
  * documented their serial algorithms, we use the same ones to stay "compliant".
  * Do not change this code to "improve" it. It's done this way on purpose, at least on x86.

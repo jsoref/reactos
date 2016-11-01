@@ -159,7 +159,7 @@ hhp_reader::hhp_reader(string filename)
     add_section(files);
 
     read();
-    compute_unique_file_pathes_set();
+    compute_unique_file_paths_set();
 }
 
 hhp_reader::~hhp_reader()
@@ -213,11 +213,11 @@ void hhp_reader::read()
     hhp_file.close();
 }
 
-void hhp_reader::compute_unique_file_pathes_set()
+void hhp_reader::compute_unique_file_paths_set()
 {
     for (list<string>::iterator it = files->filenames.begin(); it != files->filenames.end(); ++it)
     {
-        unique_file_pathes.insert(replace_backslashes(real_path(it->c_str())));
+        unique_file_paths.insert(replace_backslashes(real_path(it->c_str())));
     }
 }
 
@@ -251,12 +251,12 @@ string hhp_reader::get_compiled_file_string()
     return options->compiled_file->get_value();
 }
 
-set<string>::iterator hhp_reader::get_file_pathes_iterator_begin()
+set<string>::iterator hhp_reader::get_file_paths_iterator_begin()
 {
-    return unique_file_pathes.begin();
+    return unique_file_paths.begin();
 }
 
-set<string>::iterator hhp_reader::get_file_pathes_iterator_end()
+set<string>::iterator hhp_reader::get_file_paths_iterator_end()
 {
-    return unique_file_pathes.end();
+    return unique_file_paths.end();
 }

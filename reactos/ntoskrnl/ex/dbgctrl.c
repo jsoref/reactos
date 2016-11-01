@@ -21,7 +21,7 @@
 WORK_QUEUE_ITEM ExpDebuggerWorkItem;
 /*
  * The following global variables must be visible through all the kernel
- * because WinDBG explicitely search for them inside our symbols.
+ * because WinDBG explicitly search for them inside our symbols.
  */
 WINKD_WORKER_STATE ExpDebuggerWork;
 PEPROCESS ExpDebuggerProcessAttach;

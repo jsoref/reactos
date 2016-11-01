@@ -42,7 +42,7 @@ PspCatchCriticalBreak(IN PCHAR Message,
             /* If a debugger isn't present, don't prompt */
             if (KdDebuggerNotPresent) break;
 
-            /* A debuger is active, prompt for action */
+            /* A debugger is active, prompt for action */
             DbgPrompt("Break, or Ignore (bi)?", Action, sizeof(Action));
             switch (Action[0])
             {
@@ -415,7 +415,7 @@ PspDeleteThread(IN PVOID ObjectBody)
         }
     }
 
-    /* Cleanup impersionation information */
+    /* Cleanup impersonation information */
     PspDeleteThreadSecurity(Thread);
 
     /* Make sure the thread was inserted, before continuing */
@@ -513,7 +513,7 @@ PspExitThread(IN NTSTATUS ExitStatus)
     /* Call the WMI Callback for Threads */
     //WmiTraceThread(Thread, NULL, FALSE);
 
-    /* Run Thread Notify Routines before we desintegrate the thread */
+    /* Run Thread Notify Routines before we disintegrate the thread */
     PspRunCreateThreadNotifyRoutines(Thread, FALSE);
 
     /* Lock the Process before we modify its thread entries */
@@ -1207,7 +1207,7 @@ NtTerminateProcess(IN HANDLE ProcessHandle OPTIONAL,
         return STATUS_PROCESS_IS_TERMINATING;
     }
 
-    /* Set the delete flag, unless the process is comitting suicide */
+    /* Set the delete flag, unless the process is committing suicide */
     if (KillByHandle) PspSetProcessFlag(Process, PSF_PROCESS_DELETE_BIT);
 
     /* Get the first thread */
@@ -1356,7 +1356,7 @@ NtRegisterThreadTerminatePort(IN HANDLE PortHandle)
                                        NULL);
     if (!NT_SUCCESS(Status)) return(Status);
 
-    /* Allocate the Port and make sure it suceeded */
+    /* Allocate the Port and make sure it succeeded */
     TerminationPort = ExAllocatePoolWithTag(NonPagedPool,
                                             sizeof(TERMINATION_PORT),
                                             '=TsP');

@@ -505,7 +505,7 @@ sec_parse_x509_key(RDPCLIENT * This, X509 * cert)
 	/* By some reason, Microsoft sets the OID of the Public RSA key to
 	   the oid for "MD5 with RSA Encryption" instead of "RSA Encryption"
 
-	   Kudos to Richard Levitte for the following (. intiutive .)
+	   Kudos to Richard Levitte for the following (. intuitive .)
 	   lines of code that resets the OID and let's us extract the key. */
 	if (OBJ_obj2nid(cert->cert_info->key->algor->algorithm) == NID_md5WithRSAEncryption)
 	{
@@ -863,7 +863,7 @@ sec_recv(RDPCLIENT * This, uint8 * rdpver)
 				{
 					/* for some reason the PDU and the length seem to be swapped.
 					   This isn't good, but we're going to do a byte for byte
-					   swap.  So the first foure value appear as: 00 04 XX YY,
+					   swap.  So the first four values appear as: 00 04 XX YY,
 					   where XX YY is the little endian length. We're going to
 					   use 04 00 as the PDU type, so after our swap this will look
 					   like: XX YY 04 00 */

@@ -921,7 +921,7 @@ int process_switches(int argc,char* argv[])
             break;
 #endif
         case ACTION_NONE :
-            printf("LOADER: no action specified specifed on commandline\n");
+            printf("LOADER: no action specified specified on commandline\n");
             error = 1;
 
             break;

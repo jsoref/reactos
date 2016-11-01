@@ -80,7 +80,7 @@ KspCreatePDO(
     KeQuerySystemTime(&DeviceEntry->TimeCreated);
 
     /* setup flags */
-    DeviceObject->Flags |= DO_POWER_PAGABLE;
+    DeviceObject->Flags |= DO_POWER_PAGEABLE;
     DeviceObject->Flags &= ~ DO_DEVICE_INITIALIZING;
     /* TODO: fire time when expired */
 

@@ -1074,7 +1074,7 @@ disk_query_volume_information(RDPCLIENT * This, NTHANDLE handle, uint32 info_cla
 			out_uint32_le(out, stat_fs.f_blocks);	/* Total allocation units low */
 			out_uint32_le(out, 0);	/* Total allocation high units */
 			out_uint32_le(out, stat_fs.f_bfree);	/* Available allocation units */
-			out_uint32_le(out, 0);	/* Available allowcation units */
+			out_uint32_le(out, 0);	/* Available allocation units */
 			out_uint32_le(out, stat_fs.f_bsize / 0x200);	/* Sectors per allocation unit */
 			out_uint32_le(out, 0x200);	/* Bytes per sector */
 			break;

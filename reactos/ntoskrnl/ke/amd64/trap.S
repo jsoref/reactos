@@ -650,7 +650,7 @@ FUNC KiDebugServiceTrap
     /* Increase Rip to skip the int3 */
     inc qword ptr [rbp + KTRAP_FRAME_Rip]
 
-    /* Dispatch the exception (Params = service, buffer, legth) */
+    /* Dispatch the exception (Params = service, buffer, length) */
     DispatchException STATUS_BREAKPOINT, 3, [rbp+KTRAP_FRAME_Rax], [rbp+KTRAP_FRAME_Rcx], [rbp+KTRAP_FRAME_Rdx]
 
     /* Return */

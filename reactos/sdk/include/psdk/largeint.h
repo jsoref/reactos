@@ -83,7 +83,7 @@ LARGE_INTEGER WINAPI ExtendedMagicDivide (LARGE_INTEGER, LARGE_INTEGER, int);
   dest._STRUCT_NAME(u.)HighPart = s._STRUCT_NAME(u.)HighPart & m._STRUCT_NAME(u.)HighPart; \
 }
 
-/* comparision */
+/* comparison */
 #define LargeIntegerGreaterThan(a,b) (_toi(a) > _toi(b))
 #define LargeIntegerGreaterThanOrEqual(a,b) (_toi(a) >= _toi(b))
 #define LargeIntegerEqualTo(a,b) (_toi(a) == _toi(b))

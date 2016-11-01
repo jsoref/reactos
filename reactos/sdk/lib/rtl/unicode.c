@@ -203,8 +203,8 @@ RtlAppendStringToString(IN PSTRING Destination,
  *
  * NOTES
  *  If src->length is zero dest is unchanged.
- *  Dest is nullterminated when the MaximumLength allowes it.
- *  When dest fits exactly in MaximumLength characters the nullterm is ommitted.
+ *  Dest is nullterminated when the MaximumLength allows it.
+ *  When dest fits exactly in MaximumLength characters the nullterm is omitted.
  */
 NTSTATUS
 NTAPI
@@ -494,7 +494,7 @@ RtlpDidUnicodeToOemWork(IN PCUNICODE_STRING UnicodeString,
             i++;
         }
 
-        /* All chars were translated successfuly */
+        /* All chars were translated successfully */
         return TRUE;
     }
     else
@@ -687,8 +687,8 @@ RtlInitUnicodeStringEx(
  *
  * NOTES
  *  Writes at most length characters to the string str.
- *  Str is nullterminated when length allowes it.
- *  When str fits exactly in length characters the nullterm is ommitted.
+ *  Str is nullterminated when length allows it.
+ *  When str fits exactly in length characters the nullterm is omitted.
  */
 NTSTATUS NTAPI RtlIntegerToChar(
     ULONG value,   /* [I] Value to be converted */
@@ -2388,8 +2388,8 @@ RtlDowncaseUnicodeString(
  *
  * NOTES
  *  if src is NULL dest is unchanged.
- *  dest is '\0' terminated when the MaximumLength allowes it.
- *  When dest fits exactly in MaximumLength characters the '\0' is ommitted.
+ *  dest is '\0' terminated when the MaximumLength allows it.
+ *  When dest fits exactly in MaximumLength characters the '\0' is omitted.
  */
 NTSTATUS
 NTAPI
@@ -2705,7 +2705,7 @@ RtlDnsHostNameToComputerName(PUNICODE_STRING ComputerName, PUNICODE_STRING DnsHo
                                         DnsHostName->Buffer,
                                         ComputerNameLength);
 
-        /* status STATUS_BUFFER_OVERFLOW is not a problem since the computername shoud only
+        /* status STATUS_BUFFER_OVERFLOW is not a problem since the computername should only
            have MAX_COMPUTERNAME_LENGTH characters */
         if ((Status == STATUS_SUCCESS) ||
                 (Status == STATUS_BUFFER_OVERFLOW))

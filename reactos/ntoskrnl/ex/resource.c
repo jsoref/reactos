@@ -479,7 +479,7 @@ FASTCALL
 ExpFindEntryForThread(IN PERESOURCE Resource,
                       IN ERESOURCE_THREAD Thread,
                       IN PKLOCK_QUEUE_HANDLE LockHandle,
-                      IN BOOLEAN FirstEntryInelligible)
+                      IN BOOLEAN FirstEntryIneligible)
 {
     POWNER_ENTRY FreeEntry, Owner, Limit;
 
@@ -488,7 +488,7 @@ ExpFindEntryForThread(IN PERESOURCE Resource,
     if (Owner->OwnerThread == Thread) return Owner;
 
     /* Check if this is a free entry */
-    if ((FirstEntryInelligible) || (Owner->OwnerThread))
+    if ((FirstEntryIneligible) || (Owner->OwnerThread))
     {
         /* No free entry */
         FreeEntry = NULL;
@@ -1714,7 +1714,7 @@ ExIsResourceAcquiredSharedLite(IN PERESOURCE Resource)
             }
             else
             {
-                /* We found the match directlry */
+                /* We found the match directly */
                 Count = Owner[i].OwnerCount;
             }
         }
@@ -1882,7 +1882,7 @@ ExReleaseResourceForThreadLite(IN PERESOURCE Resource,
             /* Remove the exclusive flag */
             Resource->Flag &= ~ResourceOwnedExclusive;
             
-            /* Give ownage to another thread */
+            /* Give ownership to another thread */
             Count = Resource->NumberOfSharedWaiters;
             Resource->ActiveEntries = Count;
             Resource->NumberOfSharedWaiters = 0;

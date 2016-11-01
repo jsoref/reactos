@@ -268,7 +268,7 @@ Arguments:
     PortDeviceObject - to connect to SCSI port driver.
     DeviceCount - Number of previously installed CDROMs.
     PortCapabilities - Pointer to structure returned by SCSI port
-        driver describing adapter capabilites (and limitations).
+        driver describing adapter capabilities (and limitations).
     LunInfo - Pointer to configuration information for this device.
 
 Return Value:
@@ -749,7 +749,7 @@ Return Value:
 
             //
             // the drive is target defect managed, and supports random writes
-            // on sector-aligment.  allow writes to occur by setting the error
+            // on sector-alignment.  allow writes to occur by setting the error
             // handler to point to a private media change detection handler.
             //
 
@@ -1478,7 +1478,7 @@ CdRomStartIo(
             Irp->IoStatus.Status = STATUS_VERIFY_REQUIRED;
 
             TraceLog((CdromDebugTrace,
-                        "CdRomStartIo: [%p] Calling UpdateCapcity - "
+                        "CdRomStartIo: [%p] Calling UpdateCapacity - "
                         "ioctl event = %p\n",
                         Irp,
                         nextIrpStack->Parameters.Others.Argument1
@@ -2832,7 +2832,7 @@ CdRomStartIo(
             cdb->SUBCHANNEL.SubQ = CDB_SUBCHANNEL_BLOCK;
 
             //
-            // Specify format of informatin to return
+            // Specify format of information to return
             //
 
             cdb->SUBCHANNEL.Format = inputBuffer->Format;
@@ -3929,7 +3929,7 @@ Return Value:
         // Lock down the hitachi error processing code.
         //
 
-        MmLockPagableCodeSection(HitachiProcessError);
+        MmLockPageableCodeSection(HitachiProcessError);
         SET_FLAG(cdData->HackFlags, CDROM_HACK_LOCKED_PAGES);
 
 
@@ -3965,7 +3965,7 @@ Return Value:
         // Lock down the hitachi error processing code.
         //
 
-        MmLockPagableCodeSection(HitachiProcessErrorGD2000);
+        MmLockPageableCodeSection(HitachiProcessErrorGD2000);
         SET_FLAG(cdData->HackFlags, CDROM_HACK_LOCKED_PAGES);
 
     } else if (TEST_FLAG(cdData->HackFlags, CDROM_HACK_FUJITSU_FMCD_10x)) {
@@ -4147,7 +4147,7 @@ Return Value:
         // Lock down the toshiba error section.
         //
 
-        MmLockPagableCodeSection(ToshibaProcessError);
+        MmLockPageableCodeSection(ToshibaProcessError);
         SET_FLAG(cdData->HackFlags, CDROM_HACK_LOCKED_PAGES);
 
         ExFreePool(buffer);
@@ -5443,15 +5443,15 @@ Return Value:
 
             if (TEST_FLAG(cdData->HackFlags, CDROM_HACK_HITACHI_1750)) {
                 
-                locked = MmLockPagableCodeSection(HitachiProcessError);
+                locked = MmLockPageableCodeSection(HitachiProcessError);
 
             } else if (TEST_FLAG(cdData->HackFlags, CDROM_HACK_HITACHI_GD_2000)) {
 
-                locked = MmLockPagableCodeSection(HitachiProcessErrorGD2000);
+                locked = MmLockPageableCodeSection(HitachiProcessErrorGD2000);
 
             } else if (TEST_FLAG(cdData->HackFlags, CDROM_HACK_TOSHIBA_XM_3xx )) {
             
-                locked = MmLockPagableCodeSection(ToshibaProcessError);
+                locked = MmLockPageableCodeSection(ToshibaProcessError);
             
             } else {
 
@@ -5459,14 +5459,14 @@ Return Value:
                 // workaround by locking this twice, once for us and
                 // once for the non-existant locker from ScanForSpecial
                 ASSERT(!"hack flags show locked section, but none exists?");
-                locked = MmLockPagableCodeSection(CdRomRemoveDevice);
-                locked = MmLockPagableCodeSection(CdRomRemoveDevice);
+                locked = MmLockPageableCodeSection(CdRomRemoveDevice);
+                locked = MmLockPageableCodeSection(CdRomRemoveDevice);
 
 
             }
 
-            MmUnlockPagableImageSection(locked);
-            MmUnlockPagableImageSection(locked);
+            MmUnlockPageableImageSection(locked);
+            MmUnlockPageableImageSection(locked);
 
         }
 
@@ -5625,7 +5625,7 @@ CdRomCreateWellKnownName(
 Routine Description:
 
     This routine creates a symbolic link to the cdrom device object
-    under \dosdevices.  The number of the cdrom device does not neccessarily
+    under \dosdevices.  The number of the cdrom device does not necessarily
     match between \dosdevices and \device, but usually will be the same.
 
     Saves the buffer
@@ -5767,7 +5767,7 @@ Arguments:
 
     ParameterName - parameter name to look up
 
-    ParameterValuse - default parameter value
+    ParameterValue - default parameter value
 
 Return Value:
 
@@ -5843,7 +5843,7 @@ Arguments:
 
     ParameterName - parameter name
 
-    ParameterValuse - parameter value
+    ParameterValue - parameter value
 
 Return Value:
 
@@ -6641,7 +6641,7 @@ CdRomErrorHandler(
         //      SCSI_SENSE_NOT_READY/SCSI_ADSENSE_NO_MEDIA_IN_DEVICE
         //
         //  These drives should not pass WHQL certification due
-        //  to this discrepency.
+        //  to this discrepancy.
         //
         //  However, we have to retry on 2/4/0 (Not ready, LUN not ready,
         //  no info) and also 3/2/0 (no seek complete).
@@ -6653,7 +6653,7 @@ CdRomErrorHandler(
         //  (0x01) in order to comply with WHQL standards.
         //
         //  The default retry timeout of one second is acceptable to balance
-        //  these discrepencies.  don't modify the status, though....
+        //  these discrepancies.  don't modify the status, though....
         //
 
         if (((sense->SenseKey & 0xf) == SCSI_SENSE_NOT_READY) &&

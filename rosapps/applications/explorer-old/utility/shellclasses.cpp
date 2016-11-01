@@ -101,7 +101,7 @@ void HandleException(COMException& e, HWND hwnd)
 
 	MessageBox(hwnd, msg, TEXT("ShellClasses Exception"), MB_ICONHAND|MB_OK);
 
-	 // If displaying the error message box _with_ parent was not successfull, display it now without a parent window.
+	 // If displaying the error message box _with_ parent was not successful, display it now without a parent window.
 	if (GetLastError() == ERROR_INVALID_WINDOW_HANDLE)
 		MessageBox(0, msg, TEXT("ShellClasses Exception"), MB_ICONHAND|MB_OK);
 }

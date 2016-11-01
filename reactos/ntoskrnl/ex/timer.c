@@ -173,7 +173,7 @@ ExpTimerApcKernelRoutine(IN PKAPC Apc,
                          IN OUT PKNORMAL_ROUTINE* NormalRoutine,
                          IN OUT PVOID* NormalContext,
                          IN OUT PVOID* SystemArgument1,
-                         IN OUT PVOID* SystemArguemnt2)
+                         IN OUT PVOID* SystemArgument2)
 {
     PETIMER Timer;
     KIRQL OldIrql;

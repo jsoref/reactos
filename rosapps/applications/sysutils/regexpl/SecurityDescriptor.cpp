@@ -147,7 +147,7 @@ void CSecurityDescriptor::AssociateDescriptor(PSECURITY_DESCRIPTOR pSecurityDesc
 	m_pSecurityDescriptor = pSecurityDescriptor;
 }
 
-DWORD CSecurityDescriptor::BeginDACLInteration()
+DWORD CSecurityDescriptor::BeginDACLIteration()
 {
 	if (!GetSecurityDescriptorDacl(m_pSecurityDescriptor,&m_blnDACLPresent,&m_pDACL,&m_blnDACLDefaulted))
 	{
@@ -161,7 +161,7 @@ BOOL CSecurityDescriptor::DescriptorContainsDACL()
 	return m_blnDACLPresent;
 }
 
-DWORD CSecurityDescriptor::BeginSACLInteration()
+DWORD CSecurityDescriptor::BeginSACLIteration()
 {
 	if (!GetSecurityDescriptorSacl(m_pSecurityDescriptor,&m_blnSACLPresent,&m_pSACL,&m_blnSACLDefaulted))
 		throw GetLastError();
@@ -231,7 +231,7 @@ CSecurityDescriptor::ACEntryType CSecurityDescriptor::GetDACLEntry(DWORD nIndex)
 	return Unknown;
 }
 
-CSecurityDescriptor::ACEntryType CSecurityDescriptor::GetSACLEntry(DWORD nIndex, BOOL& blnFailedAccess, BOOL& blnSeccessfulAccess)
+CSecurityDescriptor::ACEntryType CSecurityDescriptor::GetSACLEntry(DWORD nIndex, BOOL& blnFailedAccess, BOOL& blnSuccessfulAccess)
 {
 	void *pACE;
 	if (!GetAce(m_pSACL,nIndex,&pACE)) throw GetLastError();
@@ -239,7 +239,7 @@ CSecurityDescriptor::ACEntryType CSecurityDescriptor::GetSACLEntry(DWORD nIndex,
 	if (m_pCurrentACEHeader->AceType == SYSTEM_AUDIT_ACE_TYPE)
 	{
 		blnFailedAccess = m_pCurrentACEHeader->AceFlags & FAILED_ACCESS_ACE_FLAG;
-		blnSeccessfulAccess = m_pCurrentACEHeader->AceFlags & SUCCESSFUL_ACCESS_ACE_FLAG;
+		blnSuccessfulAccess = m_pCurrentACEHeader->AceFlags & SUCCESSFUL_ACCESS_ACE_FLAG;
 		return SystemAudit;
 	}
 	return Unknown;

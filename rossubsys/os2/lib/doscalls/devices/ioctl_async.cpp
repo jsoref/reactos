@@ -18,7 +18,7 @@
 /*  This function implements the async ioctls. It
 	is called from the real DosIOCtl function. This
 	function implies that it is only called, if the
-	cathegory was 0x01. 
+	category was 0x01. 
 	All other parameters are the same as DosIoCtl. 
 
 	FIXME: implement me

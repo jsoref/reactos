@@ -60,7 +60,7 @@ NOTES
 
     5. The requested process [program] runs in the context of the
        PSX subsystem and performs any terminal I/O via the channel
-       posixw32 and the PSX susbstem created.
+       posixw32 and the PSX subsystem created.
 
 REVISIONS
     2001-05-05 created

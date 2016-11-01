@@ -207,7 +207,7 @@ BOOL CRegistryTree::SetMachineName(LPCTSTR pszMachineName)
 
   _tcscpy(m_pszMachineName,_T("\\\\")); // leading backslashes
   _tcscpy(m_pszMachineName+2,pszMachineName); // machine name itself
-  _tcsupr(m_pszMachineName+2);  // upercase it
+  _tcsupr(m_pszMachineName+2);  // uppercase it
 
   VERIFY(SUCCEEDED(m_Root.m_Key.InitRoot(m_pszMachineName)));
   return TRUE;
@@ -290,7 +290,7 @@ BOOL CRegistryTree::DeleteSubkeys(CRegistryKey& rKey, const TCHAR *pszKeyPattern
     if (PatternMatch(pszKeyPattern,pszSubkeyName))
     {
       if (blnRecursive)
-      { // deltion is recursive, delete subkey subkeys
+      { // deletion is recursive, delete subkey subkeys
         CRegistryKey Subkey;
         // open subkey
         nError = rKey.OpenSubkey(DELETE,pszSubkeyName,Subkey);

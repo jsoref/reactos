@@ -89,7 +89,7 @@ DIB_BitmapMaxBitsSize(
 
 /*
  * DIB_GetBitmapInfo is complete copy of wine cvs 2/9-2006
- * from file dib.c from gdi32.dll or orginal version
+ * from file dib.c from gdi32.dll or original version
  * did not calc the info right for some headers.
  */
 INT

@@ -100,7 +100,7 @@ RtlpCreateCriticalSectionSem(PRTL_CRITICAL_SECTION CriticalSection)
  *     CriticalSection - Critical section to acquire.
  *
  * Returns:
- *     STATUS_SUCCESS, or raises an exception if a deadlock is occuring.
+ *     STATUS_SUCCESS, or raises an exception if a deadlock is occurring.
  *
  * Remarks:
  *     None
@@ -569,7 +569,7 @@ NTAPI
 RtlInitializeCriticalSectionAndSpinCount(PRTL_CRITICAL_SECTION CriticalSection,
                                          ULONG SpinCount)
 {
-    PRTL_CRITICAL_SECTION_DEBUG CritcalSectionDebugData;
+    PRTL_CRITICAL_SECTION_DEBUG CriticalSectionDebugData;
 
     /* First things first, set up the Object */
     DPRINT("Initializing Critical Section: %p\n", CriticalSection);
@@ -580,12 +580,12 @@ RtlInitializeCriticalSectionAndSpinCount(PRTL_CRITICAL_SECTION CriticalSection,
     CriticalSection->LockSemaphore = 0;
 
     /* Allocate the Debug Data */
-    CritcalSectionDebugData = RtlpAllocateDebugInfo();
+    CriticalSectionDebugData = RtlpAllocateDebugInfo();
     DPRINT("Allocated Debug Data: %p inside Process: %p\n",
-           CritcalSectionDebugData,
+           CriticalSectionDebugData,
            NtCurrentTeb()->ClientId.UniqueProcess);
 
-    if (!CritcalSectionDebugData)
+    if (!CriticalSectionDebugData)
     {
         /* This is bad! */
         DPRINT1("Couldn't allocate Debug Data for: %p\n", CriticalSection);
@@ -593,12 +593,12 @@ RtlInitializeCriticalSectionAndSpinCount(PRTL_CRITICAL_SECTION CriticalSection,
     }
 
     /* Set it up */
-    CritcalSectionDebugData->Type = RTL_CRITSECT_TYPE;
-    CritcalSectionDebugData->ContentionCount = 0;
-    CritcalSectionDebugData->EntryCount = 0;
-    CritcalSectionDebugData->CriticalSection = CriticalSection;
-    CritcalSectionDebugData->Flags = 0;
-    CriticalSection->DebugInfo = CritcalSectionDebugData;
+    CriticalSectionDebugData->Type = RTL_CRITSECT_TYPE;
+    CriticalSectionDebugData->ContentionCount = 0;
+    CriticalSectionDebugData->EntryCount = 0;
+    CriticalSectionDebugData->CriticalSection = CriticalSection;
+    CriticalSectionDebugData->Flags = 0;
+    CriticalSection->DebugInfo = CriticalSectionDebugData;
 
     /*
      * Add it to the List of Critical Sections owned by the process.
@@ -608,7 +608,7 @@ RtlInitializeCriticalSectionAndSpinCount(PRTL_CRITICAL_SECTION CriticalSection,
     if ((CriticalSection != &RtlCriticalSectionLock) && (RtlpCritSectInitialized))
     {
         DPRINT("Securely Inserting into ProcessLocks: %p, %p, %p\n",
-               &CritcalSectionDebugData->ProcessLocksList,
+               &CriticalSectionDebugData->ProcessLocksList,
                CriticalSection,
                &RtlCriticalSectionList);
 
@@ -616,7 +616,7 @@ RtlInitializeCriticalSectionAndSpinCount(PRTL_CRITICAL_SECTION CriticalSection,
         RtlEnterCriticalSection(&RtlCriticalSectionLock);
 
         /* Add this one */
-        InsertTailList(&RtlCriticalSectionList, &CritcalSectionDebugData->ProcessLocksList);
+        InsertTailList(&RtlCriticalSectionList, &CriticalSectionDebugData->ProcessLocksList);
 
         /* Unprotect */
         RtlLeaveCriticalSection(&RtlCriticalSectionLock);
@@ -624,12 +624,12 @@ RtlInitializeCriticalSectionAndSpinCount(PRTL_CRITICAL_SECTION CriticalSection,
     else
     {
         DPRINT("Inserting into ProcessLocks: %p, %p, %p\n",
-               &CritcalSectionDebugData->ProcessLocksList,
+               &CriticalSectionDebugData->ProcessLocksList,
                CriticalSection,
                &RtlCriticalSectionList);
 
         /* Add it directly */
-        InsertTailList(&RtlCriticalSectionList, &CritcalSectionDebugData->ProcessLocksList);
+        InsertTailList(&RtlCriticalSectionList, &CriticalSectionDebugData->ProcessLocksList);
     }
 
     return STATUS_SUCCESS;
@@ -735,7 +735,7 @@ RtlLeaveCriticalSection(PRTL_CRITICAL_SECTION CriticalSection)
         }
     }
 
-    /* Sucessful! */
+    /* Successful! */
     return STATUS_SUCCESS;
 }
 
@@ -743,7 +743,7 @@ RtlLeaveCriticalSection(PRTL_CRITICAL_SECTION CriticalSection)
  * RtlTryEnterCriticalSection
  * @implemented NT4
  *
- *     Attemps to gain ownership of the critical section without waiting.
+ *     Attempts to gain ownership of the critical section without waiting.
  *
  * Params:
  *     CriticalSection - Critical section to attempt acquiring.

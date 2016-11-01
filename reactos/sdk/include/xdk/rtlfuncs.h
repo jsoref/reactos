@@ -2819,7 +2819,7 @@ $endif (_NTIFS_)
 $if (_WDMDDK_)
 
 #if !defined(MIDL_PASS)
-/* inline funftions */
+/* inline functions */
 //DECLSPEC_DEPRECATED_DDK_WINXP
 static __inline
 LARGE_INTEGER

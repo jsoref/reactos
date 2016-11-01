@@ -298,7 +298,7 @@ HalExamineMBR(
 NTSTATUS
 NTAPI
 HalAllocateHardwareCounters(
-  _In_reads_(GroupCount) PGROUP_AFFINITY GroupAffinty,
+  _In_reads_(GroupCount) PGROUP_AFFINITY GroupAffinity,
   _In_ ULONG GroupCount,
   _In_ PPHYSICAL_COUNTER_RESOURCE_LIST ResourceList,
   _Out_ PHANDLE CounterSetHandle);

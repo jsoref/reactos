@@ -75,7 +75,7 @@ DdDestroySurface(LPDDHAL_DESTROYSURFACEDATA pDestroySurface)
 
     if (pDestroySurface->lpDDSurface->hDDSurface)
     {
-        /* Check if we shoudl really destroy it */
+        /* Check if we should really destroy it */
         RealDestroy = !(pDestroySurface->lpDDSurface->dwFlags & DDRAWISURF_DRIVERMANAGED) ||
                       !(pDestroySurface->lpDDSurface->dwFlags & DDRAWISURF_INVALID);
 
@@ -262,7 +262,7 @@ DdCanCreateSurface(LPDDHAL_CANCREATESURFACEDATA CanCreateSurface)
     /*
      * Note : This functions are basic same, in win32k
      * NtGdiDdCanCreateD3DBuffer and  NtGdiDdCanCreateSurface are mergs
-     * toghter in win32k at end and retrurn same data, it is still sepreated
+     * toghter in win32k at end and return same data, it is still separated
      * at user mode but in kmode it is not.
      */
 
@@ -306,14 +306,14 @@ DdCreateSurface(LPDDHAL_CREATESURFACEDATA pCreateSurface)
      * DD_SURFACE_GLOBAL DdSurfaceGlobal, HANDLE hPrevSurface, hSurface like
      * struct { DD_SURFACE_LOCAL DdSurfaceLocal1, DD_SURFACE_LOCAL DdSurfaceLocal2 }
      * in a way that it may contain two surfaces, maybe even four. We need to watch what is most common before
-     * we create the size. Activate this IF when you start doing the optimze and please also
+     * we create the size. Activate this IF when you start doing the optimize and please also
      * take reports from users which value they got here.
      */
 #if 1
     {
         char buffer[1024];
         \
-        sprintf ( buffer, "Function %s : Optimze max to %d Surface ? (%s:%d)\n", __FUNCTION__, (int)SurfaceCount,__FILE__,__LINE__ );
+        sprintf ( buffer, "Function %s : Optimize max to %d Surface ? (%s:%d)\n", __FUNCTION__, (int)SurfaceCount,__FILE__,__LINE__ );
         OutputDebugStringA(buffer);
     }
 #endif
@@ -594,9 +594,9 @@ DvpCreateVideoPort(LPDDHAL_CREATEVPORTDATA pDvdCreatePort)
  */
 DWORD
 WINAPI
-DvpDestroyVideoPort(LPDDHAL_DESTROYVPORTDATA pDvdDestoryPort)
+DvpDestroyVideoPort(LPDDHAL_DESTROYVPORTDATA pDvdDestroyPort)
 {
-    return NtGdiDvpDestroyVideoPort(pDvdDestoryPort->lpVideoPort->hDDVideoPort, (PDD_DESTROYVPORTDATA)pDvdDestoryPort);
+    return NtGdiDvpDestroyVideoPort(pDvdDestroyPort->lpVideoPort->hDDVideoPort, (PDD_DESTROYVPORTDATA)pDvdDestroyPort);
 }
 
 /*
@@ -698,8 +698,8 @@ DvpUpdateVideoPort(LPDDHAL_UPDATEVPORTDATA pDvdUpdateVideoPort)
     /*
      * Windows XP limit to max 10 handles of videoport surface and Vbi
      * ReactOS doing same to keep compatible, if it is more that 10
-     * videoport surface or vbi the stack will be curpted in windows xp
-     * ReactOS safe guard againts that
+     * videoport surface or vbi the stack will be corrupted in windows xp
+     * ReactOS safe guard against that
      *
      */
 
@@ -1067,7 +1067,7 @@ DdGetDriverInfo(LPDDHAL_GETDRIVERINFODATA pData)
         pUserMisc->dwFlags = pMisc.dwFlags & DDHAL_MISCCB32_GETAVAILDRIVERMEMORY;
         pUserMisc->GetAvailDriverMemory = (LPDDHAL_GETAVAILDRIVERMEMORY) DdGetAvailDriverMemory;
 
-        /* This callbacks are only for win9x and theirfor it is not longer use in NT or ReactOS
+        /* This callbacks are only for win9x and therefore it is not longer use in NT or ReactOS
          * pUserMisc->UpdateNonLocalHeap;
          * pUserMisc->GetHeapAlignment;
          * pUserMisc->GetSysmemBltStatus; */
@@ -1101,7 +1101,7 @@ DdGetDriverInfo(LPDDHAL_GETDRIVERINFODATA pData)
 
         pUserMisc->dwFlags = pMisc.dwFlags;
 
-        /* This functions are not documneted in MSDN for this struct, here is directx/reactx alpha blend */
+        /* This functions are not documented in MSDN for this struct, here is directx/reactx alpha blend */
         if ( pMisc.Reserved )
         {
             pUserMisc->Reserved = (LPVOID) DdAlphaBlt;
@@ -1258,7 +1258,7 @@ DdCanCreateD3DBuffer(LPDDHAL_CANCREATESURFACEDATA CanCreateD3DBuffer)
     /*
      * Note : This functions are basic same, in win32k
      * NtGdiDdCanCreateD3DBuffer and  NtGdiDdCanCreateSurface are mergs
-     * toghter in win32k at end and retrurn same data, it is still sepreated
+     * toghter in win32k at end and return same data, it is still separated
      * at user mode but in kmode it is not.
      */
 
@@ -1618,7 +1618,7 @@ DdQueryDirectDrawObject(LPDDRAWI_DIRECTDRAW_GBL pDirectDrawGlobal,
     /* Set the HAL flags what ReactX got from the driver
      * Windows XP force setting DDHALINFO_GETDRIVERINFOSET if the driver does not set it
      * and ReactX doing same to keep compatible with drivers, but the driver are
-     * force support DdGetDriverInfo acoriding MSDN but it seam some driver do not set
+     * force support DdGetDriverInfo according to MSDN but it seam some driver do not set
      * this flag even it is being supported. that is mean. It is small hack to keep
      * bad driver working, that trust this is always being setting by it self at end
      */
@@ -1635,7 +1635,7 @@ DdQueryDirectDrawObject(LPDDRAWI_DIRECTDRAW_GBL pDirectDrawGlobal,
         /* Set the flags for this structure
          * Windows XP force setting DDHAL_CB32_CREATESURFACE if the driver does not set it
          * and ReactX doing same to keep compatible with drivers, but the driver are
-         * force support pDDCallbacks acoriding MSDN but it seam some driver do not set
+         * force support pDDCallbacks according to MSDN but it seam some driver do not set
          * this flag even it is being supported. that is mean. It is small hack to keep
          * bad driver working, that trust this is always being setting by it self at end
         */
@@ -1671,7 +1671,7 @@ DdQueryDirectDrawObject(LPDDRAWI_DIRECTDRAW_GBL pDirectDrawGlobal,
          * Windows XP force setting DDHAL_SURFCB32_LOCK, DDHAL_SURFCB32_UNLOCK,
          * DDHAL_SURFCB32_SETCOLORKEY, DDHAL_SURFCB32_DESTROYSURFACE if the driver
          * does not set it and ReactX doing same to keep compatible with drivers,
-         * but the driver are force support pDDSurfaceCallbacks acoriding MSDN but it seam
+         * but the driver are force support pDDSurfaceCallbacks according to MSDN but it seam
          * some driver do not set this flag even it is being supported. that is mean.
          * It is small hack to keep bad driver working, that trust this is always being
          * setting by it self at end

@@ -37,7 +37,7 @@
 *   Groups and special codes in place of name index
 *
 ******************************************************************************/
-#define _NDEF          0x00     // Udefined/reserved opcode
+#define _NDEF          0x00     // Undefined/reserved opcode
 #define _2BESC         0x01     // 2 byte escape code
 #define _S_ES          0x02     // Segment ES override | these defines
 #define _S_CS          0x03     // Segment CS override | must have
@@ -77,7 +77,7 @@
 
 /******************************************************************************
 *
-*   Addressing modes argument definiton for the opcodes in a table
+*   Addressing modes argument definition for the opcodes in a table
 *
 ******************************************************************************/
 #define _O             0x01

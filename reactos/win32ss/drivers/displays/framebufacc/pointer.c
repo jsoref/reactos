@@ -166,7 +166,7 @@ DrvSetPointerShape(
         }
     }
 
-    /* we goto hw mouse pointer then we contnue filling in more info */
+    /* we goto hw mouse pointer then we continue filling in more info */
 
     /* calc the mouse point positions */
     if ((x != -1) || (y != -1))
@@ -211,7 +211,7 @@ CopyColorPointer(PPDEV ppdev,
                 SURFOBJ *psoColor,
                 XLATEOBJ *pxlo)
 {
-    /* FIXME unimplement */
+    /* FIXME unimplemented */
     return FALSE;
 }
 
@@ -219,7 +219,7 @@ BOOL
 CopyMonoPointer(PPDEV ppdev,
                 SURFOBJ *pso)
 {
-    /* FIXME unimplement */
+    /* FIXME unimplemented */
     return FALSE;
 }
 

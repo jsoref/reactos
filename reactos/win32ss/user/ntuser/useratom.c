@@ -88,7 +88,7 @@ IntAddGlobalAtom(LPWSTR lpBuffer, BOOL PinAtom)
  *
  * \return The length of the name in characters, or 0 if the function fails.
  *
- * \note The function does not aquire any global lock, since synchronisation is
+ * \note The function does not acquire any global lock, since synchronisation is
  *       handled by the RtlAtom function.
  */
 _Success_(return != 0)

@@ -922,7 +922,7 @@ cpp_quote("#if _WIN32_WINNT >= 0x0500")
     NTSTATUS __stdcall LsarCreateTrustedDomainEx(
         [in] LSAPR_HANDLE PolicyHandle,
         [in] PLSAPR_TRUSTED_DOMAIN_INFORMATION_EX TrustedDomainInformation,
-        [in] PLSAPR_TRUSTED_DOMAIN_AUTH_INFORMATION AuthentificationInformation,
+        [in] PLSAPR_TRUSTED_DOMAIN_AUTH_INFORMATION AuthenticationInformation,
         [in] ACCESS_MASK DesiredAccess,
         [out] LSAPR_HANDLE *TrustedDomainHandle);
 
@@ -980,7 +980,7 @@ cpp_quote("#if _WIN32_WINNT >= 0x0500")
     NTSTATUS __stdcall LsarCreateTrustedDomainEx2(
         [in] LSAPR_HANDLE PolicyHandle,
         [in] PLSAPR_TRUSTED_DOMAIN_INFORMATION_EX TrustedDomainInformation,
-        [in] PLSAPR_TRUSTED_DOMAIN_AUTH_INFORMATION_INTERNAL AuthentificationInformation,
+        [in] PLSAPR_TRUSTED_DOMAIN_AUTH_INFORMATION_INTERNAL AuthenticationInformation,
         [in] ACCESS_MASK DesiredAccess,
         [out] LSAPR_HANDLE *TrustedDomainHandle);
 

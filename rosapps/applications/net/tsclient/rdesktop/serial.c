@@ -1040,7 +1040,7 @@ serial_get_event(RDPCLIENT * This, NTHANDLE handle, uint32 * result)
 	return ret;
 }
 
-/* Read timeout for a given file descripter (device) when adding fd's to select() */
+/* Read timeout for a given file descriptor (device) when adding fd's to select() */
 BOOL
 serial_get_timeout(RDPCLIENT * This, NTHANDLE handle, uint32 length, uint32 * timeout, uint32 * itv_timeout)
 {

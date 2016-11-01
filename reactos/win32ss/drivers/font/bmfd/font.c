@@ -94,7 +94,7 @@ FillFaceInfo(
     else if (dfFlags & DFF_RGBCOLOR)
         pface->flInfo |= FM_INFO_24BPP;
 
-    // TODO: walk through all glyphs and veryfy them and calculate max values
+    // TODO: walk through all glyphs and verify them and calculate max values
 
     // FIXME: After this point, the whole font data should be verified!
 
@@ -139,7 +139,7 @@ ParseFonFile(
         return NULL;
     }
 
-    /* Get pointer to OS2 header and veryfy it is valid */
+    /* Get pointer to OS2 header and verify it is valid */
     pOs2Header = (PVOID)((PCHAR)pDosHeader + GETVAL(pDosHeader->e_lfanew));
     pStart += sizeof(IMAGE_DOS_HEADER);
     if (!IsValidPtr(pOs2Header, sizeof(IMAGE_OS2_HEADER), pStart, pEnd, 4))

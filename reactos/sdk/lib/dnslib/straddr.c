@@ -100,7 +100,7 @@ Dns_Ip4StringToAddress_A(OUT PIN_ADDR Address,
         if (strcmp("255.255.255.255", Name)) return FALSE;
     }
 
-    /* If we got here, then we suceeded... return the address */
+    /* If we got here, then we succeeded... return the address */
     Address->S_un.S_addr = Addr;
     return TRUE;
 }
@@ -123,7 +123,7 @@ Dns_Ip4StringToAddress_W(OUT PIN_ADDR Address,
                                AnsiString);
     if (ErrorCode)
     {
-        /* Copy made sucesfully, now convert it */
+        /* Copy made successfully, now convert it */
         ErrorCode = Dns_Ip4StringToAddress_A(Address, AnsiName);
     }
 
@@ -149,7 +149,7 @@ Dns_Ip4ReverseNameToAddress_W(OUT PIN_ADDR Address,
                                AnsiString);
     if (ErrorCode)
     {
-        /* Copy made sucesfully, now convert it */
+        /* Copy made successfully, now convert it */
         ErrorCode = Dns_Ip4ReverseNameToAddress_A(Address, AnsiName);
     }
 
@@ -217,7 +217,7 @@ Dns_StringToAddressEx(OUT PVOID Address,
             }
         }
 
-        /* Check if we suceeded */
+        /* Check if we succeeded */
         if (Return)
         {
             /* Save address family */
@@ -261,7 +261,7 @@ Dns_StringToAddressEx(OUT PVOID Address,
             }
         }
 
-        /* Check if we suceeded */
+        /* Check if we succeeded */
         if (Return)
         {
             /* Save address family */
@@ -371,7 +371,7 @@ Dns_StringToDnsAddrEx(OUT PDNS_ADDRESS DnsAddr,
             }
         }
 
-        /* Check if we suceeded */
+        /* Check if we succeeded */
         if (Return)
         {
             /* Build the IPv4 Address */
@@ -427,7 +427,7 @@ Dns_StringToDnsAddrEx(OUT PDNS_ADDRESS DnsAddr,
             }
         }
 
-        /* Check if we suceeded */
+        /* Check if we succeeded */
         if (Return)
         {
             /* Finish setting up the structure */

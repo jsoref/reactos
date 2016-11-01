@@ -361,7 +361,7 @@ HalpAllocateAndInitPciBusHandler(IN ULONG PciType,
         default:
 
             /* Invalid type */
-            DbgPrint("HAL: Unnkown PCI type\n");
+            DbgPrint("HAL: Unknown PCI type\n");
     }
 
     /* Return the bus handler */
@@ -1020,7 +1020,7 @@ HalpInitializePciBus(VOID)
         /* Go to the next bridge */
     } while (HalpGetPciBridgeConfig(PciType, &PciRegistryInfo->NoBuses));
 
-    /* Now build correct address range informaiton */
+    /* Now build correct address range information */
     HalpFixupPciSupportedRanges(PciRegistryInfo->NoBuses);
 
     /* Loop every bus */

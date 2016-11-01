@@ -129,7 +129,7 @@ typedef struct __GLOBAL_ITEM_STATE_
 {
     USHORT UsagePage;
     ULONG  LogicalMinimum;
-    ULONG  LogicialMaximum;
+    ULONG  LogicalMaximum;
     ULONG  PhysicalMinimum;
     ULONG  PhysicalMaximum;
     UCHAR  UnitExponent;

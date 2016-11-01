@@ -646,7 +646,7 @@ MMixerGetUpOrDownStreamPins(
         TopologyNodes = TopologyNode->NodeConnectedTo;
     }
 
-    /* add all diretly connected pins */
+    /* add all directly connected pins */
     for(Index = 0; Index < PinsCount; Index++)
     {
         /* sanity check */

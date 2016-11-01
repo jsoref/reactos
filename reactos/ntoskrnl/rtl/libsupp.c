@@ -250,7 +250,7 @@ CHECK_PAGED_CODE_RTL(char *file, int line)
 {
   if(KeGetCurrentIrql() > APC_LEVEL)
   {
-    DbgPrint("%s:%i: Pagable code called at IRQL > APC_LEVEL (%u)\n", file, line, KeGetCurrentIrql());
+    DbgPrint("%s:%i: Pageable code called at IRQL > APC_LEVEL (%u)\n", file, line, KeGetCurrentIrql());
     ASSERT(FALSE);
   }
 }

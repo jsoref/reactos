@@ -549,7 +549,7 @@ KdbpGetBreakPointInfo(
  * \param Address              Address at which to set the breakpoint.
  * \param Type                 Type of breakpoint (hardware or software)
  * \param Size                 Size of breakpoint (for hardware/memory breakpoints)
- * \param AccessType           Access type (for hardware breakpoins)
+ * \param AccessType           Access type (for hardware breakpoints)
  * \param ConditionExpression  Expression which must evaluate to true for conditional breakpoints.
  * \param Global               Wether the breakpoint is global or local to a process.
  * \param BreakPointNumber     Receives the breakpoint number on success
@@ -594,7 +594,7 @@ KdbpInsertBreakPoint(
         return STATUS_UNSUCCESSFUL;
     }
 
-    /* Parse conditon expression string and duplicate it */
+    /* Parse condition expression string and duplicate it */
     if (ConditionExpression)
     {
         Condition = KdbpRpnParseExpression(ConditionExpression, &ErrOffset, ErrMsg);
@@ -1343,7 +1343,7 @@ KdbpGetExceptionNumberFromStatus(
  * \param PreviousMode     UserMode if the exception was raised from umode, otherwise KernelMode.
  * \param Context          Context, IN/OUT parameter.
  * \param TrapFrame        Exception TrapFrame.
- * \param FirstChance      TRUE when called before exception frames were serached,
+ * \param FirstChance      TRUE when called before exception frames were searched,
  *                         FALSE for the second call.
  *
  * \returns KD_CONTINUE_TYPE

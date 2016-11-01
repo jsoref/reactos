@@ -112,7 +112,7 @@ DwDecodeFde(PDW2FDE Fde, char *pc)
 }
 
 unsigned long
-DwExecIntruction(PDW2CFSTATE State, char *pc)
+DwExecInstruction(PDW2CFSTATE State, char *pc)
 {
     unsigned char Code;
     unsigned long Length;
@@ -269,7 +269,7 @@ DwExecIntruction(PDW2CFSTATE State, char *pc)
                 }
 
                /* These work differently. We are in a new function.
-                 * We have to parse a lea opcode to find the adress of
+                 * We have to parse a lea opcode to find the address of
                  * the jump target. This is the reference to find the 
                  * appropriate C_SCOPE_TABLE. */
                 case 6: /* Filter func */
@@ -416,14 +416,14 @@ StoreUnwindInfo(PUNWIND_INFO Info, PDW2FDE pFde, ULONG FunctionStart)
     pInst = Cie.Instructions;
     while (pInst < Cie.Next)
     {
-        pInst += DwExecIntruction(&State, pInst);
+        pInst += DwExecInstruction(&State, pInst);
     }
 
     /* Parse the FDE instructions */
     pInst = pFde->Instructions;
     while (pInst < pFde->Next)
     {
-        pInst += DwExecIntruction(&State, pInst);
+        pInst += DwExecInstruction(&State, pInst);
 
         if (State.IsUwop)
         {
@@ -495,7 +495,7 @@ CountUnwindData(PFILE_INFO File)
             pInst = Fde.Instructions;
             while (pInst < Fde.Next)
             {
-                pInst += DwExecIntruction(&State, pInst);
+                pInst += DwExecInstruction(&State, pInst);
                 File->cUWOP += StoreUnwindCodes(NULL, &State, 0);
                 File->cScopes += State.Scope ? 1 : 0;
             }
@@ -684,7 +684,7 @@ WriteOutFile(FILE *handle, PFILE_INFO File)
     ret = fwrite(File->NewSectionHeaders, 1, Size, handle);
     Pos += Size;
 
-    /* Fill up to next alignement */
+    /* Fill up to next alignment */
     Size = ROUND_UP(Pos, Alignment) - Pos;
     ret = fwrite(File->AlignBuf, 1, Size, handle);
     Pos += Size;
@@ -787,7 +787,7 @@ ParsePEHeaders(PFILE_INFO File)
     File->UsedSections = 0;
     File->eh_frame.idx = -1;
 
-    /* Allocate array of chars, specifiying whether to copy the section */
+    /* Allocate array of chars, specifying whether to copy the section */
     File->UseSection = malloc(File->AllSections);
 
     for (i = 0; i < File->AllSections; i++)

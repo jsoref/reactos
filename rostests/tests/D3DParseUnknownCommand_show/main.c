@@ -7,9 +7,9 @@
 
 /* Black Box program for D3DParseUnknownCommand in ddraw.dll
  *
- * This program scaning all return valu that D3DParseUnknownCommand have in ddraw.dll
+ * This program scanning all return values that D3DParseUnknownCommand have in ddraw.dll
  * This command is not 100% document in MSDN so I using ddk kit doc and WinCE document
- * and ms ddk / ms sdk to figout the basic. and MSDN was unclare what this command support for
+ * and ms ddk / ms sdk to figout the basic. and MSDN was unclear what this command support for
  * D3DHAL_DP2COMMAND dp2command->bCommand so I wrote this small scanner
  *
  * it will show D3DParseUnknownCommand  dp2command->bCommand support follow command
@@ -18,7 +18,7 @@
  *  D3DDP2OP_WINFO        (aka 0x1d) 29
  *  Unknown               (aka 0x0d) 13
  *
- *  no doc in msdn about command 13 (dec) I will exaime it later
+ *  no doc in msdn about command 13 (dec) I will examine it later
  *
  */
 

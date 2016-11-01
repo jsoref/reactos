@@ -654,7 +654,7 @@ UserExitReactOS(PCSR_THREAD CsrThread, UINT Flags)
         }
     }
 
-    /* Implicitely add the shutdown flag when we poweroff or reboot */
+    /* Implicitly add the shutdown flag when we poweroff or reboot */
     if (Flags & (EWX_POWEROFF | EWX_REBOOT))
         Flags |= EWX_SHUTDOWN;
 

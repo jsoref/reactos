@@ -249,7 +249,7 @@ FsRtlIsDbcsInExpression(IN PANSI_STRING Expression,
         /* Test star */
         else if (Expression->Buffer[ExpressionPosition] == '*')
         {
-            /* Skip contigous stars */
+            /* Skip contiguous stars */
             while (ExpressionPosition + 1 < Expression->Length && Expression->Buffer[ExpressionPosition + 1] == '*')
             {
                 ExpressionPosition++;
@@ -279,7 +279,7 @@ FsRtlIsDbcsInExpression(IN PANSI_STRING Expression,
         /* Check DOS_STAR */
         else if (Expression->Buffer[ExpressionPosition] == ANSI_DOS_STAR)
         {
-            /* Skip contigous stars */
+            /* Skip contiguous stars */
             while (ExpressionPosition + 1 < Expression->Length && Expression->Buffer[ExpressionPosition + 1] == ANSI_DOS_STAR)
             {
                 ExpressionPosition++;

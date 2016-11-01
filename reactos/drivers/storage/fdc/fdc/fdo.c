@@ -251,7 +251,7 @@ FdcFdoConfigCallback(
         DriveInfo->FloppyDeviceData.MaximumTrackValue = FloppyDeviceData->MaximumTrackValue;
         DriveInfo->FloppyDeviceData.DataTransferLength = FloppyDeviceData->DataTransferLength;
 
-        /* Once it's all set up, acknowledge its existance in the controller info object */
+        /* Once it's all set up, acknowledge its existence in the controller info object */
         DeviceExtension->ControllerInfo.NumberOfDrives++;
     }
 
@@ -410,7 +410,7 @@ FdcFdoQueryBusRelations(
             PdoDeviceExtension->DriveInfo = DriveInfo;
 
             Pdo->Flags |= DO_DIRECT_IO;
-            Pdo->Flags |= DO_POWER_PAGABLE;
+            Pdo->Flags |= DO_POWER_PAGEABLE;
             Pdo->Flags &= ~DO_DEVICE_INITIALIZING;
 
             /* Add Device ID string */
