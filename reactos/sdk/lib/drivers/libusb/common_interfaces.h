@@ -664,7 +664,7 @@ DECLARE_INTERFACE_(IUSBDevice, IUnknown)
 //
 // SelectConfiguration
 //
-// Description: selects a interface of an configuration
+// Description: selects an interface of an configuration
 
     virtual NTSTATUS SelectInterface(IN USBD_CONFIGURATION_HANDLE ConfigurationHandle,
                                      IN OUT PUSBD_INTERFACE_INFORMATION Interface) = 0;

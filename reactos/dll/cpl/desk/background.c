@@ -668,7 +668,7 @@ OnBrowseButton(HWND hwndDlg, PDATA pData)
 
     if (success)
     {
-        /* Check if there is already a entry that holds this filename */
+        /* Check if there is already an entry that holds this filename */
         if (CheckListViewFilenameExists(hwndBackgroundList, ofn.lpstrFileTitle) == TRUE)
             return;
 

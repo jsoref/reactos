@@ -965,7 +965,7 @@ GDIOBJ_vSetObjectOwner(
     PENTRY pentry;
     ULONG ulOldOwner;
 
-    /* This is a ugly HACK, needed to fix IntGdiSetDCOwnerEx */
+    /* This is an ugly HACK, needed to fix IntGdiSetDCOwnerEx */
     if (GDI_HANDLE_IS_STOCKOBJ(pobj->hHmgr))
     {
         DPRINT("Trying to set ownership of stock object %p to %lx\n", pobj->hHmgr, ulNewOwner);

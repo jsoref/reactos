@@ -118,7 +118,7 @@ The original goal of win32 support has not been dropped. Developers who work on 
 Win32k.sys is the kernel mode portion of the win32 subsystem that is being implemented by the ReactOS project. All of the previous demonstrations are defendant upon win32k.sys. Win32k.sys is the primary windowing system, all other subsystems must route through it to display graphics. 
 </para>
 <para>
-ReactOS currently has a unusable fork of the wine code base. This fork will make up the majority of the user mode portion of the win32 subsystem. 
+ReactOS currently has an unusable fork of the wine code base. This fork will make up the majority of the user mode portion of the win32 subsystem. 
 </para>
 <para>
 <itemizedlist>

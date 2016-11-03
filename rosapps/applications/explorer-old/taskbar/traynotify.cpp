@@ -785,7 +785,7 @@ void NotifyArea::Refresh(bool update)
 		UpdateIcons();
 }
 
- /// search for a icon at a given client coordinate position
+ /// search for an icon at a given client coordinate position
 NotifyIconSet::iterator NotifyArea::IconHitTest(const POINT& pos)
 {
 	if (pos.y<NOTIFYICON_Y || pos.y>=NOTIFYICON_Y+NOTIFYICON_SIZE)

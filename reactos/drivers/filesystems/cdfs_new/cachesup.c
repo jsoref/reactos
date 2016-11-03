@@ -547,7 +547,7 @@ Return Value:
         ThisFcb = NextFcb;
 
         //
-        //  If there is a image section then see if that can be closed.
+        //  If there is an image section then see if that can be closed.
         //
 
         if (ThisFcb->FcbNonpaged->SegmentObject.ImageSectionObject != NULL) {

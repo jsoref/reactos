@@ -23,7 +23,7 @@
  *
  * (3) If either the page is being read or not completely written, and it is
  * not up to date then read its data from the underlying medium. If the read
- * fails then call CcReleaseCachePage with VALID as FALSE and return a error.
+ * fails then call CcReleaseCachePage with VALID as FALSE and return an error.
  *
  * (4) Copy the data into or out of the page as necessary.
  *

@@ -443,7 +443,7 @@ audio_waveout::playing_procedure(LPVOID arg)
                                the total buffers - 1. This means that this is
                                the _LAST_ little buffer that has been played by
                                the audio driver. We can STOP the `wave_out'
-                               object now, or restart the sound playing, if we have a infinite loop */
+                               object now, or restart the sound playing, if we have an infinite loop */
                             _this->stop();
 
                             /* Let the thread go to sleep */

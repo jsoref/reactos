@@ -284,7 +284,7 @@
 
 2001-04-15  Norman Walsh <nwalsh@users.sourceforge.net>
 
-	* gentext.xsl: Localize the textonly calculations by creating a object.title.markup.textonly mode
+	* gentext.xsl: Localize the textonly calculations by creating an object.title.markup.textonly mode
 
 2001-04-03  Norman Walsh <nwalsh@users.sourceforge.net>
 

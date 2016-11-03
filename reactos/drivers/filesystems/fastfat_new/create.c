@@ -1161,7 +1161,7 @@ FatiCreate(IN PFAT_IRP_CONTEXT IrpContext,
         UNIMPLEMENTED;
     }
 
-    /* Check, if path is a existing directory or file */
+    /* Check, if path is an existing directory or file */
     if (FfError == FF_ERR_FILE_OBJECT_IS_A_DIR ||
         FfError == FF_ERR_FILE_ALREADY_OPEN ||
         FfError == FF_ERR_NONE)

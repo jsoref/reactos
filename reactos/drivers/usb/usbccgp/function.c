@@ -290,7 +290,7 @@ USBCCGP_InitInterfaceListOfFunctionDescriptor(
         if (Descriptor->bLength == sizeof(USB_INTERFACE_ASSOCIATION_DESCRIPTOR) && Descriptor->bDescriptorType == USB_INTERFACE_ASSOCIATION_DESCRIPTOR_TYPE)
         {
             //
-            // WTF? a association descriptor which overlaps the next association descriptor
+            // WTF? an association descriptor which overlaps the next association descriptor
             //
             DPRINT1("Invalid association descriptor\n");
             ASSERT(FALSE);

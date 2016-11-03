@@ -242,7 +242,7 @@ errmsgno(err, msg, va_alist)
 	 * values that prevent printing the errno text.
 	 *
 	 * We tried to use #if EIO < 0 but this does not work because EIO is
-	 * defined to a enum. ENODEV may work as ENODEV is defined to a number
+	 * defined to an enum. ENODEV may work as ENODEV is defined to a number
 	 * directly.
 	 */
 #define	silent_error(e)		((e) < 0 && (e) >= -1024)

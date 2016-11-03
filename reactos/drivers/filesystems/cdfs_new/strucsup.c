@@ -2314,7 +2314,7 @@ Return Value:
             SetFlag( *DiskFlags, CDROM_DISK_DATA_TRACK );
 
         //
-        //  If this is a audio track then set the flag indicating audio
+        //  If this is an audio track then set the flag indicating audio
         //  tracks.
         //
 

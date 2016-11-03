@@ -69,7 +69,7 @@ Report any bugs in this document to the ReactOS WINE
 <para> 8. Submit any needed patches for the w32api package to the Mingw or Cygwin projects.</para>
 <para>WARNING: Using WINE dlls that are not ported to use the w32api are not support by the ReactOS project.</para>
 <para> 9. Create a directory in the reactos source tree with the same name as the directory in the WINE source tree and copy the required files. EXAMPLE: reactos/lib/ole32 </para>
-<para> 10. Create a makefile based on a existing ported dll such as lzexpand or twain.</para>
+<para> 10. Create a makefile based on an existing ported dll such as lzexpand or twain.</para>
 <para> 11. Rebuild the dll from cmd.exe using the standard Mingw package and the ReactOS build system.</para>
 <para>
 Any changes other then minor patches such as include path changes such as those that only come as a result of the ReactOS build system should use the following format

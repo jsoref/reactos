@@ -512,7 +512,7 @@ TEST_STATUS TestGlobalReAllocMovable()
     hMem = GlobalAlloc(GMEM_MOVEABLE, MEM_BLOCK_SIZE);
     if (0 != hMem)
     {
-        OUTPUT_Line("Testing GlobalReAlloc on a unlocked block.");
+        OUTPUT_Line("Testing GlobalReAlloc on an unlocked block.");
         hReAlloced = GlobalReAlloc(hMem, MEM_BLOCK_SIZE - 100, 0);
         if (0 == hReAlloced)
         {

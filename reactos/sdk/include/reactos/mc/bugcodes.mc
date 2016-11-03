@@ -1585,7 +1585,7 @@ Severity=Success
 Facility=System
 SymbolicName=INVALID_CANCEL_OF_FILE_OPEN
 Language=English
-Invalid cancel of a open file. It already has handle.
+Invalid cancel of an open file. It already has handle.
 .
 
 MessageId=0xE9

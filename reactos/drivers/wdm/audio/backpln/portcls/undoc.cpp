@@ -251,7 +251,7 @@ PropertyItemDispatch(
             // get node automation table
             NodeAutomation = (PPCAUTOMATION_TABLE)NodeDescriptor->AutomationTable;
 
-            // has it got a automation table
+            // has it got an automation table
             if (NodeAutomation)
             {
                 // now scan the properties and check if it supports this request

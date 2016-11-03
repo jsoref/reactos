@@ -529,7 +529,7 @@ Test_PageFileSection(void)
        "got wrong Status: 0x%lx\n", Status);
 #endif
 
-    /* Try to create a even huger page file backed section, but only reserved */
+    /* Try to create an even huger page file backed section, but only reserved */
     MaximumSize.QuadPart = 0x800000000000;
     Status = NtCreateSection(&SectionHandle,
                              SECTION_ALL_ACCESS,

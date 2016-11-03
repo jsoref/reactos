@@ -543,7 +543,7 @@ VfatCreateFile(
         return STATUS_ACCESS_DENIED;
     }
 
-    /* This a open operation for the volume itself */
+    /* This an open operation for the volume itself */
     if (FileObject->FileName.Length == 0 &&
         (FileObject->RelatedFileObject == NULL ||
          FileObject->RelatedFileObject->FsContext2 != NULL ||

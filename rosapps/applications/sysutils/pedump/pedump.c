@@ -2896,7 +2896,7 @@ MenuFill (
 // So, my structure is as follows:
 //        # of menu name is stored else where ( in directory I suppose )
 //     supermenuname                    null terminated string, only ascii is considered.
-//         flag                 tells : node is a leaf or a internal node.
+//         flag                 tells : node is a leaf or an internal node.
 //         popupname                    null terminated string
 //
 //              flag                normal menu flag (leaf node)

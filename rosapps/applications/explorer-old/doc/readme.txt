@@ -35,7 +35,7 @@ silverblade_uk@hotmail.com
 Explorer Bar Example
 --------------------
 
-I have merged in Alexander Ciobanu's Explorer bar code as a example starting
+I have merged in Alexander Ciobanu's Explorer bar code as an example starting
 for the start menu. Its very simple at this point and just loads a window with 
 buttons. 
 

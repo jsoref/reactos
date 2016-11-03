@@ -259,7 +259,7 @@ asm ("iret");
 
 #define CALL_HOOK() asm("call _remcomHandler");
 
-/* This function is called when a i386 exception occurs.  It saves
+/* This function is called when an i386 exception occurs.  It saves
  * all the cpu regs in the _registers array, munges the stack a bit,
  * and invokes an exception handler (remcom_handler).
  *

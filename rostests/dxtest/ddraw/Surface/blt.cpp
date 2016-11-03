@@ -44,7 +44,7 @@ VOID Blt_Test (LPDIRECTDRAWSURFACE7 Surface, INT* passed, INT* failed)
     TEST (Surface->Blt(NULL, NULL, NULL, DDBLT_WAIT|DDBLT_DDFX, &bltfx) == DDERR_INVALIDPARAMS);
 	bltfx.dwSize = sizeof(DDBLTFX);
     TEST (Surface->Blt(NULL, NULL, NULL, DDBLT_WAIT, &bltfx) == DDERR_INVALIDPARAMS);
-    TEST (Surface->Blt(NULL, Source, NULL, DDBLT_WAIT|DDBLT_DDFX, &bltfx) == DD_OK); // don't know why this works on a offscreen surfaces
+    TEST (Surface->Blt(NULL, Source, NULL, DDBLT_WAIT|DDBLT_DDFX, &bltfx) == DD_OK); // don't know why this works on an offscreen surfaces
 
     // Test color filling
 	bltfx.dwFillColor = RGB(0, 255, 0);

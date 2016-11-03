@@ -478,7 +478,7 @@ KsDisableEvent(
     /* get current irp stack location */
     IoStack = IoGetCurrentIrpStackLocation(Irp);
 
-    /* is there a event entry */
+    /* is there an event entry */
     if (IoStack->Parameters.DeviceIoControl.InputBufferLength < sizeof(KSEVENTDATA))
     {
         if (IoStack->Parameters.DeviceIoControl.InputBufferLength == 0)

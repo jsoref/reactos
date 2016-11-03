@@ -169,7 +169,7 @@ template<typename CLASS> struct TypeCheck
 
  /**
 	SubclassedWindow is used to wrap already existing window handles
-	into C++ Window objects. To construct a object, use the "new" operator
+	into C++ Window objects. To construct an object, use the "new" operator
 	to put it in the heap. It is automatically freed, when the window
 	gets destroyed.
  */

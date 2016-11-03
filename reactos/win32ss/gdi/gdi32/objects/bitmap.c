@@ -719,7 +719,7 @@ SetDIBitsToDevice(
 
         if (Hit)
         {
-            // We don't die, we continue on with a allocated safe pointer to kernel
+            // We don't die, we continue on with an allocated safe pointer to kernel
             // space.....
             DPRINT1("SetDIBitsToDevice fail to read BitMapInfo: %p or Bits: %p & Size: %u\n",
                 pConvertedInfo, Bits, cjBmpScanSize);
@@ -855,7 +855,7 @@ StretchDIBits(
 
             if (Hit)
             {
-                // We don't die, we continue on with a allocated safe pointer to kernel
+                // We don't die, we continue on with an allocated safe pointer to kernel
                 // space.....
                 DPRINT1("StretchDIBits fail to read BitMapInfo: %p or Bits: %p & Size: %u\n",
                     pConvertedInfo, lpBits, cjBmpScanSize);

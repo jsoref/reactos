@@ -426,7 +426,7 @@ n will still be valid at the
 >DeviceIoControl any where else after the first copy ?
 >
 >Is there any reason why this approach (passing a buffer on the stack to
->a asynchronous DeviceIoControl that uses buffered I/O) wouldn't work ?
+>an asynchronous DeviceIoControl that uses buffered I/O) wouldn't work ?
 >
 >Allocating buffers from heap and deleting them on IO completion while
 >managing asynchronous IO seems too much work ;-) .

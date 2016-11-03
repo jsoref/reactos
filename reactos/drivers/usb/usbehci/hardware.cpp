@@ -981,7 +981,7 @@ CUSBHardwareDevice::GetPortStatus(
     if (Value & EHCI_PRT_SUSPEND)
         Status |= USB_PORT_STATUS_SUSPEND;
 
-    // a overcurrent is active?
+    // an overcurrent is active?
     if (Value & EHCI_PRT_OVERCURRENTACTIVE)
         Status |= USB_PORT_STATUS_OVER_CURRENT;
 

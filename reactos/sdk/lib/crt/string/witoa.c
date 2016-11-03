@@ -2,7 +2,7 @@
  * COPYRIGHT:   See COPYING in the top level directory
  * PROJECT:     ReactOS system libraries
  * FILE:        lib/sdk/crt/string/witoa.c
- * PURPOSE:     converts a integer to ascii
+ * PURPOSE:     converts an integer to ascii
  * PROGRAMER:
  * UPDATE HISTORY:
  *              1995: Created

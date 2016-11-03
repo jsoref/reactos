@@ -46,7 +46,7 @@ __aulldvrm:
 // ulldvrm - unsigned long divide and remainder
 //
 // Purpose:
-//       Does a unsigned long divide and remainder of the arguments.  Arguments
+//       Does an unsigned long divide and remainder of the arguments.  Arguments
 //       are not changed.
 //
 // Entry:

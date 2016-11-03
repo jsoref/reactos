@@ -69,7 +69,7 @@ Result: ?
 IopAssignDeviceResources()
 Info:
 	Google finds only ReactOS results.
-	Creates a allocated resource list by using the resource requirements list. It doesn't do resource arbitration.
+	Creates an allocated resource list by using the resource requirements list. It doesn't do resource arbitration.
 	Structures are documented at http://www.osronline.com/DDKx/kmarch/k112_5quq.htm and http://www.osronline.com/DDKx/kmarch/k112_92k2.htm
 	There is a goto usage, to prevent duplication of resources cleanup code
 Result: Clean

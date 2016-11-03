@@ -353,7 +353,7 @@ ObpLookupObjectName(IN HANDLE RootHandle OPTIONAL,
         }
     }
 
-    /* Check if this is a access checks are being forced */
+    /* Check if this is an access check being forced */
     AccessCheckMode = (Attributes & OBJ_FORCE_ACCESS_CHECK) ?
                        UserMode : AccessMode;
 

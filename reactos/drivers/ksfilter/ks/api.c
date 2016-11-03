@@ -817,7 +817,7 @@ KsAddObjectCreateItemToDeviceHeader(
     if (!Create)
         return STATUS_INVALID_PARAMETER_2;
 
-    /* check if a object class has been provided */
+    /* check if an object class has been provided */
     if (!ObjectClass)
         return STATUS_INVALID_PARAMETER_4;
 
@@ -861,7 +861,7 @@ KsAddObjectCreateItemToObjectHeader(
     if (!Create)
         return STATUS_INVALID_PARAMETER_2;
 
-    /* check if a object class has been provided */
+    /* check if an object class has been provided */
     if (!ObjectClass)
         return STATUS_INVALID_PARAMETER_4;
 

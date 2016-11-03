@@ -492,7 +492,7 @@ struct FullScreenParameters
 
  // drawing utilities
 
- /// PaintCanvas is a encapsulation of device contexts managed by BeginPaint()/EndPaint().
+ /// PaintCanvas is an encapsulation of device contexts managed by BeginPaint()/EndPaint().
 struct PaintCanvas : public PAINTSTRUCT
 {
 	PaintCanvas(HWND hwnd)
@@ -512,7 +512,7 @@ protected:
 	HWND	_hwnd;
 };
 
- /// Canvas is a encapsulation of device contexts.
+ /// Canvas is an encapsulation of device contexts.
 struct Canvas
 {
 	Canvas(HDC hdc) : _hdc(hdc) {}
@@ -523,7 +523,7 @@ protected:
 	HDC _hdc;
 };
 
- /// WindowCanvas is a encapsulation of client area device contexts.
+ /// WindowCanvas is an encapsulation of client area device contexts.
 struct WindowCanvas : public Canvas
 {
 	WindowCanvas(HWND hwnd)

@@ -700,7 +700,7 @@ static __inline__ void __swab64s(__u64 *addr)
  * long is often 64-bit these days.. Thus the casts.
  *
  * They have to be macros in order to do the constant folding
- * correctly - if the argument passed into a inline function
+ * correctly - if the argument passed into an inline function
  * it is no longer constant according to gcc..
  */
 

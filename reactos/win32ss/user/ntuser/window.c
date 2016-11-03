@@ -1739,7 +1739,7 @@ PWND FASTCALL IntCreateWindow(CREATESTRUCTW* Cs,
       }
    }
 
-   /* BugBoy Comments: if the window being created is a edit control, ATOM 0xCxxx,
+   /* BugBoy Comments: if the window being created is an edit control, ATOM 0xCxxx,
       then my testing shows that windows (2k and XP) creates a CallProc for it immediately
       Dont understand why it does this. */
    if (Class->atomClassName == gpsi->atomSysClass[ICLS_EDIT])

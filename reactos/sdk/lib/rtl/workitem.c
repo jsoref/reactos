@@ -397,7 +397,7 @@ RtlpQueueIoWorkerThread(IN OUT PRTLP_WORKITEM WorkItem)
         }
         else
         {
-            /* We're not aware of any persistent IO worker thread. Search for a unused
+            /* We're not aware of any persistent IO worker thread. Search for an unused
                worker thread that doesn't have a long function queued */
             CurrentEntry = ThreadPoolIOWorkerThreadsList.Flink;
             while (CurrentEntry != &ThreadPoolIOWorkerThreadsList)

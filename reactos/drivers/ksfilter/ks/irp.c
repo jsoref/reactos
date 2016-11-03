@@ -549,7 +549,7 @@ KsStreamIo(
     /* sanity check */
     ASSERT(DeviceObject != NULL);
 
-    /* is there a event provided */
+    /* is there an event provided */
     if (Event)
     {
         /* reset event */
@@ -563,7 +563,7 @@ KsStreamIo(
 
         if (ObjectHeader)
         {
-            /* there is a object header */
+            /* there is an object header */
             if (Flags == KSSTREAM_READ)
             {
                 /* is fast read supported */

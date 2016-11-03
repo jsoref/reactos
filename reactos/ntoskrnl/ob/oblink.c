@@ -423,7 +423,7 @@ ObpParseSymbolicLink(IN PVOID ParsedObject,
 
     /*
      * Strip off the extra trailing '\', if we don't do this we will end up
-     * adding a extra '\' between TargetPath and RemainingName
+     * adding an extra '\' between TargetPath and RemainingName
      * causing caller's like ObpLookupObjectName() to fail.
      */
     if (TempLength && RemainingName->Length)

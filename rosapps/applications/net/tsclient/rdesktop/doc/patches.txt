@@ -71,7 +71,7 @@ glyphs are drawn with stippled fill instead of XCopyPlane (runs faster
 on my S3Trio64 with XFree 3.3.6, please test it on other
 configurations to validate this). The WinTach not show any improvement
 with this change, it seems to use all transparent background text
-draws, but with a old PC Magazine Winbench (3.1) doing the scroll text
+draws, but with an old PC Magazine Winbench (3.1) doing the scroll text
 test the speed gain is significative.
 
 3) My Previous patch to disable backing storage in fullscreen

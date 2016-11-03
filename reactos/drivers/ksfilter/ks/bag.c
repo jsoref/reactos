@@ -37,7 +37,7 @@ KsAllocateObjectBag(
     /* get real device header */
     DeviceHeader = (PKSIDEVICE_HEADER)CONTAINING_RECORD(Device, KSIDEVICE_HEADER, KsDevice);
 
-    /* allocate a object bag ctx */
+    /* allocate an object bag ctx */
     Bag = AllocateItem(NonPagedPool, sizeof(KSIOBJECT_BAG));
     if (!Bag)
         return STATUS_INSUFFICIENT_RESOURCES;

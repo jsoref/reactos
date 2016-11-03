@@ -45,7 +45,7 @@ PUBLIC __aullshr
 // ullshr - long shift right
 //
 // Purpose:
-//       Does a unsigned Long Shift Right
+//       Does an unsigned Long Shift Right
 //       Shifts a long right any number of bits.
 //
 // Entry:

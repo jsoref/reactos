@@ -447,7 +447,7 @@ static void write_bytecounted_string(unsigned bytecount, char *s, char padding)
 }
 
 /*-----------------------------------------------------------------------------
-This function writes a ansi string as a big endian unicode string to the CD-ROM
+This function writes an ansi string as a big endian unicode string to the CD-ROM
 image. The terminating \0 is not written.
 -----------------------------------------------------------------------------*/
 

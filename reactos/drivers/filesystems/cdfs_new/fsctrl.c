@@ -359,7 +359,7 @@ Return Value:
 
     //
     //  We know this is a file system control so we'll case on the
-    //  minor function, and call a internal worker routine to complete
+    //  minor function, and call an internal worker routine to complete
     //  the irp.
     //
 

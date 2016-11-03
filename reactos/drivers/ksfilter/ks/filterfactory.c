@@ -321,7 +321,7 @@ IKsFilterFactory_fnInitialize(
         RtlFreeUnicodeString(&ReferenceString);
     }
 
-    /* create a object bag for the filter factory */
+    /* create an object bag for the filter factory */
     This->FilterFactory.Bag = AllocateItem(NonPagedPool, sizeof(KSIOBJECT_BAG));
     if (This->FilterFactory.Bag)
     {

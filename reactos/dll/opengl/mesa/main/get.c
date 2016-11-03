@@ -1080,7 +1080,7 @@ check_extra(struct gl_context *ctx, const char *func, const struct value_desc *d
 	 break;
       case EXTRA_END:
 	 break;
-      default: /* *e is a offset into the extension struct */
+      default: /* *e is an offset into the extension struct */
 	 total++;
 	 if (*(GLboolean *) ((char *) &ctx->Extensions + *e))
 	    enabled++;

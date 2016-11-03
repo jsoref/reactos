@@ -404,7 +404,7 @@ StartProcedure(
     if (!(DeviceExtension->Flags & (KEYBOARD_PRESENT | MOUSE_PRESENT)))
     {
         /* Try to detect them */
-        TRACE_(I8042PRT, "Check if the controller is really a i8042\n");
+        TRACE_(I8042PRT, "Check if the controller is really an i8042\n");
         Status = i8042BasicDetect(DeviceExtension);
         if (!NT_SUCCESS(Status))
         {

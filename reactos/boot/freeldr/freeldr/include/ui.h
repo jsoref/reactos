@@ -65,7 +65,7 @@ VOID    UiDrawText2(ULONG X, ULONG Y, ULONG MaxNumChars, PCSTR Text, UCHAR Attr)
 VOID    UiDrawCenteredText(ULONG Left, ULONG Top, ULONG Right, ULONG Bottom, PCSTR TextString, UCHAR Attr);    // Draws centered text at the coordinates specified and clips the edges
 VOID    UiDrawStatusText(PCSTR StatusText);                    // Draws text at the very bottom line on the screen
 VOID    UiUpdateDateTime(VOID);                                    // Updates the date and time
-VOID    UiInfoBox(PCSTR MessageText);                            // Displays a info box on the screen
+VOID    UiInfoBox(PCSTR MessageText);                            // Displays an info box on the screen
 VOID    UiMessageBox(PCSTR Format, ...);                        // Displays a message box on the screen with an ok button
 VOID    UiMessageBoxCritical(PCSTR MessageText);                // Displays a message box on the screen with an ok button using no system resources
 VOID    UiDrawProgressBarCenter(ULONG Position, ULONG Range, PCHAR ProgressText);            // Draws the progress bar showing nPos percent filled

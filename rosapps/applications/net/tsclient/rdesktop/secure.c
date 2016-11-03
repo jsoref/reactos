@@ -642,7 +642,7 @@ sec_parse_crypt_info(RDPCLIENT * This, STREAM s, uint32 * rc4_key_size,
 		   "How did I find out about this?  I looked up and saw a
 		   bright light and when I came to I had a scar on my forehead
 		   and knew about X.500"
-		   - Peter Gutman in a early version of
+		   - Peter Gutman in an early version of
 		   http://www.cs.auckland.ac.nz/~pgut001/pubs/x509guide.txt
 		 */
 

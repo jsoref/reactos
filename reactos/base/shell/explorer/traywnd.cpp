@@ -151,7 +151,7 @@ DefSize:
         IconSize.cx = GetSystemMetrics(SM_CXSMICON);
         IconSize.cy = GetSystemMetrics(SM_CYSMICON);
 
-        /* Load the start button icon and create a image list for it */
+        /* Load the start button icon and create an image list for it */
         hIconStart = (HICON) LoadImageW(hExplorerInstance,
                                        MAKEINTRESOURCEW(IDI_START),
                                        IMAGE_ICON,

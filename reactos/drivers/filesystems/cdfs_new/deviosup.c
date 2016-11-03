@@ -2219,7 +2219,7 @@ Arguments:
     RunCount - Number of entries in the IoRuns array filled here.
 
     FinalCleanup - Indicates if we should be deallocating temporary buffers
-        (TRUE) or transferring bytes for a unaligned transfers and
+        (TRUE) or transferring bytes for an unaligned transfers and
         deallocating the buffers (FALSE).  Flush the system cache if
         transferring data.
 

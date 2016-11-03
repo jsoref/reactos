@@ -22,7 +22,7 @@
  * bit depths). It is possible to use a generic Blt routine which handles all
  * rop codes and all depths. The drawback is that it will be relatively slow.
  * The other extreme is to write (generate) a separate Blt routine for each
- * rop code/depth combination. This will result in a extremely large amount
+ * rop code/depth combination. This will result in an extremely large amount
  * of code. So, we opt for something in between: named rops get their own
  * routine, unnamed rops are handled by a generic routine.
  * Basically, what happens is that generic code which looks like:

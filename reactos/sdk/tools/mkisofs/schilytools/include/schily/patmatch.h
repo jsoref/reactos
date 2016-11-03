@@ -62,8 +62,8 @@ extern "C" {
 #define	END	'$'	/* End of a line */
 
 /*
- * A list of case statements that may be used for a issimple() or ispattern()
- * funtion that checks whether a string conrtains characters that need the
+ * A list of case statements that may be used for an issimple() or ispattern()
+ * function that checks whether a string conrtains characters that need the
  * pattern matcher.
  *
  * Note that this list does not contain NOT or RANGE because you need

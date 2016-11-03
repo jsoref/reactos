@@ -250,7 +250,7 @@ LdrLockLoaderLock(IN ULONG Flags,
         }
         else
         {
-            /* Do a enter */
+            /* Do an enter */
             RtlEnterCriticalSection(&LdrpLoaderLock);
 
             /* See if result was requested */

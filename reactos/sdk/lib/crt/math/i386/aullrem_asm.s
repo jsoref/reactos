@@ -45,7 +45,7 @@ PUBLIC __aullrem
 // ullrem - unsigned long remainder
 //
 // Purpose:
-//       Does a unsigned long remainder of the arguments.  Arguments are
+//       Does an unsigned long remainder of the arguments.  Arguments are
 //       not changed.
 //
 // Entry:

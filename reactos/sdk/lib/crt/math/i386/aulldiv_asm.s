@@ -45,7 +45,7 @@ PUBLIC __aulldiv
 // ulldiv - unsigned long divide
 //
 // Purpose:
-//       Does a unsigned long divide of the arguments.  Arguments are
+//       Does an unsigned long divide of the arguments.  Arguments are
 //       not changed.
 //
 // Entry:

@@ -380,7 +380,7 @@ GuiPaintTextModeBuffer(PTEXTMODE_SCREEN_BUFFER Buffer,
     SetTextColor(GuiData->hMemDC, PaletteRGBFromAttrib(Console, TextAttribFromAttrib(LastAttribute)));
     SetBkColor(GuiData->hMemDC, PaletteRGBFromAttrib(Console, BkgdAttribFromAttrib(LastAttribute)));
 
-    /* We use the underscore flag as a underline flag */
+    /* We use the underscore flag as an underline flag */
     IsUnderline = !!(LastAttribute & COMMON_LVB_UNDERSCORE);
     /* Select the new font */
     NewFont = GuiData->Font[IsUnderline ? FONT_BOLD : FONT_NORMAL];

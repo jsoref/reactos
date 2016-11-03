@@ -336,7 +336,7 @@ VGAStartIO(PVOID DeviceExtension,
 //    VGAInterrupt
 //
 //  DESCRIPTION:
-//    This function will be called upon receipt of a adapter generated
+//    This function will be called upon receipt of an adapter generated
 //    interrupt when enabled.
 //
 //  RUN LEVEL:

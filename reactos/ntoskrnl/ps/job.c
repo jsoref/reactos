@@ -139,7 +139,7 @@ NtAssignProcessToJobObject (
     terminate the process. otherwise one could abuse the job objects to
     terminate processes without having rights granted to do so! The reason
     I open the process handle before the job handle is that a simple test showed
-    that it first complains about a invalid process handle! The other way around
+    that it first complains about an invalid process handle! The other way around
     would be simpler though... */
     Status = ObReferenceObjectByHandle(
         ProcessHandle,

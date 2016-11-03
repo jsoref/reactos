@@ -247,7 +247,7 @@ ftruncate_growable(int fd, off_t length)
 	return 0;
 }
 
-/* Just like open(2), but if a open with O_EXCL fails, retry with
+/* Just like open(2), but if an open with O_EXCL fails, retry with
    GUARDED semantics. This might be necessary because some filesystems
    (such as NFS filesystems mounted from a unfsd server) doesn't
    support O_EXCL. GUARDED semantics are subject to race conditions,

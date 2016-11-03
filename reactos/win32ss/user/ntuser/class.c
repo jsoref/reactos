@@ -1851,7 +1851,7 @@ UserSetClassLongPtr(IN PCLS Class,
 
         Data = (PULONG_PTR)((ULONG_PTR)(Class + 1) + Index);
 
-        /* FIXME: Data might be a unaligned pointer! Might be a problem on
+        /* FIXME: Data might be an unaligned pointer! Might be a problem on
                   certain architectures, maybe using RtlCopyMemory is a
                   better choice for those architectures! */
         Ret = *Data;

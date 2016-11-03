@@ -317,7 +317,7 @@ rdp_send_logon_info(RDPCLIENT * This, uint32 flags, wchar_t *domain, wchar_t *us
 			2 +	/* len_directory */
 			(0 < len_domain ? len_domain : 2) +	/* domain */
 			len_user + (flags & RDP_LOGON_AUTO ? len_password : 0) + 0 +	/* We have no 512 byte BLOB. Perhaps we must? */
-			(flags & RDP_LOGON_BLOB && !(flags & RDP_LOGON_AUTO) ? 2 : 0) +	/* After the BLOB is a unknown int16. If there is a BLOB, that is. */
+			(flags & RDP_LOGON_BLOB && !(flags & RDP_LOGON_AUTO) ? 2 : 0) +	/* After the BLOB is an unknown int16. If there is a BLOB, that is. */
 			(0 < len_program ? len_program : 2) + (0 < len_directory ? len_directory : 2) + 2 +	/* Unknown (2) */
 			2 +	/* Client ip length */
 			len_ip +	/* Client ip */

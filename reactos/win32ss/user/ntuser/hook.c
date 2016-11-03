@@ -79,7 +79,7 @@ IntLoadHookModule(int iHookID, HHOOK hHook, BOOL Unload)
 
 /*
 IntHookModuleUnloaded:
-Sends a internal message to all threads of the requested desktop
+Sends an internal message to all threads of the requested desktop
 and notifies them that a global hook was destroyed
 and an injected module must be unloaded.
 As a result, IntLoadHookModule will be called for all the threads that

@@ -75,7 +75,7 @@ NdisAcquireReadWriteLock(
   } else {
     KeRaiseIrql(DISPATCH_LEVEL, &LockState->OldIrql);
     RefCount = InterlockedIncrement((PLONG)&Lock->RefCount[KeGetCurrentProcessorNumber()].RefCount);
-    /* Racing with a exclusive write lock case. */
+    /* Racing with an exclusive write lock case. */
     if (Lock->SpinLock != 0) {
       if (RefCount == 1) {
         if (Lock->Context != PsGetCurrentThread()) {

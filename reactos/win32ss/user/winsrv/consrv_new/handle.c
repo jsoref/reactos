@@ -72,7 +72,7 @@ ConSrvCloseHandleEntry(PCONSOLE_IO_HANDLE Entry)
         /// LOCK /// EnterCriticalSection(&Console->Lock);
 
         /*
-         * If this is a input handle, notify and dereference
+         * If this is an input handle, notify and dereference
          * all the waits related to this handle.
          */
         if (Object->Type == INPUT_BUFFER)
