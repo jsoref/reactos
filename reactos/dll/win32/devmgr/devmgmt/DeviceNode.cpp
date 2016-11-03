@@ -80,7 +80,7 @@ CDeviceNode::SetupNode()
     if (m_DeviceId == NULL)
         return false;
 
-    // Build up a handle a and devinfodata struct
+    // Build up a handle and a devinfodata struct
     m_hDevInfo = SetupDiCreateDeviceInfoListExW(NULL,
                                                 NULL,
                                                 NULL,
