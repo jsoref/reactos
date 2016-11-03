@@ -1805,7 +1805,7 @@ DbgBreakPoint();
     /* get stream pointer */
     Pointer = (PKSISTREAM_POINTER)CONTAINING_RECORD(StreamPointer, KSISTREAM_POINTER, StreamPointer);
 
-    /* is there a another cloned stream pointer */
+    /* is there another cloned stream pointer */
     if (!Pointer->Next)
         return NULL;
 
