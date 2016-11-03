@@ -781,7 +781,7 @@ Main_DDrawSurface_GetSurfaceDesc(LPDDRAWI_DDRAWSURFACE_INT This,
 		lpDS->dwLinearSize = This->lpLcl->lpGbl->dwLinearSize;
 
 
-		/* This tree are a union */
+		/* This tree is a union */
 		//lpDS->dwMipMapCount
 		//lpDS->dwRefreshRate
 		//lpDS->dwZBufferBitDepth
@@ -823,7 +823,7 @@ Main_DDrawSurface_GetSurfaceDesc(LPDDRAWI_DDRAWSURFACE_INT This,
 		*/
 		pDDSD->dwLinearSize = This->lpLcl->lpGbl->dwLinearSize;
 
-		/* This tree are a union */
+		/* This tree is a union */
 		// pDDSD->dwMipMapCount
 		// pDDSD->dwRefreshRate
 		// pDDSD->dwSrcVBHandle
