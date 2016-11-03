@@ -5006,7 +5006,7 @@ Return Value:
                             originalIrp, Irp, Irp->Tail.Overlay.Thread));
 
                 //
-                // set up a one shot timer to get this process started over
+                // set up a one-shot timer to get this process started over
                 //
 
                 irpStack->Parameters.Others.Argument1 = ULongToPtr( retryCount );

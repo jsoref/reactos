@@ -550,7 +550,7 @@ MmHaInitialize (
     /* Initialize the heap boundary list */
     InitializeListHead(&MmHeapBoundaries);
 
-    /* Initialize a heap big enough to handle a one pointer long allocation */
+    /* Initialize a heap big enough to handle a one-pointer-long allocation */
     Status = MmHapHeapAllocatorExtend(sizeof(PVOID));
     if (NT_SUCCESS(Status))
     {

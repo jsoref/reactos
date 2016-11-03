@@ -6903,7 +6903,7 @@ Return Value:
 
                 DebugPrint((1, "CdRomUpdateCapacityCompletion: [%lx] Retrying request %lx .. thread is %lx\n", originalIrp, Irp, Irp->Tail.Overlay.Thread));
                 //
-                // set up a one shot timer to get this process started over
+                // set up a one-shot timer to get this process started over
                 //
 
                 irpStack->Parameters.Others.Argument1 = (PVOID) retryCount;

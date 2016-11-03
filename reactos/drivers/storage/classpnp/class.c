@@ -1478,7 +1478,7 @@ NTSTATUS NTAPI ClassPnpStartDevice(IN PDEVICE_OBJECT DeviceObject)
     }
 
     //
-    // If device requests autorun functionality or a once a second callback
+    // If device requests autorun functionality or a once-a-second callback
     // then enable the once per second timer.
     //
     // NOTE: This assumes that ClassInitializeMediaChangeDetection is always
