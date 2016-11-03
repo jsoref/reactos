@@ -774,7 +774,7 @@ Main_DDrawSurface_GetSurfaceDesc(LPDDRAWI_DDRAWSURFACE_INT This,
 		lpDS->dwHeight = This->lpLcl->lpGbl->wHeight;
 		lpDS->dwWidth =  This->lpLcl->lpGbl->wWidth;
 
-		/* This two are a union in lpDS  and in This->lpLcl->lpGbl
+		/* These two are a union in lpDS  and in This->lpLcl->lpGbl
 		  so I comment out lPitch
 		  lpDS->lPitch = This->lpLcl->lpGbl->lPitch;
 		*/
@@ -817,7 +817,7 @@ Main_DDrawSurface_GetSurfaceDesc(LPDDRAWI_DDRAWSURFACE_INT This,
 		pDDSD->dwHeight = This->lpLcl->lpGbl->wHeight;
 		pDDSD->dwWidth =  This->lpLcl->lpGbl->wWidth;
 
-		/* This two are a union in lpDS  and in This->lpLcl->lpGbl
+		/* These two are a union in lpDS  and in This->lpLcl->lpGbl
 		  so I comment out lPitch
 		  lpDS->lPitch = This->lpLcl->lpGbl->lPitch;
 		*/
