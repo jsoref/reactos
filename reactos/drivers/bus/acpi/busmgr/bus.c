@@ -1416,7 +1416,7 @@ acpi_bus_add (
 	/*
 	 * Bind _ADR-Based Devices
 	 * -----------------------
-	 * If there's a a bus address (_ADR) then we utilize the parent's
+	 * If there's a bus address (_ADR) then we utilize the parent's
 	 * 'bind' function (if exists) to bind the ACPI- and natively-
 	 * enumerated device representations.
 	 */

@@ -148,7 +148,7 @@ ShowDeviceProblemWizard(IN HWND hWndParent  OPTIONAL,
             case CM_PROB_DEVLOADER_NOT_READY:
             {
                 /* FIXME - if it's a graphics adapter:
-                           - if it's a a secondary adapter and the main adapter
+                           - if it's a secondary adapter and the main adapter
                              couldn't be found
                              - do nothing or default action
                            - else

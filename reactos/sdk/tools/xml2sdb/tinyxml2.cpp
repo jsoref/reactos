@@ -718,7 +718,7 @@ XMLNode::~XMLNode()
 
 const char* XMLNode::Value() const 
 {
-    // Catch an edge case: XMLDocuments don't have a a Value. Carefully return nullptr.
+    // Catch an edge case: XMLDocuments don't have a Value. Carefully return nullptr.
     if ( this->ToDocument() )
         return 0;
     return _value.GetStr();

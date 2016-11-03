@@ -1853,7 +1853,7 @@ Return Value:
     }
 
     //
-    // See if there is a a filter driver to intercept
+    // See if there is a filter driver to intercept
     // IOCTL_STORAGE_PREDICT_FAILURE
     //
     status = DiskSendFailurePredictIoctl(FdoExtension,

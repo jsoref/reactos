@@ -59,7 +59,7 @@ KeFindConfigurationNextEntry(IN PCONFIGURATION_COMPONENT_DATA Child,
         Mask = -1;
     }
 
-    /* Loop the Components until we find a a match */
+    /* Loop the Components until we find a match */
     while (Child)
     {
         /* Check if we are starting somewhere already */

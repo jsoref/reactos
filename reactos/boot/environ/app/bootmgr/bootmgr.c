@@ -3028,7 +3028,7 @@ BmMain (
             /* Move to the next entry for next time */
             SequenceId++;
 
-            /* Unless there won't be a a next time? */
+            /* Unless there won't be a next time? */
             if (SequenceId == SequenceCount)
             {
                 /* Clean up, it's the last entry */
