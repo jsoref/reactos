@@ -2435,7 +2435,7 @@ file_gen()
 	/*
 	 * put this here for the time being - may when I've worked out how to
 	 * use Eric's new system for creating/writing parts of the image it
-	 * may move to it's own routine
+	 * may move to its own routine
 	 */
 	if (apple_hyb && !donotwrite_macpart)
 		hfs_file_gen(start_extent);

@@ -131,7 +131,7 @@ ClasspCreateClose(
 Routine Description:
 
     This routine will handle create/close operations for a given classpnp
-    device if the class driver doesn't supply it's own handler.  If there
+    device if the class driver doesn't supply its own handler.  If there
     is a file object supplied for our driver (if it's a FO_DIRECT_DEVICE_OPEN
     file object) then it will initialize a file extension on create or destroy
     the extension on a close.

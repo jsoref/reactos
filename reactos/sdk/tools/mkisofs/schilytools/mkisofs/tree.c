@@ -1222,7 +1222,7 @@ extern	BOOL		nodesc;
 
 #ifdef SORTING
 	/*
-	 * set any sort weighting from it's own directory entry - if a
+	 * set any sort weighting from its own directory entry - if a
 	 * directory is given a weighting, then all the contents will use
 	 * this as the default weighting
 	 */

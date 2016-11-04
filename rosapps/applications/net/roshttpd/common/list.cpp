@@ -6,7 +6,7 @@
  * PROGRAMMERS: Casper S. Hornstrup (chorns@users.sourceforge.net)
  * REVISIONS:
  *   CSH  01/09/2000 Created
- * NOTES:       The linked list does it's own heap management for
+ * NOTES:       The linked list does its own heap management for
  *              better performance
  * TODO:        - InsertBefore(), InsertAfter(), Move()
  */

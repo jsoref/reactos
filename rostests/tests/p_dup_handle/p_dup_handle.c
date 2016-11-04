@@ -4,7 +4,7 @@
 #include <string.h>
 
 /* This tests the ability of the target win32 to duplicate a process handle,
- * spawn a child, and have the child dup it's own handle back into the parent
+ * spawn a child, and have the child dup its own handle back into the parent
  * using the duplicated handle.
  */
 

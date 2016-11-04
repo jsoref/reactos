@@ -41,7 +41,7 @@
  ER*
  *  Because gdb will sometimes write to the stack area to execute function
  *  calls, this program cannot rely on using the supervisor stack so it
- *  uses it's own stack area.
+ *  uses its own stack area.
  *
  *************
  *

@@ -36,7 +36,7 @@ typedef void (*CmdProc)(const int argc, const char **const argv, const CommandPt
 
 /* Structure of the command table.  We keep some extra stuff in the
  * table, so each command doesn't have to check the number of
- * arguments and print it's own usage messages if it doesn't want to.
+ * arguments and print its own usage messages if it doesn't want to.
  */
 typedef struct Command {
 	const char *name;
