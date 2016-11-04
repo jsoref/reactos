@@ -1144,7 +1144,7 @@ DoCommand(
                 (!strncmp (cmdptr->name, com, cl)) &&
                 (strchr("\\.-", *(com + cl))))
             {
-                /* OK its one of the specials...*/
+                /* OK it's one of the specials...*/
 
                 /* Call with new rest */
                 cmdptr->func(State, cstart + cl);
