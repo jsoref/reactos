@@ -809,7 +809,7 @@ EXPORT
 NdisFreeBuffer(
     IN   PNDIS_BUFFER   Buffer)
 /*
- * FUNCTION: Puts an NDIS buffer descriptor back in it's pool
+ * FUNCTION: Puts an NDIS buffer descriptor back in its pool
  * ARGUMENTS:
  *     Buffer = Pointer to buffer descriptor
  */
@@ -826,7 +826,7 @@ EXPORT
 NdisFreePacket(
     IN   PNDIS_PACKET   Packet)
 /*
- * FUNCTION: Puts an NDIS packet descriptor back in it's pool
+ * FUNCTION: Puts an NDIS packet descriptor back in its pool
  * ARGUMENTS:
  *     Packet = Pointer to packet descriptor
  */
