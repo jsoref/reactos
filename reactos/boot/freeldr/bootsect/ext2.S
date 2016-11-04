@@ -528,7 +528,7 @@ Ext2ReadEntireFile2:
 
 		// Now we have read all the direct blocks in
 		// the inode. So now we have to read the indirect
-		// block and read all it's direct blocks
+		// block and read all its direct blocks
 		push eax											// Save the total block count
 		mov  eax, dword ptr [bp+Ext2InodeIndirectPointer]	// Get the indirect block pointer
 		push HEX(7000)
