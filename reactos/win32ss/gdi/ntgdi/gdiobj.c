@@ -478,7 +478,7 @@ ENTRY_ReferenceEntryByHandle(HGDIOBJ hobj, FLONG fl)
     ULONG ulIndex, cNewRefs, cOldRefs;
     PENTRY pentry;
 
-    /* Get the handle index and check if its too big */
+    /* Get the handle index and check if it's too big */
     ulIndex = GDI_HANDLE_GET_INDEX(hobj);
     if (ulIndex >= GDI_HANDLE_COUNT) return NULL;
 

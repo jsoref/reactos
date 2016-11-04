@@ -355,7 +355,7 @@ FrLdrHeapAllocateEx(
     {
         ASSERT(Block->Tag == 0);
 
-        /* Continue, if its too small */
+        /* Continue, if it's too small */
         if (Block->Size < BlockSize) continue;
 
         /* This block is just fine, use it */
