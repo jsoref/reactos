@@ -18,7 +18,7 @@ FreeLoader Boot Process
 FAT 12/16/32 Boot Sector
 
 	The BIOS loads the boot sector at 0000:7C00. The FAT32 boot sector
-relocates itself higher in memory at 9000:0000 and loads it's extra sector
+relocates itself higher in memory at 9000:0000 and loads its extra sector
 at 9000:0200 and then looks for freeldr.sys on the file system. Once found
 it loads freeldr.sys to 0000:7E00 and then jumps to it's entry point at
 0000:8000. The FAT12/16 boot sector does no relocation, it just searches for
