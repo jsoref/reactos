@@ -988,7 +988,7 @@ KiComputeDueTime(IN PKTIMER Timer,
 //
 // Called from Unlink and Queue Insert Code.
 // Also called by timer code when canceling an inserted timer.
-// Removes a timer from it's tree.
+// Removes a timer from its tree.
 //
 FORCEINLINE
 VOID
