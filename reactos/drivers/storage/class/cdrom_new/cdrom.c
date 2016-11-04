@@ -1384,7 +1384,7 @@ CdRomStartIo(
         // we have already started the work item at least once -- may
         // transparently change to UpdateComplete).
         //
-        // if it's update required, we just queue it, change to UpdateStarted,
+        // if it's UpdateRequired, we just queue it, change to UpdateStarted,
         // start the workitem, and start the next packet.
         //
         // else, we must queue the item and check the queue depth.  if the
