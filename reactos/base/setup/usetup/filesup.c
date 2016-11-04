@@ -382,7 +382,7 @@ SetupCopyFile(
         goto closedest;
     }
 
-    /* shorten the file back to it's real size after completing the write */
+    /* shorten the file back to its real size after completing the write */
     Status = NtSetInformationFile(FileHandleDest,
                                   &IoStatusBlock,
                                   &FileStandard.EndOfFile,
