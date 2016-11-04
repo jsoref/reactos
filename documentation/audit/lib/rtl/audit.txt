@@ -69,7 +69,7 @@ Checking security is also not very difficult:
 
 The function is currently not used in ReactOS, and also not really tested.
 Due to the nature of NT's security, it's quite a lot of code to do simple
-tasks. The function should do it's job as expected, but I haven't tested if it
+tasks. The function should do its job as expected, but I haven't tested if it
 actually works. I mostly used openrce.org's call flows to understand what it
 should do.
 
@@ -113,7 +113,7 @@ generictable.c:
  - Doesn't contain much code...
 
 handle.c:
- - Implements the very basic RTL handle tables. The code is very incomplete and barely does it's job. I fixed some severe flaws of the previous implementation when making the atom code depend on it. Also because of updated structures in the ndk. It's a minimalist implementation, mostly just manages an array of handle table entries. Studied wine's implementation before.
+ - Implements the very basic RTL handle tables. The code is very incomplete and barely does its job. I fixed some severe flaws of the previous implementation when making the atom code depend on it. Also because of updated structures in the ndk. It's a minimalist implementation, mostly just manages an array of handle table entries. Studied wine's implementation before.
 
 heap.c:
  - Implements the heap manager. Imported from wine...

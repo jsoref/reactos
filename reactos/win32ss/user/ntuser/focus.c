@@ -1159,7 +1159,7 @@ UserSetActiveWindow( _In_opt_ PWND Wnd )
      ShowWindow(hwnd, SW_HIDE);
      SetFocus(0);
      SetActiveWindow(0);
-     check_wnd_state(0, 0, 0, 0); <-- This should pass if ShowWindow does it's job!!! As of 10/28/2012 it does!
+     check_wnd_state(0, 0, 0, 0); <-- This should pass if ShowWindow does its job!!! As of 10/28/2012 it does!
 
      Now Handle wines Msg.c test_SetActiveWindow( 0 )...
   */
