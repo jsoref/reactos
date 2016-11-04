@@ -1664,7 +1664,7 @@ RtlpSplitEntry(PHEAP Heap,
     /* Calculate the extra amount */
     FreeSize = InUseEntry->Size - Index;
 
-    /* Update it's size fields (we don't need their data anymore) */
+    /* Update its size fields (we don't need their data anymore) */
     InUseEntry->Size = (USHORT)Index;
     InUseEntry->UnusedBytes = (UCHAR)(AllocationSize - Size);
 

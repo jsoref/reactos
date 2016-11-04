@@ -614,7 +614,7 @@ ClassDispatchPnp(
                     if(type == TargetDeviceRelation) {
 
                         //
-                        // Device relations has one entry built in to it's size.
+                        // Device relations has one entry built in to its size.
                         //
 
                         status = STATUS_INSUFFICIENT_RESOURCES;
@@ -6390,7 +6390,7 @@ ClassGetDescriptor(
 
     //
     // On the first pass we just want to get the first few
-    // bytes of the descriptor so we can read it's size
+    // bytes of the descriptor so we can read its size
     //
 
     descriptor = (PVOID)&query;
