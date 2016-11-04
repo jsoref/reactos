@@ -567,7 +567,7 @@ DiskInitPdo(
 Routine Description:
 
     This routine will create the well known names for a PDO and register
-    it's device interfaces.
+    its device interfaces.
 
 --*/
 
@@ -625,7 +625,7 @@ DiskStartPdo(
 Routine Description:
 
     This routine will create the well known names for a PDO and register
-    it's device interfaces.
+    its device interfaces.
 
 --*/
 
