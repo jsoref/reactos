@@ -226,7 +226,7 @@ ClasspPowerUpCompletion(
 
                 //
                 // Indicate to Po that we've been successfully powered up so
-                // it can do it's notification stuff.
+                // it can do its notification stuff.
                 //
 
                 PoSetPowerState(DeviceObject,
@@ -452,7 +452,7 @@ ClasspPowerUpCompletionFailure:
 
             //
             // Indicate to Po that we've been successfully powered up so
-            // it can do it's notification stuff.
+            // it can do its notification stuff.
             //
             
             PoSetPowerState(DeviceObject,
@@ -584,7 +584,7 @@ ClasspPowerDownCompletion(
 
                 //
                 // Indicate to Po that we've been successfully powered down
-                // so it can do it's notification stuff.
+                // so it can do its notification stuff.
                 //
 
                 IoCopyCurrentIrpStackLocationToNext(Irp);
