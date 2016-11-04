@@ -5359,7 +5359,7 @@ CdRomRemoveDevice(
 Routine Description:
 
     This routine is responsible for releasing any resources in use by the
-    cdrom driver and shutting down it's timer routine.  This routine is called
+    cdrom driver and shutting down its timer routine.  This routine is called
     when all outstanding requests have been completed and the device has
     disappeared - no requests may be issued to the lower drivers.
 

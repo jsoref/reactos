@@ -7100,7 +7100,7 @@ ClassRemoveDevice(
 
                 //
                 // Cleanup the media detection resources now that the class driver
-                // has stopped it's timer (if any) and we can be sure they won't
+                // has stopped its timer (if any) and we can be sure they won't
                 // call us to do detection again.
                 //
 
