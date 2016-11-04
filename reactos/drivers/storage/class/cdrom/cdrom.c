@@ -7012,7 +7012,7 @@ Return Value:
 
     //
     // It's now safe to either start the next request or let the waiting ioctl
-    // request continue along it's merry way
+    // request continue along its merry way
     //
 
     IoStartNextPacket(DeviceObject, FALSE);
