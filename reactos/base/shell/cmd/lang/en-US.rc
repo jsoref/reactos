@@ -37,7 +37,7 @@ To remove an alias from the alias list:\n\
 CALL [drive:][path]filename [batch-parameter]\n\n\
   batch-parameter  Specifies any command-line information required by the\n\
                    batch program."
-    STRING_CD_HELP "Changes the current directory or displays it's name\n\n\
+    STRING_CD_HELP "Changes the current directory or displays its name\n\n\
 CHDIR [/D][drive:][path]\n\
 CHDIR[..|.]\n\
 CD [/D][drive:][path]\n\
