@@ -162,7 +162,7 @@ RXactpCommit(
             }
             else
             {
-                /* We cannot use a handle, open the key first by it's name */
+                /* We cannot use a handle, open the key first by its name */
                 Status = RXactpOpenTargetKey(Context->RootDirectory,
                                              RXactDeleteKey,
                                              &Action->KeyName,
@@ -204,7 +204,7 @@ RXactpCommit(
             }
             else
             {
-                /* We cannot use a handle, open the key first by it's name */
+                /* We cannot use a handle, open the key first by its name */
                 Status = RXactpOpenTargetKey(Context->RootDirectory,
                                              RXactSetValueKey,
                                              &Action->KeyName,
