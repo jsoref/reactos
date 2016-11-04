@@ -94,7 +94,7 @@ BlUtlGetAcpiTable (
                 return Status;
             }
 
-            /* Check if its an XSDT or an RSDT */
+            /* Check if it's an XSDT or an RSDT */
             if (Header->Signature == XSDT_SIGNATURE)
             {
                 /* It's an XSDT */
