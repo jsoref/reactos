@@ -835,7 +835,7 @@ KspHandleDataIntersection(
     MultipleItem = (PKSMULTIPLE_ITEM)(Pin + 1);
     DataRange = (PKSDATARANGE)(MultipleItem + 1);
 
-    /* FIXME make sure its 64 bit aligned */
+    /* FIXME make sure it's 64 bit aligned */
     ASSERT(((ULONG_PTR)DataRange & 0x7) == 0);
 
     if (!This->Filter.Descriptor || !This->Filter.Descriptor->PinDescriptorsCount)
@@ -889,7 +889,7 @@ KspHandleDataIntersection(
         }
 
         DataRange = (PKSDATARANGE)((PUCHAR)DataRange + DataRange->FormatSize);
-        /* FIXME make sure its 64 bit aligned */
+        /* FIXME make sure it's 64 bit aligned */
         ASSERT(((ULONG_PTR)DataRange & 0x7) == 0);
     }
     IoStatus->Status = Status;
