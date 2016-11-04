@@ -72,7 +72,7 @@ RegLoadMUIStringW(IN HKEY hKey,
         return ERROR_INVALID_PARAMETER;
     }
 
-    /* Check for value existence and correctness of it's type, allocate a buffer and load it. */
+    /* Check for value existence and correctness of its type, allocate a buffer and load it. */
     result = RegQueryValueExW(hKey, pszValue, NULL, &dwValueType, NULL, &cbData);
     if (result != ERROR_SUCCESS) goto cleanup;
     if (!(dwValueType == REG_SZ || dwValueType == REG_EXPAND_SZ) || !cbData)

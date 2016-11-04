@@ -815,7 +815,7 @@ LPSTR FindFunctionByAddress(ULONG ulValue,PULONG pulstart,PULONG pulend)
 
 					while( pSym < pSymEnd )
 					{
-						//symbol is a function is it's type is 0x20, and section>0
+						//symbol is a function is its type is 0x20, and section>0
 						if(( (pSym->Type == 0x20) &&
 						   (pSym->SectionNumber > 0 )))
 						{
@@ -978,7 +978,7 @@ ULONG FindFunctionInModuleByName(LPSTR szFunctionname, PDEBUG_MODULE pd)
 
 		while( pSym < pSymEnd )
 		{
-			//symbol is a function is it's type is 0x20, storage class is external and section>0
+			//symbol is a function is its type is 0x20, storage class is external and section>0
 			//if(( (pSym->Type == 0x20)  && (pSym->StorageClass==IMAGE_SYM_CLASS_EXTERNAL) &&
 			//   (pSym->SectionNumber > 0 )))
 
