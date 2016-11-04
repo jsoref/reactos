@@ -607,7 +607,7 @@ retry:
 
     Bcb = &CcCacheSections[BcbHead];
     /* MmMapCacheViewInSystemSpaceAtOffset is one of three methods of Mm
-       that are specific to NewCC.  In this case, it's implementation
+       that are specific to NewCC.  In this case, its implementation
        exactly mirrors MmMapViewInSystemSpace, but allows an offset to
        be specified. */
     Status = MmMapCacheViewInSystemSpaceAtOffset(SectionObject->Segment,

@@ -1519,7 +1519,7 @@ struct sock {
 
 	/* The backlog queue is special, it is always used with
 	 * the per-socket spinlock held and requires low latency
-	 * access.  Therefore we special case it's implementation.
+	 * access.  Therefore we special case its implementation.
 	 */
 	struct {
 		struct sk_buff *head;
