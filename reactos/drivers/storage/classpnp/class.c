@@ -6845,7 +6845,7 @@ ClassQueryPnpCapabilities()
 
 Routine Description:
 
-    This routine will call into the class driver to retrieve it's pnp
+    This routine will call into the class driver to retrieve its pnp
     capabilities.
 
 Arguments:
