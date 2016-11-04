@@ -537,7 +537,7 @@ Ext2ReadEntireFile2:
 		; Now we have read all the direct blocks from
 		; the inode's indirect block pointer. So now
 		; we have to read the double indirect block
-		; and read all it's indirect blocks
+		; and read all its indirect blocks
 		; (whew, it's a good thing I don't support triple indirect blocks)
 		mov  [BYTE bp+Ext2BlocksLeftToRead],eax				; Save the total block count
 		mov  eax,DWORD [BYTE bp+Ext2InodeDoubleIndirectPointer]	; Get the double indirect block pointer
