@@ -681,7 +681,7 @@ HalEnableSystemInterrupt(
     /* Get the irq for this vector */
     Index = HalpVectorToIndex[Vector];
 
-    /* Check if its valid */
+    /* Check if it's valid */
     if (Index == 0xff)
     {
         /* Interrupt is not in use */
@@ -774,7 +774,7 @@ HalBeginSystemInterrupt(
         /* Get the irq for this vector */
         Index = HalpVectorToIndex[Vector];
 
-        /* Check if its valid */
+        /* Check if it's valid */
         if (Index != 0xff)
         {
             /* Read the I/O redirection entry */
