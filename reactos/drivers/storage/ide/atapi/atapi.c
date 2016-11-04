@@ -3079,7 +3079,7 @@ Return Value:
     // Since scsiport will call this function first before it calls AtapiFindController
     // we need to bypass it if we have data installed in ConfigInfo, by the pcmcia driver.
     // In that case atapifindcontroller should be called first.
-    // Instead of modifying atapi  driverEntry to search of PCIBus first (now its ISA)
+    // Instead of modifying atapi  driverEntry to search of PCIBus first (now it's ISA)
     // the check is put here.
     //
 
