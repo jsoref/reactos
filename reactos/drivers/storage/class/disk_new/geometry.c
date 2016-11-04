@@ -333,7 +333,7 @@ DiskSaveGeometryDetectInfo(
     //
     // Allocate our detect info list now that we know how many entries there 
     // are going to be.  No other routine allocates detect info and this is 
-    // done out of DriverEntry so we don't need to synchronize it's creation.
+    // done out of DriverEntry so we don't need to synchronize its creation.
     //
 
     length = sizeof(DISK_DETECT_INFO) * numberOfDrives;
