@@ -925,7 +925,7 @@ MmAttachSession(
     EntrySession = EntryProcess->Session;
     ASSERT(EntrySession != NULL);
 
-    /* Get the current process and it's session */
+    /* Get the current process and its session */
     CurrentProcess = PsGetCurrentProcess();
     CurrentSession = CurrentProcess->Session;
 

@@ -143,7 +143,7 @@ KdpQueryMemory(IN PDBGKD_MANIPULATE_STATE64 State,
         }
         else
         {
-            /* Check if it's session space */
+            /* Check if its session space */
             if (MmIsSessionAddress((PVOID)(ULONG_PTR)Memory->Address))
             {
                 /* It is */
