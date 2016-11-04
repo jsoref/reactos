@@ -43,7 +43,7 @@ RegQueryValueWithAlloc (
                                &dwBytes);
     if (dwError != ERROR_SUCCESS) return dwError;
 
-    /* It if's not the right type, or it's sero bytes, fail*/
+    /* It if's not the right type, or it's zero bytes, fail*/
     if ((dwType != dwExpectedType) || (dwBytes == 0)) return ERROR_INVALID_DATA;
 
     /* Allocate space to hold the data */
