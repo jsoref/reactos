@@ -617,7 +617,7 @@ specified by TYPE does not contain the field specified by Field, then the module
 contain the field specified by Field.
 @param   Field    The name of the field in the data structure specified by TYPE to which Record points.
 
-@return  A pointer to the structure from one of it's elements.
+@return  A pointer to the structure from one of its elements.
 
 **/
 #define BASE_CR(Record, TYPE, Field)  ((TYPE *) ((CHAR8 *) (Record) - (CHAR8 *) &(((TYPE *) 0)->Field)))
