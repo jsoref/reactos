@@ -866,7 +866,7 @@ MMixerGetDeviceName(
         /* copy device name */
         MixerContext->Copy(DeviceName, Name, min(wcslen(Name), MAXPNAMELEN-1) * sizeof(WCHAR));
 
-        /* make sure its null terminated */
+        /* make sure it's null terminated */
         DeviceName[MAXPNAMELEN-1] = L'\0';
 
         /* free device name */
@@ -886,7 +886,7 @@ MMixerGetDeviceName(
         /* copy device name */
         MixerContext->Copy(DeviceName, Name, min(wcslen(Name), MAXPNAMELEN-1) * sizeof(WCHAR));
 
-        /* make sure its null terminated */
+        /* make sure it's null terminated */
         DeviceName[MAXPNAMELEN-1] = L'\0';
 
         /* free device name */
