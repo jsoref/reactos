@@ -1283,7 +1283,7 @@ MountMgrQueryVolumePaths(IN PDEVICE_EXTENSION DeviceExtension,
 
         AssociatedDeviceEntry = CONTAINING_RECORD(Entry, ASSOCIATED_DEVICE_ENTRY, AssociatedDevicesEntry);
 
-        /* Validate the fact its a mount point by query reparse data */
+        /* Validate the fact it's a mount point by query reparse data */
         Status = MountMgrValidateBackPointer(AssociatedDeviceEntry, DeviceInformation, &Invalid);
 
         /* If we found an invalid device, that's a failure */

@@ -208,7 +208,7 @@ RawClose(IN PVCB Vcb,
 
     DPRINT("RawClose(%p, %p, %p)\n", Vcb, Irp, IoStackLocation);
 
-    /* If its a stream, not much to do */
+    /* If it's a stream, not much to do */
     if (IoStackLocation->FileObject->Flags & FO_STREAM_FILE)
     {
         Irp->IoStatus.Status = STATUS_SUCCESS;

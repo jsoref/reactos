@@ -782,7 +782,7 @@ BlDisplayGetOemBitmap (
         goto Quickie;
     }
 
-    /* Make sure its a bitmap */
+    /* Make sure it's a bitmap */
     if (BgrtTable->ImageType != BgrtImageTypeBitmap)
     {
         Status = STATUS_ACPI_INVALID_TABLE;

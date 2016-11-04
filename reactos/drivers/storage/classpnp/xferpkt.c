@@ -477,7 +477,7 @@ VOID NTAPI SubmitTransferPacket(PTRANSFER_PACKET Pkt)
     if (Pkt->CompleteOriginalIrpWhenLastPacketCompletes){
         /*
          *  Only dereference the "original IRP"'s stack location
-         *  if its a real client irp (as opposed to a static irp 
+         *  if it's a real client irp (as opposed to a static irp 
          *  we're using just for result status for one of the non-IO scsi commands).
          *
          *  For read/write, propagate the storage-specific IRP stack location flags

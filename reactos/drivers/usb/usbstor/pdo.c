@@ -1248,7 +1248,7 @@ USBSTOR_SendFormatCapacityIrp(
     }
 
     //
-    // check if its a floppy
+    // check if it's a floppy
     //
     PDODeviceExtension->IsFloppy = USBSTOR_IsFloppy(Response, 0xFC /*FIXME*/, &PDODeviceExtension->MediumTypeCode);
 

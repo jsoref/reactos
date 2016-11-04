@@ -111,7 +111,7 @@ CmpFindControlSet(IN PHHIVE SystemHive,
     /* Make sure it exists */
     if (CurrentValueCell != HCELL_NIL)
     {
-        /* Get the current value and make sure its a ULONG */
+        /* Get the current value and make sure it's a ULONG */
         KeyValue = (PCM_KEY_VALUE)HvGetCell(SystemHive, CurrentValueCell);
         if (!KeyValue) return HCELL_NIL;
         if (KeyValue->Type == REG_DWORD)

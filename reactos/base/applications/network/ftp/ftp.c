@@ -36,7 +36,7 @@ static char sccsid[] = "@(#)ftp.c	5.28 (Berkeley) 4/20/89";
 #endif
 
 #ifdef sun
-/* FD_SET wasn't defined until 4.0. its a cheap test for uid_t  presence */
+/* FD_SET wasn't defined until 4.0. it's a cheap test for uid_t  presence */
 #ifndef FD_SET
 #define	NBBY	8		/* number of bits in a byte */
 /*

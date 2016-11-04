@@ -841,7 +841,7 @@ BOOLEAN Ext2ReadBlock(ULONG BlockNumber, PVOID Buffer)
 
     TRACE("Ext2ReadBlock() BlockNumber = %d Buffer = 0x%x\n", BlockNumber, Buffer);
 
-    // Make sure its a valid block
+    // Make sure it's a valid block
     if (BlockNumber > Ext2SuperBlock->total_blocks)
     {
         sprintf(ErrorString, "Error reading block %d - block out of range.", (int) BlockNumber);
@@ -921,7 +921,7 @@ BOOLEAN Ext2ReadInode(ULONG Inode, PEXT2_INODE InodeBuffer)
 
     TRACE("Ext2ReadInode() Inode = %d\n", Inode);
 
-    // Make sure its a valid inode
+    // Make sure it's a valid inode
     if ((Inode < 1) || (Inode > Ext2SuperBlock->total_inodes))
     {
         sprintf(ErrorString, "Error reading inode %ld - inode out of range.", Inode);

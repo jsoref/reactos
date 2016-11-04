@@ -50,7 +50,7 @@ VOID DriveMapMapDrivesInSection(PCSTR SectionName)
     // Get the number of items in this section
     SectionItemCount = IniGetNumSectionItems(SectionId);
 
-    // Loop through each one and check if its a DriveMap= setting
+    // Loop through each one and check if it's a DriveMap= setting
     for (Index=0; Index<SectionItemCount; Index++)
     {
         // Get the next setting from the .ini file section
