@@ -826,7 +826,7 @@ ClasspMediaChangeDetectionCompletion(
     BOOLEAN retryImmediately = FALSE;
 
     //
-    // Since the class driver created this request, it's completion routine
+    // Since the class driver created this request, its completion routine
     // will not get a valid device object handed in.  Use the one in the
     // irp stack instead
     //
