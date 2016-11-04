@@ -1726,7 +1726,7 @@ typedef AUDIO_PLAY_HEADER *PAUDIO_PLAY_HEADER;
 //
 //  A directory is always entered into the Fcb Table as if it's
 //  dirent offset was zero.  This enables any child to look in the FcbTable
-//  for it's parent by searching with the same HighPart but with zero
+//  for its parent by searching with the same HighPart but with zero
 //  as the value for LowPart.
 //
 //  The Id field is a LARGE_INTEGER where the High and Low parts can be
