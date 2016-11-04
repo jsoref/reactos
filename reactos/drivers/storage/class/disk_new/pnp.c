@@ -327,7 +327,7 @@ Return Value:
 
     //
     // If this is a removable drive, build an entry in devicemap\scsi
-    // indicating it's physicaldriveN name, set up the appropriate
+    // indicating its physicaldriveN name, set up the appropriate
     // update partitions routine and set the flags correctly.
     // note: only do this after the timeout value is set, above.
     //
