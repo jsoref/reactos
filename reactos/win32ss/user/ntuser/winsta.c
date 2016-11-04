@@ -1392,7 +1392,7 @@ BuildDesktopNameList(
  *
  *    pRequiredSize
  *       If the function succeeds, this is the number of bytes copied.
- *       Otherwise it's size of buffer needed for function to succeed.
+ *       Otherwise it's the size of buffer needed for function to succeed.
  *
  * Status
  *    @implemented
