@@ -2862,7 +2862,7 @@ adj_size(Csize, start_extent, extra)
 /*
  *	adj_size_other:	adjust any non-HFS files that may be linked
  *			to an existing file (i.e. not have a deferred_write
- *			entry of it's own
+ *			entry of its own
  */
 EXPORT void
 adj_size_other(dpnt)

@@ -220,7 +220,7 @@ Test_GetDCEx_CS_CLASSDC()
 
     /* Looks legit, but this is not the DC you are looking for!
        In fact this is NOT the class dc, but an own DC, doh!
-       When the first Window is created, the DC for that Window is both it's own
+       When the first Window is created, the DC for that Window is both its own
        AND the class DC. But we only get the class DC, when using DCX_USESTYLE */
     hdc1 = GetDCEx(hwnd1, NULL, 0);
     ok(hdc1 != NULL, "GetDCEx failed\n");
