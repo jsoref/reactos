@@ -7,7 +7,7 @@
  * PROGRAMMERS:     Steven Edwards (steven_ed4153@yahoo.com)
  *
  * NOTES:
- * This application does almost nothing and its really good at it.
+ * This application does almost nothing and it's really good at it.
  */
 
 #include <windows.h>

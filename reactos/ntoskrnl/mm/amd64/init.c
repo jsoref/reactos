@@ -115,7 +115,7 @@ MiMapPPEs(
          PointerPpe <= MiAddressToPpe(EndAddress);
          PointerPpe++)
     {
-        /* Check if its already mapped */
+        /* Check if it's already mapped */
         if (!PointerPpe->u.Hard.Valid)
         {
             /* No, map it! */
@@ -142,7 +142,7 @@ MiMapPDEs(
          PointerPde <= MiAddressToPde(EndAddress);
          PointerPde++)
     {
-        /* Check if its already mapped */
+        /* Check if it's already mapped */
         if (!PointerPde->u.Hard.Valid)
         {
             /* No, map it! */
@@ -169,7 +169,7 @@ MiMapPTEs(
          PointerPte <= MiAddressToPte(EndAddress);
          PointerPte++)
     {
-        /* Check if its already mapped */
+        /* Check if it's already mapped */
         if (!PointerPte->u.Hard.Valid)
         {
             /* No, map it! */

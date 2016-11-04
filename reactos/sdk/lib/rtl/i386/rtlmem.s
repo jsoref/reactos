@@ -236,7 +236,7 @@ _RtlMoveMemory@12:
 	cmp	ecx, 16
 	jb .CopyUpBytes
 
-    /* Check if its already aligned */
+    /* Check if it's already aligned */
 	mov edx, ecx
 	test edi, 3
 	je .CopyUpDwords
@@ -279,7 +279,7 @@ _RtlMoveMemory@12:
 	cmp ecx, 16
 	jb .CopyDownSmall
 
-    /* Check if its already aligned */
+    /* Check if it's already aligned */
 	mov edx, ecx
 	test edi, 3
 	je .CopyDownAligned

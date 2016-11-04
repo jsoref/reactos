@@ -1441,7 +1441,7 @@ Return Value:
 
         cancelRoutine = IoSetCancelRoutine(nextIrp, NULL);
 
-        // check if its already cancelled
+        // check if it's already cancelled
         if (nextIrp->Cancel)
         {
             if(cancelRoutine)

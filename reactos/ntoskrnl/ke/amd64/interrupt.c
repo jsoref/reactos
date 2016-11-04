@@ -86,7 +86,7 @@ KeConnectInterrupt(IN PKINTERRUPT Interrupt)
     ASSERT(Interrupt->Number < KeNumberProcessors);
     ASSERT(Interrupt->Irql <= HIGH_LEVEL);
 
-    /* Check if its already connected */
+    /* Check if it's already connected */
     if (Interrupt->Connected) return TRUE;
 
     /* Query the current handler */
