@@ -97,7 +97,7 @@ drive_param_ok:
 		;
 		; We are now ready to load our second sector of boot code
 		; But first, a bit of undocumented information about how
-		; Win2k stores it's second sector of boot code.
+		; Win2k stores its second sector of boot code.
 		;
 		; The FAT32 filesystem was designed so that you can store
 		; multiple sectors of boot code. The boot sector of a FAT32
@@ -112,12 +112,12 @@ drive_param_ok:
 		; that the user has Win98 and Win2k installed. The Win2k
 		; boot sector is stored at sector 0 and the Win98 boot sector is
 		; stored as BOOTSECT.DOS on the file system. Now if Win2k were
-		; to store it's second sector of boot code in sector 2 like
+		; to store its second sector of boot code in sector 2 like
 		; the fat spec says to do then when you try to dual boot back
 		; to Win98 the Win98 boot sector will load Win2k's second
 		; sector of boot code. Understand? ;-)
 		;
-		; To get around this problem Win2k stores it's second sector
+		; To get around this problem Win2k stores its second sector
 		; of boot code elsewhere. This sector is always stored at sector 13
 		; on the file system. Now don't ask me what happens when you don't
 		; have enough reserved sectors to store it, but I've never seen a
