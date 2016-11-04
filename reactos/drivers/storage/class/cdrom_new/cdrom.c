@@ -425,7 +425,7 @@ Return Value:
     }
 
     //
-    // CdRom uses an extra stack location for synchronizing it's start io
+    // CdRom uses an extra stack location for synchronizing its start io
     // routine
     //
 
