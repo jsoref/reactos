@@ -1130,8 +1130,8 @@ NTSTATUS DispTdiSetEventHandler(PIRP Irp)
   LockObject(AddrFile, &OldIrql);
 
   /* Set the event handler. if an event handler is associated with
-     a specific event, it's flag (RegisteredXxxHandler) is TRUE.
-     If an event handler is not used it's flag is FALSE */
+     a specific event, its flag (RegisteredXxxHandler) is TRUE.
+     If an event handler is not used its flag is FALSE */
   switch (Parameters->EventType) {
   case TDI_EVENT_CONNECT:
     if (!Parameters->EventHandler) {
