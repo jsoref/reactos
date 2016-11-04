@@ -325,7 +325,7 @@ VdmDispatchBop(IN PKTRAP_FRAME TrapFrame)
         /* Check if this is a BOP */
         if (*(PUSHORT)Eip == 0xC4C4)
         {
-            /* Check sure its the DOS Bop */
+            /* Check sure it's the DOS Bop */
             if (Eip[2] == 0x50)
             {
                 /* FIXME: No VDM Support */

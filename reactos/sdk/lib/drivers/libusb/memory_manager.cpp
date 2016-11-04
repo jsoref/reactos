@@ -289,7 +289,7 @@ CDMAMemoryManager::Release(
     BlockLength = ((ULONG_PTR)VirtualAddress - (ULONG_PTR)m_VirtualBase);
 
     //
-    // check if its the first block
+    // check if it's the first block
     //
     if (BlockLength)
     {
