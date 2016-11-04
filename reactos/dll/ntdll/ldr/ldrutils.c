@@ -1336,7 +1336,7 @@ SkipCheck:
         /* Check if we found the DLL overlapping with us */
         if (!OverlapDllFound)
         {
-            /* It's not another DLL, it's memory already here */
+            /* It's not another DLL, its memory is already here */
             RtlInitUnicodeString(&OverlapDll, L"Dynamically Allocated Memory");
         }
 
