@@ -774,7 +774,7 @@ VOID NTAPI ClassInsertCScanList(IN PCSCAN_LIST List, IN PIRP Irp, IN ULONGLONG B
 
 Routine Description:
 
-    This routine inserts an entry into the CScan list based on it's block number
+    This routine inserts an entry into the CScan list based on its block number
     and priority.  It is assumed that the caller is providing synchronization
     to the access of the list.
 
@@ -1026,7 +1026,7 @@ PIRP NTAPI ClassRemoveCScanList(IN PCSCAN_LIST List)
     }
 
     //
-    // Remove the head entry from the current sweep.  Record it's block number
+    // Remove the head entry from the current sweep.  Record its block number
     // so that nothing before it on the disk gets into the current sweep.
     //
 
