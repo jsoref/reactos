@@ -353,7 +353,7 @@ VfatSetDispositionInformation(
 
     if (!MmFlushImageSection (FileObject->SectionObjectPointer, MmFlushForDelete))
     {
-        /* can't delete a file if its mapped into a process */
+        /* can't delete a file if it's mapped into a process */
 
         DPRINT("MmFlushImageSection returned FALSE\n");
         return STATUS_CANNOT_DELETE;
