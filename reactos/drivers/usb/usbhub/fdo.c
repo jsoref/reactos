@@ -348,7 +348,7 @@ DeviceStatusChangeThread(
             }
 
             //
-            // Make sure its Connected and Enabled
+            // Make sure it's Connected and Enabled
             //
             if (!(PortStatus.Status & (USB_PORT_STATUS_CONNECT | USB_PORT_STATUS_ENABLE)))
             {
