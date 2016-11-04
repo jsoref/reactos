@@ -686,7 +686,7 @@ Return Value:
     }
 
     //
-    // Now match each child partition to it's entry (if any) in the partition
+    // Now match each child partition to its entry (if any) in the partition
     // list.
     //
 
