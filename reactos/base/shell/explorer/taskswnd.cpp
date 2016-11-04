@@ -886,7 +886,7 @@ public:
             DeleteTaskItemButton(TaskItem);
         }
 
-        /* Remove the task from it's group */
+        /* Remove the task from its group  */
         RemoveTaskFromTaskGroup(TaskItem);
 
         /* Free the task item */
