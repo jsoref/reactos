@@ -6145,7 +6145,7 @@ Return Value:
                 if(cddata->MediaChangeIrpTimeInUse++ >
                    MEDIA_CHANGE_TIMEOUT_TIME) {
 
-                    DebugPrint((0, "CdRom%d: AutoPlay has lost it's irp and "
+                    DebugPrint((0, "CdRom%d: AutoPlay has lost its irp and "
                                    "doesn't know where to find it.  Leave it "
                                    "alone and it'll come home dragging it's "
                                    "stack behind it.\n",
