@@ -63,7 +63,7 @@
  *   Note that even if no more map registers can be allocated it's not
  *   the end of the world. The adapters waiting for free map registers
  *   are queued in the master adapter's queue and once one driver hands
- *   back it's map registers (using IoFreeMapRegisters or indirectly using
+ *   back its map registers (using IoFreeMapRegisters or indirectly using
  *   the execution routine callback in IoAllocateAdapterChannel) the
  *   queue gets processed and the map registers are reassigned.
  */
