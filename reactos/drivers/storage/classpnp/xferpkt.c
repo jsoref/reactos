@@ -170,7 +170,7 @@ PTRANSFER_PACKET NTAPI NewTransferPacket(PDEVICE_OBJECT Fdo)
 
             /*
              *  Enqueue the packet in our static AllTransferPacketsList
-             *  (just so we can find it during debugging if its stuck somewhere).
+             *  (just so we can find it during debugging if it's stuck somewhere).
              */
             KeAcquireSpinLock(&fdoData->SpinLock, &oldIrql);
             InsertTailList(&fdoData->AllTransferPacketsList, &newPkt->AllPktsListEntry);
