@@ -1535,7 +1535,7 @@ GetLongPathNameW(IN LPCWSTR lpszShortPath,
 
     /*
      * Windows allows the paths to overlap -- we have to be careful with this and
-     * see if it's same to do so, and if not, allocate our own internal buffer
+     * see if it's sane to do so, and if not, allocate our own internal buffer
      * that we'll return at the end.
      *
      * This is also why we use RtlMoveMemory everywhere. Don't use RtlCopyMemory!
@@ -1917,7 +1917,7 @@ GetShortPathNameW(IN LPCWSTR lpszLongPath,
 
     /*
      * Windows allows the paths to overlap -- we have to be careful with this and
-     * see if it's same to do so, and if not, allocate our own internal buffer
+     * see if it's sane to do so, and if not, allocate our own internal buffer
      * that we'll return at the end.
      *
      * This is also why we use RtlMoveMemory everywhere. Don't use RtlCopyMemory!
