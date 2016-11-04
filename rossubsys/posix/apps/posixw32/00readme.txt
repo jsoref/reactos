@@ -14,7 +14,7 @@ for doing VT-100 emulation.
 
 The files included with this distribution are not a complete implementation
 of VT-100 terminal emulation, but do provide complete enough coverage to
-use many vt-100 functions over the network. For instance, its enough to
+use many vt-100 functions over the network. For instance, it's enough to
 use EMACS to edit, or to connect up to your favorite mud with ANSI color
 and graphics characters.
 
