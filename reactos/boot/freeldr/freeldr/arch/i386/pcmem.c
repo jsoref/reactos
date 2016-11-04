@@ -449,7 +449,7 @@ PcMemGetMemoryMap(ULONG *MemoryMapSize)
                                              LoaderFree);
         }
 
-        /* Check if we have an EBDA and get it's location */
+        /* Check if we have an EBDA and get its location */
         if (GetEbdaLocation(&EbdaBase, &EbdaSize))
         {
             /* Add the descriptor */
